@@ -15,6 +15,7 @@ Each resource should be placed in a folder named by the language's two- or three
 
 Examples of possible resource files for a language with code xxx.
 
+```
 wsresources
 +-- langs
 ¦   +-- a
@@ -74,4 +75,6 @@ wsresources
         ¦   ¦   +-- sil-ipa-1990
         ¦   ¦   ¦   +-- files .map, .tec
         +-- mappings_unicode
-    
+```
+
+
