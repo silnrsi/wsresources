@@ -27,11 +27,11 @@ wsresources
 ¦   ¦   ¦   ¦   +-- msklc
 ¦   ¦   ¦   ¦   ¦   +-- files .klc, .zip
 ¦   ¦   ¦   ¦   +-- ukelele
-¦   ¦   ¦   ¦   ¦   +-- files .txt, keylayout
+¦   ¦   ¦   ¦       +-- files .txt, keylayout
 ¦   ¦   ¦   +-- mappings_custom
-¦   ¦   ¦   ¦   ¦   +-- files .map, .tec
+¦   ¦   ¦   ¦       +-- files .map, .tec
 ¦   ¦   ¦   +-- mappings_unicode
-¦   ¦   ¦   ¦   ¦   +-- files .map, .tec
+¦   ¦   ¦           +-- files .map, .tec
 ¦   ¦   +-- xxx-Latn
 ¦   +-- b
 ¦   +-- ..
@@ -43,11 +43,11 @@ wsresources
 ¦   ¦   ¦   ¦   +-- msklc
 ¦   ¦   ¦   ¦   ¦   +-- files .klc, .zip
 ¦   ¦   ¦   ¦   +-- ukelele
-¦   ¦   ¦   ¦   ¦   +-- files .txt, keylayout
+¦   ¦   ¦   ¦       +-- files .txt, keylayout
 ¦   ¦   ¦   +-- mappings_custom
-¦   ¦   ¦   ¦   ¦   +-- files .map, .tec
+¦   ¦   ¦   ¦   +-- files .map, .tec
 ¦   ¦   ¦   +-- mappings_unicode
-¦   ¦   ¦   ¦   ¦   +-- files .map, .tec
+¦   ¦   ¦       +-- files .map, .tec
 ¦   ¦   +-- TG
 ¦   +-- Americas
 ¦   ¦   +-- BO
@@ -63,17 +63,17 @@ wsresources
         +-- keyboards
         ¦   +-- msklc
         ¦   ¦   +-- sil-ipa
-        ¦   ¦   ¦   +-- files .klc, .zip
+        ¦   ¦       +-- files .klc, .zip
         ¦   +-- ukelele
-        ¦   ¦   +-- sil-ipa
-        ¦   ¦   ¦   +-- files .txt, keylayout
+        ¦       +-- sil-ipa
+        ¦           +-- files .txt, keylayout
         +-- mappings_custom
-        ¦   ¦   +-- asap-ipa
-        ¦   ¦   ¦   +-- files .map, .tec
-        ¦   ¦   +-- sil-ipa-1993
-        ¦   ¦   ¦   +-- files .xml, .map, .tec
-        ¦   ¦   +-- sil-ipa-1990
-        ¦   ¦   ¦   +-- files .map, .tec
+        ¦   +-- asap-ipa
+        ¦       +-- files .map, .tec
+        ¦   +-- sil-ipa-1993
+        ¦       +-- files .xml, .map, .tec
+        ¦   +-- sil-ipa-1990
+        ¦       +-- files .map, .tec
         +-- mappings_unicode
 ```
 
