@@ -1,0 +1,67 @@
+; SILVai.map
+; Copyright (c) 2009 SIL International.
+; The Vai Unicode encoding added characters which were not in the SIL Vai fonts.
+;   These are: a501, a504, a50f, a511, a513, a517, a519, a521..a523,
+;   a525, a529, a52f, a534, a536, a538, a53c, a53e, a55b, a55d, a55f, a563, a565, 
+;   a56b, a572, a575, a580, a582, a584, a588, a58a, a592, a594, a596, a59a, a5a0,
+;   a5a5, a5a7, a5a9, a5ad, a5af, a5be, a5c0, a5c8, a5cc, a5ce, a5d0, a5d4, a5d6,
+;   a5e7, a5ed, a5f0, a5f4, a5f6, a5f8, a5fc, a5fe, a60c..a62b
+
+LHSName					"SIL-Vai-Extras-2001"
+RHSName					"Vai Unicode"
+LHSDescription			"SIL Vai Extras (symbol encoded)"
+RHSDescription			"Vai Unicode 5.1"
+Version					"0.2"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SILVaiExtrastoUnicode"
+
+; two characters are unknown 0x77 and 0x84. Several of them are variants. At this point 
+; we do not have a good way to indicate variants.
+; 2009-08-21 LP created
+
+
+pass(Byte_Unicode)
+
+0x20 <> U+0020
+0x21 <> U+A539
+0x22 <> U+A5F9
+0x23 <> U+A5AA
+0x24 <> U+A5B0
+0x25 <> U+A585
+0x26 <> U+A58B
+0x27 <> U+A605
+0x28 <> U+A607
+0x29 <> U+A51A
+0x2B <> U+A5FF
+0x2C <> U+A566
+0x2D <> U+A53F
+0x2E <> U+A5D7
+0x2F <> U+A5D1
+0x30 <> U+A560
+0x31 <> U+A5CD ; variant?
+0x41 <> U+005B
+0x42 <> U+005D
+0x43 <> U+003D
+0x44 <> U+002B
+0x45 <> U+0025
+0x46 <> U+0024
+0x47 <> U+002F
+0x48 <> U+005C
+0x4A <> U+0021
+0x4B <> U+A598
+0x4C <> U+A5B9
+0x4D <> U+A5BC
+0x4E <> U+A5BF ; obsolete variant
+0x77 <> U+FFFD
+0x84 <> U+FFFD
+0xA5 <> U+A545 ; variant
+0xBC <> U+A56A ; variant
+0xC1 <> U+A5B7 ; variant
+0xC2 <> U+A587 ; variant
+0xD4 <> U+A5A4 ; variant
+0xDF <> U+A514 ; variant
+0xE0 <> U+A5AC ; variant
+0xE1 <> U+A5AE ; variant
+0xF5 <> U+A5DF ; variant
+0xFF <> U+A547 ; variant

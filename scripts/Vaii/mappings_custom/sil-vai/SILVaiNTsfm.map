@@ -1,0 +1,267 @@
+; SILVaiNTsfm.map
+; Copyright (c) 2009 SIL International.
+; This mapping file is based on the cc table which was used in typesetting
+;   the Vai New Testament. The mapping file has only been tested with the
+;   gospel of Mark in Vai. In particular the characters marked "a guess" were
+;   not used in Mark and could not be tested (a506, a510, a52d, a52e, a541,
+;   a542, a54b a57b, a57e, a581, a58d, a597, a5b2, a5b5, a5c1, a5ca, a5cd,
+;   a5d9, a5ef, a5f5, a604)
+; In addition, some characters in the SIL Vai fonts were not used in the cct table,
+;   so they were apparently not in the New Testament and are not mapped here.
+;   These were a50d, a51a, a539, a53f, a560, a 566, a571, a585, a58b, a58e, a593,
+;   a598, a5aa, a5b9, a5d1, a5d7, a5f9, a5ff, a605, a607. 
+; Additionally, the Vai Unicode encoding added characters which were not in the
+;   SIL Vai fonts. These are: a501, a504, a50f, a511, a513, a517, a519, a521..a523,
+;   a525, a529, a52f, a534, a536, a538, a53c, a53e, a55b, a55d, a55f, a563, a565, 
+;   a56b, a572, a575, a580, a582, a584, a588, a58a, a592, a594, a596, a59a, a5a0,
+;   a5a5, a5a7, a5a9, a5ad, a5af, a5be, a5c0, a5c8, a5cc, a5ce, a5d0, a5d4, a5d6,
+;   a5e7, a5ed, a5f0, a5f4, a5f6, a5f8, a5fc, a5fe, a60c..a62b
+
+; SIL Vai NT encoding
+LHSName					"LBT-VAI_NT-sfm"
+RHSName					"Vai Unicode"
+LHSDescription			"LBT Vai New Testament encoding"
+RHSDescription			"Vai Unicode 5.1"
+Version					"0.3"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SILVaitoUnicode"
+
+ByteDefault	'?'
+UniDefault	replacement_character
+
+ByteClass [ascii] = (0..127)
+UniClass  [ascii] = (0..127)
+ByteClass [letter] = ( 'a' .. 'z' )
+UniClass [letter] = ( U+0061 .. U+007a )
+ByteClass [digit] = ( '0' .. '9' )
+UniClass [digit] = ( U+0030 .. U+0039 )
+ByteClass	[CTL] = (   0x00 .. 0x1f     0x7f )
+UniClass	[CTL] =	( U+0000 .. U+001f U+007f )
+
+[CTL]	<>	[CTL]
+
+[digit] <> [digit]
+
+; SPECIAL LETTERS
+" "       <> space
+";c"      <> copyright_sign
+"!"       <> U+0021
+; "&"       <> '<@033>' c remapped d046   c '.'
+"("       <> U+0028
+")"       <> U+0029
+"*"       <> U+002A ;  could be U+A60E, but unlikely as it seems to be for footnotes
+","       <> U+002C
+"--"       <> U+2014
+"-"       <> U+002D
+"."       <> U+002E
+":"       <> U+003A
+"?"       <> U+003F
+"%f"	      <> asterisk U+0066 ; footnote marker
+"%"       <> asterisk ; end of footnote marker
+; "}"       > '<@043>' c "'" ; uncertain
+"b" 0xE7  <> U+A5EA
+"b" 0xEB  <> U+A5C3
+"ba"      <> U+A552
+"be"      <> U+A507
+"bh" 0xE7 <> U+A5E9
+"bh" 0xEB <> U+A5C2
+"bha"     <> U+A551
+"bhe"     <> U+A506 ; a guess
+"bhi"     <> U+A52B
+"bho"     <> U+A577
+"bhu"     <> U+A59C
+"bi"      <> U+A52C
+"bo"      <> U+A578
+"bu"      <> U+A59D
+"d" 0xE7  <> U+A5F5 ;  a guess
+"d" 0xEB  <> U+A5CD ;  a guess
+"da"      <> U+A55C
+"de"      <> U+A510 ; a guess
+"di"      <> U+A535
+"dle"     <> U+A514
+"do"      <> U+A581 ; a guess
+"du"      <> U+A5A6
+"f" 0xE7  <> U+A5F1
+"f" 0xEB  <> U+A5C9
+"fa"      <> U+A558
+"fe"      <> U+A50C
+"fi"      <> U+A531
+"fo"      <> U+A57D
+"fu"      <> U+A5A2
+"g" 0xE7  <> U+A606
+"g" 0xEB  <> U+A5DD
+"ga"      <> U+A56D
+"gb" 0xE7 <> U+A5EF ;  a guess
+"gb" 0xEB <> U+A5C7
+"gba"     <> U+A557
+"gbe"     <> U+A50B
+"gbi"     <> U+A530
+"gbo"     <> U+A57C
+"gbu"     <> U+A5A1
+"ge"      <> U+A520
+"gi"      <> U+A545
+"go"      <> U+A591
+"gu"      <> U+A5B6
+"h" 0x8B  <> U+A527
+"h" 0x94  <> U+A5E5
+"h" 0x9F  <> U+A54D
+"h" 0xE7  <> U+A5E4
+"h" 0xEB  <> U+A5BD
+"ha"      <> U+A54C
+"he"      <> U+A502
+"hi"      <> U+A526
+"ho"      <> U+A573
+"hu"      <> U+A597 ; a guess
+"j" 0xE7  <> U+A600
+"j" 0xEB  <> U+A5D8
+"ja"      <> U+A567
+"je"      <> U+A51B
+"ji"      <> U+A540
+"jo"      <> U+A58C
+"ju"      <> U+A5B1
+"k" 0xE7  <> U+A603
+"k" 0xEB  <> U+A5DB
+"ka"      <> U+A56A
+"ke"      <> U+A51E
+"ki"      <> U+A543
+"ko"      <> U+A58F
+"kp" 0x9F <> U+A555
+"kp" 0xE7 <> U+A5EC
+"kp" 0xEB <> U+A5C5
+"kpa"     <> U+A554
+"kpe"     <> U+A509
+"kpi"     <> U+A52E ; a guess
+"kpo"     <> U+A57A
+"kpu"     <> U+A59F
+"ku"      <> U+A5B4
+"l" 0xE7  <> U+A5F7
+"l" 0xEB  <> U+A5CF
+"la"      <> U+A55E
+"le"      <> U+A512
+"li"      <> U+A537
+"lo"      <> U+A583
+"lu"      <> U+A5A8
+"m" 0xE7  <> U+A608
+"m" 0xEB  <> U+A5DE
+"ma"      <> U+A56E
+"mb" 0xE7 <> U+A5EB
+"mb" 0xEB <> U+A5C4
+"mba"     <> U+A553
+"mbe"     <> U+A508
+"mbi"     <> U+A52D ;  a guess
+"mbo"     <> U+A579
+"mbu"     <> U+A59E
+"mgb" 0xE7 <> U+A5EE
+"mgb" 0xEB <> U+A5C6
+"mgba"     <> U+A556
+"mgbe"     <> U+A50A
+"mgbo"     <> U+A57B ; a guess
+"mi"      <> U+A546
+"mu"      <> U+A5B7
+"n" 0xE7  <> U+A609
+"n" 0xEB  <> U+A5DF
+"na"      <> U+A56F
+"nd" 0xE7 <> U+A5FA
+"nd" 0xEB <> U+A5D2
+"nda"     <> U+A561
+"nde"     <> U+A515
+"ndi"     <> U+A53A
+"ndo"     <> U+A586
+"ndu"     <> U+A5AB
+"ni"      <> U+A547
+"nj" 0xE7 <> U+A601
+"nj" 0xEB <> U+A5D9 ; a guess
+"nja"     <> U+A568
+"nje"     <> U+A51C
+"nji"     <> U+A541 ; a guess
+"njo"     <> U+A58D ; a guess
+"nju"     <> U+A5B2 ;  a guess
+"nu"      <> U+A5B8
+"ny" 0xE7 <> U+A60A
+"ny" 0xEB <> U+A5E0
+"nya"     <> U+A570
+"nyi"     <> U+A548
+"p" 0xE7  <> U+A5E8
+"p" 0xEB  <> U+A5C1 ; a guess
+"pa"      <> U+A550
+"pe"      <> U+A505
+"pi"      <> U+A52A
+"po"      <> U+A576
+"pu"      <> U+A59B
+"s" 0xE7  <> U+A5FB
+"s" 0xEB  <> U+A5D3
+"sa"      <> U+A562
+"se"      <> U+A516
+"si"      <> U+A53B
+"so"      <> U+A587
+"su"      <> U+A5AC
+"t" 0xE7  <> U+A5F3
+"t" 0xEB  <> U+A5CB
+"ta"      <> U+A55A
+"te"      <> U+A50E
+"ti"      <> U+A533
+"to"      <> U+A57F
+"tu"      <> U+A5A4
+"v" 0xE7  <> U+A5F2
+"v" 0xEB  <> U+A5CA ;  a guess
+"va"      <> U+A559
+"ve"      <> U+A50D
+"vi"      <> U+A532
+"vo"      <> U+A57E ; a guess
+"vu"      <> U+A5A3
+"w" 0x9F  <> U+A54F
+"w" 0xE7  <> U+A5E6
+"w" 0xEB  <> U+A5BF
+"wa"      <> U+A54E
+"we"      <> U+A503
+"wi"      <> U+A528
+"wo"      <> U+A574
+"wu"      <> U+A599
+"y" 0xE7  <> U+A602
+"y" 0xEB  <> U+A5DA
+"ya"      <> U+A569
+"ye"      <> U+A51D
+"yi"      <> U+A542 ; a guess
+"yo"      <> U+A58E
+"yu"      <> U+A5B3
+"z" 0xE7  <> U+A5FD
+"z" 0xEB  <> U+A5D5
+"za"      <> U+A564
+"ze"      <> U+A518
+"zi"      <> U+A53D
+"zo"      <> U+A589
+"zu"      <> U+A5AE
+0xE9 "g" 0x94 <> U+A5E3
+0xE9 "g" 0x9F <> U+A54B ;  a guess
+0xE9 "g" 0xE7 <> U+A604 ;  a guess
+0xE9 "g" 0xEB <> U+A5DC
+0xE9 "ga" <> U+A56C
+0xE9 "ge" <> U+A51F
+0xE9 "gi" <> U+A544
+0xE9 "go" <> U+A590
+0xE9 "gu" <> U+A5B5 ;  a guess
+"a"       <> U+A549
+"e"       <> U+A500
+"i"       <> U+A524
+"o"       <> U+A571
+"u"       <> U+A595
+0x8B      <> U+A527 ; same as "h" 0x8B?
+0x94      <> U+A5E2
+0x95      <> U+A5BB
+0x9F      <> U+A54A
+0xE7      <> U+A5E1
+0xE9      <> U+A60B
+0xEB      <> U+A5BA
+0xF2 ' ' 0xF5 <> U+2019 U+201D
+0xF2 0xF5 <> U+2019 U+201D
+0xF4 ' ' 0xF3 <> U+201C U+2018
+0xF4 0xF3 <> U+201C U+2018
+0xF2      <> U+2019
+0xF3      <> U+2018
+0xF4      <> U+201C
+0xF5      <> U+201D
+
+"["     <> U+005B
+"]"     <> U+005D
+"w~r"   <> U+A5BC
