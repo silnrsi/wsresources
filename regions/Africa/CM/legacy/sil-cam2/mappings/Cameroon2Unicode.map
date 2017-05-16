@@ -2,7 +2,7 @@
 ;   Conversion Type = Legacy_to_from_Unicode
 ;   Left-hand side font = Cam Cam SILDoulosL;14.25
 ;   Right-hand side font = Doulos SIL;14.25
-;   Main Window Position = 0,0,650,708
+;   Main Window Position = 0,0,650,1047
 ;   Left-hand side Character Map Window Position = 650,0,494,442
 ;   Right-hand side Character Map Window Position = 650,442,545,501
 ;   Left-hand side code page = 1252
@@ -22,10 +22,12 @@
 ; Also, I think an earlier version of this map used to turn 0x8A into 
 ; latin_small_letter_script_g (i.e. U+0261), so that now reverses also to 0x67, so
 ; that the reconversion of earlierly converted data works correctly.
+; 2017-05-16 Lorna Evans lorna_evans@sil.org changed U+F208 > U+2C6D, U+F218 > U+0244
+;          F171 > 1DC4 , F172 > 1DC5, F173 > 1DC6, F174 > 1DC7
 
 EncodingName            "Cam2-1992"
 DescriptiveName         "Cameroon Legacy Fonts to Unicode"
-Version                 "1.1"
+Version                 "1.2"
 Contact                 "mailto:computer_dept_cameroon@sil.org"
 RegistrationAuthority   "SIL Cameroon"
 RegistrationName        "Cameroon Encoding"
@@ -40,10 +42,10 @@ UniClass[oWidth] = (U+0061 U+0251 U+0065 U+025B U+0259 U+006F U+0254 U+00F8 \
 U+0075 U+0289 U+0079 U+006E U+014B)	; o-width
 UniClass[iWidthCap] = (U+0049 U+0197)	; i-width - high 
 UniClass[mWidthCap] = (U+004D U+0057 U+00C6 U+0152)	;m-width - high
-UniClass[oWidthCap] = (U+0041 U+F208 U+0045 U+0190 U+018F U+004F U+0186 U+00D8 \
-U+0055 U+F218 U+0059 U+004E U+014A)	; o-width - high
+UniClass[oWidthCap] = (U+0041 U+2C6D U+0045 U+0190 U+018F U+004F U+0186 U+00D8 \
+U+0055 U+0244 U+0059 U+004E U+014A)	; o-width - high
 UniClass[DiacritO] = (U+0300 U+0301 U+0302 U+030C U+0304 U+0303 U+0308 U+030D \
-U+F171 U+F172 U+F173 U+F174)	; upper diacritic
+U+1DC4 U+1DC5 U+1DC6 U+1DC7)	; upper diacritic
 UniClass[DiacritU] = (U+0330 U+0323 U+0327)	; lower diacritic
 
 ByteDefault 42
@@ -180,13 +182,17 @@ UniDefault U+002A
 0x9F	<>	U+01B3	; latin_capital_letter_y_with_hook
 0xA0	<>	U+00A0	; no_break_space
 0xA1	<>	U+0303 / [iWidth] [DiacritU]? _	; i-width_combining_tilde
-0xA2	<>	U+F174 / [oWidth] [DiacritU]? _	; o-width_PUA combining HM Tone
-0xA3	<>	U+F172 / [oWidth] [DiacritU]? _	; o-width_PUA combining LM Tone
+0xA2	<>	U+1DC7 / [oWidth] [DiacritU]? _	; o-width_PUA combining HM Tone
+0xA2	<	U+F174 / [oWidth] [DiacritU]? _	; o-width_PUA combining HM Tone
+0xA3	<>	U+1DC5 / [oWidth] [DiacritU]? _	; o-width_PUA combining LM Tone
+0xA3	<	U+F172 / [oWidth] [DiacritU]? _	; o-width_PUA combining LM Tone
 0xA4	<>	U+00A4	; currency_sign
-0xA5	<>	U+F173 / [oWidth] [DiacritU]? _	; o-width_PUA combining ML Tone
+0xA5	<>	U+1DC6 / [oWidth] [DiacritU]? _	; o-width_PUA combining ML Tone
+0xA5	<	U+F173 / [oWidth] [DiacritU]? _	; o-width_PUA combining ML Tone
 0xA6	<>	U+00A6	; broken_bar
 0xA7	<>	U+0303 / [iWidthCap] [DiacritU]? _	; i-widthCap_combining_tilde
-0xA8	<>	U+F171 / [oWidth] [DiacritU]? _	; o-width_PUA combining MH Tone
+0xA8	<>	U+1DC4 / [oWidth] [DiacritU]? _	; o-width_PUA combining MH Tone
+0xA8	<	U+F171 / [oWidth] [DiacritU]? _	; o-width_PUA combining MH Tone
 0xA9	<>	U+00A9	; copyright_sign
 0xAA	<>	U+00AA	; feminine_ordinal_indicator
 0xAB	<>	U+00AB	; left_pointing_double_angle_quotation_mark
@@ -215,7 +221,8 @@ UniDefault U+002A
 0xC2	<>	U+030C / [oWidthCap] [DiacritU]? _	; o-widthCap_combining_caron
 0xC3	<>	U+0327 / [oWidthCap] [DiacritU]? _	; o-widthCap_combining_cedilla
 0xC4	<>	U+0181	; latin_capital_letter_b_with_hook
-0xC5	<>	U+F208	; PUA-LowBackVowel-UpperCase
+0xC5	<>	U+2C6D	; PUA-LowBackVowel-UpperCase
+0xC5	<	U+F208	; PUA-LowBackVowel-UpperCase
 0xC6	<>	U+00C6	; latin_capital_letter_ae
 0xC7	<>	U+0303 / [oWidthCap] [DiacritU]? _	; o-widthCap_combining_tilde
 0xC8	<>	U+0300 / [oWidthCap] [DiacritU]? _	; o-widthCap_combining_grave_accent
@@ -236,7 +243,8 @@ UniDefault U+002A
 0xD7	<>	U+00D7	; multiplication_sign
 0xD8	<>	U+00D8	; latin_capital_letter_o_with_stroke
 0xD9	<>	U+0301 / [iWidthCap] [DiacritU]? _	; i-widthCap_combining_acute_accent
-0xDA	<>	U+F218	; PUA_capital_barred_u
+0xDA	<>	U+0244	; PUA_capital_barred_u
+0xDA	<	U+F218	; PUA_capital_barred_u
 0xDB	<>	U+030C / [iWidthCap] [DiacritU]? _	; i-widthCap_combining_caron
 0xDC	<>	U+02C8 	; modifier_vertical_line  - In CamCam, straight line Glottal Stop
 0xDD	<>	U+0308 / [oWidthCap] [DiacritU]? _	; o-widthCap_combining_diaeresis

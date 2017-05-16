@@ -1,6 +1,15 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 5/16/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+; Modified by lorna_evans@sil.org changed F173 1DC6, F174 > 1DC7, commented out lines 29 and 30
+
 EncodingName            "SIL-93linb-2005"
 DescriptiveName         "SIL Burkina Faso 1990 font family to Unicode"
-Version                 "1"
+Version                 "1.1"
 Contact                 "mailto:Doug_Higby@sil.org"
 RegistrationAuthority   "SIL International"
 RegistrationName        "SIL-93linb-2005"
@@ -17,8 +26,8 @@ Class [nonOverstrike] = ( 0x20 .. 0x5D 0x5F .. 0xBE 0xC6 0xC7 0xC9 .. 0xF6 0xF9 
 
 pass ( Byte_Unicode )
 RHSflags (ExpectsNFD)
-ByteDefault		'?'
-UniDefault		replacement_character
+; ByteDefault		'?'
+; UniDefault		replacement_character
 ByteClass [CTL] = (   0x00 .. 0x1f   )
 UniClass  [CTL] = ( U+0000 .. U+001f )
 ByteClass [SevenBit] = ( 0x20 .. 0x5D 0x5F ..  0x7f )
@@ -104,8 +113,10 @@ UniClass[istrike] = ( U+0300 U+0301 U+0302 U+0303 U+0304 U+0306 U+0308 )
 0xC1	<>	COMBINING_MACRON / [hor] _
 0xC2	<>	COMBINING_CIRCUMFLEX_ACCENT / [hor] _
 0xC3	<>	COMBINING_CARON / [hor] _
-0xC4	<>	U+F174 / [hor] _
-0xC5	<>	U+F173 / [hor] _
+0xC4	<>	U+1DC7 / [hor] _
+0xC4	<	U+F174 / [hor] _
+0xC5	<>	U+1DC6 / [hor] _
+0xC5	<	U+F173 / [hor] _
 0xC6	<>	LATIN_CAPITAL_LETTER_REVERSED_E COMBINING_TILDE
 0xC7	<>	LATIN_SMALL_LETTER_OPEN_E COMBINING_TILDE
 0xC8	<>	COMBINING_MACRON / [hor] _
@@ -161,6 +172,8 @@ UniClass[istrike] = ( U+0300 U+0301 U+0302 U+0303 U+0304 U+0306 U+0308 )
 ;0xFA	<>	?
 0xFB	<>	U+0301 / [lor] _ ; COMBINING_ACUTE_ACCENT / [lor] _
 0xFC	<>	COMBINING_CARON / [lor] _
-0xFD	<>	U+F174 / [lor] _
-0xFE	<>	U+f173 / [lor] _
+0xFD	<>	U+1DC7 / [lor] _
+0xFD	<	U+F174 / [lor] _
+0xFE	<>	U+1DC6 / [lor] _
+0xFE	<	U+f173 / [lor] _
 ;0xFF	<>  ?	

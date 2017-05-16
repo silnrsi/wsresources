@@ -1,6 +1,16 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 5/16/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,1025
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+; Modified by lorna_evans@sil.org.
+;   F173 > 1DC6, F174 > 1DC7, F213 > F24D, F214 > F24C, F21A > 2C73, F21B > 2C72
+;   commented out lines 34, 35
 EncodingName            "SIL-BF Font Family-2005"
 DescriptiveName         "SIL Burkina Faso font family to Unicode"
-Version                 "2.0"
+Version                 "2.1"
 Contact                 "mailto:Doug_Higby@sil.org"
 RegistrationAuthority   "SIL International"
 RegistrationName        "SIL-BF_Font_Family-2005"
@@ -21,8 +31,8 @@ pass( byte_Unicode )
 ;set normalization flags
 RHSflags (ExpectsNFD)
 
-ByteDefault	'?'
-UniDefault	replacement_character
+; ByteDefault	'?'
+; UniDefault	replacement_character
 ByteClass [CTL] = (   0x00 .. 0x1f   )
 UniClass  [CTL] = ( U+0000 .. U+001f )
 ByteClass [SevenBit] = ( 0x20 .. 0x7f )
@@ -44,7 +54,7 @@ UniClass [v1ww] = ( U+006D U+0077 )
 UniClass [v2nw] = ( U+0049 U+0196 )
 UniClass [v2mw] = ( U+0045 U+018E U+0190 U+01B2 )
 UniClass [v2sw] = ( U+0041 U+004D U+004E U+004F U+0055 U+0056 U+0057 U+005A U+014A U+0186 U+019D )
-Uniclass [diacritic] = ( U+0300 U+0301 U+0302 U+0304 U+0308 U+030C U+F174 U+F173 )
+Uniclass [diacritic] = ( U+0300 U+0301 U+0302 U+0304 U+0308 U+030C U+1DC7 U+1DC6 )
 Uniclass [nasal] = ( COMBINING_TILDE )
 ; Byteclasses below are groupings of "best match" diacritics for each letter height and width.
 ; "Best match" means that Although there is no diaeresis for a3sw, the highest diaeresis of the
@@ -102,7 +112,8 @@ ByteClass [cflex] = ( 0xD3 0xF0 0xF1 0xF2 0xF3 0xE4 )
 0x92	<>	RIGHT_SINGLE_QUOTATION_MARK ; (U+2019)	;right_single_quotation_mark  --  quoteright = SILID 9038*        
 0x93	<>	LEFT_DOUBLE_QUOTATION_MARK ; (U+201C)
 0x94	<>	RIGHT_DOUBLE_QUOTATION_MARK ; (U+201D)
-0x95	<>	U+F21B	; (latin_capital_letter_w_with_hook --  PUA)
+0x95	<>	U+2C72	; (latin_capital_letter_w_with_hook --  PUA)
+0x95	<	U+F21B	; (latin_capital_letter_w_with_hook --  PUA)
 0x96	<>	EN_DASH ; (U+2013)
 0x97	<>	EM_DASH ; (U+2014)
 ;If uppercase schwa is reversed capital E, then place forward arrow > by LATIN_SMALL_LETTER_TURNED_E
@@ -124,7 +135,8 @@ ByteClass [cflex] = ( 0xD3 0xF0 0xF1 0xF2 0xF3 0xE4 )
 0xA2	<>	LATIN_CAPITAL_LETTER_V_WITH_HOOK ; (U+01B2)
 0xA3	<>	POUND_SIGN ; (U+00A3)
 0xA4	<>	CURRENCY_SIGN ; (U+00A4)
-0xA5	<>	U+F21A	;latin_small_letter_w_with_hook   PUA                   
+0xA5	<>	U+2C73	;latin_small_letter_w_with_hook   PUA                   
+0xA5	<	U+F21A	;latin_small_letter_w_with_hook   PUA                   
 0xA6	<>	VERTICAL_LINE ; (U+007C)
 0xAB	<>	U+00AB	; (left_pointing_double_angle_quotation_mark)
 0xAC	>	LATIN_CAPITAL_LETTER_OPEN_E ; (U+0190) ; one way conversion - not to be used.
@@ -143,8 +155,10 @@ ByteClass [cflex] = ( 0xD3 0xF0 0xF1 0xF2 0xF3 0xE4 )
 [a3nw] <>  [diacritic] / [v2nw] ( [diacritic] | [nasal] ) _
 [a3sw] <>  [diacritic] / [v2sw] ( [diacritic] | [nasal] ) _
 
-0xCB	<>	U+F213	;latin_small_letter_r_with_stroke -- PUA
-0xCC	<>	U+F214	;latin_capital_letter_r_with_stroke -- PUA
+0xCB	<>	U+024D	;latin_small_letter_r_with_stroke -- PUA
+0xCB	<	U+F213	;latin_small_letter_r_with_stroke -- PUA
+0xCC	<>	U+024C	;latin_capital_letter_r_with_stroke -- PUA
+0xCC	<	U+F214	;latin_capital_letter_r_with_stroke -- PUA
 0xCF	<>	LATIN_SMALL_LETTER_DOTLESS_J_WITH_STROKE ; (U+025F)	;latin_small_letter_dotless_j_with_stroke    
 0xD0	<>	LATIN_SMALL_LETTER_EZH ; (U+0292)
 0xD1	<>	LATIN_SMALL_LETTER_ESH ; (U+0283)

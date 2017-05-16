@@ -1,12 +1,23 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 5/16/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+; 2017-05-16 Modified by lorna_evans@sil.org
+;   Changed PUA to Unicode F216
+;   Commented out lines 19,20
+
 EncodingName	'Tombouctou-Dutch'
 DescriptiveName	'Tombouctou-Dutch to Unicode'
-Version                 "1.0"
+Version                 "1.1"
 Contact                 "mailto:Doug_Higby@sil.org"
 RegistrationAuthority   "SIL International"
 RegistrationName        "SIL-Tombouctou-Dutch-2006"
 
-ByteDefault		'?'
-UniDefault		replacement_character
+; ByteDefault		'?'
+; UniDefault		replacement_character
 
 ByteClass [ascii] = ( 0 .. 127 )
 UniClass [ascii] = ( 0x0000 .. 0x007f )
@@ -75,7 +86,8 @@ UniClass [latin1] = ( U+00a0..U+00a2 U+00a4 U+00a6 U+00a8 U+00ab U+00ad U+00af U
 0xD2	<>	latin_small_letter_esh
 0xD3	<>	latin_capital_letter_d_with_hook
 0xD5	<>	latin_capital_letter_ezh
-0xD6	<>	U+F216
+0xD6	<>	U+1D98
+0xD6	<	U+F216
 0xD7	<>	latin_letter_pharyngeal_voiced_fricative
 0xD8	>	latin_capital_letter_gamma
 0xDA	<>	latin_small_letter_b_with_hook

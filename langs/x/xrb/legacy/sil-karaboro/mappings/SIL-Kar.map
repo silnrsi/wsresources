@@ -1,3 +1,14 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 5/16/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+; 2017-05-16 modified by lorna_evans@sil.org
+;   Changed PUA to Unicode F171..F174, F21B
+;   commented out lines 45,46
+
 EncodingName            "SIL-Karaboro-2006"
 DescriptiveName         "SIL Karaboro font family to Unicode"
 Version                 "1.0"
@@ -31,8 +42,8 @@ pass( byte_Unicode )
 ;set normalization flags
 RHSflags (ExpectsNFD)
 
-ByteDefault	'?'
-UniDefault	replacement_character
+; ByteDefault	'?'
+; UniDefault	replacement_character
 ByteClass [CTL] = (   0x00 .. 0x1f   )
 UniClass  [CTL] = ( U+0000 .. U+001f )
 ByteClass [SevenBit] = ( 0x20 .. 0x7f )
@@ -54,7 +65,7 @@ UniClass [v1ww] = ( U+006D U+0077 )
 UniClass [v2nw] = ( U+0049 U+0196 )
 UniClass [v2mw] = ( U+0045 U+018E U+0190 U+01B2 )
 UniClass [v2sw] = ( U+0041 U+004D U+004E U+004F U+0055 U+0056 U+0057 U+005A U+014A U+0186 U+019D )
-Uniclass [diacritic] = ( U+0300 U+0301 U+0302 U+0304 U+F172 U+030C U+F174 U+F173 U+F171)
+Uniclass [diacritic] = ( U+0300 U+0301 U+0302 U+0304 U+1DC5 U+030C U+1DC7 U+1DC6 U+1DC4)
 Uniclass [nasal] = ( COMBINING_TILDE )
 ; Byteclasses below are groupings of "best match" diacritics for each letter height and width.
 ; "Best match" means that although there is no diaeresis for a3sw, the highest diaeresis of the
@@ -109,7 +120,8 @@ ByteClass [cflex] = ( 0xD3 0xF0 0xF1 0xF2 0xF3 0xE4 )
 0x92	<>	RIGHT_SINGLE_QUOTATION_MARK ; (U+2019)	;right_single_quotation_mark  --  quoteright = SILID 9038*        
 0x93	<>	LEFT_DOUBLE_QUOTATION_MARK ; (U+201C)
 0x94	<>	RIGHT_DOUBLE_QUOTATION_MARK ; (U+201D)
-0x95	<>	U+F21B	; (latin_capital_letter_w_with_hook --  PUA)
+0x95	<>	U+2C72	; (latin_capital_letter_w_with_hook --  PUA)
+0x95	<	U+F21B	; (latin_capital_letter_w_with_hook --  PUA)
 0x96	<>	EN_DASH ; (U+2013)
 0x97	<>	EM_DASH ; (U+2014)
 ;If uppercase schwa is reversed capital E, then place forward arrow > by LATIN_SMALL_LETTER_TURNED_E
@@ -129,7 +141,8 @@ ByteClass [cflex] = ( 0xD3 0xF0 0xF1 0xF2 0xF3 0xE4 )
 0xA0	<>	U+00A0 ;NO-BREAK_SPACE
 0xA1	<>	LATIN_CAPITAL_LETTER_OPEN_O ; (U+0186)
 0xA2	<>	LATIN_CAPITAL_LETTER_V_WITH_HOOK ; (U+01B2)
-0xA3	<>	U+F174 ;COMBINING_ACUTE-MACRON
+0xA3	<>	U+1DC7 ;COMBINING_ACUTE-MACRON
+0xA3	<	U+F174 ;COMBINING_ACUTE-MACRON
 0xA4	<>	CURRENCY_SIGN ; (U+00A4)
 ;0xA5	<>	U+F171	; COMBINING_MACRON-ACUTE                   
 0xA6	<>	LATIN_SMALL_LETTER_O_WITH_TILDE

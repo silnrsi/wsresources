@@ -1,3 +1,14 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 5/16/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,971
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+; 2017-05-16 Modified by lorna_evans@sil.org
+;   changed PUA F171..F174 to Unicode
+;   commented out lines 34,35
+
 ; TECkit mapping table to convert the Mali Standard font to and from Unicode.
 
 EncodingName			"SIL-Mali Standard Font Family"
@@ -21,8 +32,8 @@ Class [Tier2] = ( 0x80 0x8F 0xC1 0xC3 0xC5 0xC8 0xCC 0xCD 0xD0 0xD5 0xD8 0xDA 0x
 
 pass ( Byte_Unicode )
 RHSflags (ExpectsNFD)
-ByteDefault		'?'
-UniDefault		replacement_character
+; ByteDefault		'?'
+; UniDefault		replacement_character
 ByteClass [CTL] = ( 0x00 .. 0x1f )
 UniClass  [CTL] = ( U+0000 .. U+001f )
 ByteClass [SevenBit] = ( 0x20 .. 0x68 0x6A .. 0x7f )
@@ -31,8 +42,8 @@ ByteClass [EightBit] = ( 0xA0 0xA2..0xA4 0xA6..0xB0 0xB4..0xB8 0xBA 0xBB 0xBD 0x
 UniClass  [EightBit] = ( U+00A0 U+00A2..U+00A4 U+00A6..U+00B0 U+00B4..U+00B8 U+00BA U+00BB U+00BD U+00BE U+00C6 U+00DF U+00E6 )
 ; Classes for low and high overstrike recipients.
 UniClass[lowrecipient] = ( U+0020 U+0061 U+0065 U+0069 U+006F U+0075 U+025B U+0254 U+028A U+01DD U+0153 U+006D U+006E U+0272 U+014B U+0077 U+0079 U+007A )  
-UniClass[highrecipient] = ( U+0041 U+0045 U+0049 U+004F U+0055 U+0190 U+0186 U+004D U+004E U+019D U+014A U+0057 U+0059 U+005A U+00E0 .. U+00E2 U+00E4 U+00E8 .. U+00EF U+00F2 .. U+00F4 U+00F6 U+00F9 .. U+00FC U+026A U+0300 .. U+0304 U+0308 U+030C U+030F U+F173 U+F174 )
-Uniclass [diacritic] = ( U+0300 .. U+0304 U+0308 U+030C U+030F U+F173 U+F174)
+UniClass[highrecipient] = ( U+0041 U+0045 U+0049 U+004F U+0055 U+0190 U+0186 U+004D U+004E U+019D U+014A U+0057 U+0059 U+005A U+00E0 .. U+00E2 U+00E4 U+00E8 .. U+00EF U+00F2 .. U+00F4 U+00F6 U+00F9 .. U+00FC U+026A U+0300 .. U+0304 U+0308 U+030C U+030F U+1DC6 U+1DC7 )
+Uniclass [diacritic] = ( U+0300 .. U+0304 U+0308 U+030C U+030F U+1DC6 U+1DC7)
 
 [CTL]		<>	[CTL]
 [SevenBit]	<>	[SevenBit] 
@@ -90,27 +101,35 @@ Uniclass [diacritic] = ( U+0300 .. U+0304 U+0308 U+030C U+030F U+F173 U+F174)
 0xCA	<>	U+0302 / [lowrecipient] _	; OVERSTRIKE combining_letter_circumflex_accent  
 0xCC	<>	U+030C / [highrecipient] _	; OVERSTRIKE combining_caron  
 0xCD	<>	U+0302 / [highrecipient] _	; OVERSTRIKE combining_letter_circumflex_accent  
-0xD0	<>	U+F171 / [highrecipient] _	; OVERSTRIKE 
+0xD0	<>	U+1DC4 / [highrecipient] _	; OVERSTRIKE 
+0xD0	<	U+F171 / [highrecipient] _	; OVERSTRIKE 
 0xD1	<>	U+0304 / [lowrecipient] _	; OVERSTRIKE combining_macron  
 0xD2	<>	U+019D	; latin_capital_letter_n_with_left_hook  
 0xD3	<>	U+01B3	; latin_capital_letter_y_with_hook  
 0xD4	<>	U+0301 / [lowrecipient] _	; OVERSTRIKE combining_letter_acute_accent
 0xD5	<>	U+0303 / [highrecipient] _	; OVERSTRIKE combining_small_tilde 
 0xD7	<>	U+0283	; latin_small_letter_esh
-0xD8	<>	U+F172 / [highrecipient] _	; OVERSTRIKE 
+0xD8	<>	U+1DC5 / [highrecipient] _	; OVERSTRIKE 
+0xD8	<	U+F172 / [highrecipient] _	; OVERSTRIKE 
 0xD9	<>	U+0257	; latin_small_letter_d_with_hook  
-0xDA	<>	U+F173 / [highrecipient] _	; OVERSTRIKE 
-0xDB	<>	U+F173 / [lowrecipient] _	; OVERSTRIKE 
-0xDE	<>	U+F174 / [highrecipient] _	; OVERSTRIKE
+0xDA	<>	U+1DC6 / [highrecipient] _	; OVERSTRIKE 
+0xDA	<	U+F173 / [highrecipient] _	; OVERSTRIKE 
+0xDB	<>	U+1DC6 / [lowrecipient] _	; OVERSTRIKE 
+0xDB	<	U+F173 / [lowrecipient] _	; OVERSTRIKE 
+0xDE	<>	U+1DC7 / [highrecipient] _	; OVERSTRIKE
+0xDE	<	U+F174 / [highrecipient] _	; OVERSTRIKE
 0xE3	<>	U+014B	; latin_small_letter_eng  
 0xE5	<>	U+0272	; latin_small_letter_n_with_left_hook  
-0xF0	<>	U+F171 / [lowrecipient] _	; OVERSTRIKE 
+0xF0	<>	U+1DC4 / [lowrecipient] _	; OVERSTRIKE 
+0xF0	<	U+F171 / [lowrecipient] _	; OVERSTRIKE 
 0xF1	<>	U+01B4	; latin_small_letter_y
 0xF5	<>	U+0303 / [lowrecipient] _	; OVERSTRIKE combining_small_tilde  
 0xF7	<>	U+0294	; LATIN_LETTER_GLOTTAL_STOP
-0xF8	<>	U+F174 / [lowrecipient] _	; OVERSTRIKE
+0xF8	<>	U+1DC7 / [lowrecipient] _	; OVERSTRIKE
+0xF8	<	U+F174 / [lowrecipient] _	; OVERSTRIKE
 0xFD	<>	U+01DD	; LATIN_SMALL_LETTER_TURNED_E
-0xFE	<>	U+F174 / [lowrecipient] _	; OVERSTRIKE
+0xFE	<>	U+1DC7 / [lowrecipient] _	; OVERSTRIKE
+0xFE	<	U+F174 / [lowrecipient] _	; OVERSTRIKE
 0xFF	<>	U+0253	; LATIN_SMALL_LETTER_B_WITH_HOOK
 
 0xC7  <>  LATIN_CAPITAL_LETTER_C COMBINING_CEDILLA  
