@@ -1,0 +1,704 @@
+	USV	#  Symbol Name
+	Indented lines are ignored by compiler.  jw 2 June 2009 v1.4 (Unicode 5.1)
+0	0030	#  zero
+1	0031	#  one
+2	0032	#  two
+3	0033	#  three
+4	0034	#  four
+5	0035	#  five
+6	0036	#  six
+7	0037	#  seven
+8	0038	#  eight
+9	0039	#  nine
+-	002d	#  hyphen
+'	0027	#  apostrophe
+%	0025	#  percent
+$	0024	#  dollar		was undefined jw 12 Dec  2008 v1.3
+*	002a	#  asterisk		was undefined jw 12 Dec  2008 v1.3
+_	005f	#  underscore	was 002d jw 12 Dec  2008 v1.3
++	002b	#  plus			was 003d jw 12 Dec  2008 v1.3
+A	0041	#  Uppercase A
+B	0042	#  Uppercase B
+C	0043	#  Uppercase C
+D	0044	#  Uppercase D
+E	0045	#  Uppercase E
+F	0046	#  Uppercase F
+G	0047	#  Uppercase G
+H	0048	#  Uppercase H
+I	0049	#  Uppercase I
+J	004A	#  Uppercase J
+K	004B	#  Uppercase K
+L	004C	#  Uppercase L
+M	004D	#  Uppercase M
+N	004E	#  Uppercase N
+O	004F	#  Uppercase O
+P	0050	#  Uppercase P
+Q	0051	#  Uppercase Q
+R	0052	#  Uppercase R
+S	0053	#  Uppercase S
+T	0054	#  Uppercase T
+U	0055	#  Uppercase U
+V	0056	#  Uppercase V
+W	0057	#  Uppercase W
+X	0058	#  Uppercase X
+Y	0059	#  Uppercase Y
+Z	005A	#  Uppercase Z
+:	003A	#  colon
+"	0022	#  straight double quotes
+?	003F	#  question mark
+!	0021	#  exclamation point	jw
+a	0061	#  Lowercase A
+
+>a	0250	#  Turned A
+
+=a	0251	#  Script A
+
+=o	0252	#  Turned Script A
+
+<a	00E6	#  Ash; Lowercase A-E ligature
+|A	1D00	#  Small Capital A
+
+b	0062	#  Lowercase B
+
+>b	0253	#  Hooktop B
+
+=B	0299	#  Small Capital B
+
+=b	03B2	#  Beta
+
+c	0063	#  Lowercase C
+
+>c	0188	#  Hooktop C
+
+	010D	#  C wedge		not found
+
+=c	00E7	#  C Cedilla
+
+<c	0255	#  Curly-tail C
+
+	0297	#  Stretched C		not found
+
+d	0064	#  Lowercase D
+
+>d	0257	#  Hooktop D
+
+<d	0256	#  Right-tail D
+
+&d	1D91	#  Hooktop right-tail D
+
+	02A3	#  D-Z ligature		not found
+
+	02A4	#  D-Ezh ligature		not found
+
+	02A5	#  D-Curly-tail-Z ligature	not found
+|d	0221	#  D with curl		jw
+
+=d	00F0	#  Eth
+
+e	0065	#  Lowercase E
+
+^E	1D4A	#  Superscript schwa
+
+=e	0259	#  Schwa
+
+	025A	#  Right-hook schwa	not found
+
+=E	0258	#  Reversed E
+
+<e	025B	#  Epsilon
+
+|e	029A	#  Closed epsilon
+
+>e	025C	#  Reversed epsilon
+
+<O	025E	#  Closed reversed epsilon
+
+f	0066	#  Lowercase F
+g	0067	#  Lowercase G (looptail)
+
+<g	0261	#  Opentail G
+
+>g	0260	#  Hooktop G
+
+=G	0262	#  Small Capital G
+
+>G	029B	#  Hooktop Small Capital G
+
+=g	0263	#  Gamma
+#g	02E0	#  superscript gamma	
+
+>O	0264	#  Ram's Horns
+
+h	0068	#  Lowercase H
+
+^h	02B0	#  Superscript H
+
+>h	0127	#  Crossed H			
+
+<h	0266	#  Hooktop H
+
+>H	0267	#  Hooked Heng
+
+=h	0265	#  Turned H
+<y	0265	#  Turned H			duplicate jw	
+|y	02AE	#  Turned H with fishhook		jw
+|Y	02AF	#  Turned H with fishhook and tail 	jw	  
+
+=H	029C	#  Small Capital H
+|h	0452	#  Small letter dje		why Cyrillic? jw
+
+i	0069	#  Lowercase I
+
+	0131	#  Undotted I		not found
+
+=I	0268	#  Barred I
+
+|i	0269	#  Iota
+
+=i	026A	#  Small Capital I		
+<I	1D7B	#  barred Capital I
+
+j	006A	#  Lowercase J
+
+^j	02B2	#  Superscript J
+
+<j	029D	#  Curly-tail J
+
+	01F0	#  J wedge		not found
+
+=j	025F	#  Barred Dotless J
+
+>j	0284	#  Hooktop Barred Dotless J
+
+k	006B	#  Lowercase K
+
+>k	0199	#  Hooktop K
+
+	029E	#  Turned K		not found
+
+l	006C	#  Lowercase L
+
+^l	02E1	#  Superscript L
+
+~l	026B	#  L with tilde
+
+=l	026C	#  Belted L
+
+<l	026D	#  Right-tail L
+
+=L	029F	#  Small Capital L
+
+>l	026E	#  L-Ezh ligature
+|l	0234	#  L with curl		jw
+
+	03BB	#  Lambda		not found
+
+	019B	#  Barred lambda		not found
+
+m	006D	#  Lowercase M
+
+>m	0271	#  Left-tail M (at right)			
+
+=u	026F	#  Turned M
+
+>w	0270	#  Turned M, Right Leg
+
+n	006E	#  Lowercase N
+
+^n	207F	#  Superscript n
+
+	019E	#  N, right leg		not found
+
+=n	0272	#  Left-tail N (at left)
+
+>n	014B	#  Eng
+
+<n	0273	#  Right-tail N
+
+=N	0274	#  Small Capital N
+|n	0235	#  Small N with curl		jw
+
+o	006F	#  Lowercase O
+
+=p	0298	#  Bull's Eye
+
+=O	0275	#  Barred O		not found v1.3. re-added v1.4 jw
+
+>o	00F8	#  Slashed O
+
+<E	0153	#  Lowercase O-E ligature
+
+>E	0276	#  Small Capital O-E ligature
+|E	1D07	#  Small Cap E		jw
+
+<o	0254	#  Open O
+
+|u	0277	#  Closed omega
+
+p	0070	#  Lowercase P
+
+>p	01A5	#  Hooktop p
+
+=f	0278	#  Phi
+
+q	0071	#  Lowercase Q
+
+>q	02A0	#  Hooktop q
+
+r	0072	#  Lowercase R
+
+>r	027E	#  Fish-hook R
+
+	027C	#  Long-leg r		not found
+>L	027A	#  Turned Long-leg R
+
+<r	027D	#  Right-tail R
+
+=r	0279	#  Turned R
+
+<R	027B	#  Turned R, Right Tail
+|t	0236	#  Lowercase T with curl		jw
+
+=R	0280	#  Small Capital R
+
+>R	0281	#  Inverted Small Capital R		jw
+|r	027F	#  Reversed R with fishhook		jw
+
+s	0073	#  Lowercase S
+
+^s	02E2	#  Superscript S
+
+	0161	#  S wedge			not found
+
+<s	0282	#  Right-Tail S (at left)
+
+=s	0283	#  Esh
+|Z	0285	#  unrounded retroflex apical (Reversed Esh)	jw	v1.1
+|z	027F	#  unrounded alveolar apical 			jw	v1.1
+
+	0286	#  Curly-tail esh		not found
+
+t	0074	#  Lowercase T
+
+>t	01AD	#  Hooktop T
+
+	01AB	#  Left-hook T		not found
+
+<t	0288	#  Right-tail T
+
+	02A6	#  T-S ligature		not found
+
+	02A7	#  T-Esh ligature		not found
+
+	02A8	#  T-Curly-tail-C ligature	not found
+
+|T	0287	#  Turned T
+
+=t	03B8	#  Theta
+
+#t	1DBF	#  Superscript theta
+
+u	0075	#  Lowercase U
+
+=U	0289	#  Barred U
+
+<u	028A	#  Upsilon
+
+v	0076	#  Lowercase V
+
+<v	2C71	#  (expected to be in Unicode 5.1), labiodental flap from F25F v1.4 jw
+
+=v	028B	#  Cursive V
+
+>u	028C	#  Turned V
+
+w	0077	#  Lowercase W
+
+^w	02B7	#  Superscript W
+
+=w	028D	#  Turned W
+
+x	0078	#  Lowercase X
+
+^x	02E3	#  Superscript X
+
+=x	03C7	#  Chi
+
+y	0079	#  Lowercase Y
+
+^y	02B8	#  Superscript Y
+
+<L	028E	#  Turned Y
+
+=y	028F	#  Small Capital Y
+
+z	007A	#  Lowercase Z
+
+	017E	#  Z wedge		not found
+
+>z	0291	#  Curly-tail Z
+
+<z	0290	#  Right-tail Z
+
+=z	0292	#  Ezh; Tailed Z
+
+	0293	#  Curly-tail ezh		not found
+
+	01BB	#  Barred two		not found
+
+=?	0294	#  Glottal Stop
+
+=Q	02A1	#  Barred Glottal Stop
+
+	0296	#  Inverted glottal stop	not found
+
+<?	0295	#  Reversed Glottal Stop
+
+#?	02E4	#  Superscript reversed glottal stop
+
+<Q	02A2	#  Barred Reversed Glottal Stop
+
+<!	01C0	#  Pipe				jw
+
+>!	01C2	#  Double-barred Pipe		jw
+
+=!	01C1	#  Double Vertical Line		jw
+
+|!	01C3	#  click of some kind		jw
+
+>'	02BC	#  Apostrophe		jw
+
+&%	0325	#  Under-ring			
+@%	030A	#  Over-ring
+
+&5	032C	#  Subscript Wedge
+&"	0324	#  Subscript Umlaut		
+
+&~	0330	#  Subscript Tilde		
+
+&}	033C	#  Subscript Seagull		
+
+&[	032A	#  Subscript Bridge		
+
+&]	033A	#  Inverted Subscript Bridge	
+
+&{	033B	#  Subscript Square		
+
+&)	0339	#  Subscript Right Half-ring
+
+&(	031C	#  Subscript Left Half-ring	
+
+&+	031F	#  Subscript Plus	
+
+&_	0320	#  Under-bar			
+
+@"	0308	#  Umlaut
+
+@+	033D	#  Over-cross
+
+&8	0318	#  Advancing Sign
+
+&9	0319	#  Retracting Sign
+
+|[	02DE	#  Right Hook
+
+@~	0303	#  Superscript Tilde
+
+|]	031A	#  Corner
+
+	0334	#  Superimposed tilde		not found
+
+&6	031D	#  Raising Sign
+
+&7	031E	#  Lowering Sign
+
+&|	0329	#  Syllabicity Mark	
+
+&*	032F	#  Subscript Arch	
+
+&#	0361	#  Top Tie Bar
+
+&@	035C	#  Bottom Tie Bar
+
+	0322	#  Subscript right hook		not found
+
+,	002C	#  Comma
+
+<'	02BB	#  Reversed apostrophe		jw
+
+@.	0307	#  Over-dot
+
+	02D7	#  Minus sign			not found
+
+	02D6	#  Plus sign			not found
+
+&>	0323	#  Under-dot			
+
+	0321	#  Subscript left hook		not found
+
+	032B	#  Subscript W			not found
+
+>|	02C8	#  Vertical Stroke (Superior)
+
+<|	02CC	#  Vertical Stroke (Inferior)
+
+=:	02D0	#  Length Mark
+
+<:	02D1	#  Half-length Mark
+
+@*	0306	#  Breve
+
+.	002E	#  Period
+
+<.	007C	#  Vertical Line
+
+=.	2016	#  Double vertical line (thick)
+
+=#	203F	#  Bottom Tie Bar			jw v1.2
+
+#}	2197	#  Upward Diagonal Arrow
+
+#{	2198	#  Downward Diagonal Arrow
+
+@4	030B	#  Double Acute Accent (over)
+
+@3	0301	#  Acute Accent (over)
+
+@2	0304	#  Macron
+
+@1	0300	#  Grave Accent (over)
+
+@0	030F	#  Double Grave Accent (over)
+@:	0310	#  Combining Candrabindu (over)
+@8	1DC6	#  macron falling
+@9	1DC7	#  rising macron
+
+#[	A71C	#  Down Arrow (expected to be in Unicode 5.1) from F19D v1.4 jw  
+
+#]	A71B	#  Up Arrow (expected to be in Unicode 5.1)	from F19C v1.4 jw
+
+#4	02E5	#  Extra-high Tone Bar
+
+#3	02E6	#  High Tone Bar
+
+#2	02E7	#  Mid Tone Bar
+
+#1	02E8	#  Low Tone Bar
+
+#0	02E9	#  Extra-low Tone Bar
+&4	A712	#  Extra-high Left Tone Bar	jw added these
+
+&3	A713	#  High Left Tone Bar
+
+&2	A714	#  Mid Left Tone Bar
+
+&1	A715	#  Low Left Tone Bar
+
+&0	A716	#  Extra-low Left Tone Bar
+
+@5	030C	#  Wedge
+
+@^	0302	#  Circumflex
+
+@6	1DC4	#  Macron plus acute accent
+
+@7	1DC5	#  Grave accent plus macron
+
+@[	1DC8	#  Grave plus acute plus grave accent
+@]	1DC9	#  falling-rising	
+
+	02E9 02E5	#  Rising tone letter
+
+	02E5 02E9	#  Falling tone letter
+
+	02E7 02E5	#  High-rising tone letter
+
+	02E9 02E7	#  Low-rising tone letter
+
+	02E8 02E5 02E8	#  Rising-falling tone letter
+
+	0311	#  Superscript arch	not found	
+	02C7	#  Wedge; hacek		not found
+
+	02C6	#  Circumflex		not found
+	0316 / 02CE	#  Subscript grave accent	not found
+
+	0317 /  02CF	#  Subscript acute accent	not found
+
+[	005B	#  Left Square Bracket
+
+]	005D	#  Right Square Bracket
+
+/	002F	#  Forward Slash
+
+(	0028	#  Left parenthesis
+
+)	0029	#  Right parenthesis
+
+	0028 0028	#  Left double parenthesis	not found
+
+	0029 0029	#  Right double parenthesis	not found
+
+{	007B	#  Left brace
+
+}	007D	#  Right brace
+~b	1D6C	#  b middle tilde
+~d	1D6D	#  d middle tilde
+~f	1D6E	#  f middle tilde
+~m	1D6F	#  m middle tilde
+~n	1D70	#  n middle tilde
+~p	1D71	#  p middle tilde
+~r	1D72	#  r middle tilde  
+~R	1D73	#  r fishhook middle tilde
+~s	1D74	#  s middle tilde
+~t	1D75	#  t middle tilde
+~z	1D76	#  z middle tilde
+@b	1D80	#  b palatal hook
+@d	1D81	#  d palatal hook
+@f	1D82	#  f palatal hook
+@g	1D83	#  g palatal hook
+@k	1D84	#  k palatal hook
+@l	1D85	#  l palatal hook
+@m	1D86	#  m palatal hook
+@n	1D87	#  n palatal hook
+@p	1D88	#  p palatal hook
+@r	1D89	#  r palatal hook
+@s	1D8A	#  s palatal hook
+@S	1D8B	#  esh palatal hook
+@v	1D8C	#  v palatal hook
+@x	1D8D	#  x palatal hook
+@z	1D8E	#  z palatal hook
+&a	1D8F	#  a retroflex hook
+&A	1D90	#  alpha retroflex hook
+&e	1D92	#  e retroflex hook
+&E	1D93	#  open e retroflex hook
+&b	1D94	#  reverse open e retroflex hook
+&B	1D95	#  schwa retroflex hook
+&i	1D96	#  i retroflex hook
+&o	1D97	#  open o retroflex hook
+&s	1D98	#  esh retroflex hook
+&u	1D99	#  u retroflex hook
+&z	1D9A	#  z retroflex hook
+^0	2070	#  superscript 0
+^1	00B9	#  superscript 1
+^2	00B2	#  superscript 2
+^3	00B3	#  superscript 3
+^4	2074	#  superscript 4
+^5	2075	#  superscript 5
+^6	2076	#  superscript 6
+^7	2077	#  superscript 7
+^8	2078	#  superscript 8
+^9	2079	#  superscript 9
+^a	1D43	#  a superscript
+^A	1D44	#  turned a superscript
+#a	1D45	#  alpha superscript
+#b	1D46	#  turned ae superscript
+^b	1D47	#  b superscript
+^d	1D48	#  d superscript
+^e	1D49	#  e superscript
+^G	1D4D	#  g superscript
+^k	1D4F	#  k superscript
+^m	1D50	#  m superscript
+#n	1D51	#  eng superscript
+^o	1D52	#  o superscript
+^O	1D53	#  open o superscript
+^p	1D56	#  p superscript
+^t	1D57	#  t superscript
+^u	1D58	#  u superscript
+^W	1D5A	#  turned m superscript
+^v	1D5B	#  v superscript
+^B	1D5D	#  beta superscript
+#A	1D9B	#  some kind of a superscript
+^c	1D9C	#  c superscript
+^C	1D9D	#  c curl superscript
+#e	1D9F	#  reverse open e superscript
+^D	1D9E	#  eth superscript
+^f	1DA0	#  f superscript
+#j	1DA1	#  j stroke superscript
+^g	1DA2	#  script g superscript
+#i	1DA4	#  i stroke superscript
+^I	1DA6	#  cap I superscript
+^J	1DA8	#  j cross-tail superscript
+#l	1DA9	#  l retroflex hook superscript
+^L	1DAB	#  l superscript
+^M	1DAC	#  m hook superscript
+#m	1DAD	#  m turned long leg superscript
+^N	1DB0	#  n superscript
+#o	1DB1	#  o bar superscript
+^F	1DB2	#  phi superscript
+^S	1DB3	#  s hook superscript
+#s	1DB4	#  esh superscript
+#u	1DB6	#  u bar superscript
+^U	1DB7	#  upsilon superscript
+#v	1DB9	#  v superscript
+^V	1DBA	#  turned v superscript
+^z	1DBB	#  z superscript
+#z	1DBC	#  z retroflex hook superscript
+^Z	1DBD	#  z curl superscript
+#r	02B4	#  r turned superscript
+^R	02B6	#  r small cap inverted superscript
+='	02BD	#  superscript reversed comma    		jw
+^?	02C0	#  inverted j superscript
+#B	F1A1	#  some kind of superscript
+#c	F1A3	#  c superscript
+#C	F1A4	#  some kind of a superscript
+#O	F1AB	#  some kind of o slash superscript
+#d	F1AD	#  oe superscript
+#D	F1AE	#  some kind of a superscript
+^Y	F1B4	#  y superscript		is this PUA dup of superscript y? jw
+^X	F1B5	#  x superscript
+#h	F1BC	#  h superscript
+#y	F1CE	#  turned y superscript     jw
+=1	F1F1	#  9-level tone 1  jw
+=2	F1F2	#  9-level tone 2  jw
+=3	F1F3	#  9-level tone 3  jw
+=4	F1F4	#  9-level tone 4  jw
+=5	F1F5	#  9-level tone 5  jw
+=6	F1F6	#  9-level tone 6  jw
+=7	F1F7	#  9-level tone 7  jw
+=8	F1F8	#  9-level tone 8  jw
+=9	F1F9	#  9-level tone 9  jw
+<w	2C73	#  w hook  Unicode 5.1 from F21A v1.4 jw
+^-	207B	#  superscript dash		jw
+^=	207C	#  superscript equals	jw
+#R	02B5	#  superscript turned r with hook	jw
+#E	1D4B	#  superscript open e	jw
+#Y	1DA3	#  superscript 
+#J	1DAE	#  superscript small n with left hook jw
+#N	1DAF	#  superscript long right leg n
+#Z	1DBE	#  ezh superscript
+=>	2192	#  right pointing arrow	jw
+>s	03C3	#  sigma
+>U	1D7E	#  barred U
+>I	1D7C	#  barred iota
+<I	1D7B	#  barred I
+=S	1D98	#  esh hook
+=Z	1D9A	#  ezh hook
+&$	1DC2	#  snake below
+|a	03B1	#  literacy a
+&<	0327	#  cedilla
+&!	0348	#  double vertical line below
+^r	02B3	#  superscript r
+^i	2071	#  superscript i
+^(	207D	#  superscript paren
+^)	207E	#  superscript other paren
+^H	02B1	#  superscript something
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
