@@ -1,0 +1,202 @@
+;   Conversion Type = Legacy_to_from_Unicode
+
+EncodingName			"Nobiin"
+DescriptiveName		"Nobiin Font encoding"
+Version			"1.0"
+Contact			"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"Nobiin-Unicode"
+
+RHSFlags				(ExpectsNFC)
+
+; 2008-08-04 LP modified
+; 2007-10-08	LP	created
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+
+[ctl]	<>	[ctl]
+
+
+0x20	<>	U+0020
+0x21	<>	U+0021
+0x22	<>	U+2C8B U+0304
+0x23	<>	U+0023
+0x24	>	U+2C93 U+0308
+0x25	<>	U+0025
+0x26	<>	U+0026
+0x27	<>	U+0027
+0x28	<>	U+0028
+0x29	<>	U+0029
+0x2A	<>	U+002A
+0x2B	<>	U+002B
+0x2C	<>	U+002C
+0x2D	<>	U+002D
+0x2E	<>	full_stop
+0x2F	<>	solidus
+0x30	<>	U+2C91 U+0305
+0x31	>	U+2CB1 U+0305
+0x32	>	U+2CA9 U+0305
+0x33	>	U+2CA7 U+0305
+0x34	>	U+2C95 U+0305
+0x35	>	U+2CDD U+0305
+0x36	>	U+2C85 U+0305
+0x37	>	U+2C97 U+0305
+0x38	>	U+2C87 U+0305
+0x39	>	U+2CA5 U+0305
+0x3A	<>	U+003A
+0x3B	<>	U+003B
+0x3C	<>	U+003C
+0x3D	<>	U+003D
+0x3E	<>	U+003E
+0x3F	<>	U+003F
+; 0x40	<>	U+0040
+0x41	<>	U+2C81 U+0304
+0x42	<>	U+2C83 U+0304
+0x43	<>	U+03E3 U+0304
+0x44	<>	U+2C87 U+0304
+0x45	<>	U+2C89 U+0304
+0x46	<>	U+2CAB U+0304
+0x47	<>	U+2C85 U+0304
+0x48	<>	U+03E9 U+0304
+0x49	<>	U+2C93 U+0304
+0x4A	<>	U+2CDD U+0304
+0x4B	<>	U+2C95 U+0304
+0x4C	<>	U+2C97 U+0304
+0x4D	<>	U+2C99 U+0304
+0x4E	<>	U+2C9B U+0304
+0x4F	<>	U+2C9F U+0304
+0x50	<>	U+2CA1 U+0304 
+0x51	<>	U+2CE3 U+0304	
+0x52	<>	U+2CA3 U+0304
+0x53	<>	U+2CA5 U+0304
+0x54	<>	U+2CA7 U+0304
+0x55	<>	U+2C9F U+0305 U+2CA9 U+0305
+0x56	<>	U+2CE1 U+0304
+0x57	<>	U+2CB1 U+0304
+0x58	<>	U+2CAD U+0304
+0x59	<>	U+2CA9 U+0304
+0x5A	<>	U+2C8D U+0304
+0x5B	<>	left_square_bracket
+0x5C	<>	U+2CA9
+0x5D	<>	right_square_bracket
+0x5E	<>	U+005E
+0x5F	<>	U+005F
+0x60	<>	U+2CDF
+0x61	<>	U+2C81
+0x62	<>	U+2C83
+0x63	<>	U+03E3
+0x64	<>	U+2C87
+0x65	<>	U+2C89
+0x66	<>	U+2CAB
+0x67	<>	U+2C85
+0x68	<>	U+03E9
+0x69	<>	U+2C93
+0x6A	<>	U+2CDD
+0x6B	<>	U+2C95
+0x6C	<>	U+2C97
+0x6D	<>	U+2C99
+0x6E	<>	U+2C9B
+0x6F	<>	U+2C9F
+0x70	<>	U+2CA1
+0x71	<>	U+2CE3	
+0x72	<>	U+2CA3
+0x73	<>	U+2CA5
+0x74	<>	U+2CA7
+0x75	<>	U+2C9F U+2CA9
+0x76	<>	U+2CE1
+0x77	<>	U+2CB1
+0x78	<>	U+2CAD
+0x79	<>	U+2C93 U+0308
+0x7A	<>	U+2C8D
+0x7B	<>	U+007B
+0x7C	<>	U+007C
+0x7D	<>	U+007D
+0x7E	<>	U+2CDF U+0304
+
+; 0x7F..0x81 0x83..0x8C .notdef
+
+0x82	<>	U+2CC9 U+0304
+0x8D	<>	U+2CC9
+
+; 0x8E..0x98 .notdef
+
+
+0x99	<>	U+FFFD 
+0x9A	>	U+FFFD 
+0x9B	>	U+FFFD 
+0x9C	>	U+FFFD 
+0x9D	>	U+FFFD 
+0x9E	>	U+FFFD 
+0x9F	>	U+FFFD 
+
+0xA0	<>	U+2C91
+0xA1	>	U+FFFD 
+
+0xA2	<>	U+2C93 U+0304 U+0304
+0xA3	<>	U+0060 
+0xA4	<>	U+03E7 U+0304 U+0304 U+0304 ; check me
+0xA6	>	U+FFFD 
+0xA7	>	U+FFFD 
+0xA8	>	U+FFFD 
+0xA9	>	U+FFFD 
+
+0xAA	<>	U+2C83 U+0304 U+0304
+0xAB	>	U+FFFD 
+0xAC	>	U+FFFD 
+0xAD	<>	U+00B4 
+0xB1	>	U+FFFD 
+0xB4	<>	U+03E7 U+0304 U+0304 ; check me
+0xB5	>	U+FFFD 
+0xB9	<>	U+03E5
+0xBB	>	U+FFFD 
+0xBC	>	U+FFFD 
+0xBD	>	U+03C3
+0xBF	>	U+FFFD 
+0xC0	>	U+FFFD 
+
+0xC1	<>	U+2C91 U+0304 U+0304
+0xC2	>	U+FFFD 
+0xC3	<>	U+03EB
+0xC4	<>	U+03E5 U+0304
+0xC7	>	U+FFFD 
+0xC8	>	U+FFFD 
+
+0xC9	<>	U+2CAF U+0304
+0xCA	>	U+FFFD 
+0xCB	>	U+FFFD 
+0xCE	>	U+03E7 U+0304 U+0304 U+0304
+0xCF	<>	U+2C89 U+0304 U+0304
+
+0xD0	>	U+005F
+0xD1	>	U+005F
+0xD6	>	U+FFFD 
+0xD8	<>	U+2C8B
+0xD9	<>	U+2C8D U+0304 U+0304
+0xDA	<>	U+2C9D
+0xDB	<>	U+03E5 U+0304 U+0304
+0xDC	>	U+03E7 U+0304 ; check me
+
+0xDD	<>	U+2C87 U+0304 U+0304
+
+0xDE	<>	U+2CAF
+0xE0	>	U+2C91 U+0304
+0xE1	>	U+03C3 U+0304
+0xE2	<>	U+2CC1 U+0304
+0xE3	<>	U+03E7 U+0304
+0xE4	>	U+2C91 U+0304
+0xE5	>	U+FFFD 
+0xE7	>	U+FFFD 
+0xEF	<>	U+03EB U+0304
+0xF4	<>	U+2C9D U+0304
+0xF6	>	U+2C91 U+0304
+0xF7	<>	U+2C81 U+0304 U+0304
+0xF8	>	U+FFFD 
+0xFA	<>	U+03EF
+0xFB	<>	U+03EF U+0304
+0xF9	<>	U+2C8F U+0304
+0xFC	>	U+FFFD 
+0xFE	<>	U+2C8F

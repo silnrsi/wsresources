@@ -1,0 +1,278 @@
+SIL PNG Fonts to Unicode conversion test file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+by R. Fumey MAR/2007
+
+Test file to test the conversion of data from
+a Legacy (one-byte) SIL PNG Font to Unicode
+and back.
+
+(For testing start DropTEC.exe,
+drop "SIL-PNG.tec" into the Mapping File box
+and this file into the Legacy text file box.)
+
+For the correct display of the legacy
+(unconverted) version of this file you need to
+have one of the SIL PNG Fonts* installed and
+defined as the display font in your Text Editor.
+*) PNG SILCharis (Lit), PNG SILDoulos,
+PNG SILManuscript or PNG SILSophia Lit/CQLit
+
+Note that some text editors don't display
+combining (overstrike) characters properly.
+
+In addition your text editor might display the
+wrong glyphs for the following (legacy) characters:
+- 128/80: "Ä" turned V     (might display as EURO sign)
+- 142/8E: "é" l double-bar (might display as Z-caron)
+- 158/9E: "û" G bar        (might display as z-caron)
+
+For viewing the Unicode output you need to
+have a Unicode Font installed, e.g.
+"Doulos SIL". This font also includes the
+common SIL Private Use Area (PUA) characters.
+
+As of Unicode 5.1 all PNG characters are standard
+Unicode!
+
+On the Unicode side diacritics on some
+characters might not be positioned properly.
+This is a problem in the Unicode rendering
+system, not the conversion process!
+
+Note: The Output of the conversion process
+Legacy > Unicode > Legacy will not exactly
+match the original. This is because the
+Legacy fonts have 2 characters for capital Eng,
+but Unicode has only one (with glyph variants).
+Thus depending on your settings in "SIL-PNG
+.map"(see relevant notes there) you will end
+up with just one of the glyph variants.
+(That's what you want in your orthography
+anyway!)
+
+---start of test ---
+
+***COMBINING (=OVERSTRIKE) AND COMPOSITE CHARACTERS***
+
+**Grave Accents**
+COMBINING_GRAVE_ACCENT (high o-width): 191/BF U+0300
+ Aø Eø Oø Uø ∆ø ÿø Vø Cø 1ø 2ø 3ø 4ø 5ø 6ø 7ø 8ø 9ø 0ø Äø öø
+(A E O U ∆ ÿ V C 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+COMBINING_GRAVE_ACCENT (low o-width): 189/BD U+0300
+ aΩ eΩ oΩ uΩ ÊΩ ¯Ω vΩ cΩ ÅΩ õΩ
+(a e o u Ê ¯ v c turned-v u-bar)
+Composite characters with grave accents:
+192/C0 U+00C0: ¿ (A grave)
+200/C8 U+00C8: » (E grave)
+204/CC U+00CC: Ã (I grave)
+210/D2 U+00D2: “ (O grave)
+217/D9 U+00D9: Ÿ (U grave)
+224/E0 U+00E0: ‡ (a grave)
+232/E8 U+00E8: Ë (e grave)
+236/EC U+00EC: Ï (i grave)
+242/F2 U+00F2: Ú (o grave)
+249/F9 U+00F9: ˘ (u grave)
+
+**Acute Accents**
+COMBINING_ACUTE_ACCENT (high o-width): 179/B3 U+0301
+ A≥ E≥ O≥ U≥ ∆≥ ÿ≥ V≥ C≥ 1≥ 2≥ 3≥ 4≥ 5≥ 6≥ 7≥ 8≥ 9≥ 0≥ Ä≥ ö≥
+(A E O U ∆ ÿ V C 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+COMBINING_ACUTE_ACCENT (low o-width): 180/B4 U+0301
+ a¥ e¥ o¥ u¥ Ê¥ ¯¥ v¥ c¥ Å¥ õ¥
+(a e o u Ê ¯ v c turned-v u-bar)
+Composite characters with acute accents:
+193/C1 U+00C1: ¡ (A acute)
+201/C9 U+00C9: … (E acute)
+205/CD U+00CD: Õ (I acute)
+211/D3 U+00D3: ” (O acute)
+218/DA U+00DA: ⁄ (U acute)
+225/E1 U+00E1: · (a acute)
+233/E9 U+00E9: È (e acute)
+237/ED U+00ED: Ì (i acute)
+243/F3 U+00F3: Û (o acute)
+250/FA U+00FA: ˙ (u acute)
+
+**Circumflexes**
+COMBINING_CIRCUMFLEX_ACCENT (high o-width): 137/89 U+0302
+ Aâ Eâ Oâ Uâ ∆â ÿâ Vâ Câ 1â 2â 3â 4â 5â 6â 7â 8â 9â 0â Äâ öâ
+(A E O U ∆ ÿ V C 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+COMBINING_CIRCUMFLEX_ACCENT (low o-width): 136/88 U+0302
+ aà eà oà uà Êà ¯à và cà Åà õà
+(a e o u Ê ¯ v c turned-v u-bar)
+Composite characters with circumflexes:
+194/C2 U+00C2: ¬ (A circumflex)
+202/CA U+00CA:   (E circumflex)
+206/CE U+00CE: Œ (I circumflex)
+212/D4 U+00D4: ‘ (O circumflex)
+219/DB U+00DB: € (U circumflex)
+226/E2 U+00E2: ‚ (a circumflex)
+234/EA U+00EA: Í (e circumflex)
+238/EE U+00EE: Ó (i circumflex)
+244/F4 U+00F4: Ù (o circumflex)
+251/FB U+00FB: ˚ (u circumflex)
+
+**Tildes**
+COMBINING_TILDE (high o-width): 153/99 U+0303
+ Aô Eô Oô Uô ∆ô ÿô Vô Cô 1ô 2ô 3ô 4ô 5ô 6ô 7ô 8ô 9ô 0ô Äô öô
+(A E O U ∆ ÿ V C 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+COMBINING_TILDE (low o-width): 152/98 U+0303
+ aò eò oò uò Êò ¯ò vò cò Åò õò
+(a e o u Ê ¯ v c turned-v u-bar)
+Composite characters with tildes:
+195/C3 U+00C3: √ (A tilde)
+130/82 U+0128: Ç (I tilde)
+213/D5 U+00D5: ’ (O tilde)
+209/D1 U+00D1: — (N tilde)
+227/E3 U+00E3: „ (a tilde)
+131/83 U+0129: É (i tilde)
+245/F5 U+00F5: ı (o tilde)
+241/F1 U+00F1: Ò (n tilde)
+
+**Diereses**
+Composite characters with diereses:
+196/C4 U+00C4: ƒ (A dieresis)
+203/CB U+00CB: À (E dieresis)
+207/CF U+00CF: œ (I dieresis)
+214/D6 U+00D6: ÷ (O dieresis)
+220/DC U+00DC: ‹ (U dieresis)
+228/E4 U+00E4: ‰ (a dieresis)
+235/EB U+00EB: Î (e dieresis)
+239/EF U+00EF: Ô (i dieresis)
+246/F6 U+00F6: ˆ (o dieresis)
+252/FC U+00FC: ¸ (u dieresis)
+
+**Diereses + Acute Accents**
+COMBINING_DIAERESIS COMBINING_ACUTE_ACCENT (high o-width):
+186/BA U+0308 U+0301
+ A∫ E∫ O∫ U∫ ∆∫ ÿ∫ V∫ C∫ 1∫ 2∫ 3∫ 4∫ 5∫ 6∫ 7∫ 8∫ 9∫ 0∫ Ä∫ ö∫
+(A E O U ∆ ÿ V C 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+COMBINING_DIAERESIS + COMBINING_ACUTE_ACCENT (low o-width):
+185/B9 U+0308 U+0301
+ aπ eπ oπ uπ Êπ ¯π vπ cπ Åπ õπ
+(a e o u Ê ¯ v c turned-v u-bar)
+
+**Macrons (Above)**
+COMBINING_MACRON (high o-width): 175/AF U+0304
+ AØ EØ OØ UØ ∆Ø ÿØ VØ CØ 1Ø 2Ø 3Ø 4Ø 5Ø 6Ø 7Ø 8Ø 9Ø 0Ø ÄØ öØ
+(A E O U ∆ ÿ V C 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+COMBINING_MACRON (low o-width): 174/AE U+0304
+ aÆ eÆ oÆ uÆ ÊÆ ¯Æ vÆ cÆ ÅÆ õÆ
+(a e o u Ê ¯ v c turned-v u-bar)
+Composite characters with macrons:
+138/8A U+012A: ä (I macron)
+158/9E U+017E: û (G macron)
+161/A1 U+0101: ° (a macron)
+162/A2 U+0113: ¢ (e macron)
+163/A3 U+012B: £ (i macron)
+165/A5 U+014D: • (o macron)
+166/A6 U+016B: ¶ (u macron)
+254/FE U+1E21: ˛ (g macron)
+
+**Double Macrons**
+COMBINING_DOUBLE_MACRON (high o-width): 135/87 U+035E
+ AáA EáE IáI OáU UáU CáC VáV 1á1 2á2 3á3 iái
+(AA EE II OO UU CC VV 11 22 33 ii)
+COMBINING_DOUBLE_MACRON (low o-width): 134/86 U+035E
+ aÜa eÜe oÜo uÜu cÜc vÜv
+(aa ee oo uu cc vv)
+
+**Carons**
+COMBINING_CARON (high o-width): 190/BE U+030C
+ Aæ Eæ Oæ Uæ ∆æ ÿæ Væ Cæ 1æ 2æ 3æ 4æ 5æ 6æ 7æ 8æ 9æ 0æ Äæ öæ
+(A E O U ∆ ÿ V C 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+COMBINING_CARON (low o-width): 188/BC U+030C
+ aº eº oº uº Êº ¯º vº cº Åº õº
+(a e o u Ê ¯ v c turned-v u-bar)
+Composite characters with Carons:
+132/84 U+01CF: Ñ (I caron)
+133/85 U+01D0: Ö (i caron)
+
+**Macrons Below**
+COMBINING_MACRON_BELOW  (wide o-width): 177/B1 U+0331
+ A± E± O± U± ∆± ÿ± V± C± m± w± Ê± Ä± ö±
+(A E O U ∆ ÿ V C m w Ê turned-V U-bar)
+COMBINING_MACRON_BELOW  (normal o-width): 178/B2 U+0331
+ a≤ e≤ o≤ u≤ ¯≤ v≤ c≤ 1≤ 2≤ 3≤ Å≤ õ≤
+(a e o u ¯ v c 1 2 3 turned-v u-bar)
+COMBINING_MACRON_BELOW  (lowered for gq, o-width): 173/AD U+0331
+ g≠ q≠
+(g q)
+COMBINING_MACRON_BELOW  (i-width): 170/AA U+0331
+ I™ i™ l™ ê™
+(I i l l-tilde)
+
+**Cedillas**
+COMBINING_CEDILLA (o-width): 184/B8 U+0327
+ A∏ E∏ …∏ O∏ ”∏ U∏ ∆∏ ÿ∏ V∏ C∏ B∏ 1∏ 2∏ 3∏ 4∏ 5∏ 6∏ 7∏ 8∏ 9∏ 0∏ Ä∏ ö∏
+(A E … O ” U ∆ ÿ V C B 1 2 3 4 5 6 7 8 9 0 turned-V U-bar)
+ a∏ e∏ È∏ o∏ Û∏ u∏ Ê∏ ¯∏ v∏ c∏ b∏ Å∏ õ∏
+(a e È o Û u Ê ¯ v c b turned-v u-bar)
+COMBINING_CEDILLA (i-width): 181/B5 U+0327
+ iµ Iµ lµ êµ
+(i I l l-tilde)
+
+***SPECIAL CHARACTERS***
+198/C6 U+00C6: ∆ (AE-ligature)
+230/E6 U+00E6: Ê (ae-ligature)
+128/80 U+0245: Ä (turned V)       [was PUA U+F219 before Unicode 5.0]
+129/81 U+028C: Å (turned v)
+199/C7 U+0197: « (barred I)
+231/E7 U+0268: Á (barred i)
+140/8C U+0152: å (OE ligature)
+156/9C U+0153: ú (oe ligature)
+216/D8 U+00D8: ÿ (O slash)
+248/F8 U+00F8: ¯ (o slash)
+
+154/9A U+0244: ö (barred U)        [was PUA U+F218 before Unicode 5.0]
+155/9B U+0289: õ (barred u)
+208/D0 U+023D: – (barred L)        [was PUA U+F21F before Unicode 5.0]
+240/F0 U+019A:  (barred l)
+141/8D U+2C60: ç (double barred L) [was PUA U+F20F before Unicode 5.0]
+142/8E U+2C61: é (double barred l) [was PUA U+F20E before Unicode 5.0]
+143/8F U+2C62: è (L with tilde)    [was PUA U+F242 before Unicode 5.0]
+144/90 U+026B: ê (l with tilde)
+
+221/DD U+014A: › (Eng, N-shaped)
+222/DE U+014A: ﬁ (Eng, n-shaped)
+253/FD U+014B: ˝ (eng)
+215/D7 U+024A: ◊ (hook-tailed Q)   [was PUA U+F212 before Unicode 5.0]
+247/F7 U+024B: ˜ (hook-tailed q)   [was PUA U+F211 before Unicode 5.0]
+167/A7 U+01B7: ß (Ezh)
+168/A8 U+0292: ® (ezh)
+223/DF U+02BC: ﬂ (glottal, curly)
+255/FF U+F21D: ˇ (glottal, straight)
+
+**Special dash**  157/9D U+2012
+aùbùc
+Compared with hyphen, en-dash and em-dash:
+a-b-c añbñc aóbóc
+
+**Modifier Colon** 159/9F U+A789
+Aü Eü Iü Oü Uü ∆ü ÿü Äü 1ü 2ü 3ü
+aü eü iü oü uü Êü ¯ü Åü
+
+***MISC.***
+145/91 U+2018: ë (left quote)
+146/92 U+2019: í (right quote)
+147/93 U+201C: ì (left double quote)
+148/94 U+201D: î (right double quote)
+149/95 U+2022: ï (bullet)
+164/A4 U+00A4: § (currency/filzlaus)
+182/B6 U+00B6: ∂ (paragraph sign)
+171/AB U+00AB: ´ (left double wedge)
+187/BB U+00BB: ª (right double wedge)
+176/B0 U+00B0: ∞ (degree sign)
+
+160/A0 U+00A0: † (non-breaking space)
+045/2D U+002D: - (hyphen/minus)
+150/96 U+2013: ñ (en-dash)
+151/97 U+2014: ó (em-dash)
+172/AC U+00AC: ¨ (not sign)
+
+***ANSI characters not used in PNG legacy fonts***
+139/8B U+008B: ã (SINGLE_LEFT-POINTING_ANGLE_QUOTATION_MARK)
+169/A9 U+00A9: © (COPYRIGHT_SIGN)
+183/B7 U+00B7: ï (MIDDLE_DOT)
+197/C5 U+00C5: ≈ (LATIN_CAPITAL_LETTER_A_WITH_RING_ABOVE)
+229/E5 U+00E5: Â (LATIN_SMALL_LETTER_A_WITH_RING_ABOVE)
+---end of test ---

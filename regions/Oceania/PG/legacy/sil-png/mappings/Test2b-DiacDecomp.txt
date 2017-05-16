@@ -1,0 +1,20 @@
+Diacritics Test:
+aeiouæø › AEIOUÆØ š 1234567890
+a½e½ìo½u½æ½ø½ ½›½ A¿E¿ÌO¿U¿Æ¿Ø¿ š¿ 1¿2¿3¿4¿5¿6¿7¿8¿9¿0¿ (with U+0300, Grave)
+a´e´ío´u´æ´ø´ ´›´ A³E³ÍO³U³Æ³Ø³ š³ 1³2³3³4³5³6³7³8³9³0³ (with U+0301, Acute)
+aˆeˆîoˆuˆæˆøˆ ˆ›ˆ A‰E‰ÎO‰U‰Æ‰Ø‰ š‰ 1‰2‰3‰4‰5‰6‰7‰8‰9‰0‰ (with U+0302, Circumflex)
+a˜e˜ƒo˜u˜æ˜ø˜ ˜›˜ A™E™‚O™U™Æ™Ø™ š™ 1™2™3™4™5™6™7™8™9™0™ (with U+0303, Tilde)
+a®e®£o®u®æ®ø® ®›® A¯E¯ŠO¯U¯Æ¯Ø¯ š¯ 1¯2¯3¯4¯5¯6¯7¯8¯9¯0¯ (with U+0304, Macron)
+äëïöü** ** ÄËÏÖÜ** * ********** (with U+0308, Diaeresis)
+a¹e¹*o¹u¹æ¹ø¹ ¹›¹ AºEº*OºUºÆºØº šº 1º2º3º4º5º6º7º8º9º0º (with U+0308, Diaeresis, and U+0301, Acute)
+a¼e¼…o¼u¼æ¼ø¼ ¼›¼ A¾E¾„O¾U¾Æ¾Ø¾ š¾ 1¾2¾3¾4¾5¾6¾7¾8¾9¾0¾ (with U+030C, Caron)
+a²e²iªo²u²æ±ø² ²›² A±E±IªO±U±Æ±Ø± š± 1²2²3²4²5²6²7²8²9²0² (with U+0331, Macron below)
+a†a e†e i‡i o†o u†u æ†æ ø†ø † ›†›
+A‡A E‡E I‡I O‡O U‡U Æ‡Æ Ø‡Ø    š‡š      (with U+035E, Double Macron)
+aŸeŸiŸoŸuŸ                      (U+A789 MODIFIER_LETTER_COLON)
+
+Notes:
+- character combinations marked '*' do not exist in the PNG SIL legacy fonts
+- ¹ and ² in legacy font are ignored or not correctly displayed in Windows Notepad and
+  some other text editors if they immediately follow ø¹ or ø², respectively.
+

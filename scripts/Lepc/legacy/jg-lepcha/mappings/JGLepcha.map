@@ -1,0 +1,272 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 6/17/2010.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = JG Lepcha;11.25
+;   Right-hand side font = Mingzat;11.25
+;   Main Window Position = 38,263,1193,993
+;   Left-hand side Character Map Window Position = 1198,27,242,446
+;   Right-hand side Character Map Window Position = 1246,446,502,424
+; 2011-09-15 Changed order of FCS and Ran from Ran/FCS to FCS/Ran (per UTC)
+
+EncodingName            "JG Lepcha Text Conversion to Unicode"
+DescriptiveName         "Text conversion mapping file for Jason Glavy's JG Lepcha Custom encoded font. Does not roundtrip."
+Version                 "1.1"
+Contact                 "mailto:evans@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "JGLepcha_Text_Conversion"
+RHSFlags    (ExpectsNFC) 
+
+
+pass(Byte_Unicode)
+
+ByteClass [CTL] = (   0x00 .. 0x1F   )
+UniClass  [CTL] = ( U+0000 .. U+001F )
+
+; C
+ByteClass[Cons] = (0x6B 0x57 0x4B 0x67 0x78 0x47 0x63 0x43 0x6A 0x4A 0x74 0x54 0x64 \
+                   0x6E 0x70 0x59 0x50 0x66 0x46 0x62 0x45 0x6D 0x49 0x71 0x51 0x7A \
+                   0x79 0x72 0x6C 0x68 0x48 0x76 0x73 0x53 0x77 0x41 )	; consonants
+UniClass[Cons]  = (U+1C00..U+1C23)	; consonants
+
+; (.)
+ByteClass[Nukta] = (0x3B)
+UniClass[Nukta] = (U+1C37)
+
+; (R)
+ByteClass[Ra] = (0x3F)
+UniClass[Ra] = (U+1C25)
+
+; (Y)
+ByteClass[Ya] = (0xF4)
+UniClass[Ya] = (U+1C24)
+
+; (V)
+ByteClass[DepVow] = (0x61 0x4F 0x69 0x6F 0x75 0x55 0x65 )
+UniClass[DepVow] = (U+1C28 U+1C28 U+1C27 U+1C29 U+1C2A U+1C2B U+1C2C )
+
+; (^)
+ByteClass[Ran] = (0x5F)
+UniClass[Ran] = (U+1C36)
+
+ByteClass[Sp] = (0x20)
+UniClass[Sp] = (U+0020)
+
+; (F)
+ByteClass[FCS] = (0x58 0x4D 0x4C 0x4E 0x42 0x52 0x44 0x5A 0x56 )
+UniClass[FCS] = (U+1C2D U+1C2E U+1C2F U+1C30 U+1C31 U+1C32 U+1C33 U+1C34 U+1C35 )
+
+ByteClass[Nums] = (0x30..0x39)	; numerals
+UniClass[Nums] = (U+1C40..U+1C49)	; numerals
+
+ByteClass[AO] = (0x61)	; A
+UniClass[A] = (U+1C26)	; A
+
+[CTL]	<>	[CTL]
+
+[Cons]	   <> [Cons]
+[Nukta]    <> [Nukta]  ; LEPCHA SIGN NUKTA
+[Ra]       <> [Ra]     ; LEPCHA SUBJOINED LETTER RA
+[Ya]       <> [Ya]     ; LEPCHA SUBJOINED LETTER YA
+[Ran]      <> [Ran]    ; LEPCHA SIGN RAN
+[FCS] <>	[FCS]
+[Sp]  <> [Sp]
+[Nums]     <> [Nums]
+
+[DepVow]	 <> [DepVow]
+
+0x61 / ^[DepVow] _ > U+1C26
+
+
+
+0x2C	 >	U+1C25 ; LEPCHA SUBJOINED LETTER RA (same as 0x3F)
+0x2E	<>	U+1C3F ; LEPCHA PUNCTUATION TSHOOK
+0x2F	 >  U+0020 ; (looks empty)
+
+0x3C	 >	U+25CC ; ??? v with circle around
+0x3D	<>	U+25CC ; ??? c with circle around
+0x3E	 >	U+25CC ; ??? cv with circle around
+
+; composites
+0x21	<>	U+1C29 U+1C2D ; LEPCHA VOWEL SIGN OO / LEPCHA CONSONANT SIGN K
+0x22	<>	U+1C29 U+1C2E ; LEPCHA VOWEL SIGN OO / LEPCHA CONSONANT SIGN M
+0x23	<>	U+1C29 U+1C2F ; LEPCHA VOWEL SIGN OO / LEPCHA CONSONANT SIGN L
+0x24	<>	U+1C29 U+1C30 ; LEPCHA VOWEL SIGN OO / LEPCHA CONSONANT SIGN N
+0x25	<>	U+1C29 U+1C31 ; LEPCHA VOWEL SIGN OO / LEPCHA CONSONANT SIGN P
+0x26	<>	U+1C29 U+1C32 ; LEPCHA VOWEL SIGN OO / LEPCHA CONSONANT SIGN R
+0x27	<>	U+1C29 U+1C33 ; LEPCHA VOWEL SIGN OO / LEPCHA CONSONANT SIGN T
+0x28	<>	U+1C2D U+1C36 ; LEPCHA CONSONANT SIGN K / LEPCHA SIGN RAN
+0x29	<>	U+1C2E U+1C36 ; LEPCHA CONSONANT SIGN M / LEPCHA SIGN RAN
+0x2A	<>	U+1C2F U+1C36 ; LEPCHA CONSONANT SIGN L / LEPCHA SIGN RAN
+0x2B	<>	U+1C30 U+1C36 ; LEPCHA CONSONANT SIGN N / LEPCHA SIGN RAN
+0x2D	<>	U+1C31 U+1C36 ; LEPCHA CONSONANT SIGN P / LEPCHA SIGN RAN
+0x40	<>	U+1C32 U+1C36 ; LEPCHA CONSONANT SIGN R / LEPCHA SIGN RAN
+0x5E	<>	U+1C33 U+1C36 ; LEPCHA CONSONANT SIGN T / LEPCHA SIGN RAN
+0x3A	<>	U+1C35 U+1C27 ; LEPCHA CONSONANT SIGN KANG / LEPCHA VOWEL SIGN I
+
+; conjuncts
+0xC0	<>	U+1C00 U+1C24 ; LEPCHA LETTER KA / LEPCHA SUBJOINED LETTER YA
+0xC1	<>	U+1C02 U+1C24 ; LEPCHA LETTER KHA / LEPCHA SUBJOINED LETTER YA
+0xC2	<>	U+1C03 U+1C24 ; LEPCHA LETTER GA / LEPCHA SUBJOINED LETTER YA
+0xC3	<>	U+1C0A U+1C24 ; LEPCHA LETTER TA / LEPCHA SUBJOINED LETTER YA
+0xC4	<>	U+1C0B U+1C24 ; LEPCHA LETTER THA / LEPCHA SUBJOINED LETTER YA
+0xC5	<>	U+1C0C U+1C24 ; LEPCHA LETTER DA / LEPCHA SUBJOINED LETTER YA
+0xC8	<>	U+1C0E U+1C24 ; LEPCHA LETTER PA / LEPCHA SUBJOINED LETTER YA
+0xC9	<>	U+1C10 U+1C24 ; LEPCHA LETTER PHA / LEPCHA SUBJOINED LETTER YA
+0xCA	<>	U+1C11 U+1C24 ; LEPCHA LETTER FA / LEPCHA SUBJOINED LETTER YA
+0xCB	<>	U+1C13 U+1C24 ; LEPCHA LETTER BA / LEPCHA SUBJOINED LETTER YA
+0xCC	<>	U+1C15 U+1C24 ; LEPCHA LETTER MA / LEPCHA SUBJOINED LETTER YA
+0xCD	<>	U+1C1B U+1C24 ; LEPCHA LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xCE	<>	U+1C1C U+1C24 ; LEPCHA LETTER LA / LEPCHA SUBJOINED LETTER YA
+0xCF	<>	U+1C1D U+1C24 ; LEPCHA LETTER HA / LEPCHA SUBJOINED LETTER YA
+0xD2	<>	U+1C1F U+1C24 ; LEPCHA LETTER VA / LEPCHA SUBJOINED LETTER YA
+0xD3	<>	U+1C01 U+1C24 ; LEPCHA LETTER KLA / LEPCHA SUBJOINED LETTER YA
+0xD4	<>	U+1C04 U+1C24 ; LEPCHA LETTER GLA / LEPCHA SUBJOINED LETTER YA
+0xD5	<>	U+1C0F U+1C24 ; LEPCHA LETTER PLA / LEPCHA SUBJOINED LETTER YA
+0xD6	<>	U+1C12 U+1C24 ; LEPCHA LETTER FLA / LEPCHA SUBJOINED LETTER YA
+0xD9	<>	U+1C14 U+1C24 ; LEPCHA LETTER BLA / LEPCHA SUBJOINED LETTER YA
+0xDA	<>	U+1C16 U+1C24 ; LEPCHA LETTER MLA / LEPCHA SUBJOINED LETTER YA
+0xDB	<>	U+1C1E U+1C24 ; LEPCHA LETTER HLA / LEPCHA SUBJOINED LETTER YA
+0xDC	<>	U+1C23 U+1C24 ; LEPCHA LETTER A / LEPCHA SUBJOINED LETTER YA
+0xDD	<>	U+1C00 U+1C25 ; LEPCHA LETTER KA / LEPCHA SUBJOINED LETTER RA
+0xE0	<>	U+1C03 U+1C25 ; LEPCHA LETTER GA / LEPCHA SUBJOINED LETTER RA
+0xE1	<>	U+1C05 U+1C25 ; LEPCHA LETTER NGA / LEPCHA SUBJOINED LETTER RA
+0xE2	<>	U+1C0E U+1C25 ; LEPCHA LETTER PA / LEPCHA SUBJOINED LETTER RA
+0xE3	<>	U+1C11 U+1C25 ; LEPCHA LETTER FA / LEPCHA SUBJOINED LETTER RA
+0xE4	<>	U+1C13 U+1C25 ; LEPCHA LETTER BA / LEPCHA SUBJOINED LETTER RA
+0xE5	<>	U+1C15 U+1C25 ; LEPCHA LETTER MA / LEPCHA SUBJOINED LETTER RA
+0xE8	<>	U+1C1D U+1C25 ; LEPCHA LETTER HA / LEPCHA SUBJOINED LETTER RA
+0xE9	<>	U+1C00 U+1C25 U+1C24 ; LEPCHA LETTER KA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xEA	<>	U+1C03 U+1C25 U+1C24 ; LEPCHA LETTER GA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xEB	<>	U+1C05 U+1C25 U+1C24 ; LEPCHA LETTER NGA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xEC	<>	U+1C0E U+1C25 U+1C24 ; LEPCHA LETTER PA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xED	<>	U+1C11 U+1C25 U+1C24 ; LEPCHA LETTER FA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xEE	<>	U+1C13 U+1C25 U+1C24 ; LEPCHA LETTER BA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xEF	<>	U+1C15 U+1C25 U+1C24 ; LEPCHA LETTER MA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xF2	<>	U+1C1D U+1C25 U+1C24 ; LEPCHA LETTER HA / LEPCHA SUBJOINED LETTER RA / LEPCHA SUBJOINED LETTER YA
+0xF3	<>	U+1C21 U+1C24 ; LEPCHA LETTER SHA / LEPCHA SUBJOINED LETTER YA
+
+
+
+pass(Unicode)
+
+Class[Cons] = (U+1C00..U+1C23)	; consonants
+Class[Nukta] = (U+1C37)
+Class[Ra] = (U+1C25)
+Class[Ya] = (U+1C24)
+Class[DepVow] = (U+1C26..U+1C2C)	; dependent vowels
+Class[Ran] = (U+1C36)
+Class[FCS] = (U+1C2D..U+1C35)	; final consonant signs
+
+;(V)
+Class[AfterDepVow] = (U+1C26 U+1C2A U+1C2B U+1C2C)	; after dependent vowels
+Class[InitDepVow] = (U+1C27 U+1C28 U+1C29)	; initial dependent vowels
+
+; (F)
+Class[InitFCS] = (U+1C34 U+1C35)	; initial consonant sign
+Class[AfterFCS] = (U+1C2D..U+1C33)	; after (above) consonants sign
+
+
+; (C)(.)(R)(Y)(V)(^)(F) > (C)(.)(R)(Y)(V)(F)(^) 
+; can I use conditionals?
+; [Cons]=c [Nukta]=n [Ra]=r [Ya]=y [DepVow]=v [FCS]=f [Ran]=p 
+
+; [InitFCS]=f? [InitDepVow]=v? [Cons]=c [Ra]=r? [Ya]=y? [Ran]=p? [Nukta]=n?  <> @c @n @r @y @v @f @p
+
+;medio-final open vowels (JG chart)
+[InitDepVow]=v [Cons]=c <> @c @v
+[InitDepVow]=v [Cons]=c [Ra]=r <> @c @r @v
+[InitDepVow]=v [Cons]=c [Ya]=y <> @c @y @v
+[InitDepVow]=v [Cons]=c [Ra]=r [Ya]=y <> @c @r @y @v
+
+[InitDepVow]=v [Cons]=c [AfterFCS]=f <> @c @v @f
+[InitDepVow]=v [Cons]=c [Ra]=r [AfterFCS]=f <> @c @r @v @f
+[InitDepVow]=v [Cons]=c [Ya]=y [AfterFCS]=f <> @c @y @v @f
+[InitDepVow]=v [Cons]=c [Ra]=r [Ya]=y [AfterFCS]=f <> @c @r @y @v @f
+
+[Cons]=c [AfterDepVow]=v <> @c @v
+[Cons]=c [Ra]=r [AfterDepVow]=v <> @c @r @v
+[Cons]=c [Ya]=y [AfterDepVow]=v <> @c @y @v
+[Cons]=c [Ra]=r [Ya]=y [AfterDepVow]=v <> @c @r @y @v
+
+[Cons]=c [AfterDepVow]=v [AfterFCS]=f <> @c @v @f
+[Cons]=c [Ra]=r [AfterDepVow]=v [AfterFCS]=f <> @c @r @v @f
+[Cons]=c [Ya]=y [AfterDepVow]=v [AfterFCS]=f <> @c @y @v @f
+[Cons]=c [Ra]=r [Ya]=y [AfterDepVow]=v [AfterFCS]=f <> @c @r @y @v @f
+
+[Cons]=c [AfterDepVow]=v [Ran]=p <> @c @v @p
+[Cons]=c [Ra]=r [AfterDepVow]=v [Ran]=p <> @c @r @v @p
+[Cons]=c [Ya]=y [AfterDepVow]=v [Ran]=p <> @c @y @v @p
+[Cons]=c [Ra]=r [Ya]=y [AfterDepVow]=v [Ran]=p <> @c @r @y @v @p
+
+; final consonants
+[Cons]=c [AfterFCS]=f  <> @c @f
+[Cons]=c [Ra]=r [AfterFCS]=f  <> @c @r @f
+[Cons]=c [Ya]=y [AfterFCS]=f  <> @c @y @f
+[Cons]=c [Ra]=r [Ya]=y [AfterFCS]=f  <> @c @r @y @f
+
+[InitFCS]=f [Cons]=c <> @c @f
+[InitFCS]=f [Cons]=c [Ra]=r <> @c @r @f
+[InitFCS]=f [Cons]=c [Ya]=y <> @c @y @f
+[InitFCS]=f [Cons]=c [Ra]=r [Ya]=y <> @c @r @y @f
+
+[InitFCS]=f [Cons]=c [AfterDepVow]=v <> @c @v @f
+[InitFCS]=f [Cons]=c [Ra]=r [AfterDepVow]=v <> @c @r @v @f
+[InitFCS]=f [Cons]=c [Ya]=y [AfterDepVow]=v <> @c @y @v @f
+[InitFCS]=f [Cons]=c [Ra]=r [Ya]=y [AfterDepVow]=v <> @c @r @y @v @f
+
+[InitFCS]=f [Cons]=c [Ran]=p <> @c @f @p 
+[InitFCS]=f [Cons]=c [Ra]=r [Ran]=p <> @c @r @f @p 
+[InitFCS]=f [Cons]=c [Ya]=y [Ran]=p <> @c @y @f @p
+[InitFCS]=f [Cons]=c [Ra]=r [Ya]=y [Ran]=p <> @c @r @y @f @p 
+
+[InitFCS]=f [Cons]=c [Ran]=p [AfterDepVow]=v <> @c @v @f  @p 
+[InitFCS]=f [Cons]=c [Ra]=r [Ran]=p [AfterDepVow]=v <> @c @r @v @f @p 
+[InitFCS]=f [Cons]=c [Ya]=y [Ran]=p [AfterDepVow]=v <> @c @y @v @f @p 
+[InitFCS]=f [Cons]=c [Ra]=r [Ya]=y [Ran]=p [AfterDepVow]=v <> @c @r @y @v @f @p 
+
+[InitFCS]=f [InitDepVow]=v [Cons]=c <> @c @v @f
+[InitFCS]=f [InitDepVow]=v [Cons]=c [Ra]=r  <> @c @r @v @f
+[InitFCS]=f [InitDepVow]=v [Cons]=c [Ya]=y <> @c @y @v @f
+[InitFCS]=f [InitDepVow]=v [Cons]=c [Ra]=r [Ya]=y <> @c @r @y @v @f
+
+[InitFCS]=f [InitDepVow]=v [Cons]=c [Ran]=p  <> @c @v @f @p
+[InitFCS]=f [InitDepVow]=v [Cons]=c [Ra]=r [Ran]=p  <> @c @r @v @f @p 
+[InitFCS]=f [InitDepVow]=v [Cons]=c [Ya]=y [Ran]=p  <> @c @y @v @f @p 
+[InitFCS]=f [InitDepVow]=v [Cons]=c [Ra]=r [Ya]=y [Ran]=p  <> @c @r @y @v @f @p 
+
+; medial vowels + final consonants
+
+[InitDepVow]=v [AfterFCS]=f [Cons]=c <> @c @v @f
+[InitDepVow]=v [AfterFCS]=f [Cons]=c [Ya]=y <> @c @y @v @f
+[InitDepVow]=v [AfterFCS]=f [Cons]=c [Ra]=r <> @c @r @v @f
+[InitDepVow]=v [AfterFCS]=f [Cons]=c [Ra]=r [Ya]=y  <> @c @r @y @v @f
+
+[InitDepVow]=v [Cons]=c [AfterFCS]=f <> @c @v @f
+[InitDepVow]=v [Cons]=c [Ra]=r [AfterFCS]=f <> @c @r @v @f
+[InitDepVow]=v [Cons]=c [Ya]=y [AfterFCS]=f <> @c @y @v @f
+[InitDepVow]=v [Cons]=c [Ra]=r [Ya]=y [AfterFCS]=f <> @c @r @y @v @f
+
+[InitDepVow]=v [Cons]=c [AfterFCS]=f [Ran]=p <> @c @v @f @p 
+[InitDepVow]=v [Cons]=c [Ra]=r [AfterFCS]=f [Ran]=p  <> @c @r @v @f @p 
+[InitDepVow]=v [Cons]=c [Ya]=y [AfterFCS]=f [Ran]=p  <> @c @y @v @f @p 
+[InitDepVow]=v [Cons]=c [Ra]=r [Ya]=y [AfterFCS]=f [Ran]=p  <> @c @r @y @v @f @p 
+
+[Cons]=c [AfterFCS]=f [Ran]=p  <> @c @f  @p 
+[Cons]=c [Ya]=y [AfterFCS]=f [Ran]=p  <> @c @y @f @p 
+[Cons]=c [Ra]=r [AfterFCS]=f [Ran]=p  <> @c @r @f @p 
+[Cons]=c [Ra]=r [Ya]=y [AfterFCS]=f [Ran]=p  <> @c @r @y @f @p 
+
+[Cons]=c [AfterFCS]=f [AfterDepVow]=v <> @c @v @f
+[Cons]=c [Ra]=r [AfterFCS]=f [AfterDepVow]=v <> @c @r @v @f
+[Cons]=c [Ya]=y [AfterFCS]=f [AfterDepVow]=v <> @c @y @v @f
+[Cons]=c [Ra]=r [Ya]=y [AfterFCS]=f [AfterDepVow]=v <> @c @r @y @v @f
+
+
+[Cons]=c [Nukta]=n  <> @c @n
+[Cons]=c [Ra]=r [Nukta]=n  <> @c @n @r
+[Cons]=c [Ya]=y [Nukta]=n  <> @c @n @y
+[Cons]=c [Ra]=r [Ya]=y [Nukta]=n  <> @c @n @r @y
+
+
+
+
+
