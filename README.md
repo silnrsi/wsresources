@@ -20,64 +20,73 @@ Examples of possible resource files for a language with code xxx.
 ```
 wsresources
 +-- langs
-¦   +-- a
-¦   +-- ..
-¦   +-- x
-¦   ¦   +-- xxx-Arab
-¦   ¦   ¦   +-- hunspell
-¦   ¦   ¦   ¦   +-- xxx-Arab.aff
-¦   ¦   ¦   ¦   +-- xxx-Arab.dic
-¦   ¦   ¦   +-- keyboards
-¦   ¦   ¦   ¦   +-- msklc
-¦   ¦   ¦   ¦   ¦   +-- files .klc, .zip
-¦   ¦   ¦   ¦   +-- ukelele
-¦   ¦   ¦   ¦       +-- files .txt, keylayout
-¦   ¦   ¦   +-- mappings_custom
-¦   ¦   ¦   ¦       +-- files .map, .tec
-¦   ¦   ¦   +-- mappings_unicode
-¦   ¦   ¦           +-- files .map, .tec
-¦   ¦   +-- xxx-Latn
-¦   +-- y
-¦   +-- z
+Â¦   +-- a
+Â¦   +-- ..
+Â¦   +-- x
+Â¦   Â¦   +-- xxx-Arab
+Â¦   Â¦   Â¦   +-- hunspell
+Â¦   Â¦   Â¦   Â¦   +-- xxx-Arab.aff
+Â¦   Â¦   Â¦   Â¦   +-- xxx-Arab.dic
+Â¦   Â¦   Â¦   +-- keyboards
+Â¦   Â¦   Â¦   Â¦   +-- msklc
+Â¦   Â¦   Â¦   Â¦   Â¦   +-- files .klc, .zip
+Â¦   Â¦   Â¦   Â¦   +-- ukelele
+Â¦   Â¦   Â¦   Â¦       +-- files .txt, keylayout
+Â¦   Â¦   Â¦   +-- legacy
+Â¦   Â¦   Â¦   Â¦   +-- encoding name
+Â¦   Â¦   Â¦   Â¦       +-- mappings
+Â¦   Â¦   Â¦   Â¦           +-- files .map, .tec
+Â¦   Â¦   Â¦   Â¦       +-- keyboards
+Â¦   Â¦   Â¦   Â¦           +-- .kmn etc.
+Â¦   Â¦   Â¦   +-- mappings
+Â¦   Â¦   Â¦           +-- files .map, .tec
+Â¦   Â¦   +-- xxx-Latn
+Â¦   +-- y
+Â¦   +-- z
 +-- regions
-¦   +-- Africa
-¦   ¦   +-- CM
-¦   ¦   ¦   +-- keyboards
-¦   ¦   ¦   ¦   +-- msklc
-¦   ¦   ¦   ¦   ¦   +-- files .klc, .zip
-¦   ¦   ¦   ¦   +-- ukelele
-¦   ¦   ¦   ¦       +-- files .txt, keylayout
-¦   ¦   ¦   +-- mappings_custom
-¦   ¦   ¦   ¦   +-- files .map, .tec
-¦   ¦   ¦   +-- mappings_unicode
-¦   ¦   ¦       +-- files .map, .tec
-¦   ¦   +-- TG
-¦   +-- Americas
-¦   ¦   +-- BO
-¦   ¦   +-- CO
-¦   +-- Asia
-¦   +-- Europe
-¦   +-- Oceania
+Â¦   +-- Africa
+Â¦   Â¦   +-- CM
+Â¦   Â¦   Â¦   +-- keyboards
+Â¦   Â¦   Â¦   Â¦   +-- msklc
+Â¦   Â¦   Â¦   Â¦   Â¦   +-- files .klc, .zip
+Â¦   Â¦   Â¦   Â¦   +-- ukelele
+Â¦   Â¦   Â¦   Â¦       +-- files .txt, keylayout
+Â¦   Â¦   Â¦   +-- legacy
+Â¦   Â¦   Â¦   Â¦   +-- encoding name
+Â¦   Â¦   Â¦   Â¦       +-- mappings
+Â¦   Â¦   Â¦   Â¦           +-- files .map, .tec
+Â¦   Â¦   Â¦   Â¦       +-- keyboards
+Â¦   Â¦   Â¦   Â¦           +-- .kmn etc.
+Â¦   Â¦   Â¦   +-- mappings
+Â¦   Â¦   Â¦       +-- files .map, .tec
+Â¦   Â¦   +-- TG
+Â¦   +-- Americas
+Â¦   Â¦   +-- BO
+Â¦   Â¦   +-- CO
+Â¦   +-- Asia
+Â¦   +-- Europe
+Â¦   +-- Oceania
 +-- scripts
     +-- Arab
     +-- Deva
     +-- Gujr
     +-- Latn
         +-- keyboards
-        ¦   +-- msklc
-        ¦   ¦   +-- sil-ipa
-        ¦   ¦       +-- files .klc, .zip
-        ¦   +-- ukelele
-        ¦       +-- sil-ipa
-        ¦           +-- files .txt, keylayout
-        +-- mappings_custom
-        ¦   +-- asap-ipa
-        ¦       +-- files .map, .tec
-        ¦   +-- sil-ipa-1993
-        ¦       +-- files .xml, .map, .tec
-        ¦   +-- sil-ipa-1990
-        ¦       +-- files .map, .tec
-        +-- mappings_unicode
+        Â¦   +-- msklc
+        Â¦   Â¦   +-- sil-ipa
+        Â¦   Â¦       +-- files .klc, .zip
+        Â¦   +-- ukelele
+        Â¦       +-- sil-ipa
+        Â¦           +-- files .txt, keylayout
+        +-- legacy
+        Â¦   +-- asap-ipa
+Â¦   Â¦   Â¦       +-- mappings
+Â¦   Â¦   Â¦           +-- files .map, .tec
+Â¦   Â¦   Â¦       +-- keyboards
+Â¦   Â¦   Â¦           +-- .kmn etc.
+        Â¦   +-- sil-ipa-1993
+        Â¦   +-- sil-ipa-1990
+        +-- mappings
 ```
 
 ## Other resources
