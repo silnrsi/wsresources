@@ -1,0 +1,621 @@
+	# Based on the SIL Ethiopic Unicode keyboard for Keyman
+	#
+	# Written by Jonathan Kew, 27 May 2006
+	# Updated by Lorna Priest, 14 Dec 2010
+
+	# note that any indented line will be ignored by KeyLayoutMaker.pl
+	# and is therefore a comment (even without a "comment character"!)
+
+	# *******************************************      
+	# At first create all six-form elements:
+	# *******************************************      
+
+h	1205 # 'h' first form      
+l	120d # 'l'
+H	1215 # 'h' second form
+m	121d
+J	1225 # 's' second form         
+r	122d          
+s	1235          
+S	123d # 'sh'   
+q	1245 # 'k''   
+Q	1255 # 'k'' with bar above
+b	1265     
+B	126d # 'V'      
+t	1275          
+c	127d          
+L	1285 # 'h' third form
+n	1295
+N	129d          
+x	12a5 # Single vowels (first form)
+k	12ad                   
+K	12bd # 'h' forth form     
+w	12cd          
+X	12d5 # Single vowels (second form)
+z	12dd          
+Z	12e5          
+y	12ed          
+d	12f5          
+D	12fd
+j	1305          
+g	130d          
+G	131d
+T	1325          
+C	132d
+P	1335 # 'P''        
+F	133d # 'S'' first form
+Y	1345 # 'S'' second form      
+f	134d          
+p	1355          
+
+v	12a0 # Single vowels at the beginning of a word (first form)
+u	12a1
+i	12a2
+a	12a3
+e	12a4
+	x	12a5 # see above
+o	12a6
+   
+V	12d0 # Single vowels at the beginning of a word (second form)     
+U	12d1
+I	12d2
+A	12d3
+E	12d4
+	X	12d5 # see above
+O	12d6
+
+
+	# ***********************************************************
+	# Consonant-vowel pairs
+	# ***********************************************************
+
+hv	1200
+lv	1208
+Hv	1210
+mv	1218
+Jv	1220
+rv	1228
+sv	1230
+Sv	1238
+qv	1240
+Qv	1250
+bv	1260
+Bv	1268
+tv	1270
+cv	1278
+Lv	1280
+nv	1290
+Nv	1298
+xv	12a0
+kv	12a8
+Kv	12b8
+wv	12c8
+Xv	12d0
+zv	12d8
+Zv	12e0
+yv	12e8
+dv	12f0
+Dv	12f8
+jv	1300
+gv	1308
+Gv	1318
+Tv	1320
+Cv	1328
+Pv	1330
+Fv	1338
+Yv	1340
+fv	1348
+pv	1350																		
+
+hu	1201
+lu	1209
+Hu	1211
+mu	1219
+Ju	1221
+ru	1229
+su	1231
+Su	1239
+qu	1241
+Qu	1251
+bu	1261
+Bu	1269
+tu	1271
+cu	1279
+Lu	1281
+nu	1291
+Nu	1299
+xu	12a1
+ku	12a9
+Ku	12b9
+wu	12c9
+Xu	12d1
+zu	12d9
+Zu	12e1
+yu	12e9
+du	12f1
+Du	12f9
+ju	1301
+gu	1309
+Gu	1319
+Tu	1321
+Cu	1329
+Pu	1331
+Fu	1339
+Yu	1341
+fu	1349
+pu	1351																		
+
+hi	1202
+li	120a
+Hi	1212
+mi	121a
+Ji	1222
+ri	122a
+si	1232
+Si	123a
+qi	1242
+Qi	1252
+bi	1262
+Bi	126a
+ti	1272
+ci	127a
+Li	1282
+ni	1292
+Ni	129a
+xi	12a2
+ki	12aa
+Ki	12ba
+wi	12ca
+Xi	12d2
+zi	12da
+Zi	12e2
+yi	12ea
+di	12f2
+Di	12fa
+ji	1302
+gi	130a
+Gi	131a
+Ti	1322
+Ci	132a
+Pi	1332
+Fi	133a
+Yi	1342
+fi	134a
+pi	1352																		
+
+ha	1203
+la	120b
+Ha	1213
+ma	121b
+Ja	1223
+ra	122b
+sa	1233
+Sa	123b
+qa	1243
+Qa	1253
+ba	1263
+Ba	126b
+ta	1273
+ca	127b
+La	1283
+na	1293
+Na	129b
+xa	12a3
+ka	12ab
+Ka	12bb
+wa	12cb
+Xa	12d3
+za	12db
+Za	12e3
+ya	12eb
+da	12f3
+Da	12fb
+ja	1303
+ga	130b
+Ga	131b
+Ta	1323
+Ca	132b
+Pa	1333
+Fa	133b
+Ya	1343
+fa	134b
+pa	1353
+
+he	1204
+le	120c
+He	1214
+me	121c
+Je	1224
+re	122c
+se	1234
+Se	123c
+qe	1244
+Qe	1254
+be	1264
+Be	126c
+te	1274
+ce	127c
+Le	1284
+ne	1294
+Ne	129c
+xe	12a4
+ke	12ac
+Ke	12bc
+we	12cc
+Xe	12d4
+ze	12dc
+Ze	12e4
+ye	12ec
+de	12f4
+De	12fc
+je	1304
+ge	130c
+Ge	131c
+Te	1324
+Ce	132c
+Pe	1334
+Fe	133c
+Ye	1344
+fe	134c
+pe	1354
+
+ho	1206
+lo	120e
+Ho	1216
+mo	121e
+Jo	1226
+ro	122e
+so	1236
+So	123e
+qo	1246
+Qo	1256
+bo	1266
+Bo	126e
+to	1276
+co	127e
+Lo	1286
+no	1296
+No	129e
+xo	12a6
+ko	12ae
+Ko	12be
+wo	12ce
+Xo	12d6
+zo	12de
+Zo	12e6
+yo	12ee
+do	12f6
+Do	12fe
+jo	1306
+go	130e
+Go	131e
+To	1326
+Co	132e
+Po	1336
+Fo	133e
+Yo	1346
+fo	134e
+po	1356
+
+hO	1207
+lO	2d80
+mO	2d81
+rO	2d82
+sO	2d83
+SO	2d84
+qO	1247
+bO	2d85
+tO	2d86
+cO	2d87
+LO	1287
+nO	2d88
+NO	2d89
+xO	2d8a
+kO	12af
+wO	12cf
+zO	2d8b
+yO	12ef
+dO	2d8c
+DO	2d8d
+jO	2d8e
+gO	130f
+TO	2d8f
+CO	2d90
+PO	2d91
+YO	1347
+pO	2d92
+
+	# Basic diphtongs and second diphtong forms
+lA	120f
+HA	1217
+mA	121f
+JA	1227
+rA	122f
+sA	1237
+SA	123f
+bA	1267
+BA	126f
+tA	1277
+cA	127f
+nA	1297
+NA	129f
+xA	12a7
+zA	12df
+ZA	12e7
+dA	12f7
+DA	12ff
+jA	1307
+GA	131f
+TA	1327
+CA	132f
+PA	1337
+FA	133f
+fA	134f
+pA	1357																		
+
+	# ***********************************************************
+	# Diacritics above (using OPTION where keyman used CTRL)
+	# ***********************************************************
+
+	# Disabled because KeyLayoutMaker doesn't support Option keys;
+	# add with Ukelele after building the keylayout file
+	opt-1	030f
+	opt-2	0300
+	opt-3	0304
+	opt-4	0301
+	opt-5	030b
+	opt-6	0302
+	opt-7	030c
+	opt-8	0307
+	opt-9	0308
+	opt-0	0303 
+	opt-'	135f
+	opt-:	135e
+	opt-"	135d
+
+	# *****************************************************
+	# Special groups:                                     
+	# *****************************************************
+
+S#	2da5
+c#	2dad
+Z#	2db5
+C#	2dbd
+q#	2dc5
+k#	2dcd
+K#	2dd5
+g#	2ddd
+
+s=	ab05 # s     with line through        (Gumuz Gofa)
+z=	ab15 # z     with line above          (Gumuz Gofa)
+D=	e2fd # D     with line inside         (Gumuz Gofa)
+g=	ab0d # g     with line above combined
+C=	ab25 # t'    with line above
+P=	ab2d # p'    with line above
+d=	e385 # d     with line inside
+
+	# Adding vowels to specials:
+
+S#v	2da0
+c#v	2da8
+Z#v	2db0
+C#v	2db8
+q#v	2dc0
+k#v	2dc8
+K#v	2dd0
+g#v	2dd8
+C=v	ab20
+P=v	ab28
+
+S#u	2da1
+c#u	2da9
+Z#u	2db1
+C#u	2db9
+q#u	2dc1
+k#u	2dc9
+K#u	2dd1
+g#u	2dd9
+s=u	ab01
+z=u	ab11
+D=u	ab09
+C=u	ab21
+P=u	ab29
+
+S#i	2da2
+c#i	2daa
+Z#i	2db2
+C#i	2dba
+q#i	2dc2
+k#i	2dca
+K#i	2dd2
+g#i	2dda
+s=i	ab02
+z=i	ab12
+D=i	ab0a
+C=i	ab22
+P=i	ab2a
+
+S#a	2da3
+c#a	2dab
+Z#a	2db3
+C#a	2dbb
+q#a	2dc3
+k#a	2dcb
+K#a	2dd3
+g#a	2ddb
+s=a	ab03
+z=a	ab13
+D=a	ab0b
+C=a	ab23
+P=a	ab2b
+
+S#e	2da4
+c#e	2dac
+Z#e	2db4
+C#e	2dbc
+q#e	2dc4
+k#e	2dcc
+K#e	2dd4
+g#e	2ddc
+s=e	ab04
+z=e	ab14
+D=e	ab0c
+C=e	ab24
+P=e	ab2c
+
+S#o	2da6
+c#o	2dae
+Z#o	2db6
+C#o	2dbe
+q#o	2dc6
+k#o	2dce
+K#o	2dd6
+g#o	2dde
+s=o	ab06
+z=o	ab16
+D=o	ab0e
+C=o	ab26
+P=o	ab2e
+
+	# any(DGbase)  + 'V' > index(DGfirst,1)
+
+mV	1380
+qV	1248
+QV	1258
+bV	1384
+LV	1288
+kV	12b0
+KV	12c0
+gV	1310
+GV	2d93
+fV	1388
+pV	138c
+
+	# any(DGbase)  + 'I' > index(DGthird,1)
+
+mI	1381
+qI	124a
+QI	125a
+bI	1385
+LI	128a
+kI	12b2
+KI	12c2
+gI	1312
+GI	2d94
+fI	1389
+pI	138d
+rI	1358
+
+qA	124b
+QA	125b
+LA	128b
+kA	12b3
+KA	12c3 # corrected from e403
+gA	1313
+
+
+	# any(DGbase)  + 'E' > index(DGfifth,1)                
+
+mE	1382
+qE	124c
+QE	125c
+bE	1386
+LE	128c
+kE	12b4
+KE	12c4
+gE	1314
+GE	2d95
+fE	138a
+pE	138e
+
+	any(DGbase)  + 'W' > index(DGsix,1) 
+
+mW	1383
+qW	124d
+QW	125d
+bW	1387
+LW	128d
+kW	12b5
+KW	12c5
+gW	1315
+GW	2d96
+fW	138b
+pW	138f
+
+	# Diphthong groups
+
+
+fii	135a
+mAM	1359
+
+	c ***********************************************************
+	c Punctuation
+	c ***********************************************************
+
+:	1361 # Amharic space
+.	1362 # Amharic full stop
+;	1364 # Amharic semicolon
+,	1365 # Amharic comma (first form)
+,,	1363 # Amharic comma (second form)
+
+:-	1366 # two dots and slash
+:.	1367 # three dots in vertical order
+::	1368 # 7 dots ordered in a circle
+
+./	1360 # four dots with diagonal lines
+..	002e # single dot
+...	2022 # big dot in middle
+
+<<	00AB
+>>	00bb
+
+(m)	e496 # 'm' with circle
+
+	# ***********************************************************
+	# Amharic numbers
+	# ***********************************************************
+
+0	0030
+1	0031
+2	0032
+3	0033
+4	0034
+5	0035
+6	0036
+7	0037
+8	0038
+9	0039
+
+1*	1369
+2*	136a
+3*	136b
+4*	136c
+5*	136d
+6*	136e
+7*	136f
+8*	1370
+9*	1371
+
+1*0	1372
+2*0	1373
+3*0	1374
+4*0	1375
+5*0	1376
+6*0	1377
+7*0	1378
+8*0	1379
+9*0	137a
+
+1*00	137b
+1*000	e494
+1*0000	137c
+
+	# basic punctuation used in other rules, so they work in isolation
+
+#	0023
+*	002a
+(	0028
+)	0029
+/	002f
+<	003c
+>	003e
