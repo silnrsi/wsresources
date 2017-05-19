@@ -1,0 +1,180 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 10/11/2010.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Arial Unicode MS;11.25
+;   Right-hand side font = Arial Unicode MS;11.25
+;   Main Window Position = 549,166,920,1093
+;   Left-hand side Character Map Window Position = 658,0,457,446
+;   Right-hand side Character Map Window Position = 658,446,457,446
+
+; This converts data that used the unreleased "SIL Abyssinica" font 
+; PUA codepoints to Unicode 4.1 codepoints
+
+LHSName			"SIL-ETG-Unicode32PUA-2000"
+RHSName			"ETGUnicode60"
+LHSDescription		"Unicode 3.2 with SIL-ETG PUA values"
+RHSDescription		"Unicode 6.0"
+Version			"1.2"
+Contact			"mailto:lorna_evans@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SIL-ETG-PUAtoUnicode60"
+
+; 2010-10-11  LP     updated for Unicode 6.0
+; 2006-05-10	LP	created
+
+pass(Unicode)
+
+
+
+U+E207 <> U+1207
+U+E247 <> U+1247
+U+E287 <> U+1287
+U+E347 <> U+1347
+U+E408 <> U+1360
+U+E020 <> U+1380
+U+E022 <> U+1381
+U+E024 <> U+1382
+U+E025 <> U+1383
+U+E028 <> U+1384
+U+E02A <> U+1385
+U+E02C <> U+1386
+U+E02D <> U+1387
+U+E030 <> U+1388
+U+E032 <> U+1389
+U+E530 <> U+1390
+U+E531 <> U+1391
+U+E532 <> U+1392
+U+E533 <> U+1395
+U+E534 <> U+1396
+U+E535 <> U+1397
+U+E536 <> U+1398
+U+E537 <> U+1399
+U+E2AF <> U+12AF
+U+E2CF <> U+12CF
+U+E30F <> U+130F
+U+E31F <> U+131f
+U+E538 <> U+135F
+U+E034 <> U+138A
+U+E035 <> U+138B
+U+E038 <> U+138C
+U+E03A <> U+138D
+U+E03C <> U+138E
+U+E03D <> U+138F
+U+E20F <> U+2D80
+U+E21F <> U+2D81
+U+E22F <> U+2D82
+U+E237 <> U+2D83
+U+E23F <> U+2D84
+U+E267 <> U+2D85
+U+E277 <> U+2D86
+U+E27F <> U+2D87
+U+E297 <> U+2D88
+U+E29F <> U+2D89
+U+E2A7 <> U+2D8A
+U+E2DF <> U+2D8B
+U+E2F7 <> U+2D8C
+U+E2FF <> U+2D8D
+U+E307 <> U+2D8E
+U+E327 <> U+2D8F
+U+E32F <> U+2D90
+U+E337 <> U+2D91
+U+E357 <> U+2D92
+U+E078 <> U+2D93
+U+E07A <> U+2D94
+U+E07C <> U+2D95
+U+E07D <> U+2D96
+U+E048 <> U+2DA0
+U+E049 <> U+2DA1
+U+E04A <> U+2DA2
+U+E04B <> U+2DA3
+U+E04C <> U+2DA4
+U+E04D <> U+2DA5
+U+E04E <> U+2DA6
+U+E050 <> U+2DA8
+U+E051 <> U+2DA9
+U+E052 <> U+2DAA
+U+E053 <> U+2DAB
+U+E054 <> U+2DAC
+U+E055 <> U+2DAD
+U+E056 <> U+2DAE
+U+E058 <> U+2DB0
+U+E059 <> U+2DB1
+U+E05A <> U+2DB2
+U+E05B <> U+2DB3
+U+E05C <> U+2DB4
+U+E05D <> U+2DB5
+U+E05E <> U+2DB6
+U+E060 <> U+2DB8
+U+E061 <> U+2DB9
+U+E062 <> U+2DBA
+U+E063 <> U+2DBB
+U+E064 <> U+2DBC
+U+E065 <> U+2DBD
+U+E066 <> U+2DBE
+U+E000 <> U+2DC0
+U+E001 <> U+2DC1
+U+E002 <> U+2DC2
+U+E003 <> U+2DC3
+U+E004 <> U+2DC4
+U+E005 <> U+2DC5
+U+E006 <> U+2DC6
+U+E008 <> U+2DC8
+U+E009 <> U+2DC9
+U+E00A <> U+2DCA
+U+E00B <> U+2DCB
+U+E00C <> U+2DCC
+U+E00D <> U+2DCD
+U+E00E <> U+2DCE
+U+E010 <> U+2DD0
+U+E011 <> U+2DD1
+U+E012 <> U+2DD2
+U+E013 <> U+2DD3
+U+E014 <> U+2DD4
+U+E015 <> U+2DD5
+U+E016 <> U+2DD6
+U+E018 <> U+2DD8
+U+E019 <> U+2DD9
+U+E01A <> U+2DDA
+U+E01B <> U+2DDB
+U+E01C <> U+2DDC
+U+E01D <> U+2DDD
+U+E01E <> U+2DDE
+
+U+E231 <> U+AB01
+U+E232 <> U+AB02
+U+E233 <> U+AB03
+U+E234 <> U+AB04
+U+E235 <> U+AB05
+U+E236 <> U+AB06
+
+U+E2F9 <> U+AB09
+U+E2FA <> U+AB0A
+U+E2FB <> U+AB0B
+U+E2FC <> U+AB0C
+U+E2FD <> U+AB0D
+U+E2FE <> U+AB0E
+
+U+E2D9 <> U+AB11
+U+E2DA <> U+AB12
+U+E2DB <> U+AB13
+U+E2DC <> U+AB14
+U+E2DD <> U+AB15
+U+E2DE <> U+AB16
+
+U+E328 <> U+AB20
+U+E329 <> U+AB21
+U+E32A <> U+AB22
+U+E32B <> U+AB23
+U+E32C <> U+AB24
+U+E32D <> U+AB25
+U+E32E <> U+AB26
+
+U+E338 <> U+AB28
+U+E339 <> U+AB29
+U+E33A <> U+AB2A
+U+E33B <> U+AB2B
+U+E33C <> U+AB2C
+U+E33D <> U+AB2D
+U+E33E <> U+AB2E
+
+
+

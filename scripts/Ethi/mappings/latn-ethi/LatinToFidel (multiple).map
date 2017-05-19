@@ -1,0 +1,1235 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 10/11/2010.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Arial Unicode MS;11.25
+;   Right-hand side font = Arial Unicode MS;11.25
+;   Main Window Position = 0,0,658,712
+;   Left-hand side Character Map Window Position = 658,0,457,446
+;   Right-hand side Character Map Window Position = 658,446,457,446
+
+EncodingName            "Basketto Latin To Fidel"
+DescriptiveName         "Basketto Latin To Fidel"
+Version                 "2010"
+Contact                 "mailto: Hans_Schaumberger@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "Basketto-2010"
+LHSName   "Basketto latin"
+RHSName "Unicode Ethiopic"
+LHSFlags (ExpectsNFC GeneratesNFC)
+RHSFlags ()
+
+; Konso mapping conversion for Konso Latin script phonetic encoding system
+;  as used by Hirut & LP team
+; adapted from my older Amharic mapping, "SIL Lap Amharic" 
+;	change	1 - E A Owen 12 Oct. 2003
+;	change	2 - E A Owen 17 Feb. 2004
+
+;set normalization flags only if you are sure they are appropriate
+;SourceFlags		()
+;TargetFlags		()
+pass (Unicode)
+
+;TSCKonso.map
+;Copyright (c) 2002, 2003-4 SIL International.
+
+UniClass  [ascii] = (0..127)
+UniClass [letter] = ( 0x0061 .. 0x007a )
+UniClass [digit] = ( 0x0030 .. 0x0039 )
+UniClass	[CTL] =	( 0x0000 .. 0x001f 0x007f )
+
+[CTL]	<>	[CTL]
+
+[digit] <> [digit] ; Protect numbers
+'\'		<>	reverse_solidus
+;[letter] / '\' [letter]* _  <> [letter] / reverse_solidus [letter]* _  ; Protect sfm
+
+;          *** warning: avoid marker names which could also be keys for fedel characters, ie, \hu *** 
+
+; punctuation characters still need verification for Aari:
+' ' <> space
+'+' 	<> ethiopic_preface_colon
+'*f' <>  asterisk latin_small_letter_f	; footnote
+'*'	<> asterisk
+'(c)' <> copyright_sign
+'(C)'  <> copyright_sign
+'!'	<> exclamation_mark
+'['	<> left_square_bracket
+']'	<> right_square_bracket
+'('	<> left_parenthesis
+')'	<> right_parenthesis
+'<<' 	<> left_pointing_double_angle_quotation_mark
+'>>' 	<> right_pointing_double_angle_quotation_mark
+'<' 	<> single_left_pointing_angle_quotation_mark
+'>' 	<> single_right_pointing_angle_quotation_mark
+'--' 	<> en_dash
+'---' <> em_dash
+'-' 	<> hyphen
+'...'	<> horizontal_ellipsis
+'::' 	<> ethiopic_full_stop
+',,' 	<> ethiopic_colon
+'/:'   <> ethiopic_comma
+';;' 	<> ethiopic_semicolon
+':' 	<> ethiopic_wordspace
+':-' 	<> ethiopic_preface_colon
+
+'??' 	<> ethiopic_question_mark
+'?' 	<> question_mark
+'@' 	<> full_stop		; roman full stop
+; '.'	<> full_stop
+'#' 	<> no_break_space
+
+; "@"	<>  U+002E  ; period from @ keyed in
+","	<>  U+1365  ; Ethiopic COMMA
+"."	<>  U+1362  ; Ethiopic FULL_STOP
+";"	<>  ethiopic_semicolon  ; Ethiopic SEMICOLON
+"<<"	<>  U+00AB  ; guillemotleft <<
+">>"	<>  U+00BB  ; guillemotright >>
+"<"	<>  U+2039  ; single quote left <
+">"	<>  U+203A  ; single quote right >
+; "<<"	<>  U+201C  ; curly quote left or U+EADC 
+; ">>"	<>  U+201D  ; curly quote right or U+EADD >>
+; "<"	<>  U+2018  ; single curly quote left or U+EAD8 <
+; ">"	<>  U+2019  ; single curly quote right or U+EAD9 >
+":-"	<>  U+1366  ; colon hyphen :-
+; " "	<>  U+0020  ;  blank space
+'"'   <>  U+0022; quotation mark
+"'"   <>  U+0027; single quotation mark
+
+
+
+
+
+; Avoid changing of standard format markers
+'\' [letter]  <> reverse_solidus [letter]
+'\' [letter] [letter]  <> reverse_solidus [letter] [letter]
+
+
+; **************************************************************************
+
+"hhuu"	<>  U+1201  ;  HU
+"hhu"	<>  U+1201  ;  HU
+"hhii"	<>  U+1202  ;  HI
+"hhi"	<>  U+1202  ;  HI
+"hhaa"	<>  U+1203  ;  HAA
+"hha"	<>  U+1203  ;  HA
+"hhee"	<>  U+1204  ;  HEE
+"hhe"	<>  U+1204  ;  HEE
+"hhoo"	<>  U+1206  ;  HO
+"hho"	<>  U+1206  ;  HO
+"hh"	<>  U+1205  ;  HE
+
+"huu"	<>  U+1201  ;  HU
+"hu"	<>  U+1201  ;  HU
+"hii"	<>  U+1202  ;  HI
+"hi"	<>  U+1202  ;  HI
+"haa"	<>  U+1203  ;  HAA
+"ha"	<>  U+1203  ;  HA
+"hee"	<>  U+1204  ;  HEE
+"he"	<>  U+1204  ;  HEE
+"hoo"	<>  U+1206  ;  HO
+"ho"	<>  U+1206  ;  HO
+"h"	<>  U+1205  ;  HE
+
+"Huu"	<>  U+1201  ;  HU
+"Hu"	<>  U+1201  ;  HU
+"Hii"	<>  U+1202  ;  HI
+"Hi"	<>  U+1202  ;  HI
+"Haa"	<>  U+1203  ;  HAA
+"Ha"	<>  U+1203  ;  HA
+"Hee"	<>  U+1204  ;  HEE
+"He"	<>  U+1204  ;  HEE
+"Hoo"	<>  U+1206  ;  HO
+"Ho"	<>  U+1206  ;  HO
+"H"	<>  U+1205  ;  HE
+
+; **************************************************************************
+
+"lluu"	<>  U+1209  ;  LU
+"llu"	<>  U+1209  ;  LU
+"llii"	<>  U+120a  ;  LI
+"lli"	<>  U+120a  ;  LI
+"llaa"	<>  U+120b  ;  LAA
+"lla"	<>  U+120b  ;  LA
+"llee"	<>  U+120c  ;  LEE
+"lle"	<>  U+120c  ;  LEE
+"lloo"	<>  U+120e  ;  LO
+"llo"	<>  U+120e  ;  LO
+"ll"	<>  U+120d  ;  LE
+
+"laa"	<>  U+120b  ;  LAA
+"la"	<>  U+120b  ;  LA
+"luu"	<>  U+1209  ;  LU
+"lu"	<>  U+1209  ;  LU
+"lii"	<>  U+120a  ;  LI
+"li"	<>  U+120a  ;  LI
+"lee"	<>  U+120c  ;  LEE
+"le"	<>  U+120c  ;  LEE
+"loo"	<>  U+120e  ;  LO
+"lo"	<>  U+120e  ;  LO
+"l"	<>  U+120d  ;  LE
+
+"Laa"	<>  U+120b  ;  LAA
+"La"	<>  U+120b  ;  LA
+"Luu"	<>  U+1209  ;  LU
+"Lu"	<>  U+1209  ;  LU
+"Lii"	<>  U+120a  ;  LI
+"Li"	<>  U+120a  ;  LI
+"Lee"	<>  U+120c  ;  LEE
+"Le"	<>  U+120c  ;  LEE
+"Loo"	<>  U+120e  ;  LO
+"Lo"	<>  U+120e  ;  LO
+"L"	<>  U+120d  ;  LE
+
+; **************************************************************************
+
+"mmaa"	<>  U+121b  ;  MAA
+"mma"	<>  U+121b  ;  MA
+"mmuu"	<>  U+1219  ;  MU
+"mmu"	<>  U+1219  ;  MU
+"mmii"	<>  U+121a  ;  MI
+"mmi"	<>  U+121a  ;  MI
+"mmee"	<>  U+121c  ;  MEE
+"mme"	<>  U+121c  ;  MEE
+"mmoo"	<>  U+121e  ;  MO
+"mmo"	<>  U+121e  ;  MO
+"mm"	<>  U+121d  ;  ME
+
+"maa"	<>  U+121b  ;  MAA
+"ma"	<>  U+121b  ;  MA
+"muu"	<>  U+1219  ;  MU
+"mu"	<>  U+1219  ;  MU
+"mii"	<>  U+121a  ;  MI
+"mi"	<>  U+121a  ;  MI
+"mee"	<>  U+121c  ;  MEE
+"me"	<>  U+121c  ;  MEE
+"moo"	<>  U+121e  ;  MO
+"mo"	<>  U+121e  ;  MO
+"m"	<>  U+121d  ;  ME
+
+"Maa"	<>  U+121b  ;  MAA
+"Ma"	<>  U+121b  ;  MA
+"Muu"	<>  U+1219  ;  MU
+"Mu"	<>  U+1219  ;  MU
+"Mii"	<>  U+121a  ;  MI
+"Mi"	<>  U+121a  ;  MI
+"Mee"	<>  U+121c  ;  MEE
+"Me"	<>  U+121c  ;  MEE
+"Moo"	<>  U+121e  ;  MO
+"Mo"	<>  U+121e  ;  MO
+"M"	<>  U+121d  ;  ME
+
+; **************************************************************************
+
+"rraa"	<>  U+122b  ;  RAA
+"rra"	<>  U+122b  ;  RA
+"rruu"	<>  U+1229  ;  RU
+"rru"	<>  U+1229  ;  RU
+"rrii"	<>  U+122a  ;  RI
+"rri"	<>  U+122a  ;  RI
+"rree"	<>  U+122c  ;  REE
+"rre"	<>  U+122c  ;  REE
+"rroo"	<>  U+122e  ;  RO
+"rro"	<>  U+122e  ;  RO
+"rr"	<>  U+122d  ;  RE
+
+"raa"	<>  U+122b  ;  RAA
+"ra"	<>  U+122b  ;  RA
+"ruu"	<>  U+1229  ;  RU
+"ru"	<>  U+1229  ;  RU
+"rii"	<>  U+122a  ;  RI
+"ri"	<>  U+122a  ;  RI
+"ree"	<>  U+122c  ;  REE
+"re"	<>  U+122c  ;  REE
+"roo"	<>  U+122e  ;  RO
+"ro"	<>  U+122e  ;  RO
+"r"	<>  U+122d  ;  RE
+
+"Raa"	<>  U+122b  ;  RAA
+"Ra"	<>  U+122b  ;  RA
+"Ruu"	<>  U+1229  ;  RU
+"Ru"	<>  U+1229  ;  RU
+"Ri"	<>  U+122a  ;  RI
+"Rii"	<>  U+122a  ;  RI
+"Ree"	<>  U+122c  ;  REE
+"Re"	<>  U+122c  ;  REE
+"Roo"	<>  U+122e  ;  RO
+"Ro"	<>  U+122e  ;  RO
+"R"	<>  U+122d  ;  RE
+
+; **************************************************************************
+
+"ssaa"	<>  U+1233  ;  SAA
+"ssa"	<>  U+1233  ;  SA
+"ssuu"	<>  U+1231  ;  SU
+"ssu"	<>  U+1231  ;  SU
+"ssii"	<>  U+1232  ;  SI
+"ssi"	<>  U+1232  ;  SI
+"ssee"	<>  U+1234  ;  SEE
+"sse"	<>  U+1234  ;  SEE
+"ssoo"	<>  U+1236  ;  SO
+"sso"	<>  U+1236  ;  SO
+"ss"	<>  U+1235  ;  SE
+
+"saa"	<>  U+1233  ;  SAA
+"sa"	<>  U+1233  ;  SA
+"suu"	<>  U+1231  ;  SU
+"su"	<>  U+1231  ;  SU
+"sii"	<>  U+1232  ;  SI
+"si"	<>  U+1232  ;  SI
+"see"	<>  U+1234  ;  SEE
+"se"	<>  U+1234  ;  SEE
+"soo"	<>  U+1236  ;  SO
+"so"	<>  U+1236  ;  SO
+"s"	<>  U+1235  ;  SE
+
+"Saa"	<>  U+1233  ;  SAA
+"Sa"	<>  U+1233  ;  SA
+"Suu"	<>  U+1231  ;  SU
+"Su"	<>  U+1231  ;  SU
+"Sii"	<>  U+1232  ;  SI
+"Si"	<>  U+1232  ;  SI
+"See"	<>  U+1234  ;  SEE
+"Se"	<>  U+1234  ;  SEE
+"Soo"	<>  U+1236  ;  SO
+"So"	<>  U+1236  ;  SO
+"S"	<>  U+1235  ;  SE
+
+; **************************************************************************
+
+"shhaa"	<>  U+123b  ;  SHAA
+"shha"	<>  U+123b  ;  SHA
+"shhuu"	<>  U+1239  ;  SHU
+"shhu"	<>  U+1239  ;  SHU
+"shhii"	<>  U+123a  ;  SHI
+"shhi"	<>  U+123a  ;  SHI
+"shhee"	<>  U+123c  ;  SHEE
+"shhe"	<>  U+123c  ;  SHEE
+"shhoo"	<>  U+123e  ;  SHO
+"shho"	<>  U+123e  ;  SHO
+"shh"		<>  U+123d  ;  SHE
+
+"shaa"	<>  U+123b  ;  SHAA
+"sha"	<>  U+123b  ;  SHA
+"shuu"	<>  U+1239  ;  SHU
+"shu"	<>  U+1239  ;  SHU
+"shii"	<>  U+123a  ;  SHI
+"shi"	<>  U+123a  ;  SHI
+"shee"	<>  U+123c  ;  SHEE
+"she"	<>  U+123c  ;  SHEE
+"shoo"	<>  U+123e  ;  SHO
+"sho"	<>  U+123e  ;  SHO
+"sh"	<>  U+123d  ;  SHE
+
+"Shaa"	<>  U+123b  ;  SHAA
+"Sha"	<>  U+123b  ;  SHA
+"Shuu"	<>  U+1239  ;  SHU
+"Shu"	<>  U+1239  ;  SHU
+"Shii"	<>  U+123a  ;  SHI
+"Shi"	<>  U+123a  ;  SHI
+"Shee"	<>  U+123c  ;  SHEE
+"She"	<>  U+123c  ;  SHEE
+"Shoo"	<>  U+123e  ;  SHO
+"Sho"	<>  U+123e  ;  SHO
+"Sh"	<>  U+123d  ;  SHE
+
+; **************************************************************************
+
+"qqaa"	<>  U+1243  ;  QAA
+"qqa"	<>  U+1243  ;  QA
+"qquu"	<>  U+1241  ;  QU U+12D0
+"qqu"	<>  U+1241  ;  QU
+"qqii"	<>  U+1242  ;  QI
+"qqi"	<>  U+1242  ;  QI
+"qqee"	<>  U+1244  ;  QEE
+"qqe"	<>  U+1244  ;  QEE
+"qqoo"	<>  U+1246  ;  QO
+"qqo"	<>  U+1246  ;  QO U+12D0
+"qq"	<>  U+1245  ;  QE
+
+"qaa"	<>  U+1243  ;  QAA
+"qa"	<>  U+1243  ;  QA
+"quu"	<>  U+1241  ;  QU
+"qu"	<>  U+1241  ;  QU
+"qii"	<>  U+1242  ;  QI
+"qi"	<>  U+1242  ;  QI
+"qee"	<>  U+1244  ;  QEE
+"qe"	<>  U+1244  ;  QEE
+"qoo"	<>  U+1246  ;  QO
+"qo"	<>  U+1246  ;  QO
+"q"	<>  U+1245  ;  QE
+
+"Qaa"	<>  U+1243  ;  QAA
+"Qa"	<>  U+1243  ;  QA
+"Quu"	<>  U+1241  ;  QU
+"Qu"	<>  U+1241  ;  QU
+"Qii"	<>  U+1242  ;  QI
+"Qi"	<>  U+1242  ;  QI
+"Qee"	<>  U+1244  ;  QEE
+"Qe"	<>  U+1244  ;  QEE
+"Qoo"	<>  U+1246  ;  QO
+"Qo"	<>  U+1246  ;  QO
+"Q"	<>  U+1245  ;  QE
+
+; **************************************************************************
+
+"bbaa"	<>  U+1263  ;  BAA
+"bba"	<>  U+1263  ;  BA
+"bbuu"	<>  U+1261  ;  BU
+"bbu"	<>  U+1261  ;  BU
+"bbii"	<>  U+1262  ;  BI
+"bbi"	<>  U+1262  ;  BI
+"bbee"	<>  U+1264  ;  BEE
+"bbe"	<>  U+1264  ;  BEE
+"bboo"	<>  U+1266  ;  BO
+"bbo"	<>  U+1266  ;  BO
+"bb"	<>  U+1265  ;  BE
+
+"baa"	<>  U+1263  ;  BAA
+"ba"	<>  U+1263  ;  BA
+"buu"	<>  U+1261  ;  BU
+"bu"	<>  U+1261  ;  BU
+"bii"	<>  U+1262  ;  BI
+"bi"	<>  U+1262  ;  BI
+"bee"	<>  U+1264  ;  BEE
+"be"	<>  U+1264  ;  BEE
+"boo"	<>  U+1266  ;  BO
+"bo"	<>  U+1266  ;  BOut true
+"b"	<>  U+1265  ;  BE
+
+"Baa"	<>  U+1263  ;  BAA
+"Ba"	<>  U+1263  ;  BA
+"Buu"	<>  U+1261  ;  BU
+"Bu"	<>  U+1261  ;  BU
+"Bii"	<>  U+1262  ;  BI
+"Bi"	<>  U+1262  ;  BI
+"Bee"	<>  U+1264  ;  BEE
+"Be"	<>  U+1264  ;  BEE
+"Boo"	<>  U+1266  ;  BO
+"Bo"	<>  U+1266  ;  BO
+"B"	<>  U+1265  ;  BE
+
+; **************************************************************************
+
+"ttaa"	<>  U+1273  ;  TAA
+"tta"	<>  U+1273  ;  TA
+"ttuu"	<>  U+1271  ;  TU
+"ttu"	<>  U+1271  ;  TU
+"ttii"	<>  U+1272  ;  TI
+"tti"	<>  U+1272  ;  TI
+"ttee"	<>  U+1274  ;  TEE
+"tte"	<>  U+1274  ;  TEE
+"ttoo"	<>  U+1276  ;  TO
+"tto"	<>  U+1276  ;  TO
+"tt"	<>  U+1275  ;  TE
+
+"taa"	<>  U+1273  ;  TAA
+"ta"	<>  U+1273  ;  TA
+"tuu"	<>  U+1271  ;  TU
+"tu"	<>  U+1271  ;  TU
+"tii"	<>  U+1272  ;  TI
+"ti"	<>  U+1272  ;  TI
+"tee"	<>  U+1274  ;  TEE
+"te"	<>  U+1274  ;  TEE
+"too"	<>  U+1276  ;  TO
+"to"	<>  U+1276  ;  TOut true
+"t"	<>  U+1275  ;  TE
+
+"Taa"	<>  U+1273  ;  TAA
+"Ta"	<>  U+1273  ;  TA
+"Tuu"	<>  U+1271  ;  TU
+"Tu"	<>  U+1271  ;  TU
+"Tii"	<>  U+1272  ;  TI
+"Ti"	<>  U+1272  ;  TI
+"Tee"	<>  U+1274  ;  TEE
+"Te"	<>  U+1274  ;  TEE
+"Too"	<>  U+1276  ;  TO
+"To"	<>  U+1276  ;  TOut true
+"T"	<>  U+1275  ;  TE
+
+; **************************************************************************
+
+"ccaa"	<>  U+127b  ;  CAA
+"cca"	<>  U+127b  ;  CA
+"ccuu"	<>  U+1279  ;  CU
+"ccu"	<>  U+1279  ;  CU
+"ccii"	<>  U+127a  ;  CI
+"cci"	<>  U+127a  ;  CE
+"ccee"	<>  U+127c  ;  CEE
+"cce"	<>  U+127c  ;  CEE
+"ccoo"	<>  U+127e  ;  CO
+"cco"	<>  U+127e  ;  CO
+"cc"	<>  U+127d  ;  CE
+
+"caa"	<>  U+127b  ;  CAA
+"ca"	<>  U+127b  ;  CA
+"cuu"	<>  U+1279  ;  CU
+"cu"	<>  U+1279  ;  CU
+"cii"	<>  U+127a  ;  CI
+"ci"	<>  U+127a  ;  CI
+"cee"	<>  U+127c  ;  CEE
+"ce"	<>  U+127c  ;  CEE
+"coo"	<>  U+127e  ;  CO
+"co"	<>  U+127e  ;  CO
+"c"	<>  U+127d  ;  CE
+
+"Caa"	<>  U+127b  ;  CAA
+"Ca"	<>  U+127b  ;  CA
+"Cuu"	<>  U+1279  ;  CU
+"Cu"	<>  U+1279  ;  CU
+"Cii"	<>  U+127a  ;  CI
+"Ci"	<>  U+127a  ;  CI
+"Cee"	<>  U+127c  ;  CEE
+"Ce"	<>  U+127c  ;  CEE
+"Coo"	<>  U+127e  ;  CO
+"Co"	<>  U+127e  ;  CO
+"C"	<>  U+127d  ;  CE
+
+; **************************************************************************
+
+"nnaa"	<>  U+1293  ;  NAA
+"nna"	<>  U+1293  ;  NA
+"nnuu"	<>  U+1291  ;  NU
+"nnu"	<>  U+1291  ;  NU
+"nnii"	<>  U+1292  ;  NI
+"nni"	<>  U+1292  ;  NI
+"nnee"	<>  U+1294  ;  NEE
+"nne"	<>  U+1294  ;  NEE
+"nnoo"	<>  U+1296  ;  NO
+"nno"	<>  U+1296  ;  NO
+"nn"	<>  U+1295  ;  NE
+
+"naa"	<>  U+1293  ;  NAA
+"na"	<>  U+1293  ;  NA
+"nuu"	<>  U+1291  ;  NU
+"nu"	<>  U+1291  ;  NU
+"nii"	<>  U+1292  ;  NI
+"ni"	<>  U+1292  ;  NI
+"nee"	<>  U+1294  ;  NEE
+"ne"	<>  U+1294  ;  NEE
+"noo"	<>  U+1296  ;  NO
+"no"	<>  U+1296  ;  NO
+"n"	<>  U+1295  ;  NE
+
+"Naa"	<>  U+1293  ;  NAA
+"Na"	<>  U+1293  ;  NA
+"Nuu"	<>  U+1291  ;  NU
+"Nu"	<>  U+1291  ;  NU
+"Nii"	<>  U+1292  ;  NI
+"Ni"	<>  U+1292  ;  NI
+"Nee"	<>  U+1294  ;  NEE
+"Ne"	<>  U+1294  ;  NEE
+"Noo"	<>  U+1296  ;  NO
+"No"	<>  U+1296  ;  NO
+"N"	<>  U+1295  ;  NE
+
+; **************************************************************************
+
+"kkaa"	<>  U+12ab  ;  KAA
+"kka"	<>  U+12ab  ;  KA
+"kkuu"	<>  U+12a9  ;  KU
+"kku"	<>  U+12a9  ;  KU
+"kkii"	<>  U+12aa  ;  KI
+"kki"	<>  U+12aa  ;  KI
+"kkee"	<>  U+12ac  ;  KEE
+"kke"	<>  U+12ac  ;  KEE
+"kkoo"	<>  U+12ae  ;  KO
+"kko"	<>  U+12ae  ;  KO
+"kk"	<>  U+12ad  ;  KE
+
+"kaa"	<>  U+12ab  ;  KAA
+"ka"	<>  U+12ab  ;  KA
+"kuu"	<>  U+12a9  ;  KU
+"ku"	<>  U+12a9  ;  KU
+"kii"	<>  U+12aa  ;  KI
+"ki"	<>  U+12aa  ;  KI
+"kee"	<>  U+12ac  ;  KEE
+"ke"	<>  U+12ac  ;  KEE
+"koo"	<>  U+12ae  ;  KO
+"ko"	<>  U+12ae  ;  KO
+"k"	<>  U+12ad  ;  KE
+
+"Kaa"	<>  U+12ab  ;  KAA
+"Ka"	<>  U+12ab  ;  KA
+"Kuu"	<>  U+12a9  ;  KU
+"Ku"	<>  U+12a9  ;  KU
+"Kii"	<>  U+12aa  ;  KI
+"Ki"	<>  U+12aa  ;  KI
+"Kee"	<>  U+12ac  ;  KEE
+"Ke"	<>  U+12ac  ;  KEE
+"Koo"	<>  U+12ae  ;  KO
+"Ko"	<>  U+12ae  ;  KO
+"K"	<>  U+12ad  ;  KE
+
+; **************************************************************************
+
+"wwaa"	<>  U+12cb  ;  WAA
+"wwa"	<>  U+12cb  ;  WA
+"wwuu"	<>  U+12c9  ;  WU
+"wwu"	<>  U+12c9  ;  WU
+"wwii"	<>  U+12ca  ;  WI
+"wwi"	<>  U+12ca  ;  WI
+"wwee"	<>  U+12cc  ;  WEE
+"wwe"	<>  U+12cc  ;  WEE
+"wwoo"	<>  U+12ce  ;  WO
+"wwo"	<>  U+12ce  ;  WO
+"ww"	<>  U+12cd  ;  WE
+
+"waa"	<>  U+12cb  ;  WAA
+"wa"	<>  U+12cb  ;  WA
+"wuu"	<>  U+12c9  ;  WU
+"wu"	<>  U+12c9  ;  WU
+"wii"	<>  U+12ca  ;  WI
+"wi"	<>  U+12ca  ;  WI
+"wee"	<>  U+12cc  ;  WEE
+"we"	<>  U+12cc  ;  WEE
+"woo"	<>  U+12ce  ;  WO
+"wo"	<>  U+12ce  ;  WO
+"w"	<>  U+12cd  ;  WE
+
+"Waa"	<>  U+12cb  ;  WAA
+"Wa"	<>  U+12cb  ;  WA
+"Wuu"	<>  U+12c9  ;  WU
+"Wu"	<>  U+12c9  ;  WU
+"Wii"	<>  U+12ca  ;  WI
+"Wi"	<>  U+12ca  ;  WI
+"Wee"	<>  U+12cc  ;  WEE
+"We"	<>  U+12cc  ;  WEE
+"Woo"	<>  U+12ce  ;  WO
+"Wo"	<>  U+12ce  ;  WO
+"W"	<>  U+12cd  ;  WE
+
+; **************************************************************************
+
+"zzaa"	<>  U+12db  ;  ZAA
+"zza"	<>  U+12db  ;  YA
+"zzuu"	<>  U+12d9  ;  ZU
+"zzu"	<>  U+12d9  ;  YU
+"zzii"	<>  U+12da  ;  ZI
+"zzi"	<>  U+12da  ;  ZI
+"zzee"	<>  U+12dc  ;  ZEE
+"zze"	<>  U+12dc  ;  YEE
+"zzoo"	<>  U+12ee  ;  YO
+"zzo"	<>  U+12de  ;  ZO
+"zz"		<>  U+12dd  ;  ZE
+
+"zaa"	<>  U+12db  ;  ZAA
+"za"		<>  U+12db  ;  ZA
+"zuu"	<>  U+12d9  ;  ZU
+"zu"		<>  U+12d9  ;  ZU
+"zii"	<>  U+12da  ;  ZI
+"zi"	<>  U+12da  ;  ZI
+"zee"	<>  U+12dc  ;  ZEE
+"ze"		<>  U+12dc  ;  ZEE
+"zoo"	<>  U+12de  ;  ZO
+"zo"		<>  U+12de  ;  ZO
+"z"		<>  U+12dd  ;  ZE
+
+"Zaa"	<>  U+12db  ;  ZAA
+"Za"	<>  U+12db  ;  ZA
+"Zuu"	<>  U+12d9  ;  ZU
+"Zu"	<>  U+12d9  ;  ZU
+"Zii"	<>  U+12da  ;  ZI
+"Zi"	<>  U+12da  ;  ZI
+"Zee"	<>  U+12dc  ;  ZEE
+"Ze"	<>  U+12dc  ;  ZEE
+"Zoo"	<>  U+12de  ;  ZO
+"Zo"	<>  U+12de  ;  ZO
+"Z"	<>  U+12dd  ;  ZE
+
+; **************************************************************************
+
+"jjaa"	<>  U+12e3  ;  DAA
+"jja"	<>  U+12e3  ;  DA
+"jjuu"	<>  U+12e1  ;  DU
+"jju"	<>  U+12e1  ;  DU
+"jjii"	<>  U+12e2  ;  DI
+"jji"	<>  U+12e2  ;  DI
+"jjee"	<>  U+12e4  ;  DEE
+"jje"	<>  U+12e4  ;  DEE
+"jjoo"	<>  U+12e6  ;  DO
+"jjo"	<>  U+12e6  ;  DO
+"jji"	<>  U+12e5  ;  DE
+"jj"	<>  U+12e5  ;  DE
+
+"jaa"	<>  U+12e3  ;  DAA
+"ja"	<>  U+12e3  ;  DA
+"juu"	<>  U+12e1  ;  DU
+"ju"	<>  U+12e1  ;  DU
+"jii"	<>  U+12e2  ;  DI
+"ji"	<>  U+12e2  ;  DI
+"jee"	<>  U+12e4  ;  DEE
+"je"	<>  U+12e4  ;  DEE
+"joo"	<>  U+12e6  ;  DO
+"jo"	<>  U+12e6  ;  DO
+"ji"	<>  U+12e5  ;  DE
+"j"	<>  U+12e5  ;  DE
+
+"Jaa"	<>  U+12e3  ;  DAA
+"Ja"	<>  U+12e3  ;  DA
+"Juu"	<>  U+12e1  ;  DU
+"Ju"	<>  U+12e1  ;  DU
+"Jii"	<>  U+12e2  ;  DI
+"Ji"	<>  U+12e2  ;  DI
+"Jee"	<>  U+12e4  ;  DEE
+"Je"	<>  U+12e4  ;  DEE
+"Joo"	<>  U+12e6  ;  DO
+"Jo"	<>  U+12e6  ;  DO
+"Ji"	<>  U+12e5  ;  DE
+"J"	<>  U+12e5  ;  DE
+
+
+; **************************************************************************
+
+"yyaa"	<>  U+12eb  ;  YAA
+"yya"	<>  U+12eb  ;  YA
+"yyuu"	<>  U+12e9  ;  YU
+"yyu"	<>  U+12e9  ;  YU
+"yyii"	<>  U+12ea  ;  YI
+"yyi"	<>  U+12ea  ;  YI
+"yyee"	<>  U+12ec  ;  YEE
+"yye"	<>  U+12ec  ;  YEE
+"yyoo"	<>  U+12ee  ;  YO
+"yyo"	<>  U+12ee  ;  YO
+"yyi"	<>  U+12ed  ;  YE
+"yy"	<>  U+12ed  ;  YE
+
+"yaa"	<>  U+12eb  ;  YAA
+"ya"	<>  U+12eb  ;  YA
+"yuu"	<>  U+12e9  ;  YU
+"yu"	<>  U+12e9  ;  YU
+"yii"	<>  U+12ea  ;  YI
+"yi"	<>  U+12ea  ;  YI
+"yee"	<>  U+12ec  ;  YEE
+"ye"	<>  U+12ec  ;  YEE
+"yoo"	<>  U+12ee  ;  YO
+"yo"	<>  U+12ee  ;  YO
+"yi"	<>  U+12ed  ;  YE
+"y"	<>  U+12ed  ;  YE
+
+"Yaa"	<>  U+12eb  ;  YAA
+"Ya"	<>  U+12eb  ;  YA
+"Yuu"	<>  U+12e9  ;  YU
+"Yu"	<>  U+12e9  ;  YU
+"Yii"	<>  U+12ea  ;  YI
+"Yi"	<>  U+12ea  ;  YI
+"Yee"	<>  U+12ec  ;  YEE
+"Ye"	<>  U+12ec  ;  YEE
+"Yoo"	<>  U+12ee  ;  YO
+"Yo"	<>  U+12ee  ;  YO
+"Yi"	<>  U+12ed  ;  YE
+"Y"	<>  U+12ed  ;  YE
+
+; **************************************************************************
+
+"ddaa"	<>  U+12f3  ;  DAA
+"dda"	<>  U+12f3  ;  DA
+"dduu"	<>  U+12f1  ;  DU
+"ddu"	<>  U+12f1  ;  DU
+"ddii"	<>  U+12f2  ;  DI
+"ddi"	<>  U+12f2  ;  DI
+"ddee"	<>  U+12f4  ;  DEE
+"dde"	<>  U+12f4  ;  DEE
+"ddoo"	<>  U+12f6  ;  DO
+"ddo"	<>  U+12f6  ;  DO
+"ddi"	<>  U+12f5  ;  DE
+"dd"	<>  U+12f5  ;  DE
+
+"daa"	<>  U+12f3  ;  DAA
+"da"	<>  U+12f3  ;  DA
+"duu"	<>  U+12f1  ;  DU
+"du"	<>  U+12f1  ;  DU
+"dii"	<>  U+12f2  ;  DI
+"di"	<>  U+12f2  ;  DI
+"dee"	<>  U+12f4  ;  DEE
+"de"	<>  U+12f4  ;  DEE
+"doo"	<>  U+12f6  ;  DO
+"do"	<>  U+12f6  ;  DO
+"di"	<>  U+12f5  ;  DE
+"d"	<>  U+12f5  ;  DE
+
+"Daa"	<>  U+12f3  ;  DAA
+"Da"	<>  U+12f3  ;  DA
+"Duu"	<>  U+12f1  ;  DU
+"Du"	<>  U+12f1  ;  DU
+"Dii"	<>  U+12f2  ;  DI
+"Di"	<>  U+12f2  ;  DI
+"Dee"	<>  U+12f4  ;  DEE
+"De"	<>  U+12f4  ;  DEE
+"Doo"	<>  U+12f6  ;  DO
+"Do"	<>  U+12f6  ;  DO
+"Di"	<>  U+12f5  ;  DE
+"D"	<>  U+12f5  ;  DE
+
+; **************************************************************************
+
+"djjaa"  <>  U+1303  ;  
+"djja"	  <>  U+1303  ;  
+"djjuu"  <>  U+1301  ;  
+"djju"	  <>  U+1301  ;  
+"djjii"  <>  U+1302  ;  
+"djji"	  <>  U+1302  ;  
+"djjee"  <>  U+1304  ;  
+"djje"	  <>  U+1304  ;  
+"djjoo"  <>  U+1306  ;  
+"djjo"	  <>  U+1306  ;  
+"djji"	  <>  U+1305  ;  
+"djj" 	  <>  U+1305  ;  
+
+"djaa"	  <>  U+1303  ;  
+"dja"	  <>  U+1303  ;  
+"djuu"	  <>  U+1301  ;  
+"dju"	  <>  U+1301  ;  
+"djii"	  <>  U+1302  ;  
+"dji"	  <>  U+1302  ;  
+"djee"	  <>  U+1304  ;  
+"dje"	  <>  U+1304  ;  
+"djoo"	  <>  U+1306  ;  
+"djo"	  <>  U+1306  ;  
+"dji"	  <>  U+1305  ;  
+"dj"	  <>  U+1305  ;  
+
+"Djaa"	  <>  U+1303  ;  
+"Dja"	  <>  U+1303  ;  
+"Djuu"	  <>  U+1301  ;  
+"Dju"	  <>  U+1301  ;  
+"Djii"	  <>  U+1302  ;  
+"Dji"	  <>  U+1302  ;  
+"Djee"	  <>  U+1304  ;  
+"Dje"	  <>  U+1304  ;  
+"Djoo"	  <>  U+1306  ;  
+"Djo"	  <>  U+1306  ;  
+"Dji"	  <>  U+1305  ;  
+"Dj"	  <>  U+1305  ;  
+
+; **************************************************************************
+
+"ggaa"	<>  U+130b  ;  DAA
+"gga"	<>  U+130b  ;  DA
+"gguu"	<>  U+1309  ;  DU
+"ggu"	<>  U+1309  ;  DU
+"ggii"	<>  U+130a  ;  DI
+"ggi"	<>  U+130a  ;  DI
+"ggee"	<>  U+130c  ;  DEE
+"gge"	<>  U+130c  ;  DEE
+"ggoo"	<>  U+130e  ;  DO
+"ggo"	<>  U+130e  ;  DO
+"ggi"	<>  U+130d  ;  DE
+"gg"	<>  U+130d  ;  DE
+
+"gaa"	<>  U+130b  ;  DAA
+"ga"	<>  U+130b  ;  DA
+"guu"	<>  U+1309  ;  DU
+"gu"	<>  U+1309  ;  DU
+"gii"	<>  U+130a  ;  DI
+"gi"	<>  U+130a  ;  DI
+"gee"	<>  U+130c  ;  DEE
+"ge"	<>  U+130c  ;  DEE
+"goo"	<>  U+130e  ;  DO
+"go"	<>  U+130e  ;  DO
+"gi"	<>  U+130d  ;  DE
+"g"	<>  U+130d  ;  DE
+
+"Gaa"	<>  U+130b  ;  DAA
+"Ga"	<>  U+130b  ;  DA
+"Guu"	<>  U+1309  ;  DU
+"Gu"	<>  U+1309  ;  DU
+"Gii"	<>  U+130a  ;  DI
+"Gi"	<>  U+130a  ;  DI
+"Gee"	<>  U+130c  ;  DEE
+"Ge"	<>  U+130c  ;  DEE
+"Goo"	<>  U+130e  ;  DO
+"Go"	<>  U+130e  ;  DO
+"Gi"	<>  U+130d  ;  DE
+"G"	<>  U+130d  ;  DE
+
+; **************************************************************************
+
+"thhaa"  <>  U+1323  ;  THAA
+"thha"	  <>  U+1323  ;  THA
+"thhuu"	<>  U+1321  ;  THU
+"thhu"	<>  U+1321  ;  THU
+"thhii"	<>  U+1322  ;  THI
+"thhi"	<>  U+1322  ;  THI
+"thhee"	<>  U+1324  ;  THEE
+"thhe"	<>  U+1324  ;  THEE
+"thhoo"	<>  U+1326  ;  THO
+"thho"	<>  U+1326  ;  THO
+"thhi"	<>  U+1325  ;  THE
+"thh"		<>  U+1325  ;  THE
+
+"thaa"	<>  U+1323  ;  THAA
+"tha"	<>  U+1323  ;  THA
+"thuu"	<>  U+1321  ;  THU
+"thu"	<>  U+1321  ;  THU
+"thii"	<>  U+1322  ;  THI
+"thi"	<>  U+1322  ;  THI
+"thee"	<>  U+1324  ;  THEE
+"the"	<>  U+1324  ;  THEE
+"thoo"	<>  U+1326  ;  THO
+"tho"	<>  U+1326  ;  THO
+"thi"	<>  U+1325  ;  THE
+"th"	<>  U+1325  ;  THE
+
+"Thaa"	<>  U+1323  ;  THAA
+"Tha"	<>  U+1323  ;  THA
+"Thuu"	<>  U+1321  ;  THU
+"Thu"	<>  U+1321  ;  THU
+"Thii"	<>  U+1322  ;  THI
+"Thi"	<>  U+1322  ;  THI
+"Thee"	<>  U+1324  ;  THEE
+"The"	<>  U+1324  ;  THEE
+"Thoo"	<>  U+1326  ;  THO
+"Tho"	<>  U+1326  ;  THO
+"Thi"	<>  U+1325  ;  THE
+"Th"	<>  U+1325  ;  THE
+
+; **************************************************************************
+
+"chhaa"	<>  U+132b  ;  THAA
+"chha"	<>  U+132b  ;  THA
+"chhuu"	<>  U+1329  ;  THU
+"chhu"	<>  U+1329  ;  THU
+"chhii"	<>  U+132a  ;  THI
+"chhi"	<>  U+132a  ;  THI
+"chhee"	<>  U+132c  ;  THEE
+"chhe"	<>  U+132c  ;  THEE
+"chhoo"	<>  U+132e  ;  THO
+"chho"	<>  U+132e  ;  THO
+"chhi"	<>  U+132d  ;  THE
+"chh"	<>  U+132d  ;  THE
+
+"chaa"	<>  U+132b  ;  THAA
+"cha"	<>  U+132b  ;  THA
+"chuu"	<>  U+1329  ;  THU
+"chu"	<>  U+1329  ;  THU
+"chii"	<>  U+132a  ;  THI
+"chchi"	<>  U+132a  ;  THI
+"chee"	<>  U+132c  ;  THEE
+"che"	<>  U+132c  ;  THEE
+"choo"	<>  U+132e  ;  THO
+"cho"	<>  U+132e  ;  THO
+"chi"	<>  U+132d  ;  THE
+"ch"	<>  U+132d  ;  THE
+
+"Chaa"	<>  U+132b  ;  THAA
+"Cha"	<>  U+132b  ;  THA
+"Chuu"	<>  U+1329  ;  THU
+"Chu"	<>  U+1329  ;  THU
+"Chii"	<>  U+132a  ;  THI
+"Chi"	<>  U+132a  ;  THI
+"Chee"	<>  U+132c  ;  THEE
+"Che"	<>  U+132c  ;  THEE
+"Choo"	<>  U+132e  ;  THO
+"Cho"	<>  U+132e  ;  THO
+"Chi"	<>  U+132d  ;  THE
+"Ch"	<>  U+132d  ;  THE
+
+; **************************************************************************
+
+"phhaa"	<>  U+1333  ;  PHAA
+"phha"	<>  U+1333  ;  PHA
+"phhuu"	<>  U+1331  ;  PHU
+"phhu"	<>  U+1331  ;  PHU
+"phhii"	<>  U+1332  ;  PHI
+"phhi"	<>  U+1332  ;  PHI
+"phhee"	<>  U+1334  ;  PHEE
+"phhe"	<>  U+1334  ;  PHEE
+"phhoo"	<>  U+1336  ;  PHO
+"phho"	<>  U+1336  ;  PHO
+"phhi"	<>  U+1335  ;  PHE
+"phh"		<>  U+1335  ;  PHE
+
+"phaa"	<>  U+1333  ;  PHAA
+"pha"	<>  U+1333  ;  PHA
+"phuu"	<>  U+1331  ;  PHU
+"phu"	<>  U+1331  ;  PHU
+"phii"	<>  U+1332  ;  PHI
+"phi"	<>  U+1332  ;  PHI
+"phee"	<>  U+1334  ;  PHEE
+"phe"	<>  U+1334  ;  PHEE
+"phoo"	<>  U+1336  ;  PHO
+"pho"	<>  U+1336  ;  PHO
+"phi"	<>  U+1335  ;  PHE
+"ph"	<>  U+1335  ;  PHE
+
+"Phaa"	<>  U+1333  ;  PHAA
+"Pha"	<>  U+1333  ;  PHA
+"Phuu"	<>  U+1331  ;  PHU
+"Phu"	<>  U+1331  ;  PHU
+"Phii"	<>  U+1332  ;  PHI
+"Phi"	<>  U+1332  ;  PHI
+"Phee"	<>  U+1334  ;  PHEE
+"Phe"	<>  U+1334  ;  PHEE
+"Phoo"	<>  U+1336  ;  PHO
+"Pho"	<>  U+1336  ;  PHO
+"Phi"	<>  U+1335  ;  PHE
+"Ph"	<>  U+1335  ;  PHE
+
+; **************************************************************************
+
+"xhhaa"	<>  U+133b  ;  FAA
+"xhha"	<>  U+133b  ;  FA
+"xhhuu"	<>  U+1339  ;  FU
+"xhhu"	<>  U+1339  ;  FU
+"xhhii"	<>  U+133a  ;  FI
+"xhhi"	<>  U+133a  ;  FI
+"xhhee"	<>  U+133c  ;  FEE
+"xhhe"	<>  U+133c  ;  FEE
+"xhhoo"	<>  U+133e  ;  FO
+"xhho"	<>  U+133e  ;  FO
+"xhh"		<>  U+133d  ;  FE
+
+"xhaa"	<>  U+133b  ;  FAA
+"xha"	<>  U+133b  ;  FA
+"xhuu"	<>  U+1339  ;  FU
+"xhu"	<>  U+1339  ;  FU
+"xhii"	<>  U+133a  ;  FI
+"xhi"	<>  U+133a  ;  FI
+"xhee"	<>  U+133c  ;  FEE
+"xhe"	<>  U+133c  ;  FEE
+"xhoo"	<>  U+133e  ;  FO
+"xho"	<>  U+133e  ;  FO
+"xh"	<>  U+133d  ;  FE
+
+"Xhaa"	<>  U+133b  ;  FAA
+"Xha"	<>  U+133b  ;  FA
+"Xhuu"	<>  U+1339  ;  FU
+"Xhu"	<>  U+1339  ;  FU
+"Xhii"	<>  U+133a  ;  FI
+"Xhi"	<>  U+133a  ;  FI
+"Xhee"	<>  U+133c  ;  FEE
+"Xhe"	<>  U+133c  ;  FEE
+"Xhoo"	<>  U+133e  ;  FO
+"Xho"	<>  U+133e  ;  FO
+"Xh"	<>  U+133d  ;  FE
+
+; **************************************************************************
+"dhhaa"	<>  U+12fb  ;  FAA
+"dhha"	<>  U+12fb  ;  FA
+"dhhuu"	<>  U+12f9  ;  FU
+"dhhu"	<>  U+12f9  ;  FU
+"dhhii"	<>  U+12fa  ;  FI
+"dhhi"	<>  U+12fa  ;  FI
+"dhhee"	<>  U+12fc  ;  FEE
+"dhhe"	<>  U+12fc  ;  FEE
+"dhhoo"	<>  U+12fe  ;  FO
+"dhho"	<>  U+12fe  ;  FO
+"dhh"		<>  U+12fd  ;  FE
+
+"dhaa"	<>  U+12fb  ;  FAA
+"dha"	<>  U+12fb  ;  FA
+"dhuu"	<>  U+12f9  ;  FU
+"dhu"	<>  U+12f9  ;  FU
+"dhii"	<>  U+12fa  ;  FI
+"dhi"	<>  U+12fa  ;  FI
+"dhee"	<>  U+12fc  ;  FEE
+"dhe"	<>  U+12fc  ;  FEE
+"dhoo"	<>  U+12fe  ;  FO
+"dho"	<>  U+12fe  ;  FO
+"dh"	<>  U+12fd  ;  FE
+
+"Dhaa"	<>  U+12fb  ;  FAA
+"Dha"	<>  U+12fb  ;  FA
+"Dhuu"	<>  U+12f9  ;  FU
+"Dhu"	<>  U+12f9  ;  FU
+"Dhii"	<>  U+12fa  ;  FI
+"Dhi"	<>  U+12fa  ;  FI
+"Dhee"	<>  U+12fc  ;  FEE
+"Dhe"	<>  U+12fc  ;  FEE
+"Dhoo"	<>  U+12fe  ;  FO
+"Dho"	<>  U+12fe  ;  FO
+"Dh"	<>  U+12fd  ;  FE
+
+; **************************************************************************
+
+"ffaa"	<>  U+134b  ;  FAA
+"ffa"	<>  U+134b  ;  FA
+"ffuu"	<>  U+1349  ;  FU
+"ffu"	<>  U+1349  ;  FU
+"ffii"	<>  U+134a  ;  FI
+"ffi"	<>  U+134a  ;  FI
+"ffee"	<>  U+134c  ;  FEE
+"ffe"	<>  U+134c  ;  FEE
+"ffoo"	<>  U+134e  ;  FO
+"ffo"	<>  U+134e  ;  FO
+"ff"	<>  U+134d  ;  FE
+
+"faa"	<>  U+134b  ;  FAA
+"fa"	<>  U+134b  ;  FA
+"fuu"	<>  U+1349  ;  FU
+"fu"	<>  U+1349  ;  FU
+"fii"	<>  U+134a  ;  FI
+"fi"	<>  U+134a  ;  FI
+"fee"	<>  U+134c  ;  FEE
+"fe"	<>  U+134c  ;  FEE
+"foo"	<>  U+134e  ;  FO
+"fo"	<>  U+134e  ;  FO
+"f"	<>  U+134d  ;  FE
+
+"Faa"	<>  U+134b  ;  FAA
+"Fa"	<>  U+134b  ;  FA
+"Fuu"	<>  U+1349  ;  FU
+"Fu"	<>  U+1349  ;  FU
+"Fii"	<>  U+134a  ;  FI
+"Fi"	<>  U+134a  ;  FI
+"Fee"	<>  U+134c  ;  FEE
+"Fe"	<>  U+134c  ;  FEE
+"Foo"	<>  U+134e  ;  FO
+"Fo"	<>  U+134e  ;  FO
+"F"	<>  U+134d  ;  FE
+
+; **************************************************************************
+
+"ppuu"	  <>  U+1351  ;  PU
+"ppu"	  <>  U+1351  ;  PU
+"ppii"	  <>  U+1352  ;  PI
+"ppi"	  <>  U+1352  ;  PI
+"ppaa"	  <>  U+1353  ;  PAA
+"ppa"	  <>  U+1353  ;  PA
+"ppee"	  <>  U+1354  ;  PEE
+"ppe"	  <>  U+1354  ;  PEE
+"pp"	  <>  U+1355  ;  PE
+"ppoo"	  <>  U+1356  ;  PO
+"ppo"	  <>  U+1356  ;  PO
+
+"puu"	  <>  U+1351  ;  PU
+"pu"	  <>  U+1351  ;  PU
+"pii"	  <>  U+1352  ;  PI
+"pi"	  <>  U+1352  ;  PI
+"paa"	  <>  U+1353  ;  PAA
+"pa"	  <>  U+1353  ;  PA
+"pee"	  <>  U+1354  ;  PEE
+"pe"	  <>  U+1354  ;  PEE
+"p"	  <>  U+1355  ;  PE
+"poo"	  <>  U+1356  ;  PO
+"po"	  <>  U+1356  ;  PO
+
+"Puu"	  <>  U+1351  ;  PU
+"Pu"	  <>  U+1351  ;  PU
+"Pii"	  <>  U+1352  ;  PI
+"Pi"	  <>  U+1352  ;  PI
+"Paa"	  <>  U+1353  ;  PAA
+"Pa"	  <>  U+1353  ;  PA
+"Pee"	  <>  U+1354  ;  PEE
+"Pe"	  <>  U+1354  ;  PEE
+"P"	  <>  U+1355  ;  PE
+"Poo"	  <>  U+1356  ;  PO
+"Po"	  <>  U+1356  ;  PO
+
+; **************************************************************************
+
+"�"	  <>  U+12d3
+"�"	  <>  U+12d3
+"��"	  <>  U+12d3
+"��"	  <>  U+12d3
+
+"�"	  <>  U+12d3
+"�"	  <>  U+12d3
+"��"	  <>  U+12d3
+"��"	  <>  U+12d3
+
+"â" 	  <>  U+12d3
+"�,"	  <>  U+12d3
+"ââ" <>  U+12d3
+"�,â"  <>  U+12d3
+
+
+"uu"	  <>  U+12a1  ;  GLOTTAL_U
+"u"	  <>  U+12a1  ;  GLOTTAL_U
+"ii"	  <>  U+12a2  ;  GLOTTAL_I
+"i"	  <>  U+12a2  ;  GLOTTAL_E
+"aa"	  <>  U+12a3  ;  GLOTTAL_AA
+"a"	  <>  U+12a3  ;  GLOTTAL_A
+"ee"	  <>  U+12a4  ;  GLOTTAL_EE
+"e"	  <>  U+12a4  ;  GLOTTAL_EE
+"oo"	  <>  U+12a6  ;  GLOTTAL_O
+"o"	  <>  U+12a6  ;  GLOTTAL_O
+
+"Uu"	  <>  U+12a1  ;  GLOTTAL_U
+"U"	  <>  U+12a1  ;  GLOTTAL_U
+"Ii"	  <>  U+12a2  ;  GLOTTAL_I
+"I"	  <>  U+12a2  ;  GLOTTAL_E
+"Aa"	  <>  U+12a3  ;  GLOTTAL_AA
+"A"	  <>  U+12a3  ;  GLOTTAL_A
+"Ee"	  <>  U+12a4  ;  GLOTTAL_EE
+"E"	  <>  U+12a4  ;  GLOTTAL_EE
+"Oo"	  <>  U+12a6  ;  GLOTTAL_O
+"O"	  <>  U+12a6  ;  GLOTTAL_O
+
+"7uu"	  <>  U+12a1  ;  GLOTTAL_U
+"7u"	  <>  U+12a1  ;  GLOTTAL_U
+"7ii"	  <>  U+12a2  ;  GLOTTAL_I
+"7i"	  <>  U+12a2  ;  GLOTTAL_E
+"7aa"	  <>  U+12a3  ;  GLOTTAL_AA
+"7a"	  <>  U+12a3  ;  GLOTTAL_A
+"7ee"	  <>  U+12a4  ;  GLOTTAL_EE
+"7e"	  <>  U+12a4  ;  GLOTTAL_EE
+"7"	  <>  U+12a5
+"7oo"	  <>  U+12a6  ;  GLOTTAL_O
+"7o"	  <>  U+12a6  ;  GLOTTAL_O
+
+"uu'"	  <>  U+12d1  ;  GLOTTAL_U
+"u'"	  <>  U+12d1  ;  GLOTTAL_U
+"ii'"	  <>  U+12d2  ;  GLOTTAL_I
+"i'"	  <>  U+12d2  ;  GLOTTAL_E
+"aa'"	  <>  U+12d3  ;  GLOTTAL_AA
+"a'"	  <>  U+12d3  ;  GLOTTAL_A
+"ee'"	  <>  U+12d4  ;  GLOTTAL_EE
+"e'"	  <>  U+12d4  ;  GLOTTAL_EE
+"'"	  <>  U+12d5  ;  GLOTTAL_E
+"oo'"	  <>  U+12d6  ;  GLOTTAL_O
+"o'"	  <>  U+12d6  ;  GLOTTAL_O
+
+"Uu'"	  <>  U+12d1  ;  GLOTTAL_U
+"U'"	  <>  U+12d1  ;  GLOTTAL_U
+"Ii'"	  <>  U+12d2  ;  GLOTTAL_I
+"I'"	  <>  U+12d2  ;  GLOTTAL_E
+"Aa'"	  <>  U+12d3  ;  GLOTTAL_AA
+"A'"	  <>  U+12d3  ;  GLOTTAL_A
+"Ee'"	  <>  U+12d4  ;  GLOTTAL_EE
+"E'"	  <>  U+12d4  ;  GLOTTAL_EE
+"Oo'"	  <>  U+12d6  ;  GLOTTAL_O
+"O'"	  <>  U+12d6  ;  GLOTTAL_O
+
+; **************************************************************************
+
+
+"xxuu"   <>  U+AB01  ;  TS'U
+"xxu"	  <>  U+AB01  ;  TS'U
+"xxii"   <>  U+AB02  ;  TS'I
+"xxi"	  <>  U+AB02  ;  TS'I
+"xxaa"   <>  U+AB03  ;  TS'AA
+"xxa"	  <>  U+AB03  ;  TS'A
+"xxee"   <>  U+AB04  ;  TS'EE
+"xxe"	  <>  U+AB04  ;  TS'EE
+"xx"	  <>  U+AB05  ;  TS'
+"xxoo"   <>  U+AB06  ;  TS'O
+"xxo"	  <>  U+AB06  ;  TS'O
+
+"xuu"	  <>  U+AB01  ;  TS'U
+"xu"	  <>  U+AB01  ;  TS'U
+"xii"	  <>  U+AB02  ;  TS'I
+"xi"	  <>  U+AB02  ;  TS'I
+"xaa"	  <>  U+AB03  ;  TS'AA
+"xa"	  <>  U+AB03  ;  TS'A
+"xee"	  <>  U+AB04  ;  TS'EE
+"xe"	  <>  U+AB04  ;  TS'EE
+"x"	  <>  U+AB05  ;  TS'
+"xoo"	  <>  U+AB06  ;  TS'O
+"xo"	  <>  U+AB06  ;  TS'O
+
+"Xuu"	  <>  U+AB01  ;  TS'U
+"Xu"	  <>  U+AB01  ;  TS'U
+"Xii"	  <>  U+AB02  ;  TS'I
+"Xi"	  <>  U+AB02  ;  TS'I
+"Xaa"	  <>  U+AB03  ;  TS'AA
+"Xa"	  <>  U+AB03  ;  TS'A
+"Xee"	  <>  U+AB04  ;  TS'EE
+"Xe"	  <>  U+AB04  ;  TS'EE
+"X"	  <>  U+AB05  ;  TS'
+"Xoo"	  <>  U+AB06  ;  TS'O
+"Xo"	  <>  U+AB06  ;  TS'O
+
+; **************************************************************************
+
+
+; End-of-file
