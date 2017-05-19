@@ -1,0 +1,244 @@
+EncodingName			"SIL Heb Trans Caps-1997"
+DescriptiveName			"SIL Heb Trans Caps Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SIL Heb Trans Caps"
+
+RHSFlags				(ExpectsNFD)
+
+; 2006-05-16	LP	created (based on python scripts of Bruce Jakeway’s 
+;				(bruce_jakeway@sil.org)
+;				0x4E doesn’t exist in Unicode
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+0x20 <> U+0020     ; duplicated space
+0x21 <> U+0021     ; duplicated !
+0x22 <> U+0022     ; duplicated "
+0x23 <> U+0027     ; apostrophe (from decimal 35)
+0x24 <> U+FFFD     ; unused
+0x25 <> U+FFFD     ; unused
+0x26 <> U+FFFD     ; unused
+0x27 <> U+02BE     ; modifier_letter_right_half_ring (aleph) 
+0x28 <> U+0028     ; duplicated (
+0x29 <> U+0029     ; duplicated )
+0x2A <> U+002A     ; duplicated *
+0x2B <> U+FE61     ; small asterisk 
+0x2C <> U+002C     ; duplicated ,
+0x2D <> U+002D     ; duplicated -
+0x2E <> U+002E     ; duplicated .
+0x2F <> U+002F     ; duplicated /
+0x30 <> U+0030     ; duplicated 0
+0x31 <> U+0031     ; duplicated 1
+0x32 <> U+0032     ; duplicated 2
+0x33 <> U+0033     ; duplicated 3
+0x34 <> U+0034     ; duplicated 4
+0x35 <> U+0035     ; duplicated 5
+0x36 <> U+0036     ; duplicated 6
+0x37 <> U+0037     ; duplicated 7
+0x38 <> U+0038     ; duplicated 8
+0x39 <> U+0039     ; duplicated 9
+0x3A <> U+003A     ; duplicated :
+0x3B <> U+003B     ; duplicated ;
+0x3C <> U+00A7     ; section sign
+0x3D <> U+FFFD     ; unused
+0x3E <> U+00B6     ; pilcrow_sign 
+0x3F <> U+003F     ; duplicated ?
+0x40 <> U+FFFD    ; ignore placeholder
+0x41 <> U+0041 U+0304
+0x42 <> U+0042
+0x43 <> U+FFFD     ; unused
+0x44 <> U+0044
+0x45 <> U+0045 U+0304     ; e + combining_macron 
+0x46 <> U+FFFD     ; unused
+0x47 <> U+0047
+0x48 <> U+0053 U+030C     ; s + combining_caron 
+0x49 <> U+FFFD     ; unused
+0x4A <> U+FFFD     ; unused
+0x4B <> U+004B
+0x4C <> U+FFFD     ; unused
+0x4D <> U+FFFD     ; unused
+0x4E <> U+004E U+FFFD    ; should be capital_letter_reversed_n 
+0x4F <> U+004F U+0304     ; o + combining_macron 
+0x50 <> U+0050
+0x51 <> U+FFFD     ; unused
+0x52 <> U+FFFD     ; unused
+0x53 <> U+0053 U+0304     ; s + combining_macron 
+0x54 <> U+0054
+0x55 <> U+FFFD     ; unused
+0x56 <> U+FFFD     ; unused
+0x57 <> U+0053  U+0301     ; s + combining_acute_accent 
+0x58 <> U+0054  U+0323     ; t + combining_dot_below 
+0x59 <> U+FFFD     ; unused
+0x5A <> U+FFFD     ; unused
+0x5B <> U+005B     ; duplicated [
+0x5C <> U+005C
+0x5D <> U+005D
+0x5E <> U+FFFD     ; unused
+0x5F <> U+FFFD     ; unused
+0x60 <> U+FFFD     ; unused
+0x61 <> U+0041
+0x62 <> U+0042 U+0331     ; b + combining_macron_below 
+0x63 <> U+0053 U+0323     ; s + combining_dot_below
+0x64 <> U+0044 U+0331     ; d + combining_macron_below
+0x65 <> U+0045
+0x66 <> U+FFFD     ; unused
+0x67 <> U+0047 U+0304     ; g + combining_macron 
+0x68 <> U+0048
+0x69 <> U+0049
+0x6A <> U+FFFD     ; unused
+0x6B <> U+004B U+0331     ; k + combining_macron_below 
+0x6C <> U+004C
+0x6D <> U+004D 
+0x6E <> U+004E
+0x6F <> U+004F 
+0x70 <> U+0050 U+0304     ; p + combining_macron
+0x71 <> U+0051 
+0x72 <> U+0052
+0x73 <> U+0053
+0x74 <> U+0054 U+0331     ; t + combining_macron_below
+0x75 <> U+0055
+0x76 <> U+02BF     ; modifier_letter_left_half_ring
+0x77 <> U+0057
+0x78 <> U+0048 U+0323     ; h + combining_dot_below
+0x79 <> U+0059
+0x7A <> U+005A
+0x7B <> U+007B     ; duplicated {
+0x7C <> U+FFFD     ; unused
+0x7D <> U+007D     ; duplicated }
+0x7E <> U+2020     ; dagger
+0x7F <> U+FFFD     ; unused
+0x80 <> U+FFFD     ; unused
+0x81 <> U+FFFD     ; unused
+0x82 <> U+FFFD     ; unused
+0x83 <> U+FFFD     ; unused
+0x84 <> U+FFFD     ; unused
+0x85 <> U+FFFD     ; unused
+0x86 <> U+FFFD     ; unused
+0x87 <> U+FFFD     ; unused
+0x88 <> U+FFFD     ; unused
+0x89 <> U+FFFD     ; unused
+0x8A <> U+FFFD     ; unused
+0x8B <> U+FFFD     ; unused
+0x8C <> U+FFFD     ; unused
+0x8D <> U+FFFD     ; unused
+0x8E <> U+FFFD     ; unused
+0x8F <> U+FFFD     ; unused
+0x90 <> U+FFFD     ; unused
+0x91 <> U+2018     ; left_single_quotation_mark
+0x92 <> U+2019     ; right_single_quotation_mark
+0x93 <> U+201C     ; left_double_quotation_mark
+0x94 <> U+201D     ; right_double_quotation_mark
+0x95 <> U+FFFD     ; unused
+0x96 <> U+2013     ; en_dash
+0x97 <> U+2014     ; em_dash
+0x98 <> U+FFFD     ; unused
+0x99 <> U+FFFD     ; unused
+0x9A <> U+FFFD     ; unused
+0x9B <> U+FFFD     ; unused
+0x9C <> U+FFFD     ; unused
+0x9D <> U+FFFD     ; unused
+0x9E <> U+FFFD     ; unused
+0x9F <> U+FFFD     ; unused
+0xA0 <> U+FFFD     ; unused
+0xA1 <> U+FFFD     ; unused
+0xA2 <> U+FFFD     ; unused
+0xA3 <> U+FFFD     ; unused
+0xA4 <> U+FFFD     ; unused
+0xA5 <> U+FFFD     ; unused
+0xA6 <> U+FFFD     ; unused
+0xA7 <> U+FFFD     ; unused
+0xA8 <> U+FFFD     ; unused
+0xA9 <> U+FFFD     ; unused
+0xAA <> U+FFFD     ; unused
+0xAB <> U+00AB     ; left-pointing_double_angle_quotation_mark (left chevron)
+0xAC <> U+FFFD     ; unused
+0xAD <> U+FFFD     ; unused
+0xAE <> U+FFFD     ; unused
+0xAF <> U+FFFD     ; unused
+0xB0 <> U+00A0     ; no-break_space
+0xB1 <> U+FFFD     ; unused
+0xB2 <> U+FFFD     ; unused
+0xB3 <> U+FFFD     ; unused
+0xB4 <> U+0301     ; combining_acute_accent
+0xB5 <> U+0301     ; combining_acute_accent
+0xB6 <> U+FFFD     ; unused
+0xB7 <> U+FFFD     ; unused
+0xB8 <> U+FFFD     ; unused
+0xB9 <> U+FFFD     ; unused
+0xBA <> U+FFFD     ; unused
+0xBB <> U+00BB     ; right-pointing_double_angle_quotation_mark 
+0xBC <> U+FFFD     ; unused
+0xBD <> U+FFFD     ; unused
+0xBE <> U+FFFD     ; unused
+0xBF <> U+FFFD     ; unused
+0xC0 <> U+FFFD     ; unused
+0xC1 <> U+FFFD     ; unused
+0xC2 <> U+FFFD     ; unused
+0xC3 <> U+FFFD     ; unused
+0xC4 <> U+FFFD     ; unused
+0xC5 <> U+FFFD     ; unused
+0xC6 <> U+FFFD     ; unused
+0xC7 <> U+FFFD     ; unused
+0xC8 <> U+FFFD     ; unused
+0xC9 <> U+FFFD     ; unused
+0xCA <> U+0045 U+0302     ; e + combining_circumflex_accent 
+0xCB <> U+0045 U+0304 U+0048     ; e + combining_macron + h 
+0xCC <> U+FFFD     ; unused
+0xCD <> U+FFFD     ; unused
+0xCE <> U+FFFD     ; unused
+0xCF <> U+FFFD     ; unused
+0xD0 <> U+00B7     ; middle_dot
+0xD1 <> U+FFFD     ; unused
+0xD2 <> U+FFFD     ; unused
+0xD3 <> U+FFFD     ; unused
+0xD4 <> U+FFFD     ; unused
+0xD5 <> U+FFFD     ; unused
+0xD6 <> U+FFFD     ; unused
+0xD7 <> U+FFFD     ; unused
+0xD8 <> U+FFFD     ; unused
+0xD9 <> U+FFFD     ; unused
+0xDA <> U+FFFD     ; unused
+0xDB <> U+FFFD     ; unused
+0xDC <> U+FFFD     ; unused
+0xDD <> U+FFFD     ; unused
+0xDE <> U+FFFD     ; unused
+0xDF <> U+FFFD     ; unused
+0xE0 <> U+FFFD     ; unused
+0xE1 <> U+0041 U+0306     ; a + combining_breve
+0xE2 <> U+200D     ; zero_width_joiner
+0xE3 <> U+FFFD     ; unused
+0xE4 <> U+0041 U+0302     ; a + combining_circumflex_accent
+0xE5 <> U+FFFD     ; unused
+0xE6 <> U+FFFD     ; unused
+0xE7 <> U+FFFD     ; unused
+0xE8 <> U+FFFD     ; unused
+0xE9 <> U+0045 U+0306     ; e + combining_breve
+0xEA <> U+0045 U+0323 U+0302     ; e + combining_dot_below + combining_circumflex_accent)
+0xEB <> U+0045 U+0048
+0xEC <> U+0049 U+0304     ; i + combining_macron)
+0xED <> U+FFFD     ; unused
+0xEE <> U+0049 U+0302     ; i + combining_circumflex_accent
+0xEF <> U+FFFD     ; unused
+0xF0 <> U+FFFD     ; unused
+0xF1 <> U+FFFD     ; unused
+0xF2 <> U+1D2C     ; modifier_latin_capital_a 
+0xF3 <> U+004F U+0306     ; o + combining_breve
+0xF4 <> U+004F U+0302     ; o + combining_circumflex_accent
+0xF5 <> U+004F U+0323 U+0304     ; o + combining_dot_below + combining_macron
+0xF6 <> U+004F U+0304 U+0048     ; o + combining_macron + h
+0xF7 <> U+0331     ; combining_macron_below
+0xF8 <> U+1D32     ; modifier_letter_capital_reversed_e 
+0xF9 <> U+0055 U+0304     ; u + combining_macron
+0xFA <> U+FFFD     ; unused
+0xFB <> U+0055 U+0302     ; u + combining_circumflex_accent
+0xFC <> U+018E     ; latin_capital_letter_turned_e
+0xFD <> U+FFFD     ; unused
+0xFE <> U+FFFD     ; unused
+0xFF <> U+FFFD     ; unused

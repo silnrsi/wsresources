@@ -1,0 +1,1 @@
+The SSM-IPA font was created for the German SIL school. It only has a minimum number of characters.

@@ -1,0 +1,35 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 12/6/2010.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Arial Unicode MS;11.25
+;   Right-hand side font = Arial Unicode MS;11.25
+;   Main Window Position = 0,0,658,712
+;   Left-hand side Character Map Window Position = 658,0,457,446
+;   Right-hand side Character Map Window Position = 658,446,457,446
+
+EncodingName			"SIL-PitchContours2SupNumbers"
+DescriptiveName			"SIL PitchContours to Superscript Numbers"
+Version				"0.1"
+Contact				"mailto:lorna_priest@sil.org"
+RegistrationAuthority		"SIL International"
+RegistrationName			"PitchContours2SupNumbers"
+
+RHSFlags				(ExpectsNFD)
+
+; 2010-12-06 	LP 	created
+
+Pass(Unicode)
+
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+U+F1F1 > U+00B9
+U+F1F2 > U+00B2
+U+F1F3 > U+00B3
+U+F1F4 > U+2074
+U+F1F5 > U+2075
+U+F1F6 > U+2076
+U+F1F7 > U+2077
+U+F1F8 > U+2078
+U+F1F9 > U+2079
+

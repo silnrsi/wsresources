@@ -1,0 +1,99 @@
+EncodingName			"LRS System 1-1996"
+DescriptiveName			"LRS System 1 Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"LRS System 1"
+
+RHSFlags				(ExpectsNFD)
+
+; 2006-05-10	LP	created
+;                       problems with 0x5F 0x63 0x65 0x66 0x6A 0x6E 0xA2 0xB6
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+0x20 <> U+0020     ; SPACE
+0x2D <> U+2E17
+0x30 <> U+2205
+0x31 <> U+25A1
+0x32 <> U+25B3
+0x33 <> U+260D
+0x34 <> U+260A
+0x35 <> U+260B
+0x37 <> U+2114
+0x38 <> U+232C
+0x39 <> U+21C4
+0x3A <> U+2260
+0x3B <> U+2267
+0x3C <> U+2266
+0x3D <> U+226F
+0x3E <> U+226E
+0x3F <> U+203D
+0x40 <> U+223C
+0x41 <> U+221F 
+0x42 <> U+205C 
+0x43 <> U+266C
+0x44 <> U+266B
+0x45 <> U+266A
+0x46 <> U+266D
+0x47 <> U+2609
+0x48 <> U+25E0
+0x4B <> U+25AD
+0x4C <> U+221A     ; not sure
+0x4D <> U+222B
+0x4E <> U+266E
+0x4F <> U+2625
+0x50 <> U+262e
+0x51 <> U+2669
+0x52 <> U+211E
+0x53 <> U+266F
+0x54 <> U+2123
+0x55 <> U+211F
+0x56 <> U+204B
+0x57 <> U+2608
+0x58 <> U+20A1
+0x59 <> U+20A6
+0x5A <> U+263F
+0x5B <> U+2640
+0x5C <> U+2295
+0x5D <> U+2642
+0x5E <> U+2643
+0x5F <> U+2644     ; not the same
+0x60 <> U+2645
+0x61 <> U+2646
+0x62 <> U+2647
+0x63 <> U+2604    ; not sure
+0x64 <> U+260C
+0x65 <> U+2A72
+0x66 <> U+25E0 U+0323     ; not right
+0x67 <> U+01E5
+0x68 <> U+25B8
+0x69 <> U+2108
+0x6A <> U+0292 U+FFFD     ; not right
+0x6B <> U+0292
+0x6C <> U+2726
+0x6D <> U+2713
+0x6E <> U+2721     ; not quite the same
+0x6F <> U+25D7
+0x70 <> U+25D0
+0x71 <> U+263D
+0x72 <> U+263E
+0x73 <> U+2609
+0x74 <> U+25B4
+0x75 <> U+2118
+0x76 <> U+25BE
+0x78 <> U+2745
+0x79 <> U+2723
+0x7A <> U+25D1
+0x7C <> U+2225
+0xA0 <> U+00A0
+0xA2 <> U+0020 U+0331 U+0323     ; not right
+0xB6 <> U+002F U+0323     ; not right
+0xCD <> U+2713
+0xE5 <> U+035C
+

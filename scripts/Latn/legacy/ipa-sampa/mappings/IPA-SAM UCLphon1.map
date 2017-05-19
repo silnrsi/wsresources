@@ -1,0 +1,255 @@
+; This file was edited using TECkitMappingEditorU.exe v1.0.0.1 on 2/28/2007.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Ipa-samd Uclphon1 SILDoulosL;11.25
+;   Right-hand side font = Charis SIL;11.25
+;   Main Window Position = 0,0,650,548
+;   Code Point Window Position = 650,0,384,537
+
+EncodingName			"IPA-SAM UCLphon1"
+DescriptiveName		"IPA-SAM UCLphon1 Font encoding"
+Version			".01"
+Contact			"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"IPA-SAMPA"
+
+RHSFlags				(ExpectsNFD)
+
+; 2007-02-28	LP	created
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+ByteClass[lc1] = (0x61   .. 0x66  )
+UniClass [lc1] = (U+0061 .. U+0066)
+ByteClass[lc2] = (0x68   .. 0x7A  )
+UniClass [lc2] = (U+0068 .. U+007A)
+
+ByteClass[iWid] = (0x31 0x35 0x49 0x4B 0x66 0x69 0x6A 0x6C \
+                   0x72 0x74 0x8A 0x95 0x96 0x97 0x98 0x9A \
+                   0x9B 0x9F 0xA3 0xA5 0xB1 0xB2 0xB5 0xB8 0xB9 )
+UniClass [iWid] = (U+0268 U+026B U+026A U+026C U+0066 U+0069 U+006A U+006C \
+                   U+0072 U+0074 U+025F U+1D7B U+0269 U+027F U+0285 U+029D \
+                   U+0284 U+026D U+0279 U+027A U+027D U+027B U+0288 U+0287 U+01AD)
+
+ByteClass [uDia] = (0x3C 0xE1 0xE2 0xE3 0xE4 0xE5 0xE6 0xE7 0xE8 \
+                    0xE9 0xEA 0xEC 0xED 0xEE 0xEF 0xF0 0xF1 0xF2)
+UniClass [uDia] = (U+030C U+030A U+0306 U+0308 U+033D U+030B U+0301 U+0304 U+0300 \
+                   U+030F U+030D U+0302 U+1DC4 U+1DC5 U+1DC7 U+1DC6 U+1DC8 U+1DC9)
+
+ByteClass [lDia] = (0xEB 0xCF 0xD0 0xD1 0xD2 0xD3 0xD4 0xD5 0xD6 \
+                    0xD7 0xD8 0xD9 0xDA 0xDB 0xDC 0xDD 0xDE 0xDF \
+                    0xE0 0x5E 0x3D)
+UniClass [lDia] = (U+032C U+032A U+0324 U+0330 U+033C U+031D U+031E U+0318 U+0319 \
+                   U+033A U+033B U+0329 U+0348 U+0339 U+031C U+031F U+0320 U+0325 \
+                   U+0323 U+032F U+0329)
+
+[ctl]	<>	[ctl]
+[lc1]	<>	[lc1]
+[lc2]	<>	[lc2]
+
+
+0x20	<>	space
+0x21	<>	U+01C3	; check me
+0x22	<>	U+02C8
+0x23	<>	U+0023
+0x24	<>	U+0024
+0x25	<>	U+02CC
+0x26	<>	U+0276
+0x27	<>	U+02B2
+0x28	<>	U+0028
+0x29	<>	U+0029
+0x2A	<>	U+002A
+0x2B	<>	U+002B
+0x2C	<>	comma
+0x2D	<>	U+002D
+0x2E	<>	full_stop
+0x2F	<>	solidus
+0x30	<>	U+02F3
+0x31	<>	U+0268
+0x32	<>	U+00F8
+0x33	<>	U+025C
+0x34	<>	U+027E
+0x35	<>	U+026B
+0x36	<>	U+0250
+0x37	<>	U+0264
+0x38	<>	U+0275
+0x39	<>	U+0153
+0x3A	<>	U+02D0
+0x3B	<>	U+003B
+0x3C	<>	U+030C
+0x3D	<>	U+0329
+0x3E	<>	U+2192
+0x3F	<>	U+0294
+0x40	<>	U+0259
+0x41	<>	U+0251
+0x42	<>	U+03B2
+0x43	<>	U+00E7
+0x44	<>	latin_small_letter_eth
+0x45	<>	latin_small_letter_open_e
+0x46	<>	U+0271
+0x47	<>	U+0263
+0x48	<>	U+0265
+0x49	<>	latin_letter_small_capital_i
+0x4A	<>	U+0272
+0x4B	<>	U+026C
+0x4C	<>	U+028E
+0x4D	<>	U+026F
+0x4E	<>	latin_small_letter_eng
+0x4F	<>	U+0254
+0x50	<>	latin_small_letter_v_with_hook 
+0x51	<>	U+0252
+0x52	<>	U+0281
+0x53	<>	latin_small_letter_esh
+0x54	<>	greek_small_letter_theta
+0x55	<>	latin_small_letter_upsilon
+0x56	<>	U+028C
+0x57	<>	U+028D
+0x58	<>	greek_small_letter_chi
+0x59	<>	latin_letter_small_capital_y
+0x5A	<>	latin_small_letter_ezh
+0x5B	<>	left_square_bracket
+0x5C	<>	reverse_solidus
+0x5D	<>	right_square_bracket
+0x5E	<>	U+032F
+0x5F	<>	U+203F
+0x60	<>	U+02DE
+
+0x67	<>	latin_small_letter_script_g
+
+0x7B	<>	U+00E6
+0x7C	<>	U+007C
+0x7D	<>	U+0289
+0x7E	<>	U+0303
+0x7F	<>	U+007F
+0x80	<>	U+0253
+0x81	<>	U+0299
+0x82	<>	U+0255
+0x83	<>	U+0297
+0x84	<>	U+0188
+0x85	<>	U+0257
+0x86	<>	U+0256
+0x87	<>	U+1D6D
+0x88	<>	U+0258
+0x89	<>	U+029A
+0x8A	<>	U+025F	; check me
+0x8B	<>	U+0260
+0x8C	<>	latin_letter_small_capital_g 
+0x8D	<>	U+029B
+0x8E	<>	U+02B0 
+0x8F	<>	U+0266
+0x90	<>	U+0267
+0x91	<>	U+0127
+0x92	<>	U+029C
+0x93	<>	latin_small_letter_i	/ _ [lDia]? [uDia] ; not dotless check me
+0x94	<>	latin_small_letter_i_with_stroke / _ [lDia]? [uDia] ; not dotless check me
+0x95	<>	U+1D7B
+0x96	<>	U+0269
+0x97	<>	U+027F
+0x98	<>	U+0285
+0x99	<>	U+02CF
+0x9A	<>	U+029D
+0x9B	<>	U+0284
+0x9C	<>	latin_small_letter_j / _ [lDia]? [uDia] ; check me
+0x9D	<>	U+0199
+0x9E	<>	U+02E1
+0x9F	<>	U+026D
+0xA0	<>	U+FFFD
+0xA1	<>	U+026E
+0xA2	<>	U+029F
+0xA3	<>	U+0279
+0xA4	<>	U+02BC
+0xA5	<>	U+027A
+0xA6	<>	U+0270
+0xA7	<>	U+00A7
+0xA8	<>	U+207F
+0xA9	<>	U+0273
+0xAA	<>	U+0274
+0xAB	<>	U+0298
+0xAC	<>	U+031A
+0xAD	<>	U+0278
+0xAE	<>	U+01A5
+0xAF	<>	U+02A0
+0xB0	<>	U+02CE
+0xB1	<>	U+027D
+0xB2	<>	U+027B
+0xB3	<>	U+0280
+0xB4	<>	U+0282
+0xB5	<>	U+0288
+0xB6	<>	U+0295
+0xB7	<>	U+02D1
+0xB8	<>	U+0287
+0xB9	<>	U+01AD
+0xBA	<>	U+0074 U+032C
+0xBB	<>	U+1D7F
+0xBC	<>	U+02E0
+0xBD	<>	U+02B7
+0xBE	<>	U+0277
+0xBF	<>	U+0291
+0xC0	<>	U+0290
+0xC1	<>	U+02A1
+0xC2	<>	U+02E4
+0xC3	<>	U+02A2
+0xC4	<>	U+0296
+0xC5	<>	U+01C0
+0xC6	<>	U+01C2
+0xC7	<>	U+01c1
+0xC8	<>	U+F19D
+0xC9	<>	U+F19C
+0xCA	<>	U+2198
+0xCB	<>	U+2197
+0xCC	<>	U+2198	; check me
+0xCD	<>	U+2197	; check me
+0xCE	<>	U+02BD
+0xCF	<>	U+032A
+0xD0	<>	U+0324
+0xD1	<>	U+0330
+0xD2	<>	U+033C
+0xD3	<>	U+031D
+0xD4	<>	U+031E
+0xD5	<>	U+0318
+0xD6	<>	U+0319
+0xD7	<>	U+033A
+0xD8	<>	U+033B
+0xD9	<>	U+0329 / [iWid] _ ; i-width 
+0xDA	<>	U+0348
+0xDB	<>	U+0339
+0xDC	<>	U+031C
+0xDD	<>	U+031F
+0xDE	<>	U+0320
+0xDF	<>	U+0325
+0xE0	<>	U+0323
+0xE1	<>	U+030A
+0xE2	<>	U+0306
+0xE3	<>	U+0308
+0xE4	<>	U+033D
+0xE5	<>	U+030B
+0xE6	<>	U+0301
+0xE7	<>	U+0304
+0xE8	<>	U+0300
+0xE9	<>	U+030F
+0xEA	<>	U+030D	; check me
+0xEB	<>	U+032C
+0xEC	<>	U+0302
+0xED	<>	U+1DC4
+0xEE	<>	U+1DC5
+0xEF	<>	U+1DC7
+0xF0	<>	U+1dC6
+0xF1	<>	U+1DC8
+0xF2	<>	U+1DC9
+0xF3	<>	modifier_letter_extra_high_tone_bar 
+0xF4	<>	modifier_letter_high_tone_bar 
+0xF5	<>	modifier_letter_mid_tone_bar 
+0xF6	<>	modifier_letter_low_tone_bar 
+0xF7	<>	modifier_letter_extra_low_tone_bar 
+0xF8	<>	modifier_letter_extra_low_tone_bar modifier_letter_extra_high_tone_bar 
+0xF9	<>	modifier_letter_extra_high_tone_bar modifier_letter_extra_low_tone_bar 
+0xFA	<>	modifier_letter_mid_tone_bar modifier_letter_extra_high_tone_bar 
+0xFB	<>	modifier_letter_extra_low_tone_bar modifier_letter_mid_tone_bar 
+0xFC	<>	U+02E7 U+02E5 U+02E7
+0xFD	<>	U+02E7 U+02E9 U+02E7
+0xFE	<>	combining_double_inverted_breve 
+0xFF	<>	U+035C
+
+

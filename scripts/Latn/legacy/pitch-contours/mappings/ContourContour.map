@@ -1,0 +1,122 @@
+EncodingName			"ContourContour-1997"
+DescriptiveName			"SIL Contour Contour Font encoding"
+Version				"0.1"
+Contact				"mailto:lorna_priest@sil.org"
+RegistrationAuthority		"SIL International"
+RegistrationName			"ContourContour"
+
+RHSFlags				(ExpectsNFD)
+
+; 2007-06-26 	LP 	created
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+ByteClass[one] = (0x20   .. 0x30   0x3A   .. 0x40   0x56   .. 0x5B   0x76   .. 0x7A \
+                  0x7C   .. 0x7F   0xA1   .. 0xFF)
+UniClass [one] = (U+0020 .. U+0030 U+003A .. U+0040 U+0056 .. U+005B U+0076 .. U+007A \
+                  U+007C .. U+007F U+00A1 .. U+00FF)
+
+ByteClass[two] = (0x82   .. 0x8c 0x91 .. 0x9C )
+UniClass [two] = (U+201A U+0192 U+201E U+2026 U+2020 U+2021 U+02C6 U+2030 \
+                  U+0160 U+2039 U+0152 U+2018 U+2019 U+201C U+201D U+2022 \
+                  U+2013 U+2014 U+02DC U+2122 U+0161 U+203A U+0153)
+
+[ctl]	<>	[ctl]
+[one]	<>	[one]
+[two]	<>	[two]
+
+0x5C     >	U+FFFD
+0x5D    <>	U+005D	
+0x5E     >	U+FFFD	
+0x5F     >	U+FFFD	
+0x60     >	U+FFFD	
+0x7B     >	U+FFFD	
+0x80     >	U+FFFD	
+0x81     >	U+FFFD	
+0x8D     >	U+FFFD	
+0x8E     >	U+FFFD	
+0x8F     >	U+FFFD	
+0x90     >	U+FFFD	
+0x9D     >	U+FFFD	
+0x9E     >	U+FFFD	
+0x9F    <>	U+0178	
+0xA0    <>	U+00A0
+
+0x31	<>	U+F1F1 U+034F
+0x32	<>	U+F1F2 U+034F 
+0x33	<>	U+F1F3 U+034F 
+0x34	<>	U+F1F4 U+034F 
+0x35	<>	U+F1F5 U+034F 
+0x36	<>	U+F1F6 U+034F 
+0x37	<>	U+F1F7 U+034F 
+0x38	<>	U+F1F8 U+034F 
+0x39	<>	U+F1F9 U+034F 
+
+0x41	<>	U+F1F1 U+F1F2
+0x42	<>	U+F1F2 U+F1F3
+0x43	<>	U+F1F3 U+F1F4
+0x44	<>	U+F1F4 U+F1F5
+0x45	<>	U+F1F5 U+F1F6
+0x46	<>	U+F1F6 U+F1F7
+0x47	<>	U+F1F7 U+F1F8
+0x48	<>	U+F1F8 U+F1F9
+
+0x49	<>	U+F1F1 U+F1F3
+0x4A	<>	U+F1F2 U+F1F4
+0x4B	<>	U+F1F3 U+F1F5
+0x4C	<>	U+F1F4 U+F1F6
+0x4D	<>	U+F1F5 U+F1F7
+0x4E	<>	U+F1F6 U+F1F8
+0x4F	<>	U+F1F7 U+F1F9
+
+0x50	<>	U+F1F1 U+F1F4
+0x51	<>	U+F1F2 U+F1F5
+0x52	<>	U+F1F3 U+F1F6
+0x53	<>	U+F1F4 U+F1F7
+0x54	<>	U+F1F5 U+F1F8
+0x55	<>	U+F1F6 U+F1F9
+
+0x61	<>	U+F1F2 U+F1F1
+0x62	<>	U+F1F3 U+F1F2
+0x63	<>	U+F1F4 U+F1F3
+0x64	<>	U+F1F5 U+F1F4
+0x65	<>	U+F1F6 U+F1F5
+0x66	<>	U+F1F7 U+F1F6
+0x67	<>	U+F1F8 U+F1F7
+0x68	<>	U+F1F9 U+F1F8
+
+0x69	<>	U+F1F3 U+F1F1
+0x6A	<>	U+F1F4 U+F1F2
+0x6B	<>	U+F1F5 U+F1F3
+0x6C	<>	U+F1F6 U+F1F4
+0x6D	<>	U+F1F7 U+F1F5
+0x6E	<>	U+F1F8 U+F1F6
+0x6F	<>	U+F1F9 U+F1F7
+
+0x70	<>	U+F1F4 U+F1F1
+0x71	<>	U+F1F5 U+F1F2
+0x72	<>	U+F1F6 U+F1F3
+0x73	<>	U+F1F7 U+F1F4
+0x74	<>	U+F1F8 U+F1F5
+0x75	<>	U+F1F9 U+F1F6
+
+
+
+
+; last we get rid of duplicates
+
+Pass(Unicode)
+
+U+F1F1 U+F1F1 > U+F1F1
+U+F1F2 U+F1F2 > U+F1F2
+U+F1F3 U+F1F3 > U+F1F3
+U+F1F4 U+F1F4 > U+F1F4
+U+F1F5 U+F1F5 > U+F1F5
+U+F1F6 U+F1F6 > U+F1F6
+U+F1F7 U+F1F7 > U+F1F7
+U+F1F8 U+F1F8 > U+F1F8
+U+F1F9 U+F1F9 > U+F1F9
+

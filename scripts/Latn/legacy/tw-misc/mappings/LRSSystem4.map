@@ -1,0 +1,24 @@
+EncodingName			"LRS System 4-1996"
+DescriptiveName			"LRS System 4 Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"LRS System 4"
+
+RHSFlags				(ExpectsNFD)
+
+; 2006-05-16	LP	created
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+0x20 <> U+0020     ; SPACE
+0x71 <> U+2769 
+0x72 <> U+2768 
+0xA2 <> U+00F7
+0xB6 <> U+2E13
+

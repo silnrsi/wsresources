@@ -1,0 +1,187 @@
+EncodingName			"TransRomanAH-1994"
+DescriptiveName			"TransRomanAH Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"TransRomanAH"
+
+RHSFlags				(ExpectsNFD)
+
+; 2006-05-16	LP	created 
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+ByteClass [x] = (0x30..0x39 0x41..0x5A 0x61..0x7A)
+UniClass [x] = (U+0030..U+0039 U+0041..U+005A U+0061..U+007A)
+
+[ctl]	<>	[ctl]
+[x]	<>	[x]
+
+0x20 <> U+0020
+0x21 <> U+0021
+0x22 <> U+0300
+0x23 <> U+00DF
+0x24 <> U+003F
+0x25 <> U+00BF
+0x26 <> U+2019
+0x27 <> U+0300
+0x28 <> U+0028
+0x29 <> U+0029
+0x2A <> U+0327
+0x2B <> U+030C
+0x2C <> U+002C
+0x2D <> U+002D
+0x2E <> U+002E
+0x2F <> U+0308
+
+0x3A <> U+0301
+0x3B <> U+0301
+0x3C <> U+003B
+0x3D <> U+030C
+0x3E <> U+003A
+0x3F <> U+0308
+0x40 <> U+00A1
+
+0x5B <> U+0302
+0x5C <> U+0304
+0x5D <> U+0303
+0x5E <> U+2018
+0x5F <> U+0331
+0x60 <> U+030A
+
+0x7B <> U+0302
+0x7C <> U+0304
+0x7D <> U+0303
+0x7E <> U+030A
+0x80 <> U+0049 U+0300
+0x81 <> U+00C6
+0x82 <> U+00A9
+0x83 <> U+0053 U+030C
+0x84 <> U+0049 U+0303
+0x85 <> U+006C U+0326
+0x86 <> U+006C U+0301
+0x87 <> U+0351
+0x88 <> U+006A U+0302
+0x89 <> U+0069 U+0301
+0x8A <> U+0049 U+0301
+0x8B <> U+0077 U+0302
+0x8C <> U+00E6
+0x8D <> U+0328
+0x8E <> U+0073 U+030C
+0x8F <> U+0074 U+0323
+0x90 <> U+0069 U+0304
+0x91 <> U+0049 U+0304
+0x92 <> U+0345
+0x93 <> U+0069 U+0300
+0x94 <> U+0069 U+0308
+0x95 <> U+0049 U+0308
+0x96 <> U+0069 U+0303
+0x97 <> U+0073 U+0301
+0x98 <> U+0074 U+0327
+0x99 <> U+0069 U+0302
+0x9A <> U+0049 U+0302
+0x9B <> U+006D U+0301
+0x9C <> U+0053 U+0302
+0x9D <> U+0074 U+030C
+0x9E <> U+0069 U+0306
+0x9F <> U+0049 U+0306
+0xA0 <> U+00A0
+0xA1 <> U+032E
+0xA2 <> U+00A2
+0xA3 <> U+203A
+0xA4 <> U+00BA
+0xA5 <> U+002A     ; dict
+0xA6 <> U+002F
+0xA7 <> U+0026
+0xA8 <> U+1D07
+0xA9 <> U+03B1
+0xAA <> U+2039
+0xAB <> U+0259
+0xAC <> U+0306
+0xAD <> U+003D
+0xAE <> U+0307
+0xAF <> U+00D8
+0xB0 <> U+00AA
+0xB1 <> U+002B
+0xB2 <> U+0326
+0xB3 <> U+0323
+0xB4 <> U+0311
+0xB5 <> U+0306     ; not quite the same
+0xB6 <> U+00B6     ; dict
+0xB7 <> U+00B7
+0xB8 <> U+00DE
+0xB9 <> U+00FE
+0xBA <> U+0329
+0xBB <> U+005B
+0xBC <> U+005D
+0xBD <> U+014B
+0xBE <> U+0307
+0xBF <> U+00F8
+0xC0 <> U+0338
+0xC1 <> U+007C
+0xC2 <> U+0142
+0xC3 <> U+032D
+0xC4 <> U+00F0
+0xC5 <> U+0325
+0xC6 <> U+027E     ; not the same
+0xC7 <> U+035E
+0xC8 <> U+035E
+0xC9 <> U+030B
+0xCA <> U+00A0
+0xCB <> U+004A U+0302
+0xCC <> U+0057 U+0302
+0xCD <> U+004D U+0301
+0xCE <> U+0152
+0xCF <> U+0153
+0xD0 <> U+2013
+0xD1 <> U+2014
+0xD2 <> U+0024
+0xD3 <> U+0025
+0xD4 <> U+0360
+0xD5 <> U+0360
+0xD6 <> U+032F
+0xD7 <> U+02CA
+0xD8 <> U+0049 U+0307
+0xD9 <> U+00B0
+0xDA <> U+0023
+0xDB <> U+00AB
+0xDC <> U+00BB
+0xDD <> U+00A5
+0xDE <> U+0111
+0xDF <> U+00A7
+0xE0 <> U+005C
+0xE1 <> U+007B
+0xE2 <> U+007D
+0xE3 <> U+03C9
+0xE4 <> U+03B5
+0xE5 <> U+00AE     ; dict
+0xE6 <> U+2122
+0xE7 <> U+0361
+0xE8 <> U+0306
+0xE9 <> U+0069     ;  dotless i should be regular i probably
+0xEA <> U+1D05
+0xEB <> U+0110
+0xEC <> U+00D0     ; not the same
+0xED <> U+00F7
+0xEE <> U+0126
+0xEF <> U+0269
+0xF0 <> U+029F
+0xF1 <> U+0141
+0xF2 <> U+030B
+0xF3 <> U+014A
+0xF4 <> U+002A
+0xF5 <> U+0299
+0xF6 <> U+207F
+0xF7 <> U+0040
+0xF8 <> U+02BC
+0xF9 <> U+0323
+0xFA <> U+0127
+0xFB <> U+02BD
+0xFC <> U+0166
+0xFD <> U+0167
+0xFE <> U+0054 U+0327
+0xFF <> U+0305
+

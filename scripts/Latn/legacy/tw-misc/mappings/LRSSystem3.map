@@ -1,0 +1,29 @@
+EncodingName			"LRS System 3-1996"
+DescriptiveName			"LRS System 3 Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"LRS System 3"
+
+RHSFlags				(ExpectsNFD)
+
+; 2006-05-16	LP	created
+;                       most are wrong ;-)
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+0x20 <> U+0020     ; SPACE
+0x2D <> U+2E17
+0x5C <> U+2641
+0x60 <> U+FFFD     ; doesn’t exist 
+0x61 <> U+FFFD     ; doesn’t exist
+0x71 <> U+263D     ; not the same
+0x72 <> U+263E     ; not the same
+0xA2 <> U+254C
+0xB6 <> U+22A6 U+FFFD     ; not the same
+

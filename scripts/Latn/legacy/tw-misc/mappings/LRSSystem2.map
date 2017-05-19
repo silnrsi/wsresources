@@ -1,0 +1,33 @@
+EncodingName			"LRS System 2-1996"
+DescriptiveName			"LRS System 2 Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"LRS System 2"
+
+RHSFlags				(ExpectsNFD)
+
+; 2006-05-10	LP	created
+;                       problems with 0x38 0x60 0x61 0x71 0x72
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+0x20 <> U+0020     ; SPACE
+0x30 <> U+2205
+0x38 <> U+232C U+FFFD     ; not right
+0x42 <> U+203B
+0x5C <> U+2296
+0x5D <> U+2641
+0x5F <> U+2644
+0x60 <> U+2645     ; opposite
+0x61 <> U+FFFD     ; doesn’t exist
+0x71 <> U+274D     ; opposite 
+0x72 <> U+274D     ; opposite
+0xA2 <> U+002D
+0xB6 <> U+003A
+0xE5 <> U+035C
+

@@ -1,0 +1,23 @@
+EncodingName			"SymboltoPUA"
+DescriptiveName		"Symbol to PUA encoding"
+Version			"01"
+Contact			"mailto:joan_wardell@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SymboltoPUA"
+
+RHSFlags			(ExpectsNFD)
+
+;When reversed, maps from the PUA numbers that Windows assigns data stored in a Symbol 
+;font to standard font numbers. For example, U+F020 becomes d32(space).
+;This mapping does not interpret the data, it only removes the "F0" from each codepoint.
+
+; 2005-06-24	JW	version 1
+
+
+pass(Byte_Unicode)
+
+ByteClass[ascii] = (0 .. 255)
+UniClass[pua] = (U+F000 .. U+F0FF)
+
+[ascii] <>	[pua]
+

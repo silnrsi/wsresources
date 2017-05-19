@@ -1,0 +1,32 @@
+EncodingName			"SSM-IPA"
+DescriptiveName		"SSM-IPA font encoding"
+Version			".01"
+Contact			"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SSM-IPA"
+
+RHSFlags				(ExpectsNFD)
+
+; 2007-04-18	LP	created
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+0x20	<>	space
+0x2D	<>	U+002D
+0x2F	<>	U+02E5 U+02E7 U+02E6
+0x41	<>	U+0041
+0x49	<>	U+0049
+0x4D	<>	U+004D
+0x50	<>	U+0050
+0x53	<>	U+0053
+0x64	<>	U+1D91
+0x66	<>	U+0348
+0x6C	<>	U+1DC2
+0x73	<>	U+032C
+0x74	<>	U+01AD
+0x78	<>	U+0078 U+2019 ; this is a hooked x which doesn't exist in Unicode

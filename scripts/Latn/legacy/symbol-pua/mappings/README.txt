@@ -1,0 +1,1 @@
+Use this mapping to convert legacy data in an RTF file from PUA back to legacy. 

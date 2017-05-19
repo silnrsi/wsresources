@@ -1,0 +1,1 @@
+These are draft mappings. No attempt has been made to split them by language.
