@@ -1,0 +1,282 @@
+c for GREEK.DB
+
+begin > store(ignore) ' []1234567890.,' nl endstore
+
+define(notfound) > ifneq(notfound) '' 
+			begin 'not found: ' out(notfound) end
+		   endif
+
+group(main)
+
+'\grk ' > dup use(convert)
+'\frm ' > dup use(convert)
+'\alt ' > dup use(convert)
+'\see ' > dup use(convert)
+'\sub ' > dup use(convert)
+
+'|g' > dup use(convert)
+
+group(convert)
+
+'|g*' > dup use(main)
+nl > dup use(main
+
+any(ignore) > dup
+
+c following line commented by PK 5/5/03
+c '"' > u1F84	c error in old Greek text
+
+';' > u387	c 59 ano teleia (semi-colon)
+'?' > u37E      c 63 erotimatiko (question mark)
+c following line changed from u1FBD koronis PK 5/5/03
+'@' > u2019	c 64 apostrophe (when not followed by upper case vowel)
+
+'A' > u391	c 65
+'B' > u392	c 66
+'C' > u3A7	c 67
+'D' > u394	c 68
+'E' > u395	c 69
+'F' > u3A6	c 70
+'G' > u393	c 71
+'I' > u399	c 73
+'J' > u397	c 74
+'K' > u39A	c 75
+'L' > u39B	c 76
+'M' > u39C	c 77
+'N' > u39D	c 78
+'O' > u39F	c 79
+'P' > u3A0	c 80
+'Q' > u398	c 81
+'R' > u3A1	c 82
+'S' > u3A3	c 83
+'T' > u3A4	c 84
+'U' > u3A5	c 85
+'W' > u3A9	c 87
+'X' > u39E	c 88
+'Y' > u3A8	c 89
+'Z' > u396	c 90
+'a' > u3B1	c 97
+'b' > u3B2	c 98
+'c' > u3C7	c 99
+'d' > u3B4	c 100
+'e' > u3B5	c 101
+'f' > u3C6	c 102
+'g' > u3B3	c 103	
+'i' > u3B9	c 105
+'j' > u3B7	c 106
+'k' > u3BA	c 107
+'l' > u3BB	c 108
+'m' > u3BC	c 109
+'n' > u3BD	c 110
+'o' > u3BF	c 111
+'p' > u3C0	c 112
+'q' > u3B8	c 113
+'r' > u3C1	c 114
+'s' > u3C3	c 115
+'t' > u3C4	c 116
+'u' > u3C5	c 117
+'v' > u3C2	c 118
+'w' > u3C9	c 119
+'x' > u3BE	c 120
+'y' > u3C8	c 121
+'z' > u3B6	c 122
+'€' > u1F71	c 128
+'' > u1F70	c 129
+'‚' > u1FB6	c 130
+'ƒ' > u1F01	c 131
+'„' > u1F05	c 132
+'…' > u1F03	c 133
+'†' > u1F07	c 134
+'‡' > u1F00	c 135
+'ˆ' > u1F04	c 136
+'‰' > u1F02	c 137
+'Š' > u1F06	c 138
+'‹' > u1FB3	c 139
+'Œ' > u1FB4	c 140
+'' > u1FB2	c 141
+'Ž' > u1FB7	c 142
+'' > u1F81	c 143
+'' > u1F85	c 144
+'‘' > u1F83	c 145
+'’' > u1F87	c 146
+'“' > u1F80	c 147
+'”' > u1F84	c 148
+'o' > u1F82	c 149
+'˜' > u1F86	c 152
+'™' > u1F73	c 153
+'š' > u1F72	c 154
+'›' > u1F11	c 155
+'œ' > u1F15	c 156
+'' > u1F10	c 157
+'ž' > u1F14	c 158
+'Ÿ' > u1F13	c 159
+'¡' > u1FA5	c 161
+'¢' > u1FA3	c 162
+'£' > u1FA7	c 163
+'¥' > u1FA0	c 165
+'¦' > u1FA4	c 166
+'§' > u1FA2	c 167
+'¨' > u1FA6	c 168
+'©' > u1FDE	c 169
+'ª' > u1FDD	c 170
+'«' > u1FDF	c 171
+'­' > u1FCE	c 173
+'®' > u1FCD	c 174
+'¯' > u1FCF	c 175
+'°' > u1F77	c 176
+'±' > u1F76	c 177
+'²' > u1FD6	c 178
+'³' > u1F31	c 179
+'´' > u1F35	c 180
+'µ' > u1F37	c 181
+'¸' > u1F30	c 184
+'¹' > u1F34	c 185
+'º' > u1F36	c 186
+'»' > u3CA	c 187
+'¼' > u1FD3	c 188
+'½' > u1FD2	c 189
+'¾' > u1F33	c 190
+'¿' > u1FE5	c 191
+'À' > u1F7B	c 192
+'Á' > u1F7A	c 193
+'Â' > u1FE6	c 194
+'Ã' > u1F51	c 195
+'Ä' > u1F55	c 196
+'Å' > u1F53	c 197
+'Æ' > u1F57	c 198
+'Ç' > u1F50	c 199
+'È' > u1F54	c 200
+'É' > u1F52	c 201
+'Ê' > u1F56	c 202
+'Ë' > u3CB	c 203
+'Ì' > u1FE3	c 204
+'Í' > u1FE2	c 205
+'Î' > u1F42	c 206
+'Ï' > u1FE4	c 207
+'Ð' > u1F75	c 208
+'Ñ' > u1F74	c 209
+'Ò' > u1FC6	c 210
+'Ó' > u1F21	c 211
+'Ô' > u1F25	c 212
+'Õ' > u1F23	c 213
+'Ö' > u1F27	c 214
+'×' > u1F20	c 215
+'Ø' > u1F24	c 216
+'Ù' > u1F22	c 217
+'Ú' > u1F26	c 218
+'Û' > u1FC3	c 219
+'Ü' > u1FC4	c 220
+'Ý' > u1FC2	c 221
+'Þ' > u1FC7	c 222
+'ß' > u1F91	c 223
+'à' > u1F95	c 224
+'á' > u1F93	c 225
+'â' > u1F97	c 226
+'ã' > u1F90	c 227
+'ä' > u1F94	c 228
+'å' > u1F92	c 229
+'æ' > u1F96	c 230
+'ç' > u1F79	c 231
+'è' > u1F78	c 232
+'é' > u1F41	c 233
+'ê' > u1F45	c 234
+'ë' > u1F43	c 235
+'ì' > u1F40	c 236
+'í' > u1F44	c 237
+'î' > u1FEE	c 238
+'ï' > u1FED	c 239
+'ð' > u1F7D	c 240
+'ñ' > u1F7C	c 241
+'ò' > u1FF6	c 242
+'ó' > u1F61	c 243
+'ô' > u1F65	c 244
+'õ' > u1F63	c 245
+'ö' > u1F67	c 246
+'÷' > u1F60	c 247
+'ø' > u1F64	c 248
+'ù' > u1F62	c 249
+'ú' > u1F66	c 250
+'û' > u1FF3	c 251
+'ü' > u1FF4	c 252
+'ý' > u1FF2	c 253
+'þ' > u1FF7	c 254
+'ÿ' > u1FA1	c 255
+
+'`A' > u1FBA 
+"'" 'A' > u1FBB 
+'HA' > u1F08 
+'hA' > u1F09 
+'®A' > u1F0A 
+'ªA' > u1F0B 
+'­A' > u1F0C 
+'©A' > u1F0D 
+'¯A' > u1F0E 
+'«A' > u1F0F 
+'`E' > u1FC8 
+"'" 'E' > u1FC9 
+'HE' > u1F18 
+'hE' > u1F19 
+'®E' > u1F1A 
+'ªE' > u1F1B 
+'­E' > u1F1C 
+'©E' > u1F1D 
+'`J' > u1FCA 
+"'" 'J' > u1FCB 
+'HJ' > u1F28 
+'hJ' > u1F29 
+'®J' > u1F2A 
+'ªJ' > u1F2B 
+'­J' > u1F2C 
+'©J' > u1F2D 
+'¯J' > u1F2E 
+'«J' > u1F2F 
+'`I' > u1FDA 
+"'" 'I' > u1FDB 
+'HI' > u1F38 
+'hI' > u1F39 
+'®I' > u1F3A 
+'ªI' > u1F3B 
+'­I' > u1F3C 
+'©I' > u1F3D 
+'¯I' > u1F3E 
+'«I' > u1F3F 
+'`O' > u1FF8 
+"'" 'O' > u1FF9 
+'HO' > u1F48 
+'hO' > u1F49 
+'®O' > u1F4A 
+'ªO' > u1F4B 
+'­O' > u1F4C 
+'©O' > u1F4D 
+'`U' > u1FEA 
+"'" 'U' > u1FEB 
+'hU' > u1F59 
+'ªU' > u1F5B 
+'©U' > u1F5D 
+'«U' > u1F5F 
+'`W' > u1FFA 
+"'" 'W' > u1FFB 
+'HW' > u1F68 
+'hW' > u1F69 
+'®W' > u1F6A 
+'ªW' > u1F6B 
+'­W' > u1F6C 
+'©W' > u1F6D 
+'¯W' > u1F6E 
+'«W' > u1F6F 
+'hR' > u1FEC
+
+c added by PK 5/5/03: isolated accents, breathing marks etc
+'"' > uA8 c 32 dieresis
+"'" > u1FFD c 39 acute
+'H' > u1FBF c 72 smooth breathing
+'^' > u1FC0 c 94 circumflex
+'_' > u37A c 95 iota subscript
+'`' > u1FEF c 96 grave
+'h' > u1FFE c 104 rough breathing
+
+'' > append(notfound) fwd(1) endstore
+
+endfile > do(notfound) endfile
+
+
