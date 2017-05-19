@@ -7,4 +7,4 @@ will not cover all potential uses.
 
 We will be happy to receive suggested updates to the mapping files.
 
-Lorna Priest (lorna_priest@sil.org)
+Lorna Evans (lorna_evans@sil.org)

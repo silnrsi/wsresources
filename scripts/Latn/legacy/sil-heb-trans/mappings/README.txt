@@ -17,5 +17,5 @@ The mapping file is denoted with an asterisk (*). Below the mapping file name ar
 for which you can use the mapping file.
 
 Note that not all of the mapping files are complete or accurate and they have only been minimally tested. 
-If you have corrections to make, please email: <lorna_priest@sil.org>
+If you have corrections to make, please email: <lorna_evans@sil.org>
 

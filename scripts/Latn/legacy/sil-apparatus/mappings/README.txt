@@ -15,4 +15,4 @@ SILAB.ttf	SIL Apparatus Bold
 SILABI.ttf SIL Apparatus Bold Italic
 
 
-If you have corrections to make, please email: <lorna_priest@sil.org>
+If you have corrections to make, please email: <lorna_evans@sil.org>

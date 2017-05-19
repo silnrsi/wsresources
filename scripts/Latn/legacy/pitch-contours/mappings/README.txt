@@ -4,8 +4,8 @@ These are experimental mapping files for the PitchContours
 fonts. Nine codepoints for the pitches were placed in
 SIL Corporate PUA at U+F1F1..U+F1F9. Each of these 
 mapping files require the use of 
-Charis SIL (http://scripts.sil.org/CharisSILfont) or 
-Doulos SIL (http://scripts.sil.org/DoulosSILfont) 
+Charis SIL (http://software.sil.org/charis) or 
+Doulos SIL (http://software.sil.org/doulos) 
 version 4.1 or greater. They will turn into contours 
 if used in Graphite applications. It is unlikely that 
 any other fonts will contain these codepoints. 
@@ -66,5 +66,5 @@ The lowest bar is number 1 and the highest is number 9.
 SUPPORT
 
 These maps have been minimally tested and feedback
-is encouraged. Please contact lorna_priest@sil.org
+is encouraged. Please contact lorna_evans@sil.org
 if you have feedback or suggestions.
