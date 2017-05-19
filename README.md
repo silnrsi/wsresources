@@ -11,82 +11,80 @@ It is expected that most resources should fit into the first repo (1). However, 
 possible that resources are more geared to a region (2) or a script (3). If you put a
 resource into "regions" or "scripts" it is highly unlikely there would be a hunspell dictionary.
 
-
-
 ## Structure
 
 Examples of possible resource files for a language with code xxx.
 
 ```
 wsresources
-+-- langs
-¦   +-- a
-¦   +-- ..
-¦   +-- x
-¦   ¦   +-- xxx-Arab
-¦   ¦   ¦   +-- hunspell
-¦   ¦   ¦   ¦   +-- xxx-Arab.aff
-¦   ¦   ¦   ¦   +-- xxx-Arab.dic
-¦   ¦   ¦   +-- keyboards
-¦   ¦   ¦   ¦   +-- msklc
-¦   ¦   ¦   ¦   ¦   +-- files .klc, .zip
-¦   ¦   ¦   ¦   +-- ukelele
-¦   ¦   ¦   ¦       +-- files .txt, keylayout
-¦   ¦   ¦   +-- legacy
-¦   ¦   ¦   ¦   +-- encoding name
-¦   ¦   ¦   ¦       +-- mappings
-¦   ¦   ¦   ¦           +-- files .map, .tec
-¦   ¦   ¦   ¦       +-- keyboards
-¦   ¦   ¦   ¦           +-- .kmn etc.
-¦   ¦   ¦   +-- mappings
-¦   ¦   ¦           +-- files .map, .tec
-¦   ¦   +-- xxx-Latn
-¦   +-- y
-¦   +-- z
-+-- regions
-¦   +-- Africa
-¦   ¦   +-- CM
-¦   ¦   ¦   +-- keyboards
-¦   ¦   ¦   ¦   +-- msklc
-¦   ¦   ¦   ¦   ¦   +-- files .klc, .zip
-¦   ¦   ¦   ¦   +-- ukelele
-¦   ¦   ¦   ¦       +-- files .txt, keylayout
-¦   ¦   ¦   +-- legacy
-¦   ¦   ¦   ¦   +-- encoding name
-¦   ¦   ¦   ¦       +-- mappings
-¦   ¦   ¦   ¦           +-- files .map, .tec
-¦   ¦   ¦   ¦       +-- keyboards
-¦   ¦   ¦   ¦           +-- .kmn etc.
-¦   ¦   ¦   +-- mappings
-¦   ¦   ¦       +-- files .map, .tec
-¦   ¦   +-- TG
-¦   +-- Americas
-¦   ¦   +-- BO
-¦   ¦   +-- CO
-¦   +-- Asia
-¦   +-- Europe
-¦   +-- Oceania
-+-- scripts
-    +-- Arab
-    +-- Deva
-    +-- Gujr
-    +-- Latn
-        +-- keyboards
-        ¦   +-- msklc
-        ¦   ¦   +-- sil-ipa
-        ¦   ¦       +-- files .klc, .zip
-        ¦   +-- ukelele
-        ¦       +-- sil-ipa
-        ¦           +-- files .txt, keylayout
-        +-- legacy
-        ¦   +-- asap-ipa
-¦   ¦   ¦       +-- mappings
-¦   ¦   ¦           +-- files .map, .tec
-¦   ¦   ¦       +-- keyboards
-¦   ¦   ¦           +-- .kmn etc.
-        ¦   +-- sil-ipa-1993
-        ¦   +-- sil-ipa-1990
-        +-- mappings
+├- langs
+│   ├- a
+│   ├- ..
+│   ├- x
+│   │  ├- xxx-Arab
+│   │  │   ├- hunspell
+│   │  │   │   ├- xxx-Arab.aff
+│   │  │   │   └- xxx-Arab.dic
+│   │  │   ├- keyboards
+│   │  │   │   ├- msklc
+│   │  │   │   │   └- files .klc, .zip
+│   │  │   │   └- ukelele
+│   │  │   │       └- files .txt, keylayout
+│   │  │   ├- legacy
+│   │  │   │   └- encoding name
+│   │  │   │       ├- mappings
+│   │  │   │       │   └- files .map, .tec
+│   │  │   │       └- keyboards
+│   │  │   │           └- .kmn etc.
+│   │  │   └- mappings
+│   │  │           └- files .map, .tec
+│   │  └- xxx-Latn
+│   ├- y
+│   └- z
+├- regions
+│   ├- Africa
+│   │   ├- CM
+│   │   │   ├- keyboards
+│   │   │   │   ├- msklc
+│   │   │   │   │   └─- files .klc, .zip
+│   │   │   │   └─- ukelele
+│   │   │   │       └─- files .txt, keylayout
+│   │   │   ├- legacy
+│   │   │   │   └- encoding name
+│   │   │   │       ├- mappings
+│   │   │   │           └─- files .map, .tec
+│   │   │   │       └- keyboards
+│   │   │   │           └─- .kmn etc.
+│   │   │   └- mappings
+│   │   │       └─- files .map, .tec
+│   │   └- TG
+│   ├- Americas
+│   │   ├- BO
+│   │   └- CO
+│   ├- Asia
+│   ├- Europe
+│   └- Oceania
+└- scripts
+    ├- Arab
+    ├- Deva
+    ├- Gujr
+    └- Latn
+        ├- keyboards
+        │   ├- msklc
+        │   │   └─- sil-ipa
+        │   │       └─ files .klc, .zip
+        │   └- ukelele
+        │       └─- sil-ipa
+        │           └─ files .txt, keylayout
+        ├- legacy
+        │   ├- asap-ipa
+        │   │   ├- mappings
+        │   │   │   └─ files .map, .tec
+        │   │   └─ keyboards
+        │   │       └─ .kmn etc.
+        │   ├- sil-ipa-1993
+        │   └─ sil-ipa-1990
+        └─ mappings
 ```
 
 ## Other resources
