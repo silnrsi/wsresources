@@ -1,0 +1,53 @@
+ c  Fulfulde keyboard file
+ c
+ c Created by Scott M. Crickmore
+ c
+ c 25 March 1995
+ c
+ c Revised 18 Dec 97 - added double quotes
+
+ NAME "Fulfulde"
+
+ BITMAPS fulfon, fulfoff
+
+ HOTKEY  "^+F"                 c Ctrl+Shift+F
+
+ VERSION 3.0
+
+
+
+ begin	>	use(MAIN)		c Start procesing on
+ c 					 "MAIN" group
+
+ group(MAIN)	using keys
+
+ c lc fulfulde characters
+
+ "]"		>	d165   c imp b
+
+ "["		>	d163   c imp d
+
+ "z"		>	d162   c eng
+
+ "q"		>	d246   c ny
+
+ "v"		>	d255   c imp y
+
+ c uc fulfulde characters
+
+ "}"		>	d178   c imp b
+
+ "{"		>	d247   c imp d
+
+ "Z"		>	d191   c eng
+
+ "Q"		>	d252   c ny
+
+ "V"		>	d181   c imp y
+
+ c punctuation
+
++ "<"                  >            d171    c left double quotes
+
++ ">"                  >            d187    c right double quotes
+                                 

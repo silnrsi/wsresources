@@ -1,0 +1,164 @@
+/* TBBW-D.CST */
+/* Doulos */
+/* Togo B‚nin Branch standard orthography font for Word for Windows */
+/* created by dls */
+/* 02.02.95 -- origional verision */
+/* 960209 DLR version 02:05
+ * position 243, from 1501 to 1502
+ * position 156 and "i",from 1411 to 1611
+ * position "f", from 1008 to 1708
+ * position "I", from 2011 to 2411
+ * 960520 DLR version 02:06
+ * position 240 OE missing from Manuscript
+ * 961009 DLR version 03:00
+ * use Encore fonts version 3.0 
+ * add position 186, curly z, 1035
+ * add position 189, curly Z, 2635
+ * 990625 DLR version 03:01 - recompile with version 3 of compiler (for W98)
+ * 990818 DLR version 03:02 - no change for Doulos
+ * 990831 DLR version 03:03 - no change for Doulos
+ */
+
+trans none          /* no translation; standard ANSI encoding */
+/* let TypeCaster fill in default values for undefined codes */
+
+I           2411                    /* use to get distinct Sophia form */
+f           1708                    /* use to get distinct italic form */
+i/          1611  /           6013  /* correct heigth of dot on i */
+/* --x80-- */
+/* 128                                 HP laserjet 4 does not use */
+/* 129                                 HP laserjet 4 does not use */
+130         8005                    /* aveoplaltal D */
+131         1605                    /* aveoplaltal d */
+132         2433                    /* gamma big (uc) */
+133         1433                    /* gamma */
+134         2106                    /* schwa uc */
+135         1106                    /* schwa */
+136/-2w     0173    /-35m   6614        /* cedilla uc  */
+137/-2w     0173    /-25m   6614        /* cedilla */
+138         2408                    /* tail f */
+/* 139                                 single < */
+140         1408                    /* tail f uc */
+/* 141                                 HP laserjet 4 does not use */
+/* 142                                 HP laserjet 4 does not use */
+/* 143                                 HP laserjet 4 does not use */
+/* --x90-- */
+/* 144                                 HP laserjet 4 does not use */
+/* 145                                 single open quote */
+/* 146                                 single close quote */
+/* 147                                 double open quote */
+/* 148                                 double close quote */
+/* 149 bullet */
+/* 150                                 n-dash */
+/* 151                                 m-dash */
+152         2818                    /* alveopalatal oversized (uc) N */
+153         1618                    /* alveopalatal n */
+154         1603                    /* s-zet */
+/* 155                                 single > */
+156         1611                    /* un-dotted i for use w/ diacritics */
+/* 157                                 HP laserjet 4 does not use */
+/* 158                                 HP laserjet 4 does not use */
+159         1002                    /* phonetic a */
+/* --xa0-- */
+/* 160                                 WinWord does not print this code */
+161         2405                    /* implosive D */
+162         1405                    /* implosive d */
+163         2533                    /* implosive Y */
+/* 164                                 WinWord end cell symbol */
+165         1533                    /* implosive y */
+166         2403                    /* implosive B */
+167         1403                    /* implosive b */
+168         2414                    /* implosive K */
+169         1414                    /* implosive k */
+170         2410                    /* implosive H */
+/* 171                                 double < */
+/* 172                                 WinWord conditional hyphen */
+   /* 173 */
+174         1410                    /* implosive h */
+175         9062 /* unused */
+/* --xb0-- */
+176/-2w     0173    /-25m   6103    /* grave dd; */
+177/-2w     0173    /-25m   6102    /* acute dd; */
+178/-2w     0173    /-25m   6105    /* circumflex dd; w/ use o-width */
+179/-2w     0173    /-25m   6017    /* angstrom over lc */
+180/-2w     0173    /-39m   6117    /* angstrom over uc */
+181/-2w     0173    /-25m   6106    /* wedge dd; use w/ o-width  */
+/* 182                                 WinWord paragraph symbol */
+/* 183                                 WinWord space symbol */
+184/-2w     0173    /-40m   6003    /* grave; use w/ m-width */
+185/-2w     0173    /-50m   6002    /* acute; use w/ m-width */
+186         1035                    /* curly z */
+/* 187                                 double > */
+188/-2w     0173    /-25m   6109    /* macron dd; o width */
+189         2635                    /* curly z uc */
+190/-2w     0173    /-40m   6009    /* macron; use w/ m-width */
+191         9015                    /* inverse initial ? */
+/* --xc0-- use w/ o-width */
+192/-2w     0173    /-43m   6103    /* grave uc */
+193/-2w     0173    /-35m   6102    /* acute uc */
+194/-2w     0173    /-38m   6105    /* crflx uc */
+195/-2w     0173    /-37m   6101    /* tilde uc */
+196/-2w     0173    /-39m   6104    /* trema uc */
+197/-2w     0173    /-39m   6106    /* wedge uc */
+198/-2w     0173    /-39m   6109    /* macron uc */
+199/-2w     0173    /-40m   6601    /* u-tilde uc */
+200/-2w     0173    /-25m   6003    /* grave */
+201/-2w     0173    /-25m   6002    /* acute */
+202/-2w     0173    /-25m   6005    /* crflx */
+203/-2w     0173    /-25m   6001    /* tilde */
+204/-2w     0173    /-25m   6004    /* trema */
+205/-2w     0173    /-25m   6006    /* wedge */
+206/-2w     0173    /-25m   6009    /* macron */
+207/-2w     0173    /-25m   6601    /* u-tilde */
+/* --xd0-- use w/ epsilon-width */
+208/-2w     0173    /-34m   6103    /* grave uc */
+209/-2w     0173    /-29m   6102    /* acute uc */
+210/-2w     0173    /-31m   6105    /* crflx uc */
+211/-2w     0173    /-30m   6101    /* tilde uc */
+212/-2w     0173    /-31m   6104    /* trema uc */
+213/-2w     0173    /-31m   6106    /* wedge uc */
+214/-2w     0173    /-32m   6109    /* macron uc */
+215/-2w     0173    /-35m   6601    /* u-tilde uc */
+216/-2w     0173    /-20m   6003    /* grave */
+217/-2w     0173    /-20m   6002    /* acute */
+218/-2w     0173    /-20m   6005    /* circumflex */
+219/-2w     0173    /-20m   6001    /* tilde */
+220/-2w     0173    /-20m   6004    /* trema */
+221/-2w     0173    /-20m   6006    /* wedge */
+222/-2w     0173    /-20m   6009    /* macron */
+223/-2w     0173    /-20m   6601    /* u-tilde */
+/* --xe0-- use w/ i-width */
+224/-2w     0173    /-20m   6103    /* grave uc */
+225/-2w     0173    /-19m   6102    /* acute uc */
+226/-2w     0173    /-19m   6105    /* circumflex uc */
+227/-2w     0173    /-19m   6101    /* tilde uc */
+228/-2w     0173    /-19m   6104    /* trema uc */
+229/-2w     0173    /-19m   6106    /* wedge uc */
+230/-2w     0173    /-19m   6109    /* macron uc */
+231/-2w     0173    /-19m   6601    /* u-tilde uc */
+232/-2w     0173    /-15m   6003    /* grave */
+233/-2w     0173    /-15m   6002    /* acute */
+234/-2w     0173    /-15m   6005    /* circumflex */
+235/-2w     0173    /-15m   6001    /* tilde */
+236/-2w     0173    /-15m   6004    /* trema */
+237/-2w     0173    /-15m   6006    /* wedge */
+238/-2w     0173    /-15m   6009    /* macron */
+239/-2w     0173    /-15m   6601    /* u-tilde */
+/* --xf0-- */
+240         2319                    /* oe digraph uc */
+241         1319                    /* oe digraph */
+242         2501                    /* ash uc */
+243         1502                    /* ash */
+244         8219                    /* slash o uc */
+245         7219                    /* slash o */
+246         2718                    /* velar n enlarged (uc) */
+247         1418                    /* velar n */
+248         2012                    /* iota uc */
+249         1012                    /* iota */
+250         2228                    /* upsilon uc */
+251         1228                    /* upsilon */
+252         2204                    /* open o uc */
+253         1204                    /* open o */
+254         2007                    /* epsilon uc */
+255         1007                    /* epsilon */
+

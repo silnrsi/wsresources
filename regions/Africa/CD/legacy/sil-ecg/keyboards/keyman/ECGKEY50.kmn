@@ -1,0 +1,174 @@
+NAME "Eastern Congo Group"
+BITMAP ECGKey0.bmp
+VERSION 5.0
+c Language x200, x20
+c Layout x20
+begin ANSI > use(Main)
+
+group(main) using keys
+'^' + 'e'> d129		c e circumflex
+'=' + ',' >d130		c baseline single quote
+';' + 'f' > d131		c cursive f
+d130 + ','> d132 10	c baseline double quote
+'=' + ':'	> d133		c elipses
+'^' + 'A'> d134		c A circumflex
+'^' + 'E'	> d135		c E circumflex
+'^' + 'I'> d137		c I circumflex
+'!;' + 'A'> d138		c A trema wedge
+';' + '<'	> d139		c single chevron open
+'`;' + 'A'> d140		c A trema grave
+';' + '0'	> d141		c null morpheme symbol
+'^' + 'O' > d143		c O circumflex
+'^' + 'U' > d144		c U circumflex
+'=' + '`'	> d145		c single quote open
+'=' + "'"> d146		c single quote close
+d145 + '`'> d147 10		c double quote open
+d146 + "'"> d148 10		c double quote close
+'=' + '.' > d149		c raised dot
+'-' + '-'	> d150 10	c en dash
+'_' + '_'	> d151 10	c em dash
+';' + '('	> d153		c O bar
+'!;' + 'a'	> d154		c a trema wedge
+';' + '>'	> d155		c single chevron close
+'`;' + 'a'	> d156		c a trema grave
+'^' + 'a' > d157		c a circumflex
+'!' + 'I'	> d159		c I wedge
+'=' + '!'	> d161		c upside down exclamation
+'^' + 'i' > d162		c i circumflex
+'^' + 'o'	> d163		c o circumflex
+'^' + 'u' > d165		c u circumflex
+'=' + '|'	> d166		c vertical pipe
+';' + '|' > d167		c half bar (musical notation)
+';' + '9' > d169		c o bar
+'@' + 'a' > d170		c superscript a
+d139 + '<'> d171 10	c double chevron open
+ c d139 = ;<
+'=' + '-'	> d173		c hyphen dash
+'=' + 'R' > d174		c Registered mark
+'=' + '_'	> d175		c macron
+'=' + 'o'	> d176		c superior o
+'=' + '+' > d177		c plus-minus symbol
+'=' + '2' > d178		c superscript 2
+"';" + '9' > d179		c o bar acute
+'!;' + 'e' > d181		c epsilon wedge
+'=' + 'P'	> d182		c paragraph	
+';' + ','	> d184		c cedilla
+'`;' + 'o'	> d185		c open o grave
+'!;' + 'o'	> d186		c open o wedge
+d155 + '>'> d187 10	c double chevron close
+ c d155 = ;>
+'=1' + '4' > d188		c one quarter
+'=1' + '2' > d189		c one half
+'=3' + '4' > d190		c three quarters
+'`;' + 'e'	> d191		c epsilon grave
+'`' + 'A'	> d192		c A grave
+"'" + 'A'> d193		c A acute
+"';" + 'A'> d194		c A trema acute
+'!' + 'A'	> d195		c A wedge
+'~' + 'A'	> d195		c A wedge (alt)
+';' + 'A'	> d196		c A trema
+'`;' + 'U'> d197		c U bar grave
+'!' + 'E'	> d198		c E wedge
+';' + 'C'	> d199		c C cedilla
+'`' + 'E'	> d200		c E grave
+"'" + 'E'> d201		c E acute
+"';" + 'E'> d202		c Epsilon acute
+';' + 'E'	> d203		c Epsilon
+'`' + 'I'	> d204		c I grave
+"'" + 'I'	> d205		c I acute
+"';" + 'I'> d206		c I bar acute
+';' + 'I'	> d207		c I bar
+'!;' + 'I'	> d208		c I bar wedge
+';' + 'N'	> d209		c Eng
+'`' + 'O'	> d210		c O grave
+"'" + 'O'> d211		c O acute
+"';" + 'O'> d212		c open O acute
+'!' + 'O'	> d213		c O wedge
+';' + 'O'	> d214		c open O
+'=' + 'x'	> d215		c multiply
+'!' + 'U'	> d216		c U wedge
+'`' + 'U'	> d217		c U grave
+"'" + 'U'> d218		c U acute
+"';" + 'U'> d219		c U bar acute
+';' + 'U'	> d220		c U bar
+'!;' + 'U'> d221		c U bar wedge
+'`;' + 'I'	> d222		c I bar grave
+';' + "'"	> d223		c glottal between vowels
+'`' + 'a'	> d224		c a grave
+"'" + 'a'	> d225		c a acute
+"';" + 'a'> d226		c a trema acute
+'!' + 'a'	> d227		c a wedge
+';' + 'a'	> d228		c a trema
+'`;' + 'u'	> d229		c u bar grave
+'!' + 'e'	> d230		c e wedge
+';' + 'c'	> d231		c c cedilla
+'`' + 'e'	> d232		c e grave
+"'" + 'e'	> d233		c e acute
+"';" + 'e'> d234		c epsilon acute
+';' + 'e'	> d235		c epsilon
+'`' + 'i'	> d236		c i grave
+"'" + 'i'	> d237		c i acute
+"';" + 'i'> d238		c i bar acute
+';' + 'i'	> d239		c i bar
+'!;' + 'i'	> d240		c i bar wedge
+';' + 'n'	> d241		c eng
+'`' + 'o'	> d242		c o grave
+"'" + 'o'	> d243		c o acute
+"';" + 'o'> d244		c open o acute
+'!' + 'o'	> d245		c o wedge
+';' + 'o'	> d246		c open o
+'=' + '\'	> d247		c divide
+'!' + 'u'	> d248		c u wedge
+'`' + 'u'	> d249		c u grave
+"'" + 'u'	> d250		c u acute
+"';" + 'u'> d251		c u bar acute
+';' + 'u'	> d252		c u bar
+'!;' + 'u'	> d253		c u bar wedge
+'`;' + 'i'	> d254		c i bar grave
+'!' + 'i'	> d255		c i wedge
+
+
+"'" + "'" > d33 10	c apostrophe
+';' + ';'	> ';' 10		c semi-colon
+'=' + '='	> '=' 10		c equal sign
+"''" + "a"	> "'a"		c unaccented a
+"''" + "e"	> "'e"		c unaccented e
+"''" + "i"	> "'i"		c unaccented i
+"''" + "o"	> "'o"		c unaccented o
+"''" + "u"	> "'u"		c unaccented u
+"'''" + "a"	> "'" d225	c a accute
+"'''" + "e"	> "'" d233	c e accute
+"'''" + "i"	> "'" d237	c i accute
+"'''" + "o"	> "'" d243	c o accute
+"'''" + "u"	> "'" d250	c u accute
+
+c '!' + '#'> d138		c A trema wedge (Logo)
+c '`' + '#'> d140		c A trema grave (Logo)
+c ':' + 'e'> d142		c e trema
+c ':' + 'i'> d143		c i trema
+c '!' + '3'> d154		c a trema wedge (Logo)
+c '`' + '3'> d156		c a trema grave (Logo)
+c ':' + 'o'> d158		c o trema
+c ';' + '9'> d169		c o bar (Logo?)
+c '`' + ';9'> d170		c o bar grave (Logo?)
+c '!' + ';9'> d178		c o bar wedge (Logo?)
+c '=' + '3'> d179		c o bar acute (Logo?)
+c "'" + '#'> d194		c A trema acute (Logo)
+c ';' + '#'> d196		c A trema (Logo)
+c "'" + '*'> d206		c I bar acute (Logo)
+c ';' + '*'> d207		c I bar (Logo)
+c '!' + '*'> d208		c I bar wedge (Logo)
+c "'" + '&'> d219		c U bar acute (Logo)
+c ';' + '&'> d220		c U bar (Logo)
+c '!' + '&'> d221		c U bar wedge (Logo)
+c '`' + '*'> d222		c I bar grave (Logo)
+c "'" + '3'> d226		c a trema acute (Logo)
+c ';' + '3'> d228		c a trema (Logo)
+c '`' + '7'> d229		c u bar grave (logo)
+c "'" + '8'> d238		c i bar acute (Logo)
+c ';' + '8'> d239		c i bar (Logo)
+c '!' + '8'> d240		c i bar wedge (Logo)
+c "'" + '7'> d251		c u bar acute (Logo)
+c ';' + '7'> d252		c u bar (Logo)
+c '!' + '7'> d253		c u bar wedge (Logo)
+c '`' + '8'> d254		c i bar grave (Logo)

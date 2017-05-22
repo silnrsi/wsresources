@@ -1,0 +1,461 @@
+c created by MK-TBB.BAT & MK-TBB.CCT 06-25-1999  15:22
+c version: 03:01
+c =====================================
+NAME "Orthographe"
+BITMAPS ortho-1 ortho-0
+HOTKEY "^+O"
+VERSION 3.1
+
+begin > use(Main)
+
+group(Main) using keys
+
+c 'key'	>	Togo/B‚nin Windows output		c text description of glyph
+'`A'	>	'A' xc0		c A grave
+'`a'	>	'a' xc8		c a grave
+'=A'	>	'A' xc6		c A mid
+'=a'	>	'a' xce		c a mid
+',A'	>	'A' xc1		c A acute
+',a'	>	'a' xc9		c a acute
+'^A'	>	'A' xc2		c A circumflex
+'^a'	>	'a' xca		c a circumflex
+'&A'	>	'A' xc5		c A wedge
+'&a'	>	'a' xcd		c a wedge
+':A'	>	'A' xc4		c A trema
+':a'	>	'a' xcc		c a trema
+'%A'	>	'A' xb4		c A angstrom
+'%a'	>	'a' xb3		c a angstrom
+'~A'	>	'A' xc3		c A tilde
+'~a'	>	'a' xcb		c a tilde
+'`~a'	>	'a' xcb xe0		c a tilde grave
+'=~a'	>	'a' xcb xbc		c a tilde mid
+',~a'	>	'a' xcb xc1		c a tilde acute
+'^~a'	>	'a' xcb xb2		c a tilde circumflex
+'&~a'	>	'a' xcb xb5		c a tilde wedge
+'*A'	>	'A' xc7		c A u-tilde
+'*a'	>	'a' xcf		c a u-tilde
+'`*A'	>	'A' xc7 xc0		c A u-tilde grave
+'`*a'	>	'a' xcf xc8		c a u-tilde grave
+'=*A'	>	'A' xc7 xc6		c A u-tilde mid
+'=*a'	>	'a' xcf xce		c a u-tilde mid
+',*A'	>	'A' xc7 xc1		c A u-tilde acute
+',*a'	>	'a' xcf xc9		c a u-tilde acute
+'^*A'	>	'A' xc7 xc2		c A u-tilde circumflex
+'^*a'	>	'a' xcf xca		c a u-tilde circumflex
+'&*A'	>	'A' xc7 xc5		c A u-tilde wedge
+'&*a'	>	'a' xcf xcd		c a u-tilde wedge
+';a'	>	x9f		c phonetic a
+'`;a'	>	x9f xc8		c phonetic a grave
+'=;a'	>	x9f xce		c phonetic a mid
+',;a'	>	x9f xc9		c phonetic a acute
+'^;a'	>	x9f xca		c phonetic a circumflex
+'&;a'	>	x9f xcd		c phonetic a wedge
+':;a'	>	x9f xcc		c phonetic a trema
+'~;a'	>	x9f xcb		c phonetic a tilde
+'*;a'	>	x9f xcf		c phonetic a u-tilde
+'`~;a'	>	x9f xcb xe0		c phonetic a tilde grave
+'`*;a'	>	x9f xcf xc8		c phonetic a u-tilde grave
+'=~;a'	>	x9f xcb xbc		c phonetic a tilde mid
+'=*;a'	>	x9f xcf xce		c phonetic a u-tilde mid
+',~;a'	>	x9f xcb xc1		c phonetic a tilde acute
+',*;a'	>	x9f xcf xc9		c phonetic a u-tilde acute
+'^~;a'	>	x9f xcb xb2		c phonetic a tilde circumflex
+'^*;a'	>	x9f xcf xca		c phonetic a u-tilde circumflex
+'&~;a'	>	x9f xcb xb5		c phonetic a tilde wedge
+'&*;a'	>	x9f xcf xcd		c phonetic a u-tilde wedge
+';+AE'	>	xf2		c Ash uc
+';+ae'	>	xf3		c ash
+'`B'	>	'B' xd0		c B grave
+'`b'	>	'b' xe0		c b grave
+'=B'	>	'B' xc6		c B mid
+'=b'	>	'b' xbc		c b mid
+',B'	>	'B' xc1		c B acute
+',b'	>	'b' xb1		c b acute
+'~B'	>	'B' xc3		c B tilde
+'~b'	>	'b' xd3		c b tilde
+'@B'	>	xa6		c implosive B
+'@b'	>	xa7		c implosive b
+',C'	>	'C' x88		c C cedilla
+',c'	>	'c' x89		c c cedilla
+';D'	>	x82		c aveo-palatal D
+';d'	>	x83		c aveo-palatal d
+'@D'	>	xa1		c implosive D
+'@d'	>	xa2		c implosive d
+'`E'	>	'E' xd0		c E grave
+'`e'	>	'e' xc8		c e grave
+'=E'	>	'E' xd6		c E mid
+'=e'	>	'e' xce		c e mid
+',E'	>	'E' xd1		c E acute
+',e'	>	'e' xc9		c e acute
+'^E'	>	'E' xd2		c E circumflex
+'^e'	>	'e' xca		c e circumflex
+'&E'	>	'E' xd5		c E wedge
+'&e'	>	'e' xcd		c e wedge
+':E'	>	'E' xd4		c E trema
+':e'	>	'e' xcc		c e trema
+'~E'	>	'E' xd3		c E tilde
+'~e'	>	'e' xcb		c e tilde
+'`~e'	>	'e' xcb xe0		c e tilde grave
+'=~e'	>	'e' xcb xbc		c e tilde mid
+',~e'	>	'e' xcb xc1		c e tilde acute
+'^~e'	>	'e' xcb xb2		c e tilde circumflex
+'&~e'	>	'e' xcb xb5		c e tilde wedge
+'*E'	>	'E' xd7		c E u-tilde
+'*e'	>	'e' xcf		c e u-tilde
+'`*E'	>	'E' xd7 xd0		c E u-tilde grave
+'`*e'	>	'e' xcf xc8		c e grave
+'=*E'	>	'E' xd7 xd6		c E u-tilde mid
+'=*e'	>	'e' xcf xce		c e u-tilde mid
+',*E'	>	'E' xd7 xd1		c E u-tilde acute
+',*e'	>	'e' xcf xc9		c e u-tilde acute
+'^*E'	>	'E' xd7 xd2		c E u-tilde circumflex
+'^*e'	>	'e' xcf xca		c e circumflex
+'&*E'	>	'E' xd7 xd5		c E u-tilde wedge
+'&*e'	>	'e' xcf xcd		c e u-tilde wedge
+';E'	>	xfe		c epsilon uc
+';e'	>	xff		c epsilon
+'`;E'	>	xfe xd0		c epsilon uc grave
+'`;e'	>	xff xd8		c epsilon grave
+'=;E'	>	xfe xd6		c epsilon uc mid
+'=;e'	>	xff xde		c epsilon mid
+',;E'	>	xfe xd1		c epsilon uc acute
+',;e'	>	xff xc9		c epsilon acute
+'^;E'	>	xfe xd2		c epsilon uc circumflex
+'^;e'	>	xff xca		c epsilon circumflex
+'&;E'	>	xfe xd5		c epsilon uc wedge
+'&;e'	>	xff xcd		c epsilon wedge
+'~;E'	>	xfe xd3		c epsilon uc tilde
+'~;e'	>	xff xdb		c epsilon tilde
+'`~;e'	>	xff xdb xe0		c epsilon tilde grave
+'=~;e'	>	xff xdb xbc		c epsilon tilde mid
+',~;e'	>	xff xdb xd1		c epsilon tilde acute
+'^~;e'	>	xff xdb xb2		c epsilon tilde circumflex
+'&~;e'	>	xff xdb xb5		c epsilon tilde wedge
+'*;E'	>	xfe xd7		c epsilon uc u-tilde
+'*;e'	>	xff xcf		c epsilon u-tilde
+'`*;E'	>	xfe xd7 xd0		c epsilon uc u-tilde grave
+'`*;e'	>	xff xcf xc8		c epsilon u-tilde grave
+'=*;E'	>	xfe xd7 xd6		c epsilon uc u-tilde mid
+'=*;e'	>	xff xdf xde		c epsilon u-tilde mid
+',*;E'	>	xfe xd7 xd1		c epsilon uc u-tilde acute
+',*;e'	>	xff xcf xc9		c epsilon u-tilde acute
+'^*;E'	>	xfe xd7 xd2		c epsilon uc u-tilde circumflex
+'^*;e'	>	xff xcf xca		c epsilon u-tilde circumflex
+'&*;E'	>	xfe xd7 xd5		c epsilon uc u-tilde wedge
+'&*;e'	>	xff xcf xcd		c epsilon u-tilde wedge
+';Q'	>	x86		c schwa uc
+';q'	>	x87		c schwa
+'`;Q'	>	x86 xd0		c schwa uc grave
+'`;q'	>	x87 xc8		c schwa grave
+'=;Q'	>	x86 xd6		c schwa uc mid
+'=;q'	>	x87 xce		c schwa mid
+',;Q'	>	x86 xd1		c schwa uc acute
+',;q'	>	x87 xc9		c schwa acute
+'^;Q'	>	x86 xd2		c schwa uc circumflex
+'^;q'	>	x87 xca		c schwa circumflex
+'&;Q'	>	x86 xd5		c schwa uc wedge
+'&;q'	>	x87 xcd		c schwa wedge
+'~;Q'	>	x86 xd3		c schwa uc tilde
+'~;q'	>	x87 xcb		c schwa tilde
+'`~;q'	>	x87 xcb xe0		c schwa tilde grave
+'=~;q'	>	x87 xcb xbc		c schwa tilde mid
+',~;q'	>	x87 xcb xc1		c schwa tilde acute
+'^~;q'	>	x87 xcb xb2		c schwa tilde circumflex
+'&~;q'	>	x87 xcb xb5		c schwa tilde wedge
+'*;Q'	>	x86 xd7		c schwa uc u-tilde
+'*;q'	>	x87 xcf		c schwa u-tilde
+'`*;Q'	>	x86 xd7 xd0		c schwa uc u-tilde grave
+'`*;q'	>	x87 xcf xc8		c schwa u-tilde grave
+'=*;Q'	>	x86 xd7 xd6		c schwa uc u-tilde mid
+'=*;q'	>	x87 xcf xce		c schwa u-tilde mid
+',*;Q'	>	x86 xd7 xd1		c schwa uc u-tilde acute
+',*;q'	>	x87 xcf xc9		c schwa u-tilde acute
+'^*;Q'	>	x86 xd7 xd2		c schwa uc u-tilde circumflex
+'^*;q'	>	x87 xcf xca		c schwa u-tilde circumflex
+'&*;Q'	>	x86 xd7 xd5		c schwa uc u-tilde wedge
+'&*;q'	>	x87 xcf xcd		c schwa u-tilde wedge
+';F'	>	x8a		c tail F
+';f'	>	x8c		c tail f or guilders
+':G'	>	'G' xc4		c G trema
+':g'	>	'g' xcc		c g trema
+';G'	>	x84		c gamma uc
+';g'	>	x85		c gamma
+'`;G'	>	x84 xc0		c gamma uc grave
+'`;g'	>	x85 xc8		c gamma grave
+'=;G'	>	x84 xc6		c gamma uc mid
+'=;g'	>	x85 xce		c gamma mid
+',;G'	>	x84 xc1		c gamma uc acute
+',;g'	>	x85 xc9		c gamma acute
+'@h'	>	xae		c h implosive
+'@H'	>	xaa		c H implosive
+'`I'	>	'I' xe0		c I grave
+'`i'	>	x9c xe8		c i grave
+'=I'	>	'I' xe6		c I mid
+'=i'	>	x9c xee		c i mid
+',I'	>	'I' xe1		c I acute
+',i'	>	x9c xe9		c i acute
+'^I'	>	'I' xe2		c I circumflex
+'^i'	>	x9c xea		c i circumflex
+'&I'	>	'I' xe5		c I wedge
+'&i'	>	x9c xed		c i wedge
+':I'	>	'I' xe4		c I trema
+':i'	>	x9c xec		c i trema
+'~I'	>	'I' xe3		c I tilde
+'~i'	>	x9c xeb		c i tilde
+'`~i'	>	x9c xeb xe0		c i tilde grave
+'=~i'	>	x9c xeb xe6		c i tilde mid
+',~i'	>	x9c xeb xe1		c i tilde acute
+'^~i'	>	x9c xeb xe2		c i tilde circumflex
+'&~i'	>	x9c xeb xe5		c i tilde wedge
+'*I'	>	'I' xe7		c I u-tilde
+'*i'	>	'i' xef		c i u-tilde
+'`*I'	>	'I' xe7 xe0		c I u-tilde grave
+'`*i'	>	x9c xef xe8		c i u-tilde grave
+'=*I'	>	'I' xe7 xe6		c I u-tilde mid
+'=*i'	>	x9c xef xee		c i u-tilde mid
+',*I'	>	'I' xe7 xe1		c I u-tilde acute
+',*i'	>	x9c xef xe9		c i u-tilde acute
+'^*I'	>	'I' xe7 xe2		c I u-tilde circumflex
+'^*i'	>	x9c xef xea		c i u-tilde circumflex
+'&*I'	>	'I' xe7 xe5		c I u-tilde wedge
+'&*i'	>	x9c xef xed		c i u-tilde wedge
+';I'	>	xf8		c iota uc
+';i'	>	xf9		c iota
+'`;I'	>	xf8 xd0		c iota uc grave
+'`;i'	>	xf9 xe8		c iota grave
+'=;I'	>	xf8 xd6		c iota uc mid
+'=;i'	>	xf9 xde		c iota mid
+',;I'	>	xf8 xd1		c iota uc acute
+',;i'	>	xf9 xc9		c iota acute
+'^;I'	>	xf8 xd2		c iota uc circumflex
+'^;i'	>	xf9 xda		c iota circumflex
+'&;I'	>	xf8 xd5		c iota uc wedge
+'&;i'	>	xf9 xdd		c iota wedge
+'~;I'	>	xf8 xd3		c iota uc tilde
+'~;i'	>	xf9 xdb		c iota tilde
+'`~;i'	>	xf9 xdb xe0		c iota tilde grave
+'=~;i'	>	xf9 xdb xe6		c iota tilde mid
+',~;i'	>	xf9 xdb xe1		c iota tilde acute
+'^~;i'	>	xf9 xdb xe2		c iota tilde circumflex
+'&~;i'	>	xf9 xdb xe5		c iota tilde wedge
+'*;I'	>	xf8 xe7		c iota uc u-tilde
+'*;i'	>	xf9 xef		c iota u-tilde
+'`*;I'	>	xf8 xe7 xd0		c iota uc u-tilde grave
+'`*;i'	>	xf9 xef xe8		c iota u-tilde grave
+'=*;I'	>	xf8 xe7 xd6		c iota uc u-tilde mid
+'=*;i'	>	xf9 xef xee		c iota u-tilde mid
+',*;I'	>	xf8 xe7 xd1		c iota uc u-tilde acute
+',*;i'	>	xf9 xef xc9		c iota u-tilde acute
+'^*;I'	>	xf8 xe7 xd2		c iota uc u-tilde circumflex
+'^*;i'	>	xf9 xef xda		c iota u-tilde circumflex
+'&*;I'	>	xf8 xd7 xd5		c iota uc u-tilde wedge
+'&*;i'	>	xf9 xef xdd		c iota u-tilde wedge
+'@k'	>	xa9		c k implosive
+'@K'	>	xa8		c K implosive
+'`L'	>	'L' xc0		c L grave
+'`l'	>	'l' xe0		c l grave
+'=L'	>	'L' xc6		c L mid
+'=l'	>	'l' xe6		c l mid
+',L'	>	'L' xc1		c L acute
+',l'	>	'l' xb1		c l acute
+'~L'	>	'L' xc3		c L tilde
+'~l'	>	'l' xe3		c l tilde
+'`M'	>	'M' xc0		c M grave
+'`m'	>	'm' xb8		c m grave
+'=M'	>	'M' xc6		c M mid
+'=m'	>	'm' xbe		c mid m
+',M'	>	'M' xc1		c M acute
+',m'	>	'm' xb9		c m acute
+'~M'	>	'M' xc3		c M tilde
+'~m'	>	'm' xc3		c m tilde
+'`N'	>	'N' xc0		c N grave
+'`n'	>	'n' xc8		c n grave
+'=N'	>	'N' xc6		c N mid
+'=n'	>	'n' xce		c mid n
+',N'	>	'N' xc1		c N acute
+',n'	>	'n' xc9		c n acute
+':N'	>	'N' xc4		c N trema
+':n'	>	'n' xcc		c n trema
+'~N'	>	'N' xc3		c N tilde
+'~n'	>	'n' xcb		c n tilde
+';N'	>	xf6		c velar n uc
+';n'	>	xf7		c velar n
+'`;N'	>	xf6 xc0		c velar n uc grave
+'`;n'	>	xf7 xc8		c velar n grave
+'=;N'	>	xf6 xc6		c velar n uc mid
+'=;n'	>	xf7 xce		c velar n mid
+',;N'	>	xf6 xc1		c velar n uc acute
+',;n'	>	xf7 xc9		c velar nasal acute
+';M'	>	x98		c aveopalatal N
+';m'	>	x99		c aveopalatal n
+'`;M'	>	x98 xc0		c alveo-palatal N grave
+'`;m'	>	x99 xc8		c alveopalatal n
+'=;M'	>	x98 xc6		c aveopalatal n mid
+'=;m'	>	x99 xce		c alveopalatal n mid
+',;M'	>	x98 xc1		c alveo-palatal N acute
+',;m'	>	x99 xc9		c alveopalatal n acute
+'`O'	>	'O' xc0		c O grave
+'`o'	>	'o' xc8		c o grave
+'=O'	>	'O' xc6		c O mid
+'=o'	>	'o' xce		c o mid
+',O'	>	'O' xc1		c O acute
+',o'	>	'o' xc9		c o acute
+'^O'	>	'O' xc2		c O circumflex
+'^o'	>	'o' xca		c o circumflex
+'&O'	>	'O' xc5		c O wedge
+'&o'	>	'o' xcd		c o wedge
+':O'	>	'O' xc4		c O trema
+':o'	>	'o' xcc		c o trema
+'~O'	>	'O' xc3		c O tilde
+'~o'	>	'o' xcb		c o tilde
+'`~o'	>	'o' xcb xe0		c o tilde grave
+'=~o'	>	'o' xcb xbc		c o tilde mid
+',~o'	>	'o' xcb xc1		c o tilde acute
+'^~o'	>	'o' xcb xb2		c o tilde circumflex
+'&~o'	>	'o' xcb xb5		c o tilde wedge
+'*O'	>	'O' xc7		c O u-tilde
+'*o'	>	'o' xcf		c o u-tilde
+'`*O'	>	'O' xc7 xc0		c O u-tilde grave
+'`*o'	>	'o' xcf xc8		c o u-tilde grave
+'=*O'	>	'O' xc7 xc6		c O u-tilde mid
+'=*o'	>	'o' xcf xce		c o u-tilde mid
+',*O'	>	'O' xc7 xc1		c O u-tilde acute
+',*o'	>	'o' xcf xc9		c o u-tilde acute
+'^*O'	>	'O' xc7 xc2		c O u-tilde circumflex
+'^*o'	>	'o' xcf xca		c o u-tilde circumflex
+'&*O'	>	'O' xc7 xc5		c O u-tilde wedge
+'&*o'	>	'o' xcf xcd		c o u-tilde wedge
+';O'	>	xfc		c open o uc
+';o'	>	xfd		c open o
+'`;O'	>	xfc xc0		c open o uc grave
+'`;o'	>	xfd xc8		c open o grave
+'=;O'	>	xfc xc6		c open o uc mid
+'=;o'	>	xfd xce		c open o mid
+',;O'	>	xfc xc1		c open o uc acute
+',;o'	>	xfd xc9		c open o acute
+'^;O'	>	xfc xc2		c open o uc circumflex
+'^;o'	>	xfd xca		c open o circumflex
+'&;O'	>	xfc xc5		c open o uc wedge
+'&;o'	>	xfd xcd		c open o wedge
+'~;O'	>	xfc xc3		c open o uc tilde
+'~;o'	>	xfd xcb		c open o tilde
+'`~;o'	>	xfd xcb xe0		c open o tilde grave
+'=~;o'	>	xfd xcb xbc		c open o tilde mid
+',~;o'	>	xfd xcb xc1		c open o tilde acute
+'^~;o'	>	xfd xcb xb2		c open o tilde circumflex
+'&~;o'	>	xfd xcb xb5		c open o tilde wedge
+'*;O'	>	xfc xc7		c open o uc u-tilde
+'*;o'	>	xfd xcf		c open o u-tilde
+'`*;O'	>	xfc xc7 xc0		c open o uc u-tilde grave
+'`*;o'	>	xfd xcf xc8		c open o u-tilde grave
+'=*;O'	>	xfc xc7 xc6		c open o uc u-tilde mid
+'=*;o'	>	xfd xcf xce		c open o u-tilde mid
+',*;O'	>	xfc xc7 xc1		c open o uc u-tilde acute
+',*;o'	>	xfd xcf xc9		c open o u-tilde acute
+'^*;O'	>	xfc xc7 xc2		c open o uc u-tilde circumflex
+'^*;o'	>	xfd xcf xca		c open o u-tilde circumflex
+'&*;O'	>	xfc xc7 xc5		c open o uc u-tilde wedge
+'&*;o'	>	xfd xcf xcd		c open o u-tilde wedge
+';+OE'	>	xf0		c oe diagraph uc
+';+oe'	>	xf1		c oe diagraph
+';/O'	>	xf4		c slash O uc
+';/o'	>	xf5		c slash o
+'`R'	>	'R' xc0		c R grave
+'`r'	>	'r' xd8		c r grave
+'=R'	>	'R' xc6		c R mid
+'=r'	>	'r' xde		c r mid
+',R'	>	'R' xc1		c R acute
+',r'	>	'r' xd9		c r acute
+'^R'	>	'R' xc2		c R circumflex
+'^r'	>	'r' xda		c r circumflex
+'&R'	>	'R' xc5		c R wedge
+'&r'	>	'r' xdd		c r wedge
+'~R'	>	'R' xc3		c R tilde
+'~r'	>	'r' xdb		c r tilde
+',s'	>	x9a		c s-zet
+'&s'	>	's' xcd		c s wedge
+'`U'	>	'U' xc0		c U grave
+'`u'	>	'u' xc8		c u grave
+'=U'	>	'U' xc6		c U mid
+'=u'	>	'u' xce		c u mid
+',U'	>	'U' xc1		c U acute
+',u'	>	'u' xc9		c u acute
+'^U'	>	'U' xc2		c U circumflex
+'^u'	>	'u' xca		c u circumflex
+'&U'	>	'U' xc5		c U wedge
+'&u'	>	'u' xcd		c u wedge
+':U'	>	'U' xc4		c U trema
+':u'	>	'u' xcc		c u trema
+'~U'	>	'U' xc3		c U tilde
+'~u'	>	'u' xcb		c u tilde
+'`~u'	>	'u' xcb xe0		c u tilde grave
+'=~u'	>	'u' xcb xbc		c u tilde mid
+',~u'	>	'u' xcb xc1		c u tilde acute
+'^~u'	>	'u' xcb xb2		c u tilde circumflex
+'&~u'	>	'u' xcb xb5		c u tilde wedge
+'*U'	>	'U' xc7		c U u-tilde
+'*u'	>	'u' xcf		c u-under tilde
+'`*U'	>	'U' xc7 xc0		c U u-tilde grave
+'`*u'	>	'u' xcf xc8		c u u-tilde grave
+'=*U'	>	'U' xc7 xc6		c U u-tilde mid
+'=*u'	>	'u' xcf xce		c u u-tilde mid
+',*U'	>	'U' xc7 xc1		c U u-tilde acute
+',*u'	>	'u' xcf xc9		c u u-tilde acute
+'^*U'	>	'U' xc7 xc2		c U u-tilde circumflex
+'^*u'	>	'u' xcf xca		c u u-tilde circumflex
+'&*U'	>	'U' xc7 xc5		c U u-tilde wedge
+'&*u'	>	'u' xcf xcd		c u u-tilde wedge
+';U'	>	xfa		c upsilon uc
+';u'	>	xfb		c upsilon
+'`;U'	>	xfa xc0		c upsilon uc grave
+'`;u'	>	xfb xc8		c upsilon grave
+'=;U'	>	xfa xc6		c upsilon uc mid
+'=;u'	>	xfb xce		c upsilon mid
+',;U'	>	xfa xc1		c upsilon uc acute
+',;u'	>	xfb xc9		c upsilon acute
+'^;U'	>	xfa xc2		c upsilon uc circumflex
+'^;u'	>	xfb xca		c upsilon circumflex
+'&;U'	>	xfa xc5		c upsilon uc wedge
+'&;u'	>	xfb xcd		c upsilon wedge
+'~;U'	>	xfa xc3		c upsilon uc circumflex
+'~;u'	>	xfb xcb		c upsilon tilde
+'`~;u'	>	xfb xcb xe0		c upsilon tilde grave
+'=~;u'	>	xfb xcb xbc		c upsilon tilde mid
+',~;u'	>	xfb xcb xc1		c upsilon tilde acute
+'^~;u'	>	xfb xcb xb2		c upsilon tilde circumflex
+'&~;u'	>	xfb xcb xb5		c upsilon tilde wedge
+'*;U'	>	xfa xc7		c upsilon uc u-tilde
+'*;u'	>	xfb xcf		c upsilon u-tilde
+'`*;U'	>	xfa xc7 xc0		c upsilon uc u-tilde grave
+'`*;u'	>	xfb xcf xc8		c upsilon u-tilde grave
+'=*;U'	>	xfa xc7 xc6		c upsilon uc u-tilde mid
+'=*;u'	>	xfb xcf xce		c upsilon u-tilde mid
+',*;U'	>	xfa xc7 xc1		c upsilon uc u-tilde acute
+',*;u'	>	xfb xcf xc9		c upsilon u-tilde acute
+'^*;U'	>	xfa xc7 xc2		c upsilon uc u-tilde circumflex
+'^*;u'	>	xfb xcf xca		c upsilon u-tilde circumflex
+'&*;U'	>	xfa xc7 xc5		c upsilon uc u-tilde wedge
+'&*;u'	>	xfb xcf xcd		c upsilon u-tilde wedge
+'`Y'	>	'Y' xc0		c Y grave
+'`y'	>	'y' xc8		c y grave
+'=Y'	>	'Y' xc6		c Y mid
+'=y'	>	'y' xce		c y mid
+',Y'	>	'Y' xc1		c Y acute
+',y'	>	'y' xc9		c y acute
+':Y'	>	'Y' xc4		c Y trema
+':y'	>	'y' xcc		c y trema
+'@Y'	>	xa3		c Y implosive
+'@y'	>	xa5		c y implosive
+';Z'	>	xbd		c curly Z
+';z'	>	xba		c curly z
+'' "'" ')'	>	x92		c single quote, close
+'' "'" '('	>	x91		c single quote, open
+'")'	>	x94		c double quote, close
+'"('	>	x93		c double quote, open
+'<<'	>	xab		c chevrons, open
+'>>'	>	xbb		c chevrons, close
+';<'	>	x8b		c open single chevron
+';>'	>	x9b		c close single chevron
+';-'	>	x96		c en dash
+';_'	>	x97		c em dash
+';?'	>	xbf		c inverted question mark

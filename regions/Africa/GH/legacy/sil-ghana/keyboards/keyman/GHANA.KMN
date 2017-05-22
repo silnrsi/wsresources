@@ -1,0 +1,34 @@
+c Ghana Windows Keyboard for Keyman
+c Written in January 94 - Paul David Johnson
+
+NAME "Ghana Standard"
+BITMAPS GhanaOn GhanaOff
+HOTKEY "^%G"
+VERSION 3.1
+begin	>	use(Main)
+store(vowels) "aeiou[]qxAEIOU{}QX"
+store(acute) "áéíóúäöýïÁÉÍÓÚÄÖÝÏ"
+store(grave) "àèìòùãõüîÀÈÌÒÙÃÕÜÎ"
+store(tilde) "…‰•›Ÿ§«€„ˆŒšž¦ª"
+store(hat) "ƒ‡‹™¥©¯‚†ŠŽ˜œ¡¨­"
+store(constant) "dfzgec?DFZGESC"
+store(semi) "ðñøêþçËÐÑØÊÞëÇ"
+
+group(Main) using keys
+"'" + any(vowels)	>	index(acute, 2)
+"`" + any(vowels)	>	index(grave, 2)
+"~" + any(vowels)	>	index(tilde, 2)
+"^" + any(vowels)	>	index(hat, 2)
+";" + any(constant)	>	index(semi, 2)
++ '['	>	'â'
++ '{'	>	'Â'
++ ']'	>	'ô'
++ '}'	>	'Ô'
++ '='	>	'å'
++ '+'	>	'Å'
++ 'q'	>	'û'
++ 'Q'	>	'Û'
++ 'x'	>	'æ'
++ 'X'	>	'Æ'
+
+

@@ -1,0 +1,181 @@
+c  Simple RCI Keyboard  Control File for Tavultesoft Keyman 3.1
+c  ' acute   ` grave   ^ circonflex  ~ tilda
+c  double dot over vowel = trema 
+c  ligne over a vowel = mid tone
+c  [ = epsilon, ] = aw, ; = iota,  = > upsilon,  < = enya,  > = Cap. enya
+c  [j = eng,  ]J = Cap. eng,  [c = cedilla,  [C = Cap. cedilla
+
+NAME "RCI-Langs"
+BITMAPS Rci1 Rci0
+HOTKEY "^%W"
+VERSION 3.1
+
+begin > use(Main)
+
+group(Main) using keys
+c use 2 - for non-breaking hyphen with mid-tone activated
+"-" + "-" > d254     c to pass the non-breaking hyphen
+c otherwise use 1 - for non-breaking hyphen without using as a hot-key
+c     + "-" > d254     c to pass the non-breaking hyphen
+
+"-" + "[" > '['      c to pass the character itself
+"-" + "{" > '{'      c to pass the character itself
+"-" + "]" > ']'      c to pass the character itself
+"-" + "}" > '}'      c to pass the character itself
+"-" + ";" > ';'      c to pass the character itself
+"-" + ":" > ':'      c to pass the character itself
+"-" + "=" > '='      c to pass the character itself
+"-" + "+" > '+'      c to pass the character itself
+"-" + "<" > '<'      c to pass the character itself
+"-" + ">" > '>'      c to pass the character itself
+"-" + "/" > '/'      c to pass the character itself
+
+    + "<" > d227   c eng
+    + ">" > d291   c Cap. eng
+"c" + "\" > d231     c cedilla
+"C" + "\" > d199     c Cap. cedilla
+"n" + "\" > d229     c enya
+"N" + "\" > d210     c Cap. enya
+
+c these are the special characters
+    + "[" > d165   c epsilon
+    + "]" > d161   c aw
+    + ";" > d218   c iota
+    + "=" > d208   c upsilon
+    + "{" > d196   c Cap. epsilon
+    + "}" > d188   c Cap. aw
+    + ":" > d177   c Cap. iota
+    + "+" > d207   c Cap. upsilon
+
+c the ' adds -acute- above the character
+
+d165 + "'" > d170   c epsilon
+d161 + "'" > d162   c aw
+d218 + "'" > d142   c iota
+d208 + "'" > d201   c upsilon
+"a" + "'" > d225
+"e" + "'" > d233
+"i" + "'" > d237
+"o" + "'" > d243
+"u" + "'" > d250
+d196 + "'" > d196 d138   c Cap. epsilon
+d188 + "'" > d188 d138   c Cap. aw
+d177 + "'" > d177 d128   c Cap. iota
+d207 + "'" > d207 d138   c Cap. upsilon
+"A" + "'" > 'A' d138
+"E" + "'" > 'E' d138
+"I" + "'" > 'I' d128
+"O" + "'" > 'O' d138
+"U" + "'" > 'U' d138
+
+c the ` adds -grave- above the character
+
+d165 + "`" > d222   c epsilon
+d161 + "`" > d163   c aw
+d218 + "`" > d141   c iota
+d208 + "`" > d200   c upsilon
+"a" + "`" > d224
+"e" + "`" > d232
+"i" + "`" > d236
+"o" + "`" > d242
+"u" + "`" > d249
+d196 + "`" > d196 d158   c Cap. epsilon
+d188 + "`" > d188 d158   c Cap. aw
+d177 + "`" > d177 d154   c Cap. iota
+d207 + "`" > d207 d158   c Cap. upsilon
+"A" + "`" > 'A' d158
+"E" + "`" > 'E' d158
+"I" + "`" > 'I' d154
+"O" + "`" > 'O' d158
+"U" + "`" > 'U' d158
+
+c the ^  adds -circonflex- above the character
+
+d165 + "^" > d215   c epsilon
+d161 + "^" > d221   c aw
+d218 + "^" > d143   c iota
+d208 + "^" > d202   c upsilon
+"a" + "^" > d226
+"e" + "^" > d234
+"i" + "^" > d238
+"o" + "^" > d244
+"u" + "^" > d251
+d196 + "^" > d196 d168   c Cap. epsilon
+d188 + "^" > d188 d168   c Cap. aw
+d177 + "^" > d177 d166   c Cap. iota
+d207 + "^" > d207 d168   c Cap. upsilon
+"A" + "^" > 'A' d168
+"E" + "^" > 'E' d168
+"I" + "^" > 'I' d166
+"O" + "^" > 'O' d168
+"U" + "^" > 'U' d168
+
+c the "  adds -trema(double dots)- above the character
+
+d165 + '"' > d190   c epsilon
+d161 + '"' > d203   c aw
+d218 + '"' > d144   c iota
+d208 + '"' > d204   c upsilon
+"a" + '"' > d228
+"e" + '"' > d235
+"i" + '"' > d239
+"o" + '"' > d246
+"u" + '"' > d252
+"y" + '"' > d255
+d196 + '"' > d196 d197   c Cap. epsilon
+d188 + '"' > d188 d197   c Cap. aw
+c this is not a good overstrike - do not have a good one
+d177 + '"' > d177 d197   c Cap. iota
+d207 + '"' > d207 d197   c Cap. upsilon
+"A" + '"' > 'A' d197
+"E" + '"' > 'E' d197
+c this is not a good overstrike - do not have a good one
+c "I" + '"' > 'I' d197
+"O" + '"' > 'O' d197
+"U" + '"' > 'U' d197
+"Y" + '"' > 'Y' d197
+
+c the /  adds -hacek- above the character
+
+d165 + "/" > d178   c epsilon
+d161 + "/" > d179   c aw
+d218 + "/" > d219   c iota
+d208 + "/" > d189   c upsilon
+"a" + "/" > d130
+"e" + "/" > d131
+"i" + "/" > d240
+"o" + "/" > d136
+"u" + "/" > d157
+d196 + "/" > d196 d175   c Cap. epsilon
+d188 + "/" > d188 d175   c Cap. aw
+d177 + "/" > d177 d173   c Cap. iota
+d207 + "/" > d207 d175   c Cap. upsilon
+"A" + "/" > 'A' d175
+"E" + "/" > 'E' d175
+"I" + "/" > 'I' d173
+"O" + "/" > 'O' d175
+"U" + "/" > 'U' d175
+
+c the ?  adds -mid tone- above the character
+c this is added to show the pattern for overstrikes. It is normally not used.
+c
+c d165 + "?" > d165 d195   c epsilon
+c d161 + "?" > d161 d195   c aw
+c d218 + "?" > d218 d193   c iota
+c d208 + "?" > d208 d195   c upsilon
+c "a" + "?" > 'a' d195
+c "e" + "?" > 'e' d195
+c "i" + "?" > d220 d193
+c "o" + "?" > 'o' d195
+c "u" + "?" > 'u' d195
+c d196 + "?" > d196 d194   c Cap. epsilon
+c d188+ "?" > d188 d194   c Cap. aw
+c d177+ "?" > d177 d192   c Cap. iota
+c d207+ "?" > d207 d194   c Cap. upsilon
+c "A" + "?" > 'A' d194
+c "E" + "?" > 'E' d194
+c "I" + "?" > 'I' d192
+c "O" + "?" > 'O' d194
+c "U" + "?" > 'U' d194
+
+c '`' + '8' > ' †' c Addition: Dagger in Windows as Footnote caller

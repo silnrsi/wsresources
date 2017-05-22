@@ -1,0 +1,230 @@
+c Cameroon Keyboard for Tavultesoft Keyboard Manager 3.2
+
+HOTKEY "^%C"
+BITMAPS CamKey1,CamKey0
+VERSION 3.2
+
+NAME "Cameroon"
+
+c Specify the first group of rules to use in processing
+
+begin > use(First)
+
+c tone keys & characters
+store(Tk) "'" '["{_}`'
+store(Tlc) d232 d224 d234 d226 d246 d253 d136
+store(Tuc) d200 d192 d202 d194 d214 d221 d135
+store(Tli) d236 d249 d238 d251 d240 d254 d136
+store(Tui) d204 d217 d206 d219 d208 d222 d135
+store(Tlm) d242 d244 d234 d226 d184 d253 d136
+store(Tum) d210 d212 d202 d194 d214 d221 d135
+
+c complex tone
+store(Tc) d162 d163 d168 d165 d137
+
+c nasal keys & characters under vowel
+store(Nku) "]" d178
+store(Nlcu) d227 d178
+store(Nucu) d195 d179
+store(Nliu) d245 d130
+store(Nuiu) d213 d131
+store(Nlmu) d227 d178
+store(Numu) d195 d179
+
+c nasal keys & characters over vowel
+store(Nko) "~"
+store(Nlco) d231 
+store(Nuco) d199 
+store(Nlio) d161 
+store(Nuio) d167 
+store(Nlmo) d231 
+store(Numo) d199 
+
+c nasal keys & characters under and over
+store(Nk) outs(Nku) outs(Nko)
+store(Nlc) outs(Nlcu) outs(Nlco) 
+store(Nuc) outs(Nucu) outs(Nuco) 
+store(Nli) outs(Nliu) outs(Nlio) 
+store(Nui) outs(Nuiu) outs(Nuio) 
+store(Nlm) outs(Nlmu) outs(Nlmo) 
+store(Num) outs(Numu) outs(Numo) 
+
+c diacritic (tone & nasal) keys & chars
+store(Dk) outs(Tk) outs(Nk)
+store(Dlc)  outs(Tlc) outs(Nlc)
+store(Duc)  outs(Tuc) outs(Nuc)
+store(Dli)  outs(Tli) outs(Nli)
+store(Dui)  outs(Tui) outs(Nui)
+store(Dlm)  outs(Tlm) outs(Nlm)
+store(Dum)  outs(Tum) outs(Num)
+
+c prefix keys & chars
+store(P1) ";" c d169
+store(P2) ":" c d174
+store(Pk) ";:"
+store(Plc) outs(P1) outs(P2)
+store(Zk) outs(Dk) outs(Pk)
+store(Zo) d220 '["{_}`' outs(Nk) outs(Pk)
+store(Zlc) outs(Dlc) outs(Plc)
+
+c ordinary chars
+store(B) " bdfghjkpqrstxzBDFGHJKPQRSTXZ1234567890!@#$%&*()-+\|/?,.<>"
+
+c lower & upper case vowels (normal width)
+store(Vlc) "acenouv"
+store(Vuc) "ACEHLNOTUVY"
+
+c lower case special keys & chars (normal width)
+store(Klc) "abdehnopuywgG<>(),.90"
+store(Slc) d225 d228 d235 d233 d229 d241 d243 d248 d250 d255 d252 "'" d138 d171 d187 d147 d148 d139 d155 d145 d146
+store(Kuc) "ABDEHNOPUY"
+store(Suc) d193 d196 d203 d201 d197 d209 d211 d216 d218 d159
+
+c all lower and upper case (normal width)
+store(Alc) outs(Vlc) outs(Slc) d154
+store(Auc) outs(Vuc) outs(Suc)
+
+c lower and upper case i
+store(Vli) "i"
+store(Vni) d239	c dotless i
+store(Vui) "Il"
+
+c lower and upper case barred i
+store(Sli) d237
+store(Sni) d207
+store(Sui) d205 "l"
+
+c all lower and upper case (i width)
+store(Ali) outs(Vli) outs(Sli)
+store(Ani) outs(Vni) outs(Sni)
+store(Aui) outs(Vui) outs(Sui)
+
+c lower and upper case m
+store(Vlm) "mw"
+store(Vum) "MW"
+
+c lower and upper case special m width keys and chars
+store(Klm) "tf"
+store(Slm) d156 d230
+store(Kum) "TF"
+store(Sum) d140 d198
+
+c all m width lower and upper
+store(Alm) outs(Vlm) outs(Slm)
+store(Aum) outs(Vum) outs(Sum)
+
+c base chars
+store(Ba) outs(Vlc) outs(Vli) outs(Vlm) outs(Vuc) outs(Vui) outs(Vum)
+c base keys and special
+store(Ka) outs(Klc) outs(Vli) outs(Klm) outs(Kuc) outs(Vui) outs(Kum)
+store(Sa) outs(Slc) outs(Sli) outs(Slm) outs(Suc) outs(Sui) outs(Sum)
+
+store(Ca) outs(Ba) outs(B)	c all base keys including ordinary
+store(Bc) outs(Ba) outs(Sa)	c all base codes which combine
+store(Bk) outs(Ba) outs(Ka)
+
+c special keys and chars accessed by colon
+store(K2) "aG"
+store(S2) d154 d191
+store(K3) "`."
+store(S3) d178 d137
+
+c Part 1: First diacritic
+
+group(First) using keys
+
+c -------------------
+c ordinary characters
++ any(Ca) > index(Ca,1)
+
+c determine what kind of tone and put tone after
+" " any(Dlc) + any(Vlc) > index(Vlc,3) index(Dlc,2)
+" " any(Dlc) + any(Vuc) > index(Vuc,3) index(Duc,2)
+" " any(Tlc) + any(Vli) > index(Vni,3) index(Tli,2)
+" " any(Nlcu) + any(Vli) > index(Vli,3) index(Nliu,2)
+" " any(Nlco) + any(Vli) > index(Vni,3) index(Nlio,2)
+" " any(Dlc) + any(Vui) > index(Vui,3) index(Dui,2)
+" " any(Dlc) + any(Vlm) > index(Vlm,3) index(Dlm,2)
+" " any(Dlc) + any(Vum) > index(Vum,3) index(Dum,2)
+" " any(Tc)  + any(Ba)  > index(Ba,3)  index(Tc,2)
+" " any(Tlc)  + 'y' > 'y' index(Tlc,2)
+" " any(Nlco) + 'y' > 'y' index(Nlco,2)
+" " d178      + 'y' > 'y' d185
+
+c determine what kind of tone and put tone after
+" " any(Tlc)  any(Nlcu) + any(Vlc) > index(Vlc,4) index(Nlcu,3) index(Tlc,2)
+" " any(Tlc)  any(Nlcu) + any(Vli) > index(Vni,4) index(Nliu,3) index(Tli,2)
+" " any(Tlc)  any(Nlcu) + any(Vlm) > index(Vlm,4) index(Nlmu,3) index(Tlm,2)
+" " any(Tlc)  d178      + 'y'      > 'y' d185 index(Tlc,2)
+
+" " any(Tlc)  any(Nlc) + any(Vuc) > index(Vuc,4) index(Nuc,3) index(Tuc,2)
+" " any(Tlc)  any(Nlc) + any(Vui) > index(Vui,4) index(Nui,3) index(Tui,2)
+" " any(Tlc)  any(Nlc) + any(Vum) > index(Vum,4) index(Num,3) index(Tum,2)
+
+" " any(Tlc)  any(Nlco) + any(Vlc) > index(Vlc,4) index(Nlco,3) index(Tuc,2)
+" " any(Tlc)  any(Nlco) + any(Vli) > index(Vni,4) index(Nlio,3) index(Tui,2)
+" " any(Tlc)  any(Nlco) + any(Vlm) > index(Vlm,4) index(Nlmo,3) index(Tum,2)
+" " any(Tlc)  any(Nlco) + 'y'      > 'y'  index(Nlco,3) index(Tuc,2)
+
+c complex tone with nasal on normal char
+" " any(Tc)  any(Nlc) + any(Vlc) > index(Vlc,4) index(Nlc,3) index(Tc,2)
+" " any(Tc)  any(Nlc) + any(Vli) > index(Vni,4) index(Nli,3) index(Tc,2)
+" " any(Tc)  any(Nlc) + any(Vlm) > index(Vlm,4) index(Nlm,3) index(Tc,2)
+
+c ----------
+c special chars
+any(P1) + any(Ka) > index(Sa,2)
+any(P2) + any(K2) > index(S2,2)
+any(P2) + any(K3) > " " index(S3,2) c special diacritic
+
+c determine what kind of tone and put tone after
+" " any(Dlc) any(P2) + "a"      > d154         index(Dlc,2)
+" " any(Dlc) any(P1) + any(Klc) > index(Slc,4) index(Dlc,2)
+" " any(Dlc) any(P1) + any(Kuc) > index(Suc,4) index(Duc,2)
+" " any(Tlc) any(P1) + any(Vli) > index(Sni,4) index(Tli,2)
+" " any(Nlcu) any(P1) + any(Vli) > index(Sli,4) index(Nliu,2)
+" " any(Nlco) any(P1) + any(Vli) > index(Sni,4) index(Nlio,2)
+" " any(Dlc) any(P1) + any(Vui) > index(Sui,4) index(Dui,2)
+" " any(Dlc) any(P1) + any(Klm) > index(Slm,4) index(Dlm,2)
+" " any(Dlc) any(P1) + any(Kum) > index(Sum,4) index(Dum,2)
+" " any(Tc)  any(P1) + any(Ka)  > index(Sa,4)  index(Tc,2)
+
+c determine what kind of tone and nasal and put tone after
+" " any(Tlc) any(Nlcu) any(P2) + "a"      > d154         index(Nlcu,3) index(Tlc,2)
+" " any(Tlc) any(Nlcu) any(P1) + any(Klc) > index(Slc,5) index(Nlcu,3) index(Tlc,2)
+" " any(Tlc) any(Nlcu) any(P1) + any(Vli) > index(Sni,5) index(Nliu,3) index(Tli,2)
+" " any(Tlc) any(Nlcu) any(P1) + any(Klm) > index(Slm,5) index(Nlmu,3) index(Tlm,2)
+
+" " any(Tlc) any(Nlc) any(P1) + any(Kuc) > index(Suc,5) index(Nuc,3) index(Tuc,2)
+" " any(Tlc) any(Nlc) any(P1) + any(Vui) > index(Sui,5) index(Nui,3) index(Tui,2)
+" " any(Tlc) any(Nlc) any(P1) + any(Kum) > index(Sum,5) index(Num,3) index(Tum,2)
+
+" " any(Tlc) any(Nlco) any(P2) + "a"      > d154         index(Nlco,3) index(Tuc,2)
+" " any(Tlc) any(Nlco) any(P1) + any(Klc) > index(Slc,5) index(Nlco,3) index(Tuc,2)
+" " any(Tlc) any(Nlco) any(P1) + any(Vli) > index(Sni,5) index(Nlio,3) index(Tui,2)
+" " any(Tlc) any(Nlco) any(P1) + any(Klm) > index(Slm,5) index(Nlmo,3) index(Tum,2)
+
+c complex tone & nasal w/ special
+" " any(Tc) any(Nlc) any(P1) + any(Klc) > index(Slc,5) index(Nlc,3) index(Tc,2)
+" " any(Tc) any(Nlc) any(P1) + any(Vli) > index(Sni,5) index(Nli,3) index(Tc,2)
+" " any(Tc) any(Nlc) any(P1) + any(Klm) > index(Slm,5) index(Nlm,3) index(Tc,2)
+
+c diacritics
++ any(Dk) > " " index(Dlc,1)	c will always be lc tone unless changed later
+
+c tone & nasal
+" " any(Nlc) + any(Tk) > " " index(Tlc,3) index(Nlc,2)
+c " " any(Tlc) + any(Nk) > " " index(Tlc,2) index(Nlc,3)
+
+c complex tone
+" " d224 + "_" > " " d162
+" " d232 + "_" > " " d163
+" " d246 + "[" > " " d168
+" " d246 + "'" > " " d165
+
+c insert prefix chars
++ any(Pk) > index(Plc,1)
+any(P1) + any(Zk) > index(Zo,2) 10 " "
+any(P2) + ":" > ":" 10 " "
+" " any(Dlc) + " " > index(Dk,2)
+any(Plc) + " " > index(Pk,1) " "
