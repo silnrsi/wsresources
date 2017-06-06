@@ -13,7 +13,9 @@ resource into "regions" or "scripts" it is highly unlikely there would be a huns
 
 ## Structure
 
-Examples of possible resource files for a language with code xxx.
+Examples of possible resource files for a language with code xxx. 
+
+Regarding Keyman keyboards, this repo is likely a good home for legacy Keyman keyboards. However, for Unicode Keyman keyboards we encourage them to be submitted to the [Keyman repo](https://github.com/keymanapp/keyboards).
 
 ```
 wsresources
@@ -28,8 +30,10 @@ wsresources
 │   │  │   ├- keyboards
 │   │  │   │   ├- msklc
 │   │  │   │   │   └- files .klc, .zip
+│   │  │   │   ├- xkb
+│   │  │   │   │   └- files *.*
 │   │  │   │   └- ukelele
-│   │  │   │       └- files .txt, keylayout
+│   │  │   │       └- files .txt, .keylayout
 │   │  │   ├- legacy
 │   │  │   │   └- encoding name
 │   │  │   │       ├- mappings
@@ -47,8 +51,10 @@ wsresources
 │   │   │   ├- keyboards
 │   │   │   │   ├- msklc
 │   │   │   │   │   └─- files .klc, .zip
+│   │   │   │   ├- xkb
+│   │   │   │   │   └- files *.*
 │   │   │   │   └─- ukelele
-│   │   │   │       └─- files .txt, keylayout
+│   │   │   │       └─- files .txt, .keylayout
 │   │   │   ├- legacy
 │   │   │   │   └- encoding name
 │   │   │   │       ├- mappings
@@ -73,9 +79,12 @@ wsresources
         │   ├- msklc
         │   │   └─- sil-ipa
         │   │       └─ files .klc, .zip
+        │   ├- xkb
+        │   │   └─- sil-ipa
+        │   │       └─ files *.*
         │   └- ukelele
         │       └─- sil-ipa
-        │           └─ files .txt, keylayout
+        │           └─ files .txt, .keylayout
         ├- legacy
         │   ├- asap-ipa
         │   │   ├- mappings
