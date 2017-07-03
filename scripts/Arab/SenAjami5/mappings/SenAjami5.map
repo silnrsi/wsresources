@@ -1,0 +1,31 @@
+﻿; This file was created by Lorna Evans using TECkitMappingEditorU.exe v4.0.0.0 on 7/3/2017.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = SenAjami5;23.25
+;   Right-hand side font = Scheherazade;23.25
+;   Main Window Position = 18,0,903,979
+;   Left-hand side Character Map Window Position = 921,0,457,447
+;   Right-hand side Character Map Window Position = 921,447,457,447
+
+LHSName                 "SenAjami5"
+RHSName                 "Arabic Unicode"
+LHSDescription          "Hacked encoding for SenAjami5"
+RHSDescription          "Correct Unicode encoding"
+Version                 "1"
+Contact                 "mailto:lorna_evans@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "SenAjami5"
+Copyright               "© 2017 SIL International. All rights reserved."
+LHSname                "HackedArabic"
+RHSname                "Arabic Unicode"
+
+pass(Unicode)
+
+U+06B6 <> U+076A
+
+
+
+
+
+
+
+

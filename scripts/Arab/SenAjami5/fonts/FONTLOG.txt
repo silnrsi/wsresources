@@ -1,0 +1,103 @@
+FONTLOG 
+SenAjami5 font
+=================
+
+This file provides detailed information on the SenAjami5 font software. 
+This information should be distributed along with the SenAjami5 fonts 
+and any derivative works.
+
+Basic Font Information
+----------------------
+
+SenAjami5 was derived from SenAjam4 and ultimately from Scheherazade.
+
+The goal for this product was to provide a single Unicode-based font family
+that would contain a comprehensive inventory of glyphs needed for  
+Arabic-based writing systems used in Senegal. This font makes use of 
+state-of-the-art font technologies to support complex typographic issues. 
+
+This font provides a simplified rendering of Arabic script, using basic 
+connecting glyphs but not including a wide variety of additional ligatures 
+or contextual alternates (only the required lam-alef ligatures). This 
+simplified style is often preferred for clarity, especially in non-Arabic 
+languages, but may be considered unattractive in more traditional and 
+literate communities.
+
+One font from this typeface family is included in this release:
+
+     * SenAjami5 Regular
+
+This release supports  the Unicode 6.1 Arabic character 
+repertoire (excluding the Arabic Presentation Forms blocks, which are not 
+recommended for normal use), focusing on a subset used in Senegal. 
+
+Font smarts are implemented using both OpenType and Graphite.
+technology. 
+
+ChangeLog
+---------
+
+
+Senajami5 version 1.2
+- Graphite above marks attachment to final form of U+064A, U+08A8, U+08A9 and isolate form of U+0648 corrected.
+- spacing between Dal isolate/final to Jeem/Ain isolate forms (and their derivatives) reduced.
+
+SenAjami5 version 1.0
+- Graphite Font Features 
+'seck' (M.Seck style glyph shapes - DAL) added. 
+'tone' (Raised/offset below mark to allow for second below mark)
+Accessable through Graphite enabled applications such as OpenOffice 3.5, and 'Worldpad'. Using 'SenAjami5' or 'SenAjami5:seck=0' as the font name will give you the default behaviour with the 'classic' DAL glyph shape. Using 'SenAjami5:seck=1' as the font name will yield the M.Seck style DAL glyph shape prefferd in Senegal.
+	 
+
+
+The supported codepoints in the U+08A0 plane and the PUA are currently 
+only available on LibreOffice 3.5.0 and Worldpad. The equivalent functionality, is programed into the font for OpenType and will be available whenever Microsoft get round to supporting Unicode 6.1.
+
+- Released under OFL
+- supported subset includes:
+U+0601, U+060C, U+0610-0615, U+061B, U+061E, U+061F, U+0621-063A, U+0640-065E, 
+U+0660-06FF, U+0750-076D, U+08A0, 
+U+08A2-08AC, U+08E4-08FE, U+E000-E00D
+- limited support for latin chars
+- proposed unicode code point U+08A1 supported for development purposes only, not suitable for current projects.
+- PUA
+	following PUA codepoints depreciated 
+		U+E000 mapped to U+08A0 
+		U+E001 mapped to U+08A2 
+		U+E002 mapped to U+08A3
+		U+E003 mapped to U+08FD 
+		U+E004 mapped to U+08F5 
+		U+E005 mapped to U+08F6
+		U+E006 mapped to U+08F7
+		U+E007 mapped to U+08F9
+		U+E008 mapped to U+08FA
+		U+E009 mapped to U+0657 - treated as stylised U+0657
+		U+E00A mapped to U+08F4 
+		U+E00B mapped to U+08A8
+		U+E00C mapped to U+0628 U+0654 and U+08A1 
+		U+E00D mapped to U+08A9
+  
+
+Acknowledgements
+----------------
+(Here is where contributors can be acknowledged. If you make modifications
+be sure to add your name (N), email (E), web-address (W) and description
+(D). This list is sorted by last name in alphabetical order.)
+
+SenAjami5
+N: Mark Skinner
+E: Academic_Computing_SEB@sil.org
+W: 
+D: font engineer
+
+Schehrazade
+N: Bob Hallissy, Jonathan Kew
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: SIL designers and font engineers
+
+The Scheherazade project is maintained by SIL International.
+
+For more information please visit the Arabic Script fonts page on 
+SIL International's Computers and Writing Systems website:
+http://scripts.sil.org/ArabicFonts
