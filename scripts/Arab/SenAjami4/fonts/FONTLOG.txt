@@ -1,0 +1,111 @@
+FONTLOG 
+SenAjami4 font
+=================
+
+This file provides detailed information on the SenAjami4 font software. 
+This information should be distributed along with the SenAjami4 fonts 
+and any derivative works.
+
+Basic Font Information
+----------------------
+
+SenAjami4 was derived from Scheherazade.
+
+The goal for this product was to provide a single Unicode-based font family
+that would contain a comprehensive inventory of glyphs needed for  
+Arabic-based writing systems used in Senegal. This font makes use of state-of-the-art font
+technologies to support complex typographic issues. 
+
+This font provides a simplified rendering of Arabic script, using basic 
+connecting glyphs but not including a wide variety of additional ligatures 
+or contextual alternates (only the required lam-alef ligatures). This 
+simplified style is often preferred for clarity, especially in non-Arabic 
+languages, but may be considered unattractive in more traditional and 
+literate communities.
+
+One font from this typeface family is included in this release:
+
+     * SenAjami4 Regular
+
+This release supports  the Unicode 5.0 Arabic character 
+repertoire (excluding the Arabic Presentation Forms blocks, which are not 
+recommended for normal use), focusing on a subset used in Senegal with 
+fourteen addtional characters in the Private Use Area, hacked back into the 
+standard Arabic block due to the lack of R-t-L Private Use Area support in Unicode. 
+
+Font smarts are implemented using both OpenType and Graphite.
+technology. The current version of Graphite does not support auto-mirroring of parenthesis etc... 
+However smarts have been added to the font to compensate in Graphite enabled applications such as LibreOffice 3.4.3.
+
+ChangeLog
+---------
+SenAjami4 version 1.001
+OT behaviour of U+062F and derivatives amended.
+Graphite Font Features 'Hack' (Hacked/Proposed codepoints) and 'DAL' (Classic/M.Seck glyph shapes) added. Currently only accessible through 'Worldpad'.
+
+SenAjami4 version 1.0
+Graphite support added. Coverage of OT and Graphite extended to whole of Arabic and Arabic Supplement blocks.
+Graphite correctly attaches stacked above and below marks (i.e. shadda + vowel +tone). OT tone marks only stack on top of above marks.
+U+062F and derivatives revert to classic roman nose form.
+
+versions jumped from 0.3 to 1.0 with inclusion of Graphite.
+
+SenAjami4 version 0.3
+behaviour of U+0631, U+0632 and U+0648 modified to avoid collision between glyphs.
+
+SenAjami4 version 0.2
+support added for 'latin turned e', schwa and 'arrows symbols' U+25BC, U+25B2, U+25BC, U+25C4, U+25BA, U+2190, U+2192
+U+002F and U+005C equalised
+ZWNJ and ZWJ behaviour amended
+
+SenAjami4 version 0.1
+- Released under OFL
+supported subset includes:
+U+0601, U+060C, U+0610-0615, U+061B, U+061E, U+061F, U+0621-063A, U+0640-064A, 
+U+064B-0653, U+0657-0659, U+065C-065D, 
+U+0660-066D, U+0670
+U+0683, U+06A2, U+06A4-06A5, U+06A7, U+06A9, U+06AF, U+06BA, U+06BE, U+06D1, 
+U+06D6-06DD,  U+06DF-06E4, U+06E7-06E8, U+06EA-06EC, U+06F0-06F9, 
+U+0752, U+0755, U+0756, U+075A, U+075D, U+0760, U+0767, U+076A, U+E000-E00D
+- shape of U+062F and U+0630 isolate glyphs rounded rather than roman nose 
+- limited support added for latin chars
+- proposed unicode code points U+08A0-08A3, U+08A8-08A9, U+08F4-08FA supported for development purposes only, not suitable for current projects.
+- PUA
+U+E000 mapped to U+08A0, U+0680 
+U+E001 mapped to U+08A2, U+0684 
+U+E002 mapped to U+08A3, U+067D - tah with two dots above
+U+E003 mapped to U+08FD, U+0654 
+U+E004 mapped to U+08F5, U+065A 
+U+E005 mapped to U+08F6, U+06ED
+U+E006 mapped to U+08F7, U+065D
+U+E007 mapped to U+08F9, U+0655
+U+E008 mapped to U+08FA, U+0656
+U+E009 also mapped to U+0657 - use of U+E009 depreciated, treated as stylised U+0657
+U+E00A mapped to U+08F4, U+065E 
+U+E00B mapped to U+08A8, U+0678 - yeh(with two dots below) + high hamaz - 
+U+E00C mapped to U+08A1, U+067F - beh + high hamaz  
+U+E00D mapped to U+08A9, U+0768 - yeh(with two dots below) + one dot above 
+
+Acknowledgements
+----------------
+(Here is where contributors can be acknowledged. If you make modifications
+be sure to add your name (N), email (E), web-address (W) and description
+(D). This list is sorted by last name in alphabetical order.)
+
+SenAjami4
+N: Mark Skinner
+E: Academic_Computing_SEB@sil.org
+W: 
+D: font engineer
+
+Schehrazade
+N: Bob Hallissy, Jonathan Kew
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: SIL designers and font engineers
+
+The Scheherazade project is maintained by SIL International.
+
+For more information please visit the Arabic Script fonts page on 
+SIL International's Computers and Writing Systems website:
+http://scripts.sil.org/ArabicFonts
