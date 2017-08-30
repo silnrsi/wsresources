@@ -1,0 +1,329 @@
+﻿c KeymanWizard 1.1
+c KeymanWizard Font: Arial			10 Feb 2004
+c .                                                        revised: 28 Aug 2009
+c 
+c TIKE will use the line above to identify this file
+c as a Keyman Wizard file
+c Delete the first line to stop the file opening in
+c the Wizard editor
+c (Created by Keyman Developer 6.0.160.0)
+c 
+c ===  KEYMAP FOR BlkYi4.TTF  ===
+
+VERSION 6.0
+store(&NAME) 'BlkYi4_s'
+COPYRIGHT "Copyright DLMorse - Feb 2004"
+store(&MESSAGE) 'For use with BlkYi 1 and 3 fonts; updated 2009-Aug'
+BITMAP "BlkYi4_s.bmp"
+
+begin ANSI > use(main)
+
+group(main) using keys 
+
+c Note:  un-used key positions are "assigned" d060,(BlkYi3.ttf)
+c which is a blank space on the keyboard
+c 
+c 
+c test:     can NOT have direct map and dk-key map
+c .           on same letter!!
+c .           dirct map will take precedence
+c .           + [K_J] > "jj"
+c 
+c Output keadkeys to access upper-ascii characters
+c .     Note: strike same "dead" key twice for THAT key to output
+c 
+c = Black Yi foot-level vowels are mapped to normal key positions
+c .     shoulder-level vowels are dk-mapped with "'"
+c .     head-level vowels are dk-mapped with "["
+c .     vowel-pairs must be accesses twice, once for each
+c 
++ "'" >  dk(squot)   c single-quote key 
++ "[" >  dk(lbrac)   c left-bracket key
++ "]" >  dk(rbrac)   c right-bracket key
+c 
+c + "/" >  dk(slash)   c slash key
+c + "q" >  dk(q-key)   c "Q" key
+c 
+c 
+c du = direct unshifted (eg: no keymapping)
+c ds = direct shifted
+c dk = deadkey mapped (dk + unshifted key)
+c 
+c == Blk Yi  consonants  -
++ "!" > d033 c  ds -!
++ "#" > d035 c  ds       -#
++ "$" > d036 c  ds -$
++ "%" > d037 c  ds -%
++ ">" > d062 c  ds ->
++ "@" > d064 c  ds -@
++ "C" > d067 c  ds    -C
++ "W" > d087 c  ds -W
++ "X" > d088 c  ds    -X
++ "a" > d097 c  -a
++ "b" > d098 c  -b
++ "c" > d099 c  -c
++ "d" > d100 c  -d
++ "e" > d101 c  -e
++ "f" > d102 c  -f
++ "g" > d103 c  -g
++ "h" > d104 c  -h
++ "j" > d106 c  -j
++ "k" > d107 c  -k
++ "l" > d108 c  -l
++ "m" > d109 c  -m
++ "n" > d110 c  -n
++ "p" > d112 c  -p
++ "q" > d113 c  -q 
++ "r" > d114 c  -r
++ "s" > d115 c  -s
++ "t" > d116 c  -t
++ "v" > d118 c  -v
++ "w" > d119 c  -w
++ "x" > d120 c  -x
++ "y" > d121 c  -y
++ "z" > d122 c  -z
+c 
+c 
+
+c == numbers and symbols
++ '"' > d034 c  ds "    -"
++ "&" > d038 c  ds  c sh-7 -&
++ "(" > d040 c  ds -(
++ ")" > d041 c  ds -)
++ "+" > d043 c  ds -+
++ "," > d044 c  -,
++ "-" > d045 c  --
++ "." > d046 c  -.
++ "/" > d047 c -/
++ "0" > d048 c -0
++ "1" > d049 c -1
++ "2" > d050 c -2
++ "3" > d051 c -3
++ "4" > d052 c -4
++ "5" > d053 c -5
++ "6" > d054 c -6
++ "7" > d055 c -7
++ "8" > d056 c -8
++ "9" > d057 c -9
++ "=" > d061 c -=
++ "\" > d092 c d060 ds  -\  d092 wart 
++ "|" > nul  c d124 c  ds    -| 
+
+c see bottom
+c + "~" > d126 c  ds  under-char dot
+c dk(squot) + "." >  d126 c "." an under-char dot  -~
+
+dk(squot) + "'" >  d039 c gets single quote 
+
+c + "'" > d060 c  see dk--- section; blank
+
+
+c == combined set of THREE vowel levels/positions ';
+c .    each key has FOUR outputs
+dk(rbrac) + ":" >  d220 c      top -Ü
+dk(lbrac) + ":" >  d184 c "'j"   hi  -¸
+dk(squot) + ":" >  d130 c "'2"  mid  -‚
++ ":" >  d058 c  ds  lo  -:
+c > c
+dk(rbrac) + ";" >  d221 c "[k" top -Ý
+dk(lbrac) + ";" >  d185 c "'h"   hi   -¹
+dk(squot) + ";" >  d131 c "'w" mid -ƒ
++ ";" >  d059 c  ds    lo  -;
+c > c
+c dk(rbrac) + "a" >  d222 c "/." top -Þ
+c dk(lbrac) + "a" >  d186 c "'w"   hi  -º
+c dk(squot) + "a" >  d132 c "'e"  mid -„
++ "A" > nul c d060 ds d065 lo   not used  -A
+c > c
+dk(rbrac) + "b" >  d223 c "]b" top -ß
+dk(lbrac) + "b" >  d187 c "[b"   hi  -»
+dk(squot) + "b" >  d133 c "'b"  mid  -…
++ "B" >  d066 c  ds  lo  -B
+c > c
+c "C" and "c" are direct-map
++ "C" >  d067 c  ds    -C
+c 
+dk(rbrac) + "d" >  d224 c "]d" top -à
+dk(lbrac) + "d" >  d188 c "[d"   hi  -¼
+dk(squot) + "d" >  d134 c "'d"  mid  -†
++ "D" >  d068 c  ds  lo  -D
+c > c
+c dk(rbrac) + "e" >  d248 c "]e" top    -á
+c dk(lbrac) + "e" >  d212 c "[e"   hi  -½
+c dk(squot) + "e" >  d150 c "'n"  mid  -‡
++ "E" > nul c d069  c d060 ds    lo d069 not used  -E
+c > c
+c dk(rbrac) + "f" >  d226 c "[x" top -â
+c dk(lbrac) + "f" >  d190 c "[b"   hi   -¾
+c dk(squot) + "f" >  d136 c "'j"  mid  -ˆ
++ "F" > nul c d060 ds  lo d070  not used  -F
+c > c
+dk(rbrac) + "g" >  d227 c "'o" top  -ã
+dk(lbrac) + "g" >  d191 c "'o"  hi  -¿
+dk(squot) + "g" >  d137 c "/2"  mid  -‰
++ "G" >  d071 c  ds  lo  -G
+c > c
+dk(rbrac) + "h" >  d228 c ""   top -ä
+dk(lbrac) + "h" >  d192 c "'p"  hi  -À
+dk(squot) + "h" >  d138 c     mid  -Š
++ "H" >  d072 c  ds  lo  -H
+c > c
+dk(rbrac) + "I" >  d229 c "[/" top   -å
+dk(lbrac) + "I" >  d193 c "[z"  hi  -Á
+dk(squot) + "I" >  d139 c ""  mid  -‹
++ "I" >  d073 c  ds  lo  -I
+c > c
+c dk(rbrac) + "j" >  d230 c "/n" top   -æ
+c dk(lbrac) + "j" >  d194 c "/w"   hi  -Â
+c dk(squot) + "j" >  d140 c "/9"  mid  -Œ
++ "J" > nul  c d060 ds  lo d074   not used -J
+c > c
+dk(rbrac) + "k" >  d231 c "[5" top -ç
+dk(lbrac) + "k" >  d195 c "'v"    hi  -Ã
+dk(squot) + "k" >  d154 c "[3"   mid    -š
++ "K" >  d075 c  ds  lo  -K
+c > c
+c dk(rbrac) + "l" >  d232 c "[\" top -è
+c dk(lbrac) + "l" >  d196 c "[q" hi -Ä
+c dk(squot) + "l" >  d155 c "[:"  mid  -›
++ "L" > nul  c d060 ds  lo d076  not used  -L
+c > c
+dk(rbrac) + "m" >  d233 c "/1" top -é
+dk(lbrac) + "m" >  d197 c      hi      -Å
+dk(squot) + "m" >  d156 c "[;"  mid    -œ
++ "M" >  d077 c  ds  lo  -M
+c > c
+dk(rbrac) + "n" >  d234 c "[-" top -ê
+dk(lbrac) + "n" >  d198 c "/c" hi -Æ
+dk(squot) + "n" >  d159 c "[2"  mid  -Ÿ
++ "N" >  d078 c  ds  lo  -N
+c > c
+dk(rbrac) + "O" >  d235 c "[0" top -ë
+dk(lbrac) + "O" >  d199 c "[v" hi      -Ç
+dk(squot) + "O" >  d173 c xxx  mid  -­
++ "O" >  d079 c  ds  lo  -O
+c > c
+c dk(rbrac) + "p" >  d236 c "[7" top -ì
+c dk(lbrac) + "p" >  d200 c "/i" hi -È
+c dk(squot) + "p" >  d161 c "'3"  mid    -¡
++ "P" > nul  c d060  ds  lo d080  not used  -P
+c > c
+dk(rbrac) + "q" >  d237 c "[k" top -í
+dk(lbrac) + "q" >  d201 c "#"   hi    -É
+dk(squot) + "q" >  d162 c "':"  mid -¢
++ "Q" >  d081 c  ds  lo  -Q
+c > c
+c dk(rbrac) + "r" >  d238 c "[l" L  top   -î
+c dk(lbrac) + "r" >  d202 c ":"   hi -Ê
+c dk(squot) + "r" >  d163 c "';"  mid    -£
++ "R" > nul  c d060 ds  lo  d082   not used  -R
+c > c
+dk(rbrac) + "s" >  d239 c "[m" top -ï
+dk(lbrac) + "s" >  d203 c ";"    hi    -Ë
+dk(squot) + "s" >  d164 c "'2"  mid -¤
++ "S" >  d083 c  ds  lo  -S
+c > c
+dk(rbrac) + "t" >  d241 c "[2" top -ñ
+dk(lbrac) + "t" >  d205 c "[;"  hi  -Í
+dk(squot) + "t" >  d166 c "/s" mid   -¦
++ "T" >  d084 c  ds    lo  -T
+c > c
+c "U" is in the finals (vowels) c section
+c > c
+dk(rbrac) + "v" >  d240 c "[m" top -ð
+dk(lbrac) + "v" >  d204 c "/l" L  hi  -Ì
+dk(squot) + "v" >  d165 c "[9" mid -¥
++ "V" >  d086 c  ds  lo  -V
+c > c
+c W, X, are consonant positions
++ "W" >  d087 c  ds  lo  -V 
+c 
++ "X" >  d088 c  ds  lo  -V
+c 
+dk(rbrac) + "y" >  d242 c "[1" top -ò
+dk(lbrac) + "y" >  d206 c "/p"  hi    -Î
+dk(squot) + "y" >  d167 c "'s" mid -§
++ "Y" >  d089 c  ds  lo  -Y
+c > c
+c dk(rbrac) + "z" >  d243 c "[," top -ó
+c dk(lbrac) + "z" >  d207 c "/8"  hi  -Ï
+c dk(squot) + "z" >  d168 c "[s" mid    -¨
++ "Z" > nul  c d060 ds    lo d090  not used  -Z
+
+
+c > c
+dk(rbrac) + "i" >  d244 c "/=" top -ô
+dk(lbrac) + "i" >  d208 c "[q"  hi    -Ð
+dk(squot) + "i" >  d169 c "'c" mid -©
++ "i" >  d105 c  ds  lo  -i
+c > c
+dk(rbrac) + "o" >  d245 c "/q" top   -õ
+dk(lbrac) + "o" >  d209 c "[w"  hi  -Ñ
+dk(squot) + "o" >  d170 c "[=" mid -ª
++ "o" >  d111 c  ds  lo  -o
+c > c
+dk(rbrac) + "u" >  d246 c "[8" top -ö
+dk(lbrac) + "u" >  d210 c "/5"   hi  -Ò
+dk(squot) + "u" >  d171 c "[q" mid -«
++ "u" >  d117 c  ds  lo  -u
+c > c
+c dk(rbrac) + "-" >  d247 c "/6" top   -÷
+c dk(lbrac) + "-" >  d211 c "/u"  hi  -Ó
+c dk(squot) + "-" >  d174 c "'r" mid -®
++ "_" > nul  c d060 ds  lo d095 not used   -_
+c > c
+dk(rbrac) + "/" >  d249 c "'p" top  -ù
+dk(lbrac) + "/" >  d213 c "[r"  hi    -Õ
+dk(squot) + "/" > d175 c "'k" mid  -¯
++ "?" > d063 c  ds  lo  -?
+c > c
+c dk(rbrac) + "'" >  d248 c "[6" top -ø
+c dk(lbrac) + "'" >  d212 c "[e"   hi  -Ô
+c dk(squot) + '"' >  d150 c     mid  -–
+c dk(squot) + "'" >  d060 c '  lo d039  not used -'
+c > c
+c 
+c 
+dk(rbrac) + "{" >  d250 c "/m" top   -ú
+dk(lbrac) + "{" >  d214 c "K"   hi  -Ö
+dk(squot) + "{" >  d176 c "'l" mid  L -°
++ "{" > d123  c  ds  lo    -{
+c > c
+c dk(rbrac) + "{" >  d251 c "' " top -û
+c dk(lbrac) + "{" >  d215 c "[y"  hi  -×
+c dk(squot) + "{" > d177 c "'m" mid -±
+c dk(lbrac) + "[" > d091 c [    lo  not used  -[
+c > c
+c 
+dk(rbrac) + "}" >  d252 c "[ " top -ü
+dk(lbrac) + "}" >  d216 c "M"    hi  -Ø
+dk(squot) + "}" >  d178 c "'n" mid -²
++ "}" >  d125 c  ds  lo  -}
+c > c
+c dk(rbrac) + "]" >  d253 c "'," top -ý
+c dk(lbrac) + "]" >  d217 c "[i"  hi  -Ù
+c dk(squot) + "]" >  d179 c "'o" mid -³
+c + "]" >   d093 c  "]"    lo   not used -]
+c > c
+c 
+dk(rbrac) + "`" >  d254 c "'." top -þ
+dk(lbrac) + "`" >  d218 c "[o"   hi  -Ú
+dk(squot) + "`" >  d180 c "'z" mid -´     
++ "`" >  d096 c `    lo  -`
+c > c
+c dk(rbrac) + "*" >  d153 c "'t" top -™
+c dk(lbrac) + "*" >  d152 c ""   hi  -˜
+c dk(squot) + "*" >  d149 c ""    mid  -•
++ "*" > "*"  c d060 ds  lo d042 now   c  -*
+c > c
++ "~" >  d126  c -~    under-dot Black Yi
+c + "\" > nul   c d060  was d092  not used   (wart for Miao) c
+   
+c == misc :  music, unused dk-positions, etc
+
+c reserved positions (Microsoft)
+
+c 
+c eof
+
+

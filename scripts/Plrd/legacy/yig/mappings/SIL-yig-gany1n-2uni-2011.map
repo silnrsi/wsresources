@@ -1,0 +1,251 @@
+EncodingName            "SIL-yig-gany1n-2011"
+DescriptiveName         "maping from David Morse derived legacy fonts"
+Version                 "0"
+Contact                 "Erich_Fickle (at) sil.org"
+RegistrationAuthority   "(REG_NAME)"
+RegistrationName        ""
+
+;*** Initial conversion from .xml because many glyphs are not utf22
+;*** THIS IS A ONE-WAY MAPPING. It is not possible to reverse the map successfully.
+
+Pass(Unicode)
+
+U+0022 > U+16f51 ;*** single quote it is mapped to asp mark, s/n be mixed
+U+0023 > U+16f7e
+U+0024 > U+16f5e
+U+0025 > U+16f79
+U+0026 > U+16f50
+U+0028 > U+0028
+U+0029 > U+0029
+U+002a > U+002a
+U+002b > U+003a
+U+002c > U+002c
+U+002d > U+002d
+U+002e > U+002e
+U+002f > U+002f
+U+0030 > U+0030
+U+0031 > U+0031
+U+0032 > U+0032
+U+0033 > U+0033
+U+0034 > U+0034
+U+0035 > U+0035
+U+0036 > U+0036
+U+0037 > U+0037
+U+0038 > U+0038
+U+0039 > U+0039
+U+003a > U+16f66
+;***          3b > 16f CHECK THIS glyph variation? 
+U+003c > U+16f23 ;***there is a glyph variation here
+	;*** make sure font covers it!
+U+003d > U+003b
+U+003e > U+16f37
+U+003f > U+16f3f
+U+0040 > U+16f71
+U+00b42 > U+16f67
+U+0043 > U+16f59 U+16f54
+U+0062 > U+16f62
+U+0045 > U+16f5f
+U+0074 > U+15f74
+;*** U+    / looking 
+;*** U+    a b22 > 0027
+;*** U+    a b89 > 0027
+U+00A2 > U+16F66 U+16F90
+U+0024 > U+16F18
+U+0025 > U+0025
+U+0027 > U+3001
+U+0028 > U+0028
+U+0029 > U+0029
+U+002A > U+0078
+U+002B > U+003A
+U+002C > U+16F14
+;*** / lookin 
+U+002D > U+16F54 U+16f8F
+U+002E > U+16F37
+U+002F > U+003F
+U+0030 > U+0030
+U+0031 > U+0031
+U+0032 > U+0032
+U+0033 > U+0033
+U+0034 > U+0034
+U+0035 > U+0035
+U+0036 > U+0036
+U+0037 > U+0037
+U+0038 > U+0038
+U+0039 > U+0039
+U+003A > U+16F66 U+16F8F
+U+003C > U+002C
+U+003D > U+003B
+U+003E > U+002E
+U+003F > U+002F
+U+0040 > U+16F71 U+16F8F
+U+0041 > U+16F72 U+16F8F
+U+0042 > U+16F57 U+16F8F
+U+0043 > U+16F54 U+16F8F
+U+0044 > U+16F62 U+16F8F
+U+0045 > U+16F5E U+16F8F
+U+0046 > U+16F74 U+16F8F
+U+0047 > U+16F73 U+16F8F
+U+0048 > U+16F5C U+16F8F
+U+0049 > U+16F7B U+16F8F
+U+004A > U+16F67 U+16F8F
+U+004B > U+16F54 U+16F8F
+U+004C > U+16F4C U+16f8F
+U+004D > U+16F7A U+16f8F
+U+004E > U+16F5D U+16f8F
+U+004F > U+16F5A U+16f8F
+U+0050 > U+16F78 U+16f8F
+U+0051 > U+16F6B U+16f8F
+U+0052 > U+16F28 U+16f8F
+U+0053 > U+16F79 U+16f8F
+U+0054 > U+16F58 U+16f8F
+U+0055 > U+16F51 U+16f8F
+U+0056 > U+16F55 U+16f8F
+U+0057 > U+16F6E U+16f8F
+;*** a b58 >  bactxt  vowel ***** NOT A UNICODE MIAO CHAR s> bstit> te error
+U+0059 > U+16F68 U+16f8F
+;***U+5A > U+16F U+16f8F
+;*** a b5B >  vowel  ***** NOT A UNICODE MIAO, COULD BE DEAD STYLE VAR 
+;*** a b5C >  vowel ***** NOT A UNICODE MIAO, NEVER USED. SHOULD BE TESTED FOR
+U+005D > U+16F51 U+16f8F
+U+005E > U+16F66 U+16f8F
+U+0061 > U+16F43
+U+0062 > U+16F00
+U+0063 > U+16F0E
+U+0064 > U+16F0A
+U+0065 > U+16F39
+U+0066 > U+16F07
+U+0067 > U+16F1E
+U+0068 > U+16F26
+U+0069 > U+16F61 U+16F8F
+U+006A > U+16F2F
+U+006B > U+16F20
+U+006C > U+16F16
+U+006D > U+16F04
+U+006E > U+16F10
+U+006F > U+16F59 U+16F8F
+U+0070 > U+16F02
+U+0071 > U+16F1A
+U+0072 > U+16F35
+U+0073 > U+16F3A
+U+0074 > U+16F0D
+U+0075 > U+16f6A U+16F8F
+U+0076 > U+16f08
+U+0077 > U+16f42
+U+0078 > U+16f33
+U+0079 > U+16f3D
+U+007A > U+16f3B
+U+007B > U+201C
+U+007C > U+0332
+U+007D > U+0022
+U+007E > U+0333
+U+00A0 > U+2060
+U+00A3 > U+16f7E U+16F90
+U+00A4 > U+16f71 U+16F90
+U+00A5 > U+16f57 U+16F90
+U+00A6 > U+16f59 U+16F54 U+16F90
+U+00A7 > U+16f62 U+16F90
+U+00A8 > U+16f5E U+16F90
+U+00A9 > U+16f74 U+16F90
+U+00AA > U+16f73 U+16F90
+U+00AB > U+16f5C U+16F90
+U+00AC > U+16f7B U+16F90
+U+00AE > U+16f67 U+16F90
+U+00AF > U+16f54 U+16F90
+U+00B0 > U+16f76 U+16F90
+U+00B1 > U+16f7A U+16F90
+U+00B2 > U+16f5D U+16F8F
+U+00B3 > U+16f5A U+16F90
+U+00B4 > U+16f78 U+16F90
+;*** U+B5 > U+16f U+16f90
+U+00B6 > U+00B6
+U+00B8 > U+16f67 U+16f90
+U+00B9 > U+16f58 U+16f90
+U+00BA > U+16f6E U+16f90
+;*** BB is not a Miao character
+U+00BC > U+16f68 U+16f90
+U+00BD > U+16f60 U+16f90
+U+00BF > U+16f59 U+16f8F
+U+00C0 > U+16f6A U+16f90
+U+00C1 > U+16f61 U+16f8F
+U+00C2 > U+16f72 U+16f8F
+U+00C3 > U+16f55 U+16f90
+U+00C4 > U+16f57 U+16f8F
+;*** C5 this liature of U+16f59 U+16f54 is not a Miao character
+U+00C6 > U+16f62 U+16f8F
+U+00C7 > U+16f5E U+16f8F
+U+00C8 > U+16f74 U+16f8F
+;*** C9 this is not a Miao character 
+U+00CA > U+16f66
+U+00CB > U+16f7E
+U+00CC > U+16f71
+U+00CD > U+16f57
+;*** CE this liature of U+16f59 U+16f54 is not a Miao character
+U+00CF > U+16f62
+U+00D0 > U+16f5E
+U+00D1 > U+16f74
+U+00D2 > U+16f73
+U+00D3 > U+16f5C
+U+00D4 > U+16f7B
+U+00D5 > U+16f67
+U+00D6 > U+16f54
+U+00D7 > U+16f76
+U+00D8 > U+16f7A
+U+00D9 > U+16f5D
+U+00DA > U+16f5A
+U+00DB > U+16f78
+U+00DC > U+16f6B
+U+00DD > U+16f73 U+16f8F
+U+00DE > U+16f5C U+16f8F
+U+00DF > U+16f7B U+16f8F
+U+00E0 > U+16f79
+U+00E1 > U+16f58
+U+00E2 > U+16f6E
+;*** E3 this is not a Miao character 
+U+00E4 > U+16f68
+U+00E5 > U+16f60
+;*** E6 this is not a Miao character
+U+00E7 > U+16f59
+U+00E8 > U+16f6A
+U+00E9 > U+16f61
+U+00EA > U+16f72
+U+00EB > U+16f55
+U+00EC > U+16f67 U+16f91
+U+00ED > U+16f54 U+16f8F
+U+00EE > U+16f76 U+16f91
+U+00EF > U+16f7A U+16f91
+U+00F0 > U+16f5D U+16f8F
+U+00F1 > U+16f5A U+16f91
+U+00F2 > U+16f60 U+16f91
+U+00F3 > U+16f6B U+16f8F
+U+00F4 > U+16f79 U+16f91
+U+00F5 > U+16f58 U+16f91
+U+00F6 > U+16f6E U+16f91
+;*** F7 this is not a Miao character 
+U+00F8 > U+16f68 U+16f91
+U+00F9 > U+16f60 U+16f91
+U+00FB > U+16f59 U+16f8F
+U+00FC > U+16f6A U+16f91
+U+00FD > U+16f61 U+16f91
+U+00FE > U+16f72 U+16f91
+U+00FF > U+16f55 U+16f91
+;*** a b8C > 10110
+U+009C > U+16f7E U+16f91
+U+009F > U+16f71 U+16f91
+U+0b83 > U+0042  ;*** music
+U+0b88 > U+0047
+;U+98 not sure what this squarish quote mark is, ask DM
+U+0b96 > U+005F
+U+0b97 > U+2017
+U+0b91 > U+2018
+U+0b92 > U+2019
+U+0b81 > U+0041
+U+0b93 > U+201C
+U+0b94 > U+201B
+;***  these are Music not in 1252 
+U+0b84 > U+0043 
+U+0b86 > U+0045
+U+0b87 > U+0046
+U+0b95 > U+2022
+U+0b85 > U+0046
+U+0b98 > U+01012C
+U+0b8b > U+16f66

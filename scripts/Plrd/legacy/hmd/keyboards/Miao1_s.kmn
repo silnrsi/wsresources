@@ -1,0 +1,270 @@
+﻿c KeymanWizard 1.1
+c KeymanWizard Font: Arial			10 Feb 2004
+c revised:                                                           19 May 2006
+c 
+c TIKE will use the line above to identify this file
+c as a Keyman Wizard file
+c Delete the first line to stop the file opening in
+c the Wizard editor
+c (Created by Keyman Developer 6.0.160.0)
+c 
+c ===  KEYMAP FOR Miao2.ttf  ===
+
+VERSION 6.0
+NAME "Miao1_s"
+BITMAP "Miao1_s.bmp"
+COPYRIGHT "Copyright DLMorse - Feb 2004"
+MESSAGE "For use with Miao2.ttf font;  1-to-1"
+
+begin ANSI > use(main)
+
+group(main) using keys 
+
+c Store the upper and lower case vowels with
+c different accents
+c 
+c = Pollard
+c store( headletters )
+c store( shoulderletters )
+c store( stomachletters )
+c store( footletters )
+c 
+c 
+c test:     can NOT have direct map and dk-key map
+c on same letter!!c
+c dirct map will take precedence
+c + [K_J] > "jj"
+c 
+c Output keadkeys to access upper-ascii characters
+c Note: strike same "dead" key twice for THAT key to output
+c 
+c = Pollard script foot-level vowels are mapped to normal key positions
+c shoulder-level vowels are dk-mapped with "'"
+c head-level vowels are dk-mapped with "["
+c vowel-pairs must be accesses twice, typing once for each
+c 
++ "'" >  dk(squot)   c single-quote key   {stomach level}
++ "[" >  dk(lbrac)   c left-bracket key   {shoulder level}
++ "]" >  dk(rbrac)   c right-bracket key  {head level}
+c 
+c + "/" >  dk(slash)   c slash key
+c + "q" >  dk(q-key)   c "Q" key
+c 
+c keyboard mappings
+c du = direct unshifted (eg: no keymapping)
+c ds = direct shifted
+c dk = deadkey mapped (dk + unshifted key)
+c 
+c ascii positions still open to use
+
+c == Miao consonants -
++ "a" > d097 c  -a
++ "b" > d098 c  -b
++ "c" > d099 c  -c
++ "d" > d100 c  -d
++ "e" > d101 c  -e
++ "f" > d102 c  -f
++ "g" > d103 c  -g
++ "h" > d104 c  -h
++ "j" > d106 c  -j
++ "k" > d107 c  -k
++ "l" > d108 c  -l
++ "m" > d109 c  -m
++ "n" > d110 c  -n
++ "p" > d112 c  -p
++ "q" > d113 c  -q 
++ "r" > d122 c  -z
++ "s" > d115 c  -s
++ "t" > d116 c  -t
++ "v" > d118 c  -v
++ "w" > d119 c  -w
++ "W" > d087 c  ds -W
++ "x" > d120 c  -x
++ "y" > d121 c  -y
++ "z" > d114 c  -r
+c 
+c 
+
+c == numbers and symbols
++ "!" > d033 c  ds -!
++ '"' > d034 c  ds "    -"
++ "&" > d038 c  ds  c sh-7 -&
++ "(" > d040 c  ds -(
++ ")" > d041 c  ds -)
++ "+" > d043 c  ds -+
++ "," > d044 c  -,
++ "-" > d045 c --
++ "." > d046 c  -.
++ "/" > d047 c -/
++ "0" > d048 c -0
++ "1" > d049 c -1
++ "2" > d050 c -2
++ "3" > d051 c -3
++ "4" > d052 c -4
++ "5" > d053 c -5
++ "6" > d054 c -6
++ "7" > d055 c -7
++ "8" > d056 c -8
++ "9" > d057 c -9
++ "=" > d061 c -=
++ "U" > d085 c  ds "U" apos-1 -U
++ "F" > d092 c  ds   -\
+c 
++ "\" > nul  c or slash at 254 ds d042 lo  -*
++ "*" > d042 c 
+c 
+
+c == combined set of THREE vowel levels/positions    Top, High, Mid;  (Low is direct-mapped)
+dk(rbrac) + ":" > d220 c      top -Ü
+dk(lbrac) + ":" > d184 c "'j"   hi  -¸
+dk(squot) + ":" > d130 c "'2"  mid  -‚
++ ":" >  d058 c  ds  lo  -:
+c 
+dk(rbrac) + ";" >  d221 c "[k" top -Ý
+dk(lbrac) + ";" >  d185 c "'h"   hi   -¹
+dk(squot) + ";" >  d131 c "'w" mid -ƒ
++ ";" >  d059 c  ds    lo  -;
+c 
+dk(rbrac) + "a" >  d237 c "[k" top -í
+dk(lbrac) + "a" >  d201 c "#"   hi    -É
+dk(squot) + "a" >  d162 c "':"  mid -¢
++ "A" >  d081 c  ds  lo  -Q
+c 
+dk(rbrac) + "b" >  d223 c "/7" top -ß
+dk(lbrac) + "b" >  d187 c "'x"   hi  -»
+dk(squot) + "b" >  d133 c "'x"  mid  -…
++ "B" >  d066 c  ds  lo  -B
+c 
+dk(rbrac) + "d" >  d224 c "/0" top -à
+dk(lbrac) + "d" >  d188 c "'y"   hi  -¼
+dk(squot) + "d" >  d134 c "'4"  mid  -†
++ "D" >  d068 c  ds  lo  -D
+c 
+dk(rbrac) + "e" >  d225 c "'i" top    -á
+dk(lbrac) + "e" >  d189 c "'z"   hi  -½
+dk(squot) + "e" >  d135 c "[n"  mid  -‡
++ "E" >  d069 c  ds    lo  -E
+c 
++ "F" >  d092 c   lo  -  \
+c 
+dk(rbrac) + "g" >  d227 c "'o" top  -ã
+dk(lbrac) + "g" >  d191 c "'o"  hi  -¿
+dk(squot) + "g" >  d137 c "/2"  mid  -‰
++ "G" >  d071 c  ds  lo  -G
+c 
+dk(rbrac) + "h" >  d228 c ""   top -ä
+dk(lbrac) + "h" >  d192 c "'p"  hi  -À
+dk(squot) + "h" >  d138 c     mid  -Š
++ "H" >  d072 c  ds  lo  -H
+c 
+dk(rbrac) + "I" >  d229 c "[/" top   -å
+dk(lbrac) + "I" >  d193 c "[z"  hi  -Á
+dk(squot) + "I" >  d139 c ""  mid  -‹
++ "I" >  d073 c  ds  lo  -I
+c 
+dk(rbrac) + "j" >  d230 c "/n" top   -æ
+dk(lbrac) + "j" >  d194 c "/w"   hi  -Â
+dk(squot) + "j" >  d140 c "/9"  mid  -Œ
++ "J" >  d074 c  ds  lo  -J
+c 
+dk(rbrac) + "k" >  d231 c "[5" top -ç
+dk(lbrac) + "k" >  d195 c "'v"    hi  -Ã
+dk(squot) + "k" >  d154 c "[3"   mid    -š
++ "K" >  d075 c  ds  lo  -K
+c 
+dk(rbrac) + "l" >  d232 c "[\" top -è
+dk(lbrac) + "l" >  d196 c "[q" hi -Ä
+dk(squot) + "l" >  d155 c "[:"  mid  -› 
++ "L" >  d076 c  ds  lo  -L
+c 
+dk(rbrac) + "m" >  d234 c "[-" top -ê
+dk(lbrac) + "m" >  d198 c "/c" hi -Æ
+dk(squot) + "m" >  d159 c "[2"  mid  -Ÿ
++ "M" >  d078 c  ds  lo  -N
+c 
++ "N" >  d067 c   lo full-c -C
+c 
+dk(rbrac) + "O" >  d235 c "[0" top -ë
+dk(lbrac) + "O" >  d199 c "[v" hi      -Ç
+dk(squot) + "O" >  d173 c xxx  mid  -­
++ "O" >  d079 c  ds  lo  -O
+c 
+dk(rbrac) + "p" >  d236 c "[7" top -ì
+dk(lbrac) + "p" >  d200 c "/i" hi -È
+dk(squot) + "p" >  d161 c "'3"  mid    -¡
++ "P" >  d080 c  ds  lo  -P
+c 
++ "Q" >  d126  c  Miao sentence pause mark -
+c 
+c dk(rbrac) + "r" >  d238 c "[l" L  top   -î
+c dk(lbrac) + "r" >  d202 c ":"   hi -Ê
+c dk(squot) + "r" >  d163 c "';"  mid    -£
+c + "R" >  d082 c  ds  lo  -R
+c 
+dk(rbrac) + "r" >  d243 c "[," top -ó
+dk(lbrac) + "r" >  d207 c "/8"  hi  -Ï
+dk(squot) + "r" >  d168 c "[s" mid    -¨
++ "R" >  d090 c  ds    lo  -Z
+c 
+dk(rbrac) + "s" >  d239 c "[m" top -ï
+dk(lbrac) + "s" >  d203 c ";"    hi    -Ë
+dk(squot) + "s" >  d164 c "'2"  mid -¤
++ "S" >  d083 c  ds  lo  -S
+c 
+dk(rbrac) + "t" >  d241 c "[2" top -ñ
+dk(lbrac) + "t" >  d205 c "[;"  hi  -Í
+dk(squot) + "t" >  d166 c "/s" mid   -¦
++ "T" >  d084 c  ds    lo  -T
+c 
+dk(rbrac) + "v" >  d240 c "[m" top -ð
+dk(lbrac) + "v" >  d204 c "/l" L  hi  -Ì
+dk(squot) + "v" >  d165 c "[9" mid -¥
++ "V" >  d086 c  ds  lo  -V
+c 
++ "X" >  nul  c -
+c 
+dk(rbrac) + "y" >  d242 c "[1" top -ò
+dk(lbrac) + "y" >  d206 c "/p"  hi    -Î
+dk(squot) + "y" >  d167 c "'s" mid -§
++ "Y" >  d089 c  ds  lo  -Y
+c 
++ "Z" > nul c -
+c 
++ ">" > d062 c  ds     dbl-top ->
+dk(rbrac) + "i" >  d244 c "/=" top -ô
+dk(lbrac) + "i" >  d208 c "[q"  hi    -Ð
+dk(squot) + "i" >  d169 c "'c" mid -©
++ "i" >  d105 c  ds  lo  -i
+  
+c + "?" > d063 c  ds  dbl-top  -?
+dk(rbrac) + "o" >  d245 c "/q" top   -õ
+dk(lbrac) + "o" >  d209 c "[w"  hi  -Ñ
+dk(squot) + "o" >  d170 c "[=" mid -ª
++ "o" >  d111 c  ds  lo  -o
+c 
+c + "<" > d060 c  ds  dbl-top -<
+dk(rbrac) + "u" >  d246 c "[8" top -ö
+dk(lbrac) + "u" >  d210 c "/5"   hi  -Ò
+dk(squot) + "u" >  d171 c "[q" mid -«
++ "u" >  d117 c  ds  lo  -u
+c 
+c 
+c ============ block out non-used positions on keyboard
++ "{" > nul  c -
++ "}" > nul  c -
+dk(rbrac) + "]" >  nul  c -
+dk(lbrac) + "[" >  nul  c  -
+dk(squot) + "'" >  nul  c  -
++ "|" > nul  c - vert-bar
++ "_" > nul  c - und-ln
++ "^" > nul  c - sh-6
++ "%" > nul  c - sh-5
++ "$" > nul  c - sh-4
++ "#" > nul  c - sh-3
++ "@" > nul  c - sh-2
++ "C" > nul  c - sh-C
++ "N" > nul  c - sh-N
+c 
+c 
+c eof
+

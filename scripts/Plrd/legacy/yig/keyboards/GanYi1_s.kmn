@@ -1,0 +1,670 @@
+c KeymanWizard 1.1
+c KeymanWizard Font: Arial
+c .                                             origianl:          2004-Feb-08 
+c .                                            revised:           2009-Jan-13
+c 
+c TIKE will use the line above to identify this file
+c as a Keyman Wizard file
+c Delete the first line to stop the file opening in
+c the Wizard editor
+c (Created by Keyman Developer 6.0.160.0)
+c 
+c ===  KEYMAP FOR Pollard Fonts  ===
+c Lipo, Ganyi, Miao, Heiyi, Baiyi,
+
+VERSION 6.0
+store(&NAME) 'GanYi1_s'
+store(&BITMAP) 'GanYi1_s.bmp'
+store(&COPYRIGHT) 'Copyright DLMorse - 2004-Feb-08; updated: 2009-Jan-05'
+store(&MESSAGE) 'For use with GanYi1 font (2009-January version); '
+
+begin ANSI > use(main)
+
+group(main) using keys 
+
+c ----------------------------
+c 
+c = Lipo, Ganyi (three tone levels)
+c 
+c = Miao; Baiyi, Heuyi  (four tone levels)
+c 
+c 
+c .     can NOT have direct map and dk-key map
+c .     on same letter!!     c
+c .     dirct map will take precedence
+c .      + [K_J] > "jj"
+c 
+
+c ----------------------------
+c Output deadkeys to access upper-ascii characters
+c Note: strike same "dead" key twice for THAT key to output
+c 
+c = Pollard character -- foot-level vowels are mapped to baseline positions (except Lipo)
+c .     shoulder-level vowels are dk-mapped with   "'"
+c .     head-level vowels are dk-mapped with       "["
+c .     mid-level vowels are dk-mapped with        "]"
+c .     vowel-pairs must be accessed/typed twice, once for each, successively
+
+c ----------------------------
+c USING DEAD KEYS ........
+
+c Case 1: Where there is only ONE vowel on a key -- LOWER case position:
+c access by  dk + letter
+
+c Case 2:  Where there only ONE vowel on a key -- UPPER case position:
+c access by  dk + SHIFT + letter
+
+c Case 3:  where there are TWO vowels on ONE key (eg: one on lower case, one on
+c (upper case);  different tone level access to the lower
+
+c Case 4:  Where the language uses only THREE levels, the MID (stomach) level
+c is NOT used; all letters for this level are at the END of the alphabet set
+c in the font. Access code for that level is block with a "c " on that line
+
+c ----------------------------
+
+c == GANYI KEYBOARD MAP  -- uses TWO dead keys  =======
+c 
+c to type the character ON THE quote KEY at single-quote postion, press the
+c single-quote key TWICE
+
++ d039 > dk(squot)   c   "  '  "    d039  single-quote key - shoulder level
+c 
++ d091 > dk(lbrac)   c   " [ '"   d091  left-bracket key - overhead level
+
+c ------------- NOT USED in this language:
+c + "]" >  dk(rbrac)   c right-bracket key - stomach level
+c 
+c + "/" >  dk(slash)   c slash key
+c 
+c + "q" >  dk(q-key)   c "Q" key
+c 
+ 
+c du = direct unshifted (eg: no keymapping)
+c ds = direct shifted
+c dk = deadkey mapped (dk + unshifted key)
+c =
+c =
+c == NUMBER KEYS - UPPER AND LOWER CHARACTERS
+c 
+c ----------------------------
++ "!" > d033 c   
++ "1" > d049 c  
+
+c ----------------------------
++ "@" > d064 c    low, high, top:  064 162 205 
+dk(lbrac) + d064 > d212 c  
+dk(squot) + d064 > d162 c  
+c dk(rbrac) + d064 > d247 c
+
++ "2" > d050 c  
+
+c ----------------------------
++ "#" > d035 c    low, high, top:  035 202 242 
+dk(lbrac) + d035 > d248 c  
+dk(squot) + d035 > d203 c  
+c dk(rbrac) + d035 > d247 c
+
++ "3" > d051 c  
+
+c ----------------------------
++ "$" > d036 c  low, high, top:  036 201 241
+dk(lbrac) + d036 > d247 c
+dk(squot) + d036 > d202 c  
+c dk(rbrac) + d036 > d247 c
+
++ "4" > d052 c  
+
+c ----------------------------
++ "%" > d037 c  
+dk(lbrac) + d037 > d037 c  
+dk(squot) + d037 > d037 c  
+c dk(rbrac) + d037 > d247 c
+
++ "5" > d053 c  
+
+c ----------------------------
++ "^" > d094 c  
+dk(lbrac) + d094 > nul c  
+dk(squot) + d094 > nul c  
+c dk(rbrac) + d037 > d247 c
+
++ "6" > d054 c  
+
+c ----------------------------
++ "&" > d038 c   
+dk(lbrac) + d038 > nul c  
+dk(squot) + d038 > nul c  
+c dk(rbrac) + d037 > d247 c
+
++ "7" > d055 c  
+
+c ----------------------------
++ "*" > d042 c  
++ "8" > d056 c  
+
+c ----------------------------
++ "(" > d040 c  
++ "9" > d057 c  
+
+c ----------------------------
++ ")" > d041 c  
++ "0" > d048 c  
+
+c ----------------------------
+c 
+ 
+c ==================== >>>>>>>>
+c 
+c PUNCTUATION and SYMBOL KEYS
+c 
+c ----------------------------
+c _ c   low, high, top:  095
+c ==  normal underline, not vowel
++ d095 > d095  c  "_"    
+dk(lbrac) + d095 > beep c 
+dk(squot) + d095 > beep c 
+c dk(rbrac) + "_" > d032 c
+
+c - c  low, high, top:  045
+c ==  normal hyphen, not vowel
++ d045 > d045 c  "-"
+dk(lbrac) + d045 > beep c 
+dk(squot) + d045 > beep c 
+c dk(rbrac) + "-" > d032 c
+
+c ----------------------------
+c + c   low, high, top:  [043]
+c ==    " + "  key gets the colon [ : ]
++ d043 > d043 c   043
+c dk(lbrac) + d043 > beep c
+c dk(squot) + d043 > beep c
+c dk(rbrac) + d043 > d032 c
+
+c = c   low, high, top:  [061]
+c ==    " = "  key  gets the semicolon [ ; ]
++ d061 > d061 c 
+c dk(lbrac) + d061 > beep c
+c dk(squot) + d061 > beep c
+c dk(rbrac) + d061 > d032 c
+
+c ----------------------------
+c : c     low, high, top:  058  161 204
+c ==  semi colon gets  Ganyi  " = "  vowel symbol
++ d058 > d058 c   ' : '
+dk(lbrac) + d058 > d211 c  
+dk(squot) + d058 > d161 c  
+c dk(rbrac) + ":" > d032 c
+
+c ; c    low, high, top:   059 178 220
+c ==  " ; " gets ' = '  -- the Ganyi "small-b" vowel symbol
++ d059 > d059 c   " ; "
+dk(lbrac) + d059 > d227 c
+dk(squot) + d059 > d180 c
+c dk(rbrac) + ";" > d032 c
+    
+c ----------------------------
+c { c   low, high, top:  123 187 227
++ d123 > d123  c   "{"
+dk(lbrac) + d123 > d234 c  
+dk(squot) + d123 > d189 c  
+c dk(rbrac) + "{" > d032 c
+
+c [ c   low, high, top:  091
+c == DEAD KEY <==== ++++++
+c defined at top of file..........
+c + "[" >   d091 c
+dk(lbrac) + d091 > d091 c    ' [ '  ++++++
+c second press = Ganyi left dbl-quote
+dk(squot) + d091 > beep c  
+c dk(rbrac) + "[" > beep c
+
+c ----------------------------
+c } c   low, high, top:  125 188 228
++ d125 >  d125 c  "}"
+dk(lbrac) + d125 > d235 c  
+dk(squot) + d125 > d190 c  
+c dk(rbrac) + "}" > d032 c
+
+c ] c   low, high, top:  093
++ d093 > d093 c   "  ] "  Ganyi right dbl-quote
+dk(lbrac) + d093 > beep c  
+dk(squot) + d093 > beep c  
+c dk(rbrac) + "]" > d032 c
+
+c ----------------------------
+c | c   low, high, top:  124
++ d124 > d124  c     " | "  Ganyi consonant, single
+dk(lbrac) + d124 > beep c 
+dk(squot) + d124 > beep c 
+c dk(rbrac) + "|" > d032 c
+
+c \ c   low, high, top:  092 174 216
++ d092 > d092   c  " \ " 
+dk(lbrac) + d092 > d223 c 
+dk(squot) + d092 > d176 c 
+c dk(rbrac) + "\" > d032 c
+
+c ----------------------------
+c " c low, high, top:  034
+c not used
++ d034 > beep c    empty 
+dk(lbrac) + d034 > beep c 
+dk(squot) + d034 > beep c 
+c dk(rbrac) + d034 > d032 c
+
+c ' c  low, high, top:  039
+c ==   DEAD KEY <=====    ++++++
+c --  defined at top of file ----- >>
+c + d039 > d039 c  " ' "
+dk(lbrac) + d039 > beep c 
+dk(squot) + d039 > beep c   ++++++
+c dk(rbrac) + "'" > d032 c
+
+c ----------------------------
+c < c   low, high, top:  060
++ d060 > d060 c  "<"  consonant
+dk(lbrac) + "<" > beep c 
+dk(squot) + "<" > beep c 
+c dk(rbrac) + "<" > d032 c
+
+c , c    low, high, top:  044
++ d044 > d044 c  ","  comma
+dk(lbrac) + "," > beep c 
+dk(squot) + "," > beep c 
+c dk(rbrac) + "," > d032 c
+
+c ----------------------------
+c > c   low, high, top:  062
++ d062 > d062 c  ">"    consonant
+dk(lbrac) + ">" > beep c 
+dk(squot) + ">" > beep c 
+c dk(rbrac) + ">" > d032 c
+
+c . c   low, high, top:  046
++ d046 > d046 c   "."  period
+dk(lbrac) + d046 > beep c 
+dk(squot) + d046 > beep c 
+c dk(rbrac) + "." > d032 c
+
+c ----------------------------
+c ? c   low, high, top:  063
++ "?" > d063 c     question mark
+dk(lbrac) + "?" > beep c  
+dk(squot) + "?" > beep c  
+c dk(rbrac) + "?" > d032 c
+
+c / c   low, high, top:  047
++ d047 > d047 c   "/" slash
+dk(lbrac) + d047 > beep c  
+dk(squot) + d047 > beep c  
+c dk(rbrac) + "/" > d032 c
+
+c ----------------------------
+c ~ c  low, high, top:  126
++ d0126 >  beep  c d126   "~"      empty
+dk(lbrac) + "~" > beep c 
+dk(squot) + "~" > beep c 
+c dk(rbrac) + "~" > d032 c
+
+c ` c  low, high, top:  096
++ d096 >  beep c d096   "`"       empty
+dk(lbrac) + d096 > beep c 
+dk(squot) + d096 > beep c 
+c dk(rbrac) + "`" > d032 c
+
+c ----------------------------
+
+c ==============>>>>>>>>>>>>>>
+
+c vowels at lowercase, with other tone positions
+c .                 low postion      = direct typing, in font
+c .                 shoulder (high)   = apostrophe key + vowel key
+c .                 head (overhead, dead key) = left-bracket key + vowel key
+
+c ----------------------------
+c A c   low, high, top:  065 193 238
++ "A" > d065 c 
+dk(lbrac) + "A" >  d238 c  
+dk(squot) + "A" >  d193 c  
+c dk(rbrac) + "A" >  d032 c
+
+c a c    low, high, top:  197
++ "a" > d097 c   consonant
+dk(lbrac) + "a" >  beep c  
+dk(squot) + "a" >  beep c  
+c dk(rbrac) + "a" >  d032 c
+
+c ----------------------------
+c B c   low, high, top:  066 176 218
++ "B" > d066 c 
+dk(lbrac) + "B" >  d225 c  
+dk(squot) + "B" >  d178 c 
+c dk(rbrac) + "B" >  d032 c
+
+c b c   low, high, top:  098
++ "b" > d098 c   
+dk(lbrac) + "b" >  beep c 
+dk(squot) + "b" >  beep c 
+c dk(rbrac) + "b" >  d032 c
+
+c ----------------------------
+c C c    low, high, top:  067 193 233
++ "C" >  d067 c 
+dk(lbrac) + "C" >  d239 c 
+dk(squot) + "C" >  d194 c 
+c dk(rbrac) + "C" >  d032 c
+
+c c c    low, high, top:099
++ "c" > d099 c  
+dk(lbrac) + "c" >  beep c 
+dk(squot) + "c" >  beep c 
+c dk(rbrac) + "c" >  d032 c
+
+c ----------------------------
+c D c   low, high, top:  068 165 208
++ "D" >  d068 c 
+dk(lbrac) + "D" >  d215 c 
+dk(squot) + "D" >  d166 c 
+c dk(rbrac) + "D" >  d032 c
+
+c d c    low, high, top:  100
++ "d" > d100 c 
+dk(lbrac) + "d" >  beep  c 
+dk(squot) + "d" >  beep  c 
+c dk(rbrac) + "d" >  d032 c
+
+c ----------------------------
+c E c    low, high, top:  069 190 230
++ "E" > d069 c 
+dk(lbrac) + "E" >  d237 c 
+dk(squot) + "E" >  d192 c 
+c dk(rbrac) + "E" >  d032 c
+
+c e c    low, high, top:  101
++ "e" > d101 c  
+dk(lbrac) + "e" >  beep c 
+dk(squot) + "e" >  beep c 
+c dk(rbrac) + "e" >  d032 c
+
+c ----------------------------
+c F c    low, high, top:  070 194 234
++ "F" > d070 c 
+dk(lbrac) + "F" >  d241 c 
+dk(squot) + "F" >  d196 c 
+c dk(rbrac) + "F" >  d032 c
+
+c f c   low, high, top:  102
++ "f" > d102 c 
+dk(lbrac) + "f" >  beep c 
+dk(squot) + "f" >  beep c 
+c dk(rbrac) + "f" >  d032 c
+
+c ----------------------------
+c G c  low, high, top:  071 166 209
++ "G" >  d071 c 
+dk(lbrac) + "G" >  d216 c 
+dk(squot) + "G" >  d167 c 
+c dk(rbrac) + "G" >  d032 c
+
+c g c   low, high, top:  103
++ "g" > d103 c 
+dk(lbrac) + "g" >  beep c 
+dk(squot) + "g" >  beep c 
+c dk(rbrac) + "g" >  d032 c
+
+c ----------------------------
+c H c    low, high, top:  072 167 210
++ "H" >  d072 c 
+dk(lbrac) + "H" >  d217 c 
+dk(squot) + "H" >  d168 c    
+c dk(rbrac) + "H" >  d032 c
+
+c h c    low, high, top:  104
++ "h" > d104 c 
+dk(lbrac) + "h" >  beep c
+dk(squot) + "h" >  beep c
+c dk(rbrac) + "h" >  d032 c
+
+c ----------------------------
+c I c   low, high, top:  073 168 211
++ "I" >  d073 c 
+dk(lbrac) + "I" >  d218 c 
+dk(squot) + "I" >  d169 c 
+c dk(rbrac) + "I" >  d032 c
+
+c > c  low, high, top:  105 184 224
++ "i" >  d105 c 
+dk(lbrac) + "i" >  d231 c  
+dk(squot) + "i" >  d186 c  
+c dk(rbrac) + "i" >  d032 c
+
+c ----------------------------
+c J c   low, high, top:  074 168 238
++ "J" > d074  c 
+dk(lbrac) + "J" >  d244 c 
+dk(squot) + "J" >  d199 c 
+c dk(rbrac) + "J" >  d032 c
+
+c j c    low, high, top:  106
++ "j" > d106 c 
+dk(lbrac) + "j" >  beep c 
+dk(squot) + "j" >  beep c 
+c dk(rbrac) + "j" >  d032 c
+
+c ----------------------------
+c K c   low, high, top:  075 169 212
++ "K" >  d075 c 
+dk(lbrac) + "K" >  d219 c  
+dk(squot) + "K" >  d170 c  
+c dk(rbrac) + "K" >  d032 c
+
+c k c    low, high, top:  107
++ "k" > d107 c 
+dk(lbrac) + "k" > beep c  
+dk(squot) + "k" > beep c  
+c dk(rbrac) + "k" > d032 c
+
+c ----------------------------
+c L c   low, high, top:  076 189 229
++ "L" > d076  c 
+dk(lbrac) + "L" >  d236 c 
+dk(squot) + "L" >  d191 c 
+c dk(rbrac) + "L" >  d032 c
+
+c l c    low, high, top:  108
++ "l" > d108 c 
+dk(lbrac) + "l" >  beep c 
+dk(squot) + "l" >  beep c 
+c dk(rbrac) + "l" >  d032 c
+
+c ----------------------------
+c M c    low, high, top:  077 171 214
++ "M" > d077 c 
+dk(lbrac) + "M" > d221 c 
+dk(squot) + "M" > d174 c 
+c dk(rbrac) + "M" > d032 c
+
+c m c    low, high, top:  109
++ "m" > d109 c 
+dk(lbrac) + "m" > beep c 
+dk(squot) + "m" > beep c 
+c dk(rbrac) + "m" > d032 c
+
+c ----------------------------
+c N c   low, high, top:  078 173 215
++ "N" > d078 c 
+dk(lbrac) + "N" > d222 c 
+dk(squot) + "N" > d175 c 
+c dk(rbrac) + "N" > d032 c
+
+c n c    low, high, top:  110
++ "n" > d110 c 
+dk(lbrac) + "n" > beep c 
+dk(squot) + "n" > beep c 
+c dk(rbrac) + "n" > d032 c
+
+c ----------------------------
+c O c   low, high, top:  079 196 236
++ "O" > d079 c 
+dk(lbrac) + "O" > d242 c 
+dk(squot) + "O" > d197 c 
+c dk(rbrac) + "O" > d032 c
+
+c o c    low, high, top:  111 185 225
++ "o" > d111 c 
+dk(lbrac) + "o" > d232 c  
+dk(squot) + "o" > d187 c 
+c dk(rbrac) + "o" > d032 c
+
+c ----------------------------
+c P c  low, high, top:  080 188 243
++ "P" > d080   c 
+dk(lbrac) + "P" > d249 c  
+dk(squot) + "P" > d204 c  
+c dk(rbrac) + "P" >  d032 c
+
+c p c    low, high, top:  112
++ "p" > d112 c 
+dk(lbrac) + "p" >  beep c  
+dk(squot) + "p" >  beep c  
+c dk(rbrac) + "p" >  d032 c
+
+c ----------------------------
+c Q c   low, high, top:  081 175 217
++ "Q" > d081 c 
+dk(lbrac) + "Q" > d224 c  
+dk(squot) + "Q" > d177 c  
+c dk(rbrac) + "Q" >  d032 c
+
+c q c    low, high, top:  113 163 206
++ "q" > d113 c 
+dk(lbrac) + "q" >  d213 c  
+dk(squot) + "q" >  d163 c  
+c dk(rbrac) + "q" >  d032 c
+
+c ----------------------------
+c R c   low, high, top:  082 170 213
++ "R" > d082  c 
+dk(lbrac) + "R" > d220 c  
+dk(squot) + "R" > d171 c  
+c dk(rbrac) + "R" >  d032 c
+
+c r c    low, high, top: 114
++ "r" > d114 c 
+dk(lbrac) + "r" > beep c  
+dk(squot) + "r" > beep c  
+c dk(rbrac) + "r" >  d032 c
+
+c ----------------------------
+c S c   low, high, top:  083 177 219
++ "S" > d083 c 
+dk(lbrac) + "S" > d226 c  
+dk(squot) + "S" > d179 c  
+c dk(rbrac) + "S" >  d032 c
+
+c s c    low, high, top:
++ "s" > d115 c 
+dk(lbrac) + "s" >  beep c  
+dk(squot) + "s" >  beep c  
+c dk(rbrac) + "s" >  d032 c
+
+c ----------------------------
+c T c    low, high, top:  084 179 221
++ "T" > d084 c 
+dk(lbrac) + "T" > d228 c  
+dk(squot) + "T" > d181 c  
+c dk(rbrac) + "T" >  d032 c
+
+c t c    low, high, top: 116
++ "t" > d116 c 
+dk(lbrac) + "t" > beep c  
+dk(squot) + "t" > beep c  
+c dk(rbrac) + "t" >  d032 c
+
+c ----------------------------
+c U c   low, high, top:  085
++ "U" > d085 c   == Pollard apostrophe suffix
+c 
+dk(lbrac) + "U" > beep c  
+dk(squot) + "U" > beep c  
+c dk(rbrac) + "U" >  d032 c
+
+c u c   low, high, top:  117 186 226
++ "u" > d117 c 
+dk(lbrac) + "u" > d233 c  
+dk(squot) + "u" > d188 c  
+c dk(rbrac) + "u" >  d032 c
+
+c ----------------------------
+c V c    low, high, top:  086 194 234
++ "V" > d086 c 
+dk(lbrac) + "V" > d240 c 
+dk(squot) + "V" > d195 c  
+c dk(rbrac) + "V" >  d032 c
+
+c v c    low, high, top:  118
++ "v" > d118 c 
+dk(lbrac) + "v" > beep c 
+dk(squot) + "v" > beep c  
+c dk(rbrac) + "v" >  d032 c
+
+c ----------------------------
+c W c    low, high, top:  087 197 237
++ "W" > d087 c 
+dk(lbrac) + "W" >  d243 c 
+dk(squot) + "W" >  d198 c  
+c dk(rbrac) + "W" >  d032 c
+
+c w c    low, high, top:  119
++ "w" > d119 c 
+dk(lbrac) + "w" >  beep c 
+dk(squot) + "w" >  beep c  
+c dk(rbrac) + "w" >  d032 c
+
+c ----------------------------
+c X c    low, high, top: 088
++ "X" > d088 c 
+dk(lbrac) + "X" >  beep c 
+dk(squot) + "X" >  beep c  
+c dk(rbrac) + "X" >  d032 c
+
+c x c    low, high, top: 120
++ "x" > d120 c 
+dk(lbrac) + "x" >  beep c 
+dk(squot) + "x" >  beep c  
+c dk(rbrac) + "x" >  d032 c
+
+c ----------------------------
+c Y c   low, high, top:  089 191 231
++ "Y" >  d089 c 
+dk(lbrac) + "Y" >  d229 c 
+dk(squot) + "Y" >  d184 c  
+c dk(rbrac) + "Y" >  d032 c
+
+c y c    low, high, top:  121
++ "y" > d121 c 
+c dk(lbrac) + "y" >  beep c
+c dk(squot) + "y" >  beep c
+c dk(rbrac) + "y" >  d032 c
+
+c ----------------------------
+c Z c    low, high, top:  090
++ "Z" > beep c d090  --  reverse of d089;  or leave empty
+dk(lbrac) + "Z" >  beep c   d231
+dk(squot) + "Z" >  beep c   d205
+c dk(rbrac) + "Z" >  d032 c
+
+c z c    low, high, top:  122
++ "z" > d122 c 
+dk(lbrac) + "z" >  beep c  
+dk(squot) + "z" >  beep c  
+c dk(rbrac) + "z" >  d032 c
+
+c ----------------------------
+
+c == misc :  music, unused dk-positions, etc
+
+c == reserved positions (Microsoft)
+
+c eof
