@@ -1,0 +1,1 @@
+Compiled and uncompiled TECkit conversion tables are included here. The Limbu one maps data using the Namdhinggo SIL L custom-encoded font to Unicode. 

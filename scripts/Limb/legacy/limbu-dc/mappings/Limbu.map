@@ -1,0 +1,146 @@
+; Limbu.map
+; Copyright (c) 2007 SIL International.
+
+; TECkit mapping to convert from Limbu legacy encoding (as used by Sirijonga)
+; to Unicode and back
+
+EncodingName            "Limbu-Sirijonga"
+DescriptiveName         "Limbu"
+Version                 "1.0"
+Contact                 "mailto:victor_gaultney@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "Limbu-001"
+Copyright				"(c)2007 SIL International"
+
+
+Pass(Byte_Unicode)
+
+ByteDefault 0x5E ; number sign 
+UniDefault replacement_character 
+
+ByteClass [CTL] = (   0x00 .. 0x1F   )
+UniClass  [CTL] = ( U+0000 .. U+001F )
+[CTL]     <>     [CTL]
+
+; Unicode chars with no glyphs in legacy font:
+;		U+1909 (LIMBU LETTER JHA)
+;		U+190A (LIMBU LETTER YAN)
+;		U+191A (LIMBU LETTER SSA)
+;		U+1932 (LIMBU SMALL LETTER ANUSVARA)
+;		U+1940 (LIMBU SIGN LOO)
+;		U+1944 (LIMBU EXCLAMATION MARK)
+
+;mappings - * means direct from ASCII, ** means to another Unicode block
+0x20     <>     U+0020     ; space*
+0x21     <>     U+0021     ; exclam*
+0x22     <>     U+0022	   ; quotedbl*
+;0x23     <>     ?
+0x24     <>     U+0024     ; dollar*                       (NOT IN FONT)
+0x25     <>     U+0025     ; percent*
+0x26     <>     U+0026     ; ampersand*                    (NOT IN FONT)
+0x27     <>     U+1922     ; limbu_vowel_sign_u
+0x28     <>     U+0028     ; parenleft*
+0x29     <>     U+0029     ; parenright*
+0x2A     <>     U+002A     ; asterisk*
+0x2B     <>     U+002B     ; plus*
+0x2C     <>     U+002C     ; comma*
+0x2D     <>     U+193B     ; limbu_sign_sa-i
+0x2E     <>     U+0965     ; devanagari_double_danda**
+0x2F     <>     U+002F     ; solidus*
+0x30     <>     U+1946     ; limbu_digit_zero
+0x31     <>     U+1947     ; limbu_digit_one
+0x32     <>     U+1948     ; limbu_digit_two
+0x33     <>     U+1949     ; limbu_digit_three
+0x34     <>     U+194A     ; limbu_digit_four
+0x35     <>     U+194B     ; limbu_digit_five
+0x36     <>     U+194C     ; limbu_digit_six
+0x37     <>     U+194D     ; limbu_digit_seven
+0x38     <>     U+194E     ; limbu_digit_eight
+0x39     <>     U+194F     ; limbu_digit_nine
+0x3A      >     U+003A     ; colon  (0x60 is appropriate reverse mapping)
+0x3B     <>     U+191B     ; limbu_letter_sa
+0x3C     <>     U+005B     ; bracketleft
+0x3D     <>     U+003D     ; equal*
+0x3E     <>     U+005D     ; bracketright*
+0x3F     <>     U+003F     ; question*
+0x40     <>     U+0040     ; at*
+0x41     <>     U+0041     ; latin_capital_letter_A        (NOT IN FONT)
+0x42     <>     U+003B     ; semicolon
+0x43     <>     U+1939     ; limbu_sign_mukphreng
+0x44     <>     U+1936     ; limbu_small_letter_ma
+0x45     <>     U+007B     ; braceleft
+0x46     <>     U+1916     ; limbu_letter_ra
+0x47     <>     U+1934     ; limbu_small_letter_na
+;0x48     <>     U+0048     ; latin_capital_letter_H        (ORIGINAL)
+0x48     <>     U+1922 U+192A      ; limbu_vowel_sign_u + limbu_subjoined_letter_ra        (NEW)
+0x49     <>     U+1931     ; limbu_small_letter_nga
+0x4A     <>     U+192B     ; limbu_subjoined_letter_wa
+0x4B     <>     U+1935     ; limbu_small_letter_pa
+0x4C     <>     U+1921 U+193A     ; limbu_vowel_sign_i + limbu_sign_kemphreng
+0x4D     <>     U+193A     ; limbu_sign_kemphreng
+0x4E     <>     U+1938     ; limbu_small_letter_la
+0x4F     <>     U+1929     ; limbu_subjoined_letter_ya
+0x50     <>     U+1904     ; limbu_letter_gha
+0x51     <>     U+003C     ; less
+0x52     <>     U+007D     ; braceright
+0x53     <>     U+1930     ; limbu_small_letter_ka
+0x54     <>     U+1933     ; limbu_small_letter_ta
+0x55     <>     U+1937     ; limbu_small_letter_ra
+0x56     <>     U+002E     ; period
+0x57     <>     U+003E     ; greater
+;0x58     <>     ?          ; is this the same as the limbu exclamation mark?
+0x59     <>     U+0027     ; quotesingle
+0x5A     <>     U+1945     ; limbu_question_mark
+0x5B     <>     U+1927     ; limbu_vowel_sign_e
+0x5C     <>     U+005C     ; reverse_solidus*
+0x5D     <>     U+1923     ; limbu_vowel_sign_ee (alone)
+0x5E     <>     U+0023     ; numbersign
+0x5F     <>     U+002D     ; hyphen
+0x60     <>     U+003A     ; colon
+0x61     <>     U+1912     ; limbu_letter_ba
+0x62     <>     U+190D     ; limbu_letter_da
+0x63     <>     U+1900     ; limbu_vowel-carrier_letter
+0x64     <>     U+1914     ; limbu_letter_ma
+0x65     <>     U+1913     ; limbu_letter_bha
+0x66 0x5D <>    U+1925     ; limbu_vowel_sign_oo
+0x66 0x7D <>    U+1926     ; limbu_vowel_sign_au
+0x66     <>     U+1920     ; limbu_vowel_sign_a (alone)
+0x67     <>     U+190F     ; limbu_letter_na
+0x68     <>     U+1908     ; limbu_letter_ja
+0x69     <>     U+1905     ; limbu_letter_nga
+0x6A     <>     U+1918     ; limbu_letter_wa
+0x6B     <>     U+1910     ; limbu_letter_pa
+0x6C     <>     U+1921     ; limbu_vowel_sign_i
+0x6D     <>     U+1911     ; limbu_letter_pha
+0x6E     <>     U+1917     ; limbu_letter_la
+0x6F     <>     U+1915     ; limbu_letter_ya
+0x70     <>     U+1907     ; limbu_letter_cha
+0x71     <>     U+192A     ; limbu_subjoined_letter_ra
+0x72     <>     U+1906     ; limbu_letter_ca
+0x73     <>     U+1901     ; limbu_letter_ka
+0x74     <>     U+190B     ; limbu_letter_ta
+0x75     <>     U+1903     ; limbu_letter_ga
+0x76     <>     U+1902     ; limbu_letter_kha
+0x77     <>     U+190E     ; limbu_letter_dha
+0x78     <>     U+191C     ; limbu_letter_ha
+0x79     <>     U+190C     ; limbu_letter_tha
+0x7A     <>     U+1919     ; limbu_letter_sha
+0x7B     <>     U+1928     ; limbu_vowel_sign_o
+0x7C     <>     U+007C     ; bar*
+0x7D     <>     U+1924     ; limbu_vowel_sign_ai (alone)
+0x7E     <>     U+007E     ; asciitilde*
+;0x7F     <>          ;
+
+0xD2     <>     U+201C     ; quotedblleft
+0xD3     <>     U+201D     ; quotedblright
+0xD4     <>     U+2018     ; quotesingleleft
+0xD5     <>     U+2019     ; quotesingleright
+
+Pass(Unicode)
+; to reorder the subjoined cons
+
+UniClass [VOWEL] = ( U+1920 .. U+1928 )
+UniClass [SUBJ] = ( U+1929 .. U+192B )
+
+[VOWEL]=V [SUBJ]=S   <>   @S @V
+[VOWEL]=V U+193A [SUBJ]=S   <>   @S @V U+193A

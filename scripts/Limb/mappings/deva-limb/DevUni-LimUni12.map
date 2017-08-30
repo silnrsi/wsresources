@@ -1,0 +1,277 @@
+; DevUni-LimUni.map
+; TECkit mapping to convert from Devanagari Unicode to Limbu Unicode and back
+
+; s.p.smith
+; ver 1.0,  08-May-2009 - initial version
+; ver 1.1,  13-May-2009 - rewritten to take ZW(N)J into account to distinguish 1/2C from C+halant in certain contexts.
+; ver 1.2,  12-Jun-2009 - use subjoined glides on da even if explicit halant (ZWNJ) in Dev.
+
+EncodingName            "DevUni-LimUni"
+DescriptiveName         "DevUni-LimUni"
+Version                 "1.2"
+Contact                 "mailto:steve_smith@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "Dev-Lim001"
+Copyright		"(c)2009 SIL International"
+
+
+;------------------------------------------
+; Main pass -- convert Devanagari to Limbu.
+; Any character not listed will be retained unchanged.
+;
+Pass(Unicode)
+
+; All consonants that have a Limbu equivalent, except ng. Also removed da and ra for combination with glides
+Class[DevC] = ( U+0915 .. U+0918 U+091A .. U+091E U+0924 U+0925 U+0927 U+0928 U+092A .. U+092F U+0932 U+0935 .. U+0939 )
+Class[LimC] = ( U+1901 .. U+1904 U+1906 .. U+190A U+190B U+190C U+190E U+190F U+1910 .. U+1915 U+1917 U+1918 .. U+191C )
+
+; The following three classes are used in conjunction with glides
+Class[DevCFull] =  ( U+0915 U+0919 U+0924 U+0928 U+092A U+092E U+0932 )  ; Devanagari ka, nga, ta, na, pa, ma, la ; removed ra for ra+glide
+Class[LimCFull] =  ( U+1901 U+1905 U+190B U+190F U+1910 U+1914 U+1917 )  ; Limbu full form of above Cs
+Class[LimCFinal] = ( U+1930 U+1931 U+1933 U+1934 U+1935 U+1936 U+1938 )  ; Limbu final form of above Cs
+
+;COther is those that don't have a final form in Limbu
+Class[DevCOther] = ( U+0916 U+0917 U+0918 U+091A .. U+091E U+0925 U+0927 U+092B .. U+092D U+092F U+0935 .. U+0939 ) ; took out da
+Class[LimCOther] = ( U+1902 U+1903 U+1904 U+1906 .. U+190A U+190C U+190E U+1911 .. U+1913 U+1915 U+1918 .. U+191C )
+
+Class[Digit] = ( U+0030 .. U+0039 U+1946 .. U+194F)	; ASCII and Limbu digits
+
+U+0021 <> U+1944		; exclamation
+U+003F <> U+1945		; question
+U+002C <> U+002E		; comma becomes dot
+U+002E <  U+002E / [Digit] _	; on reverse, dot stays dot if following a digit
+
+; U+0900 <>			; undefined
+U+0901  > U+1932		; candrabindu - map to anusvara (1-way)
+U+0902 <> U+1932		; anusvara
+U+0903 <> U+193A		; visarga - map to kemphreng
+; U+0904 <>			; short A - no Limbu equivalent
+U+0905 <> U+1900		; Letter A - map to vowel-carrier
+U+0906 <> U+1900 U+1920		; Letter AA - map to vowel-carrier + A
+U+0907 <> U+1900 U+1921		; Letter I
+U+0908  > U+1900 U+1921 U+193A	; Letter II (1-way. should never occur in Dev. If found, will reverse as I+visarga) 
+U+0909 <> U+1900 U+1922		; Letter U
+U+090A  > U+1900 U+1922 U+193A	; Letter UU (1-way. should never occur in Dev. If found, will reverse as U+visarga)
+; U+090B <>      		; vocalic r - no limbu equivalent
+; U+090C <>      		; vocalic l - no limbu equivalent
+; U+090D <>      		; candra e - no limbu equivalent
+; U+090E <>      		; short e - no limbu equivalent
+U+090F <> U+1900 U+1923		; Letter e (Limbu ee)
+U+090F U+093C <> U+1900 U+1927	; Letter E (Limbu e)
+U+0910 <> U+1900 U+1924		; Letter AI
+; U+0911 <>      		; candra o - no limbu equivalent
+; U+0912 <>      		; short o - no limbu equivalent
+U+0913 <> U+1900 U+1925		; Letter O
+U+0914 <> U+1900 U+1926		; Letter AU
+
+U+0915 <> U+1901	; letter ka
+U+0916 <> U+1902	; letter kha
+U+0917 <> U+1903	; letter ga
+U+0918 <> U+1904	; letter gha
+U+0919 <> U+1905	; letter nga
+U+091A <> U+1906	; letter ca
+U+091B <> U+1907	; letter cha
+U+091C <> U+1908	; letter ja
+U+091D <> U+1909	; letter jha
+U+091E <> U+190A	; letter nya (Limbu yan)
+; U+091F <>		; letter tta - no limbu equivalent
+; U+0920 <>		; letter ttha - no limbu equivalent
+; U+0921 <>		; letter ddaa - no limbu equivalent 
+; U+0922 <>		; letter ddha - no limbu equivalent
+; U+0923 <>		; letter nna - no limbu equivalent
+U+0924 <> U+190B	; letter ta
+U+0925 <> U+190C	; letter tha
+U+0926 <> U+190D	; letter da
+U+0927 <> U+190E	; letter dha
+U+0928 <> U+190F	; letter na
+; U+0929 <>		; letter nnna - no limbu equivalent
+U+092A <> U+1910	; letter pa
+U+092B <> U+1911	; letter pha
+U+092C <> U+1912	; letter ba
+U+092D <> U+1913	; letter bha
+U+092E <> U+1914	; letter ma
+U+092F <> U+1915	; letter ya
+U+0930 <> U+1916	; letter ra
+; U+0931 <>		; letter rra - no limbu equivalent
+U+0932 <> U+1917	; letter la
+; U+0933 <> 		; letter lla - no limbu equivalent
+; U+0934 <>		; letter llla - no limbu equivalent
+U+0935 <> U+1918	; letter wa
+U+0936 <> U+1919	; letter sha
+U+0937 <> U+191A	; letter ssa
+U+0938 <> U+191B	; letter sa
+U+0939 <> U+191C	; letter ha
+
+; U+093A <>	; undefined
+; U+093B <>	; undefined
+; U+093C <> 	; nukta - no Limbu equivalent
+; U+093D <> 	; avagraha - no Limbu equivalent
+
+U+093E <> U+1920	; vowel sign a
+U+093F <> U+1921	; vowel sign i
+U+0940  > U+1921 U+193A	; vowel sign ii (1-way. should never occur in Dev. If found, will reverse as i+visarga)
+U+0941 <> U+1922	; vowel sign u
+U+0942  > U+1922 U+193A	; vowel sign uu (1-way. should never occur in Dev. If found, will reverse as u+visarga)
+; U+0943 <> 		; vowel sign r - no limbu equivalent
+; U+0944 <> 		; vowel sign rr - no limbu equivalent
+; U+0945 <> 		; vowel sign candra e - no limbu equivalent
+; U+0946 <> 		; vowel sign short e - no limbu equivalent
+U+0947 <> U+1923	; vowel sign e (Limbu ee)
+U+0947 U+093C <> U+1927	; vowel sign E (Limbu e)
+U+093C U+0947  > U+1927	; alternate keying order for E (dot on consonant)
+U+0948 <> U+1924	; vowel sign ai
+; U+0949 <> 		; vowel sign candra o - no limbu equivalent
+; U+094A <> 		; vowel sign short o - no limbu equivalent
+U+094B <> U+1925	; vowel sign o (limbu oo)
+U+094C <> U+1926	; vowel sign au 
+U+094D <> U+193B	; virama - map to sa-i
+; U+094E <>		; undefined
+; U+094F <>		; undefined
+
+;Half-C (with or without ZWJ) + glide -> FullC + subjoined-glide
+[DevC] U+094D U+200D U+092F <> [LimC] U+1929	; 1/2C + ya -> FullC + sub-ya
+[DevC] U+094D        U+092F  > [LimC] U+1929	; 
+[DevC] U+094D U+200D U+0930  > [LimC] U+192A	; 1/2C + ra -> FullC + sub-ra
+[DevC] U+094D        U+0930 <> [LimC] U+192A	; ra comes back with no ZWJ, to get lower-r
+[DevC] U+094D U+200D U+0935 <> [LimC] U+192B	; 1/2C + wa -> FullC + sub-wa
+[DevC] U+094D        U+0935  > [LimC] U+192B	; 
+
+U+0926 U+094D U+200C U+092F  > U+190D U+1929	; Don't use sa_i with da, even if Dev had explicit halant with ZWNJ
+U+0926 U+094D U+200D U+092F  > U+190D U+1929
+U+0926 U+094D        U+092F <> U+190D U+1929	; also, da uses conjunct on return, not ZWJ
+U+0926 U+094D U+200C U+0930  > U+190D U+192A
+U+0926 U+094D U+200D U+0930  > U+190D U+192A
+U+0926 U+094D        U+0930 <> U+190D U+192A
+U+0926 U+094D U+200C U+0935  > U+190D U+192B
+U+0926 U+094D U+200D U+0935  > U+190D U+192B
+U+0926 U+094D        U+0935 <> U+190D U+192B
+
+[DevCOther] U+094D U+200C U+092F <> [LimCOther] U+193B U+1915	; explicit halant on other consonants gets preserved
+[DevCOther] U+094D U+200C U+0930 <> [LimCOther] U+193B U+1916
+[DevCOther] U+094D U+200C U+0935 <> [LimCOther] U+193B U+1918
+
+;ra is opposite - use raFinal + full glide when 1/2C (ie, reph, no ZWJ). Note returns without ZWJ, ie eyelash not preserved
+U+0930 U+094D U+200D U+092F  > U+1937 U+1915	; ra + ya -> RaFinal + full-ya
+U+0930 U+094D        U+092F <> U+1937 U+1915	; ra + ya -> RaFinal + full-ya
+U+0930 U+094D U+200D U+0930  > U+1937 U+1916	; ra + ra -> RaFinal + full-ra
+U+0930 U+094D        U+0930 <> U+1937 U+1916	; ra + ra -> RaFinal + full-ra
+U+0930 U+094D U+200D U+0935  > U+1937 U+1918	; ra + wa -> RaFinal + full-wa
+U+0930 U+094D        U+0935 <> U+1937 U+1918	; ra + wa -> RaFinal + full-wa
+
+;[DevCFull] contains only those Cs with final form in Limbu.
+;When used with explicit halant in Devanagari, want FinalC + full glide rather than FullC + sub-glide
+[DevCFull] U+094D U+200C U+092F <> [LimCFinal] U+1915	; C-halant + ya -> FinalC + full-ya
+[DevCFull] U+094D U+200C U+0930 <> [LimCFinal] U+1916	; C-halant + ra -> FinalC + full-ra
+[DevCFull] U+094D U+200C U+0935 <> [LimCFinal] U+1918	; C-halant + wa -> FinalC + full-wa
+
+;ra is opposite - want FullRa + sub-glide when halant used (which is never, so these 3 lines are redundant!)
+U+0930 U+094D U+200C U+092F <> U+1916 U+1929	; Ra-halant + glide -> FullRa + sub-glide
+U+0930 U+094D U+200C U+0930 <> U+1916 U+192A
+U+0930 U+094D U+200C U+0935 <> U+1916 U+192B
+
+[DevCFull] U+094D <> [LimCFinal]	; when no glide, use FinalC whether DevC is halanted or half.
+U+0930 U+094D <> U+1937			; ra needs trapping separately since removed from [DevCFull]
+
+; 1-way mappings to prevent Devanagari conjuncts forming on reverse
+; Some of these will never occur in Limbu, but I'm listing them all
+U+0915 U+094D U+200D U+0915	< U+1930 U+1901		; kka
+U+0915 U+094D U+200D U+0924	< U+1930 U+190B		; kta
+U+0915 U+094D U+200D U+0937	< U+1930 U+191A		; kssa
+U+0915 U+094D U+200C U+0930	< U+1930 U+192A		; kra - use ZWNJ to get halant
+U+0919 U+094D U+200C U+0915	< U+1931 U+1901		; ngka
+U+0919 U+094D U+200C U+0916	< U+1931 U+1902		; ngkha
+U+0919 U+094D U+200C U+0917	< U+1931 U+1903		; ngga
+U+0919 U+094D U+200C U+0918	< U+1931 U+1904		; nggha
+U+0919 U+094D U+200C U+0919	< U+1931 U+1905		; ngnga
+U+0919 U+094D U+200C U+0939	< U+1931 U+191C		; ngha
+U+091A U+094D U+200D U+091A	< U+1906 U+193B U+1906	; cca
+U+0926 U+094D U+200D U+0926	< U+190D U+193B U+190D	; dda
+U+0926 U+094D U+200D U+0927	< U+190D U+193B U+190E	; ddha
+U+0926 U+094D U+200D U+092E	< U+190D U+193B U+1914	; dma
+;U+0926 U+094D U+200D U+092F	< U+190D U+1929		; dya
+;U+0926 U+094D U+200D U+0935	< U+190D U+192B		; dwa
+U+0928 U+094D U+200D U+0928	< U+1934 U+190F		; nna
+U+092A U+094D U+200D U+0924	< U+1935 U+190B		; pta
+U+092E U+094D U+200D U+0932	< U+1936 U+1917		; mla
+U+0932 U+094D U+200D U+0932	< U+1938 U+1917		; lla
+U+0936 U+094D U+200D U+091A	< U+1919 U+193B U+1906	; shca
+U+0936 U+094D U+200D U+0935	< U+1919 U+192B		; shwa
+U+0938 U+094D U+200D U+0928	< U+191B U+193B U+190F	; sna
+; catch subjoined characters left on their own by the above rules
+U+094D U+092F < U+1929	; subjoined ya
+U+094D U+0930 < U+192A	; subjoined ra
+U+094D U+0935 < U+192B	; subjoined wa
+
+U+0964 <> U+0964	; danda - leave as is
+U+0965 <> U+0965	; double danda - leave as is
+
+; Convert Devanagari digits to Limbu
+; Note Arabic (English) digits are not changed
+U+0966 <> U+1946	; digit zero
+U+0967 <> U+1947	; digit one
+U+0968 <> U+1948	; digit two
+U+0969 <> U+1949	; digit three
+U+096A <> U+194A	; digit four
+U+096B <> U+194B	; digit five
+U+096C <> U+194C	; digit six
+U+096D <> U+194D	; digit seven
+U+096E <> U+194E	; digit eight
+U+096F <> U+194F	; digit nine
+
+U+097D <> U+1939	; glottal <> mukphreng
+
+U+200D > 		; get rid of stray ZW(N)J 
+U+200C > 
+
+; --------------------------------------------
+;         END OF FUNCTIONAL TABLE
+; --------------------------------------------
+
+; The following characters from the Devanagari block
+; have no Limbu equivalents, so are not matched.
+; If they occur in the input they will remain unchanged.
+
+; Sanskrit symbols
+; U+0950 <>		; OM
+; U+0951 <>		; udatta
+; U+0952 <>		; anudatta
+; U+0953 <>		; grave
+; U+0954 <>		; acute
+
+; U+0955 <>		; undefined
+; U+0956 <>		; undefined
+; U+0957 <>		; undefined
+
+; Combinations with nukta
+; U+0958 <>		; qa
+; U+0959 <>		; khha
+; U+095A <>		; ghha
+; U+095B <>		; za
+; U+095C <>		; dddha
+; U+095D <>		; rha
+; U+095E <>		; fa
+; U+095F <>		; yya
+
+; Sanskrit vowels
+; U+0960 <>		; vocalic r
+; U+0961 <>		; vocalic rr
+; U+0962 <>		; vocalic l
+; U+0963 <>		; vocalic ll
+
+; U+0970 <>		; abbreviation sign
+
+; TUS 5.0/5.1 additions
+; U+0971 <>		; Devanagari high spacing dot
+; U+0972 <>		; candra A
+; U+0973 <>		; undefined
+; U+0974 <>		; undefined
+; U+0975 <>		; undefined
+; U+0976 <>		; undefined
+; U+0977 <>		; undefined
+; U+0978 <>		; undefined
+; U+0979 <>		; undefined
+; U+097A <>		; undefined
+; U+097B <>		; gga
+; U+097C <>		; jja
+; U+097E <>		; ddda
+; U+097F <>		; bba
