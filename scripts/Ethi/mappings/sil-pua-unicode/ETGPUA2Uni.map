@@ -2,9 +2,9 @@
 ;   Conversion Type = Legacy_to_from_Unicode
 ;   Left-hand side font = Arial Unicode MS;11.25
 ;   Right-hand side font = Arial Unicode MS;11.25
-;   Main Window Position = 549,166,920,1093
-;   Left-hand side Character Map Window Position = 658,0,457,446
-;   Right-hand side Character Map Window Position = 658,446,457,446
+;   Main Window Position = 549,166,920,884
+;   Left-hand side Character Map Window Position = 76,27,457,446
+;   Right-hand side Character Map Window Position = 42,480,457,446
 
 ; This converts data that used the unreleased "SIL Abyssinica" font 
 ; PUA codepoints to Unicode 4.1 codepoints

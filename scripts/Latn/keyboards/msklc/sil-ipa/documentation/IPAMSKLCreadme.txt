@@ -1,5 +1,5 @@
-IPA Unicode 6.2 (ver 1.3)  MSK readme.txt
-version 1.3
+IPA Unicode 6.2 (ver 1.4)  MSK readme.txt
+version 1.4
 
 This keyboard uses The Microsoft Keyboard Layout Creator (MSKLC):
 http://www.microsoft.com/globaldev/tools/msklc.mspx
@@ -12,7 +12,7 @@ since the Keyman keyboard often used more than two keystrokes and this is
 not allowed using MSKLC. Please read keyboard pdf
 for installation instructions and the keyboard layout.
 
-This keyboard is copyright ©2007-2013 by SIL International. It is distributed
+This keyboard is copyright ©2007-2014 by SIL International. It is distributed
 under the X11 free software license:
 
 
@@ -53,4 +53,4 @@ SIL Non-Roman Script Initiative
 Dallas, TX 75236
 USA
 
-E-mail: mailto:fonts@sil.org
+E-mail: mailto:nrsi@sil.org
