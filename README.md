@@ -3,7 +3,7 @@
 A catch bag of writing system resource files organised by language tag, region, or script. Writing system resources are things like dictionaries, keyboards, and data conversion mappings.
 
 This repository is organized by:
-1) langs (languages) - using [ISO 639-3 codes](http://www-01.sil.org/iso639-3/codes.asp). Each resource should be placed in a folder named by the language's two- or three-letter code.
+1) langs (languages) - using [ISO 639-3 codes](https://iso639-3.sil.org/code_tables/639/data). Each resource should be placed in a folder named by the language's two- or three-letter code.
 2) regions and countries - using [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/)
 3) scripts - using [ISO 15924 codes](http://www.unicode.org/iso15924/codelists.html)
 
