@@ -1,0 +1,381 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 8/19/2018.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Galatia SIL;11.25
+;   Main Window Position = 0,0,658,1123
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+
+;SGkClassic.map
+;Copyright (c) 2018 SIL International.
+
+EncodingName			"SGkClassic"
+DescriptiveName			"SGkClassic Version 1.0 August 26 1997 encoding"
+
+Version					".9"
+Contact					"mailto:lorna_evans@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SGkClassic"
+
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Pass(Byte_Unicode)
+
+; Punctuation
+0x20 > U+0020
+0x22 > U+0022
+0x26 > U+0026
+
+0x2A > U+002A ; asterisk
+0x82 > U+002a ; asterisk
+
+0x2C > U+002C
+0x2D > U+002D
+0x5F > U+005f ; _
+
+0x7B > U+007b ; {
+0x7C > U+007c ; |
+0x85 > U+007c ; |
+0x8D > U+00a6 ; |
+0x7D > U+007d ; }
+0x7E > U+007e ; ~
+
+0x81 > U+003f ; ?
+0x83 > U+002f ; /
+0x84 > U+0021 ; !
+0x86 > U+003d ; =
+0x87 > U+0026 ; &
+0x88 > U+301a ; 27e6 fancy [
+0x89 > U+301b ; 27e7 fancy ]
+0x8A > U+2021 ; double dagger
+0x8B > U+00a7 ; section mark
+0x8C > U+002b ; +
+0x9B > U+0025 ; %
+0x9C > U+0023 ; #
+
+0x9F > U+0029 ; )
+0xB6 > U+00B6 ; paragraph mark
+
+0xC6 > U+00A3 ; pound sign
+0xC7 > U+00A2 ; cent sign
+
+0x5B > U+005b ; [
+0x5D > U+005d ; ]
+0xAE > U+2013 ; en dash
+
+; digits
+0x30 > U+0030
+0x31 > U+0031
+0x32 > U+0032
+0x33 > U+0033
+0x34 > U+0034
+0x35 > U+0035
+0x36 > U+0036
+0x37 > U+0037
+0x38 > U+0038
+0x39 > U+0039
+
+0x3B > U+037E ; Greek question mark? 003B
+0x3C > U+003C
+0x3E > U+003E
+
+
+; bullet
+0x21 > U+0387 ; small middle bullet
+0x2E > U+002E ; fullstop
+0x3F > U+0323 ; combining mark under
+0x9A > U+2022 ; large, extra space after
+0xB7 > U+2022 ; large, extra space after
+
+; colon looking character
+0x3A > U+003A
+0x99 > U+003A ; ???
+0xAD > U+0323 U+0323 ; combining mark below
+
+; combining macrons
+0xD6 > U+035E
+0xD8 > U+035E
+0xD7 > U+0305
+0xD9 > U+035F
+0xDB > U+035F
+0xDA > U+0332
+
+; combining diaeresis
+0x2B > U+0308
+0xA0 > U+0308
+
+; combining macron
+0x40 > U+0304 ; macron above
+0x56 > U+0304 ; macron above
+
+
+; breathing marks
+
+0x28 > U+0314 ; just preceeding, opening quote
+0xA5 > U+0314 ; above lc
+0xA8 > U+0314 ; probably goes before I
+0xB8 > U+0314 ; above lc iota
+
+0x27 > U+0313 ; spacing closing quote
+0xa1 > U+0313 ; spacing
+0x29 > U+0313 ; just preceeding, closing quote
+0xA6 > U+0313 ; above lc
+0xA9 > U+0313 ; probably goes before I
+0xB9 > U+0313 ; above lc iota
+
+0x2F > U+0301 ; combining acute
+0xa2 > U+0301 ; above lc
+0xAF > U+0301 ; above lc
+0xBF > U+0301 ; above lc iota
+
+0xA7 > U+1FFD ; similar to acute - spacing
+0xB0 > U+1FFD ; spacing - a little higher than a7 and more space afterward
+
+0x5C > U+0300 ; combining grave
+0xA3 > U+0300 ; above lc
+0xDC > U+0300 ; above lc
+0xEC > U+0300 ; above lc iota
+
+0x3D > U+0342 ; combining breve
+0xA4 > U+0342 ; above lc
+0xBD > U+0342 ; above lc
+0xCD > U+0342 ; above lc iota
+
+0xAA > U+0342 ; combining tilde
+
+0xAB > U+0327 ; cedilla
+0xAC > U+030C ; hachek
+0xC8 > U+02C8 ; ??? stress?
+
+
+0xC0 > U+0314 U+0301 ; opening quote, acute, above lc
+0xD0 > U+0314 U+0301 ; above lc
+0xE0 > U+0314 U+0301 ; above lc
+
+0xC1 > U+0314 U+0300 ; opening quote, grave, above lc
+0xD1 > U+0314 U+0300 ; above lc
+0xE1 > U+0314 U+0300 ; above lc
+
+0xC2 > U+0314 U+0342 ; opening quote, breve, above lc
+0xD2 > U+0314 U+0342 ; above lc
+0xE2 > U+0314 U+0342 ; above lc
+
+0xC3 > U+0313 U+0301 ; closing quote, acute, above lc
+0xD3 > U+0313 U+0301 ; above lc
+0xE3 > U+0313 U+0301 ; above lc
+
+0xC4 > U+0313 U+0300 ; closing quote, grave, above lc
+0xD4 > U+0313 U+0300 ; above lc
+0xE4 > U+0313 U+0300 ; above lc
+
+0xC5 > U+0313 U+0342 ; closing quote, breve, above lc
+0xD5 > U+0313 U+0342 ; above lc
+0xE5 > U+0313 U+0342 ; above lc
+
+; Greek Alphabet
+0x23 > U+1FB3
+0x24 > U+1FC3
+0x25 > U+1FF3
+0x5E > U+1fa5
+0x76 > U+1fc3
+0x4A > U+03d1
+
+; uppercase
+0x41 > U+0391 ; Alpha
+0x42 > U+0392
+0x47 > U+0393
+0x44 > U+0394
+0x45 > U+0395
+0x5A > U+0396
+0x48 > U+0397
+0x51 > U+0398
+0x49 > U+0399 ; iota
+0x4B > U+039a
+0x4C > U+039b
+0x4D > U+039c
+0x4E > U+039d
+0x43 > U+039e
+0x4F > U+039f
+0x50 > U+03a0
+0x52 > U+03a1
+0x53 > U+03a3
+0x54 > U+03a4
+0x55 > U+03a5
+0x46 > U+03a6
+0x58 > U+03a7
+0x59 > U+03a8
+0x57 > U+03a9
+
+0x49 0x2B > U+03AA ; 
+0x55 0x2B > U+03AB ; 
+0x49 0xA0 > U+03AA ; 
+0x55 0xA0 > U+03AB ; 
+
+0x28 0x41 > U+1F09 ; ALPHA just preceeding, opening quote
+0xA5 0x41 > U+1F09 ; above lc
+0xA8 0x41 > U+1F09 ; probably goes before I
+0xB8 0x41 > U+1F09 ; above lc iota
+
+0x28 0x45 > U+1F19 ; EPSILON just preceeding, opening quote
+0xA5 0x45 > U+1F19 ; above lc
+0xA8 0x45 > U+1F19 ; probably goes before I
+0xB8 0x45 > U+1F19 ; above lc iota
+
+0x28 0x48 > U+1F29 ; ETA just preceeding, opening quote
+0xA5 0x48 > U+1F29 ; above lc
+0xA8 0x48 > U+1F29 ; probably goes before I
+0xB8 0x48 > U+1F29 ; above lc iota
+
+0x28 0x49 > U+1F39 ; IOTA just preceeding, opening quote
+0xA5 0x49 > U+1F39 ; above lc
+0xA8 0x49 > U+1F39 ; probably goes before I
+0xB8 0x49 > U+1F39 ; above lc iota
+
+0x28 0x4F > U+1F49 ; OMICRON just preceeding, opening quote
+0xA5 0x4F > U+1F49 ; above lc
+0xA8 0x4F > U+1F49 ; probably goes before I
+0xB8 0x4F > U+1F49 ; above lc iota
+
+0x28 0x55 > U+1F59 ; UPSILON just preceeding, opening quote
+0xA5 0x55 > U+1F59 ; above lc
+0xA8 0x55 > U+1F59 ; probably goes before I
+0xB8 0x55 > U+1F59 ; above lc iota
+
+0x28 0x57 > U+1F69 ; OMEGA just preceeding, opening quote
+0xA5 0x57 > U+1F69 ; above lc
+0xA8 0x57 > U+1F69 ; probably goes before I
+0xB8 0x57 > U+1F69 ; above lc iota
+
+
+0x27 0x41 > U+1F08 ; ALPHA spacing closing quote
+0xa1 0x41 > U+1F08 ; spacing
+0x29 0x41 > U+1F08 ; just preceeding, closing quote
+0xA6 0x41 > U+1F08 ; above lc
+0xA9 0x41 > U+1F08 ; probably goes before I
+0xB9 0x41 > U+1F08 ; above lc iota
+
+0x27 0x45 > U+1F18 ; EPSILON spacing closing quote
+0xa1 0x45 > U+1F18 ; spacing
+0x29 0x45 > U+1F18 ; just preceeding, closing quote
+0xA6 0x45 > U+1F18 ; above lc
+0xA9 0x45 > U+1F18 ; probably goes before I
+0xB9 0x45 > U+1F18 ; above lc iota
+
+0x27 0x48 > U+1F28 ; ETA spacing closing quote
+0xa1 0x48 > U+1F28 ; spacing
+0x29 0x48 > U+1F28 ; just preceeding, closing quote
+0xA6 0x48 > U+1F28 ; above lc
+0xA9 0x48 > U+1F28 ; probably goes before I
+0xB9 0x48 > U+1F28 ; above lc iota
+
+0x27 0x49 > U+1F38 ; iota spacing closing quote
+0xa1 0x49 > U+1F38 ; spacing
+0x29 0x49 > U+1F38 ; just preceeding, closing quote
+0xA6 0x49 > U+1F38 ; above lc
+0xA9 0x49 > U+1F38 ; probably goes before I
+0xB9 0x49 > U+1F38 ; above lc iota
+
+0x27 0x4F > U+1F48 ; OMICRON spacing closing quote
+0xa1 0x4F > U+1F48 ; spacing
+0x29 0x4F > U+1F48 ; just preceeding, closing quote
+0xA6 0x4F > U+1F48 ; above lc
+0xA9 0x4F > U+1F48 ; probably goes before I
+0xB9 0x4F > U+1F48 ; above lc iota
+
+0x27 0x57 > U+1F68 ; OMEGA spacing closing quote
+0xa1 0x57 > U+1F68 ; spacing
+0x29 0x57 > U+1F68 ; just preceeding, closing quote
+0xA6 0x57 > U+1F68 ; above lc
+0xA9 0x57 > U+1F68 ; probably goes before I
+0xB9 0x57 > U+1F68 ; above lc iota
+
+
+
+; lowercase
+0x61 > U+03b1 ; alpha
+0x62 > U+03b2
+0x67 > U+03b3
+0x64 > U+03b4
+0x65 > U+03b5 ; epsilon
+0x7A > U+03b6
+0x68 > U+03b7 ; eta
+0x71 > U+03b8
+0x69 > U+03b9 ; iota
+0x6B > U+03ba
+0x6C > U+03bb
+0x6D > U+03bc
+0x6E > U+03bd
+0x63 > U+03be
+0x6F > U+03bf ; omicron
+
+0x70 > U+03c0
+0x72 > U+03c1
+0x6A > U+03c2
+0x73 > U+03c3
+0xBC > U+03c3
+0x74 > U+03c4
+0x75 > U+03c5 ; upsilon
+0x66 > U+03c6
+0x78 > U+03c7
+0x79 > U+03c8
+0x77 > U+03c9 ; omega
+0x69 0x2B > U+03ca
+0x75 0x2B > U+03cb
+0x69 0xA0 > U+03ca
+0x75 0xA0 > U+03cb
+
+0x61 0x2F > U+03AC ; alpha acute
+0x61 0xa2 > U+03AC ; above lc
+0x61 0xAF > U+03AC ; above lc
+
+0x69 0x2F > U+03AF ; iota acute
+0x69 0xa2 > U+03AF ; above lc
+0x69 0xAF > U+03AF ; above lc
+0x69 0xBF > U+03AF ; above lc iota
+
+0x65 0x2F > U+03AD ; epsilon combining acute
+0x65 0xa2 > U+03AD ; above lc
+0x65 0xAF > U+03AD ; above lc
+
+0x68 0x2F > U+03AE ; eta combining acute
+0x68 0xa2 > U+03AE ; above lc
+0x68 0xAF > U+03AE ; above lc
+
+0x6F 0x2F > U+03CC ; omicron combining acute
+0x6F 0xa2 > U+03CC ; above lc
+0x6F 0xAF > U+03CC ; above lc
+
+0x75 0x2F > U+03CD ; upsilon combining acute
+0x75 0xa2 > U+03CD ; above lc
+0x75 0xAF > U+03CD ; above lc
+
+0x77 0x2F > U+03CE ; omega combining acute
+0x77 0xa2 > U+03CE ; above lc
+0x77 0xAF > U+03CE ; above lc
+
+
+0x8F > U+02BE ; ???
+
+; Supplemental punctuation
+0x90 > U+2e06
+0x91 > U+2e00
+0x92 > U+2e30
+0x93 > U+2e02
+0x94 > U+2e03
+0x95 > U+2e09
+0x96 > U+2e0a
+0x97 > U+2e0b
+0x98 > U+2e0c
+
+0xB1 > U+03DE ; old Coptic?
+0xB2 > U+03D8 ; old Coptic?
+0xB3 > U+03D8 ; old Coptic?
+0xB4 > U+03DA ; old Coptic?
+0xB5 > U+03E0 ; old Coptic?
+
+0xBA > U+03F2 ; 
+0xBB > U+03C2 ; final sigma?
+0xBC > U+03C3
+
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+; (end of file)

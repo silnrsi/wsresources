@@ -1,0 +1,259 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 8/19/2018.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Galatia SIL;11.25
+;   Main Window Position = 0,0,658,1123
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+
+;SGkClassic.map
+;Copyright (c) 2018 SIL International.
+
+EncodingName			"SGkClassicWeb"
+DescriptiveName			"SGkClassicWeb from Silver Mountain Software 2000."
+
+Version					".9"
+Contact					"mailto:lorna_evans@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"SGkClassic"
+
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Pass(Byte_Unicode)
+
+0x20 > U+0020
+0x21 > U+0021
+0x22 > U+00A8
+; 0x23 > U+
+0x24 > U+00AB ; not sure this is right, more rounded
+0x25 > U+00BB ; not sure this is right, more rounded
+0x26 > U+0026 
+0x27 > U+0374 ; ???
+0x28 > U+0028
+0x29 > U+0029
+0x2A > U+002A
+0x2B > U+002B
+0x2C > U+002C
+0x2D > U+002D
+0x2E > U+002E
+0x2F > U+002F
+0x30 > U+0030
+0x31 > U+0031
+0x32 > U+0032
+0x33 > U+0033
+0x34 > U+0034
+0x35 > U+0035
+0x36 > U+0036
+0x37 > U+0037
+0x38 > U+0038
+0x39 > U+0039
+0x3A > U+003a
+0x3B > U+0387 ; ???
+0x3C > U+003C 
+0x3D > U+003D
+0x3E > U+003E
+0x3F > U+037E
+
+0x5B > U+005B
+0x5C > U+005C
+0x5D > U+005D
+
+0x7B > U+007B
+0x7C > U+007C
+0x7D > U+007D
+0x96 > U+2013
+0x7E > U+2014
+0x97 > U+2014
+0xA0 > U+00A0
+0xAC > U+00AC
+0xB6 > U+00B6
+0xB7 > U+00B7
+
+0x40 > U+0313 ; breathing
+0x48 > U+0313 ; breathing
+0x56 > U+0304 ; macron
+0x5E > U+0342
+0xA4 > U+0342
+0x5F > U+0345
+0x60 > U+0300 ; spacing
+0x68 > U+0314 ; breathing
+
+0xA9 > U+0313 U+FEFF U+0314 U+0301 ; goes around a character
+0xAA > U+0314 U+0300
+0xAB > U+0314 U+0342
+0xAD > U+0313 U+0301
+0xAE > U+0313 U+0300
+0xAF > U+0313 U+0342
+0xEE > U+0308 U+0301 ; to be typed before vowel
+0xEF > U+0308 U+0300 ; to be typed before vowel
+
+0x41 > U+0391 
+0x42 > U+0392
+0x47 > U+0393
+0x44 > U+0394
+0x45 > U+0395
+0x5A > U+0396
+0x4A > U+0397
+0x51 > U+0398
+0x49 > U+0399
+0x4B > U+039A
+0x4C > U+039B
+0x4D > U+039C
+0x4E > U+039D
+0x43 > U+039E
+0x4F > U+039F
+0x50 > U+03A0
+0x52 > U+03A1
+0x53 > U+03A3
+0x54 > U+03A4
+0x55 > U+03A5
+0x46 > U+03A6
+0x58 > U+03A7
+0x59 > U+03A8
+0x57 > U+03A9 
+
+0x61 > U+03B1 
+0x62 > U+03B2
+0x67 > U+03B3
+0x64 > U+03B4
+0x65 > U+03B5
+0x7A > U+03B6
+0x6A > U+03B7
+0x71 > U+03B8
+0x69 > U+03B9 
+0x6B > U+03BA
+0x6C > U+03BB
+0x6D > U+03BC
+0x6E > U+03BD
+0x63 > U+03BE
+0x6F > U+03BF
+0x70 > U+03C0
+0x72 > U+03C1
+0x76 > U+03C2
+0x73 > U+03C3
+0x74 > U+03C4
+0x75 > U+03C5
+0x66 > U+03C6
+0x78 > U+03C7
+0x79 > U+03C8
+0x77 > U+03C9
+
+0x80 > U+1F71
+0x81 > U+1F70
+0x82 > U+1FB6
+0x83 > U+1F01
+0x84 > U+1F05
+0x85 > U+1F03
+0x86 > U+1F07
+0x87 > U+1F00
+0x88 > U+1F04
+0x89 > U+1F02
+0x8A > U+1F06
+0x8B > U+1FB3
+0x8C > U+1FB4
+0x8D > U+1FB2
+0x8E > U+1FB7
+0x8F > U+1F81
+0x90 > U+1F85
+0x91 > U+1F83
+0x92 > U+1F87
+0x93 > U+1F80
+0x94 > U+1F84
+0x95 > U+1F82
+0x98 > U+1F87
+
+0x99 > U+1F73
+0x9A > U+1F72
+0x9B > U+1F11
+0x9C > U+1F15
+0x9D > U+1F10 
+0x9E > U+1F10
+0x9F > U+1F13
+
+0xA1 > U+1FA5
+0xA2 > U+1FA3
+0xA3 > U+1FA7
+0xA5 > U+1FA0
+0xA6 > U+1FA4
+0xA7 > U+1FA2 
+0xA8 > U+1FA6
+
+0xB0 > U+1F77
+0xB1 > U+1F76
+0xB2 > U+1FD6
+0xB3 > U+1F31
+0xB4 > U+1F35
+0xB5 > U+1F37
+
+0xB8 > U+1F30
+0xB9 > U+1F34
+0xBA > U+1F36
+0xBB > U+03CA
+0xBC > U+1FD3
+0xBD > U+1FD2
+0xBE > U+1F33
+0xBF > U+1FE5
+0xC0 > U+1F7B
+0xC1 > U+1F7A
+0xC2 > U+1FE6
+0xC3 > U+1F51
+0xC4 > U+1F55
+0xC5 > U+1F53
+0xC6 > U+1F57
+0xC7 > U+1F50
+0xC8 > U+1F54
+0xC9 > U+1F52
+0xCA > U+1F56
+0xCB > U+03CB
+0xCC > U+1FE3
+0xCD > U+1FE2
+0xCE > U+1F42
+0xCF > U+1FE4 
+0xD0 > U+1F75
+0xD1 > U+1F74
+0xD2 > U+1FC6
+0xD3 > U+1F21
+0xD4 > U+1F25
+0xD5 > U+1F23
+0xD6 > U+1F27
+0xD7 > U+1F20
+0xD8 > U+1F24
+0xD9 > U+1F22
+0xDA > U+1F26
+0xDB > U+1FC3
+0xDC > U+1FC4
+0xDD > U+1FC2
+0xDE > U+1FC7
+0xDF > U+1F91
+0xE0 > U+1F95
+0xE1 > U+1F93
+0xE2 > U+1F97
+0xE3 > U+1F90
+0xE4 > U+1F94
+0xE5 > U+1F92
+0xE6 > U+1F96
+0xE7 > U+1F79
+0xE8 > U+1F78
+0xE9 > U+1F41
+0xEA > U+1F45
+0xEB > U+1F43
+0xEC > U+1F40
+0xED > U+1F44
+0xF0 > U+1F7D
+0xF1 > U+1F7C 
+0xF2 > U+1FF6
+0xF3 > U+1F61
+0xF4 > U+1F65
+0xF5 > U+1F63
+0xF6 > U+1F67
+0xF7 > U+1F60
+0xF8 > U+1F64
+0xF9 > U+1F62
+0xFA > U+1F66
+0xFB > U+1FF3
+0xFC > U+1FF4
+0xFD > U+1FF2
+0xFE > U+1FF7
+0xFF > U+1FA1
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+; (end of file)
