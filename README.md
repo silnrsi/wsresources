@@ -15,7 +15,7 @@ resource into "regions" or "scripts" it is highly unlikely there would be a huns
 
 Examples of possible resource files for a language with code xxx. 
 
-Regarding Keyman keyboards, this repo is likely a good home for legacy Keyman keyboards. However, for Unicode Keyman keyboards we encourage them to be submitted to the [Keyman repo](https://github.com/keymanapp/keyboards).
+Regarding Keyman keyboards, this repo is likely a good home for legacy Keyman keyboards. However, for Unicode Keyman keyboards we encourage them to be submitted to the [Keyman repo](https://github.com/keymanapp/keyboards). Existing Keyman keyboards can be found here (search by language name or code): [Keyman](https://keyman.com/).
 
 ```
 wsresources
