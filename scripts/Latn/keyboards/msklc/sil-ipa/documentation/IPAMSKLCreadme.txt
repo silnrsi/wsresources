@@ -53,4 +53,4 @@ SIL Non-Roman Script Initiative
 Dallas, TX 75236
 USA
 
-E-mail: mailto:nrsi@sil.org
+E-mail: mailto:wstech@sil.org

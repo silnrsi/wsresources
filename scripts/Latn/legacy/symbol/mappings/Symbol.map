@@ -11,7 +11,7 @@ DescriptiveName	"Symbol font"
 ;	Mapping for 0xBD altered to use the U+23D0 introduced in Unicode 4
 
 Version		"1.0"
-Contact		"mailto:nrsi@sil.org"
+Contact		"mailto:wstech@sil.org"
 RegistrationAuthority	"SIL International"
 RegistrationName		"Symbol"
 
