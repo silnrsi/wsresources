@@ -1,0 +1,307 @@
+;SILEthBench.map
+;Copyright (c) 2002 SIL International.
+
+; Bench
+EncodingName		"SIL-ETHIOPIC_Bench"
+DescriptiveName		"SIL Ethiopic Bench"
+
+ByteDefault	'?'
+UniDefault	replacement_character
+
+ByteClass [ascii] = (0..127)
+UniClass  [ascii] = (0..127)
+ByteClass [letter] = ( 'a' .. 'z' )
+UniClass [letter] = ( U+0061 .. U+007a )
+ByteClass [digit] = ( '0' .. '9' )
+UniClass [digit] = ( U+0030 .. U+0039 )
+ByteClass	[CTL] = (   0x00 .. 0x1f     0x7f )
+UniClass	[CTL] =	( U+0000 .. U+001f U+007f )
+
+[CTL]	<>	[CTL]
+
+[digit] <> [digit]
+'\'		<>	reverse_solidus
+' ' <> space
+'*f' <>  asterisk latin_small_letter_f	; footnote
+'*'	<> asterisk
+'(c)' <> copyright_sign
+'(C)'  <> copyright_sign
+'!'	<> exclamation_mark
+'['	<> left_square_bracket
+']'	<> right_square_bracket
+'('	<> left_parenthesis
+')'	<> right_parenthesis
+'<<' 	<> left_pointing_double_angle_quotation_mark
+'>>' 	<> right_pointing_double_angle_quotation_mark
+'<' 	<> single_left_pointing_angle_quotation_mark
+'>' 	<> single_right_pointing_angle_quotation_mark
+; '<<' 	<> left_double_quotation_mark		; curly quotes
+; '>>' 	<> right_double_quotation_mark
+; '<' 	<> left_single_quotation_mark
+; '>' 	<> right_single_quotation_mark
+'--' 	<> en_dash
+'---' 	<> em_dash
+'-' 	<> hyphen
+'.' 	<> ethiopic_full_stop
+',' 	<> ethiopic_colon
+';' <> ethiopic_comma
+; ';' 	<> ethiopic_semicolon
+':' 	<> ethiopic_wordspace
+':-' 	<> ethiopic_preface_colon
+'??' 	<> ethiopic_question_mark
+'?' 	<> question_mark
+'@' 	<> full_stop		; roman full stop
+'#' 	<> no_break_space
+'ha' 	<> ethiopic_syllable_ha	; ha
+'hu' 	<> ethiopic_syllable_hu
+'hi' <> ethiopic_syllable_hi
+; 'ha' <> ethiopic_syllable_haa
+'he' 	<> ethiopic_syllable_hee
+'h' 	<> ethiopic_syllable_he
+'ho' 	<> ethiopic_syllable_ho
+'lv' 	<> ethiopic_syllable_la	; la
+'lu' 	<> ethiopic_syllable_lu
+'li' <> ethiopic_syllable_li
+'la' <> ethiopic_syllable_laa
+'le' 	<> ethiopic_syllable_lee
+'l' 	<> ethiopic_syllable_le
+'lo' 	<> ethiopic_syllable_lo
+'Ha' <> ethiopic_syllable_hha	; hha
+'Hu' <> ethiopic_syllable_hhu
+'Hi' <> ethiopic_syllable_hhi
+; 'Ha' <> ethiopic_syllable_hhaa
+'He' <> ethiopic_syllable_hhee
+'H' <> ethiopic_syllable_hhe
+'Ho' <> ethiopic_syllable_hho
+'mv' <> ethiopic_syllable_ma	; ma
+'mu' <> ethiopic_syllable_mu
+'mi' <> ethiopic_syllable_mi
+'ma' <> ethiopic_syllable_maa
+'me' <> ethiopic_syllable_mee
+'m' <> ethiopic_syllable_me
+'mo' <> ethiopic_syllable_mo
+'tsv' <> ethiopic_syllable_sza	; sza
+'tsu' <> ethiopic_syllable_szu
+'tsi' <> ethiopic_syllable_szi
+'tsa' <> ethiopic_syllable_szaa
+'tse' <> ethiopic_syllable_szee
+'ts' <> ethiopic_syllable_sze
+'tso' <> ethiopic_syllable_szo
+'rv' <> ethiopic_syllable_ra	; ra
+'ru' <> ethiopic_syllable_ru
+'ri' <> ethiopic_syllable_ri
+'ra' <> ethiopic_syllable_raa
+'re' <> ethiopic_syllable_ree
+'r' <> ethiopic_syllable_re
+'ro' <> ethiopic_syllable_ro
+'sv' <> ethiopic_syllable_sa	; sa
+'su' <> ethiopic_syllable_su
+'si' <> ethiopic_syllable_si
+'sa' <> ethiopic_syllable_saa
+'se' <> ethiopic_syllable_see
+'s' <> ethiopic_syllable_se
+'so' <> ethiopic_syllable_so
+'Sv' <> ethiopic_syllable_sha	; sha
+'Su' <> ethiopic_syllable_shu
+'Si' <> ethiopic_syllable_shi
+'Sa' <> ethiopic_syllable_shaa
+'Se' <> ethiopic_syllable_shee
+'S' <> ethiopic_syllable_she
+'So' <> ethiopic_syllable_sho
+'Kv' <> ethiopic_syllable_qa	; qa U+1240
+'Ku' <> ethiopic_syllable_qu
+'Ki' <> ethiopic_syllable_qi
+'Ka' <> ethiopic_syllable_qaa
+'Ke' <> ethiopic_syllable_qee
+'K' <> ethiopic_syllable_qe
+'Ko' <> ethiopic_syllable_qo
+'bv' <> ethiopic_syllable_ba	; ba U+1260
+'bu' <> ethiopic_syllable_bu
+'bi' <> ethiopic_syllable_bi
+'ba' <> ethiopic_syllable_baa
+'be' <> ethiopic_syllable_bee
+'b' <> ethiopic_syllable_be
+'bo' <> ethiopic_syllable_bo
+'tv' <> ethiopic_syllable_ta	; ta U+1270
+'tu' <> ethiopic_syllable_tu
+'ti' <> ethiopic_syllable_ti
+'ta' <> ethiopic_syllable_taa
+'te' <> ethiopic_syllable_tee
+'t' <> ethiopic_syllable_te
+'to' <> ethiopic_syllable_to
+'ZHv' <> ethiopic_syllable_xa	; xa U+1280
+'ZHu' <> ethiopic_syllable_xu
+'ZHi' <> ethiopic_syllable_xi
+'ZHa' <> ethiopic_syllable_xaa
+'ZHe' <> ethiopic_syllable_xee
+'ZH' <> ethiopic_syllable_xe
+'ZHo' <> ethiopic_syllable_xo
+'cv' <> ethiopic_syllable_ca	; ca
+'cu' <> ethiopic_syllable_cu
+'ci' <> ethiopic_syllable_ci
+'ca' <> ethiopic_syllable_caa
+'ce' <> ethiopic_syllable_cee
+'c' <> ethiopic_syllable_ce
+'co' <> ethiopic_syllable_co
+'nv' <> ethiopic_syllable_na	; na U+1290
+'nu' <> ethiopic_syllable_nu
+'ni' <> ethiopic_syllable_ni
+'na' <> ethiopic_syllable_naa
+'ne' <> ethiopic_syllable_nee
+'n' <> ethiopic_syllable_ne
+'no' <> ethiopic_syllable_no
+'Nv' <> ethiopic_syllable_nya	; nya U+1298
+'Nu' <> ethiopic_syllable_nyu
+'Ni' <> ethiopic_syllable_nyi
+'Na' <> ethiopic_syllable_nyaa
+'Ne' <> ethiopic_syllable_nyee
+'N' <> ethiopic_syllable_nye
+'No' <> ethiopic_syllable_nyo
+'xa' <> ethiopic_syllable_glottal_a	; glottal U+12A0
+'xu' <> ethiopic_syllable_glottal_u
+'xi' <> ethiopic_syllable_glottal_i
+; 'xa' <> ethiopic_syllable_glottal_aa
+'xe' <> ethiopic_syllable_glottal_ee
+'x' <> ethiopic_syllable_glottal_e
+'xo' <> ethiopic_syllable_glottal_o
+'a' <> ethiopic_syllable_glottal_a	; glottal U+12A0
+'u' <> ethiopic_syllable_glottal_u
+'i' <> ethiopic_syllable_glottal_i
+; 'a' <> ethiopic_syllable_glottal_aa
+'e' <> ethiopic_syllable_glottal_ee
+'o' <> ethiopic_syllable_glottal_o
+'kv' <> ethiopic_syllable_ka	; ka U+12A8
+'ku' <> ethiopic_syllable_ku
+'ki' <> ethiopic_syllable_ki
+'ka' <> ethiopic_syllable_kaa
+'ke' <> ethiopic_syllable_kee
+'k' <> ethiopic_syllable_ke
+'ko' <> ethiopic_syllable_ko
+'wv' <> ethiopic_syllable_wa	; wa U+12C8
+'wu' <> ethiopic_syllable_wu
+'wi' <> ethiopic_syllable_wi
+'wa' <> ethiopic_syllable_waa
+'we' <> ethiopic_syllable_wee
+'w' <> ethiopic_syllable_we
+'wo' <> ethiopic_syllable_wo
+'`v' <> ethiopic_syllable_pharyngeal_a	; pharyngeal U+12D0
+'`u' <> ethiopic_syllable_pharyngeal_u
+'`i' <> ethiopic_syllable_pharyngeal_i
+'`a' <> ethiopic_syllable_pharyngeal_aa
+'`e' <> ethiopic_syllable_pharyngeal_ee
+'`' <> ethiopic_syllable_pharyngeal_e
+'`o' <> ethiopic_syllable_pharyngeal_o
+'zv' <> ethiopic_syllable_za	; za U+12D8
+'zu' <> ethiopic_syllable_zu
+'zi' <> ethiopic_syllable_zi
+'za' <> ethiopic_syllable_zaa
+'ze' <> ethiopic_syllable_zee
+'z' <> ethiopic_syllable_ze
+'zo' <> ethiopic_syllable_zo
+'Zv' <> ethiopic_syllable_zha	; zha U+12E0
+'Zu' <> ethiopic_syllable_zhu
+'Zi' <> ethiopic_syllable_zhi
+'Za' <> ethiopic_syllable_zhaa
+'Ze' <> ethiopic_syllable_zhee
+'Z' <> ethiopic_syllable_zhe
+'Zo' <> ethiopic_syllable_zho
+'yv' <> ethiopic_syllable_ya	; ya U+12E8
+'yu' <> ethiopic_syllable_yu
+'yi' <> ethiopic_syllable_yi
+'ya' <> ethiopic_syllable_yaa
+'ye' <> ethiopic_syllable_yee
+'y' <> ethiopic_syllable_ye
+'yo' <> ethiopic_syllable_yo
+'dv' <> ethiopic_syllable_da	; da U+12F0
+'du' <> ethiopic_syllable_du
+'di' <> ethiopic_syllable_di
+'da' <> ethiopic_syllable_daa
+'de' <> ethiopic_syllable_dee
+'d' <> ethiopic_syllable_de
+'do' <> ethiopic_syllable_do
+'jv' <> ethiopic_syllable_ja	; ja U+1300
+'ju' <> ethiopic_syllable_ju
+'ji' <> ethiopic_syllable_ji
+'ja' <> ethiopic_syllable_jaa
+'je' <> ethiopic_syllable_jee
+'j' <> ethiopic_syllable_je
+'jo' <> ethiopic_syllable_jo
+'gv' <> ethiopic_syllable_ga	; ga U+1308
+'gu' <> ethiopic_syllable_gu
+'gi' <> ethiopic_syllable_gi
+'ga' <> ethiopic_syllable_gaa
+'ge' <> ethiopic_syllable_gee
+'g' <> ethiopic_syllable_ge
+'go' <> ethiopic_syllable_go
+'Tv' <> ethiopic_syllable_tha	; tha U+1320
+'Tu' <> ethiopic_syllable_thu
+'Ti' <> ethiopic_syllable_thi
+'Ta' <> ethiopic_syllable_thaa
+'Te' <> ethiopic_syllable_thee
+'T' <> ethiopic_syllable_the
+'To' <> ethiopic_syllable_tho
+'Cv' <> ethiopic_syllable_cha	; cha U+1328
+'Cu' <> ethiopic_syllable_chu
+'Ci' <> ethiopic_syllable_chi
+'Ca' <> ethiopic_syllable_chaa
+'Ce' <> ethiopic_syllable_chee
+'C' <> ethiopic_syllable_che
+'Co' <> ethiopic_syllable_cho
+'Pv' <> ethiopic_syllable_pha	; pha U+1330
+'Pu' <> ethiopic_syllable_phu
+'Pi' <> ethiopic_syllable_phi
+'Pa' <> ethiopic_syllable_phaa
+'Pe' <> ethiopic_syllable_phee
+'P' <> ethiopic_syllable_phe
+'Po' <> ethiopic_syllable_pho
+'Tsv' <> ethiopic_syllable_tsa	; tsa U+1338
+'Tsu' <> ethiopic_syllable_tsu
+'Tsi' <> ethiopic_syllable_tsi
+'Tsa' <> ethiopic_syllable_tsaa
+'Tse' <> ethiopic_syllable_tsee
+'Ts' <> ethiopic_syllable_tse
+'Tso' <> ethiopic_syllable_tso
+'fv' <> ethiopic_syllable_fa	; fa U+1348
+'fu' <> ethiopic_syllable_fu
+'fi' <> ethiopic_syllable_fi
+'fa' <> ethiopic_syllable_faa
+'fe' <> ethiopic_syllable_fee
+'f' <> ethiopic_syllable_fe
+'fo' <> ethiopic_syllable_fo
+'pv' <> ethiopic_syllable_pa	; pa U+1350
+'pu' <> ethiopic_syllable_pu
+'pi' <> ethiopic_syllable_pi
+'pa' <> ethiopic_syllable_paa
+'pe' <> ethiopic_syllable_pee
+'p' <> ethiopic_syllable_pe
+'po' <> ethiopic_syllable_po
+'Shv' <> U+E048	
+'Shu' <> U+E049
+'Shi' <> U+E04a
+'Sha' <> U+E04b
+'She' <> U+E04c
+'Sh' <> U+E04d
+'Sho' <> U+E04e
+'chv' <> U+E050	
+'chu' <> U+E051
+'chi' <> U+E052
+'cha' <> U+E053
+'che' <> U+E054
+'ch' <> U+E055
+'cho' <> U+E056
+'Zhv' <> U+E058	
+'Zhu' <> U+E059
+'Zhi' <> U+E05a
+'Zha' <> U+E05b
+'Zhe' <> U+E05c
+'Zh' <> U+E05d
+'Zho' <> U+E05e
+'Chv' <> U+E060	
+'Chu' <> U+E061
+'Chi' <> U+E062
+'Cha' <> U+E063
+'Che' <> U+E064
+'Ch' <> U+E065
+'Cho' <> U+E066
+
+

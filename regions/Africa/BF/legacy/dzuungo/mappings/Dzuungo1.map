@@ -1,0 +1,100 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 1/27/2015.
+;   Conversion Type = Legacy_to_Unicode
+;   Left-hand side font = Dzuungo1 Dzuungo1 SILDoulosL;11.25
+;   Right-hand side font = Charis SIL;13.25
+;   Main Window Position = 0,6,1242,1111
+;   Left-hand side Character Map Window Position = 1056,117,457,447
+;   Right-hand side Character Map Window Position = 931,500,797,609
+;   Left-hand side code page = 42
+
+; This map is only intended to go to Unicode and not the reverse mapping
+
+EncodingName			"Dzuungo1 SILDoulosL"
+DescriptiveName			"Dzuungo1 SILDoulosL Font encoding"
+Version					"0.1"
+Contact					"mailto:lorna_evans@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"Dzuungo1"
+
+RHSFlags				(ExpectsNFD)
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+ByteClass [ascii] = ( 0x20   0x21   0x23 .. 0x26     0x28 .. 0x5F     0x61 .. 0x70     0x72.. 0x7e   )
+UniClass  [ascii] = ( U+0020 U+0021 U+0023 .. U+0026 U+0028 .. U+005F U+0061 .. U+0070 U+0072 .. U+007e )
+
+[ctl]	<>	[ctl]
+
+[ascii]	<>	[ascii]
+
+
+0x22	<>	modifier_letter_double_prime
+0x27	<>	right_single_quotation_mark
+0x60	<>	left_single_quotation_mark
+0x71	<>	latin_small_letter_alpha
+0x82    >     latin_small_letter_alpha
+
+0x80	<>	latin_capital_letter_schwa
+0xD0	<>	latin_small_letter_schwa
+
+0x81	<>	latin_small_letter_esh
+
+0x83	<>	latin_capital_letter_open_e
+0xB2	<>	latin_small_letter_open_e
+
+0x84	<>	latin_small_letter_r_with_fishhook
+0x85	<>	latin_small_letter_v_with_hook
+0x87	<>	latin_small_letter_gamma
+0x88	<>	left_pointing_double_angle_quotation_mark
+0x89	<>	right_pointing_double_angle_quotation_mark
+0x8A	<>	latin_small_letter_q
+0x8C	<>	latin_small_letter_j_with_stroke
+0x8D	<>	latin_small_letter_turned_h
+
+0xAB	<>	latin_small_letter_eng
+0xD9	<>	latin_capital_letter_eng
+
+0xCA	<>	no_break_space
+
+0xF8	<>	latin_small_letter_n_with_left_hook
+0xF9	<>	latin_capital_letter_n_with_left_hook
+
+0xD1	<>	latin_small_letter_iota
+
+0xD3	<>	latin_small_letter_open_o
+0xD6	<>	latin_capital_letter_open_o
+
+0xFC	<>	latin_small_letter_ezh
+
+0x8B	<>	latin_small_letter_dotless_i
+
+0x86	<>	combining_tilde ; N
+0xDC	>	combining_tilde ; n
+0xE2	>	combining_tilde ; narrow, lowercase
+
+0xE3	<>	combining_inverted_breve_below ; medium
+0xE4	>	combining_inverted_breve_below ; narrow
+0xE5	>	combining_inverted_breve_below ; wide
+
+0x8F	<>	combining_acute_accent ; I (best)
+0x90	>	combining_acute_accent ; uppercase
+0x9A	>	combining_acute_accent ; I (not quite right)
+0xDB	>	combining_acute_accent ; lowercase
+0xDE	>	combining_acute_accent ; i (best)
+
+0x98	>	combining_grave_accent ; narrow, uppercase
+0x99	<>	combining_grave_accent ; narrow, uppercase (best)
+0x9B	>	combining_grave_accent ; E, uppercase
+0xDA	>	combining_grave_accent ; a, lowercase
+0xDD	>	combining_grave_accent ; narrow, lowercase
+
+0x9C	<>	combining_circumflex_accent ; E
+0xDF	>	combining_circumflex_accent ; i
+0xE0	>	combining_circumflex_accent ; i
+0xE6	>	combining_circumflex_accent ; I
+0xE9	>	combining_circumflex_accent ; I
+
+
