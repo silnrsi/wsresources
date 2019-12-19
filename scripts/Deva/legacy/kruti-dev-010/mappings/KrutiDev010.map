@@ -1,25 +1,33 @@
 ;KrutiDev010.map
 ;Copyright (c) 2006 SIL International.
-;Revised 2013 PBT SAB
 
-; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 16-Mar-2013.
+; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 2013-05-06.
 ;   Conversion Type = Legacy_to_from_Unicode
-;   Left-hand side font = Kruti Dev 010;14.25
+;   Left-hand side font = Kruti Dev 010;11.25
 ;   Right-hand side font = Arial Unicode MS;11.25
-;   Main Window Position = 30,67,600,683
-;   Left-hand side Character Map Window Position = 701,0,405,518
-;   Right-hand side Character Map Window Position = 705,218,551,472
+;   Main Window Position = 0,0,807,731
+;   Left-hand side Character Map Window Position = 879,15,380,478
+;   Right-hand side Character Map Window Position = 870,299,479,428
 
 ; Mapping table for KrutiDev 010 font encoding
 
 EncodingName			"KrutiDev010"
-DescriptiveName		"Mapping table for KrutiDev010 font encoding"
-Version			"1.11"
-Contact			"mailto:bob_eaton@sall.com,Robert.Rees@PBTi.org"
-RegistrationAuthority	"SIL International PBT SAB"
+DescriptiveName		"Mapping table for KrutiDev011 font encoding"
+Version			"1.2"
+Contact			"mailto:bob_eaton@sall.com"
+RegistrationAuthority	"SIL International"
 RegistrationName		"KrutiDev010"
 
 RHSFlags			(ExpectsNFD)
+
+; README
+;
+; The legacy encodings KrutiDev 010 and KrutiDev 011 are very similar to each other.
+; As a result, they share a single source TECkit map, with small modifications.
+; These modifications are below, search for the text "start for" to find them.
+; If you make edits to this file, copy the result to other map (for example, if you edit
+; KrutiDev011.map, copy this file to KrutiDev010.map), adjust the Define statement near
+; the text "start for" and the meta-information above. Then compile both maps.
 
 ; First define a bunch of things that we'll use below
 Define IKAR     102
@@ -72,8 +80,8 @@ Define  SCall   41      61  74      75  124 125 163     193 204 205 206 \
 ; all dependent vowel forms:
 ; though ikar is a dependent vowel, don't include it here, because it never comes *after* the
 ; consonant we're trying to reorder below
-;                       visarga ii  ai  ri  ri2 uu  aa  e   u   o   au  
-Define  DepVowelAll     37      104 83  96  164 119 107 115 113 168 169
+;                       visarga ii  ai  ri  ri2 uu  aa      e   u   o   au  
+Define  DepVowelAll     37      104 83  96  164 119 VERTBAR 115 113 168 169
 
 ; all nasal forms
 ;               anusvar chandrabindu    chandra
@@ -83,7 +91,13 @@ Define  Nall    97      161             87
 ;               lowR    lowTentR    nyukta
 Define PCall    122     170         NUKTA    
 
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+; Pass 0: re-order nasals
+;
+; Nasals need to be at the end of a syllable, not before a dependent vowel.
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 pass(Byte)
+
 class [N] = ( Nall )
 class [DepVowel] = ( DepVowelAll )
 [N]=nas [DepVowel]=vwl > @vwl @nas
@@ -100,15 +114,26 @@ class [DepVowel] = ( DepVowelAll )
 ; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 pass(Byte)
 
-class [HConly] = (HConlyHForms HConlySpecialForms)
-class [HC] = (HCalsoFForms)
-class [FC] = (FCalsoHForms)
-
 ; some characters seems to be in the font twice. We'll normalize to one form (also unidirectional)
-145     >   34      ; shr-
-146     >   34      ; shr-
-147     >   39      ; sh-
-148     >   39      ; sh-
+
+; start for KrutiDev 010 only
+Define SH_1   147
+Define SH_2   148
+Define SHR_1  145
+Define SHR_2  146
+; end for KrutiDev 010 only
+
+; start for KrutiDev 011 only
+;Define SH_1   145
+;Define SH_2   146
+;Define SHR_1  147
+;Define SHR_2  148
+; end for KrutiDev 011 only
+
+SH_1    >   39      ; sh-
+SH_2    >   39      ; sh-
+SHR_1   >   34      ; shr-
+SHR_2   >   34      ; shr-
 167     >   164     ; ri2
 174     >   168     ; okars
 180     >   165     ; nya
@@ -129,6 +154,32 @@ class [FC] = (FCalsoHForms)
 247     >   214     ; jh-
 248     >   191     ; left-curly brace
 
+; fix up some infilicities in the input
+
+; more than one nasal of a type in a row is a typo
+97+     >   97      ; anusvar
+161+    >   161     ; chandrabindu
+87+     >   87      ; chandra
+
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+; Pass 2: handle input data infilicities
+;
+; There are some half-characters which also have full forms. The half-forms 
+; therefore are only meant as the first C of a CC sequence, but some writers use
+; use the half-form with a following vertical bar (VERTBAR) to give the full
+; form. This pass cleans that up, by converting such cases to the full forms
+;
+; THIS pass is non-reversable
+;
+; It must be separate from pass 1, too, because at least one of the characters
+; there feeds this rule (there are two jh-)
+; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+pass(Byte)
+
+class [HConly] = (HConlyHForms HConlySpecialForms)
+class [HC] = (HCalsoFForms)
+class [FC] = (FCalsoHForms)
+
 ; turn any half-consonant plus a following vertical bar into the corresponding
 ; full consonant form (unidirectional conversion)
 [HC] VERTBAR    >   [FC]
@@ -146,12 +197,11 @@ class [FC] = (FCalsoHForms)
 87 97       >   161     ; chandra + bindu -> chandrabindu
 107 87      >   130     ; aakar matra + chandra -> aakar matra w/ chandra
 107 87 97   >   107 161 ; aakar matra + chandra + bindu -> aakar matra w/ chandrabindu
-103 83 97 97 > 103 83 97 ; RHIR Note: An extra 97 was appearing 
 
 [HC]=hc 122=lr VERTBAR=aakar    >   @hc @aakar @lr ; lowR (e.g. pra) that comes before the vertbar
 
 ; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-; Pass 2: positional dependent vowels
+; Pass 3: positional dependent vowels
 ;
 ; Some dependent vowels are different depending on which consonant they go 
 ; above e.g. ekar
@@ -172,7 +222,7 @@ class[tentr] = (179 86  66  77  60  205 206     207 212     240     )
 ;diacritics which might occur between a diacritic to be adjusted and its base char
 ; diacritics (regular forms only) for optional [d] in contexts
 ;           nyukta  chandra-bindu   anusvar lowR    reph    ukar    uukar   rikar   
-class[d] = (NUKTA   161             97      122     90      113     119     96      )
+class[d] = (NUKTA   161             97      122     REPH    113     119     96      )
 
 162     <>  115 / [cd] [d]* _       ; ekar left
 170     <>  122 / [tentr] [d]* _    ; tent-r
@@ -186,16 +236,16 @@ class[d] = (NUKTA   161             97      122     90      113     119     96  
 226     <>  103 96              ; hri
 
 ;   other sequences
-198     <>  102 90              ; ikar reph
-199     <>  102 97              ; ikar anusvar
+198     <>  IKAR REPH           ; ikar reph
+199     <>  IKAR 97             ; ikar anusvar
 200     <>  104 97              ; iikar anusvar
-201     <>  102 90  97          ; ikar reph anusvar
-202     <>  104 90              ; iikar reph
-155     <>  83  90  97          ; aikar reph anusvar
-177     <>  90  97              ; reph anusvar
+201     <>  IKAR REPH  97       ; ikar reph anusvar
+202     <>  104  REPH           ; iikar reph
+155     <>  83   REPH  97       ; aikar reph anusvar
+177     <>  REPH 97             ; reph anusvar
 
 ; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-; Pass 3: rearrange syllable for subsequent reordering rule
+; Pass 4: rearrange syllable for subsequent reordering rule
 ; 
 ; This is for the few ikar glyphs which have both an ikar and a reph,
 ; but in all other situations, these two are separated by a character.
@@ -236,7 +286,7 @@ IKAR=ikar REPH?=reph [N]?=nas ([HC]* ([C]|[HC] VERTBAR) [PC]?)=cons \
         <> @ikar @cons @reph @nas
 
 ; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-; Pass 4: rearrange syllable into Unicode order
+; Pass 5: rearrange syllable into Unicode order
 ; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 ; Byte order:
 ;	ikar?
@@ -281,29 +331,12 @@ IKAR?=ikar ([HC]* ([C]|[HC] VERTBAR) [PC]?)=cons NUKTA?=nukta [DepVowel]?=vwl RE
 
 
 ; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-; Pass 5: map byte codes to Unicodes
+; Pass 6: map byte codes to Unicodes
 ; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 ; This pass deals with "basic" byte codes; it never sees the "presentation form"
 ; byte codes for half forms/conjuncts/positional variants
 
 pass(Byte_Unicode)
-
-;RHIR Note: Following section added to fix minor errors in Kruti Dev 010 conversion
-38                  <>      hyphen_minus
-37 32               <>      colon space
-37 38               <>      colon hyphen_minus
-48 37               <>      digit_zero colon
-49 37               <>      digit_one colon
-50 37               <>      digit_two colon
-51 37               <>      digit_three colon
-52 37               <>      digit_four colon
-53 37               <>      digit_five colon
-54 37               <>      digit_six colon
-55 37               <>      digit_seven colon
-56 37               <>      digit_eight colon
-57 37               <>      digit_nine colon
-34 169              <>      devanagari_letter_sha devanagari_vowel_sign_ai
-34 168              <>      devanagari_letter_sha devanagari_vowel_sign_e
 
 ; define a default character for failed reverse conversions (i.e. something I'm not expecting to occur 
 ; in input text and which doesn't generate an actual character (like the default default does)
@@ -327,38 +360,36 @@ UniClass[FCalso]    = ( DEVANAGARI_LETTER_BA    DEVANAGARI_LETTER_KA    DEVANAGA
                         DEVANAGARI_LETTER_GA    DEVANAGARI_LETTER_LA    DEVANAGARI_LETTER_YA \
                         DEVANAGARI_LETTER_HA    DEVANAGARI_LETTER_JHA )
 
+ByteClass[OneToOneDigit] = ( \
+                        48  .. 57 \
+                        131 .. 139 140 \
+                      ) 
+
+UniClass[OneToOneDigit]  = ( \
+                        DIGIT_ZERO .. DIGIT_NINE \
+                        DEVANAGARI_DIGIT_ONE .. DEVANAGARI_DIGIT_NINE DEVANAGARI_DIGIT_ZERO \
+                      ) 
+
 ByteClass[OneToOnePunct] = ( \
                         33                          36                          38 \
                         40                          42                          45 \
-                        48                          92                          49 \
-                        50                          51                          93 \
-                        52                          53                          54 \
-                        94                          55                          56 \
-                        57                          64                          187 \
+                        92                          93                          94 \
+                                                    64                          187 \
                         188                         189                         42 \
                         190                         191                         192 \
                         65                          222                         223 \
-                        229                         131                         132 \
-                        133                         134                         135 \
-                        136                         137                         138 \
-                        139                         140 \
+                        229                         219 \
                       ) 
 
 UniClass[OneToOnePunct]  = ( \
                         EXCLAMATION_MARK            PLUS_SIGN                       HYPHEN_MINUS \
-                        SEMICOLON                   APOSTROPHE                      full_stop \
-                        DIGIT_ZERO                  QUESTION_MARK                   DIGIT_ONE \
-                        DIGIT_TWO                   DIGIT_THREE                     COMMA \
-                        DIGIT_FOUR                  DIGIT_FIVE                      DIGIT_SIX \
-                        LEFT_SINGLE_QUOTATION_MARK  DIGIT_SEVEN                     DIGIT_EIGHT \
-                        DIGIT_NINE                  SOLIDUS                         DIVISION_SIGN \
+                        SEMICOLON                   APOSTROPHE                      FULL_STOP \
+                        QUESTION_MARK               COMMA                           LEFT_SINGLE_QUOTATION_MARK  \
+                                                    SOLIDUS                         DIVISION_SIGN \
                         LEFT_PARENTHESIS            RIGHT_PARENTHESIS               RIGHT_SINGLE_QUOTATION_MARK \
                         EQUALS_SIGN                 LEFT_CURLY_BRACKET              RIGHT_CURLY_BRACKET \
                         DEVANAGARI_DANDA            RIGHT_DOUBLE_QUOTATION_MARK     LEFT_DOUBLE_QUOTATION_MARK \
-                        DEVANAGARI_ABBREVIATION_SIGN DEVANAGARI_DIGIT_ONE           DEVANAGARI_DIGIT_TWO \
-                        DEVANAGARI_DIGIT_THREE      DEVANAGARI_DIGIT_FOUR           DEVANAGARI_DIGIT_FIVE \
-                        DEVANAGARI_DIGIT_SIX        DEVANAGARI_DIGIT_SEVEN          DEVANAGARI_DIGIT_EIGHT \
-                        DEVANAGARI_DIGIT_NINE       DEVANAGARI_DIGIT_ZERO \
+                        DEVANAGARI_ABBREVIATION_SIGN BULLET \
                       )
 
 ByteClass[OneToOneCs] = ( \
@@ -377,8 +408,8 @@ ByteClass[OneToOneCs] = ( \
 
 UniClass[OneToOneCs]  = ( \
                         DEVANAGARI_SIGN_VISARGA DEVANAGARI_SIGN_NUKTA   DEVANAGARI_LETTER_YA \
-                        devanagari_letter_ddha  DEVANAGARI_LETTER_JHA   DEVANAGARI_LETTER_TTHA \
-                        DEVANAGARI_LETTER_LLA   devanagari_letter_dda   DEVANAGARI_LETTER_CHA \
+                        DEVANAGARI_LETTER_DDHA  DEVANAGARI_LETTER_JHA   DEVANAGARI_LETTER_TTHA \
+                        DEVANAGARI_LETTER_LLA   DEVANAGARI_LETTER_DDA   DEVANAGARI_LETTER_CHA \
                         DEVANAGARI_LETTER_PHA   DEVANAGARI_LETTER_TTA   \
                         DEVANAGARI_LETTER_BA    DEVANAGARI_LETTER_KA    DEVANAGARI_LETTER_MA \
                         DEVANAGARI_LETTER_HA    DEVANAGARI_LETTER_PA    DEVANAGARI_LETTER_RA \
@@ -392,7 +423,7 @@ UniClass[OneToOneCs]  = ( \
 ByteClass[OneToOneVs] = ( \
                         118                         98                          195 \
                         109                         197                         95 \
-                        44                          102                         104 \
+                        44                          IKAR                        104 \
                         113                         119                         96 \
                         115                         83                          168 \
                         169                         183                         87 \
@@ -422,9 +453,16 @@ UniClass[LowRWallahs] = ( \
 
 ; first do the easy ones
 [CTL]               <>  [CTL]
+[OneToOneDigit]     <>  [OneToOneDigit]
 [OneToOnePunct]     <>  [OneToOnePunct]
 [OneToOneCs]        <>  [OneToOneCs]
 [OneToOneVs]        <>  [OneToOneVs]
+
+; Normally 37 is visarga, but if it follows a digit, it is actually used as a colon.
+; One conversion project also said that 37 followed by SPACE or HYPHEN_MINUS is also a COLON,
+; but this maybe not be true for all projects, so it is not done here.
+37 / [OneToOneDigit] _  <>  COLON
+37                      <>  DEVANAGARI_SIGN_VISARGA
 
 ; all half-chars followed by the vertical bar are turned into full chars
 [HConly] VERTBAR	<>	[FConly]
@@ -441,7 +479,7 @@ UniClass[LowRWallahs] = ( \
 ; no trailing vertical bar).
 [HCalso]            <       [FCalso] devanagari_sign_virama / _ ^ZERO_WIDTH_NON_JOINER
 [HCalso]            <>      [FCalso] devanagari_sign_virama ZERO_WIDTH_JOINER 
-[HCalso] 43         <>      [FCalso] DEVANAGARI_SIGN_NUKTA devanagari_sign_virama ZERO_WIDTH_JOINER 
+[HCalso] NUKTA      <>      [FCalso] DEVANAGARI_SIGN_NUKTA devanagari_sign_virama ZERO_WIDTH_JOINER 
 
 ; now deal with all the stacks and other multiple character glyphs
 41                  <>      DEVANAGARI_LETTER_DA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_DHA
@@ -450,8 +488,8 @@ UniClass[LowRWallahs] = ( \
 65 65               <>      DEVANAGARI_DOUBLE_DANDA
 74                  <>      DEVANAGARI_LETTER_SHA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
 75                  <>      DEVANAGARI_LETTER_JA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_NYA
-90                  <>      DEVANAGARI_LETTER_RA DEVANAGARI_SIGN_VIRAMA
-118 107             <>      DEVANAGARI_LETTER_AA
+REPH                <>      DEVANAGARI_LETTER_RA DEVANAGARI_SIGN_VIRAMA
+118 VERTBAR         <>      DEVANAGARI_LETTER_AA
 118 168             <>      DEVANAGARI_LETTER_O
 118 169             <>      DEVANAGARI_LETTER_AU
 122                 <>      DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
@@ -460,7 +498,7 @@ UniClass[LowRWallahs] = ( \
 123 VERTBAR         <>      DEVANAGARI_LETTER_KA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_SSA
 124                 <>      DEVANAGARI_LETTER_DA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_YA
 125                 <>      DEVANAGARI_LETTER_DA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_VA
-126                 <>      DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_NON_JOINER
+HALANT              <>      DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_NON_JOINER
 153                 <>      DEVANAGARI_LETTER_NA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_NA DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_JOINER
 163                 <>      DEVANAGARI_LETTER_KHA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
 171                 <>      DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA DEVANAGARI_SIGN_VIRAMA
@@ -468,9 +506,10 @@ UniClass[LowRWallahs] = ( \
 205                 <>      DEVANAGARI_LETTER_TTA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTA
 206                 <>      DEVANAGARI_LETTER_TTA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTHA
 207                 <>      DEVANAGARI_LETTER_DDA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_DDA
+211                 <>      DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_YA
 212                 <>      DEVANAGARI_LETTER_DDA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_DDHA
 216                 <>      DEVANAGARI_LETTER_KA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
-159 107             <>      DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TA
+159 VERTBAR         <>      DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TA
 159                 <>      DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA / _ ZERO_WIDTH_JOINER?
 218                 <>      DEVANAGARI_LETTER_RA DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_JOINER
 221                 <>      DEVANAGARI_LETTER_PHA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
@@ -483,19 +522,12 @@ UniClass[LowRWallahs] = ( \
 240                 <>      DEVANAGARI_LETTER_TTHA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTHA
 243                 <>      DEVANAGARI_LETTER_SA DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_JOINER DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
 244                 <>      DEVANAGARI_LETTER_KA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_KA
-;RHIR Note: Following 5 lines added to customise converter for Kruti Dev 010.
 152                 <>      DEVANAGARI_LETTER_DA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_BHA
-211                 <>      DEVANAGARI_LETTER_YA DEVANAGARI_SIGN_VIRAMA
-220                 <>      devanagari_letter_sha DEVANAGARI_SIGN_VIRAMA 
-219                 <>      full_stop
-165 107             <>      devanagari_letter_nya
 
-126                 <       devanagari_sign_virama zero_width_joiner
+HALANT              <       devanagari_sign_virama zero_width_joiner
 
 ; some clean-up for the reverse direction
-37                  <       colon
 38                  <       en_dash
 191                 <       left_square_bracket
 192                 <       right_square_bracket
-
 
