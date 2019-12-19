@@ -5,15 +5,15 @@
 ;   Conversion Type = Legacy_to_from_Unicode
 ;   Left-hand side font = Kruti Dev 011;11.25
 ;   Right-hand side font = Arial Unicode MS;11.25
-;   Main Window Position = 1367,-193,813,1010
-;   Left-hand side Character Map Window Position = 2194,-191,394,479
-;   Right-hand side Character Map Window Position = 2188,375,453,448
+;   Main Window Position = 0,0,843,717
+;   Left-hand side Character Map Window Position = 878,0,387,472
+;   Right-hand side Character Map Window Position = 882,289,464,435
 
 ; Mapping table for KrutiDev 011 font encoding
 
 EncodingName			"KrutiDev011"
 DescriptiveName		"Mapping table for KrutiDev011 font encoding"
-Version			"1.2"
+Version			"1.3"
 Contact			"mailto:bob_eaton@sall.com"
 RegistrationAuthority	"SIL International"
 RegistrationName		"KrutiDev011"
@@ -372,7 +372,7 @@ UniClass[OneToOneDigit]  = ( \
 
 ByteClass[OneToOnePunct] = ( \
                         33                          36                          38 \
-                        40                          42                          45 \
+                        40                                                      45 \
                         92                          93                          94 \
                                                     64                          187 \
                         188                         189                         42 \
@@ -383,7 +383,7 @@ ByteClass[OneToOnePunct] = ( \
 
 UniClass[OneToOnePunct]  = ( \
                         EXCLAMATION_MARK            PLUS_SIGN                       HYPHEN_MINUS \
-                        SEMICOLON                   APOSTROPHE                      FULL_STOP \
+                        SEMICOLON                                                   FULL_STOP \
                         QUESTION_MARK               COMMA                           LEFT_SINGLE_QUOTATION_MARK  \
                                                     SOLIDUS                         DIVISION_SIGN \
                         LEFT_PARENTHESIS            RIGHT_PARENTHESIS               RIGHT_SINGLE_QUOTATION_MARK \
@@ -458,6 +458,11 @@ UniClass[LowRWallahs] = ( \
 [OneToOneCs]        <>  [OneToOneCs]
 [OneToOneVs]        <>  [OneToOneVs]
 
+; 42 is not a neutral (vertical) glyph so it is better to map it to
+; RIGHT_SINGLE_QUOTATION_MARK and not APOSTROPHE. If there is an APOSTROPHE
+; in the Unicode data, 42 is the closest legacy glyph.
+42                  <    APOSTROPHE
+
 ; Normally 37 is visarga, but if it follows a digit, it is actually used as a colon.
 ; One conversion project also said that 37 followed by SPACE or HYPHEN_MINUS is also a COLON,
 ; but this maybe not be true for all projects, so it is not done here.
@@ -506,12 +511,18 @@ HALANT              <>      DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_NON_JOINER
 205                 <>      DEVANAGARI_LETTER_TTA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTA
 206                 <>      DEVANAGARI_LETTER_TTA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTHA
 207                 <>      DEVANAGARI_LETTER_DDA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_DDA
-211                 <>      DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_YA
+
+;211                 <>      DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_YA
+; Codepoint 211 used to be mapped by the line above,
+; it seems to work better to be mapped by the slightly different line below.
+211                 <>      DEVANAGARI_LETTER_YA DEVANAGARI_SIGN_VIRAMA
+
 212                 <>      DEVANAGARI_LETTER_DDA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_DDHA
 216                 <>      DEVANAGARI_LETTER_KA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
 159 VERTBAR         <>      DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TA
 159                 <>      DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA / _ ZERO_WIDTH_JOINER?
 218                 <>      DEVANAGARI_LETTER_RA DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_JOINER
+220                 <>      DEVANAGARI_LETTER_SHA DEVANAGARI_SIGN_VIRAMA
 221                 <>      DEVANAGARI_LETTER_PHA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
 224                 <>      DEVANAGARI_LETTER_HA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_NA
 225                 <>      DEVANAGARI_LETTER_HA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_YA
