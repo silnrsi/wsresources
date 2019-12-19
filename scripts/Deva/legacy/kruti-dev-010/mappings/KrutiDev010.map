@@ -1,22 +1,23 @@
-﻿;KrutiDev010.map
+;KrutiDev010.map
 ;Copyright (c) 2006 SIL International.
+;Revised 2013 PBT SAB
 
-; This file was edited using TECkitMappingEditorU.exe v0.9.0.0 on 6/22/2006.
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 16-Mar-2013.
 ;   Conversion Type = Legacy_to_from_Unicode
 ;   Left-hand side font = Kruti Dev 010;14.25
 ;   Right-hand side font = Arial Unicode MS;11.25
-;   Main Window Position = 0,0,703,834
-;   Left-hand side Character Map Window Position = 701,0,451,514
-;   Right-hand side Character Map Window Position = 701,414,451,420
+;   Main Window Position = 30,67,600,683
+;   Left-hand side Character Map Window Position = 701,0,405,518
+;   Right-hand side Character Map Window Position = 705,218,551,472
 
-; Mapping table for KrutiDev font encoding
+; Mapping table for KrutiDev 010 font encoding
 
-EncodingName			"KrutiDev"
-DescriptiveName		"Mapping table for KrutiDev font encoding"
-Version			"1.1"
-Contact			"mailto:bob_eaton@sall.com"
-RegistrationAuthority	"SIL International"
-RegistrationName		"KrutiDev"
+EncodingName			"KrutiDev010"
+DescriptiveName		"Mapping table for KrutiDev010 font encoding"
+Version			"1.11"
+Contact			"mailto:bob_eaton@sall.com,Robert.Rees@PBTi.org"
+RegistrationAuthority	"SIL International PBT SAB"
+RegistrationName		"KrutiDev010"
 
 RHSFlags			(ExpectsNFD)
 
@@ -145,6 +146,7 @@ class [FC] = (FCalsoHForms)
 87 97       >   161     ; chandra + bindu -> chandrabindu
 107 87      >   130     ; aakar matra + chandra -> aakar matra w/ chandra
 107 87 97   >   107 161 ; aakar matra + chandra + bindu -> aakar matra w/ chandrabindu
+103 83 97 97 > 103 83 97 ; RHIR Note: An extra 97 was appearing 
 
 [HC]=hc 122=lr VERTBAR=aakar    >   @hc @aakar @lr ; lowR (e.g. pra) that comes before the vertbar
 
@@ -285,6 +287,23 @@ IKAR?=ikar ([HC]* ([C]|[HC] VERTBAR) [PC]?)=cons NUKTA?=nukta [DepVowel]?=vwl RE
 ; byte codes for half forms/conjuncts/positional variants
 
 pass(Byte_Unicode)
+
+;RHIR Note: Following section added to fix minor errors in Kruti Dev 010 conversion
+38                  <>      hyphen_minus
+37 32               <>      colon space
+37 38               <>      colon hyphen_minus
+48 37               <>      digit_zero colon
+49 37               <>      digit_one colon
+50 37               <>      digit_two colon
+51 37               <>      digit_three colon
+52 37               <>      digit_four colon
+53 37               <>      digit_five colon
+54 37               <>      digit_six colon
+55 37               <>      digit_seven colon
+56 37               <>      digit_eight colon
+57 37               <>      digit_nine colon
+34 169              <>      devanagari_letter_sha devanagari_vowel_sign_ai
+34 168              <>      devanagari_letter_sha devanagari_vowel_sign_e
 
 ; define a default character for failed reverse conversions (i.e. something I'm not expecting to occur 
 ; in input text and which doesn't generate an actual character (like the default default does)
@@ -449,7 +468,6 @@ UniClass[LowRWallahs] = ( \
 205                 <>      DEVANAGARI_LETTER_TTA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTA
 206                 <>      DEVANAGARI_LETTER_TTA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTHA
 207                 <>      DEVANAGARI_LETTER_DDA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_DDA
-211                 <>      DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_YA
 212                 <>      DEVANAGARI_LETTER_DDA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_DDHA
 216                 <>      DEVANAGARI_LETTER_KA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
 159 107             <>      DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TA
@@ -465,7 +483,12 @@ UniClass[LowRWallahs] = ( \
 240                 <>      DEVANAGARI_LETTER_TTHA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_TTHA
 243                 <>      DEVANAGARI_LETTER_SA DEVANAGARI_SIGN_VIRAMA ZERO_WIDTH_JOINER DEVANAGARI_LETTER_TA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_RA
 244                 <>      DEVANAGARI_LETTER_KA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_KA
+;RHIR Note: Following 5 lines added to customise converter for Kruti Dev 010.
 152                 <>      DEVANAGARI_LETTER_DA DEVANAGARI_SIGN_VIRAMA DEVANAGARI_LETTER_BHA
+211                 <>      DEVANAGARI_LETTER_YA DEVANAGARI_SIGN_VIRAMA
+220                 <>      devanagari_letter_sha DEVANAGARI_SIGN_VIRAMA 
+219                 <>      full_stop
+165 107             <>      devanagari_letter_nya
 
 126                 <       devanagari_sign_virama zero_width_joiner
 
