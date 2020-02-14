@@ -1,0 +1,152 @@
+﻿; Created by Mark Penny using TECkitMappingEditorU.exe v4.0.0.0 on 18/02/2015.
+; Last updated by MP on 31-March-2019
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Mangal;14.25
+;   Right-hand side font = Narnoor;14.25
+;   Main Window Position = 0,0,761,712
+;   Left-hand side Character Map Window Position = 664,0,697,447
+;   Right-hand side Character Map Window Position = 758,325,603,413
+
+LHSName                 "DEV"
+RHSName                 "GONG"
+LHSDescription          "Devanagari Unicode"
+RHSDescription          "Gunjala Gondi Unicode"
+Version                 "1.0"
+Contact                 "mailto:mark_penny@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "DEV2GONG"
+Copyright               "© 2015-2019 SIL International. All rights reserved."
+LHSFlags                ()
+RHSFlags                ()
+
+pass(Unicode)
+
+; U+0901 <> U+E301 ; Not present
+U+0902 <> U+11D95
+U+0902 U+0917  > U+11D84  ; This rule is specific to Gondi as written by the WSG team (to avoid confusion with 0919 and 0912 for new readers)
+U+0903 <> U+11D96
+; U+0904 <> U+E304 ; Not present
+U+0905 <> U+11D60
+U+0906 <> U+11D61
+U+0907 <> U+11D62
+U+0908 <> U+11D63
+U+0909 <> U+11D64
+U+090A <> U+11D65
+; U+090B <> U+11F0B ; Not present
+; U+090C <> U+11F0C ; Not present
+; U+090D <> U+E30D ; Not present
+U+090E  > U+11D67  ; NOTE that U+11D66 is not yet approved by Unicode
+U+090F <> U+11D67  ;      so the two forms need to collapse into one.
+U+0910 <> U+11D68
+; U+0911 <> U+E311 ; Not present
+U+0912  > U+11D6A  ; NOTE that U+11D69 is not yet approved by Unicode
+U+0913 <> U+11D6A  ;      so the two forms need to collapse into one.
+U+0914 <> U+11D6B
+U+0915 <> U+11D71
+U+0916 <> U+11D72
+U+0917 <> U+11D76
+U+0918 <> U+11D77
+U+0919 <> U+11D84  ; Default to 0919 when returning to DEV (rather than 0923)
+U+091A <> U+11D7B
+U+091B <> U+11D7C
+U+091C <> U+11D80
+U+091D <> U+11D81
+; U+091E <> U+11F1E ; Not present
+U+091F <> U+11D7D
+U+0920 <> U+11D7E
+U+0921 <> U+11D82
+U+0922 <> U+11D83
+U+0923  > U+11D84  ; Note that 0919 and 0923 are both being mapped to 11D84
+U+0924 <> U+11D73
+U+0925 <> U+11D74
+U+0926 <> U+11D78
+U+0927 <> U+11D79
+U+0928 <> U+11D7A
+; U+0929 <> U+E329 ; Not present
+U+092A <> U+11D85
+U+092B <> U+11D86
+U+092C <> U+11D6E
+U+092D <> U+11D6F
+U+092E <> U+11D70
+U+092F <> U+11D6C
+U+0930 <> U+11D88
+; U+0931 <> U+11F31 ; Not present
+U+0932 <> U+11D75
+; U+0933 <> U+11D7F ; Not present
+; U+0934 <> U+E334 ; Not present
+U+0935 <> U+11D6D
+; U+0936 <> U+11F36 ; Not present (but see next line for workaround)
+U+0936 <> U+11D89 U+11F3C ; Use regular 'sa' with dot below
+; U+0937 <> U+11F37 ; Not present
+U+0938 <> U+11D89
+U+0939 <> U+11D87
+; U+093A <> U+E33A ; Not present
+; U+093B <> U+E33B ; Not present
+; U+093C <> U+11F3C ; Not present in DEV?
+; U+093D <> U+E33D ; Not present
+U+093E <> U+11D8A
+U+093F <> U+11D8B
+U+0940 <> U+11D8C
+U+0941 <> U+11D8D
+U+0942 <> U+11D8E
+; U+0943 <> U+11F43 ; Not present
+; U+0944 <> U+11F44 ; Not present
+; U+0945 <> U+E345 ; Not present
+U+0946  > U+11D90  ; NOTE that U+11D8F is not yet approved by Unicode
+U+0947 <> U+11D90  ;      so the two forms need to collapse into one.
+U+0948 <> U+11D91
+; U+0949 <> U+E349 ; Not present
+U+094A  > U+11D93  ; NOTE that U+11D92 is not yet approved by Unicode
+U+094B <> U+11D93  ;      so the two forms need to collapse into one.
+U+094C <> U+11D94
+U+094D <> U+11D97
+; U+094E <> U+E34E ; Not present
+; U+094F <> U+E34F ; Not present
+U+0950 <> U+11D98
+; U+0951 <> U+E351 ; Not present
+; U+0952 <> U+E352 ; Not present
+; U+0953 <> U+E353 ; Not present
+; U+0954 <> U+E354 ; Not present
+; U+0955 <> U+E355 ; Not present
+; U+0956 <> U+E356 ; Not present
+; U+0957 <> U+E357 ; Not present
+; U+0958 <> U+E358 ; Not present
+; U+0959 <> U+E359 ; Not present
+; U+095A <> U+E35A ; Not present
+; U+095B <> U+E35B ; Not present
+; U+095C <> U+E35C ; Not present
+; U+095D <> U+E35D ; Not present
+; U+095E <> U+E35E ; Not present
+; U+095F <> U+E35F ; Not present
+; U+0960 <> U+E360 ; Not present
+; U+0961 <> U+E361 ; Not present
+; U+0962 <> U+E362 ; Not present
+; U+0963 <> U+E363 ; Not present
+; U+0964 <> U+0964 ; Not present
+; U+0965 <> U+0965 ; Not present
+U+0966 <> U+11DA0
+U+0967 <> U+11DA1
+U+0968 <> U+11DA2
+U+0969 <> U+11DA3
+U+096A <> U+11DA4
+U+096B <> U+11DA5
+U+096C <> U+11DA6
+U+096D <> U+11DA7
+U+096E <> U+11DA8
+U+096F <> U+11DA9
+; U+0970 <> U+E370 ; Not present
+; U+0971 <> U+E371 ; Not present
+; U+0972 <> U+E372 ; Not present
+; U+0973 <> U+E373 ; Not present
+; U+0974 <> U+E374 ; Not present
+; U+0975 <> U+E375 ; Not present
+; U+0976 <> U+E376 ; Not present
+; U+0977 <> U+E377 ; Not present
+; U+0978 <> U+E378 ; Not present
+; U+0979 <> U+E379 ; Not present
+; U+097A <> U+E37A ; Not present
+; U+097B <> U+E37B ; Not present
+; U+097C <> U+E37C ; Not present
+; U+097D <> U+E37D ; Not present
+; U+097E <> U+E37E ; Not present
+; U+097F <> U+E37F ; Not present

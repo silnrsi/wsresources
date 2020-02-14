@@ -1,0 +1,167 @@
+﻿; Created by Mark Penny using TECkitMappingEditorU.exe v4.0.0.0 on 18/02/2015.
+; Last updated by MP on 30-Oct-2019
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Gautami;14.25
+;   Right-hand side font = Narnoor;14.25
+;   Main Window Position = 0,0,761,712
+;   Left-hand side Character Map Window Position = 664,0,697,447
+;   Right-hand side Character Map Window Position = 758,325,603,413
+
+LHSName                 "TEL"
+RHSName                 "GONG"
+LHSDescription          "Telugu Unicode"
+RHSDescription          "Gunjala Gondi Unicode"
+Version                 "1.0"
+Contact                 "mailto:mark_penny@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "TEL2GONG"
+Copyright               "© 2015-2019 SIL International. All rights reserved."
+LHSFlags                ()
+RHSFlags                ()
+
+pass(Unicode)
+
+; U+0C01 <> U+E301 ; Not present
+U+0C02 <> U+11D95
+U+0C02 U+0C17  > U+11D84  ; This rule is specific to Gondi as written by the WSG team (to avoid confusion with 0C19 and 0C12 for new readers)
+U+0C03 <> U+11D96
+; U+0C04 <> U+E304 ; Not present
+U+0C05 <> U+11D60
+U+0C06 <> U+11D61
+U+0C07 <> U+11D62
+U+0C08 <> U+11D63
+U+0C09 <> U+11D64
+U+0C0A <> U+11D65
+; U+0C0B <> U+11F0B ; Not present
+; U+0C0C <> U+11F0C ; Not present
+; U+0C0D <> U+E30D ; Not present
+U+0C0E  > U+11D67  ; NOTE that U+11D66 is not yet approved by Unicode
+U+0C0F <> U+11D67  ;      so the two forms need to collapse into one.
+U+0C10 <> U+11D68
+; U+0C11 <> U+E311 ; Not present
+U+0C12  > U+11D6A  ; NOTE that U+11D69 is not yet approved by Unicode
+U+0C13 <> U+11D6A  ;      so the two forms need to collapse into one.
+U+0C14 <> U+11D6B
+U+0C15 <> U+11D71
+U+0C16 <> U+11D72
+U+0C17 <> U+11D76
+U+0C18 <> U+11D77
+U+0C19 <> U+11D84  ; Default to 0C19 when returning to TEL (rather than 0C23)
+U+0C1A <> U+11D7B
+U+0C1B <> U+11D7C
+U+0C1C <> U+11D80
+U+0C1D <> U+11D81
+; U+0C1E <> U+11F1E ; Not present
+U+0C1F <> U+11D7D
+U+0C20 <> U+11D7E
+U+0C21 <> U+11D82
+U+0C22 <> U+11D83
+U+0C23  > U+11D84  ; Note that 0C19 and 0C23 are both being mapped to 11D84
+U+0C24 <> U+11D73
+U+0C25 <> U+11D74
+U+0C26 <> U+11D78
+U+0C27 <> U+11D79
+U+0C28 <> U+11D7A
+; U+0C29 <> U+E329 ; Not present
+U+0C2A <> U+11D85
+U+0C2B <> U+11D86
+U+0C2C <> U+11D6E
+U+0C2D <> U+11D6F
+U+0C2E <> U+11D70
+U+0C2F <> U+11D6C
+U+0C30 <> U+11D88
+; U+0C31 <> U+11F31 ; Not present
+U+0C32 <> U+11D75
+; U+0C33 <> U+11D7F ; Not present
+; U+0C34 <> U+E334 ; Not present
+U+0C35 <> U+11D6D
+; U+0C36 <> U+11F36 ; Not present (but see next line for workaround)
+U+0C36 <> U+11D89 U+11F3C ; Use regular 'sa' with dot below
+; U+0C37 <> U+11F37 ; Not present
+U+0C38 <> U+11D89
+U+0C39 <> U+11D87
+; U+0C3A <> U+E33A ; Not present
+; U+0C3B <> U+E33B ; Not present
+; U+0C3C <> U+11F3C ; Not present in TEL
+; U+0C3D <> U+E33D ; Not present
+U+0C3E <> U+11D8A
+U+0C3F <> U+11D8B
+U+0C40 <> U+11D8C
+U+0C41 <> U+11D8D
+U+0C42 <> U+11D8E
+; U+0C43 <> U+11F43 ; Not present
+; U+0C44 <> U+11F44 ; Not present
+; U+0C45 <> U+E345 ; Not present
+U+0C46  > U+11D90  ; NOTE that U+11D8F is not yet approved by Unicode
+U+0C47 <> U+11D90  ;      so the two forms need to collapse into one.
+U+0C48 <> U+11D91
+; U+0C49 <> U+E349 ; Not present
+U+0C4A  > U+11D93  ; NOTE that U+11D92 is not yet approved by Unicode
+U+0C4B <> U+11D93  ;      so the two forms need to collapse into one.
+U+0C4C <> U+11D94
+U+0C4D <> U+11D97
+; U+0C4E <> U+E34E ; Not present
+; U+0C4F <> U+E34F ; Not present
+U+0C50 <> U+11D98
+; U+0C51 <> U+E351 ; Not present
+; U+0C52 <> U+E352 ; Not present
+; U+0C53 <> U+E353 ; Not present
+; U+0C54 <> U+E354 ; Not present
+; U+0C55 <> U+E355 ; Not present
+; U+0C56 <> U+E356 ; Not present
+; U+0C57 <> U+E357 ; Not present
+; U+0C58 <> U+E358 ; Not present
+; U+0C59 <> U+E359 ; Not present
+; U+0C5A <> U+E35A ; Not present
+; U+0C5B <> U+E35B ; Not present
+; U+0C5C <> U+E35C ; Not present
+; U+0C5D <> U+E35D ; Not present
+; U+0C5E <> U+E35E ; Not present
+; U+0C5F <> U+E35F ; Not present
+; U+0C60 <> U+E360 ; Not present
+; U+0C61 <> U+E361 ; Not present
+; U+0C62 <> U+E362 ; Not present
+; U+0C63 <> U+E363 ; Not present
+; U+0C64 <> U+0964 ; Not present in TEL
+; U+0C65 <> U+0965 ; Not present in TEL
+U+0C66 <> U+11DA0
+U+0C67 <> U+11DA1
+U+0C68 <> U+11DA2
+U+0C69 <> U+11DA3
+U+0C6A <> U+11DA4
+U+0C6B <> U+11DA5
+U+0C6C <> U+11DA6
+U+0C6D <> U+11DA7
+U+0C6E <> U+11DA8
+U+0C6F <> U+11DA9
+; U+0C70 <> U+E370 ; Not present
+; U+0C71 <> U+E371 ; Not present
+; U+0C72 <> U+E372 ; Not present
+; U+0C73 <> U+E373 ; Not present
+; U+0C74 <> U+E374 ; Not present
+; U+0C75 <> U+E375 ; Not present
+; U+0C76 <> U+E376 ; Not present
+; U+0C77 <> U+E377 ; Not present
+; U+0C78 <> U+E378 ; Not present
+; U+0C79 <> U+E379 ; Not present
+; U+0C7A <> U+E37A ; Not present
+; U+0C7B <> U+E37B ; Not present
+; U+0C7C <> U+E37C ; Not present
+; U+0C7D <> U+E37D ; Not present
+; U+0C7E <> U+E37E ; Not present
+; U+0C7F <> U+E37F ; Not present
+
+; TidyGONGfromTEL
+pass(Unicode)
+Class[Punctuation] = (U+0020 U+0021 U+0022 U+002A U+001E U+002C U+002D U+002E U+003A U+003B U+0029 U+003F U+2019 U+201D U+005C U+005D U+007C U+007D)
+
+U+11D97 / _ [Punctuation]	>	''
+U+11D97 / _ #				>	''
+
+U+11D97 U+200C / _ [Punctuation]	>	''
+U+11D97 U+200C / _ #				>	''
+
+U+11D97 U+200D / _ [Punctuation]	>	''
+U+11D97 U+200D / _ #				>	''
+
+
