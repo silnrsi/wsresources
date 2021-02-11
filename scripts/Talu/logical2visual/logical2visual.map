@@ -1,0 +1,25 @@
+LHSName                 "New Tai Lue - Logical"
+RHSName                 "New Tai Lue - Visual"
+LHSDescription          "New Tai Lue using logical ordering for left vowels"
+RHSDescription          "New Tai Lue using visual ordering for left vowels"
+Version                 "1"
+Contact                 "mailto:bobby_devos@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "New Tai Lue logical to visual encoding change"
+Copyright               "(c) 2021 SIL International"
+LHSname                 "Xishuangbanna Dai - Logical"
+RHSname                 "Xishuangbanna Dai - Visual"
+
+RHSFlags                (VisualOrder)
+
+pass(Unicode)
+
+Class [Consonants] = ( 0x1980 .. 0x19AB )
+Class [LeftVowels] = ( \
+    new_tai_lue_vowel_sign_e \
+    new_tai_lue_vowel_sign_ae \
+    new_tai_lue_vowel_sign_o \
+    new_tai_lue_vowel_sign_ay \
+)
+
+[Consonants]=c [LeftVowels]=lv <> @lv @c
