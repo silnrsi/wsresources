@@ -2,19 +2,20 @@
 ;   Conversion Type = Unicode_to_from_Unicode
 ;   Left-hand side font = Charis SIL;11.25
 ;   Right-hand side font = Doulos SIL;11.25
-;   Main Window Position = 335,434,650,702
-;   Left-hand side Character Map Window Position = 650,0,449,436
+;   Main Window Position = 198,330,650,606
+;   Left-hand side Character Map Window Position = 923,85,449,436
 ;   Right-hand side Character Map Window Position = 964,535,449,436
 
-LHSName					"SIL-UnicodePUA-2016"
-RHSName					"Unicode90"
+LHSName					"SIL-UnicodePUA-2021"
+RHSName					"Unicode140"
 LHSDescription			"Unicode 3.2 with SIL PUA values"
-RHSDescription			"Unicode 9.0"
-Version					"1.1"
+RHSDescription			"Unicode 14.0"
+Version					"1.2"
 Contact					"mailto:lorna_evans@sil.org"
 RegistrationAuthority	"SIL International"
-RegistrationName		"PUAtoUnicode90"
+RegistrationName		"PUAtoUnicode140"
 
+; 2021-08-16  LE	added Unicode 12.0/14.0 chars
 ; 2016-07-05  LE	added Unicode 8.0/9.0 chars
 ; 2014-09-29  LE	added Unicode 7.0 chars
 ; 2011-02-07  LP	added Unicode 6.1 chars
@@ -274,5 +275,21 @@ U+F32B	<>	CYRILLIC_SMALL_LETTER_REVERSED_ZE ; U+0511
 U+F32C	<>	U+0526 ; CYRILLIC_CAPITAL_LETTER_SHHA_WITH_DESCENDER
 U+F32D	<>	U+0527 ; CYRILLIC_SMALL_LETTER_SHHA_WITH_DESCENDER
 
+; Unicode 12.0
 
+U+F234	<> U+A7C6 ; LATIN CAPITAL LETTER Z WITH PALATAL HOOK	
 
+; Unicode 14.0
+U+F1A1	<> U+10783 ; MODIFIER LETTER SMALL AE	
+U+F1A3	<> U+1078E ; MODIFIER LETTER SMALL REVERSED E	
+U+F1A4	<> U+1078F ; MODIFIER LETTER SMALL CLOSED REVERSED OPEN E	
+U+F1B5	<> U+10791 ; MODIFIER LETTER SMALL RAMS HORN	
+U+F1BC	<> U+10795 ; MODIFIER LETTER SMALL H WITH STROKE	
+U+F1CE	<> U+107A0 ; MODIFIER LETTER SMALL TURNED Y	
+U+F1AB	<> U+107A2 ; MODIFIER LETTER SMALL O WITH STROKE	
+U+F1AE	<> U+107A3 ; MODIFIER LETTER SMALL CAPITAL OE	
+U+F1B4	<> U+107B2 ; MODIFIER LETTER SMALL CAPITAL Y	
+U+F268	<> U+1DF04 ; LATIN LETTER SMALL CAPITAL L WITH BELT	
+U+F267	<> U+1DF06 ; LATIN SMALL LETTER TURNED Y WITH BELT	
+U+F269	<> U+1DF08 ; LATIN SMALL LETTER TURNED R WITH LONG LEG AND RETROFLEX HOOK	
+U+F235	<> U+1DF18 ; LATIN SMALL LETTER EZH WITH PALATAL HOOK	
