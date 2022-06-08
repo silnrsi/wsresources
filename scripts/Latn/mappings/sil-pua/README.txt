@@ -1,5 +1,10 @@
-At the time of writing, Doulos SIL and Charis SIL do *not* support
-Unicode 12 nor 14.0.  
+Deprecation of SIL PUA characters due to their inclusion in recent versions 
+of Unicode does not imply that SIL fonts have necessarily been updated to 
+support all or even some of Unicode's new characters. Please refer to 
+specific font documentation for supported character repertoire.
+
+The Unicode 15.0 standard will not include any changes to SIL's  
+Private Use Area. 
 
 The Unicode 14.0 standard includes 13 additional characters that were 
 previously allocated to codepoints in the Private Use Area 
