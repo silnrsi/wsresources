@@ -1,0 +1,17 @@
+EncodingName            "SIL-NewTaiLueSpaces-2022"
+DescriptiveName         "NewTaiLueSpaces"
+Version                 "2"
+Contact                 "mailto:bobby_devos@sil.org"
+RegistrationAuthority   "SIL"
+RegistrationName        "NewTaiLueSpaces"
+Copyright               "(c) SIL 2022"
+
+; This map is not for use with language projects,
+; it is only for use with font development projects
+; where extra spaces are needed to provide smaller
+; lengths of text for use with cmptxtrender.
+
+pass(Unicode)
+Class [somerightvowels] = ( U+19B1 .. U+19B4 )
+[somerightvowels] <> [somerightvowels] space
+ideographic_space <> space
