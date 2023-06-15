@@ -1,0 +1,107 @@
+﻿; This file was created by <author> using TECkitMappingEditorU.exe v4.0.0.0 on 9/29/2015.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Arial Unicode MS;11.25
+;   Right-hand side font = Times New Roman;27.75
+;   Main Window Position = 726,99,852,1048
+;   Left-hand side Character Map Window Position = 1583,99,457,447
+;   Right-hand side Character Map Window Position = 1583,546,457,447
+
+EncodingName            "WinGreek2Unicode"
+DescriptiveName         "WinGreek encoding to Unicode"
+Version                 ".95"
+Contact                 "mailto:lorna_evans@sil.org"
+RegistrationAuthority   "WinGreek"
+RegistrationName        "WinGreek custom encoding to Unicode"
+Copyright               "© 2015 SIL International. All rights reserved."
+LHSFlags                (ExpectsNFC GeneratesNFC)
+RHSFlags                ()
+
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+ByteClass[digit] = (0x30   .. 0x39  )
+UniClass [digit] = (U+0030 .. U+0039)
+
+; 7c and 7f are the same
+ByteClass[punct] =   (0x20   0x21   0x28   0x29   0x2A   0x2B   0x2C   0x2D   0x2E   \
+                      0x3B   0x3C   0x3D   0x3E   0x3F    \
+                      0x5B   0x5D   0x5F   0x7B   0x7C   0x7D   0x7E   0x7F )
+UniClass[punct] =    (U+0020 U+2E14 U+0028 U+0029 U+002A U+203B U+002C U+002D U+002E  \
+                      U+037E U+003C U+003D U+003E U+003F  \
+                      U+005B U+005D U+005F U+007B U+007C U+007D U+007E U+007C )
+
+ByteClass[maingrk] = (0x41   0x42   0x43   0x44   0x45   0x46   0x47   0x48   0x49   0x4B   0x4C   0x4D \
+                      0x4E   0x4F   0x50   0x51   0x52   0x53   0x54   0x55   0x57   0x58   0x59   0x5A \
+                      0x61   0x62   0x63   0x64   0x65   0x66   0x67   0x68   0x69   0x6A   0x6B   0x6C   0x6D \
+                      0x6E   0x6F   0x70   0x71   0x72   0x73   0x74   0x75   0x77   0x78   0x79   0x7A \
+                      0x22   0x23   0x24   0x25   0x26)
+UniClass [maingrk] = (U+0391 U+0392 U+03A7 U+0394 U+0395 U+03A6 U+0393 U+0397 U+0399 U+039A U+039B U+039C \
+                      U+039D U+039F U+03A0 U+0398 U+03A1 U+03A3 U+03A4 U+03A5 U+03A9 U+039E U+03A8 U+0396 \
+                      U+03B1 U+03B2 U+03C7 U+03B4 U+03B5 U+03C6 U+03B3 U+03B7 U+03B9 U+03C2 U+03BA U+03BB U+03BC \
+                      U+03BD U+03BF U+03C0 U+03B8 U+03C1 U+03C3 U+03C4 U+03C5 U+03C9 U+03BE U+03C8 U+03B6 \
+                      U+03E0 U+03DD U+03DB U+03D9 U+03DA )
+
+ByteClass[SpcDiac] = (0x27   0x2F   0x3A   0x40   0x5C   0x5E   0x60   0x91   0x92   0x93   0x94 \
+                      0x95   0x96   0x97   0xA0   0xC4 )
+UniClass[SpcDiac]  = (U+1FBD U+1FFD U+0387 U+00A8 U+1FEF U+1FC0 U+1FFE U+1FDF U+1FCF U+1FDE U+1FCE \
+                      U+1FDD U+1FCD U+1FEE U+1FED U+1FBE )
+
+ByteClass[rho]     = (0xB7   0xB8 )   
+UniClass[rho]      = (U+1FE5 U+1FE4 )   
+
+ByteClass[iota]    = (0x83   0x84   0x85   0x86   0x87   0x88   0x89   0x8A   0x8B   0x8C   0x8E   0xFE)   
+UniClass[iota]     = (U+1F31 U+1F30 U+1F77 U+1F35 U+1F34 U+1F76 U+1F33 U+1F32 U+1FD6 U+1F37 U+03CA U+1FD1)   
+
+ByteClass[epsilon] = (0x98   0x99   0x9A   0x9B   0x9C   0x9E   0x9F   )   
+UniClass[epsilon]  = (U+1F11 U+1F10 U+1F73 U+1F15 U+1F14 U+1F13 U+1F12 )   
+
+ByteClass[omicron] = (0xD0   0xD1   0xD2   0xD3   0xD4   0xD5   0xD6   0xD7   )   
+UniClass[omicron]  = (U+1F41 U+1F40 U+1F79 U+1F45 U+1F44 U+1F78 U+1F43 U+1F42 )   
+
+ByteClass[alpha]   = (0x76   0x82   0xA1   0xA2   0xA3   0xA4   0xA5   0xA6   0xA7   0xA8   0xA9   0xAA   0xAB \
+                      0xAC   0xAD   0xAE   0xAF   0xB0   0xB1   0xB2   0xB3   0xB4   0xB5   0xB6 )   
+UniClass[alpha]    = (U+1FB3 U+1FB1 U+1F01 U+1F00 U+1F71 U+1F05 U+1F04 U+1F70 U+1F03 U+1F02 U+1FB6 U+1F07 U+1F06 \
+                      U+1F81 U+1F80 U+1FB4 U+1F85 U+1F84 U+1FB2 U+1F83 U+1F82 U+1FB7 U+1F87 U+1F86 )   
+
+ByteClass[omega]   = (0x4A   0xE6   0xE7   0xE8   0xE9   0xEA   0xEB   0xEC   0xED   0xEE   0xEF   0xF0   0xF1 \
+                      0xF2   0xF3   0xF4   0xF5   0xF6   0xF7   0xF8   0xF9   0xFA   0xFB )   
+UniClass[omega]    = (U+1FF3 U+1F61 U+1F60 U+1F7D U+1F65 U+1F64 U+1F7C U+1F63 U+1F62 U+1FF6 U+1F67 U+1F66 U+1FA1 \
+                      U+1FA0 U+1FF4 U+1FA5 U+1FA4 U+1FF2 U+1FA3 U+1FA2 U+1FF7 U+1FA7 U+1FA6 )   
+
+ByteClass[eta]     = (0x56   0xB9   0xBA   0xBB   0xBC   0xBD   0xBE   0xBF   0xC0   0xC1   0xC2   0xC3   0xC5 \
+                      0xC6   0xC7   0xC8   0xC9   0xCA   0xCB   0xCC   0xCD   0xCE   0xCF )   
+UniClass[eta]      = (U+1FC3 U+1F21 U+1F20 U+1F75 U+1F25 U+1F24 U+1F74 U+1F23 U+1F22 U+1FC6 U+1F27 U+1F26 U+1F91 \
+                      U+1F90 U+1FC4 U+1F95 U+1F94 U+1FC2 U+1F93 U+1F92 U+1FC7 U+1F97 U+1F96 )   
+
+ByteClass[upsilon] = (0xD8   0xD9   0xDA   0xDB   0xDC   0xDD   0xDE   0xDF   0xE0   0xE1   0xE2   0xE3   0xE4 \
+                      0xE5   0xFF )   
+UniClass[upsilon]  = (U+1F51 U+1F50 U+1F7B U+1F55 U+1F54 U+1F7A U+1F53 U+1F52 U+1FE6 U+1F57 U+1F56 U+03CB U+1FE3 \
+                      U+1FE2 U+1FE1 )   
+
+[ctl]     <> [ctl]
+[digit]   <> [digit]
+[punct]   <> [punct]
+[maingrk] <> [maingrk]
+[SpcDiac] <> [SpcDiac]
+[rho]     <> [rho]
+[iota]    <> [iota]
+[epsilon] <> [epsilon]
+[omicron] <> [omicron]
+[alpha]   <> [alpha]
+[omega]   <> [omega]
+[eta]     <> [eta]
+[upsilon] <> [upsilon]
+
+0x80 <> U+FFFD
+0x81 <> U+FFFD 
+0x8D <> U+FFFD 
+0x8F <> U+FFFD 
+0x90 <> U+FFFD 
+0x9D <> U+FFFD 
+0xFC <> U+03B5 U+0342 ; not in Unicode as precomposed character 
+0xFD <> U+03BF U+0342 ; not in Unicode as precomposed character
+
+

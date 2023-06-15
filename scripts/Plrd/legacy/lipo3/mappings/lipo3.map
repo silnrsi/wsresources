@@ -1,0 +1,351 @@
+﻿; This file was created by <Lorna Evans> using TECkitMappingEditorU.exe v4.0.0.0 on 7/29/2013.
+;   Conversion Type = Legacy_to_Unicode_to_Unicode
+;   Left-hand side font = Lipo3;11.25
+;   Right-hand side font = Miao Unicode;18
+;   Main Window Position = 165,205,1171,832
+;   Left-hand side Character Map Window Position = 1304,188,457,447
+;   Right-hand side Character Map Window Position = 750,365,668,667
+;   Right-hand range = 0000-007F
+
+EncodingName            "Lipo3 to Unicode"
+DescriptiveName         "Lipo3 legacy font encoding"
+Version                 "0.2"
+Contact                 "mailto:lorna_evans@sil.org
+RegistrationAuthority   "SIL International"
+RegistrationName        "Lipo3"
+Copyright               "© 2013 SIL International. All rights reserved."
+LHSFlags                ()
+RHSFlags                ()
+
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+ByteClass[digit] = (0x30   .. 0x39  )
+UniClass [digit] = (U+0030 .. U+0039)
+
+ByteClass[consonant] = (0x24    0x2C    0x2E    0x52    0x61    0x62    0x63    0x64    0x65    0x66 \
+                        0x67    0x68    0x6A    0x6B    0x6C    0x6D    0x6E    0x70    0x71    0x72 \
+                        0x73    0x74    0x76    0x77    0x78    0x79    0x7A    0x82)
+UniClass [consonant] = (U+16F18 U+16F23 U+16F37 U+16F28 U+16F43 U+16F00 U+16F0E U+16F0A U+16F39 U+16F07 \
+                        U+16F1E U+16F26 U+16F2F U+16F20 U+16F16 U+16F04 U+16F10 U+16F02 U+16F1A U+16F35 \
+                        U+16F3A U+16F0D U+16F08 U+16F42 U+16F33 U+16F3D U+16F3B U+16F40 )
+
+0x5C 0x70 0x20 > "\p "
+0x5C 0x76 0x20 > "\v "
+0x5C 0x63 0x20 > "\c "
+0x5C 0x73 0x20 > "\s "
+0x5C 0x71 0x31 > "\q1 "
+0x5C 0x71 0x31 0x20 > "\q1 "
+0x5C 0x70 0x6E 0x20 > "\pn "
+0x5C 0x70 0x6E 0x2A > "\pn* "
+0x5C 0x70 0x6E 0x32 0x20 > "\pn2 "
+0x5C 0x70 0x6E 0x32 0x2A > "\pn2* "
+
+[ctl]          >	[ctl]
+[digit]	 >	[digit]
+[consonant]	 >	[consonant]
+
+
+0x20     > U+0020
+0x21     > U+0021
+0x22     > U+16F51 ; aspiration sign
+0x25     > U+0025
+0x26     > U+FFFD 
+0x27     > U+FFFD 
+0x28     > U+0028
+0x29     > U+0029
+0x2A     > plus_sign
+0x2B     > colon
+0x2D     > hyphen_minus
+0x2F     > question_mark
+; 0x3A     > equals_sign ; seems to be a Miao vowel
+0x3C     > comma
+0x3D     > semicolon
+0x3E     > full_stop
+0x3F     > solidus
+0x55     > U+2019 ; could be a Miao mark but doesn't appear to be
+0x5B     > U+00B4 
+0x5D     > U+2019 ; could be a Miao mark but doesn't appear to be 
+0x5F     > U+FFFD 
+0x60     > U+FFFD 
+0x7B     > U+201C
+0x7C     > U+FFFD 
+0x7D     > U+201D
+0x7E     > U+FFFD 
+0x7F     > U+FFFD 
+0x80     > U+FFFD 
+0x81     > U+FFFD 
+0x83     > U+0042 
+0x84     > U+0043 
+0x85     > U+0044 
+0x86     > U+0045 
+0x87     > U+0046 
+0x88     > U+0047 
+0x89     > U+002F
+0x8A     > U+266F
+0x8B     > U+266D
+0x8C     > U+1D110
+0x8D     > U+FFFD 
+0x8E     > U+FFFD 
+0x8F     > U+FFFD 
+0x90     > U+FFFD 
+0x91     > U+2018
+0x92     > U+2019
+0x93     > U+201C
+0x94     > U+201D
+0x95     > U+2022
+0x96     > U+2013
+0x97     > U+2014
+0x98     > U+0022
+0x99     > U+2122
+0x9D     > U+FFFD 
+0x9E     > U+FFFD 
+0xA0     > U+00A0
+0xAC     > U+00AC
+0xB6     > U+00B6
+0xB7     > U+00B7
+
+
+; ----------------------
+; three (codepoint not correct)
+0xC9     > U+16F5F         ; bottom right
+0x23     > U+16F5F U+16F8F ; right centered
+0xA1     > U+16F5F U+16F90 ; top right
+0x9A     > U+16F5F U+16F91 ; above
+
+; degree/line under (codepoint not correct)
+0xCE     > U+16F56         ; bottom right
+0x43     > U+16F56 U+16F8F ; right centered
+0xA6     > U+16F56 U+16F90 ; top right
+0xC5     > U+16F56 U+16F91 ; above
+
+; line upside down U (codepoint not correct)
+0xE3     > U+16F69         ; bottom right
+0x58     > U+16F69 U+16F8F ; right centered
+0xBB     > U+16F69 U+16F90 ; top right
+0xF7     > U+16F69 U+16F91 ; above
+
+; flipped 9 (codepoint not correct)
+0xE6     > U+16F7C         ; bottom right
+0x5C     > U+16F7C U+16F8F ; right centered
+0xBE     > U+16F7C U+16F90 ; top right
+0xFA     > U+16F7C U+16F91 ; above
+
+; ----------------------
+
+; vowel sign a
+0xD6     > U+16F54         ; bottom right
+0x4B     > U+16F54 U+16F8F ; right centered
+0xAF     > U+16F54 U+16F90 ; top right
+0xED     > U+16F54 U+16F91 ; above
+
+; vowel sign aa
+0xEB     > U+16F55         ; bottom right
+0x56     > U+16F55 U+16F8F ; right centered
+0xC3     > U+16F55 U+16F90 ; top right
+0xFF     > U+16F55 U+16F91 ; above
+
+; vowel sign an
+0xCD     > U+16F57         ; bottom right
+0x42     > U+16F57 U+16F8F ; right centered
+0xA5     > U+16F57 U+16F90 ; top right
+0xC4     > U+16F57 U+16F91 ; above
+
+; vowel sign ang
+0xE1     > U+16F58         ; bottom right
+0x54     > U+16F58 U+16F8F ; right centered
+0xB9     > U+16F58 U+16F90 ; top right
+0xF5     > U+16F58 U+16F91 ; above
+
+; vowel sign o
+0xE7     > U+16F59         ; bottom right
+0x6F     > U+16F59 U+16F8F ; right centered
+0xBF     > U+16F59 U+16F90 ; top right
+0xFB     > U+16F59 U+16F91 ; above
+
+; vowel sign oo
+0xDA     > U+16F5A         ; bottom right
+0x4F     > U+16F5A U+16F8F ; right centered
+0xB3     > U+16F5A U+16F90 ; top right
+0xF1     > U+16F5A U+16F91 ; above
+
+; vowel sign w
+0xD3     > U+16F5C         ; bottom right
+0x48     > U+16F5C U+16F8F ; right centered
+0xAB     > U+16F5C U+16F90 ; top right
+0xDE     > U+16F5C U+16F91 ; above
+
+; vowel sign e
+0xD9     > U+16F5D         ; bottom right
+0x4E     > U+16F5D U+16F8F ; right centered
+0xB2     > U+16F5D U+16F90 ; top right
+0xF0     > U+16F5D U+16F91 ; above
+
+; vowel sign en
+0xD0     > U+16F5E         ; bottom right
+0x45     > U+16F5E U+16F8F ; right centered
+0xA8     > U+16F5E U+16F90 ; top right
+0xC7     > U+16F5E U+16F91 ; above
+
+; vowel sign oey
+0xE5     > U+16F60         ; bottom right
+0x5A     > U+16F60 U+16F8F ; right centered
+0xBD     > U+16F60 U+16F90 ; top right
+0xF9     > U+16F60 U+16F91 ; above
+
+; vowel sign i
+0xE9     > U+16F61         ; bottom right
+0x69     > U+16F61 U+16F8F ; right centered
+0xC1     > U+16F61 U+16F90 ; top right
+0xFD     > U+16F61 U+16F91 ; above
+
+; vowel sign ia
+0xCF     > U+16F62         ; bottom right
+0x44     > U+16F62 U+16F8F ; right centered
+0xA7     > U+16F62 U+16F90 ; top right
+0xC6     > U+16F62 U+16F91 ; above
+
+; vowel sign ie
+0xCA     > U+16F66         ; bottom right
+0x3A     > U+16F66 U+16F8F ; right centered
+0xA2     > U+16F66 U+16F90 ; top right
+0x5E     > U+16F66 U+16F91 ; above
+0x9B     > U+16F66 U+16F91 ; above
+
+
+; vowel sign ii
+0xD5     > U+16F67         ; bottom right
+0x4A     > U+16F67 U+16F8F ; right centered
+0xAE     > U+16F67 U+16F90 ; top right
+0xEC     > U+16F67 U+16F91 ; above
+
+; vowel sign iu
+0xE4     > U+16F68         ; bottom right
+0x59     > U+16F68 U+16F8F ; right centered
+0xBC     > U+16F68 U+16F90 ; top right
+0xF8     > U+16F68 U+16F91 ; above
+
+; vowel sign u
+0xE8     > U+16F6A         ; bottom right
+0x75     > U+16F6A U+16F8F ; right centered
+0xC0     > U+16F6A U+16F90 ; top right
+0xFC     > U+16F6A U+16F91 ; above
+
+; vowel sign ua
+0xDC     > U+16F6B         ; bottom right
+0x51     > U+16F6B U+16F8F ; right centered
+0xB5     > U+16F6B U+16F90 ; top right
+0xF3     > U+16F6B U+16F91 ; above
+
+; vowel sign uu
+0xE2     > U+16F6E         ; bottom right
+0x57     > U+16F6E U+16F8F ; right centered
+0xBA     > U+16F6E U+16F90 ; top right
+0xF6     > U+16F6E U+16F91 ; above
+
+; vowel sign y
+0xCC     > U+16F71         ; bottom right
+0x40     > U+16F71 U+16F8F ; right centered
+0xA4     > U+16F71 U+16F90 ; top right
+0x9F     > U+16F71 U+16F91 ; above
+
+; vowel sign yi
+0xEA     > U+16F72         ; bottom right
+0x41     > U+16F72 U+16F8F ; right centered
+0xC2     > U+16F72 U+16F90 ; top right
+0xFE     > U+16F72 U+16F91 ; above
+
+; vowel sign ae
+0xD2     > U+16F73         ; bottom right
+0x47     > U+16F73 U+16F8F ; right centered
+0xAA     > U+16F73 U+16F90 ; top right
+0xDD     > U+16F73 U+16F91 ; above
+
+; vowel sign aee
+0xD1     > U+16F74         ; bottom right
+0x46     > U+16F74 U+16F8F ; right centered
+0xA9     > U+16F74 U+16F90 ; top right
+0xC8     > U+16F74 U+16F91 ; above
+
+; vowel sign rounded err
+0xD7     > U+16F76         ; bottom right
+0x4C     > U+16F76 U+16F8F ; right centered
+0xB0     > U+16F76 U+16F90 ; top right
+0xEE     > U+16F76 U+16F91 ; above
+
+; vowel sign rounded er
+0xDB     > U+16F78         ; bottom right
+0x50     > U+16F78 U+16F8F ; right centered
+0xB4     > U+16F78 U+16F90 ; top right
+0xF2     > U+16F78 U+16F91 ; above
+
+;vowel sign ai
+0xE0     > U+16F79         ; bottom right
+0x53     > U+16F79 U+16F8F ; right centered
+0xB8     > U+16F79 U+16F90 ; top right
+0xF4     > U+16F79 U+16F91 ; above
+
+; vowel sign ei
+0xD8     > U+16F7A         ; bottom right
+0x4D     > U+16F7A U+16F8F ; right centered
+0xB1     > U+16F7A U+16F90 ; top right
+0xEF     > U+16F7A U+16F91 ; above
+
+; vowel sign au
+0xD4     > U+16F7B         ; bottom right
+0x49     > U+16F7B U+16F8F ; right centered
+0xAD     > U+16F7B U+16F90 ; top right
+0xDF     > U+16F7B U+16F91 ; above
+
+; vowel sign ng
+0xCB     > U+16F7E         ; bottom right
+0x3B     > U+16F7E U+16F8F ; right centered
+0xA3     > U+16F7E U+16F90 ; top right
+0x9C     > U+16F7E U+16F91 ; above
+
+
+; ----------
+; Pass 2 for reordering
+; ----------
+
+pass(Unicode)
+
+UniClass [consonant] = (U+16F07 U+16F26 U+16F3A U+16F42 U+16F33 )
+
+UniClass [NoWartConsU] = (U+16F10 U+16F28 U+16F43 U+16F00 U+16F0E U+16F0A U+16F18 U+16F1E U+16F2F \
+                           U+16F21 U+16F16 U+16F04 U+16F23 U+16F1A U+16F35 U+16F37 U+16F08 \
+                           U+16F3D U+16F3B)
+UniClass [WartConsU] =   (U+16F11 U+16F29 U+16F44 U+16F01 U+16F0F U+16F0B U+16F19 U+16F1F U+16F30 \
+                          U+16F22 U+16F17 U+16F05 U+16F24 U+16F1B U+16F36 U+16F38 U+16F09 \
+                          U+16F3E U+16F3C)
+UniClass [AllConsU]  = ([consonant] [NoWartConsU] [WartConsU] )
+
+UniClass [nasal] = (U+16F50)
+
+U+16F10 / _ [AllConsU] > U+16F50
+
+[nasal]=n [NoWartConsU]=c1 > @c1 @n
+[nasal]=n [WartConsU]=c2   > @c2 @n
+[nasal]=n [consonant]=c3   > @c3 @n
+
+; ----------
+; Pass 3 for getting rid of extra positioning tone marks
+; ----------
+
+pass(Unicode)
+
+UniClass [vowels] = (U+16F54 .. U+16F7E)
+UniClass [toneright] = (U+16F8F)
+UniClass [tonetopright] = (U+16F90)
+UniClass [toneabove] = (U+16F91)
+UniClass [tonebelow] = (U+16F92)
+
+[vowels]=v1 [toneright]=t1 [vowels]=v2 [toneright]=t2  > @v1 @v2 @t2 ; leave off extra positioning tone mark
+[vowels]=v1 [tonetopright]=t1 [vowels]=v2 [tonetopright]=t2  > @v1 @v2 @t2 ; leave off extra positioning tone mark
+[vowels]=v1 [toneabove]=t1 [vowels]=v2 [toneabove]=t2  > @v1 @v2 @t2 ; leave off extra positioning tone mark
+[vowels]=v1 [tonebelow]=t1 [vowels]=v2 [tonebelow]=t2  > @v1 @v2 @t2 ; leave off extra positioning tone mark
+
+
