@@ -1,0 +1,256 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 6/15/2023.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName			"Wingdings-2006"
+DescriptiveName			"Wingdings Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_evans@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"Wingdings"
+
+RHSFlags				(ExpectsNFD)
+
+; 2006-05-10	LP	created (based on python scripts of Bruce Jakeway s 
+;				(bruce_jakeway@sil.org)
+;                    There are still some questions (95 9D) with this mapping
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+[ctl]	<>	[ctl]
+
+0x20 <> U+0020     ; SPACE
+0x21 <> U+270F     ; Pencil	Dingbats
+0x22 <> U+2702     ; Black scissors	Dingbats
+0x23 <> U+2701     ; Upper blade scissors	Dingbats
+0x24 <> U+F024     ; Spectacles - no equivalent
+0x25 <> U+F025     ; Bell - no equivalent
+0x26 <> U+F026     ; Book - no equivalent
+0x27 <> U+F027     ; Candle - no equivalent
+0x28 <> U+260E     ; Black telephone	Miscellaneous Symbols
+0x29 <> U+2706     ; Telephone location sign	Dingbats
+0x2A <> U+2709     ; Envelope	Dingbats
+0x2B <> U+F02B     ; Envelope with address and stamp - no equivalent
+0x2C <> U+F02C     ; Closed mailbox with flag down - no equivalent
+0x2D <> U+F02D     ; Closed mailbox with flag up - no equivalent
+0x2E <> U+F02E     ; Open mailbox with flag up - no equivalent
+0x2F <> U+F02F     ; Open mailbox with flag down - no equivalent
+0x30 <> U+F030     ; Folder closed - no equivalent
+0x31 <> U+F031     ; Folder open - no equivalent
+0x32 <> U+F032     ; Printed page with corner turned - no equivalent
+0x33 <> U+F033     ; Printed page - no equivalent
+0x34 <> U+F034     ; Stack of printed pages - no equivalent
+0x35 <> U+F035     ; Filing cabinet - no equivalent
+0x36 <> U+231B     ; Hourglass	Miscellaneous Technical
+0x37 <> U+2328     ; Keyboard	Miscellaneous Technical
+0x38 <> U+F038     ; Mouse - no equivalent
+0x39 <> U+F039     ; Trackball - no equivalent
+0x3A <> U+F03A     ; Computer - no equivalent
+0x3B <> U+F03B     ; Hard disk - no equivalent
+0x3C <> U+F03C     ; 3.5" Floppy disk - no equivalent
+0x3D <> U+F03D     ; 5.25" Floppy disk - no equivalent
+0x3E <> U+2707     ; Tape drive	Dingbats
+0x3F <> U+270D     ; Writing hand	Dingbats
+0x40 <> U+F040     ; Writing left hand - no equivalent
+0x41 <> U+270C     ; Victory hand	Dingbats
+0x42 <> U+F042     ; Hand with thumb and finger looped - no equivalent
+0x43 <> U+F043     ; Hand with thumb up - no equivalent
+0x44 <> U+F044     ; Hand with thumb down - no equivalent
+0x45 <> U+261C     ; White left pointing index	Miscellaneous Symbols
+0x46 <> U+261E     ; White right pointing index	Miscellaneous Symbols
+0x47 <> U+261D     ; White up pointing index	Miscellaneous Symbols
+0x48 <> U+261F     ; White down pointing index	Miscellaneous Symbols
+0x49 <> U+F049     ; Open hand - no equivalent
+0x4A <> U+263A     ; White smiling face	Miscellaneous Symbols
+0x4B <> U+F04B     ; White neutral face - no equivalent
+0x4C <> U+2639     ; White frowning face	Miscellaneous Symbols
+0x4D <> U+F04D     ; Bomb - no equivalent
+0x4E <> U+2620     ; Skull and crossbones	Miscellaneous Symbols
+0x4F <> U+2690     ; White flag	Miscellaneous Symbols
+0x50 <> U+F050     ; Pennant on pole - no equivalent
+0x51 <> U+2708     ; Airplane	Dingbats
+0x52 <> U+263C     ; White sun with rays	Miscellaneous Symbols
+0x53 <> U+F053     ; Droplet - no equivalent
+0x54 <> U+2744     ; Snowflake	Dingbats
+0x55 <> U+F055     ; White Latin cross - no equivalent
+0x56 <> U+271E     ; Shadowed white Latin cross	Dingbats
+0x57 <> U+F057     ; Celtic cross - no equivalent
+0x58 <> U+2720     ; Maltese cross	Dingbats
+0x59 <> U+2721     ; Star of David	Dingbats
+0x5A <> U+262A     ; Star and crescent	Miscellaneous Symbols
+0x5B <> U+262F     ; Yin Yang	Dingbats
+0x5C <> U+0950     ; Devanagari Om	Devanagari
+0x5D <> U+2638     ; Wheel of Dharma	Miscellaneous Symbols
+0x5E <> U+2648     ; Aries	Miscellaneous Symbols
+0x5F <> U+2649     ; Taurus	Miscellaneous Symbols
+0x60 <> U+264A     ; Gemini	Miscellaneous Symbols
+0x61 <> U+264B     ; Cancer	Miscellaneous Symbols
+0x62 <> U+264C     ; Leo	Miscellaneous Symbols
+0x63 <> U+264D     ; Virgo	Miscellaneous Symbols
+0x64 <> U+264E     ; Libra	Miscellaneous Symbols
+0x65 <> U+264F     ; Scorpio	Miscellaneous Symbols
+0x66 <> U+2650     ; Sagittarius	Miscellaneous Symbols
+0x67 <> U+2651     ; Capricorn	Miscellaneous Symbols
+0x68 <> U+2652     ; Aquarius	Miscellaneous Symbols
+0x69 <> U+2653     ; Pisces	Miscellaneous Symbols
+0x6A <> U+0026     ; Ampersand	Basic Latin (cursive font)
+0x6B <> U+0026     ; Ampersand	Basic Latin (cursive font)
+0x6C <> U+25CF     ; Black circle	Geometric Shapes
+0x6D <> U+274D     ; Shadowed white circle	Dingbats
+0x6E <> U+25A0     ; Black square	Geometric Shapes
+0x6F <> U+25A1     ; White square	Geometric Shapes
+0x70 <> U+F070     ; Bold white square - no equivalent
+0x71 <> U+2751     ; Lower right shadowed white square	Dingbats
+0x72 <> U+2752     ; Upper right shadowed white square	Dingbats
+0x73 <> U+F073     ; Small black diamond suit - no equivalent
+0x74 <> U+2666     ; Black diamond suit	Miscellaneous Symbols
+0x75 <> U+25C6     ; Black diamond	Geometric Shapes
+0x76 <> U+2756     ; Black diamond minus white X	Dingbats
+0x77 <> U+F077     ; Small black diamond - no equivalent
+0x78 <> U+2327     ; X in a rectangle box	Miscellaneous Technical
+0x79 <> U+2353     ; APL functional symbol quad up caret Miscellaneous Technical
+0x7A <> U+2318     ; Place of interest sign	Miscellaneous Symbols
+0x7B <> U+2740     ; White florette	Dingbats
+0x7C <> U+273F     ; Black florette	Dingbats
+0x7D <> U+275D     ; Heavy double turned comma quotation mark ornament	Dingbats
+0x7E <> U+275E     ; Heavy double comma quotation mark ornament Dingbats
+0x7F <> U+25AF     ; White vertical rectangle	Geometric Shapes
+0x80 <> U+24EA     ; Circled digit zero	Enclosed Alphanumerics
+0x81 <> U+2460     ; Circled digit one	Enclosed Alphanumerics
+0x82 <> U+2461     ; Circled digit two	Enclosed Alphanumerics
+0x83 <> U+2462     ; Circled digit three	Enclosed Alphanumerics
+0x84 <> U+2463     ; Circled digit four	Enclosed Alphanumerics
+0x85 <> U+2464     ; Circled digit five	Enclosed Alphanumerics
+0x86 <> U+2465     ; Circled digit six	Enclosed Alphanumerics
+0x87 <> U+2466     ; Circled digit seven	Enclosed Alphanumerics
+0x88 <> U+2467     ; Circled digit eight	Enclosed Alphanumerics
+0x89 <> U+2468     ; Circled digit nine	Enclosed Alphanumerics
+0x8A <> U+2469     ; Circled number ten	Enclosed Alphanumerics
+0x8B <> U+24FF     ; Negative circled digit zero	Enclosed Alphanumerics
+0x8C <> U+2776     ; Dingbat negative circled digit one	Dingbats
+0x8D <> U+2777     ; Dingbat negative circled digit two	Dingbats
+0x8E <> U+2778     ; Dingbat negative circled digit three	Dingbats
+0x8F <> U+2779     ; Dingbat negative circled digit four	Dingbats
+0x90 <> U+277A     ; Dingbat negative circled digit five	Dingbats
+0x91 <> U+277B     ; Dingbat negative circled digit six	Dingbats
+0x92 <> U+277C     ; Dingbat negative circled digit seven	Dingbats
+0x93 <> U+277D     ; Dingbat negative circled digit eight	Dingbats
+0x94 <> U+277E     ; Dingbat negative circled digit nine	Dingbats
+0x95 <> U+277F     ; Dingbat negative circled number ten	Dingbats
+0x96 <> U+F096     ; Bud and leaf north east - no equivalent
+0x97 <> U+F097     ; Bud and leaf north west - no equivalent
+0x98 <> U+F098     ; Bud and leaf south west - no equivalent
+0x99 <> U+F099     ; Bud and leaf south east - no equivalent
+0x9A <> U+F09A     ; Vine leaf bold north east - no equivalent
+0x9B <> U+F09B     ; Vine leaf bold north west - no equivalent
+0x9C <> U+F09C     ; Vine leaf bold south west - no equivalent
+0x9D <> U+F09D     ; Vine leaf bold south east - no equivalent
+0x9E <> U+00B7     ; Middle dot	Latin-1 Supplement
+0x9F <> U+2022     ; Bullet	General Punctuation
+0xA0 <> U+25AA     ; Black small square	Geometric Shapes
+0xA1 <> U+25CB     ; White circle	Geometric Shapes
+0xA2 <> U+F0A2     ; Bold white circle - no equivalent
+0xA3 <> U+F0A3     ; Extra bold white circle - no equivalent
+0xA4 <> U+25C9     ; Fisheye	Geometric Shapes
+0xA5 <> U+25CE     ; Bullseye	Geometric Shapes
+0xA6 <> U+F0A6     ; Upper right shadowed white circle - no equivalent
+0xA7 <> U+25AA     ; Black small square	Geometric Shapes
+0xA8 <> U+25FB     ; White medium square	Geometric Shapes
+0xA9 <> U+F0A9     ; Black three pointed star - no equivalent
+0xAA <> U+2726     ; Black four pointed star	Dingbats
+0xAB <> U+2605     ; Black star	Miscellaneous Symbols
+0xAC <> U+2736     ; Six pointed black star	Dingbats
+0xAD <> U+2734     ; Eight pointed black star	Dingbats
+0xAE <> U+2739     ; Twelve pointed black star	Dingbats
+0xAF <> U+2735     ; Eight pointed pinwheel star	Dingbats
+0xB0 <> U+F0B0     ; Square register mark - no equivalent
+0xB1 <> U+2316     ; Position indicator	Miscellaneous Technical
+0xB2 <> U+2727     ; White four pointed star	Dingbats
+0xB3 <> U+2311     ; Square lozenge	Miscellaneous Technical
+0xB4 <> U+F0B4     ; Question mark in white diamond - no equivalent
+0xB5 <> U+272A     ; Circled white star	Dingbats
+0xB6 <> U+2730     ; Shadowed white star	Dingbats
+0xB7 <> U+F0B7     ; Clock at one o'clock - no equivalent
+0xB8 <> U+F0B8     ; Clock at two o'clock - no equivalent
+0xB9 <> U+F0B9     ; Clock at three o'clock - no equivalent
+0xBA <> U+F0BA     ; Clock at four o'clock - no equivalent
+0xBB <> U+F0BB     ; Clock at five o'clock - no equivalent
+0xBC <> U+F0BC     ; Clock at six o'clock - no equivalent
+0xBD <> U+F0BD     ; Clock at seven o'clock - no equivalent
+0xBE <> U+F0BE     ; Clock at eight o'clock - no equivalent
+0xBF <> U+F0BF     ; Clock at nine o'clock - no equivalent
+0xC0 <> U+F0C0     ; Clock at ten o'clock - no equivalent
+0xC1 <> U+F0C1     ; Clock at eleven o'clock - no equivalent
+0xC2 <> U+F0C2     ; Clock at twelve o'clock - no equivalent
+0xC3 <> U+F0C3     ; White arrow pointing downwards then curving leftwards - no equivalent
+0xC4 <> U+F0C4     ; White arrow pointing downwards then curving rightwards - no equivalent
+0xC5 <> U+F0C5     ; White arrow pointing upwards then curving leftwards - no equivalent
+0xC6 <> U+F0C6     ; White arrow pointing upwards then curving rightwards - no equivalent
+0xC7 <> U+F0C7     ; White arrow pointing leftwards then curving upwards - no equivalent
+0xC8 <> U+F0C8     ; White arrow pointing rightwards then curving upwards - no equivalent
+0xC9 <> U+F0C9     ; White arrow pointing leftwards then curving downwards - no equivalent
+0xCA <> U+F0CA     ; White arrow pointing rightwards then curving downwards - no equivalent
+0xCB <> U+F0CB     ; Quilt square - no equivalent
+0xCC <> U+F0CC     ; Quilt square inverted - no equivalent
+0xCD <> U+F0CD     ; Leaf counterclockwise south west - no equivalent
+0xCE <> U+F0CE     ; Leaf counterclockwise north west - no equivalent
+0xCF <> U+F0CF     ; Leaf counterclockwise south east - no equivalent
+0xD0 <> U+F0D0     ; Leaf counterclockwise north east - no equivalent
+0xD1 <> U+F0D1     ; Leaf north west - no equivalent
+0xD2 <> U+F0D2     ; Leaf south west - no equivalent
+0xD3 <> U+F0D3     ; Leaf north east - no equivalent
+0xD4 <> U+F0D4     ; Leaf south east - no equivalent
+0xD5 <> U+232B     ; Erase to the left	Miscellaneous Technical
+0xD6 <> U+2326     ; Erase to the right	Miscellaneous Technical
+0xD7 <> U+F0D7     ; Three-D top-lighted leftwards arrowhead - no equivalent
+0xD8 <> U+27A2     ; Three-D top-lighted rightwards arrowhead	Dingbats
+0xD9 <> U+F0D9     ; Three-D right-lighted upwards arrowhead - no equivalent
+0xDA <> U+F0DA     ; Three-D left-lighted downwards arrowhead - no equivalent
+0xDB <> U+F0DB     ; Circled heavy white leftwards arrow - no equivalent
+0xDC <> U+27B2     ; Circled heavy white rightwards arrow	Dingbats
+0xDD <> U+F0DD     ; Circled heavy white upwards arrow - no equivalent
+0xDE <> U+F0DE     ; Circled heavy white downwards arrow - no equivalent
+0xDF <> U+F0DF     ; Wide-headed leftwards arrow - no equivalent
+0xE0 <> U+F0E0     ; Wide-headed rightwards arrow - no equivalent
+0xE1 <> U+F0E1     ; Wide-headed upwards arrow - no equivalent
+0xE2 <> U+F0E2     ; Wide-headed downwards arrow - no equivalent
+0xE3 <> U+F0E3     ; Wide-headed north west arrow - no equivalent
+0xE4 <> U+F0E4     ; Wide-headed north east arrow - no equivalent
+0xE5 <> U+F0E5     ; Wide-headed south west arrow - no equivalent
+0xE6 <> U+F0E6     ; Wide-headed south east arrow - no equivalent
+0xE7 <> U+F0E7     ; Heavy wide-headed leftwards arrow - no equivalent
+0xE8 <> U+2794     ; Heavy wide-headed rightwards arrow	Dingbats
+0xE9 <> U+F0E9     ; Heavy wide-headed upwards arrow - no equivalent
+0xEA <> U+F0EA     ; Heavy wide-headed downwards arrow - no equivalent
+0xEB <> U+F0EB     ; Heavy wide-headed north west arrow - no equivalent
+0xEC <> U+F0EC     ; Heavy wide-headed north east arrow - no equivalent
+0xED <> U+F0ED     ; Heavy wide-headed south west arrow - no equivalent
+0xEE <> U+F0EE     ; Heavy wide-headed south east arrow - no equivalent
+0xEF <> U+21E6     ; Leftwards white arrow	Arrows
+0xF0 <> U+21E8     ; Rightwards white arrow	Arrows
+0xF1 <> U+21E7     ; Upwards white arrow	Arrows
+0xF2 <> U+21E9     ; Downwards white arrow	Arrows
+0xF3 <> U+2B04     ; Left right white arrow	Miscellaneous Symbols and Arrows
+0xF4 <> U+21F3     ; Up down white arrow	Arrows
+0xF5 <> U+2B00     ; North east white arrow	Miscellaneous Symbols and Arrows
+0xF6 <> U+2B01     ; North west white arrow	Miscellaneous Symbols and Arrows
+0xF7 <> U+2B03     ; South west white arrow	Miscellaneous Symbols and Arrows
+0xF8 <> U+2B02     ; South east white arrow	Miscellaneous Symbols and Arrows
+0xF9 <> U+25AD     ; White rectangle	Geometric Shapes
+0xFA <> U+25AB     ; White small square	Geometric Shapes
+0xFB <> U+2717     ; Ballot X	Dingbats
+0xFC <> U+2713     ; Check mark	Dingbats
+0xFD <> U+2612     ; Ballot box with X	Dingbats
+0xFE <> U+2611     ; Ballot box with check	Dingbats
+0xFF <> U+F0FF     ; Windows logo - no equivalent
