@@ -17,6 +17,8 @@ Examples of possible resource files for a language with code xxx.
 
 Regarding Keyman keyboards, this repo is likely a good home for legacy Keyman keyboards. However, for Unicode Keyman keyboards we encourage them to be submitted to the [Keyman repo](https://github.com/keymanapp/keyboards). Existing Keyman keyboards can be found here (search by language name or code): [Keyman](https://keyman.com/).
 
+The .map files are source files for use with [TECkit](https://software.sil.org/teckit). The compiled `.map` files are `.tec`. The map files can be used directly with TECkit or with [SIL Converters](https://software.sil.org/silconverters). Mapping files can also be used with [OpenOffice Linguistic Tools](https://software.sil.org/oolt/). Instructions are found on those sites.
+
 ```
 wsresources
 ├- langs
