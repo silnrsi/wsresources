@@ -1,0 +1,109 @@
+c      Senegalese Keyboard Control File for Tavultesoft Keyman 5
+c       
+c
+c
+c	For use with SIL-Sen fonts (orthography for Senegal languages)
+c
+c  Version 1.0 by Knox Haggie
+c  
+c  Modification history
+c  1.1	Use '/' instead of apostrophe which is often an alphabetic
+c		character
+c  1.2	Keep accented characters in stores for easier modification.
+c		And added accent aigu on its own.
+c  1.3      Added 'glottal' character.  Swapped use of double quotes to
+c           type diaresis to use semi-colon instead.
+c  1.4      Updated for revised Senegal fonts (includes Kwatay and 
+c           Kasa characters.  Literacy 'a' no longer a 'special' - i.e.
+c           a 'literacy' font is supplied instead).
+
+NAME "SIL Sénégal"
+COPYRIGHT "2001 SIL Sénégal, La Gambie et Guinée Bissau"
+BITMAP SILSenOn 
+VERSION 5.0
+MESSAGE "Pour tous les langues Sénégalaises"
+        
+
+store(cons) 'bBcCdDgGpPtTyY'
+store(implosive) d128 d129 d141 d142 d143 d144 d240 d208 d163 d165 d174 d178 d222 d254
+store(vowel) 'aAeEiIoOuU'
+store(vacute) d225 d193 d233 d201 d237 d205 d243 d211 d250 d218   
+store(vgrave) d224 d192 d232 d200 d236 d204 d242 d210 d249 d217
+store(vcircon) d226 d194 d234 d202 d238 d206 d244 d212 d251 d219 
+store(vumlaut) d228 d196 d235 d203 d239 d207 d246 d214 d252 d220
+	   
+begin >  use(Main)
+
+group(Main) using keys
+
+c Implosives:
+
+',' + any(cons) > index(implosive, 2)
+
+c Nasals
+
+',' + 'n' > d157		c sm eng
+',' + 'N' > d158		c cap eng
+';' + 'n' > d161		c sm enye
+';' + 'N' > d162		c cap enye
+
+c Tildes
+'~' + 'n' > d241		c sm n tilde
+'~' + 'N' > d209		c cap n tilde
+'~' + 'a' > d227
+'~' + 'A' > d195
+
+c isolated accents
+'/' + '/' > '´'			c  aigu
+'~' + '~' > '~'			c  tilde
+'^' + '^' > '^'			c  circonflexe
+'`' + '`' > '`'			c  grave
+',' + ',' > ','			c  cedilla
+
+c vowels with accent aigu:
+'/' + any(vowel) > index(vacute, 2)
+
+c vowels with accent grave:
+'`' + any(vowel) > index(vgrave, 2)
+
+c vowels with accent circonflexe:
+'^' + any(vowel) > index(vcircon, 2)
+
+c vowels with umlaut:
+';' + any(vowel) > index(vumlaut, 2)
+';' + 'y' > d255
+';' + 'Y' > d159
+
+c Kwatay 'a' with tone mark under
+'_' + 'a'  > d185	c plain 'a' with underline
+'_' + 'A'  > d186	c UC 'A' with underline
+'/_' + 'a' > d179	c lc 'a' with acute accent and underline
+'_/' + 'a' > d179	c alternative way to type above
+'/_' + 'A' > d170	c UC 'A' with acute accent and underline
+'_/' + 'A' > d170	c alternative way to type above
+
+C Jola Kasa
+',' + 'l' > d153
+',' + 'L' > d181
+
+c Digraphs
+',' + 'o' >  d156		c oe
+',' + 'O' >  d140		c OE
+',' + 'a' >  d230		c ae
+',' + 'A' >  d198		c AE
+
+c French:
+'/' + 'c' >  d231
+'/' + 'C' >  d199
+'<' + '<' > d171
+'>' + '>' > d187
+
+c Norwegian:
+
+'\' + 'o' > d248
+'\' + 'O' > d216
+'\' + 'a' > d229
+'\' + 'A' > d197
+
+c Glottal character
+';' + ';' > d191

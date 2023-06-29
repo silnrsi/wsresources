@@ -1,0 +1,303 @@
+﻿;  This file was created by <author> using TECkitMappingEditorU.exe v4.0.0.0 on 12/7/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = LITP_LET_2K_02S;36
+;   Right-hand side font = Noto Sans Sinhala UI;24
+;   Main Window Position = 0,0,0,0
+;   Left-hand side Character Map Window Position = 952,92,733,868
+;   Right-hand side Character Map Window Position = 332,147,656,439
+;   Right-hand range = 0000-007F
+
+EncodingName            "a canonical name that uniquely identifies this mapping table from all others"
+DescriptiveName         "a string that describes the mapping"
+Version                 "1"
+Contact                 "mailto:user@addr"
+RegistrationAuthority   "the organization responsible for the encoding"
+RegistrationName        "the name and version of the mapping, as recognized by that authority"
+Copyright               "© 2017 <CompanyName>. All rights reserved."
+LHSFlags                ()
+RHSFlags                ()
+
+Define low_curve sinhala_sign_al_lakuna zero_width_joiner sinhala_letter_rayanna ; for 207 U+00CF
+
+pass(Unicode)
+
+; Using Unicode codepoints for ANSI values inorder to pass through Unicode values that may be mixed in the text
+
+;  code point corrections
+
+; 94 126 > 94
+; 35 35 > 35
+
+
+
+UniClass	[CTL] =	( U+0000 .. U+001f U+007f )
+
+[CTL]	<>	[CTL]
+
+U+0020 <> " "
+U+0021 <> "!"
+U+0022 <> '"'
+U+0023 <> sinhala_sign_al_lakuna
+U+0024 <> sinhala_letter_iruyanna
+U+0025 <> "%"
+U+0026 <> "ක්‍"
+U+0027 <> "'"
+U+0028 <> "("
+U+0029 <> ")"
+U+002A <> "*"
+U+002B <> "+"
+U+002C <> ","
+U+002D <> "-"
+U+002E <> "."
+U+002F <> "/"
+U+0030 <> "0"
+U+0031 <> "1"
+U+0032 <> "2"
+U+0033 <> "3"
+U+0034 <> "4"
+U+0035 <> "5"
+U+0036 <> "6"
+U+0037 <> "7"
+U+0038 <> "8"
+U+0039 <> "9"
+U+003A <> ":"
+U+003B <> ";"
+U+003C <> "<"
+U+003D <> "="
+U+003E <> ">"
+U+003F <> "?"
+U+0040 <> sinhala_letter_rayanna sinhala_sign_al_lakuna U+200D ;064 <> sinhala_letter_rayanna
+U+0041 <> "එ"
+U+0042 <> "භ"
+U+0043 <> "ඡ"
+U+0044 <> "ඬ"
+U+0045 <> "ථ"
+U+0046 <> "ෆ"
+U+0047 <> "ඝ"
+U+0048 <> "ශ"
+U+0049 <> "ඊ"
+U+004A <> "ඤ"
+U+004B <> "ඛ"
+U+004C <> "ළ"
+U+004D > "න්‍"
+U+004E <> "ණ"
+U+004F <> "ං"
+U+0050 <> "ඵ"
+U+0051 <> "ධ"
+U+0052 <> "ෘ"
+U+0053 <> "ෂ"
+U+0054 <> "ඨ"
+U+0055 <> "ළු"
+U+0056 <> "ඥ"
+U+0057 <> "රැ" ; This seems correct
+U+0058 <> "ඳ"
+U+0059 <> "්‍ය"
+U+005A <> "රෑ" ; This seems correct ; This is what is in the mapping 090 <> 163"ර෴ෑ"
+U+005B <> "ැ"
+U+005C <> "්‍ර"
+U+005D <> "ු"
+U+005E <> "ි"
+U+005F <> sinhala_vowel_sign_kombuva
+U+0060 <> "ත්‍"
+U+0061 <> "අ"
+U+0062 <> "බ"
+U+0063 <> "ච"
+U+0064 <> "ඩ"
+U+0065 <> "ත"
+U+0066 <> "ෆ"
+U+0067 <> "ග"
+U+0068 <> "හ"
+U+0069 <> "ඉ"
+U+006A <> "ජ"
+U+006B <> "ක"
+U+006C <> "ල"
+U+006D <> "මි"
+U+006E <> "න"
+U+006F <> "ඔ"
+U+0070 <> "ප"
+U+0071 <> "ද"
+U+0072 <> "ර"
+U+0073 <> "ස"
+U+0074 <> "ට"
+U+0075 <> "උ"
+U+0076 <> "ව"
+U+0077 <> "ඟ"
+U+0078 <> "ෟ"
+U+0079 <> "ය"
+U+007A <> "ඹි"
+U+007B <> "ෑ"
+U+007C <> "ා"
+U+007D <> "ූ"
+U+007E <> "ී"
+U+007F <> U+007F
+U+0080 <> U+0080 
+U+0081 <> U+0081 
+U+0082 <> ","
+U+0083 <> "ƒ"
+U+0084 <> "”"
+U+0085 <> "…"
+U+0086 <> "†"
+U+0087 <> "‡"
+U+0088 <> "ˆ"
+U+0089 <> "‰"
+U+008A <> "Š"
+U+008B <> "‹"
+U+008C <> "Œ"
+U+008D <> U+008D 
+U+008E <> U+008E 
+U+008F <> U+008F
+U+0090 <> U+0090
+U+0091 <> "‘"
+U+0092 <> "’"
+U+0093 <> "“"
+U+0094 <> "”"
+U+0095 <> "•"
+U+0096 <> "–"
+U+0097 <> "—"
+U+0098 <> "˜"
+U+0099 <> "™"
+U+009A <> "š"
+U+009B <> "›"
+U+009C <> "œ"
+U+009D <> U+009D
+U+009E <> "ž"
+U+009F <> "Ÿ"
+U+00A0 <> U+00A0
+U+00A1 <> "බී"
+U+00A2 <> "බ්"
+U+00A3 <> "චි"
+U+00A4 <> "චී"
+U+00A5 <> "ච්"
+U+00A6 <> "ඡි"
+U+00A7 <> "ඡී"
+U+00A8 <> "ඩි"
+U+00A9 <> "ඩී"
+U+00AA <> "ඩ්"
+U+00AB <> "ු"
+U+00AC <> "ූ"
+U+00AD <> "­"
+U+00AE <> "ා්"
+U+00AF <> "¯"
+U+00B0 <> "ඃ"
+U+00B1 <> "ජි"
+U+00B2 <> "ජී"
+U+00B3 <> "ා"
+U+00B4 <> "ා්"
+U+00B5 <> "ලු"
+U+00B6 <> "¶"
+U+00B7 <> "·"
+U+00B8 <> "මී"
+U+00B9 <> "ම්"
+U+00BA <> "ා"
+U+00BB <> "ා්"
+U+00BC <> "ඕ"
+U+00BD <> "දා"
+U+00BE <> "දා්"
+U+00BF <> "දැ"
+U+00C0 <> "දෑ"
+U+00C1 <> "දු"
+U+00C2 <> "දූ"
+U+00C3 <> "ද්‍ර"
+U+00C4 <> "ද්‍ය"
+U+00C5 <> "ද්‍යා"
+U+00C6 <> "ද්‍යා්"
+U+00C7 <> "ලූ"
+U+00C8 <> "ඳා"
+U+00C9 <> "ඳා්"
+U+00CA <> "ඳැ"
+U+00CB <> "ඳෑ"
+U+00CC <> "ඳු"
+U+00CD <> "ඳූ"
+U+00CE <> "ඳ්‍ර"
+U+00CF <> low_curve 
+U+00D0 <> "රි"
+U+00D1 <> "රී"
+U+00D2 <> "ර්"
+U+00D3 <> "ම"
+U+00D4 <> "ටි"
+U+00D5 <> "ටී"
+U+00D6 <> "ට්"
+U+00D7 <> "වි"
+U+00D8 <> "වී"
+U+00D9 <> "ව්"
+U+00DA <> "ඹ"
+U+00DB <> "ඹී"
+U+00DC <> "ඹ්"
+U+00DD <> "ඛි"
+U+00DE <> "ඛී"
+U+00DF <> "ඛ්"
+U+00E0 <> "ඬි"
+U+00E1 <> "ඬී"
+U+00E2 <> "ඬ්"
+U+00E3 <> "ධි"
+U+00E4 <> "ධී"
+U+00E5 <> "ධ්"
+U+00E6 <> "ඞ"
+U+00E7 <> "බි"
+U+00E8 <> "ශු"
+U+00E9 <> "ශූ"
+U+00EA <> "ි"
+U+00EB <> "ී"
+U+00EC <> "ණි"
+U+00ED <> "ණී"
+U+00EE <> "්"
+U+00EF <> "ï"
+U+00F0 <> "ි"
+U+00F1 <> "ී"
+U+00F2 <> "ි"
+U+00F3 <> "ී"
+U+00F4 <> "ු"
+U+00F5 <> "ූ"
+U+00F6 <> "ු"
+U+00F7 <> "ූ"
+U+00F8 <> "්"
+U+00F9 <> "්"
+U+00FA <> "ු"
+U+00FB <> "ූ"
+U+00FC <> "ැ"
+U+00FD <> "ෑ"
+U+00FE <> "්‍ර"
+U+00FF <> U+00FF
+Pass(Unicode)
+
+ 
+; In Unicode space, combine letters and reorder preceding vowel sequences to Unicode order
+
+sinhala_letter_ayanna sinhala_vowel_sign_aela_pilla <> U+0D86 ; sinhala_letter_aayanna
+sinhala_letter_ayanna sinhala_vowel_sign_ketti_aeda_pilla <> U+0D87 ; sinhala_letter_aeyanna
+sinhala_letter_ayanna sinhala_vowel_sign_diga_aeda_pilla <> U+0D88 ; sinhala_letter_aeeyanna
+sinhala_letter_uyanna sinhala_vowel_sign_gayanukitta <> sinhala_letter_uuyanna
+sinhala_letter_dantaja_sayanna sinhala_vowel_sign_gaetta_pilla <> sinhala_letter_iruyanna
+sinhala_letter_alpapraana_payanna sinhala_vowel_sign_gaetta_pilla sinhala_vowel_sign_gaetta_pilla <> sinhala_letter_iruuyanna
+sinhala_letter_eyanna sinhala_sign_al_lakuna <> sinhala_letter_eeyanna
+sinhala_letter_iluyanna sinhala_vowel_sign_gayanukitta <> sinhala_letter_iluuyanna
+sinhala_letter_oyanna sinhala_vowel_sign_ketti_is_pilla <> sinhala_letter_ooyanna
+sinhala_letter_oyanna sinhala_vowel_sign_gayanukitta <> sinhala_letter_auyanna
+sinhala_vowel_sign_gaetta_pilla sinhala_vowel_sign_gaetta_pilla <> sinhala_vowel_sign_diga_gaetta_pilla
+sinhala_vowel_sign_kombuva sinhala_letter_eyanna  <> sinhala_letter_aiyanna
+sinhala_letter_uyanna sinhala_vowel_sign_gayanukitta <>  U+0D8C ; sinhala_letter_UUYANNA
+
+; Reorder sinhala_vowel_sign_kombuva
+
+Define kombuva sinhala_vowel_sign_kombuva 
+Class [Cons]    = (U+0D9A .. U+0DC6)
+
+kombuva [Cons]=c sinhala_vowel_sign_aela_pilla sinhala_sign_al_lakuna <> @c sinhala_vowel_sign_kombuva_haa_diga_aela_pilla
+kombuva kombuva [Cons]=c <> @c sinhala_vowel_sign_kombu_deka
+kombuva [Cons]=c sinhala_vowel_sign_aela_pilla <> @c sinhala_vowel_sign_kombuva_haa_aela_pilla
+kombuva [Cons]=c sinhala_sign_al_lakuna <> @c sinhala_vowel_sign_diga_kombuva
+kombuva [Cons]=c sinhala_vowel_sign_gayanukitta <> @c sinhala_vowel_sign_kombuva_haa_gayanukitta  
+kombuva [Cons]=c <> @c sinhala_vowel_sign_kombuva
+
+
+
+Pass(Unicode)
+
+; In Unicode space second combining  and reordering
+
+sinhala_letter_rayanna sinhala_vowel_sign_diga_aeda_pilla <> sinhala_letter_rayanna sinhala_vowel_sign_diga_paa_pilla
+sinhala_letter_rayanna sinhala_vowel_sign_ketti_aeda_pilla <> sinhala_letter_rayanna sinhala_vowel_sign_ketti_paa_pilla
+
+Class [LCV] = (sinhala_vowel_sign_ketti_is_pilla sinhala_vowel_sign_diga_kombuva sinhala_vowel_sign_diga_is_pilla)
+[LCV]=v1 low_curve <> low_curve @v1
+

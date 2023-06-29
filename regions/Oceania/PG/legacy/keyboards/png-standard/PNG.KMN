@@ -1,0 +1,196 @@
+c PNG Standard Keyboard  for the PNG Font Set
+c Windows Keyman version
+c 20May96  B Wussow
+
+NAME "PNG Standard"
+BITMAPS png1 png0
+HOTKEY [Alt Ctrl K_P]
+VERSION 3.0
+
+begin > use(main)
+
+c   Keying sequence used in the PNG Standard keyboard:
+c A base character is always typed first. Any modifiers are 
+c typed after.
+c If there is a diacritic to be placed above and another below,
+c the key for the diacritic above is typed first.
+
+c   Sequence of characters placed in file for the PNG Fonts, 
+c Windows or Mac :
+c  When overstriking diacritics are used in the PNG Fonts, 
+c the base character is put in the file first, and the 
+c overstrikes after.
+c If there is more than one overstrike, the one above the 
+c base char is entered first, then the one below the base 
+c character.
+
+
+store(vowel)	"aeiouAEIOU"
+store(vumlaut)	"äëïöüÄËÏÖÜ"	c ANSI/Mac characters
+store(vacute)	"áéíóúÁÉÍÓÚ"	c ANSI/Mac characters
+store(vgrave)	"àèìòùÀÈÌÒÙ"	c ANSI/Mac characters
+store(vcircum)	"âêîôûÂÊÎÔÛ"	c ANSI/Mac characters
+
+store(lcvowel)	"aeiou"
+store(ucvowel)	"AEIOU"
+
+
+group(main) using keys
+
+c Unique Symbols
+"a" + "<"	> "æ"	c ae digraph ANSI/Mac
+"A" + "<"	> "Æ"
+"i" + "="	> d231	c barred i
+"I" + "="	> d199
+"l" + "="	> d240	c barred L
+"L" + "="	> d208
+"l" + ">"	> d142	c double barred L
+"L" + ">"	> d141
+"l" + "~"	> d144	c tilde L
+"L" + "~"	> d143
+"n" + "="	> d253	c eng lc
+"N" + "="	> d221	c eng uc N style
+"n" + ">"	> d253	c eng lc
+"N" + ">"	> d222	c eng uc n style
+"n" + "~"	> "ñ"	c n tilde ANSI/Mac
+"N" + "~"	> "Ñ"
+"o" + "<"	> d156	c oe digraph ANSI/Mac
+"O" + "<"	> d140
+"o" + ">"	> d248	c slashed o ANSI/Mac
+"O" + ">"	> d216
+"q" + "="	> d247	c q with hook
+"Q" + "="	> d215
+"u" + "<"	> d155	c barred u
+"U" + "<"	> d154
+"u" + ">"	> d129	c turned v
+"U" + ">"	> d128
+"z" + "="	> d168	c yogh
+"Z" + "="	> d167
+
+ + "\" 		> d255	c straight glottal mark
+ + d96		> d223	c curly glottal mark
+ + "|"		> d159	c thin colon
+
+
+c Basic vowels with Umlaut, Acute, Grave, or Circumflex
+c   type the vowel followed by certain symbol key
+any(vowel) + "="	> index(vumlaut,1)
+any(vowel) + "%"	> index(vacute,1)
+any(vowel) + "&"	> index(vgrave,1)
+any(vowel) + "^"	> index(vcircum,1)
+
+c Ii Umlaut
+d231 + "="	> "ï"	c press extra "=" after barred i
+d199 + "="	> "Ï"
+
+c Basic vowels with Tilde
+"a" + "~"	> d227		c a tilde ANSI/Mac character
+"e" + "~"	> context d152	c e + tilde lc
+"i" + "~"	> d131		c i tilde composite
+"o" + "~"	> d245		c o tilde ANSI/MAC character
+"u" + "~"	> context d152	c u + tilde lc
+"A" + "~"	> d195		c A tilde ANSI/Mac character
+"E" + "~"	> context d153	c E + tilde uc
+"I" + "~"	> d130		c I tilde composite
+"O" + "~"	> d213		c O tilde ANSI/MAC character
+"U" + "~"	> context d153	c U + tilde uc
+
+c Basic vowels with Vee (caron, hacek)
+"î" + "^"		> d133		c i vee composite
+"Î" + "^"		> d132
+any(vcircum) + "^"	> index(vowel,1) d188 use(vee)	c vowel + vee lc
+
+c Basic vowels with Acute+Umlaut  (except iI)
+"í" + "%"		> context "%" beep	c no proper Ii + acuteumlaut in PNG Fonts
+"Í" + "%"		> context "%" beep
+any (vacute) + "%"	> index(vowel,1) d185 use(acuteumlaut)	c vowel + acuteumlaut lc
+
+c Basic vowels with Bar-Over 
+store(vbarover)	d161 d162 d163 d165 d166	c lc aeiou bar-over
+any(lcvowel) +"@"	> index(vbarover,1)	c lc vowel bar-over composites
+"I" + "@"		> d138			c I bar-over composite
+any(ucvowel) + "@"	> context d175		c vowel + bar-over uc
+
+c Consonants with Bar-Over
+"g" + "@"		> d254			c g bar-over composite
+"G" + "@"		> "G" d175		c G + bar-over uc
+
+c Vowel Pairs with Bar-Over and Bridge
+c typing a vowel after a bar-over vowel adds bar-over bridge
+any(vbarover) + any(lcvowel)	> context d134 index(vbarover,2)	c vv +bar-over bridge lc
+d138 + "I"	> context d135 d138		c II + bar-over bridge uc
+any(ucvowel) d175 + "I"	> context d135 d138	c VI + bar-over bridge uc
+d138 + any(ucvowel)	> context d135 index(ucvowel,2) d175	c IV + bar-over bridge uc
+any(ucvowel) d175 + any(ucvowel)	> context d135 index(ucvowel,3) d175	c Vowels + bar-over + bridge uc
+
+c Other characters that can receive Acute, Grave, Circumflex, or Vee
+store(lc_other)	"nwæ" d248 d129 d156	c slashed o, turned v, oe digraph
+store(uc_other)	"NÆ" d216 d128 d140	c slashed O, turned V, OE digraph
+any(lc_other) + "%"	> context d180	c other + acute lc
+any(uc_other) + "%"	> context d179	c other + acute uc
+any(lc_other) + "&"	> context d189	c other + grave lc
+any(uc_other) + "&"	> context d191	c other + grave uc
+any(lc_other) + "^"	> context d136	c other + circumflex lc
+any(uc_other) + "^"	> context d137	c other + circumflex uc
+any(lc_other) d136 + "^"	> index(lc_other,1) d188	c other + vee lc
+any(uc_other) d137 + "^"	> index(uc_other,1) d190	c other + vee uc
+
+c Basic & other vowels with Bar-Under
+store(barunderthin) "iI"
+store(barundernorm) "aáâeou"
+store(barunderwide) "AÁÂEOU"
+any(barunderthin) + "_"	> context d170	c vowel + bar-under thin
+any(barundernorm) + "_"	> context d178	c vowel + bar-under norm
+any(barunderwide) + "_"	> context d177	c vowel + bar-under wide
+"a" d188 + "_"	> context d178		c a vee + bar-under norm
+"A" d190 + "_"	> context d177		c a vee + bar-under wide
+
+c Consonants with Bar-Under 
+store(lcstops)	"bdgkpt"
+store(ucstops)	"BDGKPT"
+"g" + "_"		> context d173		c g + bar-under descender
+"p" + "_"		> context d173		c p + bar-under descender
+"t" + "_"		> context d170		c t + bar-under thin
+any(lcstops) + "_"	> context d178		c lc stop + bar-under norm
+any(ucstops) + "_"	> context d177		c lc stop + bar-under wide
+
+c Basic & other vowels with Cedilla
+store(cedthinvowel)	"iIíÍ"
+any(cedthinvowel) + "$"	> context d181	c vowel + cedilla thin
+any(vowel) + "$"	> context d184	c vowel + cedilla norm
+any(vacute) + "$"	> context d184	c vowel + cedilla norm
+
+
+c Exclamation mark) followed by 
+c    a symbol key used above gives the plain symbol
+store(symbol) "~`@$%^&_=|\"
+"!" + any(symbol)	> index(symbol,2)
+
+
+
+group(vee)
+any(ucvowel) d188	> index(ucvowel,1) d190	c vowel + vee uc
+
+
+group(acuteumlaut)
+any(ucvowel) d185	> index(ucvowel,1) d186	c vowel + acuteumlaut uc
+
+
+
+c obsolete items
+c   we tried typing the underscore before the other modifier
+c "a" d178 + "%"	> "á" d178	c a acute + bar-under norm
+c "A" d177 + "%"	> "Á" d177	c A acute + bar-under wide
+c "a" d178 + "^"	> "â" d178	c a circumflex + bar-under norm
+c "A" d177 + "^"	> "Â" d177	c A circumflex + bar-under wide
+c "â" d178 + "^"	> "a" d188 d178	c a + vee lc + bar-under norm
+c "Â" d177 + "^"	> "A" d190 d177	c A + vee uc + bar-under wide
+c any(thinvowel) + "_"	> context d170	c thin vowel + bar-under thin
+c any(lcvowel) + "_"	> context d178	c lc vowel + bar-under norm
+c any(ucvowel) + "_"	> context d177	c uc vowel + bar-under wide
+c any(vowel) d178 + "%"	> index(vacute,1) d178	c lc vowel acute + bar-under norm
+c any(vowel) d177 + "%"	> index(vacute,1) d177	c uc vowel acute + bar-under wide
+c any(vowel) d178 + "^"	> index(vcircum,1) d178	c lc vowel circum + bar-under norm
+c any(vowel) d177 + "^"	> index(vcircum,1) d177	c uc vowel circum + bar-under wide
+c any(vcircum) d178 + "^"	> index(vowel,1) d188 d178	c lc vowel + vee lc + bar-under norm
+c any(vcircum) d177 + "^"	> index(vowel,1) d190 d177	c uc vowel + vee uc + bar-under wide

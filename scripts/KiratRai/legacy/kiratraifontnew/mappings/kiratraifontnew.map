@@ -1,0 +1,59 @@
+﻿;   Conversion Type = Legacy_to_Unicode
+;   Left-hand side font = Arial Unicode MS;11.25
+;   Right-hand side font = Kanchenjunga Test A;11.25
+;   Main Window Position = 92,207,1016,806
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 1295,486,457,447
+
+EncodingName            "Kirat Rai AKRS to Unicode"
+DescriptiveName         "kirat rai font new to Unicode"
+Version                 "1"
+Contact                 "mailto:lorna_evans@sil.org"
+RegistrationAuthority   "SIL"
+RegistrationName        "the name and version of the mapping, as recognized by that authority"
+Copyright               "© 2021 SIL International. All rights reserved."
+RHSFlags		   (ExpectsNFD)
+
+pass(Byte_Unicode)
+
+ByteClass [CTL] = (   0x00 .. 0x1f   )
+UniClass  [CTL] = ( U+0000 .. U+001f )
+[CTL]	<>	[CTL]
+
+ByteClass[digits] = (0x30   .. 0x39  )
+UniClass [digits] = (U+16D70 .. U+16D79)
+
+ByteClass[punct] = (0x20 0x21 0x22 0x25 0x26 0x27 0x28 0x29 0x2A 0x2B 0x2C 0x2D 0x2E 0x3a 0x3b 0x3c 0x3d 0x3e 0x3f 0x5b 0x5d 0x7b 0x7c 0x7d)
+UniClass [punct] = (U+0020 U+0021 U+0022 U+0025 U+005F U+0027 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002E U+003a U+003b U+003c U+003d U+003e U+003F U+005B U+005D U+007b U+16D6E U+007d )
+
+ByteClass[vow] = (0x41 0x69 0x75 0x55 0x65 )
+UniClass [vow] = (U+16D63 .. U+16D67)
+
+ByteClass[cons1] = (0x61 0x6b 0x4b 0x67 0x47 0x4E 0x63 0x43 0x6a 0x4a 0x59 0x71 0x51 0x77 0x57 0x74 )
+UniClass [cons1] = (U+16D43 .. U+16D52)
+
+ByteClass[cons2] = (0x54 0x64 0x44 0x6e 0x70 0x50 0x62 0x42 0x6d 0x79 0x72 0x6c 0x76 0x73 0x53 0x68  )
+UniClass [cons2] = (U+16D53 .. U+16D62)
+
+ByteClass[marks1] = (0x6f 0x4f 0x48)
+UniClass [marks1] = (U+16D40 .. U+16D42)
+
+ByteClass[marks2] = (0x7a 0x5a 0x24 0x2f )
+UniClass [marks2] = (U+16D6B .. U+16D6E)
+
+
+[digits]	>	[digits]
+[punct]	>	[punct]
+[cons1]	>	[cons1]
+[cons2]	>	[cons2]
+[vow]	       >	[vow]
+[marks1]	>	[marks1]
+[marks2]	>	[marks2]
+
+0x2f 0x2f > U+16D6F ; double danda
+0x41 0x65 > U+16D69 ; o
+0x41 0x65 0x65 > U+16D6A ; au
+0x65 0x65 > U+16D68      ; ai
+0x7c 0x7c > U+16D6F      ; double-danda
+
+

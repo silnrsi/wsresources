@@ -1,0 +1,160 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 6/29/2023.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+LHSName                 "Unicode-Maba-Roman"
+RHSName                 "Unicode-Maba-Arabic"
+LHSDescription          "Unicode Maba Roman script encoding"
+RHSDescription          "Unicode Maba Arabic script encoding"
+Version                 "1.0"
+Contact                 "mailto:computer_support_chad@sil.org"
+RegistrationAuthority   "SIL Chad"
+RegistrationName        "Maba Roman to Arabic conversion 1.0"
+
+
+; convert all chars to lower case
+pass ( Unicode )
+
+UniClass [upper] = ( U+0041..U+005A )
+UniClass [lower] = ( U+0061..U+007A )
+
+[upper] <> [lower]
+
+
+; main character conversion pass
+pass ( Unicode )
+
+UniClass [LTR] = ( U+0041..U+005A U+0061..U+007A U+014A U+014B U+0330 )
+UniClass [vowel] = ( U+0061 U+0065 U+0069 U+006F U+0075 )
+
+; take care of the vowels first
+; long vowels first
+; and word initial forms (/ ^[LTR] _) are different
+U+0061 U+0079 /  [LTR] _ ^[vowel]  <>     U+064E U+064A U+0652
+U+0061 U+0079 / ^[LTR] _ ^[vowel]  <>     U+0623 U+064E U+064A U+0652
+U+0065 U+0079 /  [LTR] _ ^[vowel]  <>     U+06D9 U+064A U+0652
+U+0065 U+0079 / ^[LTR] _ ^[vowel]  <>     U+0623 U+06D9 U+064A U+0652
+U+006F U+0079 /  [LTR] _ ^[vowel]  <>     U+06D8 U+064A U+0652
+U+006F U+0079 / ^[LTR] _ ^[vowel]  <>     U+0623 U+06D8 U+064A U+0652
+U+0075 U+0079 /  [LTR] _ ^[vowel]  <>     U+064F U+064A U+0652
+U+0075 U+0079 / ^[LTR] _ ^[vowel]  <>     U+0623 U+064F U+064A U+0652
+U+0061 U+0077 /  [LTR] _ ^[vowel]  <>     U+064E U+0648 U+0652
+U+0061 U+0077 / ^[LTR] _ ^[vowel]  <>     U+0623 U+064E U+0648 U+0652
+U+0065 U+0077 /  [LTR] _ ^[vowel]  <>     U+06D9 U+0648 U+0652
+U+0065 U+0077 / ^[LTR] _ ^[vowel]  <>     U+0623 U+06D9 U+0648 U+0652
+U+0069 U+0077 /  [LTR] _ ^[vowel]  <>     U+0650 U+0648 U+0652
+U+0069 U+0077 / ^[LTR] _ ^[vowel]  <>     U+0625 U+0650 U+0648 U+0652
+U+006F U+0077 /  [LTR] _ ^[vowel]  <>     U+06D8 U+0648 U+0652
+U+006F U+0077 / ^[LTR] _ ^[vowel]  <>     U+0623 U+06D8 U+0648 U+0652
+U+0061 U+0061 /  [LTR] _  <>     U+064E U+0627
+U+0061 U+0061 / ^[LTR] _  <>     U+0622
+U+0061        /  [LTR] _  <>     U+064E
+U+0061        / ^[LTR] _  <>     U+0623 U+064E
+U+0065 U+0065 /  [LTR] _  <>     U+06D9 U+064A
+U+0065 U+0065 / ^[LTR] _  <>     U+0623 U+06D9 U+064A
+U+0065        /  [LTR] _  <>     U+06D9
+U+0065        / ^[LTR] _  <>     U+0623 U+06D9
+U+0069 U+0069 /  [LTR] _  <>     U+0650 U+064A
+U+0069 U+0069 / ^[LTR] _  <>     U+0625 U+0650 U+064A
+U+0069        /  [LTR] _  <>     U+0650
+U+0069        / ^[LTR] _  <>     U+0625 U+0650
+U+006F U+006F /  [LTR] _  <>     U+06D8 U+0648
+U+006F U+006F / ^[LTR] _  <>     U+0623 U+06D8 U+0648
+U+006F        /  [LTR] _  <>     U+06D8
+U+006F        / ^[LTR] _  <>     U+0623 U+06D8
+U+0075 U+0075 /  [LTR] _  <>     U+064F U+0648
+U+0075 U+0075 / ^[LTR] _  <>     U+0623 U+064F U+0648
+U+0075        /  [LTR] _  <>     U+064F
+U+0075        / ^[LTR] _  <>     U+0623 U+064F
+
+; consonants
+U+0062        <>      U+0628   ; b
+U+0070        <>      U+067E   ; p
+U+0074        <>      U+062A   ; t
+U+006A        <>      U+062C   ; j
+U+006E U+006A <>      U+0683   ; nj
+U+0063        <>      U+0686   ; c
+U+0064        <>      U+062F   ; d
+U+006E U+0064 <>      U+068A   ; nd
+U+0072        <>      U+0631   ; r
+U+007A        <>      U+0632   ; z
+U+0064 U+0072 <>      U+0694   ; dr
+U+0074 U+0072 <>      U+0697   ; tr
+U+006E U+0064 U+0072 <>      U+0698   ; ndr
+U+0073        <>      U+0633   ; s
+U+0063 U+0068 <>      U+0634   ; ch
+U+014A        <>      U+06A6   ; cap eng
+U+014A U+0067 <>      U+06A0   ; cap eng-g
+U+014B        <>      U+06A6   ; eng
+U+014B U+0067 <>      U+06A0   ; eng-g
+U+0066        <>      U+0641   ; f
+U+0067        <>      U+0642   ; g
+U+006B        <>      U+0643   ; k
+U+006C        <>      U+0644   ; l
+U+006D        <>      U+0645   ; m
+U+006D U+0062 <>      U+06FC   ; mb
+U+006E U+0330 <>      U+06BC   ; n~
+U+006E        <>      U+0646   ; n
+U+0068        <>	    U+0647   ; h
+U+0077        <>	    U+0648   ; U+0077
+U+0079        <>	    U+064A   ; U+0079
+
+
+; insert shadda between doubled consonants
+pass ( Unicode )
+
+U+0628 U+0628   <>      U+0628 U+0651
+U+062A U+062A   <>      U+062A U+0651
+U+062B U+062B   <>      U+062B U+0651
+U+062C U+062C   <>      U+062C U+0651
+U+062D U+062D   <>      U+062D U+0651
+U+062E U+062E   <>      U+062E U+0651
+U+062F U+062F   <>      U+062F U+0651
+U+0630 U+0630   <>      U+0630 U+0651
+U+0630 U+0630   <>      U+0630 U+0651
+U+0631 U+0631   <>      U+0631 U+0651
+U+0632 U+0632   <>      U+0632 U+0651
+U+0633 U+0633   <>      U+0633 U+0651
+U+0634 U+0634   <>      U+0634 U+0651
+U+0635 U+0635   <>      U+0635 U+0651
+U+0636 U+0636   <>      U+0636 U+0651
+U+0637 U+0637   <>      U+0637 U+0651
+U+0638 U+0638   <>      U+0638 U+0651
+U+0639 U+0639   <>      U+0639 U+0651
+U+063A U+063A   <>      U+063A U+0651
+U+0641 U+0641   <>      U+0641 U+0651
+U+0642 U+0642   <>      U+0642 U+0651
+U+0643 U+0643   <>      U+0643 U+0651
+U+0644 U+0644   <>      U+0644 U+0651
+U+0645 U+0645   <>      U+0645 U+0651
+U+0646 U+0646   <>      U+0646 U+0651
+U+0647 U+0647   <>      U+0647 U+0651
+U+064A U+064A   <>      U+064A U+0651
+U+067E U+067E   <>      U+067E U+0651
+U+0683 U+0683   <>      U+0683 U+0651
+U+0686 U+0686   <>      U+0686 U+0651
+U+068A U+068A   <>      U+068A U+0651
+U+0694 U+0694   <>      U+0694 U+0651
+U+0697 U+0697   <>      U+0697 U+0651
+U+0698 U+0698   <>      U+0698 U+0651
+U+06A0 U+06A0   <>      U+06A0 U+0651
+U+06A6 U+06A6   <>      U+06A6 U+0651
+U+06BC U+06BC   <>      U+06BC U+0651
+U+06FC U+06FC   <>      U+06FC U+0651
+
+
+; add sukun between two consonants
+pass ( Unicode )
+
+UniClass [cons] = ( U+0628 U+062A..U+063A U+0641..U+0646 U+0679..U+06D1 U+06FA..U+06FF )
+
+[cons]=a [cons]=b   <>      @a U+0652 @b
+

@@ -1,0 +1,68 @@
+﻿; This file was created by Lorna Evans using TECkitMappingEditorU.exe v5.0.0.0 on 4/17/2023.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Annapurna SIL;11.25
+;   Right-hand side font = Kanchenjunga;11.25
+;   Main Window Position = 116,214,996,794
+;   Left-hand side Character Map Window Position = 1039,156,457,447
+;   Right-hand side Character Map Window Position = 1108,654,457,378
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+LHSName                 "Devanagari in Bantawa language"
+RHSName                 "Kirat Rai in Bantawa language"
+LHSDescription          "Devanagari script"
+RHSDescription          "Kirat Rai script"
+EncodingName            "Devanagari to Kirat Rai Unicode"
+DescriptiveName         "Devanagari to Kirat Rai Unicode"
+Version                 ".5"
+Contact                 "mailto:lorna_evans@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "SIL-Deva2KiratRai"
+Copyright               "© 2023 SIL International. All rights reserved."
+RHSFlags		 (ExpectsNFD)
+LHSFlags                ()
+
+pass(Unicode)
+
+UniClass[Latn1] = (U+0020 .. U+007F)
+UniClass[Ddigits] = (U+0966 .. U+096F)
+UniClass[Kdigits] = (U+16D70 .. U+16D79)
+
+UniClass[Dcons] = (U+0905  U+0915  .. U+0922   U+0924 .. U+0928   U+092A ..  U+0930  U+0932  U+0936  U+0938 .. U+0939)
+UniClass[Kcons] = (U+16D43 U+16D44 .. U+16D51 U+16D52 .. U+16D56 U+16D57 .. U+16D5D U+16D5E U+16D60 U+16D61 .. U+16D62)
+
+;                  aː    i   u     e    ɛ     o     au
+UniClass[Dvow]  = (U+093E U+093F U+0941 U+0947  U+0948  U+094B  U+094C)
+UniClass [Kvow] = (U+16D63 .. U+16D65  U+16D67 U+16D68 U+16D69 U+16D6A)
+
+UniClass[Dmarks1] = (U+0902 U+0901 U+0903)
+UniClass[Kmarks1] = (U+16D40 .. U+16D42)
+
+UniClass[Dmarks2] = (U+094D U+094D U+093C)
+UniClass[Kmarks2] = (U+16D6B .. U+16D6D)
+
+[Latn1] <> [Latn1]
+[Ddigits] <> [Kdigits]
+
+[Dcons]       <> [Kcons]
+U+0935 U+093C <> U+16D5F
+U+0935        <> U+16D5F ; not sure about this one as it's not in the proposal
+
+[Dvow] <> [Kvow]
+U+0906 <> U+16D43 U+16D63 ; aː
+U+0907 <> U+16D43 U+16D64 ; i
+U+0909 <> U+16D43 U+16D65 ; u
+U+0909 U+093C <> U+16D43 U+16D66 ; ɨ
+U+090F <> U+16D43 U+16D67 ; e
+U+0910 <> U+16D43 U+16D68 ; ɛ
+U+0913 <> U+16D43 U+16D69 ; o
+U+0914 <> U+16D43 U+16D6A ; au
+
+[Dmarks1] <> [Kmarks1]
+[Dmarks2] <> [Kmarks2]
+
+; dandas
+U+0964 <> U+16D6E 
+U+0965 <> U+16D6F 
+
+

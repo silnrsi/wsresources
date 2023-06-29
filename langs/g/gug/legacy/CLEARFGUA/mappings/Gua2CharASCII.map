@@ -1,0 +1,33 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 6/29/2023.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+; Guaran  of Paraguay
+; Maps from display encoding to decomposed Unicode.
+; The source encoding is in the font CLEARFGUA (CLEAR6.TTF)
+; The text is in ASCII. Each character is represented by 2 characters.
+; currently this is handled by mapin and mapout in Paratext 5.0
+
+EncodingName		"UBS-GUARANI-ASCII2UNICODE"
+DescriptiveName	"Guarani-ASCII2Unicode"
+
+; ByteDefault			'?'
+; UniDefault		replacement_character
+
+
+ByteClass [ltr] = (0x41..0x5a 0x61..0x7a)
+UniClass [ltr] = (U+0041..U+005A U+0061..U+007A)
+
+[ltr] <> [ltr]
+
+; equals sign plus any letter produces letter plus combining tilde.
+
+0x3d [ltr]=L  <>  [ltr]=L combining_tilde

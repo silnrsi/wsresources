@@ -1,0 +1,119 @@
+c      Senegalese Keyboard Control File for Tavultesoft Keyman
+c      5.0 
+c
+c
+c	For use with SIL-Dakar fonts Version 2(orthography for Senegal languages)
+c
+c  Version 2.0 by Tim Gaved
+c  
+NAME "SIL Sénégal Dakar (US)"
+COPYRIGHT "2001 SIL Sénégal, La Gambie et Guinée Bissau"
+BITMAP Dakar 
+VERSION 5.0
+MESSAGE "Pour tous les langues Sénégalaises. Compatible avec MS Word. Clavier US"
+
+store(cons) 'bBcCdDgGpPtTyY'	c implosives
+store(consc) 'cCsStT'		c consonants with cedilla
+store(implosive) d248 d216 d170 d186 d229 d197 d177 d172 d163 d165 d174 d162 d255 d159
+store(cedilla) d231 d199 d134 d135 d168 d169
+store(vowel) 'aAeEiIoOuU'
+store(vacute) d225 d193 d233 d201 d237 d205 d243 d211 d250 d218   
+store(vgrave) d224 d192 d232 d200 d236 d204 d242 d210 d249 d217
+store(vcircon) d226 d194 d234 d202 d238 d206 d244 d212 d251 d219 
+store(vumlaut) d228 d196 d235 d203 d239 d207 d246 d214 d252 d220
+store(small) 'acemnopqrsuvwxyz'
+store(tall) 'bdfhijkltABCDEFGHIJKLMNOPQRSTUVWXYZ'
+store(other) '!"#$%&()*+,-./0123456789:;<=>?@[\]^_`{|}' d127
+	   
+begin >  use(Main)
+
+group(Main) using keys
+
+c deadkeys for working like Word set up
++ [CTRL K_QUOTE] > deadkey(1)         c aigu
++ [CTRL K_BKQUOTE] > deadkey(2)       c grave
++ [CTRL SHIFT K_6] > deadkey(3)       c circonflex
++ [CTRL SHIFT K_BKQUOTE] > deadkey(4) c tilde
++ [CTRL K_COMMA] > deadkey(5) 	      c cedilla
++ [CTRL SHIFT K_COLON] > deadkey(6)   c umlaut
++ [CTRL K_SLASH] > deadkey(7)         c barred T
++ [CTRL SHIFT K_COMMA] > deadkey(8)   c for guillemets
++ [CTRL SHIFT K_PERIOD] > deadkey(9)  c for guillemets
++ [CTRL K_BKSLASH] > deadkey(10)      c implosives
++ [CTRL SHIFT K_7] > deadkey(11)      c oe 
++ [CTRL K_COLON] > deadkey(12)        c enye & glottal
+
+c Implosives:
+deadkey(10) + any(cons) > index(implosive, 2)
+
+c Nasals
+
+deadkey(5) + 'n' > d230		c sm eng
+deadkey(5) + 'N' > d198		c cap eng
+deadkey(12) + 'n' > d153		c sm enye
+deadkey(12) + 'N' > d181		c cap enye
+
+c Tildes
+deadkey(4) + 'n' > d241		c sm n tilde
+deadkey(4) + 'N' > d209		c cap n tilde
+deadkey(4) + 'a' > d227
+deadkey(4) + 'A' > d195
+
+c other letters can have tilde in combination with separate diacritic
+deadkey(4) + any(small) > index(small, 2) d152
+deadkey(4) + any(tall) > index(tall, 2) d175
+deadkey(4) + " " > "~"
+deadkey(4) + "~" > "~"
+deadkey(4) + any(other) > '~' index(other, 2)
+
+c isolated accents
+deadkey(1) + ' ' > d180     c  aigu
+
+c vowels with accent aigu:
+deadkey(1) + any(vowel) > index(vacute, 2)
+
+c vowels with accent grave:
+deadkey(2) + any(vowel) > index(vgrave, 2)
+deadkey(2) + "n" > d130
+deadkey(2) + "N" > d132
+
+c vowels with accent circonflexe:
+deadkey(3) + any(vowel) > index(vcircon, 2)
+
+c vowels with umlaut:
+deadkey(6) + any(vowel) > index(vumlaut, 2)
+
+c open vowels
+deadkey(10) + "e" > d141
+deadkey(10) + "E" > d142
+deadkey(10) + "o" > d143
+deadkey(10) + "O" > d144
+
+c consonants with cedilla (French and Mankanya)
+deadkey(5) + any(consc) > index(cedilla, 2)
+
+c Kwatay 'a' tone mark
+deadkey(5) + "_"   > d247	c tone mark (bar) under previous letter
+
+C Jola Kasa
+deadkey(10) + 'l' > d161
+deadkey(10) + 'L' > d223
+
+c Mankanya/Balanta
+deadkey(7) + 't' > d240
+deadkey(7) + 'T' > d208
+
+c Digraphs
+deadkey(11) + 'o' >  d156		c oe
+deadkey(11) + 'O' >  d140		c OE
+
+c French Guillemets:
+deadkey(8) + '<' > d171
+deadkey(9) + '>' > d187
+
+c Budik:
+deadkey(3) + "s" > d154			c s-hacek
+deadkey(3) + "S" > d138
+
+c Glottal character
+deadkey(12) + ';' > d191

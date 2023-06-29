@@ -1,0 +1,165 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 6/29/2023.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName			"TWSemiticTrans-1994"
+DescriptiveName			"TWSemiticTrans Font encoding"
+Version					"1.0"
+Contact					"mailto:lorna_priest@sil.org"
+RegistrationAuthority	"SIL International"
+RegistrationName		"TWSemiticTrans"
+
+RHSFlags				(ExpectsNFC)
+
+; 2009-09-30	LP	created 
+
+pass(Byte_Unicode)
+
+ByteClass[ctl] = (0x00   .. 0x1F  )
+UniClass [ctl] = (U+0000 .. U+001F)
+
+ByteClass [ascii] = (0x30..0x7E)
+UniClass [ascii] = (U+0030..U+007E)
+
+
+[ctl]	<>	[ctl]
+[ascii]	<>	[ascii]
+
+0x7F	<>	U+01F5
+0x80	<>	U+1E21
+0x81	<>	U+010C
+0x82	<>	U+01E7
+0x83	<>	U+1D49
+0x84	<>	U+201E	; double_low_9_quotation_mark  --  quotedblbase 
+0x85	<>	U+2026	; horizontal_ellipsis  --  ellipsis 
+0x86	<>	U+2020	; dagger  --  dagger 
+0x87	<>	U+2021	; double_dagger  --  daggerdbl 
+0x88	<>	U+02C6	; modifier_letter_circumflex_accent  --  circumflex
+0x89	<>	U+2030	; per_mille_sign  --  perthousand 
+0x8A	<>	U+0160	; latin_capital_letter_s_with_caron  --  Scaron
+0x8B	<>	U+2039	; single_left_pointing_angle_quotation_mark  --  guilsinglleft 
+0x8C	<>	U+0152	; latin_capital_ligature_oe  --  OE 
+0x8D	<>	U+1E0D
+0x8E	<>	U+1E24
+0x8F	<>	U+1E62
+0x90	<>	U+1E6C
+0x91	<>	U+2018	; left_single_quotation_mark  --  quoteleft 
+0x92	<>	U+2019	; right_single_quotation_mark  --  quoteright 
+0x93	<>	U+201C	; left_double_quotation_mark  --  quotedblleft 
+0x94	<>	U+201D	; right_double_quotation_mark  --  quotedblright 
+0x95	<>	U+1E6D
+0x96	<>	U+2013	; en_dash  --  endash 
+0x97	<>	U+2014	; em_dash  --  emdash 
+0x98	<>	U+02DC	; small_tilde  --  tilde
+0x99	<>	U+1E6F
+0x9A	<>	U+0161	; latin_small_letter_s_with_caron  --  scaron
+0x9B	<>	U+203A	; single_right_pointing_angle_quotation_mark  --  guilsinglright 
+0x9C	<>	U+0153	; latin_small_ligature_oe  --  oe 
+0x9D	<>	U+0154
+0x9E	<>	U+1E2A
+0x9F	<>	U+0178	; latin_capital_letter_y_with_diaeresis  --  Ydieresis 
+0xA0	<>	U+00A0	; no_break_space  --  nonbreakingspace
+0xA1	<>	U+02BE
+0xA2	<>	U+00A2	; cent_sign  --  cent 
+0xA3	<>	U+1E53
+0xA4	<>	U+2009
+0xA5	<>	U+1E17
+0xA6	<>	U+00A6	; broken_bar  --  brokenbar
+0xA7	<>	U+00A7	; section_sign  --  section 
+0xA8	<>	U+00A8	; diaeresis  --  dieresis
+0xA9	<>	U+00A9	; copyright_sign  --  copyright 
+0xAA	<>	U+00AA	; feminine_ordinal_indicator  --  ordfeminine
+0xAB	<>	U+00AB	; left_pointing_double_angle_quotation_mark  --  guillemotleft 
+0xAC	<>	U+1D31 U+0306
+; 0xAD	<>	U+00AD	; not defined
+0xAE	<>	U+00AE	; registered_sign  --  registered 
+0xAF	<>	U+0144
+0xB0	<>	U+00B0	; degree_sign  --  degree
+0xB1	<>	U+1E35
+0xB2	<>	U+00B2	; superscript_two  --  twosuperior
+0xB3	<>	U+01B7
+0xB4	<>	U+00B4	; acute_accent  --  acute
+0xB5	<>	U+016B
+0xB6	<>	U+00B6	; pilcrow_sign  --  paragraph 
+0xB7	<>	U+1E25
+0xB8	<>	U+1E63
+0xB9	<>	U+00B9	; superscript_one  --  onesuperior
+0xBA	<>	U+00BA	; masculine_ordinal_indicator  --  ordmasculine
+0xBB	<>	U+00BB	; right_pointing_double_angle_quotation_mark  --  guillemotright 
+0xBC	<>	U+00BC	; vulgar_fraction_one_quarter  --  onequarter
+0xBD	<>	U+00BD	; vulgar_fraction_one_half  --  onehalf
+0xBE	<>	U+00BE	; vulgar_fraction_three_quarters  --  threequarters
+0xBF	<>	U+02BF 
+0xC0	<>	U+00C0	; latin_capital_letter_a_with_grave  --  Agrave 
+0xC1	<>	U+00C1	; latin_capital_letter_a_with_acute  --  Aacute 
+0xC2	<>	U+00C2	; latin_capital_letter_a_with_circumflex  --  Acircumflex
+0xC3	<>	U+0100
+0xC4	<>	U+00C4	; latin_capital_letter_a_with_diaeresis  --  Adieresis 
+0xC5	<>	U+00C5	; latin_capital_letter_a_with_ring_above  --  Aring 
+0xC6	<>	U+00C6	; latin_capital_letter_ae  --  AE 
+0xC7	<>	U+0114 
+0xC8	<>	U+00C8	; latin_capital_letter_e_with_grave  --  Egrave 
+0xC9	<>	U+00C9	; latin_capital_letter_e_with_acute  --  Eacute 
+0xCA	<>	U+00CA	; latin_capital_letter_e_with_circumflex  --  Ecircumflex 
+0xCB	<>	U+0112
+0xCC	<>	U+00CC	; latin_capital_letter_i_with_grave  --  Igrave 
+0xCD	<>	U+00CD	; latin_capital_letter_i_with_acute  --  Iacute 
+0xCE	<>	U+00CE	; latin_capital_letter_i_with_circumflex  --  Icircumflex 
+0xCF	<>	U+012A
+0xD0	<>	U+012C
+0xD1	<>	U+00D1	; latin_capital_letter_n_with_tilde  --  Ntilde 
+0xD2	<>	U+00D2	; latin_capital_letter_o_with_grave  --  Ograve 
+0xD3	<>	U+00D3	; latin_capital_letter_o_with_acute  --  Oacute 
+0xD4	<>	U+00D4	; latin_capital_letter_o_with_circumflex  --  Ocircumflex 
+0xD5	<>	U+014C
+0xD6	<>	U+00D6	; latin_capital_letter_o_with_diaeresis  --  Odieresis 
+0xD7	<>	U+015B
+0xD8	<>	U+016A
+0xD9	<>	U+00D9	; latin_capital_letter_u_with_grave  --  Ugrave 
+0xDA	<>	U+00DA	; latin_capital_letter_u_with_acute  --  Uacute 
+0xDB	<>	U+00DB	; latin_capital_letter_u_with_circumflex  --  Ucircumflex 
+0xDC	<>	U+00DC	; latin_capital_letter_u_with_diaeresis  --  Udieresis 
+0xDD	<>	U+00DD	; latin_capital_letter_y_with_acute  --  Yacute
+0xDE	<>	U+00DE	; latin_capital_letter_thorn  --  Thorn
+0xDF	<>	U+0103 
+0xE0	<>	U+00E0	; latin_small_letter_a_with_grave  --  agrave 
+0xE1	<>	U+00E1	; latin_small_letter_a_with_acute  --  aacute 
+0xE2	<>	U+00E2	; latin_small_letter_a_with_circumflex  --  acircumflex 
+0xE3	<>	U+0101 
+0xE4	<>	U+00E4	; latin_small_letter_a_with_diaeresis  --  adieresis 
+0xE5	<>	U+00E5	; latin_small_letter_a_with_ring_above  --  aring 
+0xE6	<>	U+00E6	; latin_small_letter_ae  --  ae 
+0xE7	<>	U+0115
+0xE8	<>	U+00E8	; latin_small_letter_e_with_grave  --  egrave 
+0xE9	<>	U+00E9	; latin_small_letter_e_with_acute  --  eacute 
+0xEA	<>	U+00EA	; latin_small_letter_e_with_circumflex  --  ecircumflex 
+0xEB	<>	U+0113
+0xEC	<>	U+00EC	; latin_small_letter_i_with_grave  --  igrave 
+0xED	<>	U+00ED	; latin_small_letter_i_with_acute  --  iacute 
+0xEE	<>	U+00EE	; latin_small_letter_i_with_circumflex  --  icircumflex 
+0xEF	<>	U+0128 
+0xF0	<>	U+1E0F
+0xF1	<>	U+014F 
+0xF2	<>	U+00F2	; latin_small_letter_o_with_grave  --  ograve 
+0xF3	<>	U+00F3	; latin_small_letter_o_with_acute  --  oacute 
+0xF4	<>	U+00F4	; latin_small_letter_o_with_circumflex  --  ocircumflex 
+0xF5	<>	U+014D
+0xF6	<>	U+00F6	; latin_small_letter_o_with_diaeresis  --  odieresis 
+0xF7	<>	U+1E93
+0xF8	<>	U+016D 
+0xF9	<>	U+00F9	; latin_small_letter_u_with_grave  --  ugrave 
+0xFA	<>	U+00FA	; latin_small_letter_u_with_acute  --  uacute 
+0xFB	<>	U+00FB	; latin_small_letter_u_with_circumflex  --  ucircumflex 
+0xFC	<>	U+00FC	; latin_small_letter_u_with_diaeresis  --  udieresis 
+0xFD	<>	U+00FD	; latin_small_letter_y_with_acute  --  yacute
+0xFE	<>	U+1E07
+0xFF	<>	U+0070 U+0306
+

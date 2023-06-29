@@ -1,0 +1,23 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 2/19/2016.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Arial Unicode MS;11.25
+;   Right-hand side font = Arial Unicode MS;11.25
+;   Main Window Position = 68,122,658,713
+;   Left-hand side Character Map Window Position = 911,5,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+
+LHSName	"Unicode-LatinNums"
+RHSName	"Unicode-ArabicEasternNums"
+
+pass(Unicode)
+
+U+0030	<>	U+06F0
+U+0031	<>	U+06F1
+U+0032	<>	U+06F2
+U+0033	<>	U+06F3
+U+0034	<>	U+06F4
+U+0035	<>	U+06F5
+U+0036	<>	U+06F6
+U+0037	<>	U+06F7
+U+0038	<>	U+06F8
+U+0039	<>	U+06F9

@@ -1,0 +1,315 @@
+c IPA93t.KMN (March 1997)
+c 
+c IPA93.KMN
+c IPA93 Keyboard for Tavultesoft Keyboard Manager 3.1
+c Keyboard: FF Keying for use with SIL IPA93 TrueType fonts
+c Author:   M. Hosken & D. Bevan
+c Date:     17-Jul-1996
+c
+c Changes:
+c IPA.KMN
+c MJPH  1.0     15-Apr-1994     initial version
+c MJPH  1.0.2   18-May-1994     sort out i-widths
+c MJPH  1.0.3   26-May-1994     change hotkey from Ctrl+Shift+I to
+c                               Ctrl+Shift+P. Since Ctrl+Shift+I is the italic
+c                               speedkey in WinWord
+c MJPH  1.1.0   28-Sep-1994     add BS support for 3.1
+c MJPH  1.1.1   28-Nov-1994     add generic BS rule to get round 3.1 bug
+c MJPH  1.1.2   13-Feb-1995     reverse rounded and unrounded
+c                               support #<<, #>>, #==, @&, auto tone height
+c                               [[[ is OK
+c DIB   1.2     20-Feb-1995     add d203 (extra low 'advanced' diac) support
+c                               fix @04 and @40 to give extra-high versions
+c                               make auto tone height work with ldiacs
+c                               fix tone height above d040
+c                               allow tone above angstrom
+c                               fix schwa+[[ bug
+c                               fix ~ beep
+c IPA93.KMN
+c DIB   1.0     17-Jul-1996     make changes for new IPA93 fonts
+c IPA93t.KMN
+c FMW   1.0	13-Mar-1997	added #5-#9 for tone numbers
+
+NAME "IPA93t 1.0"
+VERSION 4.0
+BITMAP IPA02
+LANGUAGE x1ff, 1
+HOTKEY  "^+P"
+
+begin > use(Main)
+
+c need to include international keyboards in this list also
+store(nonK) "ACDFJKMPSTVWXYZ`|<>0123456789=^&*()';" "œ"
+store(notrans) "abcdefghijklmnopqrstuvwxyz ?/"
+
+store(singleK) "BEHILNOQRU.#!:}-"
+store(single)  "õ‚Kö;²Pû{¬.Ê—ùÈÖ"
+
+c store(equalK) "BEGHILNOQRU#?.!abcdefghijlnoprstuvwxyz" "#="
+  store(equalC) "õ‚GKö;²Pû{¬Ê?.—abcdefghijlnoprstuvwxyz" d237
+  store(equal)  "õ‚GKö;²Pû{¬í?„œABCD«¸ÄçIïÂø‡¨STµVãXYZ" d237
+
+c store(greatK) "EGHLOR#!abdeghjlmnoruwz" "#>"
+  store(greatC) "‚GK;P{Ê—abdeghjlmnoruwz" d139
+  store(great)  "¯ýîäFÒ‹’ŒºëÎ©ð×LMNORÃåü" d204
+
+c store(lessK)  "ELOQR?.#!acdehjlnorstuz" "#<"
+  store(lessC)  "‚;Pû{?.Ê—acdehjlnorstuz" d155
+  store(less)   "¿´Ï¹ÓÀ–›ŽQþêEúÆñ÷}§ÿU½" d205
+
+c  store(hatK)  "?gjnwlhm" "n=" "n>"
+   store(hatC)  "ÀÄjnwlhm" "ø"  "N"
+   store(hat)   "³ìJ<W:HÉ" "Ë"  "Ô"
+
+store(simpleI) "ä×Ær¨R}Stÿ" "lfÓñI"  c added 1.0.2
+store(dottI)   "iöj"
+store(dott)    '"®¾'
+store(letterI) outs(simpleI) outs(dottI) outs(dott) d242 "Žœ–—Âïö"
+
+store(descend) "gjpqyÆñ}§ÿBC¸ÄçïSXZ©×LMNåü"
+
+store(ldiaK) "+_%${"
+store(ldiaI) "±­¥`5"
+store(ldia)  "+=8`5" outs(ldiaI) "317£Á" "42¦¢ª" "¤-Ð" "90»¼" "°6Ñ"
+
+store(udiaK) '~"'
+store(udiaI) 'â_'
+store(udia)  ')_' "~(á*¡" outs(udiaI)
+
+store(tone) "ô$˜&#“@^!ˆéÞžóÝ™àÜ”ÛßÚ‰æ"
+
+store(segment) "Ÿš•‘Š€èÙØ‹›ÌÍù>,Õ'|[\]ÈÇƒí" outs(hat)
+
+store(high) "()?ûBDLST[\]_bdfhklt~‡©´¸º¹ÂÀ×áâäêëîðñúýÿ" "*¡ÉËÔ"
+
+c needed for K_BKSP rule to resolve BS bug
+store(all) outs(notrans) outs(single) outs(equal) outs(great) outs(less) outs(hat) outs(dott) outs(ldia) outs(udia) outs(tone) outs(segment)
+
+c Most specific rules first - special cases, etc.
+
+group(Main) using keys
+
+c handle ~~ for centre tilde
+')' + '~' > d242
+d226 + '~' > d242
+any(ldia) ')' + '~' > d242 index(ldia,1)
+any(ldia) d226 + '~' > d242 index(ldia,1)
+
+c handle ~~~ for lower tilde
+any(letterI) d242 + '~' > index(letterI,1) d188
+d242 + '~' > '0'
+
+c handle " (upper diacritic)
+'_' + '"' > '~'
+any(letterI) '~' + '"' > index(letterI,1) d225
+any(letterI) any(ldia) '~' + '"' > index(letterI,1) index(ldia,2) d225
+'~' + '"' > '('
+d225 + '"' > d161
+'(' + '"' > '*'
+
+c handle $ (lower diacritic)
+any(letterI) '`' + '$' > index(letterI,1) d187
+'`' + '$' > '9'
+d187 + '$' > d188
+'9' + '$' > '0'
+
+c handle { (lower diacritic)
+'5' + '{' > d176
+d176 + '{' > '6'
+'6' + '{' > d209
+
+c handle % (lower diacritic)
+d165 + '%' > d164
+'8'  + '%' > d164
+any(letterI) d164 + '%' > index(letterI,1) d208
+d164 + '%' > '-'
+
+c #0 #1 #2 #3 #4 #02 #20 #42 #24 #04 #40
+c d202 is tiny space :-( which is mapped to the # key
+d202 + "0" > d159
+d202 + "1" > d154
+d202 + "2" > d149
+d202 + "3" > d145
+d202 + "4" > d138
+d159 + "2" > d128
+d159 + "4" > d232
+d149 + "0" > d217
+d149 + "4" > d216
+d138 + "0" > d134
+d138 + "2" > d133
+
+c Fran's addition for tone numbers to see if will work like above
+d202 + "5" > d128
+d202 + "6" > d216
+d202 + "7" > d133
+d202 + "8" > d217
+d202 + "9" > d134
+c end Fran's addition
+
+c #+ #_     quietly backwardly compatible
+d202 + "+" > d204       c #>>
+d202 + "_" > d205       c #<<
+c #= is covered by the table lookup
+d202 + "&" > d131
+c @& for overlink
+"*" + "&" > d131
+d161 + "&" > d131
+
+c handle ::
+d249 + ":" > ">"
+">" + ":" > d249 d249
+
+c handle [[ which is really [[[
+"[" + "[" > d213
+d213 + "[" > context
+
+c handle ]] and ]]]
+"]" + "]" > "'"
+"'" + "]" > "|"
+
+c handle }}
+d200 + "}" > d199
+
+c Now all the diacritics
+
+c @
+c o-width first
+any(high) "*" + "0" > index(high,1) d157
+any(high) any(ldia) "*" + "0" > index(high,1) index(ldia, 2) d157
+"*" + "0" > "%"
+"%" + "0" > d157
+d157 + "0" > d157
+"%" + "4" > d244
+d157 + "4" > d244
+
+any(high) "*" + "1" > index(high,1) d152
+any(high) any(ldia) "*" + "1" > index(high,1) index(ldia, 2) d152
+"*" + "1" > "$"
+"$" + "1" > d152
+d152 + "1" > d152
+"$" + "3" > "&"
+d152 + "3" > d244
+
+any(high) "*" + "2" > index(high,1) d147
+any(high) any(ldia) "*" + "2" > index(high,1) index(ldia, 2) d147
+"*" + "2" > "#"
+"#" + "2" > d147
+d147 + "2" > d147
+
+any(high) "*" + "3" > index(high,1) d143
+any(high) any(ldia) "*" + "3" > index(high,1) index(ldia, 2) d143
+"*" + "3" > "@"
+"@" + "3" > d143
+d143 + "3" > d143
+"@" + "1" > "^"
+d143 + "1" > d233
+
+any(high) "*" + "4" > index(high,1) d136
+any(high) any(ldia) "*" + "4" > index(high,1) index(ldia, 2) d136
+"*" + "4" > "!"
+"!" + "4" > d136
+d136 + "4" > d136
+"!" + "0" > d233
+d136 + "0" > d233
+
+c i-width following @
+any(high) d161 + "0" > index(high,1) d158
+any(high) any(ldia) d161 + "0" > index(high,1) index(ldia, 2) d158
+d161 + "0" > d222
+d222 + "0" > d158
+d158 + "0" > d158
+d222 + "4" > d243
+d158 + "4" > d243
+
+any(high) d161 + "1" > index(high,1) d153
+any(high) any(ldia) d161 + "1" > index(high,1) index(ldia, 2) d153
+d161 + "1" > d221
+d221 + "1" > d153
+d153 + "1" > d153
+d221 + "3" > d224
+d153 + "3" > d243
+
+any(high) d161 + "2" > index(high,1) d148
+any(high) any(ldia) d161 + "2" > index(high,1) index(ldia, 2) d148
+d161 + "2" > d220
+d220 + "2" > d148
+d148 + "2" > d148
+
+any(high) d161 + "3" > index(high,1) d144
+any(high) any(ldia) d161 + "3" > index(high,1) index(ldia, 2) d144
+d161 + "3" > d219
+d219 + "3" > d144
+d144 + "3" > d144
+d219 + "1" > d223
+d144 + "1" > d230
+
+any(high) d161 + "4" > index(high,1) d137
+any(high) any(ldia) d161 + "4" > index(high,1) index(ldia, 2) d137
+d161 + "4" > d218
+d218 + "4" > d137
+d137 + "4" > d137
+d218 + "0" > d230
+d137 + "0" > d230
+
+c + and _ sequences
+"+" + "+" > "3"
+"3" + "+" > "1"
+"1" + "+" > d166
+d177 + "+" > d163
+d163 + "+" > d193
+d193 + "+" > d166       c no i-width
+
+"=" + "_" > "4"
+"4" + "_" > "2"
+"2" + "_" > "7"
+d173 + "_" > d162
+d162 + "_" > d170
+d170 + "_" > "7"        c no i-width
+
+c General rules
+    + any(singleK) > index(single,1)
+any(equalC) + "="  > index(equal,1)
+any(greatC) + ">"  > index(great,1)
+any(lessC)  + "<"  > index(less,1)
+any(hatC)   + "^"  > index(hat,1)
+
+c lower diacritic
+any(letterI) + any(ldiaK) > context index(ldiaI,2)
+any(segment) + any(ldiaK) > context beep
+any(udia) + any(ldiaK) > context beep
+any(ldia) + any(ldiaK) > context beep
+any(tone) + any(ldiaK) > context beep
+          + any(ldiaK) > index(ldia,1)
+
+c upper diacritic
+any(dottI) + any(udiaK) > index(dott,1) index(udiaI,2)
+any(dottI) any(ldia) + any(udiaK) > index(dott,1) index(ldia,2) index(udiaI,3)
+any(letterI) + any(udiaK) > context index(udiaI,2)
+any(letterI) any(ldia) + any(udiaK) > context index(udiaI,3)
+any(segment) + any(udiaK) > context beep
+any(tone) + any(udiaK) > context beep
+any(udia) + any(udiaK) > context beep
+          + any(udiaK) > index(udia,1)
+
+c tones
+any(dottI) + "@" > index(dott,1) d161
+any(dottI) any(ldia) + "@" > index(dott,1) index(ldia,2) d161
+c no need to check udia since this will have done the conversion
+any(letterI) + "@" > context d161
+any(letterI) any(ldia) + "@" > context d161
+any(letterI) any(udia) + "@" > context d161
+any(letterI) any(ldia) any(udia) + "@" > context d161
+any(tone)    + "@" > context beep
+any(segment) + "@" > context beep
+             + "@" > "*"
+
+             + any(notrans) > index(notrans,1)
+             + any(nonK) > beep
+
+any(dott) any(udia) + [K_BKSP] > index(dottI,1)
+any(dott) any(ldia) any(udia) + [K_BKSP] > index(dottI,1) index(ldia,2)
+any(dott) any(tone) + [K_BKSP] > index(dottI,1)
+any(dott) any(ldia) any(tone) + [K_BKSP] > index(dottI,1) index(ldia,2)
+
+c resolve K_BKSP bug the easy way
+any(all) + [K_BKSP] > nul

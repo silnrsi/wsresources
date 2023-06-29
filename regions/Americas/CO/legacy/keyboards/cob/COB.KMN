@@ -1,0 +1,193 @@
+c COB -i  and -u fonts
+
+c this keyboard will work for both COB -i and COB -u fonts;
+c you must select the correct font to produce either -i or -u
+
+c apostrophe serves as an accent over following vowel
+c colon as dieresis
+c [ as nasalization
+c { as accented nasal
+c ] as either lowercase -i or -u
+c } as either uppercase -I or -U
+c to get any character to be itself, preceed with a backslash or hit spacebar after in some cases
+c three - - - (–) produce an n–dash (for lists of things, like pp. 6–11)
+c two - - ( — ) is an m dash 
+c one - equals an ordinary hyphen
+
+NAME "COB FONTS"
+
+BITMAP COB
+
+HOTKEY "^+C"
+
+VERSION 6.0
+
+begin > use(main)
+
+group(main) using keys
+
+    + '[' > '~'
+    + '{' > 'ˆ'
+    + ":" > "¨"
+    + "'" > "´"
+
+c barred i / barred u set
+    + "]" > "ù"
+    + "}" > "Ù"
+"´" + "]" > "à"
+"~" + "]" > "â"
+"ˆ" + "]" > "ç"
+"´" + "}" > "À"
+"~" + "}" > "Â"
+"ˆ" + "}" > "Ç"
+
+c backslash to turn any keyboard character back into itself
+"\" + "<" > "<"
+"\" + ">" > ">"
+"\" + "[" > "["
+"\" + "{" > "{"
+"\" + "]" > "]"
+"\" + "}" > "}"
+"\" + '"' > '"'
+"\" + '=' > '=' 
+"\" + ':' > ':'
+"\" + "'" > "'"
+
+"´" + " " > "'"	c d39
+"¨" + ':'   > ':'            c d58
+
+c '`'  + 't'  > '†'	c d134
+c '~'  + 't'  > '‡'	c d135
+'´'  + '~'  > 'ˆ'	c d136 
+'~'  + 'W'  > 'Ý'	c d221
+'¨'  + 'S'  > 'Š'	c d138
+'-'  + 'B'  > 'Œ'	c d140
+';'  + 'B'  > 'Œ'	c d140
+'¨'  + 'N'  > 'Ø'	c d216
+    + '<'  > '‘'		c d145
+    + '>'  > '’'		c d146
+'‘'  + '<'  > '“'	c d147
+'’'  + '>'  > '”'	c d148
+c '´'  + '.'  > '•'	c d149
+'—' + '-'    > '–'	c d150
+'-'  + '-'  > '—'	c d151
+'~'  + '~'  > '˜'	c d152
+'~' + 'w'  > 'ý'	c d253
+'¨'  + 's'  > 'š'	c d154
+'-'  + 'b'  > 'œ'	c d156
+';'  + 'b'  > 'œ'	c d156
+'¨'  + 'n'  > 'ø'	c d248
+'¨'  + 'Y'  > 'Ÿ'	c d159
+c '`'  + ' '  > '`'	c d160
+c '@'  + 'O'  > '¤'	c d164
+'!'  + '!'  > '¡'	c d161
+'`' + 's'  > '§'	c d167
+'¨'  + ' '  > '¨'	c d168
+'@' + 'c'  > '©'	c d169
+'´'  + ':'  > 'ª' 	c d170
+'`'  + ':'  > '™'	c d153
+'~'  + 'I'  > 'Î'	c d206
+'~'  + ':'  > '¬'	c d172
+'@'  + '–'  > '­'	c d173
+'@' + 'r'  > '®'	c d174
+'@'  + '_'  > '¯'	c d175
+'–'  + 'U'  > '°'	c d176
+'+'  + '–'  > '±'	c d177
+'`'  + 'p'  > '¶'	c d182
+'@'  + '.'  > '·'	c d183
+'~'  + 'E'  > 'Ê'	c d202
+'~'  + 'e'  > 'ê'	c d234
+'~'  + 'i'  > 'î'	c d238
+'?'  + '?'  > '¿'	c d191
+'´'  + 'A'  > 'Á'	c d193
+'ˆ'  + 'A'  > 'Å'	c d197
+'~'  + 'A'  > 'Ã'	c d195
+'ª'  + 'E'  > 'Ï'	c d207
+'¬'  + 'E'  > 'Ä'	c d196
+'™' + 'E'  >  'Ö'	c d214
+
+'ª'  + 'U'  > 'Ô'	c d212
+
+'´'  + "E"  > 'É'	c d201
+'ˆ'  + 'E'  > 'È'	c d200
+'¨'  + 'E'  > 'Ë'	c d203
+
+'´'  + "I"  > 'Í'	c d205
+'ˆ'  + 'I'  > 'Ì'	c d204
+
+'–'  + 'D'  > 'Ð'	c d208
+';'  + 'D'  > 'Ð'	c d208
+'~'  + 'N'  > 'Ñ'	c d209
+'´'  + 'N' > 'Ñ'	c d209
+
+'´'  + "O"  > 'Ó'	c d211
+'ˆ'  + 'O'  > 'Ò'	c d210
+'~'  + 'O'  > 'Õ'	c d213
+
+'´'  + "U"  > 'Ú'	c d218
+'ˆ'  + 'U'  > 'Æ'	c d198
+'¨'  + 'U'  > 'Ü'	c d220
+
+'~'  + "U"  > 'Û'	c d219
+'-'  + 'P'  > 'Þ'	c d222
+';'  + 'P'  > 'Þ'	c d222
+'-'   + 'p'   > 'þ'	c d254
+';'   + 'p'   > 'þ'	c d254
+
+';'  + 's'  > 'š'	c d154
+';'  + 'S'  > "Š"	c d138
+'´'  + 's'  > "'s"	c regular s
+
+'´'  + 'a'  > 'á'	c d225
+'ˆ'  + 'a'  > 'å'	c d229
+'~'  + 'a'  > 'ã'	c d227
+'ª'  + 'e'  > 'ï'	c d239
+'¬'  + 'e'  > 'ä'	c d228
+'™' + 'e'  >  'ö'	c d246
+
+'´'  + 'c'  > 'ô'	c d244
+'ª'  + 'u'  > 'ô'	c d244
+
+'´'  + "e"  > 'é'	c d233
+'ˆ'  + 'e'  > 'è'	c d232
+'¨'  + 'e'  > 'ë'	c d235
+
+'´'  + "i"  > 'í'	c d237
+'ˆ'  + 'i'  > 'ì'	c d236
+
+'-'  + 'd'  > 'ð'	c d240
+';-'  + 'd'  > 'ð'	c d240
+'-'  + 'D'  > 'Ð'	c d208
+';'  + 'D'  > 'Ð'	c d208
+';'  + 'n'  > 'ñ'	c d241
+'´'  + 'n'  > 'ñ'	c d241
+'~'  + 'n'  > 'ñ'	c d241
+
+'´'  + "o"  > 'ó'	c d243
+'ˆ'  + 'o'  > 'ò'	c d242
+'~'  + 'o'  > 'õ'	c d245
+
+'´'  + "u"  > 'ú'	c d250
+'ˆ'  + 'u'  > 'æ'	c d230
+'¨'  + 'u'  > 'ü'	c d252
+
+'~'  + "u"  > 'û'	c d251
+
+'¨'  + 'y'  > 'ÿ'	c d255
+
+c dash and glottal
+c   > '´'		c d180
+c  '=' > '-'		c d045
+c '"' > "'"		c d039
+
+c ignore accent followed by consonants
+'´' + 'd' > "'d"
+'´' + 'l' > "'l"
+'´' + 'm' > "'m"
+'´' + 's' > "'s"
+'´' + 't' > "'t"
+'´' + 'v' > "'v"
+'´' + 'w' > "'w"
+
+c restore colon followed by space
+'¨' + ' ' > ': '
