@@ -1,0 +1,1117 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v4.0.0.0 on 09.05.2017.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Times New Roman;11.25
+;   Right-hand side font = Alkalami Hausa;11.25
+;   Main Window Position = 0,0,0,0
+;   Left-hand side Character Map Window Position = 1328,7,457,447
+;   Right-hand side Character Map Window Position = 1197,466,457,447
+
+; Update by Lorna to use new codepoints 13 June 2023
+; 0643 > 06A9 - done "k"
+; 06AD > 0763 - probably not used
+; 067B > 0751 - done "b"
+; 06A0 > 08C3 - done "gw"
+; 06A8 > 08C4 - done "ƙw" 
+; 06CC > 063F - do first? - done "ˈy"
+; 0646 > 08BD - done "n"
+; 064A > 06CC - done "y"
+; 06A2 > 08BB - done "f"
+; 06A7 > 08BC - done "ƙ"
+
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName            "ajamiWA-latn2arab.map"
+LHSName                 "Unicode-Roman"
+RHSName                 "Unicode-Arabic"
+LHSDescription          "Unicode Roman script encoding"
+RHSDescription          "Unicode Arabic script encoding"
+Version                 "0.89"
+Contact                 "mailto:awarren@biblesocieties.org"
+RegistrationAuthority   "United Bible Societies"
+RegistrationName        "West Africa Roman to Arabic conversion"
+Copyright               "© 2019-2023 <United Bible Societies>. All rights reserved."
+
+; U+200D is used to prevent placing shaddah or sukun. It is thrown out in the last pass
+; LE w at end of word - as consonant, probably want a sukun
+; U+002D (-) is used for hyphenated suffixes in Kanuri [knc]
+; U+02C8 (') is used in sura names and sometimes (not in the HUACL text) for the glottal and hooked y ('y) - to mark an orthographic straight glottal stop that doesn't risk getting turned into a 'curly quote'.
+
+Define _WordBoundary U+0002 U+0003 U+0009 U+000A U+000C U+000D U+0020 U+0021 U+0022 \
+U+0023 U+0024 U+0025 U+0027 U+0028 U+0029 U+002A U+002C U+002D U+002E U+002F U+003A \
+U+003B U+003F U+005B U+005C U+005D U+007B U+007D U+00AB U+00BB U+200C U+200E U+200F U+2018 \
+U+2019 U+201A U+201B U+201C U+201D U+201E U+201F U+2028 U+2029 U+060C U+061B U+061E \
+U+061F U+06D4 
+
+Define _Sp            U+0020 U+000A
+Define _Numeral       U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039
+Define _ArabicNumeral U+0660 U+0661 U+0662 U+0663 U+0664 U+0665 U+0666 U+0667 U+0668 U+0669
+Define _Consonant     U+0628 U+062A U+062B U+062C U+062D U+062F U+0630 U+0631 U+0632 U+0633 U+0634 \
+                      U+0637 U+0638 U+0639 U+063A U+0641 U+0642 U+06A9 U+0644 U+0645 U+08BD \
+                      U+0647 U+0648 U+06CC U+066E U+0751 U+067E U+0683 U+069F U+08C3 U+08BB \
+                      U+06A4 U+08BC U+08C4 U+06A9 U+06BA U+063F U+0763 U+0767
+Define _ConsonantNoV  U+0628 U+062A U+062B U+062C U+062D U+062F U+0631 U+0632 U+0633 U+0634 \
+                      U+0637 U+0638 U+0639 U+063A U+0641 U+0642 U+06A9 U+0644 U+0645 U+08BD \
+                      U+0647 U+066E U+0751 U+067E U+0683 U+069F U+08C3 U+08BB U+06A4 \
+                      U+08BC U+08C4 U+06A9 U+06BA U+063F U+0763 U+0767
+Define _Velar         U+063A U+08C3
+
+Define _Letter        U+0651 U+0652 
+
+Define _LatnLtr       U+0027 U+002E U+0060 \
+                      U+0041 U+0042 U+0043 U+0044 U+0045 U+0046 U+0047 U+0048 U+0049 U+004A \
+                      U+004B U+004C U+004D U+004E U+004F U+0050 U+0051 U+0052 U+0053 U+0054 \
+                      U+0055 U+0057 U+0058 U+0059 U+005A U+0061 U+0062 U+0063 U+0064 \
+                      U+0065 U+0066 U+0067 U+0068 U+0069 U+006A U+006B U+006C U+006D U+006E \
+                      U+006F U+0070 U+0071 U+0072 U+0073 U+0074 U+0075 U+0077 U+0078 \
+                      U+0079 U+007A U+00A9 U+00C3 U+00D5 U+00E3 U+00F5 U+0100 U+0101 U+0103 U+0128 U+0129 U+012B \
+                      U+0168 U+0169 U+016B U+016A U+0181 U+018A U+018E U+0198 U+0199 U+01B3 \
+                      U+01B4 U+0253 U+0257 U+0259 U+02C8 U+1EBC U+1EBD 
+
+Define _LatnPunct     U+0021 U+0028 U+0029 U+002C U+002E U+003A U+003B U+003F U+005B U+005D U+2018 U+2019 U+201C U+201D
+
+; 1 STANDARDISE RS ORTHOGRAPHY (RS>RS)=========================================================================================================
+Pass(Unicode)
+
+; NASALISED VOWELS [hau]-Q-Gummi
+U+00E3              > U+0061 ; a
+U+1EBD              > U+0065 ; e
+U+0129              > U+0069 ; i
+U+00F5              > U+006F ; o
+U+0169              > U+0075 ; u
+U+00C3              > U+0041 ; A
+U+1EBC              > U+0045 ; E
+U+0128              > U+0049 ; I
+U+00D5              > U+004F ; O
+U+0168              > U+0055 ; U
+
+; 2 CAPITALISED NAMES AND TITLES (RS>AS)=========================================================================================================
+Pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+UniClass [Numeral] = ( _Numeral ) 
+
+; Biblical
+; "Ala" / (#|[WordBoundary]) _ (#|[WordBoundary])                            > U+0639 U+064E U+0644 U+064E U+0627 ; Ala [knc]
+"YHWH"                                                                     > U+06CC U+200D U+0647 U+200D U+0648 U+200D U+0647 U+200D
+; "Yahweh"                                                                   > "یَهْ‌وٜٮٰه" U+200C ; Yahweh
+
+; Islamic forms
+"ˈyan Adam"    / _ (#|[WordBoundary])                      > "ؿَࢽْ أَدَمْ" ; Adam
+"ɗan Adam"     / _ (#|[WordBoundary])                       > "طَࢽْ أَدَمْ" ; ɗan Adam
+"Adam"         / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "ءَادَمُ" ; Adam
+"Ararat"       / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "أَرَرَاتْ" ; Ararat
+"Ayuba"        / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "أَیُّوبَ" ; Ayuba
+"Babila"       / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "بَابِیلَ" ; Babila
+"Biliyaminu"   / (#|[WordBoundary]) _ (#|[WordBoundary])                     > "بِلْیٰمِࢽُ" ; Benyamin
+"Biriskila"    / (#|[WordBoundary]) _ (#|[WordBoundary])                      > "بِرِسْکِلَ" ; Biriskila
+"Dawuda"       / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "دَاوُدَ" ; Dawuda
+"Elisha"       / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "أَلْیَسَعَ" ; Elisha
+; "Enok"       / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "إِدْرِیسُ" ; Enok
+"Ezekiyel"     / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "حِزْࢼِیَالْ" ; Ezekiyel
+"Ezra"         / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "عُزَیْرُ" ; Ezra
+"Firˈauna"     / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "ࢻِرْعَوْࢽَ" ; Fir’auna
+"Gabriyel"     / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "جِبْرِیلُ" ; Gabriyel
+"Gidan Wuta"   / (#|[WordBoundary]) _ (#|[WordBoundary])                     > "جَهَࢽَّمَ" ; Gidan Wuta
+"Gideyon"      / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "جِدْعُوࢽْ" ; Gideyon
+"Gog da Magog" / (#|[WordBoundary]) _ (#|[WordBoundary])                   > "جُوج دَ مَاْجُوج" ; Gog da Magog
+"Goliyat" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "جَالُوتَ" ; Goliyat
+"Haman" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "هَامَٰࢽَ" ; Haman
+"Habila" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "هَبِیلَ" ; Habila/Abel
+"Haruna" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "هَٰرُوࢽَ" ; Haruna
+"Hawwa" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "هَوَّآءُ" ; Hawwa
+"Hosiya" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "یُوشَعُ" ; Hosiya
+"Ibrahim" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "إِبْرَٰهِیمْ" ; Ibrahim
+"Iliya" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "إِلْیَاسُ" ; Iliya
+"Ishaku" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "إِسْحَٰࢼَ" ; Ishaku
+"Ishaya" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "عِشَایَ" ; Ishaya
+"Ishmaˈil" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "إِسْمَٰعِیلُ" ; Ishma’il
+"Ishmaˈil" / (#|[WordBoundary]) _                                          > "إِسْمَٰعِیل" ; Ishma’il-
+"Israˈil" / (#|[WordBoundary]) _                                           > "إِسْرَٰٓءِیل" ; Israˈil-
+"Kirista" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "کِرِسْتَ" ; Kirista
+"Kora" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "ࢼَارُوࢽَ" ; Kora
+"Lot" / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "لُوطُ" ; Lot
+"Maryamu" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "مَرْیَمُ" ; Maryamu
+"Masar" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "مَصَرْ" ; Masar
+"Midiyan" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "مَدْیَࢽَ" ; Midiyan
+"Mikayel" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "مِیکَآءِیلُ" ; Mikayel
+"Mūsa" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "مُوسَٰى" ; Musa
+"Nataniyel" / (#|[WordBoundary]) _ (#|[WordBoundary])                      > "ࢽَتَعَالَ" ; Nataniyel
+"Nūhu" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "ࢽُوحُ" ; Nūhu
+"Rahīlatu" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "رَحِیلَةُ" ; Rahilatu
+"Rebeka" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "رِࢻْکَتُ" ; Rebeka
+"Romawa" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "رُواْمَاوَ" ; Romawa
+"Ruben" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "رَعُبَیْࢽُ" ; Ruben
+; "Sama" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "أَلْجَࢽَّهْ" ; Sama > Aljanna
+; "Samariya" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "سَامِرِے" ; Samariya
+; "Samariya" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "سَمِارِیَ" ; Samariya
+"Samāˈīla"                                                                                                      > "سَمَٰعِیلَ"
+"Samson" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "شَمْشُوࢽَ" ; Samson
+"Set" / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "شِیتُ" ; Set
+"Shaiɗan" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "شَیْطَࢽْ" ; Shaiɗan
+"Shawulu" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "طَالُوتَ" ; Shawulu=Dalut OT
+"Sawulu" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "شَوُلُ" ; Sawulu=Shawulu NT
+"Sheba" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "شٜىٰبَ" ; Sheba
+"Shela" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "شٜىٰلَ" ; Shela
+"Solomon" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "سُلَیْمَٰࢽُ" ; Solomon
+"Tera" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "تَیْرَا" ; Tera
+"Yahuda" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "یَهُوزَ" ; Yahuda
+"Yahudawa" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "یَهُودَاوَ" ; Yahudawa
+"Yakub" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "یَعْࢼُوبَ" ; Yakub
+"Yetro" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "یِتْرُواْ" ; Yetro
+; "Yesu" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "عِیسَىٰ" ; Yesu>Isa
+; "Yeesu" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "عِیسَىٰ" ; Yeesu>Isa [fuv]
+"Isa" / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "عِیسَىٰ" ; Isa
+"Yahaya" / (#|[WordBoundary]) _ (#|[WordBoundary])                        > "یَحْیَى" ; Yohanna
+"Yona" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "یُوࢽُسَ" ; Yona
+"Yusuf" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "یُوسُࢻَ" ; Yusuf
+"Zakariyyā" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "زَکَرِیَّا" ; Zakariya
+
+"Batshebatu"																   > "بَتْشٜىٰبَةُ"
+"Hannatu" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "هَࢽَّةُ" ; Hannatu
+"Saraya" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "سَارَیَ" ; Saaraya
+"Saratu" / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "سَارَةُ" ; Saaratu
+
+; alif jaa
+"Fāshiya" / (#|[WordBoundary]) _                                           > "ࢻَٰشِیَ"
+
+; ayin
+"Aidan" / (#|[WordBoundary]) _ (#|[WordBoundary])                          > "عَیْدَࢽ"
+"Amos" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "عَمُواس"
+"Edom" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "عٜىٰدُوام"
+"Eli" / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "عٜىٰلِ"
+"Esta" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "عٜىٰسْتَ"
+"Urūshalīma" / (#|[WordBoundary]) _ (#|[WordBoundary])                     > "عُرُوشَلِیمَ"
+"Uzziya" / (#|[WordBoundary]) _ (#|[WordBoundary])                         > "عُزِّیَ"
+
+; h
+"Shuh" / (#|[WordBoundary]) _                                              > "شُوح"
+
+; z
+"Ashkenaz"      / (#|[WordBoundary]) _                                          > "أَشْکٜىٰࢽَز"
+"Hezekiya"      / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "هٜىٰزٜىٰکِیَ"
+"Nebukadnezzar" / (#|[WordBoundary]) _ (#|[WordBoundary])                  > "ࢽٜىٰبُکَدْࢽٜىٰزَّر"
+"Zafaniya"      / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "زَࢻَࢽِیَ"
+"Zerubabbel"    / (#|[WordBoundary]) _ (#|[WordBoundary])                     > "زٜىٰرُبَبّٜىٰل"
+
+; zedek
+"Melkizedek"                                                               > "مَلْکِصَدِࢼْ"
+"Zedekiya"   / (#|[WordBoundary]) _ (#|[WordBoundary])                       > "صَدِࢼِیَ" ; changed 180731 from "زٜىٰدٜىٰکِیَ" to harmonise with Melkizedek
+"Adonizedek" / (#|[WordBoundary]) _ (#|[WordBoundary])                     > "أَدُواْࢽِصَدِࢼْ" ; added 180731 to harmonise with Melkizedek
+
+; other
+"Ard"        / (#|[WordBoundary]) _ (#|[WordBoundary])                     > "أَرِدْ"
+"Betelehem" > U+0628 U+064E U+06CC U+062A U+064E U+0644 U+064E U+062D U+0652 U+0645 U+0650 ; Betelehem>Baitalami [hau]-BSN 16-01-15
+
+; CROSS-REFERENCE ABBREVIATIONS
+"L. Fir"                                                                   > "لِـ ࢻِر"
+"L. Ƙid"                                                                   > "لِـ ࢼِد"
+"M. Sha"                                                                   > "مَی شَـ"
+"K. Mag"                                                                   > "کَـ مَغْـ"
+"M. Wa"                                                                    > "مَی وَ"
+"W. Wāƙ"                                                                    > "وْ وَاࢼْ "
+"A. M."                                                                    > "أَیُّکَࢽْ"
+"R. Yah"                                                                   > "رُعُیَ"
+"Yah"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "یَحـ"
+"Zab"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "زَبُو" U+200D
+"Ish"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "عِشـ"
+"Hab"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "حَبـ"
+"Zaf"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "زَࢻـ"
+"Yak"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "یَعْࢼـ"
+"Alƙ"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "أَلْࢼَ"
+"Irm"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "إِرْمِ"
+"Mak"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "مَکُواْ"
+"Yow"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "یُواْو"
+"Mika" / (#|[WordBoundary]) _ (#|[WordBoundary])                           > "مِیکَ"
+"Zak"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "زَکْ"
+"Ibr"  / (#|[WordBoundary]) _ (#|[WordBoundary])                            > "إِبْرَ"
+
+; QUR'ANIC SURAS
+U+0053 U+0075 U+0072 U+0061 U+0074 U+0075                      > U+0633 U+064F U+0648 U+200D U+0631 U+064E U+0629 U+064F                             ; Suratu
+U+0053 U+0075 U+0072 U+0061 U+0074 U+0075 U+006C               > U+0633 U+064F U+0648 U+200D U+0631 U+064E U+0629 U+064F                             ; Suratul
+U+0053 U+0075 U+0072 U+0061 U+0074 U+0075 U+006E               > U+0633 U+064F U+0648 U+200D U+0631 U+064E U+0629 U+064F                             ; Suratun
+U+0053 U+0075 U+0072 U+0061 U+0074 U+0075 U+007A               > U+0633 U+064F U+0648 U+200D U+0631 U+064E U+0629 U+064F                             ; Suratuz     
+U+0042 U+0061 U+0199 U+0061 U+0072 U+0061                      > U+0627 U+0644 U+200D U+0628 U+064E U+08BC U+064E U+0631 U+064E U+0629               ; 2 Baƙara
+U+0041 U+006C U+02C8 U+0049 U+006D U+0072 U+0101 U+006E U+0061 > U+0627 U+0644 U+200D U+0639 U+0650 U+0645 U+0652 U+0631 U+064E U+0627 U+08BD U+200D ; 3 AlˈImrāna
+U+004E U+0069 U+0073 U+0101 U+02C8                             > U+0627 U+0644 U+200D U+08BD U+0651 U+0650 U+0633 U+064E U+0627 U+0621               ; 4 Nisāˈ
+U+004D U+0101 U+02C8 U+0069 U+0064 U+0061                      > U+0627 U+0644 U+200D U+0645 U+064E U+0627 U+0626 U+0650 U+062F U+064E U+0629        ; 5 Māˈida
+U+0041 U+006E U+02C8 U+0101 U+006D                             > U+0627 U+0644 U+200D U+0627 U+0654 U+064E U+08BD U+0652 U+0639 U+064E U+0627 U+0645 U+0652 ; 6 Anˈām
+U+0059 U+016B U+006E U+0075 U+0073                             > U+06CC U+064F U+200D U+0648 U+200D U+08BD U+064F U+0633                      ; 10 Yūnus
+U+018A U+002E U+0048 U+002E                                    > U+0637 U+200D U+0647 U+200D                                                         ; 20 Ɗ.H.
+U+005A U+0075 U+006B U+0068 U+0072 U+0075 U+0066               > U+0627 U+0644 U+200D U+0632 U+0651 U+064F U+062E U+0652 U+0631 U+064F U+08BB U+0652 ; 43 Zukhruf
+U+004A U+0069 U+006E U+006E                                    > U+0627 U+0644 U+200D U+062C U+0650 U+08BD U+0651                                    ; 72 Jinn
+U+004E U+0061 U+0062 U+0061 U+02C8                             > U+0627 U+0644 U+200D U+08BD U+0651 U+064E U+0628 U+064E U+0627 U+0655 U+0650               ; 78 Nabaˈ
+U+0198 U+0061 U+0064 U+0072                                    > U+0627 U+0644 U+200D U+08BC U+064E U+062F U+0652 U+0631 U+200D                      ; 97 Ƙadr
+U+0049 U+006B U+0068 U+006C U+0101 U+0073                      > U+0627 U+0644 U+200D U+0627 U+0655 U+0650 U+062E U+0652 U+0644 U+064E U+0627 U+0635 U+0652 ; 112 Ikhlās
+
+; 3 DECAPITALISATION (RS>RS)=====================================================================================================================
+Pass(Unicode)
+UniClass [Uppercase] = (U+0041..U+005A U+0100 U+0102 U+012A U+016A U+0181 U+018A U+0198 U+01B3 U+018E)
+UniClass [Lowercase] = (U+0061..U+007A U+0101 U+0103 U+012B U+016B U+0253 U+0257 U+0199 U+01B4 U+0259)
+
+[Uppercase]                                                     > [Lowercase]
+
+; 4 SPECIAL SPELLINGS (RS>AS)=====================================================================================================================
+Pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+UniClass [LatnLtr] = ( _LatnLtr )
+
+; Allah/allah
+"allah" / (#|[WordBoundary]) _ (#|[WordBoundary])              > U+0627 U+0644 U+200D U+0644 U+0651 U+064E U+0647                      ; allah with diacritics U+200D removed to allow sukuun finally
+; "allah" / (#|[WordBoundary]) _ (#|[WordBoundary])              > U+FDF2                                                                       ; allah no diacritics
+"allahn" / (#|[WordBoundary]) _                                > U+0627 U+0644 U+200D U+0644 U+0651 U+064E U+0647 U+200C U+08BD               ; allahn with h not joining
+; "allahn"                                                       > U+0627 U+064E U+0644 U+200D U+0644 U+0651 U+0670 U+0647 U+200C U+08BD U+0652 ; Allahn dagger alif [hau] (Adamu Garba)
+"bismillahi"                                                   > U+0628 U+0650 U+0633 U+0652 U+0645 U+0650 U+0020 U+0627 U+064E U+0644 U+200D U+0644 U+0651 U+064E U+0647 U+0650 ; bismillahi
+"lillahi"                                                      > U+0644 U+0650 U+0644 U+0651 U+064E U+0647 U+0650                             ; lillahi
+; "sadaƙallahul"                                                 > U+0635 U+064E U+062F U+064E U+08BC U+0651 U+064E U+0020 U+0627 U+0644 U+200D U+0644 U+0651 U+064E U+0647 U+064F ; 'sada'kallahul
+; "subhanallahi"                                                 > U+0633 U+064F U+0628 U+0652 U+062D U+064E U+0627 U+08BD U+0652 U+0020 U+0627 U+064E U+0644 U+200D U+0644 U+0651 U+064E U+0647 U+0650 ; subhanallahi
+"ubangiji"                                                     > "عُبَࢽْ‌غِجِ" ; Ubangiji
+"almasihu" / (#|[WordBoundary]) _                              > "أَلْمَسِیحُ" ; Almasihu
+"almasihan" / (#|[WordBoundary]) _                             > "أَلْمَسِیحً" ; almasihan
+"mashiha" / (#|[WordBoundary]) _                               > "مَشِیح" ; Hebrew form transliterated
+
+"alƙurˈani" / _ (#|[WordBoundary])                             > "أَلْࢼُرْءَاࢽِ" ; AlƘurˈani, Qur'an
+"alƙurˈāni" / _ (#|[WordBoundary])                             > "أَلْࢼُرْءَاࢽِ" ; AlƘurˈāni, Qur'ān
+"azim" / (#|[WordBoundary]) _ (#|[WordBoundary])               > U+0627 U+0654 U+0644 U+0652 U+0639 U+064E U+0638 U+0650 U+06CC U+0645 U+0652        ; azim
+
+"littafi mai tsarki: juyi mai fitar da maˈana" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "لِتَّاࢻِے مَىْ ڟَرْکِے وَتُو أَتَّوْرَة دَ أَࢽَّبَٰوَا دَ زَبُورَة دَ لإِࢽْجِیلَ" ; Littafi mai Tsarki: juyi mai fitar da maˈana > TAZI
+"littafin koyarwar musa" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "أَتَّوْرَة" ; Littafin Koyarwar Musa > attaura
+"attaura" / (#|[WordBoundary]) _ (#|[WordBoundary])            > U+0627 U+0654 U+0644 U+0652 U+062A U+064E U+0648 U+0652 U+0631 U+064E U+0627 U+0629 ; attaura
+"annabawa" / (#|[WordBoundary]) _ (#|[WordBoundary])           > "أَࢽَّبَاوَ" ; annabawa
+"zabura" / (#|[WordBoundary]) _ (#|[WordBoundary])             > "زَبُورَا" ; Zabura
+"sabuwar yarjejeniya" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "لِࢽْجِیلَ" ; Sabuwar Yarjejeniya
+
+"malaˈik" > "مَلاَىِٕک" ; mala'ik- 07-10-15 [hau]-BSN
+U+0073 U+0061 U+006C U+006C U+0061 U+0068                      > U+0633 U+064E U+0644 U+0651 U+064E U+0647                                    ; sallah (Ajami spelling)
+; U+0061 U+006C U+0061 / U+0077 U+0061 U+0074 U+0061 U+0020 _  > U+0622 U+0644 U+064E U+0649                                                  ; (wata) ala
+
+; alif Ja
+"alˈada" > "أَلعَٰدَ"
+"amfani" > "أَمْࢻَٰࢽِ"
+"ɗaci" > "طَٰثِے"
+"jāwo" > "جَٰوُاْ"
+"ƙaˈid" > "ࢼَٰعِد"
+"ƙāˈid" > "ࢼَٰعِد"
+"kawo" > "کَٰوُاْ"
+"shafa" / _ (#|[WordBoundary]) > "شَٰࢻَ"
+"tamānin" > "تَمَٰࢽِࢽ"
+"tsāg" > "ڟَٰغ"
+"tsawa" > "ڟَٰوَ"
+"yawo" > "یَٰوُاْ"
+
+; ayin (default V- is alif)
+"abinci" > "عَبِࢽْثِ" ; why not also abu, abin etc.?
+"aik" / (#|[WordBoundary]) _ > "عَیک" ; -i/-o etc.
+"ˈăik" > "عَیک" ; -i/-o etc.
+"ˈaik" > "عَیک" ; -i/-o etc.
+"aka" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "عَکَ"
+"alamu" / (#|[WordBoundary]) _ > "عَلَمَ"
+"amfani" / (#|[WordBoundary]) _ > "عَمْࢻَࢽِ"
+"ammā" / (#|[WordBoundary]) _ > "عَمَّا"
+"asirce" / (#|[WordBoundary]) _ > "عَسِرثٜىٰ"
+"ibada" / (#|[WordBoundary]) _ > "عِبَدَ"
+"idan" / (#|[WordBoundary]) _ > "عِدَࢽ"
+"ido" / (#|[WordBoundary]) _ > "عِدُواْ"
+"idanu" / (#|[WordBoundary]) _ > "عِدَࢽُ"
+"ilimi" / (#|[WordBoundary]) _ > "عِلِمِ"
+"inda" / (#|[WordBoundary]) _ > "عِࢽْدَ"
+"isā" / (#|[WordBoundary]) _ > "عِسَا"
+"ita" / (#|[WordBoundary]) _ > "عِتَ"
+"iya" / (#|[WordBoundary]) _ > "عِیَ"
+"uku" / (#|[WordBoundary]) _ > "عُکُ"
+"umarni" / (#|[WordBoundary]) _ > "عُمَرْࢽِ"
+"umarce" / (#|[WordBoundary]) _ > "عُمَرْثٜىٰ"
+
+; faɗuwa/tanwiin (default is -i/un) [Why only these few?]
+"bikin" / _ (#|[WordBoundary]) > "بِکٍ" U+200D
+"damin" / _ (#|[WordBoundary]) > "دَمٍ" U+200D
+"farin" / _ (#|[WordBoundary]) > "ࢻَضٍ" U+200D
+"īhun" / _ (#|[WordBoundary]) > "إِیهٌ" U+200D
+"ilimin" / _ (#|[WordBoundary]) > "عِلِمٍ" U+200D
+"jirgin" / _ (#|[WordBoundary]) > "جِضْغٍ" U+200D
+"kiwon" / _ (#|[WordBoundary]) > "کِوٌا" U+200D
+"malaman" / _ (#|[WordBoundary]) > "مَلَمً" U+200D
+"mulkin" / _ (#|[WordBoundary]) > "مُلْکٍ" U+200D
+"naman" / _ (#|[WordBoundary]) > "ࢽَمً" U+200D
+"nūnan" / _ (#|[WordBoundary]) > "ࢽُوࢽً" U+200D
+"rūhun" / _ (#|[WordBoundary]) > "رُوحٌ" U+200D
+"ruwan" / _ (#|[WordBoundary]) > "ضُوً" U+200D
+"yana nan" / _ (#|[WordBoundary]) > "یَࢽَࢽً" U+200D
+"saˈanan" / _ (#|[WordBoundary]) > "سَعَࢽً" U+200D
+"anānan" / _ (#|[WordBoundary]) > "أَࢽَاࢽً" U+200D
+
+; h ƙarami (default is ه)
+"alhaki" / (#|[WordBoundary]) _ > "أَلْحَکِ"
+"alher" > "أَلْحٜىٰر"
+"haba" / (#|[WordBoundary]) _ > "حَبَ"
+"haɗ" / (#|[WordBoundary]) _ > "حَط" ; -a/-e/-u/-iye/-uwa
+"haif" > "حَیࢻ"
+"haka" / (#|[WordBoundary]) _ > "حَکَ"
+"hakarkari" / (#|[WordBoundary]) _ > "حَکَرْکَرِ"
+"haƙa" / _ (#|[WordBoundary]) > "حَࢼَ"
+"haƙīƙa" / (#|[WordBoundary]) _ > "حَࢼِیࢼَ"
+"hakki" / (#|[WordBoundary]) _ > "حَکِّ"
+"haƙuri" > "حَࢼُرِ"
+"halaka" > "حَلَکَ"
+"hali" > "حَلِ"
+"halitt" > "حَلِتّ"
+"halicc" > "حَلِثّ"
+"hamada" > "حَمَدَ"
+"hams" / (#|[WordBoundary]) _ > "حَمْس" ; [arb]
+"hana" / _ (#|[WordBoundary]) > "حَࢽَ"
+"hanci" / (#|[WordBoundary]) _ > "حَࢽْثِ"
+"hangi" / (#|[WordBoundary]) _ > "حَࢽْغِ"
+"hankaka" / (#|[WordBoundary]) _ > "حَࢽْکَکَ"
+"hankali" / (#|[WordBoundary]) _ > "حَࢽْکَلِ"
+"hankici" / (#|[WordBoundary]) _ > "حَࢽْکِثِ"
+"hannu" / (#|[WordBoundary]) _ > "حَࢽُّ"
+"hanya" / (#|[WordBoundary]) _ > "حَࢽْیَ
+"har" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "حَر"
+"harka" / (#|[WordBoundary]) _ > "حَرْکَ"
+"harkoki" / (#|[WordBoundary]) _ > "حَرْکُواْکِ"
+"hask" > "حَصْک"
+"hatimi" / (#|[WordBoundary]) _ > "حَتِمِ"
+"hatsari" / (#|[WordBoundary]) _ > "حَڟَرِ"
+"hatsi" / (#|[WordBoundary]) _ > "حَڟِ"
+"haye" / (#|[WordBoundary]) _ > "حَیٜىٰ"
+"hazo" / (#|[WordBoundary]) _ > "حَزُوا"
+"hikima" > "حِکِمَ"
+"hidima" > "حِدِمَ"
+"hira" / (#|[WordBoundary]) _ > "حِرَ"
+"horo" / (#|[WordBoundary]) _ > "حُواْرُواْ"
+"hoto" / (#|[WordBoundary]) _ > "حُواْتُواْ"
+"huɗa" / (#|[WordBoundary]) _ > "حُطَ"
+"huɗu" / (#|[WordBoundary]) _ > "حُطُ"
+"hujja" / (#|[WordBoundary]) _ > "حُجَّ"
+"hukuma" / (#|[WordBoundary]) _ > "حُکُمَ"
+"hukun" > "حُکُࢽْ"
+"hula" / (#|[WordBoundary]) _ > "حُلَ"
+"hutu" / (#|[WordBoundary]) _ > "حُتُ"
+"mahalicci" / (#|[WordBoundary]) _ > "مَحَلِثِّ"
+"rūhu" > "رُوحُ"
+"rūhaniya" > "رُوحَࢽِیَ"
+"rūhohi" / (#|[WordBoundary]) _ > "رُوحُواْحِ"
+"shaho" / (#|[WordBoundary]) _ > "شَحُواْ"
+"sihiri" / (#|[WordBoundary]) _ > "سِحِرِ"
+"tārihi" / (#|[WordBoundary]) _ > "تَارِحِ" ; [arb]
+"tārīhi" / (#|[WordBoundary]) _ > "تَارِیحِ" ; [arb]
+"h§" > "ح" ; for Glossary head letter
+
+; r (default is ر)
+"dogarai" / (#|[WordBoundary]) _ > "دُواْغَضَیْ"
+"dogara" / (#|[WordBoundary]) _ > "دُواْغَضَ"
+"fure" / (#|[WordBoundary]) _ > "ࢻُضٜىٰ"
+"garasin" / (#|[WordBoundary]) _ > "غَضَسِࢽ"
+"gara" / (#|[WordBoundary]) _ > "غَضَ"
+"horo" / (#|[WordBoundary]) _ > "حُواْضُواْ"
+"jira" / (#|[WordBoundary]) _ > "جِضَا"
+; "jirgi" / (#|[WordBoundary]) _ > "جِضْغِ"
+"jirgi" > "جِضْغِ" ; was OK 191210
+"jirage" > " جِضَاغٜىٰ" ; was incorrect with prefixes or suffixes 191210
+; "ƙarya" / (#|[WordBoundary]) _ > "ࢼَضْیَا"
+"ƙarya" > "ࢼَضْیَا" ; was OK alone, but not with prefixes or suffixes 191210
+"maruru" / (#|[WordBoundary]) _ > "مَضُوضُ"
+"mori" / _ (#|[WordBoundary]) > "مُواْضِ"
+"murhu" / (#|[WordBoundary]) _ > "مُضْهُ"
+"raɗa" / (#|[WordBoundary]) _ > "ضَطَ"
+; "rage" / (#|[WordBoundary]) _ > "ضَغٜىٰ"
+"rage" / _ (#|[WordBoundary]) > "ضَغٜىٰ" ; was OK at word-start, but not with prefixes 191210
+; "rago" / (#|[WordBoundary]) _ > "ضَغُواْ"
+"rago" > "ضَغُواْ" ; was OK at word-start, but not with prefixes or suffixes 191210
+"randa" / (#|[WordBoundary]) _ > "ضَࢽْدَا"
+"rantse" / (#|[WordBoundary]) _ > "ضَࢽْڟٜىٰ" ;
+"rantsuwa" / (#|[WordBoundary]) _ > "ضَࢽْڟُوَا"
+"rawa" / (#|[WordBoundary]) _ > "ضَوَ"
+"rigima" / (#|[WordBoundary]) _ > "ضِغِمَ"
+; "rikice" / (#|[WordBoundary]) _ > "ضِکِثِی" ; (NB e>i)
+"rikice" > "ضِکِثِی" ; (NB e>i)
+"rikic" > "ضِکِث" ; was OK in #rikice#, but not with prefixes or other suffixes such as –i#, -in#, -ewa# 191210
+"inroƙ" / (#|[WordBoundary]) _ > "إِࢽْضُواْࢼ" ; inroƙ-
+"roƙ" > "ضُواْࢼ" ; roƙ-
+"rowa" / (#|[WordBoundary]) _ > "ضُواْوَ"
+; "ruɓa" / (#|[WordBoundary]) _ > "ضُݑَ"
+"ruɓa" > "ضُݑَ" ; was OK alone, but not with prefixes or suffixes 191210
+"ruɗu" / (#|[WordBoundary]) _ > "ضُوطُو"
+"rumbu" / (#|[WordBoundary]) _ > "ضُمْبُ"
+"runduna" / (#|[WordBoundary]) _ > "ضُࢽْدُࢽَا"
+; "runguma" / (#|[WordBoundary]) _ > "ضُࢽْغُمَ"
+"rungum" > "ضُࢽْغُم" ; was OK in runguma, but not with other prefixes or suffixes 191210
+; "ăruwan" / _ (#|[WordBoundary]) > "َضُوً" ; was OK (rule currently already under tanwin above) 191210
+"ăruwa" / _ (#|[WordBoundary]) > "َضُوَ" ; was incorrect in Isaiah 43.2 and John 3.5; John 2.6, Isaiah 44.4, 2 Chron 4.5, 1Kgs 7.26 191210
+"ruwannan" / (#|[WordBoundary]) _ > "ضُوًࢽَࢽ"
+"ruwa" / (#|[WordBoundary]) _ > "ضُوَ"
+"banruwa" / (#|[WordBoundary]) _ > "بَࢽْضُوَ"
+"naruwa" / (#|[WordBoundary]) _ > "ࢽَضُوَ"
+; "shiru" / (#|[WordBoundary]) _ > "شِضُ"
+"shiru" > "شِضُ" ; was incorrect with prefixes 191210
+"turu" / (#|[WordBoundary]) _ > "تُوضُ"
+"r§" > "ض" ; for Glossary head letter
+
+; sadu (default is س)
+"asali" / (#|[WordBoundary]) _ > "أَصَلِ"
+"basira" / (#|[WordBoundary]) _ > "بَصِرَ"
+"haske" / (#|[WordBoundary]) _ > "حَصْکٜىٰ"
+"hasūm"                        > "حَصُوم"
+"masar" / (#|[WordBoundary]) _ > "مَصَر"
+"masara" / (#|[WordBoundary]) _ > "مَصَرَ"
+"misāl" > "مِصَال"
+"misal" > "مِصَل"
+"nasara" > "ࢽَصَرَ"
+"nasarori" > "ࢽَصَرُواْرِ"
+"nasarā" > "ࢽَصَرَا"
+"sāɓo" / (#|[WordBoundary]) _ > "صَاݑُوا"
+"siff"                         > "صِࢻّ" ; siffa, siffofi
+"taswir" / (#|[WordBoundary]) _ > "تَصْوِیر"
+
+; zal ذ U+0630 (default is ظ)
+"azāba" / (#|[WordBoundary]) _ > "عَذَابَ"
+"ˈazāba" > "عَذَابَ"
+"azzakari" / (#|[WordBoundary]) _ > "أَذَّکَرِ"
+"bazā" / (#|[WordBoundary]) _ > "بَذَا"
+"bazai" / (#|[WordBoundary]) _ > "بَذَی"
+"bazāka" / (#|[WordBoundary]) _ > "بَذَاکَ"
+"bazāki" / (#|[WordBoundary]) _ > "بَذَاکِ"
+"bazāku" / (#|[WordBoundary]) _ > "بَذَاکُ"
+"bazāmu" / (#|[WordBoundary]) _ > "بَذَامُ"
+"bazan" / (#|[WordBoundary]) _ > "بَذَࢽ"
+"bazāsu" / (#|[WordBoundary]) _ > "بَذَاسُ"
+"bazāta" / (#|[WordBoundary]) _ > "بَذَاتَ"
+"manzanni" / (#|[WordBoundary]) _ > "مَࢽْذَࢽِّے"
+"manzo" / (#|[WordBoundary]) _ > "مَࢽْذُوا"
+"mazan" / (#|[WordBoundary]) _ > "مَذَࢽ"
+"maza" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "مَذَ"
+"yanzu" / (#|[WordBoundary]) _ > "یَࢽْذُ
+"za" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "ذَ"
+"zā" / (#|[WordBoundary]) _ (#|[WordBoundary]) > "ذَا"
+"zā" / (#|[WordBoundary]) _ > "ذَا"
+"zaˈa" > "ذَعَ"
+"zāˈa" > "ذَاعَ"
+"zāɓ" > "ذَاݑ"
+"zāfi" > "ذَاࢻِ"
+"zagay" / (#|[WordBoundary]) _ > " ذَغَی"
+"zag" > "ذَغ"
+"zāg" > "ذَاغ"
+"zaitun" > "ظَیْتُࢽ" ; to counteract force of the next line for this word
+"zai" / (#|[WordBoundary]) _ > "ذَی"
+"zāka" / (#|[WordBoundary]) _ > "ذَاکَ"
+"zāki" / _ (#|[WordBoundary]) > "ذَاکِ"
+"zākoki" / (#|[WordBoundary]) _ > "ذَاکُواْکِ"
+"zāku" / _ (#|[WordBoundary]) > "ذَاکُ"
+"zama" > "ذَمَ"
+"zāmu" / (#|[WordBoundary]) _ > "ذَامُ"
+"zan" / (#|[WordBoundary]) _ > "ذَࢽ"
+"zance" / (#|[WordBoundary]) _ > "ذَࢽْثٜىٰ"
+"zāne" / (#|[WordBoundary]) _ > "ذَاࢽِ"
+"zango" / (#|[WordBoundary]) _ > "ذَࢽْغُوا"
+"zāni" / (#|[WordBoundary]) _ > "ذَاࢽِ"
+"zāsu" / (#|[WordBoundary]) _ > "ذَاسُ"
+"zāta" / (#|[WordBoundary]) _ > "ذَاتَ"
+"zauna" > "ذَوࢽَ"
+"zaure" > "ذَورٜىٰ"
+"zo" / (#|[WordBoundary]) _ > "ذُواْ"
+"zo" / _ (#|[WordBoundary]) > "ذُواْ"
+"zoba" / _ (#|[WordBoundary]) > "ذُوابَ"
+"yazo" / _ (#|[WordBoundary]) > "یَاذُواْ"
+"yăzo" / _ (#|[WordBoundary]) > "یَذُواْ" ; check for other forms (e.g. suzo, sunzo), avoiding other words including -zo-
+"zobe" / (#|[WordBoundary]) _ > "ذُواْبٜىٰ"
+"zobban" / (#|[WordBoundary]) _ > "ذُواْبَّࢽ"
+"zūciya" > "ذُوثِیَا"
+"zūciyā" > "ذُوثِیَا"
+"zuga" / (#|[WordBoundary]) _ > "ذُغَ"
+"zukata" / (#|[WordBoundary]) _ > "ذُکَتَ"
+"zunūbi" > "ذُࢽُوبِ"
+"zunub" > "ذُࢽُب"
+"zuriya" / (#|[WordBoundary]) _ > "ذُرِیَ"
+"zuwa" / (#|[WordBoundary]) _ > "ذُوَا"
+
+; zera ز U+0632 (default is ظ)
+"arziƙi" / (#|[WordBoundary]) _ > "أَرْزِࢼِ"
+"zakka" / (#|[WordBoundary]) _ > "زَکَّ"
+"zāmāni" / (#|[WordBoundary]) _ > "زَامَاࢽِ"
+"zargi" / (#|[WordBoundary]) _ > "زَرْغِ"
+"zarto" / (#|[WordBoundary]) _ > "زَرْتُواْ"
+"zazzaɓi" / (#|[WordBoundary]) _ > "زَزَّݑِ"
+"zinariya" / (#|[WordBoundary]) _ > "زِࢽَرِیَ"
+"ziyāra" / (#|[WordBoundary]) _ > "زِیَارَ"
+"zumun" / (#|[WordBoundary]) _ > "زُمُࢽ"
+"zuriya" / (#|[WordBoundary]) _ > "زُرِیَ"
+
+; Vowels
+"dūniyā"                  > U+062F U+064F U+0648 U+200D U+08BD U+0650 U+06CC U+064E U+0627                    ; duniya دُوࢽِیَا
+"rayuwa"                  > U+0631 U+064E U+0627 U+06CC U+064F U+0648 U+064E U+0627                           ; rayuwa, ‘alive’ رَایُوَا
+"hadaya"                  > U+0647 U+064E U+062F U+064E U+0627 U+06CC U+064E                                  ; hadaya, ‘sacrifice’ (Ar.) هَدَایَ
+"ƙauna"                   > U+08BC U+064E U+0648 U+0652 U+08BD U+064E                                         ; ƙauna ࢼَوْࢽَ
+"gwai" / (#|[WordBoundary]) _ > "ࣃُویْ" ; gwai
+"kwai" / (#|[WordBoundary]) _ > "کُویْ" ; kwai
+"ƙwai" / (#|[WordBoundary]) _ > "ࣄُویْ" ; ƙwai
+"akwai"                   > U+0627 U+0654 U+064E U+0763 U+064E U+0648 U+200D U+06CC U+0652                    ; akwai أَڭًویْ
+"bakwai"                  > U+0628 U+064E U+0763 U+064E U+0648 U+200D U+06CC U+0652                           ; bakwai بَڭَویْ
+"akwānakina"               > "عَݣُوࢽَکِࢽَ"
+"akwānakin"               > "عَݣُوࢽَکِࢽْ"
+"akwa" / (#|[WordBoundary]) _       > "عَݣُو"                                                                    ; word-initial akw always takes ayin
+"ak" / (#|[WordBoundary]) _         > "عَک"                                                                    ; word-initial ak always takes ayin
+"tsarki" / _ (#|[WordBoundary])     > "ڟَرْکِے"
+"sarki" / _ (#|[WordBoundary])      > "سَرْکِے"
+"firistoci" / _ (#|[WordBoundary])  > "ࢻِرِسْتُواْثِے"
+"ī" / _ (#|[WordBoundary])          > "ِے"
+"ainihi"                  > U+0639 U+064E U+06CC U+0652 U+08BD U+0650 U+062D U+0650                           ; ainihi عَیْࢽِحِ
+"gabatarwa"               > U+063A U+064E U+0628 U+064E U+062A U+064E U+0631 U+0652 U+0648 U+064E U+0627      ; gabatarwa غَبَتَرْوَا
+; "da" / _ (#|[WordBoundary])                         > U+0637 U+064E U+0627                                  ; ɗa طَا
+; "gāri" / (#|[WordBoundary]) _ (#|[WordBoundary])    > U+063A U+064E U+0627 U+0636 U+0650                    ; gari (flour)
+; "garī" / (#|[WordBoundary]) _ (#|[WordBoundary])    > U+063A U+064E U+0636 U+0650 U+06D2                    ; gari (town)
+; "gari" / (#|[WordBoundary]) _ (#|[WordBoundary])    > U+063A U+064E U+0627 U+0636 U+0650                    ; gari غَاضِ
+                                                                                                              
+"abuɗesu" / (#|[WordBoundary]) _ (#|[WordBoundary]) > U+0627 U+0654 U+064E U+0628 U+064F U+0648 U+200D U+0637 U+065C U+0649 U+0670 U+0633 U+064F ;  (long u) **LE added**
+"uluna"  / (#|[WordBoundary]) _ (#|[WordBoundary])  > U+0639 U+064F U+0644 U+064F U+0648 U+200D U+08BD U+064E ; uluna (long u) **LE added**
+"efod" / (#|[WordBoundary]) _ (#|[WordBoundary])    > "عٜىٰࢻُوادْ" ; efod
+"abadace" / (#|[WordBoundary]) _ (#|[WordBoundary]) > U+0627 U+0654 U+064E U+0628 U+064E U+062F U+064E U+0627 U+062B U+065C U+0649 U+0670 ; abadace (long a)
+"idanu" / (#|[WordBoundary]) _ (#|[WordBoundary])   > U+0639 U+0650 U+062F U+064E U+0627 U+08BD U+064F U+0648 U+200D ; idanu (all vowels different!)
+"on" / (#|[WordBoundary]) _ (#|[WordBoundary])      > "عُواࢽْ" ; on
+"abok" / (#|[WordBoundary]) _                       > U+0627 U+0654 U+064E U+0628 U+064F U+0648 U+0627 U+0652 U+06A9 ; abok-
+
+"iko" / (#|[WordBoundary]) _                        > "إِیکُواْ"                                                  ; V iko>īko
+; "addu'a"                                            > U+0061 U+0064 U+0064 U+016B U+02C8 U+0061               ; V addu'a>adduu'a
+"ashirin"                                           > U+0639 U+064E U+0634 U+0650 U+0631 U+0650 U+08BD U+0652 ; V- ashirin>`ashirin
+"mādallah"                                          > U+0645 U+064E U+0627 U+062F U+064E U+0644 U+0651 U+064E ; V mādallah>maadalla
+"masih"                                             > U+0645 U+064E U+0633 U+0650 U+06CC U+0647 U+0652        ; V masih>masiih
+; "ba sa" / _ (#|[WordBoundary])                      > U+0628 U+064E U+0627 U+0020 U+0633 U+064E               ; V ba sa>baa sa, ‘not they are …’ 21-08-15 [hau]-BSN
+; "baa yaa" / _ (#|[WordBoundary])                    > U+0628 U+064E U+0627 U+0020 U+06CC U+064E U+0627       ; V ba ya > baa yaa, 'not he does' 21-08-15 [hau]-BSN
+; "-a"                                                > U+0060 U+0061                                           ; -a [knc] hyphenated suffix
+; "io"                                                > U+0069 U+0071 U+006F                                    ; io iqo [knc]
+"nă" / (#|[WordBoundary]) _ (#|[WordBoundary])      > U+08BD U+064E U+200D        ; nă not cliticised
+"tă" / (#|[WordBoundary]) _ (#|[WordBoundary])      > U+062A U+064E U+200D        ; tă not cliticised
+"yă" / (#|[WordBoundary]) _ (#|[WordBoundary])      > U+06CC U+064E U+200D        ; yă not cliticised
+; "ă" / _ (#|[WordBoundary])                         > U+064E                                                  ; a-breve fatha pre-cliticised [hau]-BSN
+; "ă"                                                 > U+064E                                                  ; a-breve fatha [hau]-BSN
+"bā da"                                             > U+0628 U+064E U+0627 U+062F U+064E                      ; bā da
+"tā da"                                             > U+062A U+064E U+0627 U+062F U+064E                      ; tā da
+; "wannan"                                            > U+0648 U+064E U+08BD U+0652 U+08BD U+064E U+06BA        ; SHADDA wannan (ƙofoffi, ƙarrara, sassanta not in HUACL)
+"bi" / _ (#|[WordBoundary])                         > U+0628 U+0650 U+06D2                                    ; bi at end of word
+
+; 5 CHARACTERS (RS>AS except sfms)===============================================================================================================
+Pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+UniClass [Numeral] = ( _Numeral ) 
+UniClass [ArabicNumeral] = ( _ArabicNumeral ) 
+UniClass [Consonant] = ( _Consonant ) 
+UniClass [Letter] = ( _Consonant _Letter )
+
+; SFMS PROTECTED 
+; since this is same pass as other latin letters, we don't need to uppercase them
+U+005C U+0062                                    > U+005C U+0062                              ; \b      
+U+005C U+0062 U+006B                             > U+005C U+0062 U+006B                       ; \bk      
+U+005C U+0062 U+006B U+002A                      > U+005C U+0062 U+006B U+002A                ; \bk*      
+U+005C U+0063                                    > U+005C U+0063                              ; \c                                    
+U+005C U+0063 U+0070                             > U+005C U+0063 U+0070                       ; \cp                             
+U+005C U+0064                                    > U+005C U+0064                              ; \d                                    
+U+005C U+0066                                    > U+005C U+0066                              ; \f                                    
+U+005C U+0066 U+002A                             > U+005C U+0066 U+002A                       ; \f*                             
+U+005C U+0066 U+0069 U+0067                      > U+005C U+0066 U+0069 U+0067                ; \fig                      
+U+005C U+0066 U+006B                             > U+005C U+0066 U+006B                       ; \fk                             
+U+005C U+0066 U+006B U+002A                      > U+005C U+0066 U+006B U+002A                ; \fk*                      
+U+005C U+0066 U+0072                             > U+005C U+0066 U+0072                       ; \fr                             
+U+005C U+0066 U+0072 U+002A                      > U+005C U+0066 U+0072 U+002A                ; \fr*                      
+U+005C U+0066 U+0074                             > U+005C U+0066 U+0074                       ; \ft                             
+U+005C U+0068                                    > U+005C U+0068                              ; \h                                    
+U+005C U+0069 U+0062                             > U+005C U+0069 U+0062                       ; \ib                             
+U+005C U+0069 U+0064                             > U+005C U+0069 U+0064                       ; \id                             
+U+005C U+0069 U+006D                             > U+005C U+0069 U+006D                       ; \im                            
+U+005C U+0069 U+006D U+0069                      > U+005C U+0069 U+006D U+0069                ; \imi                      
+U+005C U+0069 U+006D U+0074                      > U+005C U+0069 U+006D U+0074                ; \imt                      
+U+005C U+0069 U+006F U+0031                      > U+005C U+0069 U+006F U+0031                ; \io1                      
+U+005C U+0069 U+006F U+0032                      > U+005C U+0069 U+006F U+0032                ; \io2                      
+U+005C U+0069 U+006F U+0074                      > U+005C U+0069 U+006F U+0074                ; \iot                      
+U+005C U+0069 U+0070                             > U+005C U+0069 U+0070                       ; \ip                             
+U+005C U+0069 U+0070 U+0069                      > U+005C U+0069 U+0070 U+0069                ; \ipi                      
+U+005C U+0069 U+0073                             > U+005C U+0069 U+0073                       ; \is                             
+U+005C U+0069 U+0074                             > U+005C U+0069 U+0074                       ; \it                             
+U+005C U+0069 U+0074 U+002A                      > U+005C U+0069 U+0074 U+002A                ; \it*                      
+U+005C U+006B                                    > U+005C U+006B                              ; \k                                    
+U+005C U+006B U+002A                             > U+005C U+006B U+002A                       ; \k*                             
+U+005C U+006C U+0069                             > U+005C U+006C U+0069                       ; \li                             
+U+005C U+006C U+0069 U+0031                      > U+005C U+006C U+0069 U+0031                ; \li1                      
+U+005C U+006C U+0069 U+0032                      > U+005C U+006C U+0069 U+0032                ; \li2                      
+U+005C U+006C U+0069 U+0033                      > U+005C U+006C U+0069 U+0033                ; \li3                      
+U+005C U+006D                                    > U+005C U+006D                              ; \m                                    
+U+005C U+006D U+0072                             > U+005C U+006D U+0072                       ; \mr                             
+U+005C U+006D U+0073                             > U+005C U+006D U+0073                       ; \ms                             
+U+005C U+006D U+0074                             > U+005C U+006D U+0074                       ; \mt                             
+U+005C U+006D U+0074 U+0032                      > U+005C U+006D U+0074 U+0032                ; \mt2                      
+U+005C U+006E U+0062                             > U+005C U+006E U+0062                       ; \nb                             
+U+005C U+006E U+0064                             > U+005C U+006E U+0064                       ; \nd                             
+U+005C U+006E U+0064 U+002A                      > U+005C U+006E U+0064 U+002A                ; \nd*                             
+U+005C U+0070                                    > U+005C U+0070                              ; \p                                    
+U+005C U+0070 U+0063                             > U+005C U+0070 U+0063                       ; \pc                             
+U+005C U+0070 U+0065 U+0072 U+0069 U+0070 U+0068 > U+005C U+0070 U+0065 U+0072 U+0069 U+0070 U+0068 ; \periph
+U+005C U+0070 U+0069                             > U+005C U+0070 U+0069                       ; \pi                             
+U+005C U+0071                                    > U+005C U+0071                              ; \q                                    
+U+005C U+0071 U+0031                             > U+005C U+0071 U+0031                       ; \q1                             
+U+005C U+0071 U+0032                             > U+005C U+0071 U+0032                       ; \q2                             
+U+005C U+0072                                    > U+005C U+0072                              ; \r                                    
+U+005C U+0072 U+0065 U+006D                      > U+005C U+0072 U+0065 U+006D                ; \rem                                    
+U+005C U+0073                                    > U+005C U+0073                              ; \s                                    
+U+005C U+0073 U+0031                             > U+005C U+0073 U+0031                       ; \s1                             
+U+005C U+0073 U+0032                             > U+005C U+0073 U+0032                       ; \s2                             
+U+005C U+0073 U+0063                             > U+005C U+0073 U+0063                       ; \sc                             
+U+005C U+0073 U+0063 U+002A                      > U+005C U+0073 U+0063 U+002A                ; \sc*                      
+U+005C U+0073 U+0070                             > U+005C U+0073 U+0070                       ; \sp                             
+U+005C U+0074 U+006F U+0063 U+0031               > U+005C U+0074 U+006F U+0063 U+0031         ; \toc1               
+U+005C U+0074 U+006F U+0063 U+0032               > U+005C U+0074 U+006F U+0063 U+0032         ; \toc2               
+U+005C U+0076                                    > U+005C U+0076                              ; \v                                    
+U+005C U+0078                                    > U+005C U+0078                              ; \x                                    
+U+005C U+0078 U+002A                             > U+005C U+0078 U+002A                       ; \x*                             
+U+005C U+0078 U+006F                             > U+005C U+0078 U+006F                       ; \xo                             
+U+005C U+0078 U+006F U+002A                      > U+005C U+0078 U+006F U+002A                ; \xo*                      
+U+005C U+0078 U+0074                             > U+005C U+0078 U+0074                       ; \xt                             
+U+005C U+0078 U+0074 U+002A                      > U+005C U+0078 U+0074 U+002A                ; \xt*                      
+
+; LABIALISED VELARS Kwa (exceptions)
+; U+0067 U+0077 U+0061 	                         > U+08C3 U+064E U+0648                         ; gwa>g*aw wagaf 13-01-15 [hau]-BSN
+; U+006B U+0077 U+0061 	                         > U+0763 U+064E U+0648                         ; kwa>k*aw wagaf 13-01-15 [hau]-BSN
+; U+0199 U+0077 U+0061 	                         > U+08C4 U+064E U+0648                         ; ƙwa>ƙ*aw wagaf 13-01-15 [hau]-BSN
+; U+0067 U+0079 U+0061                           > U+08C3 U+064E U+06CC                         ; gya>g*ay wagaf 13-01-15 [hau]-BSN
+; U+006B U+0079 U+0061                           > U+0763 U+064E U+06CC                         ; kya>k*ay wagaf 13-01-15 [hau]-BSN
+; U+0199 U+0079 U+0061                           > U+08C4 U+064E U+06CC                         ; ƙya>ƙ*ay wagaf 13-01-15 [hau]-BSN
+U+0067 U+0077 U+0061                             > U+08C3 U+064F U+0648                       ; gwa>g*uw wagaf 27-11-14 [hau]-BSN
+U+006B U+0077 U+0061                             > U+0763 U+064F U+0648                       ; kwa>k*uw wagaf 27-11-14 [hau]-BSN
+U+0199 U+0077 U+0061                             > U+08C4 U+064F U+0648                       ; ƙwa>ƙ*uw wagaf 27-11-14 [hau]-BSN
+U+0067 U+0077 U+0101                             > U+08C3 U+064F U+0648                       ; gwā>g*uw wagaf 26-03-19 [hau]-BSN
+U+006B U+0077 U+0101                             > U+0763 U+064F U+0648                       ; kwā>k*uw wagaf 26-03-19 [hau]-BSN
+U+0199 U+0077 U+0101                             > U+08C4 U+064F U+0648                       ; ƙwā>ƙ*uw wagaf 26-03-19 [hau]-BSN
+
+; VOWEL EXCEPTION
+"wo"                                             > U+0648 U+064F U+0627 U+0652                      ; -wo -wu-alif-sukuun
+"$a "                                            > U+0621 U+064E                                    ; #a# hamza-fatha before certain words
+
+; VOWEL ISOLATE
+U+0069 / (#|[WordBoundary]) _ (#|[WordBoundary]) > U+0639 U+0650                                    ; i alif-i
+
+; VOWEL INITIAL (knc has no word-initial shewa)
+"aa" / (#|[WordBoundary]) _                      > U+0622                                           ; Aa- alif-madda
+; "ā" / (#|[WordBoundary]) _                       > U+0622                                           ; ā alif-madda [fuv, knc]
+"ā" / (#|[WordBoundary]) _                       > U+0627 U+0654 U+064E                             ; ā alif-high-a [fuv, knc]
+"āa" / (#|[WordBoundary]) _                      > U+0627 U+0654 U+064E U+0639 U+064E               ; āa alif-high-a-ayin-a [fuv, knc]
+"ai" / (#|[WordBoundary]) _                      > U+0627 U+0654 U+064E U+06CC U+0652               ; Ai- alif-high-a-y-sukuun
+"au" / (#|[WordBoundary]) _                      > U+0627 U+0654 U+064E U+0648 U+0652               ; Au- alif-high-a-w-sukuun
+"a" / (#|[WordBoundary]) _                       > U+0627 U+0654 U+064E                             ; a alif-high-a
+"ă" / (#|[WordBoundary]) _                       > U+0627 U+0654 U+064E                             ; ă alif-high-a
+                                                                                                 
+; "ee" / (#|[WordBoundary]) _                      > U+0627 U+0655 U+065C U+0649 U+0670               ; Ee- alif-low-e-alifM-a
+; "e" / (#|[WordBoundary]) _                       > U+0627 U+0655 U+065C U+0649 U+0670               ; e alif-low-e-alifM-a
+; "e" / (#|[WordBoundary]) _                       > U+0627 U+0655 U+065C                             ; e alif-low-e [fuv, knc]
+"e" / (#|[WordBoundary]) _                       > U+0639 U+065C U+0649 U+0670                      ; e ayin-e-alifM-a
+                                                                                                 
+; "ii" / (#|[WordBoundary]) _                      > U+0627 U+0655 U+0650 U+06CC                      ; Ii- alif-low-i-y
+"i" / (#|[WordBoundary]) _                       > U+0627 U+0655 U+0650                             ; i- alif-low-i
+"ī" / (#|[WordBoundary]) _                       > U+0627 U+0655 U+0650 U+06CC                            ; ī- alif-low-i-y
+
+; "oo" / (#|[WordBoundary]) _                      > U+0627 U+0654 U+0658 U+0648                      ; Oo- alif-high-obowl-w [fub]
+"o" / (#|[WordBoundary]) _                       > U+0627 U+0654 U+064F U+0648 U+200D U+0627 U+0652 ; o alif-high-u-w-|-alif-sukuun [hau]
+; "o" / (#|[WordBoundary]) _                       > U+0627 U+0654 U+0658                             ; o alif-high-obowl [fu-]
+; "o" / (#|[WordBoundary]) _                       > U+0627 U+0654 U+0652 U+0648                      ; o alif-high-sukuun-w [knc]
+
+; "uu" / (#|[WordBoundary]) _                      > U+0627 U+0654 U+064F U+0648                      ; Uu- alif-high-u-w
+"u" / (#|[WordBoundary]) _                       > U+0639 U+064F                                    ; u ayin-u
+; "u" / (#|[WordBoundary]) _                       > U+0639 U+064F U+0648                             ; u ayin-u-w [knc]
+; "u" / # _                                        > U+0627 U+0654 U+064F                             ; u alif-high-u
+
+; VOWEL NON-INITIAL
+U+0061 U+0061 U+0069 / ^[WordBoundary] _         > U+064E U+0627 U+0627 U+0655 U+0650               ; aai [hau] ***LE added***
+U+0061 U+0061 U+0075 / ^[WordBoundary] _         > U+064E U+0627 U+0627 U+0654 U+064F               ; aau [hau] ***LE added***
+U+0061 U+0069 U+0069 / ^[WordBoundary] _         > U+064E U+06CC U+0652 U+0627 U+0655 U+0650        ; aii [hau] ***LE added***
+U+0101 U+0061 U+0069 / ^[WordBoundary] _         > U+064E U+0627 U+064E U+06CC U+0652               ; āai[hau] ***LE added***
+U+0101 U+0061 U+0075 / ^[WordBoundary] _         > U+064E U+0627 U+064E U+0648 U+0652               ; āau[hau] ***LE added***
+U+0103 U+0061 U+0069 / ^[WordBoundary] _         > U+064E U+0627 U+0654 U+064E U+06CC U+0652        ; ăai [hau] ***LE added***
+U+0103 U+0061 U+0075 / ^[WordBoundary] _         > U+064E U+0627 U+0654 U+064E U+0648 U+0652        ; ăau [hau] ***LE added***
+U+0069 U+0061 U+0069 / ^[WordBoundary] _         > U+0650 U+0627 U+0654 U+064E U+06CC U+0652        ; iai [hau] (kayiaikin) ***LE added***
+U+0075 U+0061 U+0075 / ^[WordBoundary] _         > U+064F U+0627 U+0654 U+064E U+0648 U+0652        ; uau [hau] (muaurar) ***LE added***
+U+0075 U+0061 U+0069 / ^[WordBoundary] _         > U+064F U+0627 U+0654 U+064E U+06CC U+0652        ; uai [hau] (kuaiki) ***LE added***probably not right?
+
+U+0061 U+0061 / ^[WordBoundary] _                > U+0627 U+0654 U+064E                             ; aa [fuv, knc]
+U+0065 U+0065 / ^[WordBoundary] _                > U+065C U+0649 U+0670                             ; ee [fuv] = eay [hau, knc]
+U+0069 U+0069 / ^[WordBoundary] _                > U+0650 U+0627 U+0655 U+0650 U+06CC U+200D        ; ii [fuv]
+; U+006F U+006F / ^[WordBoundary] _                > U+0658 U+0648 U+200D                             ; oo [fub]
+U+0075 U+0075 / ^[WordBoundary] _                > U+064F U+0648 U+200D                             ; uu [fuv]
+U+016B        / ^[WordBoundary] _                > U+064F U+0648 U+200D                             ; ū [fuv]
+U+0061 U+0069 / ^[WordBoundary] _                > U+064E U+06CC U+0652                             ; ai [hau, knc]
+U+0061 U+0075 / ^[WordBoundary] _                > U+064E U+0648 U+0652                             ; au [hau]
+; U+006F U+0077 / ^[WordBoundary] _                > U+0652 U+0648                                    ; ow [knc]
+; U+0075 U+0077 / ^[WordBoundary] _                > U+064F U+0648                                    ; uw [knc]
+
+U+0101 U+0061 / ^[WordBoundary] _                > U+064E U+0622 U+0627 U+0654 U+064E               ; āa [hau] (yāamsa) ***LE added***
+U+0101 U+0069 / ^[WordBoundary] _                > U+064E U+0627 U+0627 U+0655 U+0650               ; āi [hau] (gāisuwarku) ***LE added***
+U+0103 U+0061 / ^[WordBoundary] _                > U+064E U+0627 U+0654 U+064E                      ; ăa [hau] (tăamsa) ***LE added***
+U+0103 U+0069 / ^[WordBoundary] _                > U+064E U+0627 U+0655 U+0650                      ; ăi [hau] (tăiyākar) ***LE added***
+U+0103 U+0075 / ^[WordBoundary] _                > U+064E U+0627 U+0654 U+064F                      ; ău [hau] (yăumarta) ***LE added***
+U+0069 U+0061 / ^[WordBoundary] _                > U+0650 U+0627 U+0654 U+064E                      ; ia [hau] (yăjiadduˈarta) ***LE added***
+U+0075 U+0061 / ^[WordBoundary] _                > U+064F U+0627 U+0654 U+064E                      ; ua [hau] (kuamsa) ***LE added***
+U+0075 U+0069 / ^[WordBoundary] _                > U+064F U+0627 U+0655 U+0650                      ; ui [hau] (kuiso) ***LE added***
+
+U+0103 U+0065 / ^[WordBoundary] _                > U+064E U+0627 U+0655 U+065C U+0649 U+0670        ; ăe [hau] ***LE added***
+U+0061 U+0065 / ^[WordBoundary] _                > U+064E U+0627 U+0655 U+065C U+0649 U+0670        ; ae [hau] ***LE added***
+U+006F U+0069 / ^[WordBoundary] _                > U+064F U+0648 U+0627 U+0652 U+0627 U+0655 U+0650 ; oi ***LE added***
+
+U+0103 / ^[WordBoundary] _                       > U+064E                                           ; ă a breve [hau] (losing distinction)
+U+0061 / ^[WordBoundary] _                       > U+064E                                           ; a
+U+0101 / ^[WordBoundary] _                       > U+064E U+0627                                    ; ā a-macron aa
+; U+01CE                                           > U+064E U+0654                                    ; a caron [hau]
+U+0065 / ^[WordBoundary] _                       > U+065C U+0649 U+0670                             ; e eay [hau, knc]
+U+0113 / ^[WordBoundary] _                       > U+065C U+0649 U+0670                             ; e-macron ee
+; U+0065 / ^[WordBoundary] _                       > U+065C                                           ; e [fuv]
+; U+0065 / ^[WordBoundary] _                       > U+065C U+06CC                                    ; e ey [knc?]
+U+0069 / ^[WordBoundary] _                       > U+0650                                           ; i
+U+012B / ^[WordBoundary] _                       > U+0650 U+06CC                                    ; i-macron ii
+U+006F / ^[WordBoundary] _                       > U+064F U+0648 U+0627 U+0652                      ; -o -uw-alif-sukuun
+; U+014D / ^[WordBoundary] _                       > U+0658 U+0648 U+200D                             ; o-macron oo
+; U+006F / ^[WordBoundary] _                       > U+0658                                           ; o [fub]
+; U+006F / ^[WordBoundary] _                       > U+064F U+0648                                    ; o uw [hau, knc]
+U+0075 / ^[WordBoundary] _                       > U+064F                                           ; u
+U+016B / ^[WordBoundary] _                       > U+064F U+0648 U+200D                             ; u-macron uu
+; U+0259 / ^[WordBoundary] _                       > U+064F                                           ; shewa u [knc]
+
+; VOWEL FINAL
+U+006F / _ (#|[WordBoundary])                     > U+064F U+0627               ; -o u-alif
+; U+0103 / _ (#|[WordBoundary])                     > U+064E                                           ; a breve [hau]
+
+; LABIALISED VELARS Kw, PALATALISED VELARS Ky, OTHER CONSONANT DIGRAPHS
+; U+0067 U+0077                                  > U+08C3 U+0648                                ; gw wagaf 13-01-15 [hau]-BSN
+; U+006B U+0077                                  > U+0763 U+0648                                ; kw wagaf 13-01-15 [hau]-BSN
+; U+0199 U+0077                                  > U+08C4 U+0648                                ; ƙw wagaf 13-01-15 [hau]-BSN
+; U+0067 U+0079                                  > U+08C3 U+06CC                                ; gy wagaf 13-01-15 [hau]-BSN
+; U+006B U+0079                                  > U+0763 U+06CC                                ; ky wagaf 13-01-15 [hau]-BSN
+; U+0199 U+0079                                  > U+08C4 U+06CC                                ; ƙy wagaf 13-01-15 [hau]-BSN
+U+0067 U+0077                                    > U+08C3 U+064F U+0648                       ; gw wagaf 27-11-14 [hau]-BSN
+U+006B U+0077                                    > U+0763 U+064F U+0648                       ; kw wagaf 27-11-14 [hau]-BSN
+U+0199 U+0077                                    > U+08C4 U+064F U+0648                       ; ƙw wagaf 27-11-14 [hau]-BSN
+U+0067 U+0079                                    > U+08C3                                     ; gy wagaf 27-11-14 [hau]-BSN
+U+006B U+0079                                    > U+0763                                     ; ky wagaf 27-11-14 [hau]-BSN
+U+0199 U+0079                                    > U+08C4                                     ; ƙy wagaf 27-11-14 [hau]-BSN
+U+006B U+0068          > U+062E               ; kh
+; U+006E U+0079        > U+0767               ; ny [fuv]
+U+0074 U+0073        > U+069F               ; ts wagaf Alkalami Hausa
+U+0073 U+0068        > U+0634               ; sh
+; U+0027 U+0079        > U+067E               ; 'y
+; U+02C8 U+0079        > U+067E               ; 'y wagaf 13-01-15 [hau]-BSN
+U+02C8 U+0079        > U+063F               ; 'y wagaf Alkalami Hausa has no dots finally
+
+; CONSONANT MONOGRAPHS
+U+0062               > U+0628               ; b
+; U+0253               > U+0751               ; ɓ 2 dots 13-01-15 [hau]-BSN
+; U+0253               > U+067E               ; ɓ wagaf 04-14 [hau]-BSN suggestion, but needs one nukta below and wagaf
+U+0253               > U+0751               ; ɓ wagaf Alkalami Hausa
+U+0063               > U+062B               ; c
+U+0064               > U+062F               ; d
+U+0257               > U+0637               ; ɗ
+; U+0066               > U+0641               ; f Hafs (ف 0641 should not appear in HUACLaAS; instead we have f U+08BB and ƙ U+08BD)
+U+0066               > U+08BB               ; f Warsh; Alkalami Hausa has no dot finally
+U+0067               > U+063A               ; g
+; U+0068               > U+062D               ; h
+U+0068               > U+0647               ; h ha babba [hau]-Warsh, [knc] 30-09-15 [hau]-BSN
+U+006A               > U+062C               ; j
+U+006B               > U+06A9               ; k Hafs, Warsh Alkalami
+; U+006B               > U+06A9               ; k Warsh
+; U+0199               > U+0642               ; ƙ Hafs
+U+0199               > U+08BC               ; ƙ Warsh; Alkalami Hausa has no dot finally
+U+006C               > U+0644               ; l
+; U+006C               > U+066E               ; l shorter [knc], but unusable!
+U+006D               > U+0645               ; m
+; U+006E / _ ^[Letter] > U+06BA               ; n final Warsh 13-01-15 [hau]-BSN (06BA TNR does have dot medially, but not Sheherazade/Harmattan)
+U+006E               > U+08BD               ; n Hafs, Warsh 14-08-15 [hau]-BSN Alkalami; Alkalami Hausa has no dot finally
+; U+014B               > U+08BD U+063A        ; ng [fuv]
+; U+0070               > U+0641               ; p [hau] = f
+; U+0070               > U+06A4               ; p [fuv]
+; U+0070               > U+0628               ; p [knc] = b
+U+0072               > U+0631               ; r
+U+0073               > U+0633               ; s
+U+0074               > U+062A               ; t
+; U+0074               > U+0637               ; t [knc]
+U+0077               > U+0648               ; w
+U+0079               > U+06CC               ; y; Alkalami Hausa has no dots finally
+; U+01B4               > U+067E               ; ƴ [fu-]
+; U+007A               > U+0632               ; z zaa
+; U+007A               > U+0630               ; z dhaal [hau]-Warsh
+U+007A               > U+0638               ; z Dhaa [knc] [hau]-BSN
+U+0027               > U+0639               ; ' ayin
+U+02C8               > U+0639               ; ' ayin (though this may often represent alif in transliterations!)
+U+0060               > U+0639               ; ` ayin (added by AW-latn2arab-1prep)
+
+; NUMERALS
+class[RomanDigit]         = (U+0030..U+0039)
+class[ArabicDigit]        = (U+0660..U+0669)
+
+; [Numeral]=num / ^[Numeral] _              > U+200E U+06DD [ArabicNumeral]=num
+; U+005C U+0076 U+0020 / _ [Numeral]        > U+200E U+06DD [ArabicNumeral]
+; [Numeral]=num / # _                       > U+06DD [ArabicNumeral]=num
+; [Numeral] / _ ^[Numeral]                  > [ArabicNumeral] U+200F                 ; required for R2L with numerals,  18-09-15 [hau]-BSN no
+; [Numeral]                                 > [ArabicNumeral]                        ; numerals, 18-09-15 [hau]-BSN no
+; [Numeral]=num / U+005C U+0076 U+0020 _    > U+06DD [ArabicNumeral]=num
+
+; For numbers and cross references to get correct ordering
+; Choose either first two lines or second two lines. Comment out the one you do not want
+U+002E / [RomanDigit] _ [RomanDigit]  >  U+200F U+002E ; add RLM before colon between digits (normal behavior)
+U+002D / [RomanDigit] _ [RomanDigit]  >  U+200F U+002D ; add RLM before hyphen between digits (normal behavior)
+
+; U+003A / [RomanDigit] _ [RomanDigit]  >  U+200F U+003A U+202D ; add RLM before colon and LRO after colon between digits
+; U+002D / [RomanDigit] _ [RomanDigit]  >  U+002D ; preserve hyphen from suffix rules 
+
+; U+061E / _ [Numeral]                      > U+200E U+003A U+200E                   ; colon L2R for Chapter:Verse references
+; U+002D / _ [Numeral]                      > U+200E U+002D U+200E                   ; hypen L2R for Verses ranges
+; U+002D U+002D / _ [Numeral]               > U+200E U+002D U+002D U+200E            ; double hypen L2R for Verses ranges
+
+; PUNCTUATION (add U+200F for r2l as with quote marks if there are problems here)
+"..."                                     > "..."                                  ; ellipsis
+U+002E                                    > U+061E                                 ; full stop
+U+002C                                    > U+060C                                 ; comma
+U+003B                                    > U+061B                                 ; semicolon
+U+003A                                    > U+003A U+200F                          ; colon R2L
+U+0021                                    > U+0021 U+200F                          ; exclamation mark R2L
+U+003F                                    > U+061F                                 ; question mark
+U+0028                                    > U+FD3F                                 ; bracket opening
+U+0029                                    > U+FD3E                                 ; bracket closing
+; U+002A                                    > U+066D                                 ; asterisk 01-10-15 [hau]-BSN deactivated to allow sfms to work
+U+005B                                    > U+0020 U+200F U+005B U+200F            ; bracket square opening
+U+005D                                    > U+005D U+200F                          ; bracket square closing
+; U+2018                                    > U+2019                                 ; quote single open
+; U+2019                                    > U+2018                                 ; quote single close
+U+2018                                    > U+0020 U+200F U+2039 U+200F            ; quote single open angled
+U+2019                                    > U+203A U+200F                          ; quote single close angled
+; U+0020 U+0027                             > U+0020 U+00BB                          ; quote straight open angled
+; U+0027 U+0020                             > U+00AB U+0020                          ; quote straight close angled
+U+201C                                    > U+0020 U+200F U+00AB U+200F            ; quote double open angled
+U+201D                                    > U+00BB U+200F                          ; quote double close angled
+; U+0020 U+0022                             > U+00BB                                 ; quote double straight open angled
+; U+0022 U+0020                             > U+00AB                                 ; quote double straight close angled
+; U+0639 / U+0020 _                         > U+2039 U+200F                          ; single quote opening after space
+; U+0639 / # _                              > U+2039 U+200F                          ; single quote opening text initial
+; U+0639 / _ (#|[WordBoundary])             > U+203A U+200F                          ; single quote closing before word boundary
+; U+0639 / _ #                              > U+203A U+200F                          ; single quote closing text final
+; U+0022 / U+0020 _                         > U+2039 U+200F                          ; double quote opening after space
+; U+0022 / # _                              > U+2039 U+200F                          ; double quote opening text initial
+; U+0022 / _ (#|[WordBoundary])             > U+203A U+200F                          ; double quote closing before word boundary
+; U+0022 / _ #                              > U+203A U+200F                          ; double quote closing text final
+; U+003C U+003C                             > U+2039 U+200F                          ; double chevrons opening
+; U+003E U+003E                             > U+203A U+200F                          ; double chevrons closing
+
+; VARIOUS
+U+00A9                                      > U+00A9 U+200F                          ; Copyright
+
+; 5b ZAWAIDI (AS>AS)============================================================================================================================
+Pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+U+0650 U+06CC / _ (#|[WordBoundary])        > U+0650 U+06D2                          ; -iy zawaidi (yeh barree)
+
+; 6 SHADDA (AS>AS)==============================================================================================================================
+Pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+
+; SHADDA (based on above output list)        ; Hafs 15-01-15 [hau]-BSN
+U+08C3 U+064F U+0648 U+08C3 U+064F U+0648 > U+08C3 U+064F U+0648 U+0651 ; gwgw [not needed]
+U+06A0 U+06A0        > U+06A0 U+0651
+U+08C3 U+08C3        > U+08C3 U+0651
+
+U+0763 U+064F U+0648 U+0763 U+064F U+0648 > U+0763 U+064F U+0648 U+0651 ; kwkw [not needed]
+U+0763 U+0763        > U+0763 U+0651                                    ; kyky [not needed]
+U+08C4 U+064F U+0648 U+08C4 U+064F U+0648 > U+08C4 U+064F U+0648 U+0651 ; ƙwƙw [not needed]
+U+06A8 U+06A8        > U+06A8 U+0651                                    ; ƙyƙy [not needed]
+U+08C4 U+08C4        > U+08C4 U+0651                                    ; ƙyƙy [not needed]
+U+069F U+069F        > U+069F U+0651            ; tsts [not needed]
+U+0634 U+0634        > U+0634 U+0651            ; shsh
+U+067E U+067E        > U+067E U+0651
+U+0628 U+0628        > U+0628 U+0651
+U+067B U+067B        > U+067B U+0651
+U+0751 U+0751        > U+0751 U+0651
+U+062B U+062B        > U+062B U+0651
+U+062F U+062F        > U+062F U+0651
+U+0637 U+0637        > U+0637 U+0651
+U+0641 U+0641        > U+0641 U+0651
+U+06A2 U+06A2        > U+06A2 U+0651
+U+063A U+063A        > U+063A U+0651
+U+062D U+062D        > U+062D U+0651
+U+0647 U+0647        > U+0647 U+0651
+U+062C U+062C        > U+062C U+0651
+U+0643 U+0643        > U+0643 U+0651
+U+06A9 U+06A9        > U+06A9 U+0651
+U+0642 U+0642        > U+0642 U+0651
+U+06A7 U+06A7        > U+06A7 U+0651
+U+06A9 U+06A9        > U+06A9 U+0651
+U+0644 U+0644        > U+0644 U+0651
+U+066E U+066E        > U+066E U+0651
+U+0645 U+0645        > U+0645 U+0651
+U+0646 U+0646        > U+0646 U+0651
+U+06A4 U+06A4        > U+06A4 U+0651
+U+0631 U+0631        > U+0631 U+0651
+U+0633 U+0633        > U+0633 U+0651
+U+062A U+062A        > U+062A U+0651
+U+0648 U+0648        > U+0648 U+0651
+U+064A U+064A        > U+064A U+0651
+U+0632 U+0632        > U+0632 U+0651
+U+0630 U+0630        > U+0630 U+0651
+U+0638 U+0638        > U+0638 U+0651
+U+0639 U+0639        > U+0639 U+0651
+U+06CC U+06CC        > U+06CC U+0651
+U+063F U+063F				 > U+063F U+0651
+U+08BB U+08BB	       > U+08BB U+0651 ; Warsh feh
+U+08BC U+08BC        > U+08BC U+0651 ; Warsh qaf
+U+08BD U+08BD        > U+08BD U+0651 ; Warsh noon
+
+; 7 SUKUN (AS>AS)================================================================================================================================
+Pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+UniClass [Consonant] = ( _Consonant ) 
+UniClass [ConsonantNoV] = ( _ConsonantNoV ) 
+UniClass [Velar] = ( _Velar)
+
+; Velar
+U+08BD / _ [Velar]   > U+08BD U+0652 U+200C                    ; -ng- using final n (Ubangiji, bangaskiya etc.) - n before any velar
+U+08BD U+0652 / _ [Velar]   > U+08BD U+0652 U+200C                    ; -ng- using final n (Ubangiji, bangaskiya etc.) - n before any velar - including sukuun in input for special words already converted above
+
+; VOWEL FINAL LONG (RS>AS; in knc, not usable if the knc -a suffix has already been converted by map1; instead, see below)
+; These need to all be rewritten as AS>AS
+; U+0061 / _ ^[Letter]           > U+064E U+0649               ; -a -a' (alif maksuraa) 30-09-15 [hau]-BSN no
+; U+0061 / _ ^[Letter]           > U+064E U+0627 U+0654               ; -a -a' (alif) 13-01-15 [hau]-BSN proposal rejected
+; U+0065 / _ ^[Letter]           > U+065C U+0649 U+0670        ; -e -eay [fuv] (not required in hau, where o is always 'long' in AS)
+; U+0069 / _ (#|[WordBoundary])    > U+0650 U+06D2             ; -i -iy zawaidi (yeh barree)
+; U+006F / _ ^[Letter]           > U+064F U+0648               ; -o -uw (not required in hau, where o is always 'long' in AS)
+; U+006F / _ ^[Letter]           > U+0658 U+0648               ; -o -ow [fub]
+; U+0075 / _ ^[Letter]           > U+064F U+0648               ; -u -uw
+; VOWEL FINAL LONG [knc]
+; U+002D U+064E / _ ^[Letter]    > U+064E U+0649               ; -a'
+; U+065C U+06CC / _ ^[Letter]    > U+065C U+0649 U+0670        ; -eay
+; U+0650 / _ ^[Letter]           > U+0650 U+0649               ; -iy [knc Warsh]
+; U+0652 / _ ^[Letter]           > U+0652 U+0648               ; -ow [knc]
+; U+064E U+06CC U+0652 / _ ^[Letter] > U+064E U+06D2           ; -ay -a-zawaidi (yeh barree) [Warsh]
+; U+0071                         > U+06D2                      ; zawaidi (yeh barree) [Warsh]
+; U+062F U+064F U+06BA / _ ^[Letter] > U+0020 U+0636 U+064F U+06BA ; -den suffix [knc]
+
+; SUKUUN
+; U+08C3 U+064F U+0648 / _ (#|[WordBoundary])  > U+08C3 U+064F U+0648 U+0652 ; gw
+; U+0763 U+064F U+0648 / _ (#|[WordBoundary])  > U+0763 U+064F U+0648 U+0652 ; kw
+; U+08C4 U+064F U+0648 / _ (#|[WordBoundary])  > U+08C4 U+064F U+0648 U+0652 ; ƙw 
+
+[Consonant]=a / _ [Consonant]                   > @a U+0652
+[Consonant]=a U+0651 / _ [Consonant]            > @a U+0651 U+0652    ; check with Andy
+[Consonant]=a / _ (#|[WordBoundary])            > @a U+0652           ; end of word
+; [ConsonantNoV]=a / _ (#|[WordBoundary])         > @a U+0652           ; end of word
+; [ConsonantNoV]=a U+0651 / _ (#|[WordBoundary])  > @a U+0651 U+0652    ; end of word / check with Andy
+
+Pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+UniClass [Consonant] = ( _Consonant ) 
+
+U+064F U+0648 U+0627 / _ (#|[WordBoundary])     > U+064F U+0648 U+0627 U+0652 ; 24-02-17 reinstate sukuun on word-final damma-waw-alif (unclear why it got lost somewhere above)
+U+064F U+0627 / _ (#|[WordBoundary])            > U+064F U+0648 U+0627 U+0652 ; 24-02-17 reinstate sukuun on word-final damma-alif (unclear why it got lost somewhere above)
+
+; 7b SUKUUN REMOVE (AS>AS) [hau]===============================================================================================================
+Pass (Unicode)
+UniClass [Consonant] = ( _Consonant ) 
+
+U+0627 U+0652 / _ ([Consonant] U+0652)          > U+0627                      ; remove sukuun on alif before consonant with sukuun
+
+U+064E U+0627 U+0652 > U+064E U+0627 ; a'@
+U+0650 U+06CC U+0652 > U+0650 U+06CC ; iy@
+U+064F U+0648 U+0652 > U+064F U+0648 ; uw@
+; U+064E U+0650 U+0652 > U+064E U+0650 ; ai@
+; U+064E U+0648 U+0652 > U+064E U+0648 ; aw@
+
+; 8 CLITICS (AS>AS) [hau]=========================================================================================================================
+pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+
+; SPECIAL CLITICISATION [hau]
+U+0634 U+0650 U+06D2 U+0020 U+08BD U+065C U+0649 U+0670        / (#|[WordBoundary]) _ > U+0634 U+0650 U+08BD U+065C U+0649 U+0670               ; shi-ne 14-08-15 [hau]-BSN
+U+0627 U+0655 U+0650 U+062A U+064E U+0020 U+062B U+065C U+0649 U+0670 / (#|[WordBoundary]) _ > U+0627 U+0655 U+0650 U+062A U+064E U+062B U+065C U+0649 U+0670 ; ita-ce 14-08-15 [hau]-BSN
+U+0634 U+0650 U+06D2 U+000A U+08BD U+065C U+0649 U+0670        / (#|[WordBoundary]) _ > U+0634 U+0650 U+08BD U+065C U+0649 U+0670               ; shi-ne 14-08-15 [hau]-BSN
+U+0627 U+0655 U+0650 U+062A U+064E U+000A U+062B U+065C U+0649 U+0670 / (#|[WordBoundary]) _ > U+0627 U+0655 U+0650 U+062A U+064E U+062B U+065C U+0649 U+0670 ; ita-ce 14-08-15 [hau]-BSN
+
+; 9 PRECLITICISATION (AS>AS) [hau]================================================================================================================
+; There are some rules that aren't firing. I think that's because I do not have the "i" and "u" vowels correct in pass 5
+pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+
+U+08BD U+064E U+0020 / (#|[WordBoundary]) _               > U+08BD U+064E U+0627        ; na- 15-01-15 04-10-15 [hau]-BSN LONG-CLIT
+U+06A9 U+064E U+0020 / (#|[WordBoundary]) _               > U+06A9 U+064E U+0627        ; ka- 15-01-15 04-10-15 [hau]-BSN LONG-CLIT (but subjunct. separated man.)
+; U+06A9 U+064E U+0020 / (#|[WordBoundary]) _               > U+06A9 U+064E U+0627        ; ka- 15-01-15 04-10-15 [hau]-BSN LONG-CLIT
+; U+06A9 U+0650 U+06D2 U+0020 / (#|[WordBoundary]) _        > U+06A9 U+0650               ; ki- 15-01-15 [hau]-BSN CLIT
+U+062A U+064E U+0020 / (#|[WordBoundary]) _               > U+062A U+064E U+0627        ; ta- 15-01-15 04-10-15 [hau]-BSN LONG-CLIT (exceptions marked in HUACLaRS)
+U+06CC U+064E U+0020 / (#|[WordBoundary]) _               > U+06CC U+064E U+0627        ; ya- 13-01-15 04-10-15 [hau]-BSN LONG-CLIT
+U+0630 U+064E U+0020 / (#|[WordBoundary]) _               > U+0630 U+064E U+0627        ; za- 04-10-15 04-10-15 [hau]-BSN LONG-CLIT
+; shi only precliticised to ne above 14-08-15 [hau]-BSN
+; ita only precliticised to ce above 14-08-15 [hau]-BSN
+; U+0628 U+064E U+0020 / (#|[WordBoundary]) _               > U+0628 U+064E U+0627        ; ba- 16-01-15 04-10-15 [hau]-BSN LONG-CLIT (negation)
+
+; these don't seem to do anything
+U+0645 U+064F U+0648 U+0020 / (#|[WordBoundary]) _        > U+0645 U+064F               ; mu- 15-01-15 [hau]-BSN CLIT
+U+06A9 U+0650 U+06D2 U+0020 / (#|[WordBoundary]) _        > U+06A9 U+0650               ; ki- 15-01-15 [hau]-BSN CLIT
+U+06A9 U+064F U+0648 U+0020 / (#|[WordBoundary]) _        > U+06A9 U+064F               ; ku- 15-01-15 [hau]-BSN CLIT
+; U+06A9 U+064F U+0648 U+0020 / (#|[WordBoundary]) _        > U+06A9 U+064F               ; ku- 15-01-15 [hau]-BSN CLIT
+U+0633 U+064F U+0648 U+0020 / (#|[WordBoundary]) _        > U+0633 U+064F               ; su- 15-01-15 [hau]-BSN CLIT
+; U+0627 U+0654 U+064E U+0020 / (#|[WordBoundary]) _               > U+0627 U+0654 U+064E               ; a- 15-01-15 04-10-15 [hau]-BSN LONG-CLIT (indef pron etc) 20-08-18 disabled since unnecessary in view of all LH's manual cliticisation in HUACLaRS, and anyway usually invisible
+
+; 10 POSTCLITICISATION (AS>AS) [hau]==============================================================================================================
+; I don't know the vowels in pass 5 or producing the right thing, so pass 10 isn't correct. Example, I don't have any rules in pass 5 that produce U+06D2
+; Problem: some Pn-Obj (which should postcliticise) are also Pn-Subjs (which should not): ni, ka, ki, shi, ta, mu, ku, su; differentiate contexts or simply not postcliticise?
+pass(Unicode)
+UniClass [WordBoundary] = ( _WordBoundary ) 
+
+; U+0020 U+08BD U+0650 U+06D2        / _ (#|[WordBoundary])        > U+08BD U+0650               ; -ni 15-01-15 [hau]-BSN
+U+0020 U+06A9 U+064E               / _ (#|[WordBoundary])        > U+06A9 U+064E               ; -ka 15-01-15 [hau]-BSN
+U+0020 U+06A9 U+0650 U+06D2        / _ (#|[WordBoundary])        > U+06A9 U+0650               ; -ki 15-01-15 [hau]-BSN
+; U+0020 U+0634 U+0650 U+06D2        / _ (#|[WordBoundary])        > U+0634 U+0650               ; -shī 13-01-15 [hau]-BSN
+U+0020 U+062A U+064E               / _ (#|[WordBoundary])        > U+062A U+064E               ; -ta 15-01-15 [hau]-BSN
+U+0020 U+0645 U+064F U+0648        / _ (#|[WordBoundary])        > U+0645 U+064F               ; -mu 15-01-15 [hau]-BSN
+U+0020 U+06A9 U+064F U+0648        / _ (#|[WordBoundary])        > U+06A9 U+064F               ; -ku 15-01-15 [hau]-BSN
+U+0020 U+0633 U+064F U+0648        / _ (#|[WordBoundary])        > U+0633 U+064F               ; -su 15-01-15 [hau]-BSN
+; U+0020 U+08BD U+065C U+0649 U+0670 / _ (#|[WordBoundary])        > U+08BD U+065C U+0649 U+0670 ; -ne 14-08-15 [hau]-BSN
+; U+0020 U+0628 U+064E               / _ (#|[WordBoundary])        > U+0628 U+064E               ; -ba 13-01-15 [hau]-BSN (negation)
+
+U+200D > '' ; throw out joiner
+
+pass(Unicode)
+UniClass [Consonant] = ( _Consonant ) 
+UniClass [LatnLtr] = ( _LatnLtr )
+
+U+062A U+064E U+0627 U+0631 U+0650 U+0647 U+0650 > U+062A U+064E U+0627 U+0631 U+0650 U+062D U+0650 ; h tarihi [AWR: why here?!]
+U+064E U+0650 > U+064E U+06CC ; ai>ay
+U+0652 / _ [Consonant] U+0652 > '' ; remove double sukuun 13-10-19
+
+; 15 al-SUN LETTERS (AS>AS) [arb]=================================================================================================================
+; pass(Unicode)
+
+; '^alC with sukun > 'alCC with shadda for sun letters
+; U+0627 U+0654 U+064E U+0644 U+0652 U+062A             > U+0627 U+064E U+0644 U+062A U+0651                      ; al-sun t
+; U+0627 U+0654 U+064E U+0644 U+0652 U+062B             > U+0627 U+064E U+0644 U+062B U+0651                      ; al-sun th
+; U+0627 U+0654 U+064E U+0644 U+0652 U+062F             > U+0627 U+064E U+0644 U+062F U+0651                      ; al-sun d
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0630             > U+0627 U+064E U+0644 U+0630 U+0651                      ; al-sun dh
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0631             > U+0627 U+064E U+0644 U+0631 U+0651                      ; al-sun r
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0632             > U+0627 U+064E U+0644 U+0632 U+0651                      ; al-sun z
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0633             > U+0627 U+064E U+0644 U+0633 U+0651                      ; al-sun s
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0634             > U+0627 U+064E U+0644 U+0634 U+0651                      ; al-sun sh
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0635             > U+0627 U+064E U+0644 U+0635 U+0651                      ; al-sun S
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0636             > U+0627 U+064E U+0644 U+0636 U+0651                      ; al-sun D
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0637             > U+0627 U+064E U+0644 U+0637 U+0651                      ; al-sun T
+; U+0627 U+0654 U+064E U+0644 U+0652 U+0638             > U+0627 U+064E U+0644 U+0638 U+0651                      ; al-sun DH
+; U+0627 U+0654 U+064E U+0644 U+0652 U+08BD             > U+0627 U+064E U+0644 U+08BD U+0651                      ; al-sun n
+; U+0627 U+0654 U+064E U+0644 U+0652                    > U+0627 U+064E U+0644 U+0652                             ; '^al0 > 'al0
+; U+0627 U+0654 U+064E U+0644 U+0651 U+064E U+062D U+0652                      > U+0627 U+064E U+0644 U+0644 U+0651 U+0670 U+0647 U+0652 ; Allah0
+; U+0627 U+064E U+0644 U+0644 U+0651 U+0670 U+0647 U+0652 / ^[Letter] _ > U+0627 U+064E U+0644 U+0644 U+0651 U+0670 U+0647        ; Allah
+; U+0627 U+0654 U+064E U+0644 U+0651 U+064E U+0647        > U+0627 U+0644 U+0644 U+0651 U+064E U+0647        ; Allah
+
+; FORMATTING OUTPUT IN MS-WORD==============================================================================================================
+; FORMAT r2l, b/w, no italics, lang Arabic(Egypt), line-spacing at least 20 pt (space before 3pt)
+; NUMERALS Hindi or Arabic?
+; Ma'ana paragraphs 10pt>12pt
+; PAGE reverse book fold
+; STYLES headings; 'RS not ABS' text
+; COVER Bismillah, border, bullets
+; JUSTIFICATION kashida extensions? (Justify high in Word)
+; CHECK using Compare with old versions for AS, with RS version for quotations (and left-align Greek)
+; NUMBERING 'tambaya ta' as chapter number manually; TambayoYI, KhAAlid, 10 Yesu, Redo page numbers!
+; ME Double spaces, add space before line breaks
+; PAGE Page numbers
+; STYLES justify all, headings no space after, RS not ABS
+; PARAGRAPHS remove manual page breaks and line breaks
+; NUMBERING alphabetical lists > numerical
+; QUOTATION Sharif Bible to angled, '/U+2018 > U+02C8/", "/U+201D > <</>>; LMT glottals; remove space between single and double quotes
+; CHARACTERS asterisks, omission marks
+; ABBREVIATIONS s.a.w.>U+FDFA, (H)>(Hawsa), (E)>(Inkliyziyyah)
+; ARABIC WORDS&NAMES check; Allah often needs damma ('maganar 'dauri', tied-up text), avoid decomposition of الله
+; PDF Remove personal data
