@@ -1,0 +1,171 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 5/22/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName          "paskt"
+DescriptiveName       "URW Palladio SKT (2002)"
+Version               "2002"
+Contact               "mailto:stiehl@sanskritweb.net"
+RegistrationAuthority "Sanskrit Web"
+RegistrationName      "URW Palladio SKT (2002)"
+
+ByteClass [ctl] = (0x00   .. 0x1F  )
+UniClass  [ctl] = (U+0000 .. U+001F)
+
+ByteClass [ascii] = (0x30..0x7E)
+UniClass  [ascii] = (0x30..0x7E)
+
+[ctl]   <>     [ctl]
+[ascii] <>     [ascii]
+
+; Character descriptions taken from VyperHelp v1.11 (Online help visual outliner and editor for OS/2, Mat Kramer / MekTek, 2000)
+
+0x82 <> U+201A ; low single quote
+0x83 <> U+006C U+0325 ; l undercircle
+0x83 <  U+F131 ; l undercircle = URW Palladio HOT PUA character
+0x84 <> U+201E ; low double quote
+0x85 <> U+004C U+0325 ; L undercircle
+0x85 <  U+F130 ; L undercircle = URW Palladio HOT PUA character
+0x86 <> U+0052 U+0325 ; R undercircle
+0x86 <  U+F120 ; R undercircle = URW Palladio HOT PUA character
+0x87 <> U+0052 U+0325 U+0304 ; R undercircle macron
+0x87 <  U+F122 ; R undercircle macron = URW Palladio HOT PUA character
+0x88 <> U+0061 U+0304 U+0300 ; a macron grave
+0x88 <  U+F103 ; a macron grave = URW Palladio HOT PUA character
+0x89 <> U+0069 U+0304 U+0300 ; i macron grave
+0x89 <  U+F10B ; i macron grave = URW Palladio HOT PUA character
+0x8A <> U+0075 U+0304 U+0300 ; u macron grave
+0x8A <  U+F113 ; u macron grave = URW Palladio HOT PUA character
+0x8B <> U+2039 ; open French single quote
+0x8C <> U+015A ; S acute = Windows Central Europe (Code Page 1250) character
+0x91 <> U+2018 ; open single quote
+0x92 <> U+2019 ; close single quote
+0x93 <> U+201C ; open double quote
+0x94 <> U+201D ; close double quote
+0x95 <> U+2022 ; bullet
+0x96 <> U+2013 ; en dash
+0x97 <> U+2014 ; em dash
+0x98 <> U+0061 U+0304 U+0301 ; a macron acute
+0x98 <  U+F101 ; a macron acute = URW Palladio HOT PUA character
+0x99 <> U+0069 U+0304 U+0301 ; i macron acute
+0x99 <  U+F109 ; i macron acute = URW Palladio HOT PUA character
+0x9A <> U+0075 U+0304 U+0301 ; u macron acute
+0x9A <  U+F111 ; u macron acute = URW Palladio HOT PUA character
+0x9B <> U+203A ; close French single quote
+0x9C <> U+015B ; s acute = Windows Central Europe (Code Page 1250) character
+0x9F <> U+017A ; z acute = Windows Central Europe (Code Page 1250) character
+0xA0 <> U+00A0 ; non-breaking space
+0xA1 <> U+1E96 ; h underline
+0xA2 <> U+1E2B ; h underbreve
+0xA3 <> U+0141 ; L slash = Windows Central Europe (Code Page 1250) character
+0xA4 <> U+20AC ; euro
+0xA5 <> U+0104 ; A ogonek = Windows Central Europe (Code Page 1250) character
+0xA6 <> U+0072 U+0325 ; r undercircle
+0xA6 <  U+F121 ; r undercircle = URW Palladio HOT PUA character
+0xA7 <> U+0072 U+0325 U+0304 ; r undercircle macron
+0xA7 <  U+F123 ; r undercircle macron = URW Palladio HOT PUA character
+0xA8 <> U+0072 U+0323 U+0301 ; r underdot acute
+0xA8 <  U+F119 ; r underdot acute = URW Palladio HOT PUA character
+0xA9 <> U+0072 U+0323 U+0300 ; r underdot grave
+0xA9 <  U+F11B ; r underdot grave = URW Palladio HOT PUA character
+0xAA <> U+0072 U+0323 U+0304 U+0301 ; r underdot macron acute
+0xAA <  U+F11D ; r underdot macron acute = URW Palladio HOT PUA character
+0xAB <> U+00AB ; open French double quote
+0xAC <> U+1E35 ; k underline
+0xAD <> U+00AD ; soft hyphen
+0xAE <> U+1E6E ; t underline
+0xAF <> U+017B ; Z overdot = Windows Central Europe (Code Page 1250) character
+0xB0 <> U+0100 ; A macron
+0xB1 <> U+012A ; I macron
+0xB2 <> U+016A ; U macron
+0xB3 <> U+0142 ; l slash = Windows Central Europe (Code Page 1250) character
+0xB4 <> U+00B4 ; acute accent
+0xB5 <> U+1E5C ; R underdot macron
+0xB6 <> U+00B6 ; paragraph symbol
+0xB7 <> U+00B7 ; dot
+0xB8 <> U+1E49 ; n underline
+0xB9 <> U+0105 ; a ogonek = Windows Central Europe (Code Page 1250) character
+0xBA <> U+1E5F ; r underline
+0xBB <> U+00BB ; close French double quote
+0xBC <> U+0113 ; e macron
+0xBD <> U+014D ; o macron
+0xBE <> U+0179 ; Z acute
+0xBF <> U+017C ; z overdot = Windows Central Europe (Code Page 1250) character
+0xC0 <> U+0101 ; a macron
+0xC1 <> U+012B ; i macron
+0xC2 <> U+016B ; u macron
+0xC3 <> U+1E5B ; r underdot
+0xC4 <> U+00C4 ; A umlaut
+0xC5 <> U+1E5D ; r underdot macron
+0xC6 <> U+0106 ; C acute = Windows Central Europe (Code Page 1250) character
+0xC7 <> U+1E6D ; t underdot
+0xC8 <> U+1E63 ; s underdot
+0xC9 <> U+1E43 ; m underdot
+0xCA <> U+0118 ; E ogonek = Windows Central Europe (Code Page 1250) character
+0xCB <> U+006D U+0310 ; m candrabindu
+0xCB <  U+F141 ; m candrabindu = URW Palladio HOT PUA character
+0xCC <> U+004D U+0310 ; M candrabindu
+0xCC <  U+F140 ; M candrabindu = URW Palladio HOT PUA character
+0xCD <> U+1E25 ; h underdot
+0xCE <> U+0115 ; e breve
+0xCF <> U+014F ; o breve
+0xD0 <> U+00D1 ; N tilde
+0xD1 <> U+0143 ; N acute = Windows Central Europe (Code Page 1250) character
+0xD2 <> U+1E37 ; l underdot
+0xD3 <> U+00D3 ; O acute
+0xD4 <> U+1E44 ; N overdot
+0xD5 <> U+1E46 ; N underdot
+0xD6 <> U+00D6 ; O umlaut
+0xD7 <> U+1E6C ; T underdot
+0xD8 <> U+1E62 ; S underdot
+0xD9 <> U+1E42 ; M underdot
+0xDA <> U+1E41 ; m overdot
+0xDB <> U+1E40 ; M overdot
+0xDC <> U+00DC ; U umlaut
+0xDD <> U+1E24 ; H underdot
+0xDE <> U+1E3B ; l underline
+0xDF <> U+00DF ; sharp s, German sz ligature
+0xE0 <> U+00E0 ; a grave
+0xE1 <> U+00E1 ; a acute
+0xE2 <> U+1E36 ; L underdot
+0xE3 <> U+1E5A ; R underdot
+0xE4 <> U+00E4 ; a umlaut
+0xE5 <> U+1E39 ; l underdot macron
+0xE6 <> U+0107 ; c acute = Windows Central Europe (Code Page 1250) character
+0xE7 <> U+1E0D ; d underdot
+0xE8 <> U+00E8 ; e grave
+0xE9 <> U+00E9 ; e acute
+0xEA <> U+0119 ; e ogonek = Windows Central Europe (Code Page 1250) character
+0xEB <> U+00EB ; e umlaut
+0xEC <> U+00EC ; i grave
+0xED <> U+00ED ; i acute
+0xEE <> U+1E3A ; L underline
+0xEF <> U+00EF ; i umlaut
+0xF0 <> U+00F1 ; n tilde
+0xF1 <> U+0144 ; n acute = Windows Central Europe (Code Page 1250) character
+0xF2 <> U+00F2 ; o grave
+0xF3 <> U+00F3 ; o acute
+0xF4 <> U+1E45 ; n overdot
+0xF5 <> U+1E47 ; n underdot
+0xF6 <> U+00F6 ; o umlaut
+0xF7 <> U+1E0C ; D underdot
+0xF8 <> U+1E38 ; L underdot macron
+0xF9 <> U+00F9 ; u grave
+0xFA <> U+00FA ; u acute
+0xFB <> U+006C U+0310 ; l candrabindu
+0xFB <  U+F145 ; l candrabindu = URW Palladio HOT PUA character
+0xFC <> U+00FC ; u umlaut
+0xFD <> U+004C U+0310 ; L candrabindu
+0xFD <  U+F144 ; L candrabindu = URW Palladio HOT PUA character
+0xFE <> U+006C U+0303 ; l tilde
+0xFE <  U+F143 ; l tilde = URW Palladio HOT PUA character
+0xFF <> U+004C U+0303 ; L tilde
+0xFF <  U+F142 ; L tilde = URW Palladio HOT PUA character

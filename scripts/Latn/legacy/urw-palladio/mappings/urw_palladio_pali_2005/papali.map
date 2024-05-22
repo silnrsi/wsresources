@@ -1,0 +1,162 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 5/22/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName          "papali"
+DescriptiveName       "URW Palladio Pali (2005)"
+Version               "2005"
+Contact               "mailto:stiehl@sanskritweb.net"
+RegistrationAuthority "Sanskrit Web"
+RegistrationName      "URW Palladio Pali (2005)"
+
+ByteClass [ctl] = (0x00   .. 0x1F  )
+UniClass  [ctl] = (U+0000 .. U+001F)
+
+ByteClass [ascii] = (0x30..0x7E)
+UniClass  [ascii] = (0x30..0x7E)
+
+[ctl]   <>     [ctl]
+[ascii] <>     [ascii]
+
+; Character descriptions taken from VyperHelp v1.11 (Online help visual outliner and editor for OS/2, Mat Kramer / MekTek, 2000)
+
+0x80 <> U+20AC ; euro
+0x82 <> U+201A ; low single quote
+0x83 <> U+221A ; square root
+0x84 <> U+201E ; low double quote
+0x85 <> U+2026 ; ellipsis
+0x86 <> U+2020 ; dagger
+0x87 <> U+2021 ; double dagger
+0x88 <> U+23D1 ; metrical breve
+0x88 <  U+F1F8 ; metrical breve = URW Palladio HOT PUA character
+0x89 <> U+2030 ; per thousand
+0x8A <> U+1E5C ; R underdot macron
+0x8B <> U+2039 ; open French single quote
+0x8C <> U+0152 ; OE ligature
+0x8E <> U+1E38 ; L underdot macron
+0x91 <> U+2018 ; open single quote
+0x92 <> U+2019 ; close single quote
+0x93 <> U+201C ; open double quote
+0x94 <> U+201D ; close double quote
+0x95 <> U+2022 ; bullet
+0x96 <> U+2013 ; en dash
+0x97 <> U+2014 ; em dash
+0x98 <> U+F1FA ; metrical macron = URW Palladio HOT PUA character
+0x99 <> U+2122 ; superscript TM, trademark
+0x9A <> U+1E5D ; r underdot macron
+0x9B <> U+203A ; close French single quote
+0x9C <> U+0153 ; oe ligature
+0x9E <> U+1E39 ; l underdot macron
+0x9F <> U+01DE ; A umlaut macron, not present in URW Palladio HOT
+0xA0 <> U+00A0 ; non-breaking space
+0xA1 <> U+0061 U+0304 U+0306 ; a macron breve
+0xA1 <  U+F107 ; a macron breve = URW Palladio HOT PUA character
+0xA2 <> U+0065 U+0304 U+0306 ; e macron breve
+0xA2 <  U+F13B ; e macron breve = URW Palladio HOT PUA character
+0xA3 <> U+00A3 ; pound sterling
+0xA4 <> U+00A4 ; general currency sign
+0xA5 <> U+0069 U+0304 U+0306 ; i macron breve
+0xA5 <  U+F10F ; i macron breve = URW Palladio HOT PUA character
+0xA6 <> U+006F U+0304 U+0306 ; o macron breve
+0xA6 <  U+F13F ; o macron breve = URW Palladio HOT PUA character
+0xA7 <> U+00A7 ; section sign
+0xA8 <> U+23D3 ; metrical breve macron
+0xA8 <  U+F1FA ; metrical breve macron = URW Palladio HOT PUA character
+0xA9 <> U+00A9 ; copyright
+0xAA <> U+1E5A ; R underdot
+0xAB <> U+00AB ; open French double quote
+0xAC <> U+0075 U+0304 U+0306 ; u macron breve
+0xAC <  U+F117 ; u macron breve = URW Palladio HOT PUA character
+0xAD <> U+00AD ; soft hyphen
+0xAE <> U+00AE ; registered sign
+0xAF <> U+1E36 ; L underdot
+0xB0 <> U+00B0 ; degree
+0xB1 <> U+0103 ; a breve
+0xB2 <> U+0115 ; e breve
+0xB3 <> U+012D ; i breve
+0xB4 <> U+014F ; o breve
+0xB5 <> U+016D ; u breve
+0xB6 <> U+00B6 ; paragraph symbol
+0xB7 <> U+00B7 ; dot
+0xB8 <> U+006D U+0306 ; m breve
+0xB8 <  U+F153 ; m breve = URW Palladio HOT PUA character
+0xB9 <> U+006E U+0306 ; n breve
+0xB9 <  U+F155 ; n breve = URW Palladio HOT PUA character
+0xBA <> U+1E5B ; r underdot
+0xBB <> U+00BB ; close French double quote
+0xBC <> U+00BC ; one fourth
+0xBD <> U+00BD ; one half
+0xBE <> U+00BE ; fraction three-quarters
+0xBF <> U+1E37 ; l underdot
+0xC0 <> U+00C0 ; A grave
+0xC1 <> U+0100 ; A macron
+0xC2 <> U+00C2 ; A circumflex
+0xC3 <> U+01E2 ; AE ligature macron
+0xC4 <> U+00C4 ; A umlaut
+0xC5 <> U+1E62 ; S underdot
+0xC6 <> U+00C6 ; AE ligature
+0xC7 <> U+00C7 ; C cedilla
+0xC8 <> U+00C8 ; E grave
+0xC9 <> U+00C9 ; E acute
+0xCA <> U+00CA ; E circumflex
+0xCB <> U+00CB ; E umlaut
+0xCC <> U+012A ; I macron
+0xCD <> U+1E42 ; M underdot
+0xCE <> U+00CE ; I circumflex
+0xCF <> U+00CF ; I umlaut
+0xD0 <> U+1E0C ; D underdot
+0xD1 <> U+00D1 ; N tilde
+0xD2 <> U+1E44 ; N overdot
+0xD3 <> U+1E46 ; N underdot
+0xD4 <> U+00D4 ; O circumflex
+0xD5 <> U+00D5 ; O tilde
+0xD6 <> U+00D6 ; O umlaut
+0xD7 <> U+00D7 ; multiplication sign
+0xD8 <> U+015A ; S acute
+0xD9 <> U+00D9 ; U grave
+0xDA <> U+016A ; U macron
+0xDB <> U+00DB ; U circumflex
+0xDC <> U+00DC ; U umlaut
+0xDD <> U+1E24 ; H underdot
+0xDE <> U+1E6C ; T underdot
+0xDF <> U+00DF ; sharp s, German sz ligature
+0xE0 <> U+00E0 ; a grave
+0xE1 <> U+0101 ; a macron
+0xE2 <> U+00E2 ; a circumflex
+0xE3 <> U+01E3 ; ae ligature macron
+0xE4 <> U+00E4 ; a umlaut
+0xE5 <> U+1E63 ; s underdot
+0xE6 <> U+00E6 ; ae ligature
+0xE7 <> U+00E7 ; c cedilla
+0xE8 <> U+00E8 ; e grave
+0xE9 <> U+00E9 ; e acute
+0xEA <> U+00EA ; e circumflex
+0xEB <> U+00EB ; e umlaut
+0xEC <> U+012B ; i macron
+0xED <> U+1E43 ; m underdot
+0xEE <> U+00EE ; i circumflex
+0xEF <> U+00EF ; i umlaut
+0xF0 <> U+1E0D ; d underdot
+0xF1 <> U+00F1 ; n tilde
+0xF2 <> U+1E45 ; n overdot
+0xF3 <> U+1E47 ; n underdot
+0xF4 <> U+00F4 ; o circumflex
+0xF5 <> U+014D ; o macron
+0xF6 <> U+00F6 ; o umlaut
+0xF7 <> U+0113 ; e macron
+0xF8 <> U+015B ; s acute
+0xF9 <> U+016B ; u macron
+0xFA <> U+00FA ; u acute
+0xFB <> U+00FB ; u circumflex
+0xFC <> U+00FC ; u umlaut
+0xFD <> U+1E25 ; h underdot
+0xFE <> U+1E6D ; t underdot
+0xFF <> U+01DF ; a umlaut macron, not present in URW Palladio HOT

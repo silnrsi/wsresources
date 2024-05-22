@@ -1,0 +1,157 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 5/22/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName          "pait"
+DescriptiveName       "URW Palladio IT (2002)"
+Version               "2002"
+Contact               "mailto:stiehl@sanskritweb.net"
+RegistrationAuthority "Sanskrit Web"
+RegistrationName      "URW Palladio IT (2002)"
+
+ByteClass [ctl] = (0x00   .. 0x1F  )
+UniClass  [ctl] = (U+0000 .. U+001F)
+
+ByteClass [ascii] = (0x30..0x7E)
+UniClass  [ascii] = (0x30..0x7E)
+
+[ctl]   <>     [ctl]
+[ascii] <>     [ascii]
+
+; Character descriptions taken from VyperHelp v1.11 (Online help visual outliner and editor for OS/2, Mat Kramer / MekTek, 2000)
+
+0x82 <> U+201A ; low single quote
+0x83 <> U+0192 ; function of
+0x84 <> U+201E ; low double quote
+0x85 <> U+2026 ; ellipsis
+0x86 <> U+2020 ; dagger
+0x87 <> U+2021 ; double dagger
+0x88 <> U+02C6 ; caret symbol
+0x89 <> U+2030 ; per thousand
+0x8A <> U+0160 ; S caron
+0x8B <> U+2039 ; open French single quote
+0x8C <> U+0152 ; OE ligature
+0x91 <> U+2018 ; open single quote
+0x92 <> U+2019 ; close single quote
+0x93 <> U+201C ; open double quote
+0x94 <> U+201D ; close double quote
+0x95 <> U+2022 ; bullet
+0x96 <> U+2013 ; en dash
+0x97 <> U+2014 ; em dash
+0x98 <> U+02DC ; tilde
+0x99 <> U+2122 ; superscript TM, trademark
+0x9A <> U+0161 ; s caron
+0x9B <> U+203A ; close French single quote
+0x9C <> U+0153 ; oe ligature
+0x9F <> U+0178 ; Y umlaut
+0xA0 <> U+00A0 ; non-breaking space
+0xA1 <> U+00A1 ; inverted exclamation mark
+0xA2 <> U+00A2 ; cent
+0xA3 <> U+00A3 ; pound sterling
+0xA4 <> U+00A4 ; general currency sign
+0xA5 <> U+00A5 ; yen
+0xA6 <> U+00A6 ; split vertical bar (piping symbol)
+0xA7 <> U+00A7 ; section sign
+0xA8 <> U+00A8 ; umlaut
+0xA9 <> U+00A9 ; copyright
+0xAA <> U+00AA ; underscored a
+0xAB <> U+00AB ; open French double quote
+0xAC <> U+00AC ; logical not
+0xAD <> U+00AD ; soft hyphen
+0xAE <> U+00AE ; registered sign
+0xAF <> U+00AF ; macron
+0xB0 <> U+00B0 ; degree
+0xB1 <> U+00B1 ; plusminus
+0xB2 <> U+00B2 ; superscript 2
+0xB3 <> U+00B3 ; superscript 3
+0xB4 <> U+00B4 ; acute accent
+0xB5 <> U+00B5 ; mu
+0xB6 <> U+00B6 ; paragraph symbol
+0xB7 <> U+00B7 ; dot
+0xB8 <> U+00B8 ; cedilla
+0xB9 <> U+00B9 ; superscript 1
+0xBA <> U+00BA ; underscored o
+0xBB <> U+00BB ; close French double quote
+0xBC <> U+00BC ; one fourth
+0xBD <> U+00BD ; one half
+0xBE <> U+00BE ; fraction three-quarters
+0xBF <> U+00BF ; inverted question mark
+0xC0 <> U+1E40 ; M overdot = Balaram character
+0xC1 <> U+00C1 ; A acute
+0xC2 <> U+00C2 ; A circumflex
+0xC3 <> U+00C3 ; A tilde
+0xC4 <> U+0100 ; A macron = Balaram character
+0xC5 <> U+1E5A ; R underdot = Balaram character
+0xC6 <> U+00C6 ; AE ligature
+0xC7 <> U+015A ; S acute = Balaram character
+0xC8 <> U+1E5C ; R underdot macron = Balaram character
+0xC9 <> U+012A ; I macron = Balaram character
+0xCA <> U+00CA ; E circumflex
+0xCB <> U+1E46 ; N underdot = Balaram character
+0xCC <> U+1E44 ; N overdot = Balaram character
+0xCD <> U+00CD ; I acute
+0xCE <> U+00CE ; I circumflex
+0xCF <> U+00D1 ; N tilde
+0xD0 <> U+004D U+0310 ; M candrabindu
+0xD0 <> U+F140 ; M candrabindu = URW Palladio ITU PUA character
+0xD1 <> U+1E62 ; S underdot = Balaram character
+0xD2 <> U+1E0C ; D underdot = Balaram character
+0xD3 <> U+00D3 ; O acute
+0xD4 <> U+00D4 ; O circumflex
+0xD5 <> U+0052 U+0306 ; R breve
+0xD5 <  U+F156 ; R breve = URW Palladio ITU PUA character
+0xD6 <> U+1E6C ; T underdot = Balaram character
+0xD7 <> U+030D ; over vertical bar = combining character
+0xD8 <> U+1E3A ; L underline
+0xD9 <> U+1E24 ; H underdot = Balaram character
+0xDA <> U+0120 ; G overdot = Balaram character
+0xDB <> U+004B U+035F U+0068 ; Kh underline
+0xDB <  U+F147 ; Kh underline = URW Palladio HOT PUA character
+0xDC <> U+016A ; U macron = Balaram character
+0xDD <> U+1E38 ; L underdot macron
+0xDE <> U+0331 ; underline = combining character
+0xDF <> U+1E36 ; L underdot = Balaram character
+0xE0 <> U+1E41 ; m overdot = Balaram character
+0xE1 <> U+00E1 ; a acute
+0xE2 <> U+00E2 ; a circumflex
+0xE3 <> U+00E3 ; a tilde
+0xE4 <> U+0101 ; a macron = Balaram character
+0xE5 <> U+1E5B ; r underdot = Balaram character
+0xE6 <> U+00E6 ; ae ligature
+0xE7 <> U+015B ; s acute = Balaram character
+0xE8 <> U+1E5D ; r underdot macron = Balaram character
+0xE9 <> U+012B ; i macron = Balaram character
+0xEA <> U+0119 ; e circumflex
+0xEB <> U+1E47 ; n underdot = Balaram character
+0xEC <> U+1E45 ; n overdot = Balaram character
+0xED <> U+00ED ; i acute
+0xEE <> U+00EE ; i circumflex
+0xEF <> U+00F1 ; n tilde
+0xF0 <> U+006D U+0310 ; m candrabindu
+0xF0 <  U+F141 ; m candrabindu = URW Palladio ITU PUA character
+0xF1 <> U+1E63 ; s underdot = Balaram character
+0xF2 <> U+1E0D ; d underdot = Balaram character
+0xF3 <> U+00F3 ; o acute
+0xF4 <> U+00F4 ; o circumflex
+0xF5 <> U+0072 U+0306 ; r breve
+0xF5 <  U+F157 ; r breve = URW Palladio ITU PUA character
+0xF6 <> U+1E6D ; t underdot = Balaram character
+0xF7 <> U+030E ; over double vertical bar = combining character
+0xF8 <> U+1E3B ; l underline
+0xF9 <> U+1E25 ; h underdot = Balaram character
+0xFA <> U+0121 ; g overdot = Balaram character
+0xFB <> U+006B U+035F U+0068 ; kh underline
+0xFB <  U+F148 ; kh underline = URW Palladio HOT PUA character
+0xFC <> U+016B ; u macron = Balaram character
+0xFD <> U+1E39 ; l underdot macron
+0xFE <> U+004B U+035F U+0048 ; Kh underline
+0xFE <  U+F146 ; KH underline = URW Palladio HOT PUA character
+0xFF <> U+1E37 ; l underdot = Balaram character

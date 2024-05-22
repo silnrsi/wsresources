@@ -1,0 +1,84 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 5/22/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName          "pas"
+DescriptiveName       "URW Palladio S (2002)"
+Version               "2002"
+Contact               "mailto:stiehl@sanskritweb.net"
+RegistrationAuthority "Sanskrit Web"
+RegistrationName      "URW Palladio S (2002)"
+
+ByteClass [ctl] = (0x00   .. 0x1F  )
+UniClass  [ctl] = (U+0000 .. U+001F)
+
+ByteClass [ascii] = (0x30..0x7E)
+UniClass  [ascii] = (0x30..0x7E)
+
+[ctl]   <>     [ctl]
+[ascii] <>     [ascii]
+
+; Character descriptions taken from VyperHelp v1.11 (Online help visual outliner and editor for OS/2, Mat Kramer / MekTek, 2000)
+
+0x82 <> U+201A ; low single quote
+0x84 <> U+201E ; low double quote
+0x8B <> U+2039 ; open French single quote
+0x91 <> U+2018 ; open single quote
+0x92 <> U+2019 ; close single quote
+0x93 <> U+201C ; open double quote
+0x94 <> U+201D ; close double quote
+0x95 <> U+2022 ; bullet
+0x96 <> U+2013 ; en dash
+0x97 <> U+2014 ; em dash
+0x9B <> U+203A ; close French single quote
+0xA0 <> U+00A0 ; non-breaking space
+0xAB <> U+00AB ; open French double quote
+0xAD <> U+00AD ; soft hyphen
+0xB6 <> U+00B6 ; paragraph symbol
+0xB7 <> U+00B7 ; dot
+0xBB <> U+00BB ; close French double quote
+0xC0 <> U+0101 ; a macron
+0xC1 <> U+012B ; i macron
+0xC2 <> U+016B ; u macron
+0xC3 <> U+1E5B ; r underdot
+0xC4 <> U+00C4 ; A umlaut
+0xC5 <> U+1E5D ; r underdot macron
+0xC6 <> U+1E37 ; l underdot
+0xC7 <> U+1E45 ; n overdot
+0xC8 <> U+00F1 ; n tilde
+0xC9 <> U+1E47 ; n underdot
+0xCA <> U+1E6D ; t underdot
+0xCB <> U+1E0D ; d underdot
+0xCC <> U+015B ; s acute
+0xCD <> U+1E63 ; s underdot
+0xCE <> U+1E43 ; m underdot
+0xCF <> U+1E25 ; h underdot
+0xD0 <> U+006C U+0303 ; l tilde
+0xD0 <  U+F143 ; l tilde = URW Palladio HOT PUA character
+0xD1 <> U+00D1 ; N tilde
+0xD2 <> U+1E3B ; l underline
+0xD3 <> U+0100 ; A macron
+0xD4 <> U+012A ; I macron
+0xD5 <> U+016A ; U macron
+0xD6 <> U+00D6 ; O umlaut
+0xD7 <> U+00D7 ; multiplication sign
+0xD8 <> U+1E5A ; R underdot
+0xD9 <> U+006D U+0310 ; m candrabindu
+0xD9 <  U+F141 ; m candrabindu = URW Palladio HOT PUA character
+0xDA <> U+1E6C ; T underdot
+0xDB <> U+1E0C ; D underdot
+0xDC <> U+00DC ; U umlaut
+0xDD <> U+1E62 ; S underdot
+0xDE <> U+015A ; S acute
+0xDF <> U+00DF ; sharp s, German sz ligature
+0xE4 <> U+00E4 ; a umlaut
+0xF6 <> U+00F6 ; o umlaut
+0xFC <> U+00FC ; u umlaut
