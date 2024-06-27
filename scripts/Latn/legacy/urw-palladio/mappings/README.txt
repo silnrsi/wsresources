@@ -11,8 +11,9 @@ TECkit conversion tables for Palatino fonts created by Ulrich Stiehl from Transl
 
 NB: All characters are included with the Hybrid OpenType font “URW Palladio HOT” (Last updated March 2004. The font is available to the author's friends and colleagues via email on request, according to page 4 in pahotman.pdf. I contacted the author via email [2] to request the font to his friends and colleagues but he did not provide the font's zipped archive as an attachment)
 
-[1] sanskritweb dot net/fonts (Page modified August 2020)
-[2] sanskritweb dot net/imprint.htm (The page says in the contact info that “he no longer replies to emails”)
+[1] http://sanskritweb.net/fonts/ (Page modified August 2020)
+
+[2] http://sanskritweb.net/imprint.htm (The page says in the contact info that “he no longer replies to emails”)
 
 Contact information is in the mapping file.
 
