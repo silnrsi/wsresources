@@ -1,0 +1,731 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 7/8/2024.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 115,168,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Garava;11.25
+;   Right-hand side font = Garava;11.25
+
+LHSName               "HighLogicPUA"
+RHSName               "Unicode"
+LHSDescription        "PUA mappings used by FontCreator"
+RHSDescription        "Unicode"
+Version               "0.1"
+Contact               "mailto:pesala@aimwell.org"
+RegistrationAuthority "High-Logic B.V."
+RegistrationName      "HighLogicPUAtoUnicode"
+
+; They are also used in fonts created by Bhikkhu Pesala.
+
+pass(Unicode)
+
+UniClass [ascii]             = (U+0021 .. U+007F)
+UniClass [numbers]           = (U+0030 .. U+0039)
+UniClass [uppercase]         = (U+0041 .. U+005A)
+UniClass [lowercase]         = (U+0061 .. U+007A)
+UniClass [latin1]            = (U+00C0 .. U+00FF)
+UniClass [cyrillic]          = (U+0430 .. U+045F)
+UniClass [oldstylenumbers]   = (U+E2C0 .. U+E2C9)
+UniClass [titlingcaps]       = (U+E2D1 .. U+E2EA)
+UniClass [smallcaps]         = (U+E2F1 .. U+E30A)
+UniClass [cyrillicsmallcaps] = (U+E6C0 .. U+E6EF)
+UniClass [supascii]          = (U+EA81 .. U+EADF)
+UniClass [suplatin1]         = (U+EB20 .. U+EB5F)
+UniClass [petitecaps]        = (U+EEA9 .. U+EEC2)
+
+; Diacritics
+U+E000 <> U+0308 U+0304 ; umlaut macron
+U+E001 <> U+0304 U+0308 ; macron umlaut
+U+E002 <> U+0307 U+0304 ; overdot macron
+U+E003 <> U+0308 U+0301 ; umlaut acute
+U+E004 <> U+0308 U+0300 ; umlaut grave
+U+E005 <> U+0304 U+0301 ; macron acute
+U+E006 <> U+030A U+0301 ; overcircle acute
+U+E007 <> U+0304 U+0301 ; macron grave
+U+E008 <> U+0303 U+0304 ; tilde macron
+U+E009 <> U+0304 U+030C ; umlaut caron
+U+E00A <> U+0303 U+0308 ; tilde umlaut
+U+E00B <> U+030C U+0307 ; caron overdot
+U+E00C <> U+0303 U+0301 ; tilde acute
+U+E00D <> U+0302 U+0301 ; circumflex acute
+U+E00E <> U+0302 U+0300 ; circumflex grave
+U+E00F <> U+0302 U+0303 ; circumflex tilde
+U+E010 <> U+0306 U+0303 ; breve tilde
+U+E011 <> U+0306 U+0301 ; breve acute
+U+E012 <> U+0306 U+0300 ; breve grave
+U+E013 <> U+0306 U+0309 ; breve hook
+U+E014 <> U+0302 U+0309 ; circumflex hook
+U+E015 <> U+0300 ; low profile grave accent
+U+E016 <> U+0301 ; low profile acute accent
+U+E017 <> U+0302 ; low profile circumflex
+U+E018 <> U+030C ; low profile caron
+U+E019 <> U+0303 ; low profile tilde
+U+E01A <> U+030F ; low profile double grave
+U+E01B <> U+030B ; low profile double acute
+U+E01C <> U+0306 ; low profile breve
+U+E01D <> U+0311 ; low profile inverted breve
+U+E01E <> U+030A ; low profile overcircle
+U+E01F <> U+0309 ; low profile hook
+U+E020 <> U+0308 ; low profile umlaut
+U+E021 <> U+0307 ; low profile overdot
+U+E022 <> U+0304 ; low profile macron
+U+E023 <> U+0384 ; low profile tonos
+U+E024 <> U+0385 ; low profile umlaut tonos
+U+E025 <> U+0323 ; underdot
+U+E026 <> U+0326 ; undercomma
+
+; Titling caps, small caps, old style numbers, nut fractions, numerators and denominators
+[oldstylenumbers]   <> [numbers]
+[titlingcaps]       <> [uppercase]
+[smallcaps]         <> [lowercase]
+[cyrillicsmallcaps] <> [cyrillic]
+U+E2B1 <> U+0021 ; exclamation mark
+U+E2B4 <> U+0024 ; dollar
+U+E2B5 <> U+0025 ; percent
+U+E2B6 <> U+0026 ; ampersand
+U+E2B8 <> U+0028 ; left parenthesis
+U+E2B9 <> U+0029 ; right parenthesis
+U+E2CF <> U+003F ; question mark
+U+E2EB <> U+005B ; left bracket
+U+E2ED <> U+005D ; right bracket
+U+E30B <> U+007B ; left brace
+U+E30D <> U+007D ; right brace
+U+E331 <> U+00A1 ; inverted exclamation mark
+U+E333 <> U+00A3 ; sterling
+U+E335 <> U+00A5 ; Yen
+U+E34C <> U+00BC ; one fourth
+U+E34D <> U+00BD ; one half
+U+E34E <> U+00BE ; fraction three-quarters
+U+E34F <> U+00BF ; inverted question mark
+U+E350 <> U+00C0 ; A grave
+U+E351 <> U+00C1 ; A acute
+U+E352 <> U+00C2 ; A circumflex
+U+E353 <> U+00C3 ; A tilde
+U+E354 <> U+00C4 ; A umlaut
+U+E355 <> U+00C5 ; A overcircle
+U+E356 <> U+00C6 ; AE ligature
+U+E357 <> U+00C7 ; C cedilla
+U+E358 <> U+00C8 ; E grave
+U+E359 <> U+00C9 ; E acute
+U+E35A <> U+00CA ; E circumflex
+U+E35B <> U+00CB ; E umlaut
+U+E35C <> U+00CC ; I grave
+U+E35D <> U+00CD ; I acute
+U+E35E <> U+00CE ; I circumflex
+U+E35F <> U+00CF ; I umlaut
+U+E360 <> U+00D0 ; Eth, Icelandic
+U+E361 <> U+00D1 ; N tilde
+U+E362 <> U+00D2 ; O grave
+U+E363 <> U+00D3 ; O acute
+U+E364 <> U+00D4 ; O circumflex
+U+E365 <> U+00D5 ; O tilde
+U+E366 <> U+00D6 ; O umlaut
+U+E368 <> U+00D8 ; O stroke
+U+E369 <> U+00D9 ; U grave
+U+E36A <> U+00DA ; U acute
+U+E36B <> U+00DB ; U circumflex
+U+E36C <> U+00DC ; U umlaut
+U+E36D <> U+00DD ; Y acute
+U+E36E <> U+00DE ; THORN, Icelandic
+U+E36F <> U+00DF ; sharp s, German sz ligature
+U+E370 <> U+00E0 ; a grave
+U+E371 <> U+00E1 ; a acute
+U+E372 <> U+00E2 ; a circumflex
+U+E373 <> U+00E3 ; a tilde
+U+E374 <> U+00E4 ; a umlaut
+U+E375 <> U+00E5 ; a overcircle
+U+E376 <> U+00E6 ; ae ligature
+U+E377 <> U+00E7 ; c cedilla
+U+E378 <> U+00E8 ; e grave
+U+E379 <> U+00E9 ; e acute
+U+E37A <> U+00EA ; e circumflex
+U+E37B <> U+00EB ; e umlaut
+U+E37C <> U+00EC ; i grave
+U+E37D <> U+00ED ; i acute
+U+E37E <> U+00EE ; i circumflex
+U+E37F <> U+00EF ; i umlaut
+U+E380 <> U+00F0 ; eth, Icelandic
+U+E381 <> U+00F1 ; n tilde
+U+E382 <> U+00F2 ; o grave
+U+E383 <> U+00F3 ; o acute
+U+E384 <> U+00F4 ; o circumflex
+U+E385 <> U+00F5 ; o tilde
+U+E386 <> U+00F6 ; o umlaut
+U+E388 <> U+00F8 ; o stroke
+U+E389 <> U+00F9 ; u grave
+U+E38A <> U+00FA ; u acute
+U+E38B <> U+00FB ; u circumflex
+U+E38C <> U+00FC ; u umlaut
+U+E38D <> U+00FD ; y acute
+U+E38E <> U+00FE ; thorn, Icelandic
+U+E38F <> U+00FF ; y umlaut
+U+E390 <> U+0100 ; A macron
+U+E391 <> U+0101 ; a macron
+U+E392 <> U+0102 ; A breve
+U+E393 <> U+0103 ; a breve
+U+E394 <> U+0104 ; A ogonek
+U+E395 <> U+0105 ; a ogonek
+U+E396 <> U+0106 ; C acute
+U+E397 <> U+0107 ; c acute
+U+E398 <> U+0108 ; C circumflex
+U+E399 <> U+0109 ; c circumflex
+U+E39A <> U+010A ; C overdot
+U+E39B <> U+010B ; c overdot
+U+E39C <> U+010C ; C caron
+U+E39D <> U+010D ; c caron
+U+E39E <> U+010E ; D caron
+U+E39F <> U+010F ; d caron
+U+E3A0 <> U+0110 ; D stroke
+U+E3A1 <> U+0111 ; d stroke
+U+E3A2 <> U+0112 ; E macron
+U+E3A3 <> U+0113 ; e macron
+U+E3A4 <> U+0114 ; E breve
+U+E3A5 <> U+0115 ; e breve
+U+E3A6 <> U+0116 ; E overdot
+U+E3A7 <> U+0117 ; e overdot
+U+E3A8 <> U+0118 ; E ogonek
+U+E3A9 <> U+0119 ; e ogonek
+U+E3AA <> U+011A ; E caron
+U+E3AB <> U+011B ; e caron
+U+E3AC <> U+011C ; G circumflex
+U+E3AD <> U+011D ; g circumflex
+U+E3AE <> U+011E ; G breve
+U+E3AF <> U+011F ; g breve
+U+E3B0 <> U+0120 ; G overdot
+U+E3B1 <> U+0121 ; g overdot
+U+E3B2 <> U+0122 ; G cedilla
+U+E3B3 <> U+0123 ; g cedilla
+U+E3B4 <> U+0124 ; H circumflex
+U+E3B5 <> U+0125 ; h circumflex
+U+E3B6 <> U+0126 ; H stroke
+U+E3B7 <> U+0127 ; h stroke
+U+E3B8 <> U+0128 ; I tilde
+U+E3B9 <> U+0129 ; i tilde
+U+E3BA <> U+012A ; I macron
+U+E3BB <> U+012B ; i macron
+U+E3BC <> U+012C ; I breve
+U+E3BD <> U+012D ; i breve
+U+E3BE <> U+012E ; I ogonek
+U+E3BF <> U+012F ; i ogonek
+U+E3C0 <> U+0130 ; I overdot
+U+E3C1 <> U+0131 ; i overdot
+U+E3C2 <> U+0132 ; IJ ligature
+U+E3C3 <> U+0133 ; ij ligature
+U+E3C4 <> U+0134 ; J circumflex
+U+E3C5 <> U+0135 ; j circumflex
+U+E3C6 <> U+0136 ; K cedilla
+U+E3C7 <> U+0137 ; k cedilla
+U+E3C9 <> U+0139 ; L acute
+U+E3CA <> U+013A ; l acute
+U+E3CB <> U+013B ; L cedilla
+U+E3CC <> U+013C ; l cedilla
+U+E3CD <> U+013D ; L caron
+U+E3CE <> U+013E ; l caron
+U+E3CF <> U+013F ; L middle dot
+U+E3D0 <> U+0140 ; l middle dot
+U+E3D1 <> U+0141 ; L stroke
+U+E3D2 <> U+0142 ; l stroke
+U+E3D3 <> U+0143 ; N acute
+U+E3D4 <> U+0144 ; n acute
+U+E3D5 <> U+0145 ; N cedilla
+U+E3D6 <> U+0146 ; n cedilla
+U+E3D7 <> U+0147 ; N caron
+U+E3D8 <> U+0148 ; n caron
+U+E3DA <> U+014A ; Eng
+U+E3DB <> U+014B ; eng
+U+E3DC <> U+014C ; O macron
+U+E3DD <> U+014D ; o macron
+U+E3DE <> U+014E ; O breve
+U+E3DF <> U+014F ; o breve
+U+E3E0 <> U+0150 ; O double acute
+U+E3E1 <> U+0151 ; o double acute
+U+E3E2 <> U+0152 ; OE ligature
+U+E3E3 <> U+0153 ; oe ligature
+U+E3E4 <> U+0154 ; R acute
+U+E3E5 <> U+0155 ; r acute
+U+E3E6 <> U+0156 ; R cedilla
+U+E3E7 <> U+0157 ; r cedilla
+U+E3E8 <> U+0158 ; R caron
+U+E3E9 <> U+0159 ; r caron
+U+E3EA <> U+015A ; S acute
+U+E3EB <> U+015B ; s acute
+U+E3EC <> U+015C ; S circumflex
+U+E3ED <> U+015D ; s circumflex
+U+E3EE <> U+015E ; S cedilla
+U+E3EF <> U+015F ; s cedilla
+U+E3F0 <> U+0160 ; S caron
+U+E3F1 <> U+0161 ; s caron
+U+E3F2 <> U+0162 ; T cedilla
+U+E3F3 <> U+0163 ; t cedilla
+U+E3F4 <> U+0164 ; T caron
+U+E3F5 <> U+0165 ; t caron
+U+E3F6 <> U+0166 ; T stroke
+U+E3F7 <> U+0167 ; t stroke
+U+E3F8 <> U+0168 ; U tilde
+U+E3F9 <> U+0169 ; u tilde
+U+E3FA <> U+016A ; U macron
+U+E3FB <> U+016B ; u macron
+U+E3FC <> U+016C ; U breve
+U+E3FD <> U+016D ; u breve
+U+E3FE <> U+016E ; U overcircle
+U+E3FF <> U+016F ; u overcircle
+U+E400 <> U+0170 ; U double acute
+U+E401 <> U+0171 ; u double acute
+U+E402 <> U+0172 ; U ogonek
+U+E403 <> U+0173 ; u ogonek
+U+E404 <> U+0174 ; W circumflex
+U+E405 <> U+0175 ; w circumflex
+U+E406 <> U+0176 ; Y circumflex
+U+E407 <> U+0177 ; y circumflex
+U+E408 <> U+0178 ; Y umlaut
+U+E409 <> U+0179 ; Z acute
+U+E40A <> U+017A ; z acute
+U+E40B <> U+017B ; Z overdot
+U+E40C <> U+017C ; z overdot
+U+E40D <> U+017D ; Z caron
+U+E40E <> U+017E ; z caron
+U+E484 <> U+01F4 ; G acute
+U+E485 <> U+01F5 ; g acute
+U+E48A <> U+01FA ; A overcircle acute
+U+E48B <> U+01FB ; a overcircle acute
+U+E48C <> U+01FC ; AE acute
+U+E48D <> U+01FD ; ae acute
+U+E48E <> U+01FE ; O stroke acute
+U+E48F <> U+01FF ; o stroke acute
+U+E4A8 <> U+0218 ; S undercomma
+U+E4A9 <> U+0219 ; s undercomma
+U+E4AA <> U+021A ; T undercomma
+U+E4AB <> U+021B ; t undercomma
+U+E620 <> U+0390 ; iota umlaut tonos
+U+E63C <> U+03AC ; alpha tonos
+U+E63D <> U+03AD ; epsilon tonos
+U+E63E <> U+03AE ; eta tonos
+U+E63F <> U+03AF ; iota tonos
+U+E640 <> U+03B0 ; upsilon umlaut tonos
+U+E641 <> U+03B1 ; alpha
+U+E642 <> U+03B2 ; beta
+U+E643 <> U+03B3 ; delta
+U+E644 <> U+03B4 ; gamma
+U+E645 <> U+03B5 ; epsilon
+U+E646 <> U+03B6 ; zeta
+U+E647 <> U+03B7 ; eta
+U+E648 <> U+03B8 ; theta
+U+E649 <> U+03B9 ; iota
+U+E64A <> U+03BA ; kappa
+U+E64B <> U+03BB ; lambda
+U+E64C <> U+03BC ; mu
+U+E64D <> U+03BD ; nu
+U+E64E <> U+03BE ; xi
+U+E64F <> U+03BF ; omicron
+U+E650 <> U+03C0 ; pi
+U+E651 <> U+03C1 ; rho
+U+E653 <> U+03C3 ; sigma
+U+E654 <> U+03C4 ; tau
+U+E655 <> U+03C5 ; upsilon
+U+E656 <> U+03C6 ; phi
+U+E657 <> U+03C7 ; chi
+U+E658 <> U+03C8 ; psi
+U+E659 <> U+03C9 ; omega
+U+E65A <> U+03CA ; iota umlaut
+U+E65B <> U+03CB ; upsilon umlaut
+U+E65C <> U+03CC ; omicron tonos
+U+E65D <> U+03CD ; upsilon tonos
+U+E65E <> U+03CE ; omega tonos
+U+E6F3 <> U+0463 ; yat
+U+E6FB <> U+046B ; big yus
+U+E703 <> U+0473 ; fita
+U+E705 <> U+0475 ; izhitsa
+U+E721 <> U+0491 ; ghe upturn
+U+E723 <> U+0493 ; ghe stroke
+U+E727 <> U+0497 ; zhe descender
+U+E729 <> U+0499 ; ze descender
+U+E72B <> U+049B ; ka descender
+U+E72D <> U+049D ; ka vertical stroke
+U+E731 <> U+04A1 ; Bashkir ka
+U+E733 <> U+04A3 ; en descender
+U+E73B <> U+04AB ; es descender
+U+E73F <> U+04AF ; straight u
+U+E741 <> U+04B1 ; straight u stroke
+U+E743 <> U+04B3 ; ha descender
+U+E747 <> U+04B7 ; che descender
+U+E749 <> U+04B9 ; che vertical stroke
+U+E74B <> U+04BB ; shha
+U+E752 <> U+04C2 ; zhe breve
+U+E92C <> U+1E0C ; D underdot
+U+E92D <> U+1E0D ; d underdot
+U+E944 <> U+1E24 ; H underdot
+U+E945 <> U+1E25 ; h underdot
+U+E956 <> U+1E36 ; L underdot
+U+E957 <> U+1E37 ; l underdot
+U+E958 <> U+1E38 ; L underdot macron
+U+E959 <> U+1E39 ; l underdot macron
+U+E960 <> U+1E40 ; M overdot
+U+E961 <> U+1E41 ; m overdot
+U+E962 <> U+1E42 ; M underdot
+U+E963 <> U+1E43 ; m underdot
+U+E964 <> U+1E44 ; N overdot
+U+E965 <> U+1E45 ; n overdot
+U+E966 <> U+1E46 ; N underdot
+U+E967 <> U+1E47 ; n underdot
+U+E96A <> U+1E5A ; R underdot
+U+E96B <> U+1E5B ; r underdot
+U+E96C <> U+1E5C ; R underdot macron
+U+E96D <> U+1E5D ; r underdot macron
+U+E982 <> U+1E62 ; S underdot
+U+E983 <> U+1E63 ; s underdot
+U+E98C <> U+1E6C ; T underdot
+U+E98D <> U+1E6D ; t underdot
+U+E9A0 <> U+1E80 ; W grave
+U+E9A1 <> U+1E81 ; w grave
+U+E9A2 <> U+1E82 ; W acute
+U+E9A3 <> U+1E83 ; w acute
+U+E9A4 <> U+1E84 ; W umlaut
+U+E9A5 <> U+1E85 ; w umlaut
+U+E9BE <> U+1E9E ; Sharp S, German sz ligature
+U+EA12 <> U+1EF2 ; Y grave
+U+EA13 <> U+1EF3 ; y grave
+U+EA18 <> U+1EF8 ; Y tilde
+U+EA19 <> U+1EF9 ; y tilde
+U+EC73 <> U+2153 ; fraction one third
+U+EC74 <> U+2154 ; fraction two thirds
+U+EC75 <> U+2155 ; fraction one fifth
+U+EC76 <> U+2156 ; fraction two fifths
+U+EC77 <> U+2157 ; fraction three fifths
+U+EC78 <> U+2158 ; fraction four fifths
+U+EC79 <> U+2159 ; fraction one sixth
+U+EC7A <> U+215A ; fraction five sixths
+U+EC7B <> U+215B ; fraction one eighth
+U+EC7C <> U+215C ; fraction three eighths
+U+EC7D <> U+215D ; fraction five eighths
+U+EC7E <> U+215E ; fraction seven eighths
+U+EC80 <> U+00B9 U+2044 U+2051 U+2056 ; fraction 1/16
+U+EC81 <> U+00B3 U+2044 U+2051 U+2056 ; fraction 3/16
+U+EC82 <> U+2045 U+2044 U+2051 U+2056 ; fraction 5/16
+U+EC83 <> U+2047 U+2044 U+2051 U+2056 ; fraction 7/16
+U+EC84 <> U+2049 U+2044 U+2051 U+2056 ; fraction 9/16
+U+EC85 <> U+00B9 U+00B9 U+2044 U+2051 U+2056 ; fraction 11/16
+U+EC86 <> U+00B9 U+00B3 U+2044 U+2051 U+2056 ; fraction 13/16
+U+EC87 <> U+00B9 U+2045 U+2044 U+2051 U+2056 ; fraction 15/16
+U+EC88 <> U+00B9 U+2044 U+2053 U+2052 ; fraction 1/32
+U+EC89 <> U+00B3 U+2044 U+2053 U+2052 ; fraction 3/32
+U+EC8A <> U+2045 U+2044 U+2053 U+2052 ; fraction 5/32
+U+EC8B <> U+2047 U+2044 U+2053 U+2052 ; fraction 7/32
+U+EC8C <> U+2049 U+2044 U+2053 U+2052 ; fraction 9/32
+U+EC8D <> U+00B9 U+00B9 U+2044 U+2053 U+2052 ; fraction 11/32
+U+EC8E <> U+00B9 U+00B3 U+2044 U+2053 U+2052 ; fraction 13/32
+U+EC8F <> U+00B9 U+2045 U+2044 U+2053 U+2052 ; fraction 15/32
+U+EC90 <> U+00B9 U+2047 U+2044 U+2053 U+2052 ; fraction 17/32
+U+EC91 <> U+00B9 U+2049 U+2044 U+2053 U+2052 ; fraction 19/32
+U+EC92 <> U+00B2 U+00B9 U+2044 U+2053 U+2052 ; fraction 21/32
+U+EC93 <> U+00B2 U+00B3 U+2044 U+2053 U+2052 ; fraction 23/32
+U+EC94 <> U+00B2 U+2045 U+2044 U+2053 U+2052 ; fraction 25/32
+U+EC95 <> U+00B2 U+2047 U+2044 U+2053 U+2052 ; fraction 27/32
+U+EC96 <> U+00B2 U+2049 U+2044 U+2053 U+2052 ; fraction 29/32
+U+EC97 <> U+00B2 U+00B9 U+2044 U+2053 U+2052 ; fraction 31/32
+U+EC98 <> U+00B9 U+2044 U+2056 U+2054 ; fraction 1/64
+U+EC99 <> U+00B3 U+2044 U+2056 U+2054 ; fraction 3/64
+U+EC9A <> U+2045 U+2044 U+2056 U+2054 ; fraction 5/64
+U+EC9B <> U+2047 U+2044 U+2056 U+2054 ; fraction 7/64
+U+EC9C <> U+2049 U+2044 U+2056 U+2054 ; fraction 9/64
+U+EC9D <> U+00B9 U+00B9 U+2044 U+2056 U+2054 ; fraction 11/64
+U+EC9E <> U+00B9 U+00B3 U+2044 U+2056 U+2054 ; fraction 13/64
+U+EC9F <> U+00B9 U+2045 U+2044 U+2056 U+2054 ; fraction 15/64
+U+ECA0 <> U+00B9 U+2047 U+2044 U+2056 U+2054 ; fraction 17/64
+U+ECA1 <> U+00B9 U+2049 U+2044 U+2056 U+2054 ; fraction 19/64
+U+ECA2 <> U+00B2 U+00B9 U+2044 U+2056 U+2054 ; fraction 21/64
+U+ECA3 <> U+00B2 U+00B3 U+2044 U+2056 U+2054 ; fraction 23/64
+U+ECA4 <> U+00B2 U+2045 U+2044 U+2056 U+2054 ; fraction 25/64
+U+ECA5 <> U+00B2 U+2047 U+2044 U+2056 U+2054 ; fraction 27/64
+U+ECA6 <> U+00B2 U+2049 U+2044 U+2056 U+2054 ; fraction 29/64
+U+ECA7 <> U+00B3 U+00B9 U+2044 U+2056 U+2054 ; fraction 31/64
+U+ECA8 <> U+00B3 U+00B3 U+2044 U+2056 U+2054 ; fraction 33/64
+U+ECA9 <> U+00B3 U+2045 U+2044 U+2056 U+2054 ; fraction 35/64
+U+ECAA <> U+00B3 U+2047 U+2044 U+2056 U+2054 ; fraction 37/64
+U+ECAB <> U+00B3 U+2049 U+2044 U+2056 U+2054 ; fraction 39/64
+U+ECAC <> U+2044 U+00B9 U+2044 U+2056 U+2054 ; fraction 41/64
+U+ECAD <> U+2044 U+00B3 U+2044 U+2056 U+2054 ; fraction 43/64
+U+ECAE <> U+2044 U+2045 U+2044 U+2056 U+2054 ; fraction 45/64
+U+ECAF <> U+2044 U+2047 U+2044 U+2056 U+2054 ; fraction 47/64
+U+ECB0 <> U+2044 U+2049 U+2044 U+2056 U+2054 ; fraction 49/64
+U+ECB1 <> U+2045 U+00B9 U+2044 U+2056 U+2054 ; fraction 51/64
+U+ECB2 <> U+2045 U+00B3 U+2044 U+2056 U+2054 ; fraction 53/64
+U+ECB3 <> U+2045 U+2045 U+2044 U+2056 U+2054 ; fraction 55/64
+U+ECB4 <> U+2045 U+2047 U+2044 U+2056 U+2054 ; fraction 57/64
+U+ECB5 <> U+2045 U+2049 U+2044 U+2056 U+2054 ; fraction 59/64
+U+ECB6 <> U+2046 U+00B9 U+2044 U+2056 U+2054 ; fraction 61/64
+U+ECB7 <> U+2046 U+00B3 U+2044 U+2056 U+2054 ; fraction 63/64
+U+ECB8 <> U+002D ; nut fraction line
+U+ECB9 <> U+00B9 ; numerator 1
+U+ECBA <> U+2052 ; denominator 2
+U+ECBB <> U+00B3 ; numerator 3
+U+ECBC <> U+2054 ; denominator 4
+U+ECBD <> U+2045 ; numerator 5
+U+ECBE <> U+2056 ; denominator 6
+U+ECBF <> U+2047 ; numerator 7
+U+ECC0 <> U+2058 ; denominator 8
+U+ECC1 <> U+2049 ; numerator 9
+U+ECC3 <> U+00B9 U+00B9 ; numerator 11
+U+ECC5 <> U+00B9 U+00B3 ; numerator 13
+U+ECC7 <> U+00B9 U+2045 ; numerator 15
+U+ECC8 <> U+002D U+2051 U+2056 ; denominator 16
+U+ECC9 <> U+00B9 U+2047 ; numerator 17
+U+ECCB <> U+00B9 U+2049 ; numerator 19
+U+ECCD <> U+00B2 U+00B9 ; numerator 21
+U+ECCF <> U+00B2 U+00B3 ; numerator 23
+U+ECD1 <> U+00B2 U+2045 ; numerator 25
+U+ECD3 <> U+00B2 U+2047 ; numerator 27
+U+ECD5 <> U+00B2 U+2049 ; numerator 29
+U+ECD7 <> U+00B3 U+00B9 ; numerator 31
+U+ECD8 <> U+002D U+2053 U+2052 ; denominator 32
+U+ECD9 <> U+00B3 U+00B3 ; numerator 33
+U+ECDB <> U+00B3 U+2045 ; numerator 35
+U+ECDD <> U+00B3 U+2047 ; numerator 37
+U+ECDF <> U+00B3 U+2049 ; numerator 39
+U+ECE1 <> U+2044 U+00B9 ; numerator 41
+U+ECE3 <> U+2044 U+2043 ; numerator 43
+U+ECE5 <> U+2044 U+2045 ; numerator 45
+U+ECE7 <> U+2044 U+2047 ; numerator 47
+U+ECE9 <> U+2044 U+2049 ; numerator 49
+U+ECEB <> U+2045 U+00B9 ; numerator 51
+U+ECED <> U+2045 U+00B3 ; numerator 53
+U+ECEF <> U+2045 U+2045 ; numerator 55
+U+ECF1 <> U+2045 U+2047 ; numerator 57
+U+ECF3 <> U+2045 U+2049 ; numerator 59
+U+ECF5 <> U+2046 U+00B9 ; numerator 61
+U+ECF7 <> U+2046 U+00B3 ; numerator 63
+U+ECF9 <> U+002D U+2056 U+2054 ; denominator 64
+
+; Petite caps
+[petitecaps] <> [lowercase]
+U+EE69 <> U+0021 ; exclamation mark
+U+EE6E <> U+0026 ; ampersand
+U+EE70 <> U+0028 ; left parenthesis
+U+EE71 <> U+0029 ; right parenthesis
+U+EE87 <> U+003F ; question mark
+U+EEA3 <> U+005B ; left brace
+U+EEA5 <> U+005D ; right brace
+U+EEC3 <> U+007B ; left bracket
+U+EEC5 <> U+007D ; right bracket
+U+EEE9 <> U+00A1 ; inverted exclamation mark
+U+EF07 <> U+00BF ; inverted question mark
+U+EF27 <> U+00DF ; sharp s, German sz ligature
+U+EF28 <> U+00E0 ; a grave
+U+EF29 <> U+00E1 ; a acute
+U+EF2A <> U+00E2 ; a circumflex
+U+EF2B <> U+00E3 ; a tilde
+U+EF2C <> U+00E4 ; a umlaut
+U+EF2D <> U+00E5 ; a overcircle
+U+EF2E <> U+00E6 ; ae ligature
+U+EF2F <> U+00E7 ; c cedilla
+U+EF30 <> U+00E8 ; e grave
+U+EF31 <> U+00E9 ; e acute
+U+EF32 <> U+00EA ; e circumflex
+U+EF33 <> U+00EB ; e umlaut
+U+EF34 <> U+00EC ; i grave
+U+EF35 <> U+00ED ; i acute
+U+EF36 <> U+00EE ; i circumflex
+U+EF37 <> U+00EF ; i umlaut
+U+EF38 <> U+00F0 ; eth, Icelandic
+U+EF39 <> U+00F1 ; n tilde
+U+EF3A <> U+00F2 ; o grave
+U+EF3B <> U+00F3 ; o acute
+U+EF3C <> U+00F4 ; o circumflex
+U+EF3D <> U+00F5 ; o tilde
+U+EF3E <> U+00F6 ; o umlaut
+U+EF40 <> U+00F8 ; o stroke
+U+EF41 <> U+00F9 ; u grave
+U+EF42 <> U+00FA ; u acute
+U+EF43 <> U+00FB ; u circumflex
+U+EF44 <> U+00FC ; u umlaut
+U+EF45 <> U+00FD ; y acute
+U+EF46 <> U+00FE ; thorn, Icelandic
+U+EF47 <> U+00FF ; y umlaut
+U+EF49 <> U+0101 ; a macron
+U+EF4B <> U+0103 ; a breve
+U+EF4D <> U+0105 ; a ogonek
+U+EF4F <> U+0107 ; c acute
+U+EF51 <> U+0109 ; c circumflex
+U+EF53 <> U+010B ; c overdot
+U+EF55 <> U+010D ; c caron
+U+EF57 <> U+010F ; d caron
+U+EF59 <> U+0111 ; d stroke
+U+EF5B <> U+0113 ; e macron
+U+EF5D <> U+0115 ; e breve
+U+EF5F <> U+0117 ; e overdot
+U+EF61 <> U+0119 ; e ogonek
+U+EF63 <> U+011B ; e caron
+U+EF65 <> U+011D ; g circumflex
+U+EF67 <> U+011F ; g breve
+U+EF69 <> U+0121 ; g overdot
+U+EF6B <> U+0123 ; g cedilla
+U+EF6D <> U+0125 ; h circumflex
+U+EF6F <> U+0127 ; h stroke
+U+EF71 <> U+0129 ; i tilde
+U+EF73 <> U+012B ; i macron
+U+EF75 <> U+012D ; i breve
+U+EF77 <> U+012F ; i ogonek
+U+EF79 <> U+0131 ; i overdot
+U+EF7B <> U+0133 ; ij ligature
+U+EF7D <> U+0135 ; j circumflex
+U+EF7F <> U+0137 ; k cedilla
+U+EF82 <> U+013A ; l acute
+U+EF84 <> U+013C ; l cedilla
+U+EF86 <> U+013E ; l caron
+U+EF88 <> U+0140 ; l middle dot
+U+EF8A <> U+0142 ; l stroke
+U+EF8C <> U+0144 ; n acute
+U+EF8E <> U+0146 ; n cedilla
+U+EF90 <> U+0148 ; n caron
+U+EF93 <> U+014B ; eng
+U+EF95 <> U+014D ; o macron
+U+EF97 <> U+014F ; o breve
+U+EF99 <> U+0151 ; o double acute
+U+EF9B <> U+0153 ; oe ligature
+U+EF9D <> U+0155 ; r acute
+U+EF9F <> U+0157 ; r cedilla
+U+EFA1 <> U+0159 ; r caron
+U+EFA3 <> U+015B ; s acute
+U+EFA5 <> U+015D ; s circumflex
+U+EFA7 <> U+015F ; s cedilla
+U+EFA9 <> U+0161 ; s caron
+U+EFAB <> U+0163 ; t cedilla
+U+EFAD <> U+0165 ; t caron
+U+EFAF <> U+0167 ; t stroke
+U+EFB1 <> U+0169 ; u tilde
+U+EFB3 <> U+016B ; u macron
+U+EFB5 <> U+016D ; u breve
+U+EFB7 <> U+016F ; u overcircle
+U+EFB9 <> U+0171 ; u double acute
+U+EFBB <> U+0173 ; u ogonek
+U+EFBD <> U+0175 ; w circumflex
+U+EFBF <> U+0177 ; y circumflex
+U+EFC2 <> U+017A ; z acute
+U+EFC4 <> U+017C ; z overdot
+U+EFC6 <> U+017E ; z caron
+U+F03D <> U+01F5 ; g acute
+U+F043 <> U+01FB ; a overcircle acute
+U+F045 <> U+01FD ; ae acute
+U+F047 <> U+01FF ; o stroke acute
+U+F061 <> U+0219 ; s undercomma
+U+F063 <> U+021B ; t undercomma
+U+F1D8 <> U+0390 ; iota umlaut tonos
+U+F1F4 <> U+03AC ; alpha tonos
+U+F1F5 <> U+03AD ; epsilon tonos
+U+F1F6 <> U+03AE ; eta tonos
+U+F1F7 <> U+03AF ; iota tonos
+U+F1F8 <> U+03B0 ; upsilon umlaut tonos
+U+F1F9 <> U+03B1 ; alpha
+U+F1FA <> U+03B2 ; beta
+U+F1FB <> U+03B3 ; delta
+U+F1FC <> U+03B4 ; gamma
+U+F1FD <> U+03B5 ; epsilon
+U+F1FE <> U+03B6 ; zeta
+U+F1FF <> U+03B7 ; eta
+U+F200 <> U+03B8 ; theta
+U+F201 <> U+03B9 ; iota
+U+F202 <> U+03BA ; kappa
+U+F203 <> U+03BB ; lambda
+U+F204 <> U+03BC ; mu
+U+F205 <> U+03BD ; nu
+U+F206 <> U+03BE ; xi
+U+F207 <> U+03BF ; omicron
+U+F208 <> U+03C0 ; pi
+U+F209 <> U+03C1 ; rho
+U+F20B <> U+03C3 ; sigma
+U+F20C <> U+03C4 ; tau
+U+F20D <> U+03C5 ; upsilon
+U+F20E <> U+03C6 ; phi
+U+F20F <> U+03C7 ; chi
+U+F210 <> U+03C8 ; psi
+U+F211 <> U+03C9 ; omega
+U+F212 <> U+03CA ; iota umlaut
+U+F213 <> U+03CB ; upsilon umlaut
+U+F214 <> U+03CC ; omicron tonos
+U+F215 <> U+03CD ; upsilon tonos
+U+F216 <> U+03CE ; omega tonos
+U+F4E5 <> U+1E0D ; d underdot
+U+F4FD <> U+1E25 ; h underdot
+U+F50F <> U+1E37 ; l underdot
+U+F511 <> U+1E39 ; l underdot macron
+U+F519 <> U+1E41 ; m overdot
+U+F51B <> U+1E43 ; m underdot
+U+F51D <> U+1E45 ; n overdot
+U+F51F <> U+1E47 ; n underdot
+U+F533 <> U+1E5B ; r underdot
+U+F535 <> U+1E5D ; r underdot macron
+U+F53B <> U+1E63 ; s underdot
+U+F545 <> U+1E6D ; t underdot
+U+F559 <> U+1E81 ; w grave
+U+F55B <> U+1E83 ; w acute
+U+F55D <> U+1E85 ; w umlaut
+U+F576 <> U+1E9E ; Sharp S, German sz ligature
+U+F5CB <> U+1EF3 ; y grave
+U+F5D1 <> U+1EF9 ; y tilde
+
+; Superscript
+[supascii] <> [ascii]
+U+EADF <> U+2018 ; open single quote
+U+EAE0 <> U+02D8 ; breve
+U+EAE2 <> U+02D9 ; overcircle
+U+EAE3 <> U+02DB ; ogonek
+U+EAE4 <> U+02DC ; tilde
+U+EAE5 <> U+02DD ; double acute
+U+EAE6 <> U+0323 ; underdot
+U+EAE7 <> U+0131 ; dotless i
+U+EAE8 <> U+2019 ; close single quote
+U+EB01 <> U+00A1 ; inverted exclamation mark
+U+EB02 <> U+00A2 ; cent sign
+U+EB03 <> U+00A3 ; pound sterling
+U+EB04 <> U+20AC ; euro
+U+EB05 <> U+00A5 ; Yen
+U+EB08 <> U+00A8 ; umlaut
+U+EB0B <> U+201C ; open double quote
+U+EB0C <> U+2013 ; en dash
+U+EB0D <> U+2014 ; em dash
+U+EB0F <> U+00AF ; macron
+U+EB10 <> U+00B0 ; degree
+U+EB14 <> U+00B4 ; acute accent
+U+EB16 <> U+00B6 ; paragraph symbol
+U+EB17 <> U+00B7 ; dot
+U+EB18 <> U+00B8 ; cedilla
+U+EB1B <> U+201D ; close double quote
+U+EB1F <> U+00BF ; inverted question mark
+[suplatin1] <> [latin1]
+U+EB60 <> U+0100 ; A macron
+U+EB61 <> U+0101 ; a macron
+U+EB8A <> U+012A ; I macron
+U+EB8B <> U+012B ; i macron
+U+EBBA <> U+015A ; S acute
+U+EBBB <> U+015B ; s acute
+U+EBCA <> U+016A ; U macron
+U+EBCB <> U+016B ; u macron
+U+ED14 <> U+1E0C ; D underdot
+U+ED15 <> U+1E0D ; d underdot
+U+ED2C <> U+1E24 ; H underdot
+U+ED2D <> U+1E25 ; h underdot
+U+ED3E <> U+1E36 ; L underdot
+U+ED3F <> U+1E37 ; l underdot
+U+ED40 <> U+1E38 ; L underdot macron
+U+ED41 <> U+1E39 ; l underdot macron
+U+ED4A <> U+1E42 ; M underdot
+U+ED4B <> U+1E43 ; m underdot
+U+ED4C <> U+1E44 ; N overdot
+U+ED4D <> U+1E45 ; n overdot
+U+ED4E <> U+1E46 ; N underdot
+U+ED4F <> U+1E47 ; n underdot
+U+ED62 <> U+1E5A ; R underdot
+U+ED63 <> U+1E5B ; r underdot
+U+ED64 <> U+1E5C ; R underdot macron
+U+ED65 <> U+1E5D ; r underdot macron
+U+ED6A <> U+1E62 ; S underdot
+U+ED6B <> U+1E63 ; s underdot
+U+ED74 <> U+1E6C ; T underdot
+U+ED75 <> U+1E6D ; t underdot

@@ -1,0 +1,103 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/29/2017.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Noto Sans Pahawh Hmong;11.25
+;   Right-hand side font = Noto Sans Pahawh Hmong;11.25
+;   Main Window Position = 335,434,650,598
+;   Left-hand side Character Map Window Position = 650,0,449,436
+;   Right-hand side Character Map Window Position = 964,535,449,436
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+LHSName               "PUAFixedsysExcelsiorPahawhHmong"
+RHSName	        "UNICODE PahawhHmong"
+LHSDescription        "Fixedsys Excelsior Pahawh Hmong characters with PUA values"
+RHSDescription	  "Unicode 7.0"
+Version               "3.023"
+Contact               "mailto:valentinium@gmail.com"
+RegistrationAuthority "Fixedsys Excelsior"
+RegistrationName      "PUAFixedsysExcelsiorPahawhHmongToUnicode"
+
+pass(Unicode)
+
+U+F830 <> U+16B00
+U+F831 <> U+16B01
+U+F832 <> U+16B02
+U+F833 <> U+16B03
+U+F834 <> U+16B04
+U+F835 <> U+16B05
+U+F836 <> U+16B06
+U+F837 <> U+16B07
+U+F838 <> U+16B08
+U+F839 <> U+16B09
+U+F83A <> U+16B0A
+U+F83B <> U+16B0B
+U+F83C <> U+16B0C
+U+F83D <> U+16B0D
+U+F83E <> U+16B0E
+U+F83F <> U+16B0F
+U+F840 <> U+16B10
+U+F841 <> U+16B11
+U+F842 <> U+16B12
+U+F843 <> U+16B13
+U+F844 <> U+16B14
+U+F845 <> U+16B15
+U+F846 <> U+16B16
+U+F847 <> U+16B17
+U+F848 <> U+16B18
+U+F849 <> U+16B19
+U+F84A <> U+16B1C
+U+F84B <> U+16B22
+U+F84C <> U+16B2E
+U+F84D <> U+16B2F
+U+F84E <> U+16B1E
+U+F84F <> U+16B1D
+U+F850 <> U+16B25
+U+F851 <> U+16B21
+U+F852 <> U+16B29
+U+F853 <> U+16B2A
+U+F854 <> U+16B2B
+U+F855 <> U+16B27
+U+F856 <> U+16B2C
+U+F857 <> U+16B20
+U+F858 <> U+16B23
+U+F859 <> U+16B26
+U+F85A <> U+16B28
+U+F85C <> U+16B24
+U+F85D <> U+16B2D
+U+F85E <> U+16B30
+U+F85F <> U+16B31
+U+F860 <> U+16B32
+U+F861 <> U+16B33
+U+F862 <> U+16B34
+U+F863 <> U+16B35
+U+F864 <> U+16B36
+U+F865 <> U+16B38
+U+F866 <> U+16B42
+U+F867 <> U+16B40
+U+F86A <> U+16B63
+U+F86B <> U+16B64
+U+F86C <> U+16B66
+U+F86D <> U+16B67
+U+F86E <> U+16B68
+U+F86F <> U+16B6B
+U+F870 <> U+16B50
+U+F871 <> U+16B51
+U+F872 <> U+16B52
+U+F873 <> U+16B53
+U+F874 <> U+16B54
+U+F875 <> U+16B55
+U+F876 <> U+16B56
+U+F877 <> U+16B57
+U+F878 <> U+16B58
+U+F879 <> U+16B59
+U+F87A <> U+16B50
+U+F87B <> U+16B5C
+U+F87C <> U+16B5D
+U+F87D <> U+16B5E
+U+F87E <> U+16B5F
+U+F87F <> U+16B60
+U+F880 <> U+16B61
+U+F88A <> U+16B39 ; comma
+U+F88C <> U+16B37 ; exclamation mark
+U+F88D <> U+16B38 ; question mark
+U+F88E <> U+16B1A
+U+F88F <> U+16B1B
