@@ -1,0 +1,2 @@
+﻿\id Configuration file for Latin-to-Cham transliteration process.
+\ignoreFields id
