@@ -1,0 +1,179 @@
+﻿; This file was created by <author> using TECkitMappingEditorU.exe v5.0.0.0 on 9/6/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Zaghawa Beria;14.25
+;   Right-hand side font = Kedebideri;14
+;   Main Window Position = 64,150,658,713
+;   Left-hand side Character Map Window Position = 1059,3,457,447
+;   Right-hand side Character Map Window Position = 1104,438,457,447
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName            "Beria Erfe"
+DescriptiveName         "Zaghawa Beria custom encoded font for Beria Erfe"
+Version                 "1"
+Contact                 "mailto:lorna_evans@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "Zaghawa Beria <> Unicode"
+Copyright               "© 2024 SIL International. All rights reserved."
+LHSFlags                ()
+RHSFlags                ()
+
+pass(Byte_Unicode)
+
+32     <>  U+0020
+33     <>  U+0021
+34     <>  U+0022
+35     <>  U+0023
+36     <>  U+0024
+37     <>  U+0025
+38     <>  U+0026
+39     <>  U+0027
+40     <>  U+0028
+41     <>  U+0029
+42     <>  U+002A
+43     <>  U+002B
+44     <>  U+002C
+45     <>  U+002D
+46     <>  U+002E
+47     <>  U+002F
+48     <>  U+0030
+49     <>  U+0031
+50     <>  U+0032
+51     <>  U+0033
+52     <>  U+0034
+53     <>  U+0035
+54     <>  U+0036
+55     <>  U+0037
+56     <>  U+0038
+57     <>  U+0039
+58     <>  U+003A
+59     <>  U+003B
+60     <>  U+003C
+61     <>  U+003D
+62     <>  U+003E
+63     <>  U+003F
+64     <>  U+0040
+65     <>  U+16EA0
+66     <>  U+16EA1
+67     <>  U+16EB4
+68     <>  U+16EA2
+69     <>  U+16EA3
+70     <>  U+16EA4
+71     <>  U+16EA5
+72     <>  U+16EA6
+73     <>  U+16EA7
+74     <>  U+16EA8
+75     <>  U+16EA9
+76     <>  U+16EAA
+77     <>  U+16EAB
+78     <>  U+16EAC
+79     <>  U+16EAF
+80     <>  U+16EB0
+81     <>  U+16EB2
+82     <>  U+16EB1
+83     <>  U+16EB3
+84     <>  U+16EB5
+85     <>  U+16EB6
+87     <>  U+16EB7
+88     <>  U+16EAD
+89     <>  U+16EB8
+90     <>  U+16EAE
+91     <>  U+005B
+92     <>  U+005C
+93     <>  U+005D
+95     <>  U+005F
+96     <>  U+0300
+97     <>  U+16EBB
+98     <>  U+16EBC
+99     <>  U+16ECF
+100    <>  U+16EBD
+101    <>  U+16EBE
+102    <>  U+16EBF
+103    <>  U+16EC0
+104    <>  U+16EC1
+105    <>  U+16EC2
+106    <>  U+16EC3
+107    <>  U+16EC4
+108    <>  U+16EC5
+109    <>  U+16EC6
+110    <>  U+16EC7
+111    <>  U+16ECA
+112    <>  U+16ECB
+113    <>  U+16ECD
+114    <>  U+16ECC
+115    <>  U+16ECE
+116    <>  U+16ED0
+117    <>  U+16ED1
+119    <>  U+16ED2
+120    <>  U+16EC8
+121    <>  U+16ED3
+122    <>  U+16EC9
+123    <>  U+007B
+124    <>  U+007C
+125    <>  U+007D
+126    <>  U+007E
+162    <>  U+00A2
+163    <>  U+00A3
+165    <>  U+00A5
+167    <>  U+00A7
+169    <>  U+00A9
+171    <>  U+00AB
+172    <>  U+00AC
+174    <>  U+00AE
+175    <>  U+0304
+176    <>  U+00B0
+177    <>  U+00B1
+180    <>  U+0301
+182    <>  U+00B6
+187    <>  U+00BB
+192    <>  U+16EA0 U+0300
+193    <>  U+16EA0 U+0301
+194    <>  U+16EA0 U+0304
+200    <>  U+16EA3 U+0300
+201    <>  U+16EA3 U+0301
+202    <>  U+16EA3 U+0304
+204    <>  U+16EA7 U+0300
+205    <>  U+16EA7 U+0301
+206    <>  U+16EA7 U+0304
+210    <>  U+16EAF U+0300
+211    <>  U+16EAF U+0301
+212    <>  U+16EAF U+0304
+215    <>  U+00D7
+217    <>  U+16EB6 U+0300
+218    <>  U+16EB6 U+0301
+219    <>  U+16EB6 U+0304
+224    <>  U+16EBB U+0300
+225    <>  U+16EBB U+0301
+226    <>  U+16EBB U+0304
+232    <>  U+16EBE U+0300
+233    <>  U+16EBE U+0301
+234    <>  U+16EBE U+0304
+236    <>  U+16EC2 U+0300
+237    <>  U+16EC2 U+0301
+238    <>  U+16EC2 U+0304
+242    <>  U+16ECA U+0300
+243    <>  U+16ECA U+0301
+244    <>  U+16ECA U+0304
+247    <>  U+00F7
+249    <>  U+16ED1 U+0300
+250    <>  U+16ED1 U+0301
+251    <>  U+16ED1 U+0304
+131    <>  U+0192
+150    <>  U+2013
+151    <>  U+2014
+145    <>  U+2018
+146    <>  U+2019
+130    <>  U+201A
+147    <>  U+201C
+148    <>  U+201D
+132    <>  U+201E
+134    <>  U+2020
+135    <>  U+2021
+149    <>  U+2022
+133    <>  U+2026
+137    <>  U+2030
+139    <>  U+2039
+155    <>  U+203A
+128    <>  U+20AC
+153    <>  U+2122
+
