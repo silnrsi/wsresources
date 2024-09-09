@@ -1,5 +1,5 @@
-This is a TECKit mapping file: Devanagari to Kirat Rai (using provisional Kirat Rai Unicode codepoints)
+This is a TECKit mapping file: Devanagari to Kirat Rai
 
-It converts text from the Bantawa Devanagari script orthography to the provisional Unicode codepoints for Kirat Rai.
+It converts text from the Bantawa Devanagari script orthography to the Unicode 16.0 codepoints for Kirat Rai.
 
 
