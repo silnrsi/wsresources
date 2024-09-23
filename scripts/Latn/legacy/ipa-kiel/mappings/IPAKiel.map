@@ -1,0 +1,270 @@
+﻿; This file was created by <author> using TECkitMappingEditorU.exe v5.0.0.0 on 9/23/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = IPAKiel;16.25
+;   Right-hand side font = Charis SIL;15.75
+;   Main Window Position = 0,0,762,967
+;   Left-hand side Character Map Window Position = 825,5,457,447
+;   Right-hand side Character Map Window Position = 799,457,839,447
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName            "IPAKiel"
+DescriptiveName         "IPAKiel encoding"
+Version                 "1"
+Contact                 "mailto:lorna_evans@sil.org"
+RegistrationAuthority   "SIL Global"
+RegistrationName        "IPAKiel to Unicode"
+Copyright               "© 2024 SIL Global. All rights reserved."
+
+RHSFlags				(ExpectsNFD)
+
+pass(Byte_Unicode)
+
+
+ByteClass [CTL] = (   0x00 .. 0x1f   )
+UniClass  [CTL] = ( U+0000 .. U+001f )
+[CTL]	<>	[CTL]
+
+0x20	<>	U+0020	; space  --  space
+0x21	<>	U+0301
+0x22	<>	U+030D
+0x23	<>	U+030C
+0x24	<>	U+0302
+0x25	<>	U+1DC4
+0x26	<>	U+1DC8
+0x27	<>	U+02BC
+0x28	<>	U+030A
+0x29	<>	U+0303
+0x2A	<>	U+0306
+0x2B	<>	U+033D
+0x2C	<>	U+002C
+0x2D	<>	U+002D
+0x2E	<>	U+002E
+0x2F	<>	U+0294 ; glottal
+
+0x30	<>	U+0330
+0x31	<>	U+032a
+0x32	<>	U+0331
+0x33	<>	U+032c
+0x34	<>	U+033b
+0x35	<>	U+0318
+0x36	<>	U+031d
+0x37	<>	U+0339
+0x38	<>	U+032f
+0x39	<>	U+0325
+0x3A	<>	U+026B
+0x3B	<>	U+003b
+0x3C	<>	U+01C3
+0x3D	<>	U+0273
+0x3E	<>	U+0298
+0x3F	<>	U+0295
+0x40	<>	U+0331
+0x41	<>	U+0251
+0x42	<>	U+03b2
+0x43	<>	U+0188
+0x44	<>	U+00f0
+0x45	<>	U+025b
+0x46	<>	U+0278
+0x47	<>	U+0262
+0x48	<>	U+0266
+0x49	<>	U+026a
+0x4A	<>	U+029d
+0x4B	<>	U+029f
+0x4C	<>	U+026e
+; 0x4D	<>	U+ left stem m
+0x4E	<>	U+014b
+0x4F	<>	U+0254
+0x50	<>	U+00F8
+0x51	<>	U+02A0
+0x52	<>	U+0280
+0x53	<>	U+0283
+0x54	<>	U+03B8
+0x55	<>	U+028a
+0x56	<>	U+0263
+0x57	<>	U+02b7
+0x58	<>	U+03C7
+0x59	<>	U+028F
+0x5A	<>	U+0292
+0x5B	<>	U+005B
+0x5C	<>	U+005C
+0x5D	<>	U+005D
+0x5E	<>	U+1DC7
+0x5F	<>	U+030B
+0x60	<>	U+0329
+0x61	<>	U+0061
+0x62	<>	U+0062
+0x63	<>	U+0063
+0x64	<>	U+0064
+0x65	<>	U+0065
+0x66	<>	U+0066
+0x67	<>	U+0261
+0x68	<>	U+0068
+0x69	<>	U+0069
+0x6A	<>	U+006a
+0x6B	<>	U+006b
+0x6C	<>	U+006C
+0x6D	<>	U+006D
+0x6E	<>	U+006E
+0x6F	<>	U+006F
+0x70	<>	U+0070
+0x71	<>	U+0071
+0x72	<>	U+0072
+0x73	<>	U+0073
+0x74	<>	U+0074
+0x75	<>	U+0075
+0x76	<>	U+0076
+0x77	<>	U+0077
+0x78	<>	U+0078
+0x79	<>	U+0079
+0x7A	<>	U+007A
+0x7B	<>	U+0153
+0x7C	<>	U+027e
+0x7D	<>	U+031A
+0x7E	<>	U+0300
+;0x7F	<>	nada
+0x80	<>	U+02E7 U+02E9 U+02E6 ; chao not sure
+0x81	<>	U+0252
+0x82	<>	U+0255
+0x83	<>	U+1DA6
+0x84	<>	U+01C1
+0x85	<>	U+028d
+0x86	<>	U+02D0
+0x87	<>	U+02b4
+0x88	<>	U+02b5
+0x89	<>	U+02E5
+0x8A	<>	U+02E9 U+02E5
+0x8B	<>	U+2197
+0x8C	<>	U+0250
+0x8D	<>	U+00e7
+0x8E	<>	U+02b6
+0x8F	<>	U+003D
+0x90	<>	U+02E6 ; chao
+0x91	<>	U+02E5 U+02E9
+0x92	<>	U+2071
+0x93	<>	U+0269	
+0x94	<>	U+02E7
+0x95	<>	U+02E9 U+02E7
+0x96	<>	U+01C0
+0x97	<>	U+1DB7
+0x98	<>	U+0277
+0x99	<>	U+02E8
+0x9A	<>	U+02E7 U+02E9
+0x9B	<>	U+A71B
+0x9C	<>	U+1D58
+0x9D	<>	U+007E
+0x9E	<>	U+02E9 ; chao
+0x9F	<>	U+02E7 U+02E5
+0xA0	<>	U+00A0	
+0xA1	<>	U+0361	
+0xA2	<>	U+0323
+0xA3	<>	U+033C
+0xA4	<>	U+031E
+0xA5	<>	U+035C
+0xA6	<>	U+031C
+0xA7	<>	U+0282
+0xA8	<>	U+0279
+0xA9	<>	U+0127
+0xAA	<>	U+031F
+0xAB	<>	U+0259
+0xAC	<>	U+026f
+0xAD	<>	U+0272
+0xAE	<>	U+0329
+0xAF	<>	U+0264
+0xB0	<>	U+0319
+0x45 0xB1	<>	U+025D	
+0xAB 0xB1	<>	U+025A
+; 0xB1	<>	rhotic hook	
+0xB2	<>	U+01C1
+0xB3	<>	U+02e4
+0xB4	<>	U+028e
+0xB5	<>	U+0271
+0xB6	<>	U+00B6	
+0xB7	<>	U+00B7	
+0xB8	<>	U+0275
+0xB9	<>	U+01A5
+0xBA	<>	U+0253
+0xBB	<>     U+0324
+0xBC	<>	U+2205 ; nul?
+0xBD	<>	U+0290
+0xBE	<>	U+02BB
+0xBF	<>	U+028c
+0xC0	<>	U+02A2
+0xC1	<>	U+033A
+0xC2	<>	U+02e1
+0xC3	<>	U+028b
+0xC4	<>	U+0260
+0xC5	<>	U+203F	
+0xC6	<>	U+02b2
+0xC7	<>	U+027d
+0xC8	<>	U+027a
+0xC9	<>	U+02D0
+0xCA	<>	U+1DF09
+0xCB	<>	U+002B
+0xCC	<>	U+2198
+0xCD	<>	U+A71C
+0xCE	<>	U+003F
+0xCF	<>	U+00e6
+0xD0	<>	U+0274
+0xD1	<>	U+030F
+0xD2	<>	U+0028
+0xD3	<>	U+0276
+0xD4	<>	U+0029
+0xD5	<>	U+027b
+0xD6	<>	U+02a1
+0xD7	<>	U+02e0
+0xD8	<>	U+02E6 U+02E7
+0xD9	<>	U+0300
+0xDA	<>	U+0301	
+0xDB	<>	U+0304	
+0xDC	<>	U+030C	
+0xDD	<>	U+0302	
+0xDE	<>	U+1DC5	
+0xDF	<>	U+1DC6	
+0xE0	<>	U+1DC9	
+0xE1	<>	U+0308
+0x6C 0xE2 <>	U+026B ; l tilde
+0x62 0xE2 <>	U+1D6C ; b tilde
+0x64 0xE2 <>	U+1D6D ; d tilde
+0x66 0xE2 <>	U+1D6E ; f tilde
+0x6d 0xE2 <>	U+1D6F ; m tilde
+0x6e 0xE2 <>	U+1D70 ; n tilde
+0x70 0xE2 <>	U+1D71 ; p tilde
+0x72 0xE2 <>	U+1D72 ; r tilde
+0x7c 0xE2 <>	U+1D73 ; R WITH FISHHOOK AND MIDDLE 
+0x73 0xE2 <>	U+1D74 ; s tilde
+0x74 0xE2 <>	U+1D75 ; t tilde
+0x7A 0xE2 <>	U+1D76 ; z tilde
+0xa8 0xE2 <>	U+AB68 ; TURNED R WITH MIDDLE TILDE
+
+; 0xE2	<>	U+0334	; tilde overlay? context?
+0xE3	<>	U+025a
+0xE4	<>	U+025c
+0xE5	<>	U+0281
+0xE6	<>	U+0288
+0xE7	<>	U+0265
+0xE8	<>	U+0289
+0xE9	<>	U+0268
+0xEA	<>	U+A727
+0xEB	<>	U+0257
+0xEC	<>	U+029b
+0xED	<>	U+029C
+0xEE	<>	U+02b0
+0xEF	<>	U+025F
+0xF0	<>	U+026d
+0xF1	<>	U+026c
+0xF2	<>	U+02D1
+0xF3	<>	U+0291
+0xF4	<>	U+002A	
+0xF5	<>	U+0299
+0xF6	<>	U+207F
+0xF7	<>	U+0270
+0xF8	<>	U+01C2
+0xF9	<>	U+01c0
+0xFA	<>	U+0284
+0xFB	<>	U+0199
+; 0xFC	<>	U+ dotless i context
+; 0xFD	<>	U+ dotless barred i context
+; 0xFE	<>	U+
+0xFF	<>	U+0256
+
+
