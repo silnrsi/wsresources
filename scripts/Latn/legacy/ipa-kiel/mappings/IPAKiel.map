@@ -10,7 +10,7 @@
 
 EncodingName            "IPAKiel"
 DescriptiveName         "IPAKiel encoding"
-Version                 "1"
+Version                 "1.1"
 Contact                 "mailto:lorna_evans@sil.org"
 RegistrationAuthority   "SIL Global"
 RegistrationName        "IPAKiel to Unicode"
@@ -71,7 +71,7 @@ UniClass  [CTL] = ( U+0000 .. U+001f )
 0x4A	<>	U+029d
 0x4B	<>	U+029f
 0x4C	<>	U+026e
-; 0x4D	<>	U+ left stem m
+0x4D	<>	U+006D U+0325 ; left stem m is not in Unicode. This is the equivalent.
 0x4E	<>	U+014b
 0x4F	<>	U+0254
 0x50	<>	U+00F8
