@@ -1,6 +1,18 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 9/26/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Microsoft Sans Serif;11.25
+;   Right-hand side font = Charis SIL;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
 EncodingName            "SIL-TBB-1996"
 DescriptiveName         "SIL Togo-Benin branch standard font encoding"
-Version                 "4"
+Version                 "4.1"
 Contact                 "mailto:david_rowe@sil.org"
 RegistrationAuthority   "SIL International"
 RegistrationName        "SIL-TBB-2011"
@@ -14,7 +26,7 @@ RegistrationName        "SIL-TBB-2011"
 ; 4 -- 17 May 2011 -- correction for upper and lower case ezh (curly z)
 ; 			upper case curly Z: Tbb: 0xbd Unicode: U+01B7
 ; 			lower case curly z: Tbb: 0xba Unicode: U+0292
-
+; 4.1 -- 26 Sep 2024 -- correction to implosive H
 
 ; NOTE: This table assumes Fully Decomposed Unicode input!
 ; Unicode -- the "right-hand side" of the mapping -- expects
@@ -218,7 +230,7 @@ UniClass  [First128] = ( U+0000 .. U+007f )
 0x84 0xc1 	<>	U+0194 U+0301	; gamma uc acute
 0x85 0xc9 	<>	U+0263 U+0301	; gamma acute
 0xae 	<>	U+0266	; h implosive
-0xaa 	<>	U+0124	; H implosive [Unicode mapping is H circumflex]
+0xaa 	<>	U+A7AA	; H implosive
 0x49 0xe0 	<>	U+0049 U+0300	; I grave
 0x9c 0xe8 	<>	U+0069 U+0300	; i grave
 0x49 0xe6 	<>	U+0049 U+0304	; I mid
