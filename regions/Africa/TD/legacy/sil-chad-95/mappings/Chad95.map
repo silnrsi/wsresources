@@ -1,6 +1,18 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 9/27/2024.
+;   Conversion Type = Legacy_to_Unicode
+;   Left-hand side font = Chad95;11.25
+;   Right-hand side font = Microsoft Sans Serif;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 1D80-1DFF
+
 EncodingName "SIL-Chad95-encoding"
 DescriptiveName "SIL Chad95 font character encoding"
-Version                 "1.0"
+Version                 "1.1"
 Contact                 "mailto:computer_support_chad@sil.org"
 RegistrationAuthority   "SIL Chad"
 RegistrationName        "Chad95 encoding 1.0"
@@ -63,9 +75,9 @@ UniClass [ascii] = ( 0..33 35..63 65..95 97..128 141..144 157..158 164 183 )
 176	<>	U+0327
 177	<>	U+0268 U+0301
 178	<>	U+0268 U+0300
-179	<>	U+F172
-180	<>	U+F171
-181	<>	U+F173
+179	<>	U+1DC5 ; U+F172
+180	<>	U+1DC4 ; U+F171
+181	<>	U+1DC6 ; U+F173
 182	<>	U+00b6
 ;
 184	<>	U+0253
@@ -82,7 +94,7 @@ UniClass [ascii] = ( 0..33 35..63 65..95 97..128 141..144 157..158 164 183 )
 195	<>	U+0281
 196	<>	U+0127
 197	<>	U+0295
-198	<>	U+0266 ; capital hook H isn't in Unicode
+198	<>	U+A7AA ; U+0266 ; capital hook H wasn't in Unicode
 199	<>	U+00c7
 200	<>	U+0272
 201	<>	U+014b
@@ -99,7 +111,7 @@ UniClass [ascii] = ( 0..33 35..63 65..95 97..128 141..144 157..158 164 183 )
 212	<>	U+0268
 213	<>	U+0259
 214	<>	U+028C
-215	<>	U+F174
+215	<>	U+1DC7 ; U+F174
 216	<>	U+028A
 217	<>	U+0254
 218	<>	U+026F

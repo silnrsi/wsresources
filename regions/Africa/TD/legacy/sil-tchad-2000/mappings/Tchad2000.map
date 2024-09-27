@@ -1,6 +1,18 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 9/27/2024.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Tchad 2000 SILDoulosL;11.25
+;   Right-hand side font = Charis SIL;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,782,787
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 1D80-1DFF
+
 EncodingName "SIL-Tchad2000-encoding"
 DescriptiveName "SIL Tchad 2000 font character encoding"
-Version                 "1.0"
+Version                 "1.1"
 Contact                 "mailto:computer_support_chad@sil.org"
 RegistrationAuthority   "SIL Chad"
 RegistrationName        "Tchad 2000 encoding 1.0"
@@ -19,13 +31,13 @@ UniClass [ascii] = ( 0..127 )
 135	<>	U+030C
 136	<>	U+0329
 137	<>	U+0304
-138	<>	U+01b3		;  hook on other side
+138	<>	U+01b3	;  Y hook on other side is a variant
 139	<>	U+2039
 140	<>	U+0152
-141	<>	U+F173
-142	<>	U+F171
-143	<>	U+F172
-144	<>	U+F174
+141	<>	U+1DC6 ; U+F173 ??
+142	<>	U+1DC4 ; U+F171 ??
+143	<>	U+1DC5 ; U+F172 ??
+144	<>	U+1DC7 ; U+F174 ??
 145	<>	U+2018
 146	<>	U+2019
 147	<>	U+201c
@@ -128,7 +140,7 @@ UniClass [ascii] = ( 0..127 )
 244	<>	U+00f4
 245	<>	U+0266
 246	<>	U+00f6
-247	<>	U+0266 ; capital hook H isn't in Unicode
+247	<>	U+A7AA ; U+0266 ; capital hook H wasn't in Unicode
 248	<>	U+0308
 249	<>	U+00f9
 250	<>	U+00fa
