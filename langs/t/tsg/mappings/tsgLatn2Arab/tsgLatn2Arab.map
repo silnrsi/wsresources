@@ -1,0 +1,218 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 5/7/2024.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Charis SIL;11.25
+;   Right-hand side font = Scheherazade New;11.25
+;   Main Window Position = 208,82,877,877
+;   Left-hand side Character Map Window Position = 1080,40,457,447
+;   Right-hand side Character Map Window Position = 1154,484,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 1D80-1DFF
+
+; Tausug Roman (legacy) to Arabic (Unicode) script transliteration
+; JK - 2005-09-21
+
+EncodingName            "Tausug-latn2arab.map"
+LHSName                 "Tausug-Roman"
+RHSName                 "Tausug-Arabic"
+LHSDescription          "Tausug Roman script encoding"
+RHSDescription          "Tausug Arabic script encoding"
+Version                 "0.5.1"
+Contact                 "mailto:wstech@sil.org"
+RegistrationAuthority   "Wycliffe Bible Translators"
+RegistrationName        "Tausug Roman to Arabic conversion"
+Copyright               "© Wycliffe Bible Translators"
+
+; non-ASCII codes in the legacy encoding:
+; 88	glottal
+; C3	A-macron
+; D0	I-macron
+; DD	U-macron
+; E3	a-macron
+; FD	u-macron
+; FF	i-macron
+
+; in Jonah:
+; 8B	a-macron
+; CC	A-macron
+; _		u-macron
+; D8	i-macron
+
+; in Pent:
+; 96	ng
+; 84	NG
+
+
+; ===========================================
+
+; pass 1 lower-case everything to simplify the following conversion stages
+pass(Unicode)
+
+Class[lc] = ('a'..'z' U+0101 U+012b U+016b )
+Class[uc] = ('A'..'Z' U+0100 U+012a U+016a )
+Class[d] = ('0'..'9')
+
+; Not sure what the Pratext files use
+; '<N>'	<>	'<S>'	; no-break space
+; '<I>'	<>	'<M>'	; emphasis
+; '<R>'	<>	'<R>'	; regular
+; '<P' / _ [d]	<>	'<P' / _ [d]
+
+[uc]	 >	[lc]
+
+; ===========================================
+; pass 2 change ng to N
+pass(Unicode)
+; preserve sfm files
+
+Class[sfm] = ('a'..'z' '0'..'9')
+('\' [sfm]+)=sfm	<>	@sfm
+
+'ng'	<>	'N'
+
+; ===========================================
+; pass 3 insert shadda for doubled consonants
+pass(Unicode)
+
+Class[sfm] = ('a'..'z' '0'..'9')
+('\' [sfm]+)=sfm	<>	@sfm
+
+'ch'	 >	's$'
+
+'bb'	<>	'b$'
+'dd'	<>	'd$'
+'gg'	<>	'g$'
+'hh'	<>	'h$'
+'jj'	<>	'j$'
+'kk'	<>	'k$'
+'ll'	<>	'l$'
+'mm'	<>	'm$'
+'nn'	<>	'n$'
+'pp'	<>	'p$'
+'rr'	<>	'r$'
+'ss'	<>	's$'
+'tt'	<>	't$'
+'ww'	<>	'w$'
+'yy'	<>	'y$'
+'zz'	<>	'z$'
+'NN'	<>	'N$' ; ng became N
+
+; ===========================================
+; This pass does a lot of contextual stuff
+; pass 4
+pass(Unicode)
+Class[sfm] = ('a'..'z' '0'..'9')
+('\' [sfm]+)=sfm	<>	@sfm
+
+Class[v] = ('a' 'i' 'u' 'A' 'I' 'U')
+Class[c] = ('bdfghjklmnprstwyzN"' U+A78C)
+Class[ltr] = ([v] [c] '$')
+
+; use alef-madde for initial long "a" (for 0622? a macron?) 
+'A' / ^[ltr] _	<>	'+'
+
+; introduce alef before other word-initial vowels
+[v]=v1 / ^[ltr] _	<>	'@' @v1
+
+; introduce glottal between consecutive vowels
+[v]=v1 / [v] _	<>	'"' @v1
+
+; introduce sukun on consonants with following consonant
+([c])=c1 / _ [c]	<>	@c1 '^'
+
+; introduce sukun on final consonants
+([c])=c1 / [ltr] _ ^[ltr]	<>	@c1 '^'
+
+; don't put a sukun in initial "ny"
+('ny')=ny / ^[ltr] _	<> @ny
+
+; ===========================================
+; pass 5 officially this is where it was byte to Unicode
+pass(Unicode)
+; ByteClass[sfm] = ('a'..'z' '0'..'9')
+UniClass[sfm] = (U+0061..U+007A U+0030..U+0039)
+'\' / _ [sfm]	<>	U+005C / _ [sfm]
+[sfm] / '\' [sfm]* _	<>	[sfm] / U+005C [sfm]* _
+
+; ByteClass[ascii] = (0x00 .. 0x7f)
+UniClass[ascii]  = (U+0000 .. U+007f)
+
+UniClass[ab] = ('ab')
+UniClass[dig] = ('0'..'9')
+UniClass[sup] = (U+1D43 U+1D47)
+
+[ab] / [dig] _ <> [sup]
+'@a' / [dig] _ <> U+1D43
+
+'a'	<>	U+064E	; fatha
+'b'	<>	U+0628	; beh
+;'c'	<>	
+'d'	<>	U+062F	; dal
+;'e'	<>	
+;'f'	<>	
+'g'	<>	U+06AC	; kaf with dot above
+'h'	<>	U+0647	; heh
+'i'	<>	U+0650
+'j'	<>	U+062C	; jeem
+'k'	<>	U+0643	; kaf
+'l'	<>	U+0644	; lam
+'m'	<>	U+0645	; meem
+'n'	<>	U+0646	; noon
+;'o'	<>	
+'p'	<>	U+0641	; feh
+;'q'	<>	
+'r'	<>	U+0631	; reh
+'s'	<>	U+0633	; seen
+'t'	<>	U+062A	; teh
+'u'	<>	U+064F	; damma
+;'v'	<>	
+'w'	<>	U+0648	; waw
+;'x'	<>	
+'y'	<>	U+064A	; yeh
+'z'	<>	U+0632	; zain
+
+'"'	<>	U+0639	; ain
+
+U+A78C	<>	U+0639	; ain
+
+'A'	<>	U+064E U+0627	; fatha-alef
+'I'	<>	U+0650 U+064A U+0652	; kasra-yeh-sukun
+'U'	<>	U+064F U+0648 U+0652	; damma-waw-sukun
+
+'Iy'	<>	U+0650 U+064A U+0651	; kasra-yeh-shadda
+
+; codes introduced in Byte passes above
+'+'	<>	U+0622	; alef-madde ; not sure this is necessary
+U+0101	<>	U+0622	; alef-madda (a macron)
+U+012b	<>	U+0627 U+0650 U+064a U+0652 ; (i macron)
+U+016b <>     U+0627 U+064f U+0648 U+0652 ; (u macron)
+'@'	<>	U+0627	; alef
+'N'	<>	U+06A0	; ain with 3 dots above
+'$'	<>	U+0651	; shadda
+'^'	<>	U+0652	; sukun
+
+; comma, semicolon, question have arabic versions
+','	<>	U+060C
+';'	<>	U+061B
+'?'	<>	U+061F
+
+; quotation marks
+U+2018 <> U+2039
+U+2019 <> U+203A
+
+U+201C <> U+00AB
+U+201D <> U+00BB
+
+
+; special codes
+'<S>'	<>	U+00A0
+'<->'	 >	
+'<M>'	<>	U+005C U+0049 U+007B U+007D
+'<R>'	<>	U+005C U+0052 U+007B U+007D
+
+UniClass[d] = ('0'..'9')
+'<P' / _ [d]	<>	U+005C U+0050
+
+; leave remaining ascii punctuation etc untouched
+[ascii]	<>	[ascii]
