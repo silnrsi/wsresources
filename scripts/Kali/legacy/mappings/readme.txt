@@ -1,0 +1,1 @@
+This is a  Teckit mapping table to convert from the legacy Kyebogyi to Unicode Kayah Li script. This converter file can be used with the SIL Converters package. 

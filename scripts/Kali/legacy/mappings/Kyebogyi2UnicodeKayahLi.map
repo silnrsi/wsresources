@@ -1,0 +1,147 @@
+﻿; This file was created by <author> using TECkitMappingEditorU.exe v4.0.0.0 on 11/24/2014.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Kyebogyi;11.25
+;   Right-hand side font = Kyebogyi SIL;11.25
+;   Main Window Position = 361,16,140,440
+;   Left-hand side Character Map Window Position = -1506,4,389,561
+;   Right-hand side Character Map Window Position = -989,0,492,427
+
+EncodingName            "a canonical name that uniquely identifies this mapping table from all others"
+DescriptiveName         "Converts from non-Unicode Kyebogyi to Unicode Kyebogyi SIL"
+Version                 "1"
+Contact                 "compadmin_msea@sil.org"
+RegistrationAuthority   "SIL International"
+RegistrationName        "the name and version of the mapping, as recognized by that authority"
+Copyright               "© 2014 <CompanyName>. All rights reserved."
+LHSFlags                ()
+RHSFlags                ()
+pass(Byte_Unicode)
+
+; type a 'k' in the 'Left-side Sample' box below to see how this works.
+;combining diacritics involving the kayah_li_letter_a.  It seems like these ought to be run through first
+
+; This section breaks down the combined diacritic
+0x65                <>          kayah_li_letter_a kayah_li_vowel_ue
+0x66                <>          kayah_li_letter_a kayah_li_vowel_e
+0x67                <>          kayah_li_letter_a kayah_li_vowel_u
+0x68                <>          kayah_li_letter_a kayah_li_vowel_ee
+0x69                <>          kayah_li_letter_a kayah_li_vowel_o
+
+;This section divides the combining diacritics and adds the bottom diacritic
+0x65 0x70           <>          kayah_li_letter_a kayah_li_vowel_ue kayah_li_tone_calya
+0x65 0x71           <>          kayah_li_letter_a kayah_li_vowel_ue kayah_li_tone_calya_plophu
+0x66 0x70           <>          kayah_li_letter_a kayah_li_vowel_e kayah_li_tone_calya
+0x66 0x71           <>          kayah_li_letter_a kayah_li_vowel_e kayah_li_tone_calya_plophu
+0x67 0x70           <>          kayah_li_letter_a kayah_li_vowel_u kayah_li_tone_calya
+0x67 0x71           <>          kayah_li_letter_a kayah_li_vowel_u kayah_li_tone_calya_plophu
+0x68 0x70           <>          kayah_li_letter_a kayah_li_vowel_ee kayah_li_tone_calya
+0x68 0x71           <>          kayah_li_letter_a kayah_li_vowel_ee kayah_li_tone_calya_plophu
+0x69 0x70           <>          kayah_li_letter_a kayah_li_vowel_o kayah_li_tone_calya
+0x69 0x71           <>          kayah_li_letter_a kayah_li_vowel_o kayah_li_tone_calya_plophu
+
+0x66 0x6F           <>          kayah_li_letter_a kayah_li_vowel_e kayah_li_tone_plophu
+
+
+;Normal conversions
+
+0x41                <>          kayah_li_letter_ka
+0x42                <>          kayah_li_letter_kha
+0x43                <>          kayah_li_letter_ga
+0x44                <>          kayah_li_letter_nga
+0x45                <>          kayah_li_letter_sa
+0x46                <>          kayah_li_letter_sha
+0x47                <>          kayah_li_letter_za
+0x48                <>          kayah_li_letter_nya
+0x49                <>          kayah_li_letter_ta
+0x4A                <>          kayah_li_letter_hta
+0x4B                <>          kayah_li_letter_na
+0x4C                <>          kayah_li_letter_pa
+0x4D                <>          kayah_li_letter_pha
+0x4E                <>          kayah_li_letter_ma
+0x4F                <>          kayah_li_letter_da
+0x50                <>          kayah_li_letter_ba
+0x51                <>          kayah_li_letter_ra
+0x52                <>          kayah_li_letter_ya
+0x53                <>          kayah_li_letter_la
+0x54                <>          kayah_li_letter_wa
+0x55                <>          kayah_li_letter_tha
+0x56                <>          kayah_li_letter_ha
+0x57                <>          kayah_li_letter_va
+0x58                <>          kayah_li_letter_ca
+0x61                <>          kayah_li_letter_a
+0x61 0x70           <>          kayah_li_letter_a   kayah_li_tone_calya  ;
+0x61 0x71           <>          kayah_li_letter_a   kayah_li_tone_calya_plophu
+0x61 0x6C           <>          kayah_li_letter_a kayah_li_vowel_u
+0x61 0x6F           <>          kayah_li_letter_a   kayah_li_tone_plophu
+0x61 0x6A 0x70      <>          kayah_li_letter_a   kayah_li_vowel_ue   kayah_li_tone_calya
+
+0x62                <>          kayah_li_letter_oe
+0x62 0x71           <>          kayah_li_letter_oe  kayah_li_tone_calya_plophu
+0x62 0x70           <>          kayah_li_letter_oe  kayah_li_tone_calya
+
+0x63                <>          kayah_li_letter_i
+0x63 0x6F           <>          kayah_li_letter_i   kayah_li_tone_plophu
+0x63 0x70           <>          kayah_li_letter_i kayah_li_tone_calya
+0x63 0x71           <>          kayah_li_letter_i   kayah_li_tone_calya_plophu
+
+0x64                <>          kayah_li_letter_oo
+0x64 0x70           <>          kayah_li_letter_oo  kayah_li_tone_calya
+0x64 0x71           <>          kayah_li_letter_oo kayah_li_tone_calya_plophu
+
+0x65                <>          kayah_li_letter_a kayah_li_vowel_ue
+0x66                <>          kayah_li_letter_a kayah_li_vowel_e
+0x67                <>          kayah_li_letter_a kayah_li_vowel_u
+0x67 0x70           <>          kayah_li_letter_a   kayah_li_vowel_u    kayah_li_tone_calya
+
+0x68                <>          kayah_li_letter_a kayah_li_vowel_ee
+0x69                <>          kayah_li_letter_a kayah_li_vowel_o
+
+
+
+; Numerals
+0x30            <>              kayah_li_digit_zero
+0x31            <>              kayah_li_digit_one
+0x32            <>              kayah_li_digit_two
+0x33            <>              kayah_li_digit_three
+0x34            <>              kayah_li_digit_four
+0x35            <>              kayah_li_digit_five
+0x36            <>              kayah_li_digit_six
+0x37            <>              kayah_li_digit_seven
+0x38            <>              kayah_li_digit_eight
+0x39            <>              kayah_li_digit_nine
+
+; punctuation
+0x20                <>          space
+0x2D                <>          en_dash
+0x28            <>              left_parenthesis
+0x29            <>              right_parenthesis
+0x22            <>              quotation_mark
+0x23            <>              number_sign
+0x24            <>              dollar_sign
+0x25            <>              percent_sign
+0x2B            <>              plus_sign
+0x2C            <>              comma
+0x2E            <>              full_stop
+0x2F            <>              solidus
+0x3F            <>              question_mark
+0x7E            <>              tilde
+0xD6            <>              division_sign
+0x7C            <>              kayah_li_sign_shya
+0x5F            <>              low_line
+
+; primer based requirements
+0x5F 0x70       <>              low_line kayah_li_tone_calya
+0x5F 0x71       <>              low_line kayah_li_tone_calya_plophu
+0x70            <>              kayah_li_tone_calya
+0x71            <>              kayah_li_tone_calya_plophu
+0x6A            <>              kayah_li_vowel_ue
+0x6B            <>              kayah_li_vowel_e
+0x6C            <>              kayah_li_vowel_u
+0x6D            <>              kayah_li_vowel_ee
+0x6E            <>              kayah_li_vowel_o
+0x6F            <>              kayah_li_tone_plophu
+0x70            <>              kayah_li_tone_calya
+0x71            <>              kayah_li_tone_calya_plophu
+0x26            <>              kayah_li_sign_cwi
+             
+
