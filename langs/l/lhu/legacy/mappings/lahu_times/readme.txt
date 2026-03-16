@@ -1,0 +1,1 @@
+This is a Teckit mapping table to convert from the legacy Lahu Times font to Unicode Latin script. This converter file can be used with the  SIL Converters package. The converter and the source file are included.

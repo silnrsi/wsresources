@@ -1,0 +1,102 @@
+EncodingName 'LAHUTIMES'
+DescriptiveName 'Lahu Times Normal Legacy Font (Font copyright from The Monotype Corp 1990-1992)'
+ByteDefault '?'
+UniDefault replacement_character
+;Note that this teckit was specifically developed to map a Pyen story for Liz Foerster's primer workshop.
+
+;Classes
+ByteClass [ControlChars] = (0x0000 .. 0x0020)
+UniClass [ControlChars] = (U+0000 .. U+0020)
+ByteClass [LowerCase] = (0x0061 .. 0x007A)
+UniClass [LowerCase] = (U+0061 .. U+007A)
+ByteClass [UpperCase] = (0x41 .. 0x5A)
+UniClass [UpperCase] = (U+0041 .. U+005A)
+ByteClass [Latin1Supplement] = (0x00A0 .. 0x00FF)
+UniClass [Latin1Supplement] = (U+00A0 .. U+00FF)
+
+;aligned ASCII
+[ControlChars] <>	[ControlChars]
+0x0021	<>	U+0021
+0x0022	<>	U+0022
+0x0023	<>	U+0023
+0x0024	<>	U+0024
+0x0025	<>	U+0025
+0x0026	<>	U+0026
+0x0027	<>	U+0027
+0x0028	<>	U+0028
+0x0029	<>	U+0029
+0x002A	<>	U+002A
+0x002B	<>	U+003A	;COLON
+0x002C	<>	U+002C
+0x002D	<>	U+002D
+0x002E	<>	U+002E
+0x002F	<>	U+02CD	;MODIFIER LETTER LOW MACRON
+0x0030	<>	U+0030
+0x0031	<>	U+0031
+0x0032	<>	U+0032
+0x0033	<>	U+0033
+0x0034	<>	U+0034
+0x0035	<>	U+0035
+0x0036	<>	U+0036
+0x0037	<>	U+0037
+0x0038	<>	U+0038
+0x0039	<>	U+0039
+0x003A	<>	U+02C7	;CARON
+0x003B	<>	U+02EC	; MODIFIER LETTER VOICING
+0x003C	<>	U+003C	;
+0x003D	<>	U+003B	;SEMICOLON
+0x003E	<>	U+003E
+0x003F	<>	U+02C9	;MODIFIER LETTER MACRON
+0x0040	<>	U+0040
+[UpperCase] <>	[UpperCase]
+0x005B	<>	U+A788	; MODIFIER LETTER LOW CIRCUMFLEX ACCENT
+0x005C	<>	U+003F	;QUESTION MARK
+0x005D	<>	U+005D
+0x005E	<>	U+005E
+0x005F	<>	U+005F
+0x0060	<>	U+0060
+[LowerCase]	<>	[LowerCase]
+0x007B	<>	U+02C6	;MODIFIER LETTER CIRCUMFLEX ACCENT
+0x007C	<>	U+002F	;SOLIDUS
+0x007D	<>	U+007D
+0x007E	<>	U+007E
+[Latin1Supplement] <> [Latin1Supplement]
+; THE FOLLOWING ARE 8-BIT VERSIONS FROM THE WINDOWS CODE PAGE 1252 TABLE
+; INVALID CODE PAGE ENTRIES ARE COMMENTED OUT
+; Latin Extended-A
+;0x0112	<>	U+00B7	;MIDLE DOT
+;0x0131	<>	U+0131	;LATIN SMALL LETTER DOTLESS I
+;0x0152	<>	U+0152
+;0x0153	<>	U+0153
+;0x0160	<>	U+0160
+;0x0161	<>	U+0161
+;0x0178	<>	U+0178
+; Latin Extended-B
+0x0083	<>	U+A788	; MODIFIER LETTER LOW CIRCUMFLEX ACCENT
+; Space Modifier Letters
+0x0088	<>	U+02C6
+;0X02C7	<>	U+02C7
+;0X02DA	<>	U+02DA
+0X0098	<>	U+02DC
+; General Punctuation
+0X0096	<>	U+2013
+0X0097	<>	U+2014
+0X0091	<>	U+2018
+0X0092	<>	U+2019
+0x0081	<>	U+02C6	;MODIFIER LETTER CIRCUMFLEX ACCENT
+0X0093	<>	U+201C
+0X0094	<>	U+201D
+0X0084	<>	U+02C7	;CARON
+0X0086	<>	U+02C9	;MODIFIER LETTER MACRON
+0X0087	<>	U+02CD	;MODIFIER LETTER LOW MACRON
+0X0095	<>	U+2022
+0X0085	<>	U+02EC	; MODIFIER LETTER VOICING
+0X0089	<>	U+2030
+0X008B	<>	U+2039
+0X009B	<>	U+203A
+; Letterlike Symbols
+0x0099	<>	U+2122
+;Mathematical Operators
+;0x2219	<>	U+2219
+
+
