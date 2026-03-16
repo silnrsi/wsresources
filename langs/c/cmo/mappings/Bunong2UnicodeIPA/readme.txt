@@ -1,0 +1,1 @@
+This converter is designed to be used to convert a document from Bunong (also known as Central Mnong) using Khmer script to IPA. The user of this converter should consider the output to be a rough draft and will still need to go over the output and make adjustments as necessary.
