@@ -1,0 +1,1 @@
+This is a  Teckit mapping table to convert from Unicode Thai script Palaung to Unicode Burmese script Palaung. Do note that the inverse is not supported. This converter file can be used with the  SIL Converters package. Please be aware that some words will not be converted correctly as they do not conform to the usual conversion pattern and will need to be converted manually.

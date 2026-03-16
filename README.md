@@ -104,6 +104,8 @@ Please submit Keyman keyboards to the [Keyman repo](https://github.com/keymanapp
 
 Please submit SIL Locale Data to the [SIL Locale Data Repository](https://github.com/silnrsi/sldr) or to [ScriptSource](https://scriptsource.org).
 
+[ISO 15919 TECkit mappings for Indic scripts in XeTeX][https://github.com/davidmjones/brahmic-maps] - This package implements a set of TECkit mappings based on ISO 15919 TRANSLITERATION OF DEVANAGARI AND RELATED INDIC SCRIPTS INTO LATIN CHARACTERS for reverse transliteration of Latin-based characters into Indic scripts.
+
 ## License
 
 Unless otherwise indicated, all resources are under [The MIT License (MIT)](LICENSE).

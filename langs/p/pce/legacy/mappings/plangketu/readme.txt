@@ -1,0 +1,1 @@
+This is a  Teckit mapping table to convert from the legacy Plangketu Font to Unicode Burmese script. This converter file can be used with the  SIL Converters package.
