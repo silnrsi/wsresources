@@ -1,0 +1,142 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 08/15/1997.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Times New Roman;11.25
+;   Right-hand side font = Times New Roman;11.25
+
+EncodingName          "mac-latin3"
+DescriptiveName       "Macintosh Latin 3"
+Version               "1.0"
+Contact               "mailto:everson@evertype.com"
+RegistrationAuthority "Evertype"
+RegistrationName      "mac-latin3"
+
+; Derived from https://www.evertype.com/standards/mappings/mac/MALTESE.TXT
+
+0x80 <> U+00C4 ; A umlaut
+0x81 <> U+00C5 ; A overcircle
+0x82 <> U+00C7 ; C cedilla
+0x83 <> U+00C9 ; E acute
+0x84 <> U+00D1 ; N tilde
+0x85 <> U+00D6 ; O umlaut
+0x86 <> U+00DC ; U umlaut
+0x87 <> U+00E1 ; a acute
+0x88 <> U+00E0 ; a grave
+0x89 <> U+00E2 ; a circumflex
+0x8A <> U+00E4 ; a umlaut
+0x8B <> U+00E3 ; a tilde
+0x8C <> U+00E5 ; a overcircle
+0x8D <> U+00C7 ; c cedilla
+0x8E <> U+00E9 ; e acute
+0x8F <> U+00E8 ; e grave
+0x90 <> U+00EA ; e circumflex
+0x91 <> U+00EB ; e umlaut
+0x92 <> U+00ED ; i acute
+0x93 <> U+00EC ; i grave
+0x94 <> U+00EE ; i circumflex
+0x95 <> U+00EF ; i umlaut
+0x96 <> U+00F1 ; n tilde
+0x97 <> U+00F3 ; o acute
+0x98 <> U+00F2 ; o grave
+0x99 <> U+00F4 ; o circumflex
+0x9A <> U+00F5 ; o tilde
+0x9B <> U+00F6 ; o umlaut
+0x9C <> U+00FA ; u acute
+0x9D <> U+00F9 ; u grave
+0x9E <> U+00FB ; u circumflex
+0x9F <> U+00FC ; u umlaut
+0xA0 <> U+2020 ; dagger
+0xA1 <> U+00B0 ; degree
+0xA2 <> U+00A2 ; cent
+0xA3 <> U+00A3 ; sterling
+0xA4 <> U+00A7 ; section sign
+0xA5 <> U+2022 ; bullet
+0xA6 <> U+00B6 ; paragraph symbol
+0xA7 <> U+00DF ; sharp s, German sz ligature
+0xA8 <> U+00AE ; registered sign
+0xA9 <> U+00A9 ; copyright
+0xAA <> U+2122 ; superscript TM, trademark
+0xAB <> U+00B4 ; acute accent
+0xAC <> U+00A8 ; umlaut
+0xAD <> U+2260 ; not equal to
+0xAE <> U+00C6 ; AE ligature
+0xAF <> U+00D8 ; O slash
+0xB0 <> U+0108 ; C circumflex
+0xB1 <> U+00B1 ; plusminus
+0xB2 <> U+2264 ; less than or equal to
+0xB3 <> U+2265 ; greater than or equal to
+0xB4 <> U+0109 ; c circumflex
+0xB5 <> U+00B5 ; mu
+0xB6 <> U+011C ; G circumflex
+0xB7 <> U+011D ; g circumflex
+0xB8 <> U+0124 ; H circumflex
+0xB9 <> U+0125 ; h circumflex
+0xBA <> U+0134 ; J circumflex
+0xBB <> U+0135 ; j circumflex
+0xBC <> U+015C ; S circumflex
+0xBD <> U+015D ; s circumflex
+0xBE <> U+00E6 ; ae ligature
+0xBF <> U+00F8 ; o slash
+0xC0 <> U+016C ; U breve
+0xC1 <> U+016D ; u breve
+0xC2 <> U+00AC ; logical not
+0xC3 <> U+010A ; C overdot
+0xC4 <> U+0192 ; function of
+0xC5 <> U+010B ; c overdot
+0xC6 <> U+0120 ; G overdot
+0xC7 <> U+00AB ; open French double quote
+0xC8 <> U+00BB ; close French double quote
+0xC9 <> U+2026 ; ellipsis
+0xCA <> U+00A0 ; non-breaking space
+0xCB <> U+00C0 ; A grave
+0xCC <> U+00C3 ; A tilde
+0xCD <> U+00D5 ; O tilde
+0xCE <> U+0152 ; OE ligature
+0xCF <> U+0153 ; oe ligature
+0xD0 <> U+2013 ; en dash
+0xD1 <> U+2014 ; em dash
+0xD2 <> U+201C ; open double quote
+0xD3 <> U+201D ; close double quote
+0xD4 <> U+2018 ; open single quote
+0xD5 <> U+2019 ; close single quote
+0xD6 <> U+00F7 ; divide
+0xD7 <> U+25CA ; lozenge
+0xD8 <> U+00FF ; y umlaut
+0xD9 <> U+0178 ; Y umlaut
+0xDA <> U+011E ; G breve
+0xDB <> U+011F ; g breve
+0xDC <> U+0130 ; I overdot
+0xDD <> U+0131 ; dotless i
+0xDE <> U+015E ; S cedilla
+0xDF <> U+015F ; s cedilla
+0xE0 <> U+2021 ; double dagger
+0xE1 <> U+00B7 ; dot
+0xE2 <> U+201A ; low single quote
+0xE3 <> U+201E ; low double quote
+0xE4 <> U+2030 ; per thousand
+0xE5 <> U+00C2 ; A circumflex
+0xE6 <> U+00CA ; E circumflex
+0xE7 <> U+00C1 ; A acute
+0xE8 <> U+00CB ; E umlaut
+0xE9 <> U+00C8 ; E grave
+0xEA <> U+00CD ; I acute
+0xEB <> U+00CE ; I circumflex
+0xEC <> U+00CF ; I umlaut
+0xED <> U+00CC ; I grave
+0xEE <> U+00D3 ; O acute
+0xEF <> U+00D4 ; O circumflex
+0xF0 <> U+0121 ; g overdot
+0xF1 <> U+00D2 ; O grave
+0xF2 <> U+00DA ; U acute
+0xF3 <> U+00DB ; U circumflex
+0xF4 <> U+00D9 ; U grave
+0xF5 <> U+20AC ; euro
+0xF6 <> U+02C6 ; caret symbol
+0xF7 <> U+02DC ; tilde
+0xF8 <> U+0126 ; H stroke
+0xF9 <> U+02DA ; breve
+0xFA <> U+02DB ; overdot
+0xFB <> U+017B ; Z overdot
+0xFC <> U+00B8 ; cedilla
+0xFD <> U+017C ; z overdot
+0xFE <> U+0127 ; h stroke
+0xFF <> U+02C7 ; caron

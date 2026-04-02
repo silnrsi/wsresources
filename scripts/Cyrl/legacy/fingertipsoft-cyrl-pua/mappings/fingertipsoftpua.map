@@ -1,0 +1,125 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 1/29/2000.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Timesse Cyr;11.25
+;   Right-hand side font = Times New Roman;11.25
+
+Name                  "FingertipSoftCyrlPUA"
+Description           "Fingertip Software precomposed Cyrillic letters"
+Version               "1.0"
+RegistrationAuthority "Fingertip Software, Inc."
+RegistrationName      "FingertipSoftCyrlPUA"
+
+pass(Unicode)
+
+U+F400 <> U+0410 U+0301 ; A acute
+U+F400 <  U+F460 ; A acute = PUA - ParaType
+U+F400 <  U+EE01 ; A acute = PUA - TITUS
+U+F401 <> U+0430 U+0301 ; a acute
+U+F401 <  U+F46A ; a acute = PUA - ParaType
+U+F401 <  U+EE80 ; a acute = PUA - TITUS
+U+F402 <> U+0410 U+0300 ; A grave
+U+F402 <  U+EE00 ; A grave = PUA - TITUS
+U+F403 <> U+0430 U+0300 ; a grave
+U+F403 <  U+EE81 ; a grave = PUA - TITUS
+U+F404 <> U+0415 U+0301 ; Ie acute
+U+F404 <  U+F461 ; Ie acute = PUA - ParaType
+U+F404 <  U+EE06 ; Ie acute = PUA - TITUS
+U+F405 <> U+0435 U+0301 ; ie acute
+U+F405 <  U+F46B ; ie acute = PUA - ParaType
+U+F405 <  U+EE86 ; ie acute = PUA - TITUS
+U+F406 <> U+0400 ; Ie grave
+U+F406 <  U+EE05 ; Ie grave = PUA before Unicode 3.0 - TITUS
+U+F407 <> U+0450 ; ie grave
+U+F407 <  U+EE85 ; ie grave = PUA before Unicode 3.0 - TITUS
+U+F408 <> U+0415 U+0308 U+0300 ; Io grave
+U+F408 <  U+EE07 ; Io grave = PUA - TITUS
+U+F409 <> U+0435 U+0308 U+0300 ; io grave
+U+F409 <  U+EE87 ; io grave = PUA - TITUS
+U+F40A <> U+0418 U+0301 ; I acute
+U+F40A <  U+F462 ; I acute = PUA - ParaType
+U+F40A <  U+EE0F ; I acute = PUA - TITUS
+U+F40B <> U+0438 U+0301 ; i acute
+U+F40B <  U+F46C ; i acute = PUA - ParaType
+U+F40B <  U+E558 ; i acute = PUA - Roman Unicode
+U+F40B <  U+EE8F ; i acute = PUA - TITUS
+U+F40C <> U+040D ; I grave
+U+F40C <  U+EE0E ; I grave = PUA before Unicode 3.0 - TITUS
+U+F40D <> U+045D ; i grave
+U+F40D <  U+EE8E ; i grave = PUA before Unicode 3.0 - TITUS
+U+F40E <> U+041E U+0301 ; O acute
+U+F40E <  U+F463 ; O acute = PUA - ParaType
+U+F40E <  U+EE14 ; O acute = PUA - TITUS
+U+F40F <> U+043E U+0301 ; o acute
+U+F40F <  U+F46D ; o acute = PUA - ParaType
+U+F40F <  U+EE94 ; o acute = PUA - TITUS
+U+F410 <> U+041E U+0300 ; O grave
+U+F410 <  U+F4D2 ; O grave = PUA - ParaType
+U+F410 <  U+EE13 ; O grave = PUA - TITUS
+U+F411 <> U+043E U+0300 ; o grave
+U+F411 <  U+F4D3 ; o grave = PUA - ParaType
+U+F411 <  U+EE93 ; o grave = PUA - TITUS
+U+F412 <> U+0423 U+0301 ; U acute
+U+F412 <  U+F464 ; U acute = PUA - ParaType
+U+F412 <  U+F4CC ; U acute = PUA - ParaType
+U+F412 <  U+EE19 ; U acute = PUA - TITUS
+U+F413 <> U+0443 U+0301 ; u acute
+U+F413 <  U+F46E ; u acute = PUA - ParaType
+U+F413 <  U+F4CD ; u acute = PUA - ParaType
+U+F413 <  U+EE99 ; u acute = PUA - TITUS
+U+F414 <> U+0423 U+0300 ; U grave
+U+F414 <  U+EE18 ; U grave = PUA - TITUS
+U+F415 <> U+0443 U+0300 ; u grave
+U+F415 <  U+EE98 ; u grave = PUA - TITUS
+U+F416 <> U+042B U+0301 ; Yeru acute
+U+F416 <  U+F465 ; Yeru acute = PUA - ParaType
+U+F416 <  U+EE1E ; Yeru acute = PUA - TITUS
+U+F417 <> U+044B U+0301 ; yeru acute
+U+F417 <  U+F46F ; yeru acute = PUA - ParaType
+U+F417 <  U+E563 ; yeru acute = PUA - Roman Unicode
+U+F417 <  U+EE9E ; yeru acute = PUA - TITUS
+U+F418 <> U+042B U+0300 ; Yeru grave
+U+F418 <  U+EE1D ; Yeru grave = PUA - TITUS
+U+F419 <> U+044B U+0300 ; yeru grave
+U+F419 <  U+E52C ; yeru grave = PUA - Roman Unicode
+U+F419 <  U+EE9D ; yeru grave = PUA - TITUS
+U+F41A <> U+042D U+0301 ; E acute
+U+F41A <  U+F466 ; E acute = PUA - ParaType
+U+F41A <  U+EE23 ; E acute = PUA - TITUS
+U+F41B <> U+044D U+0301 ; e acute
+U+F41B <  U+F470 ; e acute = PUA - ParaType
+U+F41B <  U+E565 ; e acute = PUA - Roman Unicode
+U+F41B <  U+EE93 ; e acute = PUA - TITUS
+U+F41C <> U+042D U+0300 ; E grave
+U+F41C <  U+EE22 ; E grave = PUA - TITUS
+U+F41D <> U+044D U+0300 ; e grave
+U+F41D <  U+EE92 ; e grave = PUA - TITUS
+U+F41E <> U+042E U+0301 ; Yu acute
+U+F41E <  U+F467 ; Yu acute = PUA - ParaType
+U+F41E <  U+EE28 ; Yu acute = PUA - TITUS
+U+F41F <> U+044E U+0301 ; yu acute
+U+F41F <  U+F471 ; yu acute = PUA - ParaType
+U+F41F <  U+E566 ; yu acute = PUA - Roman Unicode
+U+F41F <  U+EE98 ; yu acute = PUA - TITUS
+U+F420 <> U+042E U+0300 ; Yu grave
+U+F420 <  U+EE27 ; Yu grave = PUA - TITUS
+U+F421 <> U+044E U+0300 ; yu grave
+U+F421 <  U+E52F ; yu grave = PUA - Roman Unicode
+U+F421 <  U+EE97 ; yu grave = PUA - TITUS
+U+F422 <> U+042F U+0301 ; Ya acute
+U+F422 <  U+F468 ; Ya acute = PUA - ParaType
+U+F422 <  U+EE2D ; Ya acute = PUA - TITUS
+U+F423 <> U+042F U+0301 ; ya acute
+U+F423 <  U+F472 ; ya acute = PUA - ParaType
+U+F423 <  U+E567 ; ya acute = PUA - Roman Unicode
+U+F423 <  U+EE9D ; ya acute = PUA - TITUS
+U+F424 <> U+042F U+0300 ; Ya grave
+U+F424 <  U+EE2C ; Ya grave = PUA - TITUS
+U+F425 <> U+044F U+0300 ; ya grave
+U+F425 <  U+E530 ; ya grave = PUA - Roman Unicode
+U+F425 <  U+EE9C ; ya grave = PUA - TITUS
+U+F426 <> U+0404 U+0301 ; Ukrainian Ie acute
+U+F427 <> U+0454 U+0301 ; Ukrainian ie acute
+U+F42A <> U+0406 U+0301 ; Belorussian-Ukrainian I acute
+U+F42B <> U+0456 U+0301 ; Belorussian-Ukrainian i acute
+U+F42E <> U+0406 U+0308 U+0301 ; Yi acute
+U+F42F <> U+0456 U+0308 U+0301 ; yi acute

@@ -1,0 +1,21 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/29/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Times New Roman;11.25
+;   Right-hand side font = Times New Roman;11.25
+
+EncodingName    "Espar"
+DescriptiveName "Convert Esperanto characters in ASCII codepoints to Unicode"
+Version         "1.0"
+
+0x51 <> U+011C ; G circumflex
+0x57 <> U+015C ; S circumflex
+0x58 <> U+0108 ; C circumflex
+0x59 <> U+016C ; U breve
+0x5B <> U+0135 ; j circumflex
+0x5D <> U+0125 ; h circumflex
+0x71 <> U+011D ; g circumflex
+0x77 <> U+015D ; s circumflex
+0x78 <> U+0109 ; c circumflex
+0x79 <> U+016D ; u breve
+0x7B <> U+0134 ; J circumflex
+0x7D <> U+0124 ; H circumflex

@@ -1,0 +1,45 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 04/11/2013.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Aboriginal Serif;11.25
+;   Right-hand side font = Noto Sans Osage;11.25
+
+Name                  "LanguagegeekPUA"
+Description           "Languagegeek Osage letters"
+Version               "4.0"
+Contact               "mailto:info@languagegeek.com"
+RegistrationAuthority "Languagegeek.com"
+RegistrationName      "Languagegeek PUA"
+
+pass(Unicode)
+
+U+E5C0 <> U+104B3 ; Ah
+U+E5C1 <> U+104C2 ; O
+U+E5C2 <> U+104B7 ; E
+U+E5C3 <> U+104BB ; I
+U+E5C4 <> U+104B0 ; A
+U+E5C5 <> U+104B2 ; Ain
+U+E5C6 <> U+104CE ; U
+U+E5C8 <> U+104B0 U+0331 ; A underline
+U+E5C9 <> U+104C2 U+0331 ; O underline
+U+E5CA <> U+104B7 U+0331 ; E underline
+U+E5CB <> U+104C4 ; Pa
+U+E5CC <> U+104B4 ; Bra
+U+E5CD <> U+104C8 ; Ta
+U+E5CE <> U+104CA ; Tsa
+U+E5CF <> U+104BC ; Ka
+U+E5D0 <> U+104BE ; Kya
+U+E5D1 <> U+104C6 ; Sa
+U+E5D2 <> U+104C7 ; Sha
+U+E5D3 <> U+104CB ; Ehtsa
+U+E5D4 <> U+104CC ; Tsha
+U+E5D5 <> U+104B9 ; Ha
+U+E5D6 <> U+104BA ; Hya
+U+E5D7 <> U+104CF ; Wa
+U+E5D8 <> U+104BF ; La
+U+E5D9 <> U+104C0 ; Ma
+U+E5DA <> U+104C1 ; Na
+U+E5DB <> U+104D2 ; Za
+U+E5DC <> U+104D3 ; Zhe
+U+E5DD <> U+104B5 ; Cha
+U+E5DE <> U+104CD ; Dha
+U+E5DF <> U+104D0 ; Kha

@@ -1,0 +1,189 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/27/2001.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Microsoft Himalaya;11.25
+;   Right-hand side font = Microsoft Himalaya;11.25
+
+Name                  "PUAEveryWitchWayTibetan"
+Description           "Every Witch Way fonts - Tibetan with PUA values"
+Version               "2.3"
+Contact               "mailto:redneck_witchboi@yahoo.com"
+RegistrationAuthority "Every Witch Way"
+RegistrationName      "PUAEveryWitchWayTibetanToUnicode"
+
+pass(Unicode)
+
+U+EF00 <> U+0F00 ; om
+U+EF01 <> U+0F01 ; gter yig mgo truncated a
+U+EF02 <> U+0F02 ; gter yig mgo -um rnam bcad ma
+U+EF03 <> U+0F03 ; gter yig mgo -um gter tsheg ma
+U+EF04 <> U+0F04 ; initial yig mdo mdun ma
+U+EF05 <> U+0F05 ; closing yig mgo sgab ma
+U+EF06 <> U+0F06 ; caret yig mgo phur shad ma
+U+EF07 <> U+0F07 ; yig mgo tsheg shad ma
+U+EF08 <> U+0F08 ; sbrul shad
+U+EF09 <> U+0F09 ; bskur yig mgo
+U+EF0A <> U+0F0A ; bka- shog yig mgo
+U+EF0B <> U+0F0B ; intersyllabic tsheg
+U+EF0C <> U+0F0C ; delimiter tsheg bstar
+U+EF0D <> U+0F0D ; shad
+U+EF0E <> U+0F0E ; nyis shad
+U+EF0F <> U+0F0F ; tsheg shad
+U+EF10 <> U+0F10 ; nyis tsheg shad
+U+EF11 <> U+0F11 ; rin chen spungs shad
+U+EF12 <> U+0F12 ; rgya gram shad
+U+EF13 <> U+0F13 ; caret -dzud rtags me long can
+U+EF14 <> U+0F14 ; gter tsheg
+U+EF15 <> U+0F15 ; logotype sign chad rtags
+U+EF16 <> U+0F16 ; logotype sign lhag rtags
+U+EF17 <> U+0F17 ; astrological sign sgra gcan -char rtags
+U+EF18 <> U+0F18 ; astrological sign -khyud pa
+U+EF19 <> U+0F19 ; astrological sign sdong tshugs
+U+EF1A <> U+0F1A ; rdel dkar gcig
+U+EF1B <> U+0F1B ; rdel dkar gnyis
+U+EF1C <> U+0F1C ; rdel dkar gsum
+U+EF1D <> U+0F1D ; rdel nag gcig
+U+EF1E <> U+0F1E ; rdel nag gnyis
+U+EF1F <> U+0F1F ; rdel dkar rdel nag
+U+EF20 <> U+0F20 ; digit zero
+U+EF21 <> U+0F21 ; digit one
+U+EF22 <> U+0F22 ; digit two
+U+EF23 <> U+0F23 ; digit three
+U+EF24 <> U+0F24 ; digit four
+U+EF25 <> U+0F25 ; digit five
+U+EF26 <> U+0F26 ; digit six
+U+EF27 <> U+0F27 ; digit seven
+U+EF28 <> U+0F28 ; digit eight
+U+EF29 <> U+0F29 ; digit nine
+U+EF2A <> U+0F2A ; digit half one
+U+EF2B <> U+0F2B ; digit half two
+U+EF2C <> U+0F2C ; digit half three
+U+EF2D <> U+0F2D ; digit half four
+U+EF2E <> U+0F2E ; digit half five
+U+EF2F <> U+0F2F ; digit half six
+U+EF30 <> U+0F30 ; digit half seven
+U+EF31 <> U+0F31 ; digit half eight
+U+EF32 <> U+0F32 ; digit half nine
+U+EF33 <> U+0F33 ; digit half zero
+U+EF34 <> U+0F34 ; bsdus rtags
+U+EF35 <> U+0F35 ; ngas bzung nyi zla
+U+EF36 <> U+0F36 ; caret -dzug rtags bzhi mig can
+U+EF37 <> U+0F37 ; ngas bzung sgor rtags
+U+EF38 <> U+0F38 ; che mgo
+U+EF39 <> U+0F39 ; tsa -phru
+U+EF3A <> U+0F3A ; gug rtags gyon
+U+EF3B <> U+0F3B ; gug rtags gyas
+U+EF3C <> U+0F3C ; ang khang gyon
+U+EF3D <> U+0F3D ; ang khang gyas
+U+EF3E <> U+0F3E ; yar tshes
+U+EF3F <> U+0F3F ; mar tshes
+U+EF40 <> U+0F40 ; ka
+U+EF41 <> U+0F41 ; kha
+U+EF42 <> U+0F42 ; ga
+U+EF43 <> U+0F43 ; gha
+U+EF44 <> U+0F44 ; nga
+U+EF45 <> U+0F45 ; ca
+U+EF46 <> U+0F46 ; cha
+U+EF47 <> U+0F47 ; ja
+U+EF49 <> U+0F49 ; nya
+U+EF4A <> U+0F4A ; tta
+U+EF4B <> U+0F4B ; ttha
+U+EF4C <> U+0F4C ; dda
+U+EF4D <> U+0F4D ; ddha
+U+EF4E <> U+0F4E ; nna
+U+EF4F <> U+0F4F ; ta
+U+EF50 <> U+0F50 ; tha
+U+EF51 <> U+0F51 ; da
+U+EF52 <> U+0F52 ; dha
+U+EF53 <> U+0F53 ; na
+U+EF54 <> U+0F54 ; pa
+U+EF55 <> U+0F55 ; pha
+U+EF56 <> U+0F56 ; ba
+U+EF57 <> U+0F57 ; bha
+U+EF58 <> U+0F58 ; ma
+U+EF59 <> U+0F59 ; tsa
+U+EF5A <> U+0F5A ; tsha
+U+EF5B <> U+0F5B ; dza
+U+EF5C <> U+0F5C ; dzha
+U+EF5D <> U+0F5D ; wa
+U+EF5E <> U+0F5E ; zha
+U+EF5F <> U+0F5F ; za
+U+EF60 <> U+0F60 ; -a
+U+EF61 <> U+0F61 ; ya
+U+EF62 <> U+0F62 ; ra
+U+EF63 <> U+0F63 ; la
+U+EF64 <> U+0F64 ; sha
+U+EF65 <> U+0F65 ; ssa
+U+EF66 <> U+0F66 ; sa
+U+EF67 <> U+0F67 ; ha
+U+EF68 <> U+0F68 ; a
+U+EF69 <> U+0F69 ; kssa
+U+EF6A <> U+0F6A ; fixed-form ra
+U+EF71 <> U+0F71 ; vowel sign aa
+U+EF72 <> U+0F72 ; vowel sign i
+U+EF73 <> U+0F73 ; vowel sign ii
+U+EF74 <> U+0F74 ; vowel sign u
+U+EF75 <> U+0F75 ; vowel sign uu
+U+EF76 <> U+0F76 ; vowel sign vocalic r
+U+EF77 <> U+0F77 ; vowel sign vocalic rr
+U+EF78 <> U+0F78 ; vowel sign vocalic l
+U+EF79 <> U+0F79 ; vowel sign vocalic ll
+U+EF7A <> U+0F7A ; vowel sign e
+U+EF7B <> U+0F7B ; vowel sign ee
+U+EF7C <> U+0F7C ; vowel sign o
+U+EF7D <> U+0F7D ; vowel sign oo
+U+EF7E <> U+0F7E ; rjes su nga ro
+U+EF7F <> U+0F7F ; rnam bcad
+U+EF80 <> U+0F80 ; vowel sign reversed i
+U+EF81 <> U+0F81 ; vowel sign reversed ii
+U+EF82 <> U+0F82 ; nyi zla naa da
+U+EF83 <> U+0F83 ; sna ldan
+U+EF84 <> U+0F84 ; halanta
+U+EF85 <> U+0F85 ; paluta
+U+EF86 <> U+0F86 ; lci rtags
+U+EF87 <> U+0F87 ; yang rtags
+U+EF88 <> U+0F88 ; lce tsa can
+U+EF89 <> U+0F89 ; mchu can
+U+EF8A <> U+0F8A ; gru can rgyings
+U+EF8B <> U+0F8B ; gru med rgyings
+U+EF8C <> U+0F8C ; inverted mchu can
+U+EF8D <> U+0F8D ; subjoined lce tsa can
+U+EF8E <> U+0F8E ; subjoined mchu can
+U+EF8F <> U+0F8F ; subjoined inverted mchu can
+U+EF90 <> U+0F90 ; subjoined ka
+U+EF91 <> U+0F91 ; subjoined kha
+U+EF92 <> U+0F92 ; subjoined ga
+U+EF93 <> U+0F93 ; subjoined gha
+U+EF94 <> U+0F94 ; subjoined nga
+U+EF95 <> U+0F95 ; subjoined ca
+U+EF96 <> U+0F96 ; subjoined cha
+U+EF97 <> U+0F97 ; subjoined ja
+U+EF99 <> U+0F99 ; subjoined nya
+U+EF9A <> U+0F9A ; subjoined tta
+U+EF9B <> U+0F9B ; subjoined ttha
+U+EF9C <> U+0F9C ; subjoined dda
+U+EF9D <> U+0F9D ; subjoined ddha
+U+EF9E <> U+0F9E ; subjoined nna
+U+EF9F <> U+0F9F ; subjoined ta
+U+EFA0 <> U+0FA0 ; subjoined tha
+U+EFA1 <> U+0FA1 ; subjoined da
+U+EFA2 <> U+0FA2 ; subjoined dha
+U+EFA3 <> U+0FA3 ; subjoined na
+U+EFA4 <> U+0FA4 ; subjoined pa
+U+EFA5 <> U+0FA5 ; subjoined pha
+U+EFA6 <> U+0FA6 ; subjoined ba
+U+EFA7 <> U+0FA7 ; subjoined bha
+U+EFA8 <> U+0FA8 ; subjoined ma
+U+EFA9 <> U+0FA9 ; subjoined tsa
+U+EFAA <> U+0FAA ; subjoined tsha
+U+EFAB <> U+0FAB ; subjoined dza
+U+EFAC <> U+0FAC ; subjoined dzha
+U+EFAD <> U+0FAD ; subjoined wa
+U+EFB1 <> U+0FB1 ; subjoined ya
+U+EFB2 <> U+0FB2 ; subjoined ra
+U+EFB3 <> U+0FB3 ; subjoined la
+U+EFB4 <> U+0FB4 ; subjoined sha
+U+EFB5 <> U+0FB5 ; subjoined ssa
+U+EFB6 <> U+0FB6 ; subjoined sa
+U+EFB7 <> U+0FB7 ; subjoined ha
+U+EFB9 <> U+0FB9 ; subjoined kssa
+

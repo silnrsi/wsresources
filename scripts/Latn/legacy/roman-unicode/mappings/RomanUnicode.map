@@ -1,0 +1,516 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 4/21/2004.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Roman Unicode;11.25
+;   Right-hand side font = Times New Roman;11.25
+
+Name                  "RomanUnicodePUA"
+Description           "Roman Unicode Latin, Greek and Cyrillic characters with Unicode and PUA values"
+Version               "4.0"
+Contact               "mailto:redneck_witchboi@yahoo.com"
+RegistrationAuthority "Every Witch Way"
+RegistrationName      "LGCRomanUnicode"
+
+pass(Unicode)
+
+U+0220 <> U+0152 U+0301 ; OE ligature acute
+U+0221 <> U+0153 U+0301 ; oe ligature acute
+U+0234 <> U+014A U+0301 ; Eng acute
+U+0235 <> U+014B U+0301 ; eng acute
+U+0236 <> U+A726 ; Heng = for Unicode 5.1 and later
+U+0237 <> U+A727 ; heng = for Unicode 5.1 and later
+U+0238 <> U+A756 ; Q bar = for Unicode 5.1 and later
+U+0239 <> U+A757 ; q bar = for Unicode 5.1 and later
+U+023A <> U+A766 ; Thorn bar = for Unicode 5.1 and later. Bar on the left, not at top
+U+023B <> U+A767 ; thorn bar = for Unicode 5.1 and later
+U+023C <> U+A7CC ; S stroke = for Unicode 16.0 and later
+U+023D <> U+A7CD ; s stroke = for Unicode 16.0 and later
+U+04FA <> U+0423 U+030A ; U overcircle
+U+04FB <> U+0443 U+030A ; u overcircle
+U+04FC <> U+0423 U+0306 ; U overdot
+U+04FD <> U+0443 U+0306 ; u overdot
+U+04FE <> U+04F6 ; Ghe descender = for Unicode 4.1 and later
+U+04FF <> U+04F7 ; ghe descender = for Unicode 4.1 and later
+U+1E9C <> U+004A U+0306 ; K overdot
+U+1E9D <> U+006A U+0306 ; k overdot
+U+1EFA <> U+0048 U+0304 U+0301 ; I macron acute
+U+1EFB <> U+0068 U+0304 U+0301 ; i macron acute
+U+1F16 <> U+03B5 U+0313 U+0343 ; epsilon psili perispomeni
+U+1F17 <> U+03B5 U+0314 U+0343 ; epsilon dasia perispomeni
+U+1F1E <> U+0395 U+0313 U+0343 ; Epsilon psili perispomeni
+U+1F1F <> U+0395 U+0314 U+0343 ; Epsilon dasia perispomeni
+U+1F46 <> U+03BF U+0313 U+0343 ; omicron psili perispomeni
+U+1F47 <> U+03BF U+0314 U+0343 ; omicron dasia perispomeni
+U+1F58 <> U+03A5 U+0313 ; Upsilon psili
+U+E500 <> U+0063 U+0300 ; c grave
+U+E501 <> U+0064 U+0300 ; d grave
+U+E502 <> U+0067 U+0300 ; g grave
+U+E503 <> U+006A U+0300 ; j grave
+U+E504 <> U+006D U+0300 ; m grave
+U+E505 <> U+0070 U+0300 ; p grave
+U+E506 <> U+0071 U+0300 ; q grave
+U+E507 <> U+0072 U+0300 ; r grave
+U+E508 <> U+0073 U+0300 ; s grave
+U+E509 <> U+0076 U+0300 ; v grave
+U+E50A <> U+0078 U+0300 ; x grave
+U+E50B <> U+007A U+0300 ; z grave
+U+E50C <> U+00F8 U+0300 ; o slash grave
+U+E50D <> U+014B U+0300 ; eng grave
+U+E50E <> U+014B U+0300 ; eng grave
+U+E50F <> U+0153 U+0300 ; oe ligature grave
+U+E510 <> U+03B3 U+0300 ; gamma grave
+U+E511 <> U+03BA U+0300 ; kappa grave
+U+E512 <> U+03BC U+0300 ; mu grave
+U+E513 <> U+03BD U+0300 ; nu grave
+U+E514 <> U+03C0 U+0300 ; pi grave
+U+E515 <> U+03C1 U+0300 ; rho grave
+U+E516 <> U+03C2 U+0300 ; final sigma grave
+U+E517 <> U+03C3 U+0300 ; sigma grave
+U+E518 <> U+03C4 U+0300 ; tau grave
+U+E519 <> U+03C6 U+0300 ; phi grave
+U+E51A <> U+03C7 U+0300 ; chi grave
+U+E51B <> U+03C8 U+0300 ; psi grave
+U+E51C <> U+0432 U+0300 ; ve grave
+U+E51D <> U+0433 U+0300 ; ge grave
+U+E51E <> U+0434 U+0300 ; de grave
+U+E51F <> U+0436 U+0300 ; zhe grave
+U+E520 <> U+0437 U+0300 ; ze grave
+U+E521 <> U+043A U+0300 ; ka grave
+U+E522 <> U+043B U+0300 ; el grave
+U+E523 <> U+043C U+0300 ; em grave
+U+E524 <> U+043D U+0300 ; en grave
+U+E525 <> U+043F U+0300 ; pe grave
+U+E526 <> U+0442 U+0300 ; te grave
+U+E527 <> U+0446 U+0300 ; tse grave
+U+E528 <> U+0447 U+0300 ; che grave
+U+E529 <> U+0448 U+0300 ; sha grave
+U+E52A <> U+0449 U+0300 ; shcha grave
+U+E52B <> U+044A U+0300 ; hard sign grave
+U+E52C <> U+044B U+0300 ; yeru grave
+U+E52D <> U+044C U+0300 ; soft sign grave
+U+E52E <> U+044D U+0300 ; ie grave
+U+E52F <> U+044E U+0300 ; io grave
+U+E530 <> U+044F U+0300 ; ia grave
+U+E531 <> U+0250 U+0300 ; a turned grave
+U+E532 <> U+0254 U+0300 ; o open grave
+U+E533 <> U+0258 U+0300 ; e reversed grave
+U+E534 <> U+0259 U+0300 ; schwa grave
+U+E535 <> U+025C U+0300 ; e open reversed grave
+U+E536 <> U+026A U+0300 ; i small cap grave
+U+E537 <> U+0276 U+0300 ; oe small cap grave
+U+E538 <> U+028C U+0300 ; v turned grave
+U+E539 <> U+028F U+0300 ; y small cap grave
+U+E53A <> U+0292 U+0300 ; ezh grave
+U+E540 <> U+0068 U+0301 ; h acute
+U+E541 <> U+006A U+0301 ; j acute
+U+E542 <> U+1E31 ; k acute
+U+E543 <> U+0071 U+0301 ; q acute
+U+E544 <> U+0076 U+0301 ; v acute
+U+E545 <> U+00FE U+0301 ; thorn acute
+U+E546 <> U+014B U+0301 ; eng acute
+U+E547 <> U+0153 U+0301 ; oe acute
+U+E548 <> U+03B3 U+0301 ; gamma acute
+U+E549 <> U+03BA U+0301 ; kappa acute
+U+E54A <> U+03BC U+0301 ; mu acute
+U+E54B <> U+03BD U+0301 ; nu acute
+U+E54C <> U+03C0 U+0301 ; pi acute
+U+E54D <> U+03C1 U+0301 ; rho acute
+U+E54E <> U+03C2 U+0301 ; final sigma acute
+U+E54F <> U+03C3 U+0301 ; sigma acute
+U+E550 <> U+03C4 U+0301 ; tau acute
+U+E551 <> U+03C6 U+0301 ; phi acute
+U+E552 <> U+03C7 U+0301 ; chi acute
+U+E553 <> U+03C8 U+0301 ; psi acute
+U+E554 <> U+0432 U+0301 ; ve acute
+U+E555 <> U+0434 U+0301 ; de acute
+U+E556 <> U+0436 U+0301 ; zhe acute
+U+E557 <> U+0437 U+0301 ; ze grave
+U+E558 <> U+0438 U+0301 ; i acute
+U+E559 <> U+043B U+0301 ; el acute
+U+E55A <> U+043C U+0301 ; em acute
+U+E55B <> U+043D U+0301 ; en acute
+U+E55C <> U+043F U+0301 ; pe acute
+U+E55D <> U+0442 U+0301 ; te acute
+U+E55E <> U+0446 U+0301 ; tse acute
+U+E55F <> U+0447 U+0301 ; che acute
+U+E560 <> U+0448 U+0301 ; sha acute
+U+E561 <> U+0449 U+0301 ; shcha acute
+U+E562 <> U+044A U+0301 ; hard sign acute
+U+E563 <> U+044B U+0301 ; yeru acute
+U+E564 <> U+044C U+0301 ; soft sign acute
+U+E565 <> U+044D U+0301 ; ie acute
+U+E566 <> U+044E U+0301 ; io acute
+U+E567 <> U+044F U+0301 ; ia acute
+U+E568 <> U+0250 U+0301 ; a turned acute
+U+E569 <> U+0254 U+0301 ; o open acute
+U+E56A <> U+0258 U+0301 ; e reversed acute
+U+E56B <> U+0259 U+0301 ; schwa acute
+U+E56C <> U+025C U+0301 ; e open reversed acute
+U+E56D <> U+026A U+0301 ; i small cap acute
+U+E56E <> U+0276 U+0301 ; oe small cap acute
+U+E56F <> U+028C U+0301 ; v turned acute
+U+E570 <> U+028F U+0301 ; y small cap acute
+U+E571 <> U+0292 U+0301 ; ezh acute
+U+E580 <> U+006D U+0302 ; m circumflex
+U+E581 <> U+006E U+0302 ; n circumflex
+U+E582 <> U+0070 U+0302 ; p circumflex
+U+E583 <> U+0071 U+0302 ; q circumflex
+U+E584 <> U+0072 U+0302 ; r circumflex
+U+E585 <> U+0076 U+0302 ; v circumflex
+U+E586 <> U+1E91 ; z circumflex
+U+E587 <> U+00C6 U+0302 ; ae ligature circumflex
+U+E588 <> U+00F8 U+0302 ; o slash circumflex
+U+E589 <> U+014B U+0302 ; eng circumflex
+U+E58A <> U+0153 U+0302 ; oe ligature circumflex
+U+E58B <> U+03B1 U+0302 ; alpha circumflex
+U+E58C <> U+03B3 U+0302 ; gamma circumflex
+U+E58D <> U+03B5 U+0302 ; epsilon circumflex
+U+E58E <> U+03B7 U+0302 ; eta circumflex
+U+E58F <> U+03B9 U+0302 ; iota circumflex
+U+E590 <> U+03BA U+0302 ; kappa circumflex
+U+E591 <> U+03BC U+0302 ; mu circumflex
+U+E592 <> U+03BD U+0302 ; nu circumflex
+U+E593 <> U+03C0 U+0302 ; pi circumflex
+U+E594 <> U+03C1 U+0302 ; rho circumflex
+U+E595 <> U+03C2 U+0302 ; final sigma circumflex
+U+E596 <> U+03C3 U+0302 ; sigma circumflex
+U+E597 <> U+03C4 U+0302 ; tau circumflex
+U+E598 <> U+03C5 U+0302 ; upsilon circumflex
+U+E599 <> U+03C6 U+0302 ; phi circumflex
+U+E59A <> U+03C7 U+0302 ; chi circumflex
+U+E59B <> U+03C8 U+0302 ; psi circumflex
+U+E59C <> U+03C9 U+0302 ; omega circumflex
+U+E59D <> U+0432 U+0302 ; ve circumflex
+U+E59E <> U+0433 U+0302 ; ghe circumflex
+U+E59F <> U+0434 U+0302 ; de circumflex
+U+E5A0 <> U+0436 U+0302 ; zhe circumflex
+U+E5A1 <> U+0437 U+0302 ; ze circumflex
+U+E5A2 <> U+0438 U+0302 ; i circumflex
+U+E5A3 <> U+043A U+0302 ; ka circumflex
+U+E5A4 <> U+043B U+0302 ; el circumflex
+U+E5A5 <> U+043C U+0302 ; em circumflex
+U+E5A6 <> U+043D U+0302 ; en circumflex
+U+E5A7 <> U+043F U+0302 ; pe circumflex
+U+E5A8 <> U+0442 U+0302 ; te circumflex
+U+E5A9 <> U+0446 U+0302 ; tse circumflex
+U+E5AA <> U+0447 U+0302 ; che circumflex
+U+E5AB <> U+0448 U+0302 ; sha circumflex
+U+E5AC <> U+0449 U+0302 ; shcha circumflex
+U+E5AD <> U+044A U+0302 ; hard sign circumflex
+U+E5AE <> U+044B U+0302 ; yeru circumflex
+U+E5AF <> U+044C U+0302 ; soft sign circumflex
+U+E5B0 <> U+044D U+0302 ; ie circumflex
+U+E5B1 <> U+044E U+0302 ; io circumflex
+U+E5B2 <> U+044F U+0302 ; ia circumflex
+U+E5B3 <> U+0250 U+0302 ; a turned circumflex
+U+E5B4 <> U+0254 U+0302 ; o open circumflex
+U+E5B5 <> U+0258 U+0302 ; e reversed circumflex
+U+E5B6 <> U+0259 U+0302 ; schwa circumflex
+U+E5B7 <> U+025C U+0302 ; e open reversed circumflex
+U+E5B8 <> U+026A U+0302 ; i small cap circumflex
+U+E5B9 <> U+0276 U+0302 ; oe small cap circumflex
+U+E5BA <> U+028C U+0302 ; v turned circumflex
+U+E5BB <> U+028F U+0302 ; y small cap circumflex
+U+E5BC <> U+0292 U+0302 ; ezh circumflex
+U+E5C0 <> U+0063 U+0303 ; c tilde
+U+E5C1 <> U+0067 U+0303 ; g tilde
+U+E5C2 <> U+006A U+0303 ; j tilde
+U+E5C3 <> U+006D U+0303 ; m tilde
+U+E5C4 <> U+0070 U+0303 ; p tilde
+U+E5C5 <> U+0071 U+0303 ; q tilde
+U+E5C6 <> U+0072 U+0303 ; r tilde
+U+E5C7 <> U+0073 U+0303 ; s tilde
+U+E5C8 <> U+0077 U+0303 ; w tilde
+U+E5C9 <> U+0078 U+0303 ; x tilde
+U+E5CA <> U+007A U+0303 ; z tilde
+U+E5CB <> U+00C6 U+0303 ; ae ligature tilde
+U+E5CC <> U+00F8 U+0303 ; o slash tilde
+U+E5CD <> U+014B U+0303 ; eng tilde
+U+E5CE <> U+0153 U+0303 ; oe ligature tilde
+U+E5CF <> U+03B3 U+0303 ; gamma tilde
+U+E5D0 <> U+03B5 U+0303 ; epsilon tilde
+U+E5D1 <> U+03BA U+0303 ; kappa tilde
+U+E5D2 <> U+03BC U+0303 ; mu tilde
+U+E5D3 <> U+03BD U+0303 ; nu tilde
+U+E5D4 <> U+03C0 U+0303 ; pi tilde
+U+E5D5 <> U+03C1 U+0303 ; rho tilde
+U+E5D6 <> U+03C2 U+0303 ; final sigma tilde
+U+E5D7 <> U+03C3 U+0303 ; sigma tilde
+U+E5D8 <> U+03C4 U+0303 ; tau tilde
+U+E5D9 <> U+03C6 U+0303 ; phi tilde
+U+E5DA <> U+03C7 U+0303 ; chi tilde
+U+E5DB <> U+03C8 U+0303 ; psi tilde
+U+E5DC <> U+0432 U+0303 ; ve tilde
+U+E5DD <> U+0433 U+0303 ; ghe tilde
+U+E5DE <> U+0434 U+0303 ; de tilde
+U+E5DF <> U+0436 U+0303 ; zhe tilde
+U+E5E0 <> U+0437 U+0303 ; ze tilde
+U+E5E1 <> U+0438 U+0303 ; i tilde
+U+E5E2 <> U+043A U+0303 ; ka tilde
+U+E5E3 <> U+043B U+0303 ; el tilde
+U+E5E4 <> U+043C U+0303 ; em tilde
+U+E5E5 <> U+043D U+0303 ; en tilde
+U+E5E6 <> U+043F U+0303 ; pe tilde
+U+E5E7 <> U+0442 U+0303 ; te tilde
+U+E5E8 <> U+0446 U+0303 ; tse tilde
+U+E5E9 <> U+0447 U+0303 ; che tilde
+U+E5EA <> U+0448 U+0303 ; sha tilde
+U+E5EB <> U+0449 U+0303 ; shcha tilde
+U+E5EC <> U+044A U+0303 ; hard sign tilde
+U+E5ED <> U+044B U+0303 ; yeru tilde
+U+E5EE <> U+044C U+0303 ; soft sign tilde
+U+E5EF <> U+044D U+0303 ; ie tilde
+U+E5F0 <> U+044E U+0303 ; io tilde
+U+E5F1 <> U+044F U+0303 ; ia tilde
+U+E5F2 <> U+0250 U+0303 ; a turned tilde
+U+E5F3 <> U+0254 U+0303 ; o open tilde
+U+E5F4 <> U+0258 U+0303 ; e reversed tilde
+U+E5F5 <> U+0259 U+0303 ; schwa tilde
+U+E5F6 <> U+025C U+0303 ; e open reversed tilde
+U+E5F7 <> U+026A U+0303 ; i small cap tilde
+U+E5F8 <> U+0276 U+0303 ; oe small cap tilde
+U+E5F9 <> U+028C U+0303 ; v turned tilde
+U+E5FA <> U+028F U+0303 ; y small cap tilde
+U+E5FB <> U+0292 U+0303 ; ezh tilde
+U+E600 <> U+0063 U+0308 ; c umlaut
+U+E601 <> U+0067 U+0308 ; g umlaut
+U+E602 <> U+006A U+0308 ; j umlaut
+U+E603 <> U+006D U+0308 ; m umlaut
+U+E604 <> U+006E U+0308 ; n umlaut
+U+E605 <> U+0070 U+0308 ; p umlaut
+U+E606 <> U+0071 U+0308 ; q umlaut
+U+E607 <> U+0072 U+0308 ; r umlaut
+U+E608 <> U+0073 U+0308 ; s umlaut
+U+E609 <> U+0076 U+0308 ; v umlaut
+U+E60A <> U+007A U+0308 ; z umlaut
+U+E60B <> U+00C6 U+0308 ; ae ligature umlaut
+U+E60C <> U+00F8 U+0308 ; o slash umlaut
+U+E60D <> U+014B U+0308 ; eng umlaut
+U+E60E <> U+0153 U+0308 ; oe ligature umlaut
+U+E60F <> U+03B1 U+0308 ; alpha umlaut
+U+E610 <> U+03B3 U+0308 ; gamma umlaut
+U+E611 <> U+03B5 U+0308 ; epsilon umlaut
+U+E612 <> U+03B7 U+0308 ; eta umlaut
+U+E613 <> U+03BA U+0308 ; kappa umlaut
+U+E614 <> U+03BC U+0308 ; mu umlaut
+U+E615 <> U+03BD U+0308 ; nu umlaut
+U+E616 <> U+03C0 U+0308 ; pi umlaut
+U+E617 <> U+03C1 U+0308 ; rho umlaut
+U+E618 <> U+03C2 U+0308 ; final sigma umlaut
+U+E619 <> U+03C3 U+0308 ; sigma umlaut
+U+E61A <> U+03C4 U+0308 ; tau umlaut
+U+E61B <> U+03C6 U+0308 ; phi umlaut
+U+E61C <> U+03C7 U+0308 ; chi umlaut
+U+E61D <> U+03C8 U+0308 ; psi umlaut
+U+E61E <> U+03C9 U+0308 ; omega umlaut
+U+E61F <> U+0432 U+0308 ; ve umlaut
+U+E620 <> U+0433 U+0308 ; ghe umlaut
+U+E621 <> U+0434 U+0308 ; de umlaut
+U+E622 <> U+043A U+0308 ; ka umlaut
+U+E623 <> U+043B U+0308 ; el umlaut
+U+E624 <> U+043C U+0308 ; em umlaut
+U+E625 <> U+043D U+0308 ; en umlaut
+U+E626 <> U+043F U+0308 ; pe umlaut
+U+E627 <> U+0442 U+0308 ; te umlaut
+U+E628 <> U+0446 U+0308 ; tse umlaut
+U+E629 <> U+0448 U+0308 ; sha umlaut
+U+E62A <> U+0449 U+0308 ; shcha umlaut
+U+E62B <> U+044A U+0308 ; hard sign umlaut
+U+E62C <> U+044C U+0308 ; soft sign umlaut
+U+E62D <> U+044E U+0308 ; io umlaut
+U+E62E <> U+044F U+0308 ; ia umlaut
+U+E62F <> U+0250 U+0308 ; a turned umlaut
+U+E630 <> U+0254 U+0308 ; o open umlaut
+U+E631 <> U+0258 U+0308 ; e reversed umlaut
+U+E632 <> U+025C U+0308 ; e open reversed umlaut
+U+E633 <> U+026A U+0308 ; i small cap umlaut
+U+E634 <> U+0276 U+0308 ; oe small cap umlaut
+U+E635 <> U+028C U+0308 ; v turned umlaut
+U+E636 <> U+028F U+0308 ; y small cap umlaut
+U+E637 <> U+0292 U+0308 ; ezh umlaut
+U+E640 <> U+0063 U+0304 ; c macron
+U+E641 <> U+006A U+0304 ; j macron
+U+E642 <> U+006D U+0304 ; m macron
+U+E643 <> U+006E U+0304 ; n macron
+U+E644 <> U+0070 U+0304 ; p macron
+U+E645 <> U+0071 U+0304 ; q macron
+U+E646 <> U+0072 U+0304 ; r macron
+U+E647 <> U+0073 U+0304 ; s macron
+U+E648 <> U+0076 U+0304 ; v macron
+U+E649 <> U+0077 U+0304 ; w macron
+U+E64A <> U+0078 U+0304 ; x macron
+U+E64B <> U+007A U+0304 ; z macron
+U+E64C <> U+00F8 U+0304 ; o slash macron
+U+E64D <> U+014B U+0304 ; eng macron
+U+E64E <> U+0153 U+0304 ; oe ligature macron
+U+E64F <> U+03B3 U+0304 ; gamma macron
+U+E650 <> U+03B5 U+0304 ; epsilon macron
+U+E651 <> U+03B7 U+0304 ; eta macron
+U+E652 <> U+03BA U+0304 ; kappa macron
+U+E653 <> U+03BC U+0304 ; mu macron
+U+E654 <> U+03BD U+0304 ; nu macron
+U+E655 <> U+03C0 U+0304 ; pi macron
+U+E656 <> U+03C1 U+0304 ; rho macron
+U+E657 <> U+03C2 U+0304 ; final sigma macron
+U+E658 <> U+03C3 U+0304 ; sigma macron
+U+E659 <> U+03C4 U+0304 ; tau macron
+U+E65A <> U+03C6 U+0304 ; phi macron
+U+E65B <> U+03C7 U+0304 ; chi macron
+U+E65C <> U+03C8 U+0304 ; psi macron
+U+E65D <> U+03C9 U+0304 ; omega macron
+U+E65E <> U+0432 U+0304 ; ve macron
+U+E65F <> U+0433 U+0304 ; ghe macron
+U+E660 <> U+0434 U+0304 ; de macron
+U+E661 <> U+0436 U+0304 ; zhe macron
+U+E662 <> U+0437 U+0304 ; ze macron
+U+E663 <> U+04E3 ; i macron
+U+E664 <> U+043A U+0304 ; ka macron
+U+E665 <> U+043B U+0304 ; el macron
+U+E666 <> U+043C U+0304 ; em macron
+U+E667 <> U+043D U+0304 ; en macron
+U+E668 <> U+043F U+0304 ; pe macron
+U+E669 <> U+0442 U+0304 ; te macron
+U+E66A <> U+0446 U+0304 ; tse macron
+U+E66B <> U+0447 U+0304 ; che macron
+U+E66C <> U+0448 U+0304 ; sha macron
+U+E66D <> U+0449 U+0304 ; shcha macron
+U+E66E <> U+044A U+0304 ; hard sign macron
+U+E66F <> U+044B U+0304 ; yeru macron
+U+E670 <> U+044C U+0304 ; soft sign macron
+U+E671 <> U+044D U+0304 ; ie macron
+U+E672 <> U+044E U+0304 ; io macron
+U+E673 <> U+044F U+0304 ; ia macron
+U+E674 <> U+0250 U+0304 ; a turned macron
+U+E675 <> U+0254 U+0304 ; o open macron
+U+E676 <> U+0258 U+0304 ; e reversed macron
+U+E677 <> U+0259 U+0304 ; schwa macron
+U+E678 <> U+025C U+0304 ; e open reversed macron
+U+E679 <> U+026A U+0304 ; i small cap macron
+U+E67A <> U+0276 U+0304 ; oe small cap macron
+U+E67B <> U+028C U+0304 ; v turned macron
+U+E67C <> U+028F U+0304 ; y small cap macron
+U+E67D <> U+0292 U+0304 ; ezh macron
+U+E680 <> U+0063 U+0306 ; c breve
+U+E681 <> U+006A U+0306 ; j breve
+U+E682 <> U+006D U+0306 ; m breve
+U+E683 <> U+006E U+0306 ; n breve
+U+E684 <> U+0070 U+0306 ; p breve
+U+E685 <> U+0071 U+0306 ; q breve
+U+E686 <> U+0072 U+0306 ; r breve
+U+E687 <> U+0073 U+0306 ; s breve
+U+E688 <> U+0076 U+0306 ; v breve
+U+E689 <> U+0077 U+0306 ; w breve
+U+E68A <> U+0078 U+0306 ; x breve
+U+E68B <> U+0079 U+0306 ; y breve
+U+E68C <> U+007A U+0306 ; z breve
+U+E68D <> U+00C6 U+0306 ; ae ligature breve
+U+E68E <> U+00F8 U+0306 ; o slash breve
+U+E68F <> U+014B U+0306 ; eng breve
+U+E690 <> U+0153 U+0306 ; oe ligature breve
+U+E691 <> U+03B3 U+0306 ; gamma breve
+U+E692 <> U+03B5 U+0306 ; epsilon breve
+U+E693 <> U+03BA U+0306 ; kappa breve
+U+E694 <> U+03BC U+0306 ; mu breve
+U+E695 <> U+03BD U+0306 ; nu breve
+U+E696 <> U+03C0 U+0306 ; pi breve
+U+E697 <> U+03C1 U+0306 ; rho breve
+U+E698 <> U+03C2 U+0306 ; final sigma breve
+U+E699 <> U+03C3 U+0306 ; sigma breve
+U+E69A <> U+03C4 U+0306 ; tau breve
+U+E69B <> U+03C5 U+0306 ; upsilon breve
+U+E69C <> U+03C6 U+0306 ; phi breve
+U+E69D <> U+03C7 U+0306 ; chi breve
+U+E69E <> U+03C8 U+0306 ; psi breve
+U+E69F <> U+03C9 U+0306 ; omega breve
+U+E6A0 <> U+0432 U+0306 ; ve breve
+U+E6A1 <> U+0433 U+0306 ; ghe breve
+U+E6A2 <> U+0434 U+0306 ; de breve
+U+E6A3 <> U+04C2 ; zhe breve
+U+E6A4 <> U+0437 U+0306 ; ze breve
+U+E6A5 <> U+0439 ; i breve
+U+E6A6 <> U+043A U+0306 ; ka breve
+U+E6A7 <> U+043B U+0306 ; el breve
+U+E6A8 <> U+043C U+0306 ; em breve
+U+E6A9 <> U+043D U+0306 ; en breve
+U+E6AA <> U+043F U+0306 ; pe breve
+U+E6AB <> U+0442 U+0306 ; te breve
+U+E6AC <> U+0446 U+0306 ; tse breve
+U+E6AD <> U+0447 U+0306 ; che breve
+U+E6AE <> U+0448 U+0306 ; sha breve
+U+E6AF <> U+0449 U+0306 ; shcha breve
+U+E6B0 <> U+044A U+0306 ; hard sign breve
+U+E6B1 <> U+044B U+0306 ; yeru breve
+U+E6B2 <> U+044C U+0306 ; soft sign breve
+U+E6B3 <> U+044D U+0306 ; ie breve
+U+E6B4 <> U+044E U+0306 ; io breve
+U+E6B5 <> U+044F U+0306 ; ia breve
+U+E6B6 <> U+0250 U+0306 ; a turned breve
+U+E6B7 <> U+0254 U+0306 ; o open breve
+U+E6B8 <> U+0258 U+0306 ; e reversed breve
+U+E6B9 <> U+0259 U+0306 ; schwa breve
+U+E6BA <> U+025C U+0306 ; e open reversed breve
+U+E6BB <> U+026A U+0306 ; i small cap breve
+U+E6BC <> U+0276 U+0306 ; oe small cap breve
+U+E6BD <> U+028C U+0306 ; v turned breve
+U+E6BE <> U+028F U+0306 ; y small cap breve
+U+E6BF <> U+0292 U+0306 ; ezh breve
+U+E6C0 <> U+006D U+030C ; m caron
+U+E6C1 <> U+0070 U+030C ; p caron
+U+E6C2 <> U+0071 U+030C ; q caron
+U+E6C3 <> U+0076 U+030C ; v caron
+U+E6C4 <> U+0077 U+030C ; w caron
+U+E6C5 <> U+0078 U+030C ; x caron
+U+E6C6 <> U+0079 U+030C ; y caron
+U+E6C7 <> U+00C6 U+030C ; ae ligature caron
+U+E6C8 <> U+00F8 U+030C ; o slash caron
+U+E6C9 <> U+014B U+030C ; eng caron
+U+E6CA <> U+0153 U+030C ; oe ligature caron
+U+E6CB <> U+03B1 U+030C ; alpha caron
+U+E6CC <> U+03B3 U+030C ; gamma caron
+U+E6CD <> U+03B5 U+030C ; epsilon caron
+U+E6CE <> U+03B7 U+030C ; eta caron
+U+E6CF <> U+03B9 U+030C ; iota caron
+U+E6D0 <> U+03BA U+030C ; kappa caron
+U+E6D1 <> U+03BC U+030C ; mu caron
+U+E6D2 <> U+03BD U+030C ; nu caron
+U+E6D3 <> U+03C0 U+030C ; pi caron
+U+E6D4 <> U+03C1 U+030C ; rho caron
+U+E6D5 <> U+03C2 U+030C ; final sigma caron
+U+E6D6 <> U+03C3 U+030C ; sigma caron
+U+E6D7 <> U+03C4 U+030C ; tau caron
+U+E6D8 <> U+03C5 U+030C ; upsilon caron
+U+E6D9 <> U+03C6 U+030C ; phi caron
+U+E6DA <> U+03C7 U+030C ; chi caron
+U+E6DB <> U+03C8 U+030C ; psi caron
+U+E6DC <> U+03C9 U+030C ; omega caron
+U+E6DD <> U+0432 U+030C ; ve caron
+U+E6DE <> U+0433 U+030C ; ghe caron
+U+E6DF <> U+0434 U+030C ; de caron
+U+E6E0 <> U+0436 U+030C ; zhe caron
+U+E6E1 <> U+0437 U+030C ; ze caron
+U+E6E2 <> U+0438 U+030C ; i caron
+U+E6E3 <> U+043A U+030C ; ka caron
+U+E6E4 <> U+043B U+030C ; el caron
+U+E6E5 <> U+043C U+030C ; em caron
+U+E6E6 <> U+043D U+030C ; en caron
+U+E6E7 <> U+043F U+030C ; pe caron
+U+E6E8 <> U+0442 U+030C ; te caron
+U+E6E9 <> U+0446 U+030C ; tse caron
+U+E6EA <> U+0447 U+030C ; che caron
+U+E6EB <> U+0448 U+030C ; sha caron
+U+E6EC <> U+0449 U+030C ; shcha caron
+U+E6ED <> U+044A U+030C ; hard sign caron
+U+E6EE <> U+044B U+030C ; yeru caron
+U+E6EF <> U+044C U+030C ; soft sign caron
+U+E6F0 <> U+044D U+030C ; ie caron
+U+E6F1 <> U+044E U+030C ; io caron
+U+E6F2 <> U+044F U+030C ; ia caron
+U+E6F3 <> U+0250 U+030C ; a turned caron
+U+E6F4 <> U+0254 U+030C ; o open caron
+U+E6F5 <> U+0258 U+030C ; e reversed caron
+U+E6F6 <> U+0259 U+030C ; schwa caron
+U+E6F7 <> U+025C U+030C ; e open reversed caron
+U+E6F8 <> U+026A U+030C ; i small cap caron
+U+E6F9 <> U+0276 U+030C ; oe small cap caron
+U+E6FA <> U+028C U+030C ; v turned caron
+U+E6FB <> U+028F U+030C ; y small cap caron
+U+E6FC <> U+01EF ; ezh caron

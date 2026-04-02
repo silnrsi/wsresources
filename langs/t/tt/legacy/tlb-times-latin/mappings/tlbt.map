@@ -1,0 +1,33 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 12/16/1999.
+;   Conversion Type = ASCII_to_from_Unicode
+;   Left-hand side font = TLB Times;11.25
+;   Right-hand side font = Times New Roman;11.25
+
+Name                  "tlbt"
+Description           "TLB Times Latin layer"
+Version               "2.50"
+RegistrationAuthority "Kazan Federal University"
+RegistrationName      "tlbt"
+
+pass(ascii)
+
+142 <> U+01B5 ; Z barred
+158 <> U+01B6 ; z barred
+196 <> U+018F ; Schwa
+205 <> U+042C ; I bowl
+208 <> U+011E ; G breve
+209 <> U+A790 ; N descender = for Unicode 6.0 and later
+209 <  U+E01A ; N descender = PUA before Unicode 6.0 - EKI
+214 <> U+019F ; O barred
+214 <  U+E01C ; O barred = PUA - EKI
+221 <> U+0130 ; I overdot
+222 <> U+015E ; S cedilla
+228 <> U+0259 ; schwa
+237 <> U+044C ; i bowl
+240 <> U+011F ; g breve
+241 <> U+A791 ; n descender = for Unicode 6.0 and later
+241 <  U+E01B ; n descender = PUA before Unicode 6.0 - EKI
+246 <> U+0275 ; o barred
+246 <  U+E01D ; o barred = PUA - EKI
+253 <> U+0131 ; dotless i
+254 <> U+015F ; s cedilla

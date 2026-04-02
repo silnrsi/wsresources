@@ -1,0 +1,34 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 01/20/2001.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Garamond;11.25
+;   Right-hand side font = Garamond;11.25
+
+EncodingName     "jGaramondPUA"
+DescriptiveName  "jGaramond Latin and Greek letters and numbers with PUA values"
+Version          "1.0"
+Contact          "mailto:jan@janthor.de"
+RegistrationName "jGaramond"
+
+pass(Unicode)
+
+UniClass [liningnumbers] = (U+F010 .. U+F019)
+UniClass [numbers]       = (U+0040 .. U+0049)
+
+; Letters
+U+F001 <> U+FB01 ; fi ligature. The liga (Standard Ligatures) OpenType feature could be added to replace fi
+U+F002 <> U+FB02 ; fl ligature. The liga (Standard Ligatures) OpenType feature could be added to replace fl
+U+F006 <> U+03C0 ; pi
+U+F00A <> U+0041 U+0364 ; A e
+U+F00B <> U+004F U+0364 ; O e
+U+F00C <> U+0055 U+0364 ; U e
+U+F00D <> U+0061 U+0364 ; a e
+U+F00E <> U+006F U+0364 ; o e
+U+F00F <> U+0075 U+0364 ; u e
+U+F020 <> U+03B8 ; theta, borrowed from the Symbol font
+
+; Numbers
+U+F003 <> U+2074 ; superscript four
+U+F007 <> U+2075 ; superscript five
+U+F008 <> U+2077 ; superscript seven
+U+F009 <> U+2078 ; superscript eight
+[liningnumbers] <> [numbers] ; The pnum (Proportional Figures) OpenType feature could be added

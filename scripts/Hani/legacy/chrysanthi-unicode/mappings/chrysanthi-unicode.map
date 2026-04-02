@@ -1,0 +1,95 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/27/2001.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Meiryo;11.25
+;   Right-hand side font = Meiryo;11.25
+
+Name                  "PUAChrysanthiUnicodeHanIdeographs"
+Description           "Chrysanthi Unicode - Han Ideographs with PUA values"
+Version               "2.3"
+Contact               "mailto:redneck_witchboi@yahoo.com"
+RegistrationAuthority "Every Witch Way"
+RegistrationName      "PUAChrysanthiUnicodeHanIdeographsToUnicode"
+
+pass(Unicode)
+
+U+E300 <> U+96F6
+U+E301 <> U+4E00
+U+E302 <> U+4E8C
+U+E303 <> U+4E09
+U+E304 <> U+56DB
+U+E305 <> U+4E94
+U+E306 <> U+516D
+U+E307 <> U+4E02
+U+E308 <> U+516B
+U+E309 <> U+4E5D
+U+E30A <> U+5341
+U+E30B <> U+767E
+U+E30C <> U+5343
+U+E30D <> U+842C
+U+E310 <> U+4E0A
+U+E311 <> U+5357
+U+E312 <> U+6771
+U+E313 <> U+4E2D
+U+E314 <> U+879F
+U+E315 <> U+5317
+U+E316 <> U+4E0B
+U+E317 <> U+65E5
+U+E318 <> U+6C23
+U+E319 <> U+706B
+U+E31A <> U+6728
+U+E31B <> U+571F
+U+E31C <> U+91D1
+U+E31D <> U+6C34
+U+E31E <> U+9670
+U+E31F <> U+967D
+U+E320 <> U+7ACB
+U+E321 <> U+590F
+U+E322 <> U+6625
+U+E323 <> U+5206
+U+E324 <> U+79CB
+U+E325 <> U+51AC
+U+E326 <> U+81F3
+U+E327 <> U+6708
+U+E328 <> U+9F20
+U+E329 <> U+725B
+U+E32A <> U+864E
+U+E32B <> U+5154
+U+E32C <> U+9FD8
+U+E32D <> U+86C7
+U+E32E <> U+99AC
+U+E32F <> U+7F8A
+U+E330 <> U+7334
+U+E331 <> U+96DE
+U+E332 <> U+72D7
+U+E333 <> U+8C6C
+U+E338 <> U+5B50
+U+E339 <> U+4E11
+U+E33A <> U+5BC5
+U+E33B <> U+536F
+U+E33C <> U+8FB0
+U+E33D <> U+5DF3
+U+E33E <> U+5348
+U+E33F <> U+672A
+U+E340 <> U+7533
+U+E341 <> U+9149
+U+E342 <> U+620C
+U+E343 <> U+4EA5
+U+E348 <> U+5927
+U+E349 <> U+5C0F
+U+E34A <> U+5B2D
+U+E34B <> U+96E8
+U+E34C <> U+9A5A
+U+E34D <> U+8707
+U+E34E <> U+6E05
+U+E34F <> U+660E
+U+E350 <> U+7A40
+U+E351 <> U+6EFF
+U+E352 <> U+8292
+U+E353 <> U+7A2E
+U+E354 <> U+6691
+U+E355 <> U+8655
+U+E356 <> U+767D
+U+E357 <> U+9732
+U+E358 <> U+971C
+U+E359 <> U+964D
+U+E35A <> U+96EA

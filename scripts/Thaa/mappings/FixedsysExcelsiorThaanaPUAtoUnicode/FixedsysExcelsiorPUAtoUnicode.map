@@ -1,0 +1,25 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/29/2017.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Fixedsys Excelsior;11.25
+;   Right-hand side font = Fixedsys Excelsior;11.25
+
+Name                  "PUAFixedsysExcelsiorThaana"
+Description           "Fixedsys Excelsior spacing Thaana diacritics"
+Version               "3.023"
+Contact               "mailto:valentinium@gmail.com"
+RegistrationAuthority "Fixedsys Excelsior"
+RegistrationName      "PUAFixedsysExcelsiorThaanaToUnicode"
+
+pass(Unicode)
+
+U+F660 <> U+07AF ; oaboafili
+U+F661 <> U+07AE ; obofili
+U+F662 <> U+07AD ; eybeyfili
+U+F663 <> U+07AC ; ebefili
+U+F664 <> U+07AB ; ooboofili
+U+F665 <> U+07AA ; ubufili
+U+F666 <> U+07A9 ; eebeefili
+U+F667 <> U+07A8 ; ibifili
+U+F668 <> U+07A7 ; aabaafili
+U+F669 <> U+07A6 ; abafili
+U+F66A <> U+07B0 ; sukun

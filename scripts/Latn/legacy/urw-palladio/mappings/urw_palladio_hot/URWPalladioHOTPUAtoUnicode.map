@@ -1,0 +1,144 @@
+; This file was edited using TECkitMappingEditorU.exe v1.0.0.1 on 03/10/2004.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = URW Palladio HOT Roman;11.25
+;   Right-hand side font = URW Palladio HOT Roman;11.25
+
+Name                  "URWPalladioHOTPUA"
+Description           "URW Palladio HOT Latin characters and metrics symbols with PUA values"
+Version               "2.0"
+Contact               "mailto:stiehl@sanskritweb.net"
+RegistrationAuthority "Sanskrit Web"
+RegistrationName      "URWPalladioHOTPUAtoUnicode"
+
+pass(Unicode)
+
+U+F100 <> U+0041 U+0304 U+0301 ; A macron acute
+U+F101 <> U+0061 U+0304 U+0301 ; a macron acute
+U+F102 <> U+0041 U+0304 U+0300 ; A macron grave
+U+F103 <> U+0061 U+0304 U+0300 ; a macron grave
+U+F104 <> U+0041 U+0304 U+0303 ; A macron tilde
+U+F105 <> U+0061 U+0304 U+0303 ; a macron tilde
+U+F106 <> U+0041 U+0304 U+0306 ; A macron breve
+U+F107 <> U+0061 U+0304 U+0306 ; a macron breve
+U+F108 <> U+0049 U+0304 U+0301 ; I macron acute
+U+F109 <> U+0069 U+0304 U+0301 ; i macron acute
+U+F10A <> U+0049 U+0304 U+0300 ; I macron grave
+U+F10B <> U+0069 U+0304 U+0300 ; i macron grave
+U+F10C <> U+0049 U+0304 U+0303 ; I macron tilde
+U+F10D <> U+0069 U+0304 U+0303 ; i macron tilde
+U+F10E <> U+0049 U+0304 U+0306 ; I macron breve
+U+F10F <> U+0069 U+0304 U+0306 ; i macron breve
+U+F110 <> U+0055 U+0304 U+0301 ; U macron acute
+U+F111 <> U+0075 U+0304 U+0301 ; u macron acute
+U+F112 <> U+0055 U+0304 U+0300 ; U macron grave
+U+F113 <> U+0075 U+0304 U+0300 ; u macron grave
+U+F114 <> U+0055 U+0304 U+0303 ; U macron tilde
+U+F115 <> U+0075 U+0304 U+0303 ; u macron tilde
+U+F116 <> U+0055 U+0304 U+0306 ; U macron breve
+U+F117 <> U+0075 U+0304 U+0306 ; u macron breve
+U+F118 <> U+0052 U+0323 U+0301 ; R underdot acute
+U+F119 <> U+0072 U+0323 U+0301 ; r underdot acute
+U+F11A <> U+0052 U+0323 U+0300 ; R underdot grave
+U+F11B <> U+0072 U+0323 U+0300 ; r underdot grave
+U+F11C <> U+0052 U+0323 U+0304 U+0301 ; R underdot macron acute
+U+F11D <> U+0072 U+0323 U+0304 U+0301 ; r underdot macron acute
+U+F11E <> U+0052 U+0323 U+0304 U+0300 ; R underdot macron grave
+U+F11F <> U+0072 U+0323 U+0304 U+0300 ; r underdot macron grave
+U+F120 <> U+0052 U+0325 ; R undercircle
+U+F121 <> U+0072 U+0325 ; r undercircle
+U+F122 <> U+0052 U+0325 U+0304 ; R undercircle macron
+U+F123 <> U+0072 U+0325 U+0304 ; r undercircle macron
+U+F124 <> U+0052 U+0325 U+0301 ; R undercircle acute
+U+F125 <> U+0072 U+0325 U+0301 ; r undercircle acute
+U+F126 <> U+0052 U+0325 U+0300 ; R undercircle grave
+U+F127 <> U+0072 U+0325 U+0300 ; r undercircle grave
+U+F128 <> U+0052 U+0325 U+0304 U+0301 ; R undercircle macron acute
+U+F129 <> U+0072 U+0325 U+0304 U+0301 ; r undercircle macron acute
+U+F12A <> U+0052 U+0325 U+0304 U+0300 ; R undercircle macron grave
+U+F12B <> U+0072 U+0325 U+0304 U+0300 ; r undercircle macron grave
+U+F12C <> U+004C U+0323 U+0301 ; L underdot acute
+U+F12D <> U+006C U+0323 U+0301 ; l underdot acute
+U+F12E <> U+004C U+0323 U+0300 ; L underdot grave
+U+F12F <> U+006C U+0323 U+0300 ; l underdot grave
+U+F130 <> U+004C U+0325 ; L undercircle
+U+F131 <> U+006C U+0325 ; l undercircle
+U+F132 <> U+004C U+0325 U+0304 ; L undercircle macron
+U+F133 <> U+006C U+0325 U+0304 ; l undercircle macron
+U+F134 <> U+004C U+0325 U+0301 ; L undercircle acute
+U+F135 <> U+006C U+0325 U+0301 ; l undercircle acute
+U+F136 <> U+004C U+0325 U+0300 ; L undercircle grave
+U+F137 <> U+006C U+0325 U+0300 ; l undercircle grave
+U+F138 <> U+0045 U+0304 U+0303 ; E macron tilde
+U+F139 <> U+0065 U+0304 U+0303 ; e macron tilde
+U+F13A <> U+0045 U+0304 U+0306 ; E macron breve
+U+F13B <> U+0065 U+0304 U+0306 ; e macron breve
+U+F13C <> U+004F U+0304 U+0303 ; O macron tilde
+U+F13D <> U+006F U+0304 U+0303 ; o macron tilde
+U+F13E <> U+004F U+0304 U+0306 ; O macron breve
+U+F13F <> U+006F U+0304 U+0306 ; o macron breve
+U+F140 <> U+004D U+0310 ; M candrabindu
+U+F141 <> U+006D U+0310 ; m candrabindu
+U+F142 <> U+004C U+0303 ; L tilde
+U+F143 <> U+006C U+0303 ; l tilde
+U+F144 <> U+004C U+0310 ; L candrabindu
+U+F145 <> U+006C U+0310 ; l candrabindu
+U+F146 <> U+004B U+035F U+0048 ; KH underline
+U+F146 <  U+004B U+0331 U+0048 U+200D ; KH underline (via OpenType GS)
+U+F147 <> U+004B U+035F U+0068 ; Kh underline
+U+F147 <  U+004B U+0331 U+0068 U+200D ; Kh underline (via OpenType GS)
+U+F148 <> U+006B U+035F U+0068 ; kh underline
+U+F148 <  U+006B U+0331 U+0068 U+200D ; kh underline (via OpenType GS)
+U+F149 <> U+0053 U+0331 ; S underline
+U+F14A <> U+0073 U+0331 ; s underline
+U+F14B <> U+0048 U+0331 ; H underline
+U+F14C <> U+0048 U+0304 ; H underumlaut
+U+F14D <> U+0068 U+0304 ; h underumlaut
+U+F14E <> U+0053 U+0304 ; S underumlaut
+U+F14F <> U+0073 U+0304 ; s underumlaut
+U+F150 <> U+0054 U+0304 ; T underumlaut
+U+F151 <> U+0074 U+0304 ; t underumlaut
+U+F152 <> U+004D U+0306 ; M breve
+U+F153 <> U+006D U+0306 ; m breve
+U+F154 <> U+004E U+0306 ; N breve
+U+F155 <> U+006E U+0306 ; n breve
+U+F156 <> U+0052 U+0306 ; R breve
+U+F157 <> U+0072 U+0306 ; r breve
+U+F158 <> U+004A U+0301 ; J acute
+U+F159 <> U+006A U+0301 ; j acute
+U+F15A <> U+004A U+030C ; J caron
+U+F15B <> U+005A U+0304 ; Z underumlaut
+U+F15C <> U+007A U+0304 ; z underumlaut
+U+F15D <> U+0052 U+0325 U+0302 ; R undercircle circumflex
+U+F15E <> U+0072 U+0325 U+0302 ; r undercircle circumflex
+U+F15F <> U+1D34 ; superscript H = for Unicode 4.0 and later
+U+F160 <> U+0041 U+0360 U+0049 ; AI tilde = added in URW Palladio HOT 2.0
+U+F161 <> U+0061 U+0360 U+0069 ; ai tilde = added in URW Palladio HOT 2.0
+U+F162 <> U+0041 U+0360 U+0055 ; AU tilde = added in URW Palladio HOT 2.0
+U+F163 <> U+0061 U+0360 U+0075 ; au tilde = added in URW Palladio HOT 2.0
+U+F1D0 <> U+02CD ; underline = removed in URW Palladio HOT 2.0
+U+F1D1 <> U+02C9 ; capital macron = removed in URW Palladio HOT 2.0
+U+F1D2 <> U+0304 U+0301 ; macron acute = removed in URW Palladio HOT 2.0
+U+F1D3 <> U+0304 U+0300 ; macron grave = removed in URW Palladio HOT 2.0
+U+F1D4 <> U+0304 U+0303 ; macron tilde = removed in URW Palladio HOT 2.0
+U+F1D5 <> U+0304 U+0306 ; macron breve = removed in URW Palladio HOT 2.0
+U+F1D6 <> U+0304 U+0301 ; capital macron acute = removed in URW Palladio HOT 2.0
+U+F1D7 <> U+0304 U+0300 ; capital macron grave = removed in URW Palladio HOT 2.0
+U+F1D8 <> U+0304 U+0303 ; capital macron tilde = removed in URW Palladio HOT 2.0
+U+F1D9 <> U+0304 U+0306 ; capital macron breve = removed in URW Palladio HOT 2.0
+U+F1DB <> U+02D9 ; capital overdot = removed in URW Palladio HOT 2.0
+U+F1DC <> U+02F3 ; undercircle = for Unicode 4.0 and later. removed in URW Palladio HOT 2.0
+U+F1DF <> U+02DC ; capital tilde = removed in URW Palladio HOT 2.0
+U+F1E0 <> U+00B4 ; capital acute = removed in URW Palladio HOT 2.0
+U+F1E1 <> U+0060 ; capital grave = removed in URW Palladio HOT 2.0
+U+F1E2 <> U+02C6 ; capital circumflex = removed in URW Palladio HOT 2.0
+U+F1E3 <> U+02C7 ; capital caron = removed in URW Palladio HOT 2.0
+U+F1E4 <> U+00A8 ; capital umlaut = removed in URW Palladio HOT 2.0
+U+F1E6 <> U+02DD ; capital double acute = removed in URW Palladio HOT 2.0
+U+F1E7 <> U+02DA ; capital overcircle = removed in URW Palladio HOT 2.0
+U+F1E9 <> U+02D8 ; capital breve = removed in URW Palladio HOT 2.0
+U+F1F8 <> U+23D1 ; metrical breve = for Unicode 4.1 and later. added at the request of a German indologist in 06/15/2003
+U+F1FA <> U+23D3 ; metrical breve macron = for Unicode 4.1 and later. added at the request of a German indologist in 06/15/2003
+U+F1FB <> U+23D1 U+0301 ; metrical breve acute = added at the request of a German indologist in 06/15/2003
+U+F1FD <> U+23D3 U+0301 ; metrical breve macron acute = added at the request of a German indologist in 06/15/2003
+U+F1FE <> U+00D7 U+0301 ; multiplication sign acute = added at the request of a German indologist in 06/15/2003
+U+F1FF <> U+00D7 U+0300 ; multiplication sign grave = added at the request of a German indologist in 06/15/2003

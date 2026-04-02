@@ -1,0 +1,959 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/29/2017.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Fixedsys Excelsior;11.25
+;   Right-hand side font = Fixedsys Excelsior;11.25
+
+Name                  "PUAFixedsysExcelsior"
+Description           "Fixedsys Excelsior styled variants with PUA values"
+Version               "3.023"
+Contact               "mailto:valentinium@gmail.com"
+RegistrationAuthority "Fixedsys Excelsior"
+RegistrationName      "PUAFixedsysExcelsiorToUnicode"
+
+pass(Unicode)
+
+UniClass [numbers]            = (U+0030 .. U+0039)
+UniClass [uppercase]          = (U+0041 .. U+005A)
+UniClass [lowercase]          = (U+0061 .. U+007A)
+UniClass [puaitalicuppercase] = (U+F4E0 .. U+F4F9)
+UniClass [puaitaliclowercase] = (U+F500 .. U+F519)
+UniClass [puanarrownumbers]   = (U+F72A .. U+F733)
+UniClass [puaserifuppercase]  = (U+F770 .. U+F789)
+UniClass [puaseriflowercase]  = (U+F790 .. U+F7A9)
+UniClass [italicuppercase]    = (U+1D434 .. U+1D44D)
+UniClass [italiclowercase]    = (U+1D44E .. U+1D467)
+UniClass [serifuppercase]     = (U+1D670 .. U+1D689)
+UniClass [seriflowercase]     = (U+1D68A .. U+1D6A3)
+UniClass [narrownumbers]      = (U+1D7E2 .. U+1D7EB)
+
+; Script
+U+E240 <> U+1D4B7 U+1D4C7 ; br ligature
+U+E240 <  U+0062 U+0072
+U+E241 <> U+1D4B7 U+1D4CF ; bz ligature
+U+E241 <  U+0062 U+007A
+U+E242 <> U+1D4BB U+1D4C7 ; fr ligature
+U+E242 <  U+0066 U+0072
+U+E243 <> U+1D4BB U+1D4CF ; fz ligature
+U+E243 <  U+0066 U+007A
+U+E244 <> U+2134 U+1D4C7 ; or ligature
+U+E244 <  U+006F U+0072
+U+E245 <> U+2134 U+1D4CF ; oz ligature
+U+E245 <  U+006F U+007A
+U+E246 <> U+1D4CB U+1D4C7 ; vr ligature
+U+E246 <  U+0076 U+0072
+U+E247 <> U+1D4CB U+1D4CF ; vz ligature
+U+E247 <  U+0076 U+007A
+U+E248 <> U+1D4CC U+1D4C7 ; wr ligature
+U+E248 <  U+0077 U+0072
+U+E249 <> U+1D4CC U+1D4CF ; wz ligature
+U+E249 <  U+0077 U+007A
+U+E250 <> U+1D4B6
+U+E250 <  U+0061
+U+E251 <> U+1D4B7
+U+E251 <  U+0062
+U+E252 <> U+1D4B8
+U+E252 <  U+0063
+U+E253 <> U+1D4B9
+U+E253 <  U+0064
+U+E254 <> U+212F
+U+E254 <  U+0065
+U+E255 <> U+1D4BB
+U+E255 <  U+0066
+U+E255 <> U+210A
+U+E256 <  U+0067
+U+E257 <> U+1D4BD
+U+E257 <  U+0068
+U+E258 <> U+1D4BE
+U+E258 <  U+0069
+U+E259 <> U+1D4BF
+U+E259 <  U+006A
+U+E25A <> U+1D4C0
+U+E25A <  U+006B
+U+E25B <> U+1D4C1
+U+E25B <  U+006C
+U+E25C <> U+1D4C2
+U+E25C <  U+006D
+U+E25D <> U+1D4C3
+U+E25D <  U+006E
+U+E25E <> U+2134
+U+E25E <  U+006F
+U+E25F <> U+1D4C5
+U+E25F <  U+0070
+U+E260 <> U+1D4C6
+U+E260 <  U+0071
+U+E261 <> U+AB4B ; r script = for Unicode 7.0 and later
+U+E261 <  U+0072
+U+E262 <> U+1D4C7
+U+E262 <  U+0072
+U+E263 <> U+1D4C8
+U+E263 <  U+0073
+U+E264 <> U+1D4C9
+U+E264 <  U+0074
+U+E265 <> U+1D4CA
+U+E265 <  U+0075
+U+E266 <> U+1D4CB
+U+E266 <  U+0076
+U+E267 <> U+1D4CC
+U+E267 <  U+0077
+U+E268 <> U+1D4CD
+U+E268 <  U+0078
+U+E269 <> U+1D4CE
+U+E269 <  U+0079
+U+E26A <> U+1D4CF
+U+E26A <  U+007A
+U+E26B <> U+1D4CF
+U+E26B <  U+007A
+U+E270 <> U+1D49C
+U+E270 <  U+0041
+U+E271 <> U+212C
+U+E271 <  U+0042
+U+E272 <> U+1D49E
+U+E272 <  U+0043
+U+E273 <> U+1D49F
+U+E273 <  U+0044
+U+E274 <> U+2130
+U+E274 <  U+0045
+U+E275 <> U+2131
+U+E275 <  U+0046
+U+E276 <> U+1D4A2
+U+E276 <  U+0047
+U+E277 <> U+210B
+U+E277 <  U+0048
+U+E278 <> U+2110 
+U+E278 <  U+0049
+U+E279 <> U+1D4A5
+U+E279 <  U+004A
+U+E27A <> U+1D4A6
+U+E27A <  U+004B
+U+E27B <> U+2112 
+U+E27B <  U+004C
+U+E27C <> U+2133
+U+E27C <  U+004D
+U+E27D <> U+1D4A9
+U+E27D <  U+004E
+U+E27E <> U+1D4AA
+U+E27E <  U+004F
+U+E27F <> U+1D4AB
+U+E27F <  U+0050
+U+E280 <> U+1D4AC
+U+E280 <  U+0051
+U+E281 <> U+211B 
+U+E281 <  U+0052
+U+E283 <> U+1D4AE
+U+E283 <  U+0053
+U+E284 <> U+1D4AF
+U+E284 <  U+0054
+U+E285 <> U+1D4B0
+U+E285 <  U+0055
+U+E286 <> U+1D4B1
+U+E286 <  U+0056
+U+E287 <> U+1D4B2
+U+E287 <  U+0057
+U+E288 <> U+1D4B3
+U+E288 <  U+0058
+U+E289 <> U+1D4B4
+U+E289 <  U+0059
+U+E28A <> U+1D4B5
+U+E28A <  U+005A
+
+; Italic
+[puaitalicuppercase] <> [italicuppercase]
+[puaitalicuppercase] <  [uppercase]
+[puaitaliclowercase] <> [italiclowercase]
+[puaitaliclowercase] <  [lowercase]
+U+F4DA <> U+002E ; full stop
+U+F4DB <> U+002C ; comma
+U+F4DC <> U+003A ; colon
+U+F4DD <> U+003B ; semicolon
+U+F4DE <> U+0021 ; exclamation mark
+U+F4DF <> U+003F ; question mark
+U+F4FA <> U+2018 ; open single quote
+U+F4FB <> U+2019 ; close single quote
+U+F4FC <> U+201C ; open double quote
+U+F4FD <> U+201D ; close double quote
+U+F4FE <> U+0028 ; left parenthesis
+U+F4FF <> U+0029 ; right parenthesis
+U+F51A <> U+0025 ; percent
+U+F51B <> U+0026 ; ampersand
+U+F51C <> U+00AB ; open French quote
+U+F51D <> U+00BB ; close French quote
+U+F51E <> U+00A1 ; inverted exclamation mark
+U+F51F <> U+00BF ; inverted question mark
+U+F520 <> U+1D434 U+1D438 ; AE ligature
+U+F520 <  U+00C6
+U+F521 <> U+1D44E U+1D452 ; ae ligature
+U+F521 <  U+00E6
+U+F522 <> U+1D442 U+1D438 ; OE ligature
+U+F522 <  U+0152
+U+F523 <> U+1D45C U+1D452 ; oe ligature
+U+F523 <  U+0153
+U+F524 <> U+1D434 U+0301 ; A acute
+U+F524 <  U+00C1
+U+F525 <> U+1D444 U+0301 ; a acute
+U+F525 <  U+00E1
+U+F526 <> U+1D434 U+0300 ; A grave
+U+F526 <  U+00C0
+U+F527 <> U+1D444 U+0300 ; a grave
+U+F527 <  U+00E0
+U+F528 <> U+1D434 U+030A ; A overcircle
+U+F528 <  U+00C5
+U+F529 <> U+1D444 U+030A ; a overcircle
+U+F529 <  U+00E5
+U+F52A <> U+1D434 U+0303 ; A tilde
+U+F52A <  U+00C3
+U+F52B <> U+1D444 U+0303 ; a tilde
+U+F52B <  U+00E3
+U+F52C <> U+1D434 U+0302 ; A circumflex
+U+F52C <  U+00C2
+U+F52D <> U+1D444 U+0302 ; a circumflex
+U+F52D <  U+00E2
+U+F52E <> U+1D434 U+0308 ; A umlaut
+U+F52E <  U+00C4
+U+F52F <> U+1D444 U+0308 ; a umlaut
+U+F52F <  U+00E4
+U+F530 <> U+1D434 U+0304 ; A macron
+U+F530 <  U+0100
+U+F531 <> U+1D444 U+0304 ; a macron
+U+F531 <  U+0101
+U+F532 <> U+1D434 U+0306 ; A breve
+U+F532 <  U+0102
+U+F533 <> U+1D444 U+0306 ; a breve
+U+F533 <  U+0103
+U+F534 <> U+1D434 U+0328 ; A ogonek
+U+F534 <  U+0104
+U+F535 <> U+1D444 U+0328 ; a ogonek
+U+F535 <  U+0105
+U+F536 <> U+1D436 U+0301 ; C acute
+U+F536 <  U+0106
+U+F537 <> U+1D450 U+0301 ; c acute
+U+F537 <  U+0107
+U+F538 <> U+1D436 U+0302 ; C circumflex
+U+F538 <  U+0108
+U+F539 <> U+1D450 U+0302 ; c circumflex
+U+F539 <  U+0109
+U+F53A <> U+1D436 U+0307 ; C overdot
+U+F53A <  U+010A
+U+F53B <> U+1D450 U+0307 ; c overdot
+U+F53B <  U+010B
+U+F53C <> U+1D436 U+030C ; C caron
+U+F53C <  U+010C
+U+F53D <> U+1D450 U+030C ; c caron
+U+F53D <  U+010D
+U+F53E <> U+1D436 U+0327 ; C cedilla
+U+F53E <  U+00C7
+U+F53F <> U+1D450 U+0327 ; c cedilla
+U+F53F <  U+00E7
+U+F540 <> U+1D437 U+030C ; D caron
+U+F540 <  U+010E
+U+F541 <> U+1D451 U+030C ; d caron
+U+F541 <  U+010F
+U+F542 <> U+1D451 U+0335 ; d stroke
+U+F542 <  U+0111
+U+F543 <> U+1D438 U+0301 ; E acute
+U+F543 <  U+00C9
+U+F544 <> U+1D452 U+0301 ; e acute
+U+F544 <  U+00E9
+U+F545 <> U+1D438 U+0300 ; E grave
+U+F545 <  U+00C8
+U+F546 <> U+1D452 U+0300 ; e grave
+U+F546 <  U+00E8
+U+F547 <> U+1D438 U+0302 ; E circumflex
+U+F547 <  U+00CA
+U+F548 <> U+1D452 U+0302 ; e circumflex
+U+F548 <  U+00EA
+U+F549 <> U+1D438 U+0307 ; E overdot
+U+F549 <  U+0116
+U+F54A <> U+1D452 U+0307 ; e overdot
+U+F54A <  U+0117
+U+F54B <> U+1D438 U+0308 ; E umlaut
+U+F54B <  U+00CB
+U+F54C <> U+1D452 U+0308 ; e umlaut
+U+F54C <  U+00EB
+U+F54D <> U+1D438 U+030C ; E caron
+U+F54D <  U+011A
+U+F54E <> U+1D452 U+030C ; e caron
+U+F54E <  U+011B
+U+F54F <> U+1D438 U+0304 ; E macron
+U+F54F <  U+0112
+U+F550 <> U+1D452 U+0304 ; e macron
+U+F550 <  U+0113
+U+F551 <> U+1D438 U+0328 ; E ogonek
+U+F551 <  U+0118
+U+F552 <> U+1D452 U+0328 ; e ogonek
+U+F552 <  U+0119
+U+F553 <  U+018F ; Schwa
+U+F554 <  U+0259 ; schwa
+U+F555 <> U+1D43A U+0302 ; G circumflex
+U+F555 <  U+011C
+U+F556 <> U+1D454 U+0302 ; g circumflex
+U+F556 <  U+011D
+U+F557 <> U+1D43A U+0306 ; G breve
+U+F557 <  U+011E
+U+F558 <> U+1D454 U+0306 ; g breve
+U+F558 <  U+011F
+U+F559 <> U+1D43A U+0307 ; G overdot
+U+F559 <  U+0120
+U+F55A <> U+1D454 U+0307 ; g overdot
+U+F55A <  U+0121
+U+F55B <> U+1D43A U+0326 ; G cedilla
+U+F55B <  U+0122
+U+F55C <> U+1D454 U+0312 ; g cedilla
+U+F55C <  U+0123
+U+F55D <> U+1D43B U+0302 ; H circumflex
+U+F55D <  U+0124
+U+F55E <> U+210E U+0302 ; h circumflex
+U+F55E <  U+0125
+U+F55F <> U+1D43B U+0335 ; H stroke
+U+F55F <  U+0126
+U+F560 <> U+210F ; h stroke
+U+F560 <  U+0127
+U+F561 <> U+1D43C U+0307 ; I overdot
+U+F561 <  U+0130
+U+F562 <> U+1D6A4 ; dotless i
+U+F562 <  U+0131
+U+F563 <> U+1D43C U+0301 ; I acute
+U+F563 <  U+00CD
+U+F564 <> U+1D456 U+0301 ; i acute
+U+F564 <  U+00ED
+U+F565 <> U+1D43C U+0300 ; I grave
+U+F565 <  U+00CC
+U+F566 <> U+1D456 U+0300 ; i grave
+U+F566 <  U+00EC
+U+F567 <> U+1D43C U+0302 ; I circumflex
+U+F567 <  U+00CE
+U+F568 <> U+1D456 U+0302 ; i circumflex
+U+F568 <  U+00EE
+U+F569 <> U+1D43C U+0308 ; I umlaut
+U+F569 <  U+00CF
+U+F56A <> U+1D456 U+0308 ; i umlaut
+U+F56A <  U+00EF
+U+F56B <> U+1D43C U+0304 ; I macron
+U+F56B <  U+012A
+U+F56C <> U+1D456 U+0304 ; i macron
+U+F56C <  U+012B
+U+F56D <> U+1D43C U+0328 ; I ogonek
+U+F56D <  U+012E
+U+F56E <> U+1D456 U+0328 ; i ogonek
+U+F56E <  U+012F
+U+F56F <> U+1D43C U+1D43D ; IJ ligature
+U+F56F <  U+0132
+U+F570 <> U+1D456 U+1D457 ; ij ligature
+U+F570 <  U+0133
+U+F571 <> U+1D43D U+0302 ; J circumflex
+U+F571 <  U+0134
+U+F572 <> U+1D457 U+0302 ; j circumflex
+U+F572 <  U+0135
+U+F573 <> U+1D43E U+0326 ; K cedilla
+U+F573 <  U+0136
+U+F574 <> U+1D458 U+0326 ; k cedilla
+U+F574 <  U+0137
+U+F575 <> U+1D43F U+0301 ; L acute
+U+F575 <  U+0139
+U+F576 <> U+1D459 U+0301 ; l acute
+U+F576 <  U+013A
+U+F577 <> U+1D43F U+0326 ; L cedilla
+U+F577 <  U+013B
+U+F578 <> U+1D459 U+0326 ; l cedilla
+U+F578 <  U+013C
+U+F579 <> U+1D43F U+0315 ; L caron
+U+F579 <  U+013D
+U+F57A <> U+1D459 U+0315 ; l caron
+U+F57A <  U+013E
+U+F57B <> U+1D43F U+0337 ; L stroke
+U+F57B <  U+0141
+U+F57C <> U+1D459 U+0337 ; l stroke
+U+F57C <  U+0142
+U+F57D <> U+1D441 U+0301 ; N acute
+U+F57D <  U+0143
+U+F57E <> U+1D45B U+0301 ; n acute
+U+F57E <  U+0144
+U+F57F <> U+1D441 U+0326 ; N cedilla
+U+F57F <  U+0145
+U+F580 <> U+1D45B U+0326 ; n cedilla
+U+F580 <  U+0146
+U+F581 <> U+1D441 U+030C ; N caron
+U+F581 <  U+0147
+U+F582 <> U+1D45B U+030C ; n caron
+U+F582 <  U+0148
+U+F583 <> U+1D441 U+0303 ; N tilde
+U+F583 <  U+00D1
+U+F584 <> U+1D45B U+0303 ; n tilde
+U+F584 <  U+00F1
+U+F585 <> U+1D442 U+0301 ; O acute
+U+F585 <  U+00D3
+U+F586 <> U+1D45C U+0301 ; o acute
+U+F586 <  U+00F3
+U+F587 <> U+1D442 U+030B ; O double acute
+U+F587 <  U+0150
+U+F588 <> U+1D45C U+030B ; o double acute
+U+F588 <  U+0151
+U+F589 <> U+1D442 U+0300 ; O grave
+U+F589 <  U+00D2
+U+F58A <> U+1D45C U+0300 ; o grave
+U+F58A <  U+00F2
+U+F58B <> U+1D442 U+0302 ; O circumflex
+U+F58B <  U+00D4
+U+F58C <> U+1D45C U+0302 ; o circumflex
+U+F58C <  U+00F4
+U+F58D <> U+1D442 U+0303 ; O tilde
+U+F58D <  U+00D5
+U+F58E <> U+1D45C U+0303 ; o tilde
+U+F58E <  U+00F5
+U+F58F <> U+1D442 U+0308 ; O umlaut
+U+F58F <  U+00D6
+U+F590 <> U+1D45C U+0308 ; o umlaut
+U+F590 <  U+00F6
+U+F591 <> U+1D442 U+0304 ; O macron
+U+F591 <  U+014C
+U+F592 <> U+1D45C U+0304 ; o macron
+U+F592 <  U+014D
+U+F593 <> U+1D442 U+0338 ; O slash
+U+F593 <  U+00D8
+U+F594 <> U+1D45C U+0337 ; o slash
+U+F594 <  U+00F8
+U+F595 <> U+1D445 U+0301 ; R acute
+U+F595 <  U+0154
+U+F596 <> U+1D45F U+0301 ; r acute
+U+F596 <  U+0155
+U+F597 <> U+1D445 U+030C ; R caron
+U+F597 <  U+0158
+U+F598 <> U+1D45F U+030C ; r caron
+U+F598 <  U+0159
+U+F599 <> U+1D446 U+0301 ; S acute
+U+F599 <  U+015A
+U+F59A <> U+1D460 U+0301 ; s acute
+U+F59A <  U+015B
+U+F59B <> U+1D446 U+0302 ; S circumflex
+U+F59B <  U+015C
+U+F59C <> U+1D460 U+0302 ; s circumflex
+U+F59C <  U+015D
+U+F59D <> U+1D446 U+0327 ; S cedilla
+U+F59D <  U+015E
+U+F59E <> U+1D460 U+0327 ; s cedilla
+U+F59E <  U+015F
+U+F59F <> U+1D446 U+030C ; S caron
+U+F59F <  U+0160
+U+F5A0 <> U+1D460 U+030C ; s caron
+U+F5A0 <  U+0161
+U+F5A1 <  U+00DF ; sharp s, German sz ligature
+U+F5A2 <> U+1D447 U+0326 ; T undercomma
+U+F5A2 <  U+021A
+U+F5A3 <> U+1D461 U+0326 ; t undercomma
+U+F5A3 <  U+021B
+U+F5A4 <> U+1D447 U+030C ; T caron
+U+F5A4 <  U+0164
+U+F5A5 <> U+1D461 U+030C ; t caron
+U+F5A5 <  U+0165
+U+F5A6 <  U+00DE ; Thorn
+U+F5A7 <  U+00FE ; thorn
+U+F5A8 <> U+1D437 U+0335 ; Eth
+U+F5A8 <  U+00D0
+U+F5A9 <  U+00F0 ; eth
+U+F5AA <> U+1D448 U+0301 ; U acute
+U+F5AA <  U+00DA
+U+F5AB <> U+1D462 U+0301 ; u acute
+U+F5AB <  U+00FA
+U+F5AC <> U+1D448 U+030B ; U double acute
+U+F5AC <  U+0170
+U+F5AD <> U+1D462 U+030B ; u double acute
+U+F5AD <  U+0171
+U+F5AE <> U+1D448 U+0300 ; U grave
+U+F5AE <  U+00D9
+U+F5AF <> U+1D462 U+0300 ; u grave
+U+F5AF <  U+00F9
+U+F5B0 <> U+1D448 U+030A ; U overcircle
+U+F5B0 <  U+016E
+U+F5B1 <> U+1D462 U+030A ; u overcircle
+U+F5B1 <  U+016F
+U+F5B2 <> U+1D448 U+0302 ; U circumflex
+U+F5B2 <  U+00DB
+U+F5B3 <> U+1D462 U+0302 ; u circumflex
+U+F5B3 <  U+00FB
+U+F5B4 <> U+1D448 U+0308 ; U umlaut
+U+F5B4 <  U+00DC
+U+F5B5 <> U+1D462 U+0308 ; u umlaut
+U+F5B5 <  U+00FC
+U+F5B6 <> U+1D448 U+0304 ; U macron
+U+F5B6 <  U+016A
+U+F5B7 <> U+1D462 U+0304 ; u macron
+U+F5B7 <  U+016B
+U+F5B8 <> U+1D448 U+0306 ; U breve
+U+F5B8 <  U+016C
+U+F5B9 <> U+1D462 U+0306 ; u breve
+U+F5B9 <  U+016D
+U+F5BA <> U+1D448 U+0328 ; U ogonek
+U+F5BA <  U+0172
+U+F5BB <> U+1D462 U+0328 ; u ogonek
+U+F5BB <  U+0173
+U+F5BC <> U+1D44A U+0302 ; W circumflex
+U+F5BC <  U+0174
+U+F5BD <> U+1D464 U+0302 ; w circumflex
+U+F5BD <  U+0175
+U+F5BE <> U+1D44C U+0301 ; Y acute
+U+F5BE <  U+00DD
+U+F5BF <> U+1D466 U+0301 ; y acute
+U+F5BF <  U+00FD
+U+F5C0 <> U+1D44C U+0302 ; Y circumflex
+U+F5C0 <  U+0176
+U+F5C1 <> U+1D466 U+0302 ; y circumflex
+U+F5C1 <  U+0177
+U+F5C2 <> U+1D44C U+0308 ; Y umlaut
+U+F5C2 <  U+0178
+U+F5C3 <> U+1D466 U+0308 ; y umlaut
+U+F5C3 <  U+00FF
+U+F5C4 <> U+1D44D U+0301 ; Z acute
+U+F5C4 <  U+0179
+U+F5C5 <> U+1D467 U+0301 ; z acute
+U+F5C5 <  U+017A
+U+F5C6 <> U+1D44D U+0307 ; Z overdot
+U+F5C6 <  U+017B
+U+F5C7 <> U+1D467 U+0307 ; z overdot
+U+F5C7 <  U+017C
+U+F5C8 <> U+1D44D U+030C ; Z caron
+U+F5C8 <  U+017D
+U+F5C9 <> U+1D467 U+030C ; z caron
+U+F5C9 <  U+017E
+U+F5CA <> U+005B ; left bracket
+U+F5CB <> U+005D ; right bracket
+U+F5CC <> U+2E5D ; italic hyphen = for Unicode 14.0 and later
+
+; Narrow
+[puanarrownumbers] <> [narrownumbers]
+[puanarrownumbers] <  [numbers]
+U+F720 <> U+0021 ; exclamation mark
+U+F721 <> U+0023 ; number sign
+U+F722 <> U+0025 ; percent
+U+F723 <> U+0026 ; ampersand
+U+F724 <> U+0028 ; left parenthesis
+U+F725 <> U+0029 ; right parenthesis
+U+F726 <> U+002A ; asterisk
+U+F727 <> U+002C ; comma
+U+F728 <> U+002E ; full stop
+U+F729 <> U+002F ; slash
+U+F734 <> U+003A ; colon
+U+F735 <> U+003B ; semicolon
+U+F736 <> U+003F ; question mark
+U+F737 <> U+1D5A0
+U+F737 <  U+0040
+U+F738 <> U+1D5A1
+U+F738 <  U+0041
+U+F739 <> U+1D5A2
+U+F739 <  U+0042
+U+F73A <> U+1D5A3
+U+F73A <  U+0043
+U+F73B <> U+1D5A4
+U+F73B <  U+0044
+U+F73C <> U+1D5A5
+U+F73C <  U+0045
+U+F73D <> U+1D5A6
+U+F73D <  U+0046
+U+F73E <> U+1D5A7
+U+F73E <  U+0047
+U+F73F <> U+1D5A8
+U+F73F <  U+0048
+U+F740 <> U+1D5A9
+U+F740 <  U+0049
+U+F741 <> U+1D5AA
+U+F741 <  U+004A
+U+F742 <> U+1D5AB
+U+F742 <  U+004B
+U+F743 <> U+1D5AC
+U+F743 <  U+004C
+U+F744 <> U+1D5AD
+U+F744 <  U+004D
+U+F745 <> U+1D5AE
+U+F745 <  U+004E
+U+F746 <> U+1D5AF
+U+F746 <  U+004F
+U+F747 <> U+1D5B0
+U+F747 <  U+0050
+U+F748 <> U+1D5B1
+U+F748 <  U+0051
+U+F749 <> U+1D5B2
+U+F749 <  U+0052
+U+F74A <> U+1D5B3
+U+F74A <  U+0053
+U+F74B <> U+1D5B4
+U+F74B <  U+0054
+U+F74C <> U+1D5B5
+U+F74C <  U+0055
+U+F74D <> U+1D5B6
+U+F74D <  U+0056
+U+F74E <> U+1D5B7
+U+F74E <  U+0057
+U+F74F <> U+1D5B8
+U+F74F <  U+0058
+U+F750 <> U+1D5B9
+U+F750 <  U+0059
+U+F751 <  U+005A
+U+F752 <> U+1D5BA
+U+F752 <  U+0061
+U+F753 <> U+1D5BB
+U+F753 <  U+0062
+U+F754 <> U+1D5BC
+U+F754 <  U+0063
+U+F755 <> U+1D5BD
+U+F755 <  U+0064
+U+F756 <> U+1D5BE
+U+F756 <  U+0065
+U+F757 <> U+1D5BF
+U+F757 <  U+0066
+U+F758 <> U+1D5C0
+U+F758 <  U+0067
+U+F759 <> U+1D5C1
+U+F759 <  U+0068
+U+F75A <> U+1D5C2
+U+F75A <  U+0069
+U+F75B <> U+1D5C3
+U+F75B <  U+006A
+U+F75C <> U+1D5C4
+U+F75C <  U+006B
+U+F75D <> U+1D5C5
+U+F75D <  U+006C
+U+F75E <> U+1D5C6
+U+F75E <  U+006D
+U+F75F <> U+1D5C7
+U+F75F <  U+006E
+U+F760 <> U+1D5C8
+U+F760 <  U+006F
+U+F761 <> U+1D5C9
+U+F761 <  U+0070
+U+F762 <> U+1D5CA
+U+F762 <  U+0071
+U+F763 <> U+1D5CB
+U+F763 <  U+0072
+U+F764 <> U+1D5CC
+U+F764 <  U+0073
+U+F765 <> U+1D5CD
+U+F765 <  U+0074
+U+F766 <> U+1D5CE
+U+F766 <  U+0075
+U+F767 <> U+1D5CF
+U+F767 <  U+0076
+U+F768 <> U+1D5D0
+U+F768 <  U+0077
+U+F769 <> U+1D5D1
+U+F769 <  U+0078
+U+F76A <> U+1D5D2
+U+F76A <  U+0079
+U+F76B <> U+1D5D3
+U+F76B <  U+007A
+U+F76C <> U+1D5D4
+U+F76C <  U+007B
+U+F76D <  U+007D
+U+F76E <> U+2018 ; open single quote
+U+F76F <> U+2019 ; close single quote
+
+; Serif
+[puaserifuppercase] <> [serifuppercase]
+[puaserifuppercase] <  [uppercase]
+[puaseriflowercase] <> [seriflowercase]
+[puaseriflowercase] <  [lowercase]
+U+F78A <> U+1D670 U+0308 ; A umlaut
+U+F78A <  U+00C4
+U+F78B <> U+1D67E U+0308 ; O umlaut
+U+F78B <  U+00D6
+U+F78C <> U+1D685 U+0308 ; U umlaut
+U+F78C <  U+00DC
+U+F78D <> U+1D762 U+0327 ; C cedilla
+U+F78D <  U+00C7
+U+F78E <> U+201C ; open double quote
+U+F78F <> U+201D ; close double quote
+U+F7AA <> U+1D68A U+0308 ; a umlaut
+U+F7AA <  U+00E4
+U+F7AB <> U+1D698 U+0308 ; o umlaut
+U+F7AB <  U+00F6
+U+F7AC <> U+1D69E U+0308 ; u umlaut
+U+F7AC <  U+00FC
+U+F7AD <> U+1D68C U+0327 ; c cedilla
+U+F7AD <  U+00E7
+U+F7AE <> U+005C ; backslash
+U+F7AF <  U+00DF ; sharp s, German sz ligature
+U+F7B0 <> U+1D670 U+0301 ; A acute
+U+F7B0 <  U+00C1
+U+F7B1 <> U+1D68A U+0301 ; a acute
+U+F7B1 <  U+00E1
+U+F7B2 <> U+1D674 U+0301 ; E acute
+U+F7B2 <  U+00C9
+U+F7B3 <> U+1D68E U+0301 ; e acute
+U+F7B3 <  U+00E9
+U+F7B4 <> U+1D678 U+0301 ; I acute
+U+F7B4 <  U+00CD
+U+F7B5 <> U+1D692 U+0301 ; i acute
+U+F7B5 <  U+00ED 
+U+F7B6 <> U+1D67E U+0301 ; O acute
+U+F7B6 <  U+00D3
+U+F7B7 <> U+1D698 U+0301 ; o acute
+U+F7B7 <  U+00F3
+U+F7B8 <> U+1D685 U+0301 ; U acute
+U+F7B8 <  U+00DA
+U+F7B9 <> U+1D69E U+0301 ; u acute
+U+F7B9 <  U+00FA
+U+F7BA <> U+1D670 U+030A ; A overcircle
+U+F7BA <  U+00C5
+U+F7BB <> U+1D68A U+030A ; a overcircle
+U+F7BB <  U+00E5
+U+F7BC <> U+1D670 U+1D674 ; AE ligature
+U+F7BC <  U+00C6
+U+F7BD <> U+1D68A U+1D684 ; ae ligature
+U+F7BD <  U+00E6
+U+F7BE <> U+1D67D U+0303 ; N tilde
+U+F7BE <  U+00D1
+U+F7BF <> U+1D697 U+0303 ; n tilde
+U+F7BF <  U+00F1
+
+; Fraktur
+U+F7C0 <> U+1D504
+U+F7C0 <  U+0041
+U+F7C1 <> U+1D504 U+0308 ; A umlaut
+U+F7C1 <  U+00C4
+U+F7C2 <> U+1D505
+U+F7C2 <  U+0042
+U+F7C3 <> U+212D
+U+F7C3 <  U+0043
+U+F7C4 <> U+1D507
+U+F7C4 <  U+0044
+U+F7C5 <> U+1D508
+U+F7C5 <  U+0045
+U+F7C6 <> U+1D509
+U+F7C6 <  U+0046
+U+F7C7 <> U+1D50A
+U+F7C7 <  U+0047
+U+F7C8 <> U+210C
+U+F7C8 <  U+0048
+U+F7C9 <> U+2111
+U+F7C9 <  U+0049
+U+F7CA <> U+1D50D
+U+F7CA <  U+004A
+U+F7CB <> U+1D50E
+U+F7CB <  U+004B
+U+F7CC <> U+1D50F
+U+F7CC <  U+004C
+U+F7CD <> U+1D510
+U+F7CD <  U+004D
+U+F7CE <> U+1D511
+U+F7CE <  U+004E
+U+F7CF <> U+1D512
+U+F7CF <  U+004F
+U+F7D0 <> U+1D512 U+0308 ; O umlaut
+U+F7D0 <  U+00D6
+U+F7D1 <> U+1D513
+U+F7D1 <  U+0050
+U+F7D2 <> U+1D514
+U+F7D2 <  U+0051
+U+F7D3 <> U+211C
+U+F7D3 <  U+0052
+U+F7D4 <> U+1D516
+U+F7D4 <  U+0053
+U+F7D5 <> U+1D517
+U+F7D5 <  U+0054
+U+F7D6 <> U+1D518
+U+F7D6 <  U+0055
+U+F7D7 <> U+1D518 U+0308 ; U umlaut
+U+F7D7 <  U+00DC
+U+F7D8 <> U+1D519
+U+F7D8 <  U+0056
+U+F7D9 <> U+1D51A
+U+F7DA <> U+1D51B
+U+F7DB <> U+1D51C
+U+F7DC <> U+2128
+U+F7DD <> U+002E ; full stop
+U+F7DE <> U+002C ; comma
+U+F7DF <> U+2019 ; close single quote
+U+F7E0 <> U+1D51E
+U+F7E0 <  U+0061
+U+F7E1 <> U+1D51E U+0308 ; a umlaut
+U+F7E1 <  U+00F6
+U+F7E2 <> U+1D51F
+U+F7E2 <  U+0062
+U+F7E3 <> U+1D520
+U+F7E3 <  U+0063
+U+F7E4 <> U+1D521
+U+F7E4 <  U+0064
+U+F7E5 <> U+1D522
+U+F7E5 <  U+0065
+U+F7E6 <> U+1D523
+U+F7E6 <  U+0066
+U+F7E7 <> U+1D524
+U+F7E7 <  U+0067
+U+F7E8 <> U+1D525
+U+F7E8 <  U+0068
+U+F7E9 <> U+1D526
+U+F7E9 <  U+0069
+U+F7EA <> U+1D527
+U+F7EA <  U+006A
+U+F7EB <> U+1D528
+U+F7EB <  U+006B
+U+F7EC <> U+1D529
+U+F7EC <  U+006C
+U+F7ED <> U+1D52A
+U+F7ED <  U+006D
+U+F7EE <> U+1D52B
+U+F7EE <  U+006E
+U+F7EF <> U+1D52C
+U+F7EF <  U+006F
+U+F7F0 <> U+1D52C U+0308 ; o umlaut
+U+F7F0 <  U+00FC
+U+F7F1 <> U+1D52D
+U+F7F1 <  U+0070
+U+F7F2 <> U+1D52E
+U+F7F2 <  U+0071
+U+F7F3 <> U+1D52F
+U+F7F3 <  U+0072
+U+F7F4 <  U+017F ; long s
+U+F7F5 <> U+1D531
+U+F7F5 <  U+0074
+U+F7F6 <> U+1D532
+U+F7F6 <  U+0075
+U+F7F7 <> U+1D532 U+0308 ; u umlaut
+U+F7F7 <  U+00E7
+U+F7F8 <> U+1D533
+U+F7F8 <  U+0076
+U+F7F9 <> U+1D534
+U+F7F9 <  U+0077
+U+F7FA <> U+1D535
+U+F7FA <  U+0078
+U+F7FB <> U+1D536
+U+F7FB <  U+0079
+U+F7FC <> U+1D537
+U+F7FC <  U+007A
+U+F7FD <> U+1D530
+U+F7FD <  U+0073
+U+F7FE <  U+00DF ; sharp s, German sz ligature
+
+; Reversed
+U+E290 <  U+0041
+U+E290 <  U+E041 ; PUA - BabelStone Roman
+U+E291 <  U+0061
+U+E291 <  U+E061 ; PUA - BabelStone Roman
+U+E292 <  U+0042
+U+E292 <  U+E042 ; PUA - BabelStone Roman
+U+E293 <> U+0064
+U+E293 <  U+0062
+U+E293 <  U+E062 ; PUA - BabelStone Roman
+U+E294 <> U+2183 ; Roman numeral 100 reversed = for Unicode 3.0 and later
+U+E294 <  U+E043 ; Roman numeral 100 reversed = PUA before Unicode 3.0 - BabelStone Roman
+U+E294 <  U+F1A0 ; Roman numeral 100 reversed = PUA before Unicode 3.0 - Cardo
+U+E294 <  U+0043
+U+E295 <> U+2184 ; c reversed = for Unicode 5.0 and later
+U+E295 <  U+0063
+U+E295 <  U+E063 ; c reversed = PUA before Unicode 5.0 - BabelStone Roman
+U+E295 <  U+F1A1 ; c reversed = PUA before Unicode 5.0 - Cardo
+U+E296 <  U+0044
+U+E296 <  U+E044 ; PUA - BabelStone Roman
+U+E296 <> U+0062
+U+E297 <  U+0064
+U+E297 <  U+E064 ; PUA - BabelStone Roman
+U+E298 <> U+018E ; E reversed
+U+E298 <  U+0045
+U+E298 <  U+E045 ; PUA - BabelStone Roman
+U+E299 <> U+0258 ; e reversed
+U+E299 <  U+0065
+U+E299 <  U+E065 ; PUA - BabelStone Roman
+U+E29A <> U+A7FB ; F reversed = for Unicode 5.1 and later
+U+E29A <  U+E046 ; F reversed = PUA before Unicode 5.1 - BabelStone Roman
+U+E29A <  U+F43B ; F reversed = PUA before Unicode 5.1 - Cardo
+U+E29A <  U+0046
+U+E29B <  U+0066
+U+E29B <  U+E066 ; f reversed = PUA - BabelStone Roman
+U+E29B <  U+F4BD ; f reversed = PUA - Cardo
+U+E29B <  U+EA56 ; f reversed = PUA - Catrinity
+U+E29C <  U+0047
+U+E29C <  U+E047 ; PUA - BabelStone Roman
+U+E29D <> U+1DF01 ; g script reversed = for Unicode 14.0 and later
+U+E29D <  U+E067 ; PUA - BabelStone Roman
+U+E29D <  U+0067
+U+E29E <> U+0048
+U+E29E <  U+E048 ; PUA - BabelStone Roman
+U+E29F <  U+0068
+U+E29F <  U+E068 ; PUA - BabelStone Roman
+U+E2A0 <> U+0049
+U+E2A0 <  U+E049 ; PUA - BabelStone Roman
+U+E2A1 <> U+0069
+U+E2A1 <  U+E069 ; PUA - BabelStone Roman
+U+E2A2 <  U+004A
+U+E2A2 <  U+E04A ; PUA - BabelStone Roman
+U+E2A3 <  U+006A
+U+E2A3 <  U+E05A ; PUA - BabelStone Roman
+U+E2A4 <> U+A7B0 ; K turned = for Unicode 7.0 and later
+U+E2A4 <  U+E04B ; K turned = PUA before Unicode 7.0 - BabelStone Roman
+U+E2A4 <  U+F78E ; K turned = PUA before Unicode 7.0 - Languagegeek
+U+E2A4 <  U+004B
+U+E2A5 <> U+1DF03 ; k reversed = for Unicode 14.0 and later
+U+E2A5 <  U+E04C ; k reversed = PUA before Unicode 14.0 - BabelStone Roman
+U+E2A5 <  U+006B
+U+E2A6 <> U+2143 ; L sans-serif reversed
+U+E2A6 <  U+004C
+U+E2A6 <  U+E04C ; L reversed = PUA - BabelStone Roman
+U+E2A7 <> U+006C
+U+E2A7 <  U+E06C ; PUA - BabelStone Roman
+U+E2A8 <> U+004D
+U+E2A8 <  U+E04D ; PUA - BabelStone Roman
+U+E2A9 <  U+006D
+U+E2A9 <  U+E06D ; PUA - BabelStone Roman
+U+E2AA <> U+0418 ; Cyrillic I
+U+E2AA <  U+E04E ; N reversed = PUA - BabelStone Roman
+U+E2AA <  U+E023 ; N reversed = PUA - SImPL
+U+E2AA <  U+004E
+U+E2AB <> U+EC72 ; n reversed = PUA - New Athena Unicode
+U+E2AB <  U+E04F ; n reversed = PUA - BabelStone Roman
+U+E2AB <  U+006E
+U+E2AC <> U+004F
+U+E2AC <  U+E04F ; PUA - BabelStone Roman
+U+E2AD <> U+006F
+U+E2AD <  U+E06F ; PUA - BabelStone Roman
+U+E2AE <> U+A7FC ; P reversed = for Unicode 5.1 and later
+U+E2AE <  U+0050
+U+E2AE <  U+E050 ; P reversed = PUA before Unicode 5.1 - BabelStone Roman
+U+E2AE <  U+F43A ; P reversed = PUA before Unicode 5.1 - Cardo
+U+E2AF <> U+F4BC ; p reversed = PUA - Cardo
+U+E2AF <  U+0070
+U+E2AF <  U+E070 ; p reversed = PUA before Unicode 5.1 - BabelStone Roman
+U+E2B0 <  U+0051
+U+E2B0 <  U+E051 ; PUA - BabelStone Roman
+U+E2B1 <> U+0071
+U+E2B1 <  U+E071 ; PUA - BabelStone Roman
+U+E2B1 <  U+0071
+U+E2B2 <> U+042F ; Cyrillic Ya
+U+E2B2 <  U+0052
+U+E2B2 <  U+E052 ; PUA - BabelStone Roman
+U+E2B3 <> U+AB4B ; r script = for Unicode 7.0 and later
+U+E2B3 <  U+0072
+U+E2B3 <  U+E072 ; PUA - BabelStone Roman
+U+E2B4 <> U+0147 ; Tone five
+U+E2B4 <  U+0053
+U+E2B4 <  U+E053 ; PUA - BabelStone Roman
+U+E2B5 <> U+0148 ; tone five
+U+E2B5 <  U+0073
+U+E2B5 <  U+E073 ; PUA - BabelStone Roman
+U+E2B6 <> U+0054
+U+E2B6 <  U+E054 ; PUA - BabelStone Roman
+U+E2B7 <> U+0074
+U+E2B7 <  U+E074 ; PUA - BabelStone Roman
+U+E2B8 <> U+0055
+U+E2B9 <  U+E055 ; PUA - BabelStone Roman
+U+E2B9 <> U+1D7FF ; u reversed = for Unicode 18.0 and later
+U+E2B9 <  U+0075
+U+E2B9 <  U+E075 ; PUA - BabelStone Roman
+U+E2B9 <  U+EA3A ; u reversed = PUA before Unicode 18.0 - Catrinity
+U+E2BA <> U+0056
+U+E2BA <  U+E056 ; PUA - BabelStone Roman
+U+E2BB <> U+0076
+U+E2BB <  U+E076 ; PUA - BabelStone Roman
+U+E2BC <> U+0057
+U+E2BC <  U+E057 ; PUA - BabelStone Roman
+U+E2BD <> U+0077
+U+E2BD <  U+E077 ; PUA - BabelStone Roman
+U+E2BE <> U+0058
+U+E2BE <  U+E058 ; PUA - BabelStone Roman
+U+E2BF <> U+0078
+U+E2BF <  U+E078 ; PUA - BabelStone Roman
+U+E2C0 <> U+0059
+U+E2C0 <  U+E059 ; PUA - BabelStone Roman
+U+E2C1 <  U+0079
+U+E2C1 <  U+E079 ; PUA - BabelStone Roman
+U+E2C2 <  U+005A
+U+E2C2 <  U+E05A ; PUA - BabelStone Roman
+U+E2C3 <> U+1DF66 ; z reversed = for Unicode 18.0 and later
+U+E2C3 <  U+007A
+U+E2C3 <  U+E07A ; z reversed = PUA before Unicode 18.0 - BabelStone Roman

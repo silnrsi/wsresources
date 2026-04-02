@@ -1,0 +1,100 @@
+; This file was edited using TECkitMappingEditorU.exe v3.0.1.0 on 1/19/1997.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Times New Roman;11.25
+;   Right-hand side font = Times New Roman;11.25
+
+EncodingName          "noxchi"
+DescriptiveName       "Noxchi"
+Version               "1.00"
+Contact               "mailto:(blank)"
+RegistrationAuthority "Amina LLC"
+RegistrationName      "Noxchi"
+
+0x82 <> U+201A ; low single quote
+0x83 <> U+0192 ; function of
+0x84 <> U+201E ; low double quote
+0x85 <> U+2026 ; ellipsis
+0x86 <> U+2020 ; dagger
+0x87 <> U+2021 ; double dagger
+0x88 <> U+02C6 ; caret symbol
+0x89 <> U+2030 ; per thousand
+0x8A <> U+0160 ; S caron
+0x8B <> U+2039 ; open French single quote
+0x8C <> U+0152 ; OE ligature
+0x91 <> U+2018 ; open single quote
+0x92 <> U+2019 ; close single quote
+0x93 <> U+201C ; open double quote
+0x94 <> U+201D ; close double quote
+0x95 <> U+2022 ; bullet
+0x96 <> U+2013 ; en dash
+0x97 <> U+2014 ; em dash
+0x98 <> U+02DC ; tilde
+0x99 <> U+2122 ; superscript TM, trademark
+0x9A <> U+0161 ; s caron
+0x9B <> U+203A ; close French single quote
+0x9C <> U+0153 ; oe ligature
+0x9F <> U+0178 ; Y umlaut
+0xA0 <> U+00A0 ; non-breaking space
+0xA1 <> U+00A1 ; inverted exclamation mark
+0xA2 <> U+00A2 ; cent
+0xA3 <> U+00A3 ; sterling
+0xA4 <> U+00A4 ; general currency sign
+0xA5 <> U+00A5 ; Yen
+0xA6 <> U+00A6 ; split vertical bar (piping symbol)
+0xA7 <> U+00A7 ; section sign
+0xA8 <> U+00A8 ; umlaut
+0xA9 <> U+00A9 ; copyright
+0xAA <> U+00AA ; underscored a
+0xAB <> U+00AB ; open French double quote
+0xAC <> U+00AC ; logical not
+0xAD <> U+00AD ; soft hyphen
+0xAE <> U+00AE ; registered sign
+0xAF <> U+00AF ; macron
+0xB0 <> U+00B0 ; degree
+0xB1 <> U+00B1 ; plusminus
+0xB2 <> U+00B2 ; superscript 2
+0xB3 <> U+00B3 ; superscript 3
+0xB4 <> U+00B4 ; acute accent
+0xB5 <> U+00B5 ; mu
+0xB6 <> U+00B6 ; paragraph symbol
+0xB7 <> U+00B7 ; dot
+0xB8 <> U+00B8 ; cedilla
+0xB9 <> U+00B9 ; superscript 1
+0xBA <> U+00BA ; underscored o
+0xBB <> U+00BB ; close French double quote
+0xBC <> U+00BC ; one fourth
+0xBD <> U+00BD ; one half
+0xBE <> U+00BE ; fraction three-quarters
+0xBF <> U+00BF ; inverted question mark
+0xC0 <> U+00C4 ; A umlaut
+0xC1 <> U+010A ; C overdot
+0xC2 <> U+00C7 ; C cedilla
+0xC3 <> U+0043 U+0327 U+0307 ; C cedilla overdot
+0xC4 <> U+0120 ; G overdot
+0xC5 <> U+1E8A ; X overdot
+0xC6 <> U+0051 U+0307 ; Q overdot
+0xC7 <> U+00D6 ; O umlaut
+0xC8 <> U+014A ; Eng
+0xC9 <> U+015E ; S cedilla
+0xCA <> U+00DC ; U umlaut
+0xCB <> U+01B5 ; Z stroke
+0xCC <> U+018F ; Schwa
+0xCD <> U+0049 U+0045 ; iotified E
+0xCE <> U+0055 U+004F ; UO ligature
+0xE0 <> U+00E4 ; a umlaut
+0xE1 <> U+010B ; c overdot
+0xE2 <> U+00E7 ; c cedilla
+0xE3 <> U+0063 U+0327 U+0307 ; c cedilla overdot
+0xE4 <> U+0121 ; g overdot
+0xE5 <> U+1E8B ; x overdot
+0xE6 <> U+0071 U+0307 ; q overdot
+0xE7 <> U+00F6 ; o umlaut
+0xE8 <> U+014B ; eng
+0xE9 <> U+015F ; s cedilla
+0xEA <> U+00FC ; u umlaut
+0xEB <> U+01B6 ; z stroke
+0xEC <> U+0259 ; schwa
+0xED <> U+AB61 ; iotified e = for Unicode 8.0 and later
+0xED <  U+0069 U+0065 ; iotified e
+0xEE <> U+AB63 ; uo ligature = for Unicode 8.0 and later
+0xEE <  U+0075 U+005F ; uo ligature

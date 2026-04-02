@@ -1,0 +1,41 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/29/2017.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Fixedsys Excelsior;11.25
+;   Right-hand side font = Fixedsys Excelsior;11.25
+
+Name                  "PUAFixedsysExcelsiorThai"
+Description           "Fixedsys Excelsior Thai diacritics"
+Version               "3.023"
+Contact               "mailto:valentinium@gmail.com"
+RegistrationAuthority "Fixedsys Excelsior"
+RegistrationName      "PUAFixedsysExcelsiorThaiToUnicode"
+
+pass(Unicode)
+
+U+F701 <> U+0E34 ; sara i
+U+F702 <> U+0E35 ; sara ii
+U+F703 <> U+0E36 ; sara ue
+U+F704 <> U+0E37 ; sara uee
+U+F705 <> U+0E48 ; high mai ek
+U+F706 <> U+0E49 ; high mai tho
+U+F707 <> U+0E4A ; high mai tri
+U+F708 <> U+0E4B ; high mai chattawa
+U+F709 <> U+0E4C ; thanthakhat
+U+F70A <> U+0E48 ; high mai ek
+U+F70B <> U+0E49 ; high mai tho
+U+F70C <> U+0E4A ; high mai tri
+U+F70D <> U+0E4B ; high mai chattawa
+U+F70E <> U+0E4C ; thanthakhat
+U+F710 <> U+0E49 ; high mai tho
+U+F711 <> U+0E4D ; nikhahit
+U+F712 <> U+0E47 ; maitaikhu
+U+F713 <> U+0E48 ; high mai ek
+U+F714 <> U+0E49 ; high mai tho
+U+F715 <> U+0E4A ; high mai tri
+U+F716 <> U+0E4B ; high mai chattawa
+U+F717 <> U+0E4C ; thanthakhat
+U+F718 <> U+0E38 ; sara u
+U+F719 <> U+0E39 ; sara uu
+U+F71A <> U+0E3A ; phinthu
+U+F71C <> U+0326 ; undercomma
+U+F71D <> U+032A ; underinverted bridge

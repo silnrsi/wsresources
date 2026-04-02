@@ -1,0 +1,97 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/27/2001.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Noto Sans Runic;11.25
+;   Right-hand side font = Noto Sans Runic;11.25
+
+Name                  "PUAChrysanthiUnicodeRunic"
+Description           "Chrysanthi Unicode - Runic with PUA values"
+Version               "2.3"
+Contact               "mailto:redneck_witchboi@yahoo.com"
+RegistrationAuthority "Every Witch Way"
+RegistrationName      "PUAChrysanthiUnicodeRunicToUnicode"
+
+pass(Unicode)
+
+U+E6A0 <> U+16A0 ; fehu feoh fe f
+U+E6A1 <> U+16A1 ; v
+U+E6A2 <> U+16A2 ; uruz ur u
+U+E6A3 <> U+16A3 ; yr
+U+E6A4 <> U+16A4 ; y
+U+E6A5 <> U+16A5 ; w
+U+E6A6 <> U+16A6 ; thurisaz thurs thorn
+U+E6A7 <> U+16A7 ; eth
+U+E6A8 <> U+16A8 ; ansuz a
+U+E6A9 <> U+16A9 ; os o
+U+E6AA <> U+16AA ; ac a
+U+E6AB <> U+16AB ; aesc
+U+E6AC <> U+16AC ; long-branch oss o
+U+E6AD <> U+16AD ; short-twig oss o
+U+E6AE <> U+16AE ; o
+U+E6AF <> U+16AF ; oe
+U+E6B0 <> U+16B0 ; on
+U+E6B1 <> U+16B1 ; raido rad reid r
+U+E6B2 <> U+16B2 ; kauna
+U+E6B3 <> U+16B3 ; cen
+U+E6B4 <> U+16B4 ; kaun k
+U+E6B5 <> U+16B5 ; g
+U+E6B6 <> U+16B6 ; eng
+U+E6B7 <> U+16B7 ; gebo gyfu g
+U+E6B8 <> U+16B8 ; gar
+U+E6B9 <> U+16B9 ; wunjo wynn w
+U+E6BA <> U+16BA ; haglaz h
+U+E6BB <> U+16BB ; haegl h
+U+E6BC <> U+16BC ; long-branch hagall h
+U+E6BD <> U+16BD ; short-twig hagall h
+U+E6BE <> U+16BE ; naudiz nyd naud n
+U+E6BF <> U+16BF ; short-twig naud n
+U+E6C0 <> U+16C0 ; dotted n
+U+E6C1 <> U+16C1 ; isaz is iss i
+U+E6C2 <> U+16C2 ; e
+U+E6C3 <> U+16C3 ; jeran j
+U+E6C4 <> U+16C4 ; ger
+U+E6C5 <> U+16C5 ; long-branch ar ae
+U+E6C6 <> U+16C6 ; short-twig ar ae
+U+E6C7 <> U+16C7 ; iwaz eoh
+U+E6C8 <> U+16C8 ; pertho peorth p
+U+E6C9 <> U+16C9 ; algiz eolhx
+U+E6CA <> U+16CA ; sowilo s
+U+E6CB <> U+16CB ; sigel long-branch sol s
+U+E6CC <> U+16CC ; short-twig sol s
+U+E6CD <> U+16CD ; c
+U+E6CE <> U+16CE ; z
+U+E6CF <> U+16CF ; tiwaz tir tyr t
+U+E6D0 <> U+16D0 ; short-twig tyr t
+U+E6D1 <> U+16D1 ; d
+U+E6D2 <> U+16D2 ; berkanan beorc bjarkan b
+U+E6D3 <> U+16D3 ; short-twig bjarkan b
+U+E6D4 <> U+16D4 ; dotted p
+U+E6D5 <> U+16D5 ; open p
+U+E6D6 <> U+16D6 ; ehwaz eh e
+U+E6D7 <> U+16D7 ; mannaz man m
+U+E6D8 <> U+16D8 ; long-branch madr m
+U+E6D9 <> U+16D9 ; short-twig madr m
+U+E6DA <> U+16DA ; laukaz lagu logr l
+U+E6DB <> U+16DB ; dotted l
+U+E6DC <> U+16DC ; ingwaz
+U+E6DD <> U+16DD ; ing
+U+E6DE <> U+16DE ; dagaz daeg d
+U+E6DF <> U+16DF ; othalan ethel o
+U+E6E0 <> U+16E0 ; ear
+U+E6E1 <> U+16E1 ; ior
+U+E6E2 <> U+16E2 ; cweorth
+U+E6E3 <> U+16E3 ; calc
+U+E6E4 <> U+16E4 ; cealc
+U+E6E5 <> U+16E5 ; stan
+U+E6E6 <> U+16E6 ; long-branch yr
+U+E6E7 <> U+16E7 ; short-twig yr
+U+E6E8 <> U+16E8 ; Icelandic yr
+U+E6E9 <> U+16E9 ; q
+U+E6EA <> U+16EA ; x
+U+E6EB <> U+16EB ; single punctuation
+U+E6EC <> U+16EC ; multiple punctuation
+U+E6ED <> U+16ED ; cross punctuation
+U+E6EE <> U+16EE ; arlaug
+U+E6EF <> U+16EF ; tvimadur
+U+E6F0 <> U+16F0 ; belgthor
+U+E6F1 <> U+16F1 ; k
+U+E6F2 <> U+16F2 ; sh

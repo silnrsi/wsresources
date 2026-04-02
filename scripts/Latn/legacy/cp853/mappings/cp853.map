@@ -1,0 +1,137 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/01/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Times New Roman;11.25
+;   Right-hand side font = Times New Roman;11.25
+
+EncodingName    "cp853"
+DescriptiveName "Code Page 853"
+Version         "1.0"
+
+0x80 <> U+00C7 ; C cedilla
+0x81 <> U+00FC ; u umlaut
+0x82 <> U+00E9 ; e acute
+0x83 <> U+00E2 ; a circumflex
+0x84 <> U+00E4 ; a umlaut
+0x85 <> U+00E0 ; a grave
+0x86 <> U+0109 ; c circumflex
+0x87 <> U+00E7 ; c cedilla
+0x88 <> U+00EA ; e circumflex
+0x89 <> U+00EB ; e umlaut
+0x8A <> U+00E8 ; e grave
+0x8B <> U+00EF ; i umlaut
+0x8C <> U+00EE ; i circumflex
+0x8D <> U+00EC ; i grave
+0x8E <> U+00C4 ; A umlaut
+0x8F <> U+0108 ; C circumflex
+0x90 <> U+00C9 ; E acute
+0x91 <> U+010B ; c overdot
+0x92 <> U+010A ; C overdot
+0x93 <> U+00F4 ; o circumflex
+0x94 <> U+00F6 ; o umlaut
+0x95 <> U+00F2 ; o grave
+0x96 <> U+00FB ; u circumflex
+0x97 <> U+00F9 ; u grave
+0x98 <> U+0130 ; I overdot
+0x99 <> U+00D6 ; O umlaut
+0x9A <> U+00DC ; U umlaut
+0x9B <> U+011D ; g circumflex
+0x9C <> U+00A3 ; sterling
+0x9D <> U+011C ; G circumflex
+0x9E <> U+00D7 ; multiplication sign
+0x9F <> U+0135 ; j circumflex
+0xA0 <> U+00E1 ; a acute
+0xA1 <> U+00ED ; i acute
+0xA2 <> U+00F3 ; o acute
+0xA3 <> U+00FA ; u acute
+0xA4 <> U+00F1 ; n tilde
+0xA5 <> U+00D1 ; N tilde
+0xA6 <> U+011E ; G breve
+0xA7 <> U+011F ; g breve
+0xA8 <> U+0124 ; H circumflex
+0xA9 <> U+0125 ; h circumflex
+0xAA <> U+20AC ; euro = from the code page by Henrique Peron updated in 2011 for use with the CPIDOS package from FreeDOS
+0xAB <> U+00BD ; one half
+0xAC <> U+0134 ; J circumflex
+0xAD <> U+015F ; s cedilla
+0xAE <> U+00AB ; open French double quote
+0xAF <> U+00BB ; close French double quote
+0xB0 <> U+2591 ; shaded box 1/2 dots
+0xB1 <> U+2592 ; shaded box 1/4 dots
+0xB2 <> U+2593 ; shaded box 3/4 dots
+0xB3 <> U+2502 ; box vertical
+0xB4 <> U+2524 ; box left junction
+0xB5 <> U+00C1 ; A acute
+0xB6 <> U+00C2 ; A circumflex
+0xB7 <> U+00C0 ; A grave
+0xB8 <> U+015E ; S cedilla
+0xB9 <> U+2563 ; double box right junction
+0xBA <> U+2561 ; double box vertical
+0xBB <> U+2557 ; double box lower-right
+0xBC <> U+255D ; double box upper-left
+0xBD <> U+017B ; Z overdot
+0xBE <> U+017C ; z overdot
+0xBF <> U+250C ; box lower-right
+0xC0 <> U+2518 ; box upper-left
+0xC1 <> U+2534 ; box ascender
+0xC2 <> U+252C ; box descender
+0xC3 <> U+251C ; box right junction
+0xC4 <> U+2500 ; box horizontal
+0xC5 <> U+253C ; box cross
+0xC6 <> U+015C ; S circumflex
+0xC7 <> U+015D ; s circumflex
+0xC8 <> U+255A ; double box upper-right
+0xC9 <> U+2554 ; double box lower-right
+0xCA <> U+2569 ; double box ascender
+0xCB <> U+2566 ; double box descender
+0xCC <> U+2566 ; double box left junction
+0xCD <> U+2560 ; double box horizontal
+0xCE <> U+256C ; double box cross
+0xCF <> U+00A4 ; general currency sign
+0xD0 <> U+00A2 ; cent = from the code page by Henrique Peron updated in 2011 for use with the CPIDOS package from FreeDOS
+0xD1 <> U+00A5 ; Yen = from the code page by Henrique Peron updated in 2011 for use with the CPIDOS package from FreeDOS
+0xD2 <> U+00CA ; E circumflex
+0xD3 <> U+00CB ; E umlaut
+0xD4 <> U+00C8 ; E grave
+0xD5 <> U+0131 ; dotless i
+0xD6 <> U+00CD ; I acute
+0xD7 <> U+00CE ; I circumflex
+0xD8 <> U+00CF ; I umlaut
+0xD9 <> U+2514 ; box upper-right
+0xDA <> U+2510 ; box lower-left
+0xDB <> U+2588 ; solid box
+0xDC <> U+2584 ; solid box bottom half
+0xDD <> U+20A4 ; lira = from the code page by Henrique Peron updated in 2011 for use with the CPIDOS package from FreeDOS
+0xDE <> U+00CC ; I grave
+0xDF <> U+2580 ; solid box top half
+0xE0 <> U+00D3 ; O acute
+0xE1 <> U+00DF ; sharp s, German sz ligature
+0xE2 <> U+00D4 ; O circumflex
+0xE3 <> U+00D2 ; O grave
+0xE4 <> U+0120 ; G overdot
+0xE5 <> U+0121 ; g overdot
+0xE6 <> U+00B5 ; mu
+0xE7 <> U+0126 ; H stroke
+0xE8 <> U+0127 ; h stroke
+0xE9 <> U+00DA ; U acute
+0xEA <> U+00DB ; U circumflex
+0xEB <> U+00D9 ; U grave
+0xEC <> U+016C ; U breve
+0xED <> U+016D ; u breve
+0xEE <> U+00B7 ; dot
+0xEF <> U+00B4 ; acute accent
+0xF0 <> U+00AD ; soft hyphen
+0xF1 <> U+00B1 ; plusminus = from the code page by Henrique Peron updated in 2011 for use with the CPIDOS package from FreeDOS
+0xF2 <> U+2113 ; script l
+0xF3 <> U+0149 ; n apostrophe
+0xF4 <> U+02DA ; breve
+0xF5 <> U+00A7 ; section sign
+0xF6 <> U+00F7 ; divide
+0xF7 <> U+00B8 ; cedilla
+0xF8 <> U+00B0 ; degree
+0xF9 <> U+00A8 ; umlaut
+0xFA <> U+02DB ; overdot
+0xFB <> U+20B7 ; spesmilo = from the code page by Henrique Peron updated in 2011 for use with the CPIDOS package from FreeDOS
+0xFC <> U+00B3 ; superscript 3
+0xFD <> U+00B2 ; superscript 2
+0xFE <> U+25A0 ; square bullet
+0xFF <> U+00A0 ; non-breaking space

@@ -1,0 +1,31 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 04/09/1998.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = XSerif Unicode;11.52
+;   Right-hand side font = Times New Roman;11.52
+
+EncodingName          "XSerifUnicodePUA"
+DescriptiveName       "XSerif Unicode Latin letter PUA mappings"
+Version               "1.00"
+Contact               "mailto:webmaster@slovo.info"
+RegistrationAuthority "SLOVO"
+RegistrationName      "XSerif Unicode"
+
+pass(Unicode)
+
+U+F020 <> U+1E1E ; F overdot = could be mapped to U+E000 in the font
+U+E001 <> U+1E8E ; Y overdot
+U+E002 <> U+1E1F ; f overdot
+U+E003 <> U+1E8F ; y overdot
+U+E004 <> U+0043 U+006B ; Ch
+U+E005 <> U+0160 U+010D ; S caron c caron
+U+E006 <> U+004A U+0075 ; Ju
+U+E007 <> U+004A U+0061 ; Ja
+U+E008 <> U+0063 U+006B ; ch
+U+E009 <> U+0161 U+010D ; s caron c caron
+U+E00A <> U+006A U+0075 ; ju
+U+E00B <> U+006A U+0061 ; ja
+U+E00C <> U+0069 U+035E U+006F ; io macron
+U+E00D <> U+004A U+0065 ; Je
+U+E00E <> U+1D07 ; E small capital = for Unicode 4.0 and later
+U+E00F <> U+0049 U+1DCD U+004F ; IO circumflex
+U+E010 <> U+0069 U+1DCD U+006F ; io circumflex

@@ -1,0 +1,119 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/27/2001.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Mangal;11.25
+;   Right-hand side font = Mangal;11.25
+
+Name                  "PUAEveryWitchWayDevanagari"
+Description           "Every Witch Way fonts - Devanagari with PUA values"
+Version               "2.0"
+Contact               "mailto:redneck_witchboi@yahoo.com"
+RegistrationAuthority "Every Witch Way"
+RegistrationName      "PUAEveryWitchWayDevanagariToUnicode"
+
+pass(Unicode)
+
+U+E901 <> U+0901 ; candrabindu = also available in Chrysanthi Unicode as U+0310
+U+E902 <> U+0902 ; anusvara
+U+E903 <> U+0903 ; visarga
+U+E904 <> U+0904 ; short a
+U+E905 <> U+0905 ; a
+U+E906 <> U+0906 ; aa
+U+E907 <> U+0907 ; i
+U+E908 <> U+0908 ; ii
+U+E909 <> U+0909 ; u
+U+E90A <> U+090A ; uu
+U+E90B <> U+090B ; vocalic r
+U+E90C <> U+090C ; vocalic l
+U+E90D <> U+090D ; candra e
+U+E90E <> U+090E ; short e
+U+E90F <> U+090F ; e
+U+E910 <> U+0910 ; ai
+U+E911 <> U+0911 ; candra o
+U+E912 <> U+0912 ; short o
+U+E913 <> U+0913 ; o
+U+E914 <> U+0914 ; au
+U+E915 <> U+0915 ; ka
+U+E916 <> U+0916 ; kha
+U+E917 <> U+0917 ; ga
+U+E918 <> U+0918 ; gha
+U+E919 <> U+0919 ; nga
+U+E91A <> U+091A ; ca
+U+E91B <> U+091B ; cha
+U+E91C <> U+091C ; ja
+U+E91D <> U+091D ; jha
+U+E91E <> U+091E ; nya
+U+E91F <> U+091F ; tta
+U+E920 <> U+0920 ; ttha
+U+E921 <> U+0921 ; dda
+U+E922 <> U+0922 ; ddha
+U+E923 <> U+0923 ; nna
+U+E924 <> U+0924 ; ta
+U+E925 <> U+0925 ; tha
+U+E926 <> U+0926 ; da
+U+E927 <> U+0927 ; dha
+U+E928 <> U+0928 ; na
+U+E929 <> U+0929 ; nnna
+U+E92A <> U+092A ; pa
+U+E92B <> U+092B ; pha
+U+E92C <> U+092C ; ba
+U+E92D <> U+092D ; bha
+U+E92E <> U+092E ; ma
+U+E92F <> U+092F ; ya
+U+E930 <> U+0930 ; ra
+U+E931 <> U+0931 ; rra
+U+E932 <> U+0932 ; la
+U+E933 <> U+0933 ; lla
+U+E934 <> U+0934 ; llla
+U+E935 <> U+0935 ; va
+U+E936 <> U+0936 ; sha
+U+E937 <> U+0937 ; ssa
+U+E938 <> U+0938 ; sa
+U+E939 <> U+0939 ; ha
+U+E93C <> U+093C ; nukta
+U+E93D <> U+093D ; avagraha
+U+E93E <> U+093E ; vowel sign aa
+U+E93F <> U+093F ; vowel sign i
+U+E940 <> U+0940 ; vowel sign ii
+U+E941 <> U+0941 ; vowel sign u
+U+E942 <> U+0942 ; vowel sign uu
+U+E943 <> U+0943 ; vowel sign vocalic r
+U+E944 <> U+0944 ; vowel sign vocalic rr
+U+E945 <> U+0945 ; vowel sign candra e
+U+E946 <> U+0946 ; vowel sign short e
+U+E947 <> U+0947 ; vowel sign e
+U+E948 <> U+0948 ; vowel sign ai
+U+E949 <> U+0949 ; vowel sign candra o
+U+E94A <> U+094A ; vowel sign short o
+U+E94B <> U+094B ; vowel sign o
+U+E94C <> U+094C ; vowel sign au
+U+E94D <> U+094D ; virama
+U+E950 <> U+0950 ; om
+U+E951 <> U+0951 ; stress sign udatta
+U+E952 <> U+0952 ; stress sign anudatta
+U+E953 <> U+0953 ; grave accent
+U+E954 <> U+0954 ; acute accent
+U+E958 <> U+0958 ; qa
+U+E959 <> U+0959 ; khha
+U+E95A <> U+095A ; ghha
+U+E95B <> U+095B ; za
+U+E95C <> U+095C ; dddha
+U+E95D <> U+095D ; rha
+U+E95E <> U+095E ; fa
+U+E95F <> U+095F ; yya
+U+E960 <> U+0960 ; vocalic rr
+U+E961 <> U+0961 ; vocalic ll
+U+E962 <> U+0962 ; vowel sign vocalic l
+U+E963 <> U+0963 ; vowel sign vocalic ll
+U+E964 <> U+0964 ; danda
+U+E965 <> U+0965 ; double danda
+U+E966 <> U+0966 ; digit zero
+U+E967 <> U+0967 ; digit one
+U+E968 <> U+0968 ; digit two
+U+E969 <> U+0969 ; digit three
+U+E96A <> U+096A ; digit four
+U+E96B <> U+096B ; digit five
+U+E96C <> U+096C ; digit six
+U+E96D <> U+096D ; digit seven
+U+E96E <> U+096E ; digit eight
+U+E96F <> U+096F ; digit nine
+U+E970 <> U+0970 ; abbreviation sign

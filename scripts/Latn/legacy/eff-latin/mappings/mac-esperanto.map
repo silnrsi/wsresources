@@ -1,0 +1,147 @@
+; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 11/01/2017.
+;   Conversion Type = Legacy_to_from_Unicode
+;   Left-hand side font = Times New Roman;11.25
+;   Right-hand side font = Times New Roman;11.25
+;   Main Window Position = 0,0,658,713
+;   Left-hand side Character Map Window Position = 658,0,457,447
+;   Right-hand side Character Map Window Position = 658,447,457,447
+;   Left-hand side code page = 0
+;   Right-hand side code page = 0
+;   Left-hand range = 0000-007F
+;   Right-hand range = 0000-007F
+
+EncodingName          "eff-mac-esperanto"
+DescriptiveName       "The Electronic Font Foundry - Macintosh Esperanto"
+Version               "1.0"
+RegistrationAuthority "The Electronic Font Foundry"
+RegistrationName      "eff-mac-esperanto"
+
+0x80 <> U+00C4 ; A umlaut
+0x81 <> U+00C5 ; A overcircle
+0x82 <> U+0108 ; C circumflex
+0x83 <> U+00C9 ; E acute
+0x84 <> U+00D1 ; N tilde
+0x85 <> U+00D6 ; O umlaut
+0x86 <> U+00DC ; U umlaut
+0x87 <> U+00E1 ; a acute
+0x88 <> U+00E0 ; a grave
+0x89 <> U+00E2 ; a circumflex
+0x8A <> U+00E4 ; a umlaut
+0x8B <> U+00E3 ; a tilde
+0x8C <> U+00E5 ; a overcircle
+0x8D <> U+0109 ; c circumflex
+0x8E <> U+00E9 ; e acute
+0x8F <> U+00E8 ; e grave
+0x90 <> U+00EA ; e circumflex
+0x91 <> U+00EB ; e umlaut
+0x92 <> U+00ED ; i acute
+0x93 <> U+00EC ; i grave
+0x94 <> U+00EE ; i circumflex
+0x95 <> U+00EF ; i umlaut
+0x96 <> U+00F1 ; n tilde
+0x97 <> U+00F3 ; o acute
+0x98 <> U+00F2 ; o grave
+0x99 <> U+00F4 ; o circumflex
+0x9A <> U+00F5 ; o tilde
+0x9B <> U+00F6 ; o umlaut
+0x9C <> U+00FA ; u acute
+0x9D <> U+00F9 ; u grave
+0x9E <> U+00FB ; u circumflex
+0x9F <> U+00FC ; u umlaut
+0xA0 <> U+2020 ; dagger
+0xA1 <> U+00B0 ; degree
+0xA2 <> U+00A2 ; cent
+0xA3 <> U+00A3 ; sterling
+0xA4 <> U+00A7 ; section sign
+0xA5 <> U+2022 ; bullet
+0xA6 <> U+00B6 ; paragraph symbol
+0xA7 <> U+015D ; s circumflex
+0xA8 <> U+00AE ; registered sign
+0xA9 <> U+011D ; g circumflex
+0xAA <> U+2122 ; superscript TM, trademark
+0xAB <> U+00B4 ; acute accent
+0xAC <> U+00A8 ; umlaut
+0xAD <> U+2260 ; not equal to
+0xAE <> U+00C6 ; AE ligature
+0xAF <> U+00D8 ; O slash
+0xB0 <> U+221E ; infinity
+0xB1 <> U+00B1 ; plusminus
+0xB2 <> U+2264 ; less than or equal to
+0xB3 <> U+2265 ; greater than or equal to
+0xB4 <> U+00A5 ; Yen
+0xB5 <> U+00B5 ; mu
+0xB6 <> U+2202 ; partial differential
+0xB7 <> U+2211 ; n-ary summation
+0xB8 <> U+00B8 ; cedilla
+0xB8 <> U+220F ; n-ary product
+0xB9 <> U+03C0 ; pi
+0xBA <> U+222B ; integral sign
+0xBB <> U+00AA ; underscored a
+0xBC <> U+00BA ; underscored o
+0xBD <> U+03A9 ; Omega
+0xBE <> U+00E6 ; ae ligature
+0xBF <> U+00F8 ; o slash
+0xC0 <> U+00BF ; inverted question mark
+0xC1 <> U+00A1 ; inverted exclamation mark
+0xC2 <> U+00AC ; logical not
+0xC3 <> U+221A ; square root
+0xC4 <> U+0192 ; function of
+0xC5 <> U+2248 ; nearly equal to
+0xC6 <> U+0135 ; j circumflex
+0xC7 <> U+00AB ; open French double quote
+0xC8 <> U+00BB ; close French double quote
+0xC9 <> U+2026 ; ellipsis
+0xCA <> U+00A0 ; non-breaking space
+0xCB <> U+00C0 ; A grave
+0xCC <> U+00C3 ; A tilde
+0xCD <> U+00D5 ; O tilde
+0xCE <> U+0152 ; OE ligature
+0xCF <> U+0153 ; oe ligature
+0xD0 <> U+2013 ; en dash
+0xD1 <> U+2014 ; em dash
+0xD2 <> U+201C ; open double quote
+0xD3 <> U+201D ; close double quote
+0xD4 <> U+2018 ; open single quote
+0xD5 <> U+2019 ; close single quote
+0xD6 <> U+00F7 ; divide
+0xD7 <> U+016D ; u breve
+0xD8 <> U+00FF ; y umlaut
+0xD9 <> U+0178 ; Y umlaut
+0xDA <> U+2044 ; division slash
+0xDB <> U+00A4 ; general currency sign
+0xDC <> U+2039 ; open French single quote
+0xDD <> U+203A ; close French single quote
+0xDE <> U+FB01 ; fi ligature
+0xDF <> U+FB02 ; fl ligature
+0xE0 <> U+2021 ; double dagger
+0xE1 <> U+00B7 ; dot
+0xE2 <> U+201A ; low single quote
+0xE3 <> U+201E ; low double quote
+0xE4 <> U+2030 ; per thousand
+0xE5 <> U+00C2 ; A circumflex
+0xE6 <> U+00CA ; E circumflex
+0xE7 <> U+00C1 ; A acute
+0xE8 <> U+016C ; U breve
+0xE9 <> U+00C8 ; E grave
+0xEA <> U+015C ; S circumflex
+0xEB <> U+00CE ; I circumflex
+0xEC <> U+00CF ; I umlaut
+0xED <> U+011C ; G circumflex
+0xEE <> U+0124 ; H circumflex
+0xEF <> U+0134 ; J circumflex
+0xF0 <> U+F8FF ; Apple logo
+0xF1 <> U+00D2 ; O grave
+0xF2 <> U+00DA ; U acute
+0xF3 <> U+00DB ; U circumflex
+0xF4 <> U+00D9 ; U grave
+0xF5 <> U+0131 ; dotless i
+0xF6 <> U+02C6 ; caret symbol
+0xF7 <> U+02DC ; tilde
+0xF8 <> U+00AF ; macron
+0xF9 <> U+02DA ; breve
+0xFA <> U+0125 ; h circumflex
+0xFB <> U+02DA ; overcircle
+0xFC <> U+00B8 ; cedilla
+0xFD <> U+02DD ; double acute
+0xFE <> U+02DB ; ogonek
+0xFF <> U+02C7 ; caron

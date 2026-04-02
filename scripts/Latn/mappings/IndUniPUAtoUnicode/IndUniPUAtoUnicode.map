@@ -1,0 +1,139 @@
+﻿; This file was edited using TECkitMappingEditorU.exe v3.1.0.0 on 10/18/2010.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = IndUni-T;11.25
+;   Right-hand side font = IndUni-T;11.25
+
+Name             "IndUniPUA"
+Description      "IndUni PUA values"
+Version          "1.0"
+Contact          "mailto:jds10@cam.ac.uk"
+RegistrationName "IndUni"
+
+pass(Unicode)
+
+U+E000 <> U+0041 U+0304 U+0303 ; A macron tilde
+U+E001 <> U+0041 U+0303 U+0301 ; A tilde acute
+U+E002 <> U+0043 U+0304 ; C macron
+U+E003 <> U+0043 U+0323 ; C underdot
+U+E004 <> U+0044 U+0323 U+0301 ; D underdot acute
+U+E005 <> U+0045 U+0303 U+0301 ; E tilde acute
+U+E006 <> U+0045 U+0304 U+0303 ; E macron tilde
+U+E007 <> U+01F4 ; G acute
+U+E008 <> U+0047 U+0301 U+0304 ; G acute macron
+U+E009 <> U+0048 U+0301 ; H acute
+U+E00A <> U+0048 U+0324 ; H underumlaut
+U+E00B <> U+0048 U+0331 ; H underline
+U+E00C <> U+0049 U+0304 U+0303 ; I macron tilde
+U+E00D <> U+0049 U+0303 U+0301 ; I tilde acute
+U+E00E <> U+004A U+0304 ; J macron
+U+E00F <> U+004A U+030C ; J caron
+U+E010 <> U+004B U+0048 ; KH = not present in IndUni-CMono (Courier IndUni Mono)
+U+E011 <> U+004B U+035F U+0048 ; KH underline = not present in IndUni-CMono (Courier IndUni Mono)
+U+E012 <> U+004B U+0068 ; Kh = not present in IndUni-CMono (Courier IndUni Mono)
+U+E013 <> U+004B U+035F U+0068 ; Kh underline = not present in IndUni-CMono (Courier IndUni Mono)
+U+E014 <> U+004C U+0325 ; L undercircle
+U+E015 <> U+004C U+0325 U+0304 ; L undercircle macron
+U+E016 <> U+004D U+0306 ; M breve
+U+E017 <> U+004D U+0310 ; M candrabindu
+U+E018 <> U+004E U+0306 ; N breve
+U+E019 <> U+004F U+0304 U+0303 ; O macron tilde
+U+E01A <> U+0052 U+0306 ; R breve
+U+E01B <> U+0052 U+0325 ; R undercircle
+U+E01C <> U+0052 U+0325 U+0304 ; R undercircle macron
+U+E01D <> U+0053 U+0301 U+0304 ; S acute macron
+U+E01E <> U+0053 U+0323 U+0303 ; S underdot macron
+U+E01F <> U+0053 U+0324 ; S underumlaut
+U+E020 <> U+0053 U+0331 ; S underline
+U+E021 <> U+0054 U+0323 U+0301 ; T underdot acute
+U+E022 <> U+0054 U+0324 ; T underumlaut
+U+E023 <> U+0055 U+0304 U+0303 ; U macron tilde
+U+E024 <> U+0056 U+0302 ; V acute
+U+E025 <> U+005A U+0324 ; Z underumlaut
+U+E026 <> U+0061 U+0304 U+0301 ; a macron acute
+U+E027 <> U+0061 U+0304 U+0300 ; a macron grave
+U+E028 <> U+0061 U+0304 U+0303 ; a macron tilde
+U+E029 <> U+0061 U+0304 U+0306 ; a macron breve
+U+E02A <> U+0061 U+0303 U+0301 ; a tilde acute
+U+E02B <> U+0063 U+0304 ; c macron
+U+E02C <> U+0063 U+0323 ; c underdot
+U+E02D <> U+0064 U+0323 U+0301 ; d underdot acute
+U+E02E <> U+0065 U+0303 U+0301 ; e tilde acute
+U+E02F <> U+1E17 ; e macron acute = the author's MS-Word Norman to Unicode conversion macro uses U+0113 U+0301 (e macron followed by combining acute) for this character
+U+E030 <> U+0065 U+0304 U+0303 ; e macron tilde
+U+E031 <> U+0065 U+0304 U+0306 ; e macron breve
+U+E032 <> U+01F5 ; g acute
+U+E033 <> U+0067 U+0301 U+0304 ; g acute macron
+U+E034 <> U+0068 U+0301 ; h acute
+U+E035 <> U+0068 U+0324 ; h underumlaut
+U+E036 <> U+0069 U+0304 U+0301 ; i macron acute
+U+E037 <> U+0069 U+0304 U+0300 ; i macron grave
+U+E038 <> U+0069 U+0304 U+0303 ; i macron tilde
+U+E039 <> U+0069 U+0304 U+0306 ; i macron breve
+U+E03A <> U+0069 U+0303 U+0301 ; i tilde acute
+U+E03B <> U+006A U+0304 ; j macron
+U+E03C <> U+006B U+0068 ; kh = not present in IndUni-CMono (Courier IndUni Mono)
+U+E03D <> U+006B U+035F U+0068 ; kh underline = not present in IndUni-CMono (Courier IndUni Mono)
+U+E03E <> U+006C U+0303 ; l tilde
+U+E03F <> U+006C U+0323 U+0301 ; l underdot acute
+U+E040 <> U+006C U+0325 ; l undercircle
+U+E041 <> U+006C U+0325 U+0301 ; l undercircle acute
+U+E042 <> U+006C U+0325 U+0304 ; l undercircle macron
+U+E043 <> U+006D U+0306 ; m breve
+U+E044 <> U+006D U+0310 ; m candrabindu
+U+E045 <> U+006E U+0306 ; n breve
+U+E046 <> U+006F U+0304 U+0303 ; o macron tilde
+U+E047 <> U+006F U+0304 U+0306 ; o macron breve
+U+E048 <> U+0072 U+0306 ; r breve
+U+E049 <> U+0072 U+0323 U+0301 ; r underdot acute
+U+E04A <> U+0072 U+0323 U+0300 ; r underdot grave
+U+E04B <> U+0072 U+0323 U+0304 U+0301 ; r underdot macron acute
+U+E04C <> U+0072 U+0324 ; r underumlaut
+U+E04D <> U+0072 U+0325 ; r undercircle
+U+E04E <> U+0072 U+0325 U+0301 ; r undercircle acute
+U+E04F <> U+0072 U+0325 U+0300 ; r undercircle grave
+U+E050 <> U+0072 U+0325 U+0304 ; r undercircle macron
+U+E051 <> U+0072 U+0325 U+0304 U+0301 ; r undercircle macron acute
+U+E052 <> U+0073 U+0301 U+0304 ; s acute macron
+U+E053 <> U+0073 U+0323 U+0303 ; s underdot macron
+U+E054 <> U+0073 U+0324 ; s underumlaut
+U+E055 <> U+0073 U+0331 ; s underline
+U+E056 <> U+0074 U+0323 U+0301 ; t underdot acute
+U+E057 <> U+0074 U+0324 ; t underumlaut
+U+E058 <> U+0075 U+0304 U+0301 ; u macron acute
+U+E059 <> U+0075 U+0304 U+0300 ; u macron grave
+U+E05A <> U+0075 U+0304 U+0303 ; u macron tilde
+U+E05B <> U+0075 U+0304 U+0306 ; u macron breve
+U+E05C <> U+0076 U+0302 ; v acute
+U+E05D <> U+007A U+0324 ; z underumlaut
+U+E05E <> U+1E32 ; K underdot
+U+E05F <> U+1E33 ; k underdot
+U+E060 <> U+0041 U+0304 U+030A ; A macron overcircle = added in April 2009
+U+E061 <> U+0061 U+0304 U+030A ; a macron overcircle = added in April 2009
+U+E062 <> U+0041 U+0328 U+0307 ; A ogonek overdot = added in April 2009
+U+E063 <> U+0061 U+0328 U+0307 ; a ogonek overdot = added in April 2009
+U+E064 <> U+018F U+0304 ; Schwa macron = added in April 2009
+U+E065 <> U+0259 U+0304 ; schwa macron = added in April 2009
+U+E066 <> U+004D U+0328 U+0307 ; M ogonek = added in April 2009
+U+E067 <> U+006D U+0328 U+0307 ; m ogonek = added in April 2009
+U+E068 <> U+0053 U+030C U+0301 ; S caron acute = added in April 2009
+U+E069 <> U+0073 U+030C U+0301 ; s caron acute = added in April 2009
+U+E06A <> U+0053 U+0323 U+030C ; S underdot caron = added in April 2009
+U+E06B <> U+0073 U+0323 U+030C ; s underdot caron = added in April 2009
+U+E06C <> U+0054 U+0330 ; T undertilde = added in April 2009
+U+E06D <> U+0074 U+0330 ; t undertilde = added in April 2009
+U+E06E <> U+0058 U+0302 ; X acute = added in April 2009
+U+E06F <> U+0078 U+0302 ; x acute = added in April 2009
+U+E070 <> U+014A U+0302 ; Eng acute = added in April 2009
+U+E071 <> U+014B U+0302 ; eng acute = added in April 2009
+U+E072 <> U+0043 U+0323 U+030C ; C underdot caron = added in October 2010
+U+E073 <> U+0043 U+0323 U+030C ; c underdot caron = added in October 2010
+U+E074 <> U+0393 U+030C ; Gamma caron = added in October 2010. Latin gamma not present in this set of fonts
+U+E075 <> U+03B3 U+030C ; gamma caron = added in October 2010. Latin gamma not present in this set of fonts
+U+E076 <> U+0058 U+030C ; X caron = added in October 2010
+U+E077 <> U+0078 U+030C ; x caron = added in October 2010
+U+E078 <> U+005A U+0323 U+030C ; Z underdot caron = added in October 2010
+U+E079 <> U+007A U+0323 U+030C ; z underdot caron = added in October 2010
+U+E07A <> U+004A U+0323 U+030C ; J underdot caron = added in October 2010. present in IndUni-T (Times IndUni) only
+U+E07B <> U+004A U+0323 U+030C ; j underdot caron = added in October 2010. present in IndUni-T (Times IndUni) only
+U+E07C <> U+004A U+0323 ; J underdot = added in October 2010. present in IndUni-T (Times IndUni) only
+U+E07D <> U+004A U+0323 ; j underdot = added in October 2010. present in IndUni-T (Times IndUni) only

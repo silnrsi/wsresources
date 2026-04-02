@@ -1,29 +1,16 @@
-﻿; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 7/8/2024.
-;   Conversion Type = Unicode_to_from_Unicode
-;   Left-hand side font = Microsoft Sans Serif;11.25
-;   Right-hand side font = Microsoft Sans Serif;11.25
-;   Main Window Position = 115,168,658,713
-;   Left-hand side Character Map Window Position = 658,0,457,447
-;   Right-hand side Character Map Window Position = 658,447,457,447
-;   Left-hand side code page = 0
-;   Right-hand side code page = 0
-;   Left-hand range = 0000-007F
-;   Right-hand range = 0000-007F
-
+; This file was edited using TECkitMappingEditorU.exe v5.0.0.0 on 8/2/2008.
 ;   Conversion Type = Unicode_to_from_Unicode
 ;   Left-hand side font = Garava;11.25
 ;   Right-hand side font = Garava;11.25
 
 LHSName               "HighLogicPUA"
 RHSName               "Unicode"
-LHSDescription        "PUA mappings used by FontCreator"
+LHSDescription        "PUA mappings used by High-Logic FontCreator"
 RHSDescription        "Unicode"
-Version               "0.1"
+Version               "0.2"
 Contact               "mailto:pesala@aimwell.org"
 RegistrationAuthority "High-Logic B.V."
 RegistrationName      "HighLogicPUAtoUnicode"
-
-; They are also used in fonts created by Bhikkhu Pesala.
 
 pass(Unicode)
 
@@ -79,13 +66,13 @@ U+E021 <> U+0307 ; low profile overdot
 U+E022 <> U+0304 ; low profile macron
 U+E023 <> U+0384 ; low profile tonos
 U+E024 <> U+0385 ; low profile umlaut tonos
-U+E025 <> U+0323 ; underdot
-U+E026 <> U+0326 ; undercomma
+U+E025 <> U+0323 ; low profile underdot
+U+E026 <> U+0326 ; low profile undercomma
 
-; Titling caps, small caps, old style numbers, nut fractions, numerators and denominators
-[oldstylenumbers]   <> [numbers]
+; Titling caps, small caps, petite caps
 [titlingcaps]       <> [uppercase]
 [smallcaps]         <> [lowercase]
+[petitecaps]        <> [lowercase]
 [cyrillicsmallcaps] <> [cyrillic]
 U+E2B1 <> U+0021 ; exclamation mark
 U+E2B4 <> U+0024 ; dollar
@@ -101,9 +88,6 @@ U+E30D <> U+007D ; right brace
 U+E331 <> U+00A1 ; inverted exclamation mark
 U+E333 <> U+00A3 ; sterling
 U+E335 <> U+00A5 ; Yen
-U+E34C <> U+00BC ; one fourth
-U+E34D <> U+00BD ; one half
-U+E34E <> U+00BE ; fraction three-quarters
 U+E34F <> U+00BF ; inverted question mark
 U+E350 <> U+00C0 ; A grave
 U+E351 <> U+00C1 ; A acute
@@ -394,117 +378,6 @@ U+EA12 <> U+1EF2 ; Y grave
 U+EA13 <> U+1EF3 ; y grave
 U+EA18 <> U+1EF8 ; Y tilde
 U+EA19 <> U+1EF9 ; y tilde
-U+EC73 <> U+2153 ; fraction one third
-U+EC74 <> U+2154 ; fraction two thirds
-U+EC75 <> U+2155 ; fraction one fifth
-U+EC76 <> U+2156 ; fraction two fifths
-U+EC77 <> U+2157 ; fraction three fifths
-U+EC78 <> U+2158 ; fraction four fifths
-U+EC79 <> U+2159 ; fraction one sixth
-U+EC7A <> U+215A ; fraction five sixths
-U+EC7B <> U+215B ; fraction one eighth
-U+EC7C <> U+215C ; fraction three eighths
-U+EC7D <> U+215D ; fraction five eighths
-U+EC7E <> U+215E ; fraction seven eighths
-U+EC80 <> U+00B9 U+2044 U+2051 U+2056 ; fraction 1/16
-U+EC81 <> U+00B3 U+2044 U+2051 U+2056 ; fraction 3/16
-U+EC82 <> U+2045 U+2044 U+2051 U+2056 ; fraction 5/16
-U+EC83 <> U+2047 U+2044 U+2051 U+2056 ; fraction 7/16
-U+EC84 <> U+2049 U+2044 U+2051 U+2056 ; fraction 9/16
-U+EC85 <> U+00B9 U+00B9 U+2044 U+2051 U+2056 ; fraction 11/16
-U+EC86 <> U+00B9 U+00B3 U+2044 U+2051 U+2056 ; fraction 13/16
-U+EC87 <> U+00B9 U+2045 U+2044 U+2051 U+2056 ; fraction 15/16
-U+EC88 <> U+00B9 U+2044 U+2053 U+2052 ; fraction 1/32
-U+EC89 <> U+00B3 U+2044 U+2053 U+2052 ; fraction 3/32
-U+EC8A <> U+2045 U+2044 U+2053 U+2052 ; fraction 5/32
-U+EC8B <> U+2047 U+2044 U+2053 U+2052 ; fraction 7/32
-U+EC8C <> U+2049 U+2044 U+2053 U+2052 ; fraction 9/32
-U+EC8D <> U+00B9 U+00B9 U+2044 U+2053 U+2052 ; fraction 11/32
-U+EC8E <> U+00B9 U+00B3 U+2044 U+2053 U+2052 ; fraction 13/32
-U+EC8F <> U+00B9 U+2045 U+2044 U+2053 U+2052 ; fraction 15/32
-U+EC90 <> U+00B9 U+2047 U+2044 U+2053 U+2052 ; fraction 17/32
-U+EC91 <> U+00B9 U+2049 U+2044 U+2053 U+2052 ; fraction 19/32
-U+EC92 <> U+00B2 U+00B9 U+2044 U+2053 U+2052 ; fraction 21/32
-U+EC93 <> U+00B2 U+00B3 U+2044 U+2053 U+2052 ; fraction 23/32
-U+EC94 <> U+00B2 U+2045 U+2044 U+2053 U+2052 ; fraction 25/32
-U+EC95 <> U+00B2 U+2047 U+2044 U+2053 U+2052 ; fraction 27/32
-U+EC96 <> U+00B2 U+2049 U+2044 U+2053 U+2052 ; fraction 29/32
-U+EC97 <> U+00B2 U+00B9 U+2044 U+2053 U+2052 ; fraction 31/32
-U+EC98 <> U+00B9 U+2044 U+2056 U+2054 ; fraction 1/64
-U+EC99 <> U+00B3 U+2044 U+2056 U+2054 ; fraction 3/64
-U+EC9A <> U+2045 U+2044 U+2056 U+2054 ; fraction 5/64
-U+EC9B <> U+2047 U+2044 U+2056 U+2054 ; fraction 7/64
-U+EC9C <> U+2049 U+2044 U+2056 U+2054 ; fraction 9/64
-U+EC9D <> U+00B9 U+00B9 U+2044 U+2056 U+2054 ; fraction 11/64
-U+EC9E <> U+00B9 U+00B3 U+2044 U+2056 U+2054 ; fraction 13/64
-U+EC9F <> U+00B9 U+2045 U+2044 U+2056 U+2054 ; fraction 15/64
-U+ECA0 <> U+00B9 U+2047 U+2044 U+2056 U+2054 ; fraction 17/64
-U+ECA1 <> U+00B9 U+2049 U+2044 U+2056 U+2054 ; fraction 19/64
-U+ECA2 <> U+00B2 U+00B9 U+2044 U+2056 U+2054 ; fraction 21/64
-U+ECA3 <> U+00B2 U+00B3 U+2044 U+2056 U+2054 ; fraction 23/64
-U+ECA4 <> U+00B2 U+2045 U+2044 U+2056 U+2054 ; fraction 25/64
-U+ECA5 <> U+00B2 U+2047 U+2044 U+2056 U+2054 ; fraction 27/64
-U+ECA6 <> U+00B2 U+2049 U+2044 U+2056 U+2054 ; fraction 29/64
-U+ECA7 <> U+00B3 U+00B9 U+2044 U+2056 U+2054 ; fraction 31/64
-U+ECA8 <> U+00B3 U+00B3 U+2044 U+2056 U+2054 ; fraction 33/64
-U+ECA9 <> U+00B3 U+2045 U+2044 U+2056 U+2054 ; fraction 35/64
-U+ECAA <> U+00B3 U+2047 U+2044 U+2056 U+2054 ; fraction 37/64
-U+ECAB <> U+00B3 U+2049 U+2044 U+2056 U+2054 ; fraction 39/64
-U+ECAC <> U+2044 U+00B9 U+2044 U+2056 U+2054 ; fraction 41/64
-U+ECAD <> U+2044 U+00B3 U+2044 U+2056 U+2054 ; fraction 43/64
-U+ECAE <> U+2044 U+2045 U+2044 U+2056 U+2054 ; fraction 45/64
-U+ECAF <> U+2044 U+2047 U+2044 U+2056 U+2054 ; fraction 47/64
-U+ECB0 <> U+2044 U+2049 U+2044 U+2056 U+2054 ; fraction 49/64
-U+ECB1 <> U+2045 U+00B9 U+2044 U+2056 U+2054 ; fraction 51/64
-U+ECB2 <> U+2045 U+00B3 U+2044 U+2056 U+2054 ; fraction 53/64
-U+ECB3 <> U+2045 U+2045 U+2044 U+2056 U+2054 ; fraction 55/64
-U+ECB4 <> U+2045 U+2047 U+2044 U+2056 U+2054 ; fraction 57/64
-U+ECB5 <> U+2045 U+2049 U+2044 U+2056 U+2054 ; fraction 59/64
-U+ECB6 <> U+2046 U+00B9 U+2044 U+2056 U+2054 ; fraction 61/64
-U+ECB7 <> U+2046 U+00B3 U+2044 U+2056 U+2054 ; fraction 63/64
-U+ECB8 <> U+002D ; nut fraction line
-U+ECB9 <> U+00B9 ; numerator 1
-U+ECBA <> U+2052 ; denominator 2
-U+ECBB <> U+00B3 ; numerator 3
-U+ECBC <> U+2054 ; denominator 4
-U+ECBD <> U+2045 ; numerator 5
-U+ECBE <> U+2056 ; denominator 6
-U+ECBF <> U+2047 ; numerator 7
-U+ECC0 <> U+2058 ; denominator 8
-U+ECC1 <> U+2049 ; numerator 9
-U+ECC3 <> U+00B9 U+00B9 ; numerator 11
-U+ECC5 <> U+00B9 U+00B3 ; numerator 13
-U+ECC7 <> U+00B9 U+2045 ; numerator 15
-U+ECC8 <> U+002D U+2051 U+2056 ; denominator 16
-U+ECC9 <> U+00B9 U+2047 ; numerator 17
-U+ECCB <> U+00B9 U+2049 ; numerator 19
-U+ECCD <> U+00B2 U+00B9 ; numerator 21
-U+ECCF <> U+00B2 U+00B3 ; numerator 23
-U+ECD1 <> U+00B2 U+2045 ; numerator 25
-U+ECD3 <> U+00B2 U+2047 ; numerator 27
-U+ECD5 <> U+00B2 U+2049 ; numerator 29
-U+ECD7 <> U+00B3 U+00B9 ; numerator 31
-U+ECD8 <> U+002D U+2053 U+2052 ; denominator 32
-U+ECD9 <> U+00B3 U+00B3 ; numerator 33
-U+ECDB <> U+00B3 U+2045 ; numerator 35
-U+ECDD <> U+00B3 U+2047 ; numerator 37
-U+ECDF <> U+00B3 U+2049 ; numerator 39
-U+ECE1 <> U+2044 U+00B9 ; numerator 41
-U+ECE3 <> U+2044 U+2043 ; numerator 43
-U+ECE5 <> U+2044 U+2045 ; numerator 45
-U+ECE7 <> U+2044 U+2047 ; numerator 47
-U+ECE9 <> U+2044 U+2049 ; numerator 49
-U+ECEB <> U+2045 U+00B9 ; numerator 51
-U+ECED <> U+2045 U+00B3 ; numerator 53
-U+ECEF <> U+2045 U+2045 ; numerator 55
-U+ECF1 <> U+2045 U+2047 ; numerator 57
-U+ECF3 <> U+2045 U+2049 ; numerator 59
-U+ECF5 <> U+2046 U+00B9 ; numerator 61
-U+ECF7 <> U+2046 U+00B3 ; numerator 63
-U+ECF9 <> U+002D U+2056 U+2054 ; denominator 64
-
-; Petite caps
-[petitecaps] <> [lowercase]
 U+EE69 <> U+0021 ; exclamation mark
 U+EE6E <> U+0026 ; ampersand
 U+EE70 <> U+0028 ; left parenthesis
@@ -670,6 +543,120 @@ U+F576 <> U+1E9E ; Sharp S, German sz ligature
 U+F5CB <> U+1EF3 ; y grave
 U+F5D1 <> U+1EF9 ; y tilde
 
+; Old style numbers, nut fractions, numerators and denominators
+[oldstylenumbers] <> [numbers]
+U+E34C <> U+00BC ; one fourth
+U+E34D <> U+00BD ; one half
+U+E34E <> U+00BE ; fraction three-quarters
+U+EC73 <> U+2153 ; fraction one third
+U+EC74 <> U+2154 ; fraction two thirds
+U+EC75 <> U+2155 ; fraction one fifth
+U+EC76 <> U+2156 ; fraction two fifths
+U+EC77 <> U+2157 ; fraction three fifths
+U+EC78 <> U+2158 ; fraction four fifths
+U+EC79 <> U+2159 ; fraction one sixth
+U+EC7A <> U+215A ; fraction five sixths
+U+EC7B <> U+215B ; fraction one eighth
+U+EC7C <> U+215C ; fraction three eighths
+U+EC7D <> U+215D ; fraction five eighths
+U+EC7E <> U+215E ; fraction seven eighths
+U+EC80 <> U+00B9 U+2044 U+2051 U+2056 ; fraction 1/16
+U+EC81 <> U+00B3 U+2044 U+2051 U+2056 ; fraction 3/16
+U+EC82 <> U+2045 U+2044 U+2051 U+2056 ; fraction 5/16
+U+EC83 <> U+2047 U+2044 U+2051 U+2056 ; fraction 7/16
+U+EC84 <> U+2049 U+2044 U+2051 U+2056 ; fraction 9/16
+U+EC85 <> U+00B9 U+00B9 U+2044 U+2051 U+2056 ; fraction 11/16
+U+EC86 <> U+00B9 U+00B3 U+2044 U+2051 U+2056 ; fraction 13/16
+U+EC87 <> U+00B9 U+2045 U+2044 U+2051 U+2056 ; fraction 15/16
+U+EC88 <> U+00B9 U+2044 U+2053 U+2052 ; fraction 1/32
+U+EC89 <> U+00B3 U+2044 U+2053 U+2052 ; fraction 3/32
+U+EC8A <> U+2045 U+2044 U+2053 U+2052 ; fraction 5/32
+U+EC8B <> U+2047 U+2044 U+2053 U+2052 ; fraction 7/32
+U+EC8C <> U+2049 U+2044 U+2053 U+2052 ; fraction 9/32
+U+EC8D <> U+00B9 U+00B9 U+2044 U+2053 U+2052 ; fraction 11/32
+U+EC8E <> U+00B9 U+00B3 U+2044 U+2053 U+2052 ; fraction 13/32
+U+EC8F <> U+00B9 U+2045 U+2044 U+2053 U+2052 ; fraction 15/32
+U+EC90 <> U+00B9 U+2047 U+2044 U+2053 U+2052 ; fraction 17/32
+U+EC91 <> U+00B9 U+2049 U+2044 U+2053 U+2052 ; fraction 19/32
+U+EC92 <> U+00B2 U+00B9 U+2044 U+2053 U+2052 ; fraction 21/32
+U+EC93 <> U+00B2 U+00B3 U+2044 U+2053 U+2052 ; fraction 23/32
+U+EC94 <> U+00B2 U+2045 U+2044 U+2053 U+2052 ; fraction 25/32
+U+EC95 <> U+00B2 U+2047 U+2044 U+2053 U+2052 ; fraction 27/32
+U+EC96 <> U+00B2 U+2049 U+2044 U+2053 U+2052 ; fraction 29/32
+U+EC97 <> U+00B2 U+00B9 U+2044 U+2053 U+2052 ; fraction 31/32
+U+EC98 <> U+00B9 U+2044 U+2056 U+2054 ; fraction 1/64
+U+EC99 <> U+00B3 U+2044 U+2056 U+2054 ; fraction 3/64
+U+EC9A <> U+2045 U+2044 U+2056 U+2054 ; fraction 5/64
+U+EC9B <> U+2047 U+2044 U+2056 U+2054 ; fraction 7/64
+U+EC9C <> U+2049 U+2044 U+2056 U+2054 ; fraction 9/64
+U+EC9D <> U+00B9 U+00B9 U+2044 U+2056 U+2054 ; fraction 11/64
+U+EC9E <> U+00B9 U+00B3 U+2044 U+2056 U+2054 ; fraction 13/64
+U+EC9F <> U+00B9 U+2045 U+2044 U+2056 U+2054 ; fraction 15/64
+U+ECA0 <> U+00B9 U+2047 U+2044 U+2056 U+2054 ; fraction 17/64
+U+ECA1 <> U+00B9 U+2049 U+2044 U+2056 U+2054 ; fraction 19/64
+U+ECA2 <> U+00B2 U+00B9 U+2044 U+2056 U+2054 ; fraction 21/64
+U+ECA3 <> U+00B2 U+00B3 U+2044 U+2056 U+2054 ; fraction 23/64
+U+ECA4 <> U+00B2 U+2045 U+2044 U+2056 U+2054 ; fraction 25/64
+U+ECA5 <> U+00B2 U+2047 U+2044 U+2056 U+2054 ; fraction 27/64
+U+ECA6 <> U+00B2 U+2049 U+2044 U+2056 U+2054 ; fraction 29/64
+U+ECA7 <> U+00B3 U+00B9 U+2044 U+2056 U+2054 ; fraction 31/64
+U+ECA8 <> U+00B3 U+00B3 U+2044 U+2056 U+2054 ; fraction 33/64
+U+ECA9 <> U+00B3 U+2045 U+2044 U+2056 U+2054 ; fraction 35/64
+U+ECAA <> U+00B3 U+2047 U+2044 U+2056 U+2054 ; fraction 37/64
+U+ECAB <> U+00B3 U+2049 U+2044 U+2056 U+2054 ; fraction 39/64
+U+ECAC <> U+2044 U+00B9 U+2044 U+2056 U+2054 ; fraction 41/64
+U+ECAD <> U+2044 U+00B3 U+2044 U+2056 U+2054 ; fraction 43/64
+U+ECAE <> U+2044 U+2045 U+2044 U+2056 U+2054 ; fraction 45/64
+U+ECAF <> U+2044 U+2047 U+2044 U+2056 U+2054 ; fraction 47/64
+U+ECB0 <> U+2044 U+2049 U+2044 U+2056 U+2054 ; fraction 49/64
+U+ECB1 <> U+2045 U+00B9 U+2044 U+2056 U+2054 ; fraction 51/64
+U+ECB2 <> U+2045 U+00B3 U+2044 U+2056 U+2054 ; fraction 53/64
+U+ECB3 <> U+2045 U+2045 U+2044 U+2056 U+2054 ; fraction 55/64
+U+ECB4 <> U+2045 U+2047 U+2044 U+2056 U+2054 ; fraction 57/64
+U+ECB5 <> U+2045 U+2049 U+2044 U+2056 U+2054 ; fraction 59/64
+U+ECB6 <> U+2046 U+00B9 U+2044 U+2056 U+2054 ; fraction 61/64
+U+ECB7 <> U+2046 U+00B3 U+2044 U+2056 U+2054 ; fraction 63/64
+U+ECB8 <> U+002D ; nut fraction line
+U+ECB9 <> U+00B9 ; numerator 1
+U+ECBA <> U+2052 ; denominator 2
+U+ECBB <> U+00B3 ; numerator 3
+U+ECBC <> U+2054 ; denominator 4
+U+ECBD <> U+2045 ; numerator 5
+U+ECBE <> U+2056 ; denominator 6
+U+ECBF <> U+2047 ; numerator 7
+U+ECC0 <> U+2058 ; denominator 8
+U+ECC1 <> U+2049 ; numerator 9
+U+ECC3 <> U+00B9 U+00B9 ; numerator 11
+U+ECC5 <> U+00B9 U+00B3 ; numerator 13
+U+ECC7 <> U+00B9 U+2045 ; numerator 15
+U+ECC8 <> U+002D U+2051 U+2056 ; denominator 16
+U+ECC9 <> U+00B9 U+2047 ; numerator 17
+U+ECCB <> U+00B9 U+2049 ; numerator 19
+U+ECCD <> U+00B2 U+00B9 ; numerator 21
+U+ECCF <> U+00B2 U+00B3 ; numerator 23
+U+ECD1 <> U+00B2 U+2045 ; numerator 25
+U+ECD3 <> U+00B2 U+2047 ; numerator 27
+U+ECD5 <> U+00B2 U+2049 ; numerator 29
+U+ECD7 <> U+00B3 U+00B9 ; numerator 31
+U+ECD8 <> U+002D U+2053 U+2052 ; denominator 32
+U+ECD9 <> U+00B3 U+00B3 ; numerator 33
+U+ECDB <> U+00B3 U+2045 ; numerator 35
+U+ECDD <> U+00B3 U+2047 ; numerator 37
+U+ECDF <> U+00B3 U+2049 ; numerator 39
+U+ECE1 <> U+2044 U+00B9 ; numerator 41
+U+ECE3 <> U+2044 U+2043 ; numerator 43
+U+ECE5 <> U+2044 U+2045 ; numerator 45
+U+ECE7 <> U+2044 U+2047 ; numerator 47
+U+ECE9 <> U+2044 U+2049 ; numerator 49
+U+ECEB <> U+2045 U+00B9 ; numerator 51
+U+ECED <> U+2045 U+00B3 ; numerator 53
+U+ECEF <> U+2045 U+2045 ; numerator 55
+U+ECF1 <> U+2045 U+2047 ; numerator 57
+U+ECF3 <> U+2045 U+2049 ; numerator 59
+U+ECF5 <> U+2046 U+00B9 ; numerator 61
+U+ECF7 <> U+2046 U+00B3 ; numerator 63
+U+ECF9 <> U+002D U+2056 U+2054 ; denominator 64
+
 ; Superscript
 [supascii] <> [ascii]
 U+EADF <> U+2018 ; open single quote
@@ -729,3 +716,55 @@ U+ED6A <> U+1E62 ; S underdot
 U+ED6B <> U+1E63 ; s underdot
 U+ED74 <> U+1E6C ; T underdot
 U+ED75 <> U+1E6D ; t underdot
+
+; Ligatures
+; The glyph definition for U+A760 from CompositeData.xml in FontCreator is VY,
+; whereas the representative Unicode code chart glyph is capital W and small y
+U+EBAD <> U+017F U+0062 ; long s b
+U+EBAE <> U+017F U+006B ; long s k
+U+EED7 <> U+0073 U+0070 ; sp
+U+EEDA <> U+0074 U+0074 U+0079 ; tty
+U+EEDE <> U+0051 U+0075 ; Qu
+U+EEDF <> U+0054 U+0068 ; Th
+U+EEE0 <> U+0074 U+0074 U+0072 ; ttr
+U+EFB3 <> U+0046 U+0046 ; FF
+U+EFB4 <> U+0046 U+0049 ; FI
+U+EFB5 <> U+0046 U+004C ; FL
+U+EFB6 <> U+0048 U+0045 ; HE
+U+EFB7 <> U+004C U+0041 ; LA
+U+EFB8 <> U+004D U+0042 ; MB
+U+EFB9 <> U+004D U+0044 ; MD
+U+EFBA <> U+004D U+0045 ; ME
+U+EFBB <> U+004D U+0050 ; MP
+U+EFBC <> U+004D U+0052 ; MR
+U+EFBD <> U+004E U+004B ; NK
+U+EFBE <> U+004E U+0054 ; NT
+U+EFBF <> U+004F U+0043 ; OC
+U+EFC0 <> U+004F U+0047 ; OG
+U+EFC2 <> U+0054 U+0054 ; TT
+U+EFC3 <> U+0054 U+0057 ; TW
+U+EFC4 <> U+0054 U+0059 ; TY
+U+EFC5 <> U+0055 U+0042 ; UB
+U+EFC6 <> U+0055 U+0044 ; UD
+U+EFC7 <> U+0055 U+004C ; UL
+U+EFC8 <> U+0055 U+0052 ; UR
+U+EFCA <> U+0063 U+006B U+0079 ; cky
+U+EFCB <> U+006B U+0079 ; ky
+U+EFCC <> U+0066 U+0066 U+0072 ; ffr
+U+EFCD <> U+0069 U+0070 ; ip
+U+EFCE <> U+0069 U+0074 ; it
+U+EFD0 <> U+0069 U+0077 ; tw
+U+EFD1 <> U+0066 U+0062 ; fb
+U+EFD2 <> U+0066 U+0066 U+0062 ; ffb
+U+EFD3 <> U+0066 U+0068 ; fh
+U+EFD4 <> U+0066 U+0066 U+0068 ; ffh
+U+EFD5 <> U+0066 U+006B ; fk
+U+EFD6 <> U+0066 U+0066 U+006B ; ffk
+U+EFD7 <> U+0066 U+0066 U+006A ; ffj
+U+FB07 <> U+0066 U+0066 U+0066 ; fff
+U+FB08 <> U+0066 U+0066 U+0066 U+006C ; fffl
+U+FB09 <> U+0073 U+0066 ; sf
+U+FB0A <> U+0073 U+0066 U+0069 ; sfi
+U+FB0B <> U+0073 U+0066 U+0079 ; sfy
+U+FB0C <> U+0073 U+0068 ; sh
+U+FB0D <> U+0073 U+006B ; sk

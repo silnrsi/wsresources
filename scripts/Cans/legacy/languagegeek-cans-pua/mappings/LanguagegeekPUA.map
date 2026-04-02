@@ -1,0 +1,750 @@
+; This file was edited using TECkitMappingEditorU.exe v1.0.0.1 on 8/20/2008.
+;   Conversion Type = Unicode_to_from_Unicode
+;   Left-hand side font = Euphemia;12
+;   Right-hand side font = Euphemia;15.75
+
+Name                  "LanguagegeekCans"
+Description           "Languagegeek Canadian Syllabics"
+Version               "1.0"
+Contact               "mailto:info@languagegeek.com"
+RegistrationAuthority "Languagegeek.com"
+RegistrationName      "Languagegeek PUA"
+
+pass(Unicode)
+
+U+E3A0 <> U+141F ; acute
+U+E3A1 <> U+1420 ; grave
+U+E3A2 <> U+1426 ; double bar
+U+E3A3 <> U+142A ; bar
+U+E3A4 <> U+1421 ; breve
+U+E3A5 <> U+1422 ; inverted breve
+U+E3A6 <> U+1423 ; right half circle
+U+E3AD <> U+0301 ; combining acute
+U+E3AE <> U+0303 ; combining tilde
+U+E3B2 <> U+141E ; middle glottal
+U+E3B3 <> U+141F ; middle acute
+U+E3B4 <> U+141F ; small middle acute
+U+E3B5 <> U+1420 ; middle grave
+U+E3B6 <> U+1420 ; small middle grave
+U+E3B7 <> U+1421 ; middle breve
+U+E3B8 <> U+1421 ; small middle breve
+U+E3B9 <> U+1422 ; middle inverted breve
+U+E3BA <> U+1422 ; small middle inverted breve
+U+E3BB <> U+1423 ; middle right half circle
+U+E3BC <> U+1423 ; small middle right half circle
+U+E3BD <> U+1424 ; middle circle
+U+E3BF <> U+1425 ; middle double acute
+U+E3C0 <> U+1426 ; middle double bar
+U+E3C1 <> U+1426 ; small middle double bar
+U+E3C2 <> U+141D ; high dot
+U+E3C3 <> U+1428 ; middle macron
+U+E3C8 <> U+144A ; middle bar
+U+E3C9 <> U+144A ; small middle bar
+U+E3FC <> U+0307 U+0301 ; combining long acute
+U+E3FD <> U+0307 U+0303 ; combining long tilde
+U+E3FE <> U+0302 ; combining circumflex
+U+E3FF <> U+030C ; combining caron
+U+E401 <> U+1425 ; bottom dash
+U+E402 <> U+141E ; bottom glottal
+U+E403 <> U+141F ; bottom acute
+U+E404 <> U+141F ; small bottom acute
+U+E405 <> U+1420 ; bottom grave
+U+E406 <> U+1420 ; small bottom grave
+U+E407 <> U+1421 ; bottom breve
+U+E408 <> U+1421 ; small bottom breve
+U+E409 <> U+1422 ; bottom inverted breve
+U+E40A <> U+1422 ; small bottom inverted breve
+U+E40B <> U+1423 ; bottom right half circle
+U+E40C <> U+1423 ; small bottom right half circle
+U+E40D <> U+1424 ; bottom circle
+U+E40F <> U+1425 ; bottom double acute
+U+E410 <> U+1426 ; bottom double bar
+U+E411 <> U+1426 ; small bottom double bar
+U+E413 <> U+1428 ; bottom macron
+U+E418 <> U+144A ; bottom bar
+U+E419 <> U+144A ; small bottom bar
+U+E44C <> U+00B4 ; acute
+U+E44D <> U+02DC ; tilde
+U+E44E <> U+02D9 U+00B4 ; combining long acute
+U+E44F <> U+02D9 U+02DC ; combining long tilde
+U+E494 <> U+02D9 ; overdot
+U+E495 <> U+00A8 ; umlaut
+U+E496 <> U+A789 ; colon = for Unicode 5.1 and later
+U+E496 <  U+0058 ; colon = before Unicode 5.1
+U+E497 <> U+00B7 ; dot
+U+E498 <> U+0307 ; combining overdot - off centered to the left
+U+E499 <> U+0307 ; combining overdot
+U+E49A <> U+0307 ; combining overdot - off centered to the left
+U+E49B <> U+002D ; hyphen
+U+E49C <> U+002D ; hyphen
+U+E49D <> U+0307 ; combining overdot - off centered to the left
+U+E49E <> U+14EB ; combining West Cree l
+U+E49F <> U+1551 ; combining West Cree r
+U+E4A0 <> U+00B7 U+02DA ; dot overcircle
+U+E4A1 <> U+144A ; low bar
+U+E4A2 <> U+144A ; low bar
+U+E4A4 <> U+167F ; hyphen
+U+E50C <> U+1424 ; overcircle - off centered to the right
+U+E50D <> U+1424 ; overcircle - off centered to the right
+U+E50E <> U+1424 ; overcircle - off centered to the right
+U+A9E0 <> U+18C6 ; nwi = for Unicode 5.2 and later
+U+A9E1 <> U+18C7 ; Ojibway nwi = for Unicode 5.2 and later
+U+A9E2 <> U+18C8 ; nwii = for Unicode 5.2 and later
+U+A9E3 <> U+18C9 ; Ojibway nwii = for Unicode 5.2 and later
+U+A9E4 <> U+18CA ; nwo = for Unicode 5.2 and later
+U+A9E5 <> U+18CB ; Ojibway nwo = for Unicode 5.2 and later
+U+A9E6 <> U+18CC ; nwoo = for Unicode 5.2 and later
+U+A9E7 <> U+18CD ; Ojibway nwoo = for Unicode 5.2 and later
+U+A9E8 <> U+18CE ; rwee = for Unicode 5.2 and later
+U+A9E9 <> U+18CF ; rwi = for Unicode 5.2 and later
+U+A9EA <> U+18D0 ; rwii = for Unicode 5.2 and later
+U+A9EB <> U+18D1 ; rwo = for Unicode 5.2 and later
+U+A9EC <> U+18D2 ; rwoo = for Unicode 5.2 and later
+U+A9ED <> U+18D3 ; rwa = for Unicode 5.2 and later
+U+A9EE <> U+18D4 ; Ojibway p = for Unicode 5.2 and later
+U+A9EF <> U+18D5 ; Ojibway t = for Unicode 5.2 and later
+U+A9F0 <> U+18D6 ; Ojibway k = for Unicode 5.2 and later
+U+A9F1 <> U+18D7 ; Ojibway c = for Unicode 5.2 and later
+U+A9F2 <> U+18D8 ; Ojibway m = for Unicode 5.2 and later
+U+A9F3 <> U+18D9 ; Ojibway n = for Unicode 5.2 and later
+U+A9F4 <> U+18DA ; Ojibway s = for Unicode 5.2 and later
+U+A9F5 <> U+18DB ; Ojibway sh = for Unicode 5.2 and later
+U+A9F6 <> U+18DC ; Eastern w = for Unicode 5.2 and later
+U+A9F7 <> U+18DD ; Western w = for Unicode 5.2 and later
+U+A9F8 <> U+18DE ; final small circle = for Unicode 5.2 and later
+U+A9F9 <> U+18DF ; final raised dot = for Unicode 5.2 and later
+U+A9FA <> U+18F3 ; Dene Beaver l = for Unicode 5.2 and later
+U+A9FB <> U+18F4 ; Dene Beaver r = for Unicode 5.2 and later
+U+A9FC <> U+18F5 ; Carrier dental s = for Unicode 5.2 and later
+U+E220 <> U+1401 U+0307 ; ee
+U+E221 <> U+142F U+0307 ; pee
+U+E222 <> U+144C U+0307 ; tee
+U+E223 <> U+146B U+0307 ; kee
+U+E224 <> U+1489 U+0307 ; cee
+U+E225 <> U+14A3 U+0307 ; mee
+U+E226 <> U+14C0 U+0307 ; nee
+U+E227 <> U+14ED U+0307 ; see
+U+E228 <> U+1510 U+0307 ; shee
+U+E229 <> U+1526 U+0307 ; yee
+U+E22A <> U+1543 U+0307 ; R Cree ree
+U+E22B <> U+1542 U+0307 ; ree
+U+E22C <> U+1544 U+0307 ; West Cree lee
+U+E22D <> U+1553 U+0307 ; fee
+U+E22E <> U+155E U+0307 ; thee
+U+E22F <> U+155F U+0307 ; N Cree thee
+U+E230 <> U+1574 U+0307 ; Inuktitut hee
+U+E231 <> U+166F U+0307 ; qee
+U+E232 <> U+1670 U+0307 ; ngee
+U+E235 <> U+15A7 U+0307 ; T Cree thee
+U+E237 <> U+14D3 U+0307 ; lee
+U+E238 <> U+18E1 ; Woods Cree loo
+U+E239 <> U+1E82 ; West Cree laa
+U+E240 <> U+1401 U+030A ; ey
+U+E241 <> U+18B0 ; oy = for Unicode 5.2 and later
+U+E242 <> U+18B1 ; ay = for Unicode 5.2 and later
+U+E243 <> U+142F U+030A ; pey
+U+E244 <> U+18B4 ; poy = for Unicode 5.2 and later
+U+E245 <> U+18B5 ; pay = for Unicode 5.2 and later
+U+E246 <> U+144C U+030A ; tey
+U+E247 <> U+1450 U+030A ; toy
+U+E248 <> U+18B7 ; tay = for Unicode 5.2 and later
+U+E24A <> U+146F U+030A ; key
+U+E24B <> U+18B8 ; kay = for Unicode 5.2 and later
+U+E24C <> U+1489 U+030A ; cey
+U+E24D <> U+148D U+030A ; coy
+U+E24E <> U+1490 U+030A ; cay
+U+E24F <> U+14A3 U+030A ; mey
+U+E250 <> U+14A7 U+030A ; moy
+U+E251 <> U+14AA U+030A ; may
+U+E252 <> U+14C0 U+030A ; ney
+U+E253 <> U+18BB ; noy = for Unicode 5.2 and later
+U+E254 <> U+18BC ; nay = for Unicode 5.2 and later
+U+E255 <> U+14D3 U+030A ; ley
+U+E256 <> U+14D7 U+030A ; loy
+U+E257 <> U+18BD ; lay = for Unicode 5.2 and later
+U+E258 <> U+14ED U+030A ; sey
+U+E259 <> U+18BE ; soy = for Unicode 5.2 and later
+U+E25A <> U+18BF ; say = for Unicode 5.2 and later
+U+E25B <> U+1510 U+030A ; shey
+U+E25C <> U+1511 U+030A ; shiy
+U+E25D <> U+18C0 ; shoy = for Unicode 5.2 and later
+U+E25E <> U+18C1 ; shay = for Unicode 5.2 and later
+U+E25F <> U+1526 U+030A ; yey
+U+E260 <> U+18C3 ; yoy = for Unicode 5.2 and later
+U+E261 <> U+18C4 ; yay = for Unicode 5.2 and later
+U+E262 <> U+1543 U+030A ; rey
+U+E263 <> U+1548 U+030A ; roy
+U+E264 <> U+18C5 ; ray = for Unicode 5.2 and later
+U+E265 <> U+1553 U+030A ; fey
+U+E266 <> U+1557 U+030A ; foy
+U+E267 <> U+1559 U+030A ; fay
+U+E268 <> U+155E U+030A ; they
+U+E269 <> U+1560 U+030A ; thiy
+U+E26A <> U+1564 U+030A ; thoy
+U+E26B <> U+1566 U+030A ; thay
+U+E26C <> U+15A0 U+030A ; lhaai
+U+E26D <> U+1671 U+030A ; nngaai
+U+E270 <> U+18C6 ; nwi = for Unicode 5.2 and later
+U+E271 <> U+18C7 ; Ojibway nwi = for Unicode 5.2 and later
+U+E272 <> U+18C8 ; nwii = for Unicode 5.2 and later
+U+E273 <> U+18C9 ; Ojibway nwii = for Unicode 5.2 and later
+U+E274 <> U+18CA ; nwo = for Unicode 5.2 and later
+U+E275 <> U+18CB ; Ojibway nwo = for Unicode 5.2 and later
+U+E276 <> U+18CC ; nwoo = for Unicode 5.2 and later
+U+E277 <> U+18CD ; Ojibway nwoo = for Unicode 5.2 and later
+U+E280 <> U+1401 ; square e
+U+E281 <> U+1401 U+0307 ; square ee
+U+E282 <> U+1403 ; square i
+U+E283 <> U+1404 ; square ii
+U+E284 <> U+1405 ; square o
+U+E285 <> U+1406 ; square oo
+U+E286 <> U+140A ; square a
+U+E287 <> U+140B ; square aa
+U+E288 <> U+142F ; square pe
+U+E289 <> U+142F U+0307 ; square pee
+U+E28A <> U+1431 ; square pi
+U+E28B <> U+1432 ; square pii
+U+E28C <> U+1433 ; square po
+U+E28D <> U+1434 ; square poo
+U+E28E <> U+1438 ; square pa
+U+E28F <> U+1439 ; square paa
+U+E290 <> U+144C ; square te
+U+E291 <> U+144C U+0307 ; square tee
+U+E292 <> U+144E ; square ti
+U+E293 <> U+144F ; square tii
+U+E294 <> U+1450 ; square to
+U+E295 <> U+1451 ; square too
+U+E296 <> U+1455 ; square ta
+U+E297 <> U+1456 ; square taa
+U+E2A0 <> U+1489 ; square ce
+U+E2A1 <> U+1489 U+0307 ; square cee
+U+E2A2 <> U+148B ; square ci
+U+E2A3 <> U+148C ; square cii
+U+E2A4 <> U+148D ; square co
+U+E2A5 <> U+148E ; square coo
+U+E2A6 <> U+1490 ; square ca
+U+E2A7 <> U+1491 ; square caa
+U+E2A8 <> U+14A3 ; square me
+U+E2A9 <> U+14A3 U+0307 ; square mee
+U+E2AA <> U+14A5 ; square mi
+U+E2AB <> U+14A6 ; square mii
+U+E2AC <> U+14A7 ; square mo
+U+E2AD <> U+14A8 ; square moo
+U+E2AE <> U+14AA ; square ma
+U+E2AF <> U+14AB ; square maa
+U+E2B0 <> U+14C0 ; square ne
+U+E2B1 <> U+14C0 U+0307 ; square nee
+U+E2B2 <> U+14C2 ; square ni
+U+E2B3 <> U+14C3 ; square nii
+U+E2B4 <> U+14C4 ; square no
+U+E2B5 <> U+14C5 ; square noo
+U+E2B6 <> U+14C7 ; square na
+U+E2B7 <> U+14C8 ; square naa
+U+E2B8 <> U+14D3 ; square le
+U+E2B9 <> U+14D3 U+0307 ; square lee
+U+E2BA <> U+14D5 ; square li
+U+E2BB <> U+14D6 ; square lii
+U+E2BC <> U+14D7 ; square lo
+U+E2BD <> U+14D8 ; square loo
+U+E2BE <> U+14DA ; square la
+U+E2BF <> U+14DB ; square laa
+U+E2C0 <> U+14ED ; square se
+U+E2C1 <> U+14ED U+0307 ; square see
+U+E2C2 <> U+14EF ; square si
+U+E2C3 <> U+14F0 ; square sii
+U+E2C4 <> U+14F1 ; square so
+U+E2C5 <> U+14F2 ; square soo
+U+E2C6 <> U+14F4 ; square sa
+U+E2C7 <> U+14F5 ; square saa
+U+E2C8 <> U+1510 ; square she
+U+E2C9 <> U+1510 U+0307 ; square shee
+U+E2CA <> U+1511 ; square shi
+U+E2CB <> U+1512 ; square shii
+U+E2CC <> U+1513 ; square sho
+U+E2CD <> U+1514 ; square shoo
+U+E2CE <> U+1515 ; square sha
+U+E2CF <> U+1516 ; square shaa
+U+E2D0 <> U+1526 ; square ye
+U+E2D1 <> U+1526 U+0307 ; square yee
+U+E2D2 <> U+1528 ; square yi
+U+E2D3 <> U+1529 ; square yii
+U+E2D4 <> U+152A ; square yo
+U+E2D5 <> U+152B ; square yoo
+U+E2D6 <> U+152D ; square ya
+U+E2D7 <> U+152E ; square yaa
+U+E2D8 <> U+1526 ; square yye
+U+E2D9 <> U+1526 U+0307 ; square yyee
+U+E2DA <> U+1528 ; square yyi
+U+E2DB <> U+1529 ; square yyii
+U+E2DC <> U+152A ; square yyo
+U+E2DD <> U+152B ; square yyoo
+U+E2DE <> U+152D ; square yya
+U+E2DF <> U+152E ; square yyaa
+U+E2E0 <> U+1542 ; square re
+U+E2E1 <> U+1542 U+0307 ; square ree
+U+E2E2 <> U+1543 ; square rre
+U+E2E3 <> U+1543 U+0307 ; square rree
+U+E2E4 <> U+1544 ; West Cree le
+U+E2E5 <> U+1544 U+0307 ; West Cree lee
+U+E2E6 <> U+1546 ; square ri
+U+E2E7 <> U+1547 ; square rii
+U+E2E8 <> U+1548 ; square ro
+U+E2E9 <> U+1549 ; square roo
+U+E2EA <> U+154A ; West Cree lo
+U+E2EB <> U+154A U+0307 ; West Cree loo
+U+E2EC <> U+154B ; square ra
+U+E2ED <> U+154C ; square raa
+U+E2EE <> U+154D ; West Cree la
+U+E2EF <> U+154D U+0307 ; West Cree laa
+U+E2F0 <> U+1553 ; square fe
+U+E2F1 <> U+1553 U+0307 ; square fee
+U+E2F2 <> U+1555 ; square fi
+U+E2F3 <> U+1556 ; square fii
+U+E2F4 <> U+1557 ; square fo
+U+E2F5 <> U+1558 ; square foo
+U+E2F6 <> U+1559 ; square fa
+U+E2F7 <> U+155A ; square faa
+U+E2F8 <> U+155E ; square the
+U+E2F9 <> U+155E U+0307 ; square thee
+U+E2FA <> U+155F ; square N Cree the
+U+E2FB <> U+155F U+0307 ; square N Cree thee
+U+E2FC <> U+1560 ; square thi
+U+E2FD <> U+1562 ; square thii
+U+E2FE <> U+1561 ; square N Cree thi
+U+E2FF <> U+1563 ; square N Cree thii
+U+E300 <> U+1564 ; square tho
+U+E301 <> U+1565 ; square thoo
+U+E302 <> U+1566 ; square tha
+U+E303 <> U+1567 ; square thaa
+U+E304 <> U+156B U+0307 ; tthee
+U+E305 <> U+156C U+0307 ; tthii
+U+E306 <> U+156D U+0307 ; tthoo
+U+E307 <> U+156E U+0307 ; tthaa
+U+E308 <> U+1570 U+0307 ; tyee
+U+E309 <> U+1571 U+0307 ; tyii
+U+E30A <> U+1572 U+0307 ; tyoo
+U+E30B <> U+1573 U+0307 ; tyaa
+U+E30C <> U+1574 ; square Inuktitut he
+U+E30D <> U+1574 U+0307 ; square Inuktitut hee
+U+E30E <> U+1575 ; square Inuktitut hi
+U+E30F <> U+1576 ; square Inuktitut hii
+U+E310 <> U+1577 ; square Inuktitut ho
+U+E311 <> U+1578 ; square Inuktitut hoo
+U+E312 <> U+1579 ; square Inuktitut ha
+U+E313 <> U+157A ; square Inuktitut haa
+U+E31C <> U+1586 U+0307 ; tlhee
+U+E31D <> U+1587 U+0307 ; tlhii
+U+E31E <> U+18E9 ; tlhoo
+U+E31F <> U+1589 U+0307 ; tlhaa
+U+E320 <> U+158A U+0307 ; Woods Cree rree
+U+E321 <> U+158B U+0307 ; Woods Cree rrii
+U+E322 <> U+158C U+0307 ; Woods Cree rroo
+U+E323 <> U+158D U+0307 ; Woods Cree rraa
+U+E324 <> U+15C0 ; Athapaskan ge
+U+E325 <> U+15C0 U+0307 ; Athapaskan gee
+U+E326 <> U+15C1 ; Athapaskan gi
+U+E327 <> U+15C1 U+0307 ; Athapaskan gii
+U+E328 <> U+15C2 ; Athapaskan go
+U+E329 <> U+15C2 U+0307 ; Athapaskan goo
+U+E32A <> U+15C3 ; Athapaskan ga
+U+E32B <> U+15C3 U+0307 ; Athapaskan gaa
+U+E32C <> U+1595 U+1489 ; nge
+U+E32D <> U+1595 U+1489 U+0307 ; ngee
+U+E32E <> U+1595 U+148B ; ngi
+U+E32F <> U+1595 U+148C ; ngii
+U+E330 <> U+1595 U+148D ; ngo
+U+E331 <> U+1595 U+148E ; ngoo
+U+E332 <> U+1595 U+1490 ; nga
+U+E333 <> U+1595 U+1491 ; ngaa
+U+E334 <> U+1597 U+0307 ; Saulteaux Ojibway shee
+U+E335 <> U+1598 U+0307 ; Saulteaux Ojibway shii
+U+E336 <> U+1599 U+0307 ; Saulteaux Ojibway shoo
+U+E337 <> U+159A U+0307 ; Saulteaux Ojibway shaa
+U+E338 <> U+15A0 ; lhi
+U+E339 <> U+15A1 ; lhii
+U+E33C <> U+15A2 ; lho
+U+E33D <> U+15A3 ; lhoo
+U+E33E <> U+15A4 ; lha
+U+E33F <> U+15A5 ; lhaa
+U+E340 <> U+15A7 ; Th Cree the
+U+E341 <> U+15A7 U+0307 ; Th Cree thee
+U+E342 <> U+15A8 ; Th Cree thi
+U+E343 <> U+15A9 ; Th Cree thii
+U+E344 <> U+15AA ; Th Cree tho
+U+E345 <> U+15AB ; Th Cree thoo
+U+E346 <> U+15AC ; Th Cree tha
+U+E347 <> U+15AD ; Th Cree thaa
+U+E348 <> U+15EF U+0307 ; Athapaskan cee
+U+E349 <> U+15F0 U+0307 ; Athapaskan cii
+U+E34A <> U+15F1 U+0307 ; Athapaskan coo
+U+E34B <> U+15F4 U+0307 ; Athapaskan caa
+U+E34C <> U+161B U+0307 ; Athapaskan tsee
+U+E34D <> U+161A U+0307 ; Athapaskan tsii
+U+E34E <> U+1615 U+0307 ; Athapaskan tsoo
+U+E34F <> U+1614 U+0307 ; Athapaskan tsaa
+U+E350 <> U+1596 U+1489 ; nnge
+U+E351 <> U+1596 U+1489 U+0307 ; nngee
+U+E352 <> U+1596 U+148B ; nngi
+U+E353 <> U+1596 U+148C ; nngii
+U+E354 <> U+1596 U+148D ; nngo
+U+E355 <> U+1596 U+148E ; nngoo
+U+E356 <> U+1596 U+1490 ; nnga
+U+E357 <> U+1596 U+1491 ; nngaa
+U+E358 <> U+1597 U+0307 ; Saulteaux Ojibway hee
+U+E359 <> U+1598 U+0307 ; Saulteaux Ojibway hii
+U+E35A <> U+18EC ; Saulteaux Ojibway hoo
+U+E35B <> U+159A U+0307 ; Saulteaux Ojibway haa
+U+E360 <> U+141E ; glottal
+U+E361 <> U+1449 ; square p
+U+E362 <> U+1466 ; square t
+U+E363 <> U+1483 ; square k
+U+E364 <> U+14A1 ; square c
+U+E365 <> U+14A2 ; square Saulteaux Ojibway th
+U+E366 <> U+14BB ; square m
+U+E367 <> U+14BD ; square mh
+U+E368 <> U+14D1 ; square n
+U+E369 <> U+14D2 ; square nh
+U+E36A <> U+14E1 ; square l
+U+E36B <> U+1505 ; square s
+U+E36C <> U+1507 ; square sw
+U+E36D <> U+153E ; square y
+U+E36E <> U+1550 ; square r
+U+E370 <> U+155D ; square f
+U+E371 <> U+156A ; square th
+U+E372 <> U+157B ; square Inuktitut h
+U+E373 <> U+1585 ; square q
+U+E374 <> U+1595 ; square ng
+U+E375 <> U+1596 ; square nng
+U+E376 <> U+15A6 ; square lh
+U+E377 <> U+15AE ; square T Cree th
+U+E380 <> U+18D4 ; Ojibway p = for Unicode 5.2 and later
+U+E381 <> U+18D5 ; Ojibway t = for Unicode 5.2 and later
+U+E382 <> U+18D6 ; Ojibway k = for Unicode 5.2 and later
+U+E383 <> U+18D7 ; Ojibway c = for Unicode 5.2 and later
+U+E384 <> U+18D8 ; Ojibway m = for Unicode 5.2 and later
+U+E385 <> U+18D9 ; Ojibway n = for Unicode 5.2 and later
+U+E386 <> U+18DA ; Ojibway s = for Unicode 5.2 and later
+U+E387 <> U+18F5 ; Ojibway sh = for Unicode 5.2 and later
+U+E388 <> U+1427 U+141E ; Ojibway y
+U+E389 <> U+18D4 ; Ojibway p = for Unicode 5.2 and later
+U+E38A <> U+18D5 ; Ojibway t = for Unicode 5.2 and later
+U+E38B <> U+18D6 ; Ojibway k = for Unicode 5.2 and later
+U+E38C <> U+18D7 ; Ojibway c = for Unicode 5.2 and later
+U+E38D <> U+18D8 ; Ojibway m = for Unicode 5.2 and later
+U+E38E <> U+18D9 ; Ojibway n = for Unicode 5.2 and later
+U+E38F <> U+18DA ; Ojibway s = for Unicode 5.2 and later
+U+E391 <> U+1427 U+141E ; Ojibway y
+U+E396 <> U+18F3 ; Dene Beaver l = for Unicode 5.2 and later
+U+E397 <> U+153E ; ifiyy
+U+E398 <> U+18DE ; mooy
+U+E3A8 <> U+167F ; equal
+U+E3A9 <> U+167E ; dh
+U+E3AF <> U+1425 ; dash
+U+E3B0 <> U+141C ; ai middle
+U+E3B1 <> U+1425 ; dash middle
+U+E3BE <> U+1427 U+141E ; y middle
+U+E3C4 <> U+1429 ; plus middle
+U+E3C5 <> U+142A ; down middle
+U+E3C6 <> U+1449 ; p middle
+U+E3CA <> U+144B ; Carrier h middle
+U+E3CB <> U+1466 ; t middle
+U+E3CD <> U+1483 ; k middle
+U+E3CF <> U+1484 ; kw middle
+U+E3D0 <> U+14A1 ; c middle
+U+E3D2 <> U+14A2 ; South Slavey th middle
+U+E3D3 <> U+14BB ; m middle
+U+E3D5 <> U+14BC ; lhr middle
+U+E3D7 <> U+14BD ; mh middle
+U+E3D8 <> U+14D0 ; n middle
+U+E3DA <> U+14D2 ; nh middle
+U+E3DB <> U+14EA ; l middle
+U+E3DC <> U+1505 ; s middle
+U+E3DE <> U+1506 ; Athapaskan s middle
+U+E3DF <> U+1507 ; sw middle
+U+E3E0 <> U+1508 ; Blackfoot s middle
+U+E3E1 <> U+1509 ; Moose Cree s middle
+U+E3E2 <> U+150A ; Naskapi skw middle
+U+E3E3 <> U+1525 ; sh middle
+U+E3E5 <> U+153E ; y middle
+U+E3E6 <> U+153F ; Blackfoot Cree y middle
+U+E3E7 <> U+1541 ; South Slavey y middle
+U+E3E8 <> U+1550 ; r middle
+U+E3E9 <> U+155D ; f middle
+U+E3EA <> U+156A ; th middle
+U+E3EB <> U+157B ; Inuktitut h middle
+U+E3EC <> U+1585 ; q middle
+U+E3ED <> U+1595 ; ng middle
+U+E3EE <> U+1596 ; nng middle
+U+E3EF <> U+159F ; West Cree th middle
+U+E3F0 <> U+15A6 ; lh middle
+U+E3F1 <> U+15AE ; T Cree th middle
+U+E3F2 <> U+15EE ; Carrier p middle
+U+E3F3 <> U+15EE ; Carrier kk middle
+U+E3F4 <> U+1646 ; Carrier z middle
+U+E3F5 <> U+1647 ; Carrier iniz middle
+U+E3F6 <> U+165A ; Carrier sh middle
+U+E3F7 <> U+167F ; equal middle
+U+E3F8 <> U+167E ; dh middle
+U+E400 <> U+141C ; ai bottom
+U+E40E <> U+1427 U+141E ; y bottom
+U+E412 <> U+141D ; low dot
+U+E414 <> U+1429 ; plus bottom
+U+E415 <> U+142A ; down bottom
+U+E416 <> U+1449 ; p bottom
+U+E41A <> U+144B ; Carrier h bottom
+U+E41B <> U+1466 ; t bottom
+U+E41D <> U+1483 ; k bottom
+U+E41F <> U+1484 ; kw bottom
+U+E420 <> U+14A1 ; c bottom
+U+E422 <> U+14A2 ; Saulteaux Ojibway th bottom
+U+E423 <> U+14BB ; m bottom
+U+E425 <> U+14BC ; lhr bottom
+U+E427 <> U+14BD ; mh bottom
+U+E428 <> U+14D0 ; n bottom
+U+E42A <> U+14D2 ; nh bottom
+U+E42B <> U+14EA ; l bottom
+U+E42C <> U+1505 ; s bottom
+U+E42E <> U+1506 ; Athapaskan s bottom
+U+E42F <> U+1507 ; sw bottom
+U+E430 <> U+1508 ; Blackfoot s bottom
+U+E431 <> U+1509 ; Moose Cree s bottom
+U+E432 <> U+150A ; Naskapi skw bottom
+U+E433 <> U+1525 ; sh bottom
+U+E435 <> U+153E ; y bottom
+U+E436 <> U+153F ; Blackfoot Cree y bottom
+U+E437 <> U+1541 ; Saulteaux Ojibway y bottom
+U+E438 <> U+1550 ; r bottom
+U+E439 <> U+155D ; f bottom
+U+E43A <> U+156A ; th bottom
+U+E43B <> U+157B ; Inuktitut h bottom
+U+E43C <> U+1585 ; q bottom
+U+E43D <> U+1595 ; ng bottom
+U+E43E <> U+1596 ; nng bottom
+U+E43F <> U+159F ; West Cree th bottom
+U+E440 <> U+15A6 ; lh bottom
+U+E441 <> U+15AE ; Th Cree th bottom
+U+E442 <> U+15EE ; Carrier p bottom
+U+E443 <> U+15EE ; Carrier kk bottom
+U+E444 <> U+1646 ; Carrier z bottom
+U+E445 <> U+1647 ; Carrier iniz bottom
+U+E446 <> U+165A ; Carrier sh bottom
+U+E447 <> U+167F ; equal bottom
+U+E448 <> U+167E ; dh bottom
+U+E450 <> U+140A ; half a
+U+E451 <> U+1438 ; half pa
+U+E452 <> U+1455 ; half ta
+U+E453 <> U+1472 ; half ka
+U+E454 <> U+1472 ; half ka
+U+E455 <> U+1490 ; half ca
+U+E456 <> U+1490 ; half ca
+U+E457 <> U+14AA ; half ma
+U+E458 <> U+14C7 ; half na
+U+E459 <> U+14C7 ; half na
+U+E45A <> U+14DA ; half la
+U+E45B <> U+14F4 ; half sa
+U+E45C <> U+1515 ; half sha
+U+E45D <> U+152D ; half ya
+U+E45E <> U+152D ; half yi
+U+E45F <> U+154B ; half ra
+U+E460 <> U+154D ; half West Cree la
+U+E461 <> U+1559 ; half fa
+U+E462 <> U+1566 ; half tha
+U+E463 <> U+156E ; half ttha
+U+E464 <> U+1573 ; half tya
+U+E465 <> U+1579 ; half Inuktitut ha
+U+E466 <> U+1583 ; half qa
+U+E467 <> U+1589 ; half tlha
+U+E468 <> U+158D ; half West Cree ra
+U+E469 <> U+15C3 ; half Athapaskan ga
+U+E46A <> U+1593 ; half nga
+U+E46B <> U+159A ; half Sayisi sha
+U+E46C <> U+159E ; half N Cree tha
+U+E46D <> U+15A4 ; half lha
+U+E46E <> U+15AC ; half T Cree tha
+U+E46F <> U+15B3 ; half Blackfoot aa
+U+E470 <> U+15B7 ; half Blackfoot wa
+U+E471 <> U+15BB ; half Blackfoot na
+U+E472 <> U+15BF ; half Blackfoot ka
+U+E473 <> U+15C3 ; half Sayisi ha
+U+E474 <> U+15C9 ; half Carrier gha
+U+E475 <> U+15CF ; half Carrier ra
+U+E476 <> U+15D5 ; half Carrier wa
+U+E477 <> U+15DB ; half Carrier hwa
+U+E478 <> U+15E1 ; half Carrier tha
+U+E479 <> U+15E7 ; half Carrier tta
+U+E47A <> U+15ED ; half Carrier pa
+U+E47B <> U+15F4 ; half Carrier ga
+U+E47C <> U+15FA ; half Carrier kha
+U+E47D <> U+1600 ; half Carrier kka
+U+E47E <> U+160D ; half Carrier ma
+U+E47F <> U+1613 ; half Carrier ya
+U+E480 <> U+1614 ; half Athapaskan tsa
+U+E481 <> U+161B ; half Carrier ja
+U+E482 <> U+1621 ; half Carrier jja
+U+E483 <> U+1627 ; half Carrier la
+U+E484 <> U+162D ; half Carrier dla
+U+E485 <> U+1633 ; half Carrier lha
+U+E486 <> U+1639 ; half Carrier tlha
+U+E487 <> U+163F ; half Carrier tla
+U+E488 <> U+1645 ; half Carrier za
+U+E489 <> U+164D ; half Carrier dza
+U+E48A <> U+1645 ; half Carrier sa
+U+E48B <> U+164D ; half Carrier sha
+U+E48C <> U+1660 ; half Carrier tsa
+U+E48D <> U+1666 ; half Carrier cha
+U+E48E <> U+166C ; half Carrier ttsa
+U+E48F <> U+1675 ; half nnga
+U+E490 <> U+144A ; Dene Carrier ee
+U+E491 <> U+1427 ; Dene Carrier i
+U+E492 <> U+1427 ; big Dene Carrier i
+U+E493 <> U+1424 ; Dene y
+U+E4A3 <> U+15C3 ; small Sayisi ha
+U+E4A5 <> U+1449 ; reversed p
+U+E4A6 <> U+14A5 ; reversed lhri
+U+E4A7 <> U+1525 ; reversed sh
+U+E4A8 <> U+153E ; reversed y
+U+E4B0 <> U+1489 ; cce
+U+E4B1 <> U+1489 U+0307 ; ccee
+U+E4B2 <> U+148B ; cci
+U+E4B3 <> U+148C ; ccii
+U+E4B4 <> U+148D ; cco
+U+E4B5 <> U+148E ; ccoo
+U+E4B6 <> U+1490 ; cca
+U+E4B7 <> U+1491 ; ccaa
+U+E4B8 <> U+14D3 ; lle
+U+E4B9 <> U+14D3 U+0307 ; llee
+U+E4BA <> U+14D5 ; lli
+U+E4BB <> U+14D6 ; llii
+U+E4BC <> U+14D7 ; llo
+U+E4BD <> U+14D8 ; lloo
+U+E4BE <> U+14DA ; lla
+U+E4BF <> U+14DB ; llaa
+U+E4C0 <> U+158A ; West Cree rre
+U+E4C1 <> U+158A U+0307 ; West Cree rree
+U+E4C2 <> U+158B ; West Cree rri
+U+E4C3 <> U+158B U+0307 ; West Cree rrii
+U+E4C4 <> U+158C ; West Cree rro
+U+E4C5 <> U+158C U+0307 ; West Cree rroo
+U+E4C6 <> U+158D ; West Cree rra
+U+E4C7 <> U+158D U+0307 ; West Cree rraa
+U+E4C8 <> U+1513 ; sho
+U+E4C9 <> U+1514 ; shoo
+U+E4CA <> U+18C0 ; shoy = for Unicode 5.2 and later
+U+E4CB <> U+1515 ; sha
+U+E4CC <> U+1516 ; shaa
+U+E4CD <> U+18C1 ; shay = for Unicode 5.2 and later
+U+E4CE <> U+1450 ; short to
+U+E4CF <> U+1455 ; short ta
+U+E4D0 <> U+1401 U+030A ; ey
+U+E4D1 <> U+1403 U+030A ; iy
+U+E4D2 <> U+1405 U+030A ; oy
+U+E4D3 <> U+140A U+030A ; ay
+U+E4D4 <> U+142F U+030A ; pey
+U+E4D5 <> U+1431 U+030A ; piy
+U+E4D6 <> U+1433 U+030A ; poy
+U+E4D7 <> U+1438 U+030A ; pay
+U+E4D8 <> U+144C U+030A ; tey
+U+E4D9 <> U+144E U+030A ; tiy
+U+E4DA <> U+1450 U+030A ; toy
+U+E4DB <> U+1455 U+030A ; tay
+U+E4DC <> U+146B U+030A ; key
+U+E4DD <> U+146D U+030A ; kiy
+U+E4DE <> U+146F U+030A ; koy
+U+E4DF <> U+1472 U+030A ; kay
+U+E4E0 <> U+1489 U+030A ; cey
+U+E4E1 <> U+148B U+030A ; ciy
+U+E4E2 <> U+148D U+030A ; coy
+U+E4E3 <> U+1490 U+030A ; cay
+U+E4E4 <> U+14A3 U+030A ; mey
+U+E4E5 <> U+14A5 U+030A ; miy
+U+E4E6 <> U+14A7 U+030A ; moy
+U+E4E7 <> U+14AA U+030A ; may
+U+E4E8 <> U+14C0 U+030A ; ney
+U+E4E9 <> U+14C2 U+030A ; niy
+U+E4EA <> U+14C4 U+030A ; noy
+U+E4EB <> U+14C7 U+030A ; nay
+U+E4EC <> U+14D3 U+030A ; ley
+U+E4ED <> U+14D5 U+030A ; liy
+U+E4EE <> U+14D7 U+030A ; loy
+U+E4EF <> U+14DA U+030A ; lay
+U+E4F0 <> U+14ED U+030A ; sey
+U+E4F1 <> U+14EF U+030A ; siy
+U+E4F2 <> U+14F0 U+030A ; soy
+U+E4F3 <> U+14F4 U+030A ; say
+U+E4F4 <> U+1510 U+030A ; shey
+U+E4F5 <> U+1511 U+030A ; shiy
+U+E4F6 <> U+18C0 ; shoy = for Unicode 5.2 and later
+U+E4F7 <> U+18C1 ; shay = for Unicode 5.2 and later
+U+E4F8 <> U+1526 U+030A ; yey
+U+E4F9 <> U+1528 U+030A ; yiy
+U+E4FA <> U+152A U+030A ; yoy
+U+E4FB <> U+152D U+030A ; yay
+U+E4FC <> U+1526 U+030A ; yyey
+U+E4FD <> U+1528 U+030A ; yyiy
+U+E4FE <> U+152A U+030A ; yyoy
+U+E4FF <> U+152D U+030A ; yyay
+U+E500 <> U+1543 U+030A ; R Cree rey
+U+E501 <> U+1546 U+030A ; riy
+U+E502 <> U+1548 U+030A ; roy
+U+E503 <> U+154B U+030A ; ray
+U+E504 <> U+1553 U+030A ; fey
+U+E504 <> U+155E U+030A ; they
+U+E505 <> U+1555 U+030A ; fiy
+U+E505 <> U+1560 U+030A ; thiy
+U+E506 <> U+1557 U+030A ; foy
+U+E506 <> U+1564 U+030A ; thoy
+U+E507 <> U+1559 U+030A ; fay
+U+E507 <> U+1566 U+030A ; thay
+U+E508 <> U+15EE U+030A ; they
+U+E509 <> U+1560 U+030A ; thiy
+U+E50A <> U+1566 U+030A ; thoy
+U+E50B <> U+1564 U+030A ; thay
+U+E510 <> U+11ABC ; spe = for Unicode 14.0 and later
+U+E511 <> U+11ABC U+0307 ; spee
+U+E512 <> U+11ABD ; spi = for Unicode 14.0 and later
+U+E513 <> U+11ABD U+0307 ; spii
+U+E514 <> U+11ABE ; spo = for Unicode 14.0 and later
+U+E515 <> U+11ABE U+0307 ; spoo
+U+E516 <> U+11ABF ; spa = for Unicode 14.0 and later
+U+E517 <> U+11ABF U+0307 ; spaa
+U+E518 <> U+15B0 U+0307 ; Blackfoot ee
+U+E519 <> U+15B1 U+0307 ; Blackfoot ii
+U+E51A <> U+15B2 U+0307 ; Blackfoot oo
+U+E51B <> U+15B3 U+0307 ; Blackfoot aa
+U+E51C <> U+15B4 U+0307 ; Blackfoot wee
+U+E51D <> U+15B5 U+0307 ; Blackfoot wii
+U+E51E <> U+15B6 U+0307 ; Blackfoot woo
+U+E51F <> U+15B7 U+0307 ; Blackfoot waa
+U+E520 <> U+15B8 U+0307 ; Blackfoot nee
+U+E521 <> U+15B9 U+0307 ; Blackfoot nii
+U+E522 <> U+15BA U+0307 ; Blackfoot noo
+U+E523 <> U+15BB U+0307 ; Blackfoot naa
+U+E524 <> U+15BC U+0307 ; Blackfoot kee
+U+E525 <> U+15BD U+0307 ; Blackfoot kii
+U+E526 <> U+15BE U+0307 ; Blackfoot koo
+U+E527 <> U+15BF U+0307 ; Blackfoot kaa
+U+E528 <> U+146D U+0307 ; Blackfoot pee
+U+E529 <> U+146F U+0307 ; Blackfoot pii
+U+E52A <> U+1472 U+0307 ; Blackfoot poo
+U+E52B <> U+146B U+0307 ; Blackfoot paa
+U+E530 <> U+1510 ; South Slavey she
+U+E531 <> U+1510 U+0307 ; South Slavey shee
+U+E532 <> U+1510 U+030A ; South Slavey shey
+U+E533 <> U+1511 ; South Slavey shi
+U+E534 <> U+1512 U+0307 ; South Slavey shii
+U+E535 <> U+1511 U+030A ; South Slavey shiy
+U+E536 <> U+1513 ; South Slavey sho
+U+E537 <> U+1514 ; South Slavey shoo
+U+E538 <> U+1513 U+030A ; South Slavey shoy
+U+E539 <> U+1515 ; South Slavey sha
+U+E53A <> U+1516 ; South Slavey shaa
+U+E53B <> U+1515 U+030A ; South Slavey shay
+U+E53C <> U+1525 ; South Slavey sh
+U+E53D <> U+1511 ; Ojibway sh
+U+E540 <> U+14A1 ; cc
+U+E541 <> U+14A1 ; Ojibway cc
+U+E542 <> U+14EA ; ll
+U+E543 <> U+153E ; yy
+U+E544 <> U+153E ; Ojibway yy
+U+E545 <> U+1550 ; R Cree rr
+U+E548 <> U+153F ; Athapaskan t middle
